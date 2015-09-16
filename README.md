@@ -1,5 +1,7 @@
 # isbot
 
+[![Build Status](https://semaphoreci.com/api/v1/projects/b2ac790f-18fc-46d5-8726-2019a62a0996/541851/badge.svg)](https://semaphoreci.com/feroc1ty/isbot-2)
+
 ### install
 
     npm install isbot --save
