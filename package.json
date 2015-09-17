@@ -1,6 +1,6 @@
 {
   "name": "isbot",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "detects bots/crawlers/spiders via the user agent.",
   "main": "index.js",
   "scripts": {
