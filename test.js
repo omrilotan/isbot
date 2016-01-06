@@ -5,8 +5,8 @@ chai.should();
 
 var crawlersFile = path.join(__dirname, 'crawlers.txt');
 var browsersFile = path.join(__dirname, 'browsers.txt');
-var crawlers = fs.readFileSync(crawlersFile, 'utf-8').split('\n');
-var browsers = fs.readFileSync(browsersFile, 'utf-8').split('\n');
+var crawlers = fs.readFileSync(crawlersFile, 'utf-8').trim().split('\n');
+var browsers = fs.readFileSync(browsersFile, 'utf-8').trim().split('\n');
 var isBot = require('./');
 
 describe('Crawlers:', function() {
