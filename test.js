@@ -11,15 +11,15 @@ var isBot = require('./');
 
 describe('Crawlers:', function() {
     crawlers.forEach(function(bot) {
-        it('should detect ' + bot + ' as bot', function() {
-            isBot(bot).should.not.be.false;
+        it('should detect (' + bot + ') as bot', function() {
+            isBot(bot).should.be.true;
         });
     });
 });
 
 describe('Browsers:', function() {
     browsers.forEach(function(browser) {
-        it('should not be detected ' + browser + ' as bot', function() {
+        it('should not be detected (' + browser + ') as bot', function() {
             isBot(browser).should.be.false;
         });
     });
