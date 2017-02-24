@@ -2773,3 +2773,4 @@ Zscho.de Crawler/Nutch-1.0-Zscho.de-semantic_patch (Zscho.de Crawler
 zspider/0.9-dev http://feedback.redkolibri.com/
 ZumBot/1.0 (ZUM Search; http://help.zum.com/inquiry)
 ZyBorg/1.0 (ZyBorg@WISEnut.com; http://www.WISEnut.com)
+Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36 Google (+https://developers.google.com/+/web/snippet/)
