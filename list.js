@@ -915,4 +915,5 @@ module.exports = [
     'youtube-dl',
     'zedzo\\.digest/',
     'zeus',
+    'developers\\.google\\.com\\/\\+\\/web\\/snippet\\/',
 ];
