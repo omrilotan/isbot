@@ -2627,6 +2627,7 @@ WFARC
 Wget/1.x+cvs-stable (Red Hat modified)
 Wget/1.x.x+cvs
 Wget/1.x(.x)GNU wget http://www.gnu.org/software/wget/wget.html - file downloader
+WhatsApp/2.17.107 A
 Whatsup/x.x
 whatUseek_winona/3.0
 WhizBang! Lab
