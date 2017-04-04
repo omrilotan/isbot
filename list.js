@@ -871,6 +871,7 @@ module.exports = [
     'webwatchermonitor/',
     'wf84',
     'wget',
+    'whatsapp',
     'whatsmyip\\.org',
     'whatsup/x\\.x',
     'whatuseek_winona/',
