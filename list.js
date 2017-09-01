@@ -1,5 +1,6 @@
 module.exports = [
     // generic
+    'mediaget',
     'jorgee',
     'analyza',
     'analyzer',
