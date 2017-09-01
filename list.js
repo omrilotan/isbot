@@ -1,5 +1,6 @@
 module.exports = [
     // generic
+    'jorgee',
     'analyza',
     'analyzer',
     'aggregator',
