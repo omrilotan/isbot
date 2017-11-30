@@ -8,6 +8,8 @@ var browsersFile = path.join(__dirname, 'browsers.txt');
 var crawlers = fs.readFileSync(crawlersFile, 'utf-8').trim().split('\n');
 var browsers = fs.readFileSync(browsersFile, 'utf-8').trim().split('\n');
 var isBot = require('./');
+var customBrowser = 'Mozilla/5.0';
+var extendList = ['^mozilla/\\d\\.\\d$'];
 
 describe('Crawlers:', function() {
     crawlers.forEach(function(bot) {
@@ -22,5 +24,16 @@ describe('Browsers:', function() {
         it('should not be detected (' + browser + ') as bot', function() {
             isBot(browser).should.be.false;
         });
+    });
+});
+
+describe('Extend', function(){
+    it('should not be detected (' + customBrowser + ') as bot', function() {
+        isBot(customBrowser).should.be.false;
+    });
+
+    it('should be detected (' + customBrowser + ') as bot', function() {
+        isBot.extend(extendList);
+        isBot(customBrowser).should.be.true;
     });
 });
