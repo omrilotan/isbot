@@ -155,6 +155,7 @@ BilgiBot/1.0(beta) (http://www.bilgi.com/; bilgi at bilgi dot com)
 billbot wjj@cs.cmu.edu
 BillyBobBot/1.0 (+http://www.billybobbot.com/crawler/)
 Bimbot/1.0
+BingPreview/1.0b
 Bitacle bot/1.1
 Bitacle Robot (V:1.0;) (http://www.bitacle.com)
 bitlybot/3.0 (+http://bit.ly/)
@@ -206,7 +207,7 @@ BravoBrian bstop.bravobrian.it
 BravoBrian SpiderEngine MarcoPolo
 BrightCrawler (http://www.brightcloud.com/brightcrawler.asp)
 Browsershots
-BruinBot (+http://webarchive.cs.ucla.edu/bruinbot.html) 
+BruinBot (+http://webarchive.cs.ucla.edu/bruinbot.html)
 BSDSeek/1.0
 BStop.BravoBrian.it Agent Detector
 btbot/0.4 (+http://www.btbot.com/btbot.html)
@@ -321,7 +322,7 @@ Crowsnest/0.5 (+http://www.crowsnest.tv/)
 csci_b659/0.13
 CSE HTML Validator Professional (http://www.htmlvalidator.com/)
 CSS Certificate Spider (http://www.css-security.com/certificatespider/)
-Cuasarbot/0.9b http://www.cuasar.com/spider_beta/ 
+Cuasarbot/0.9b http://www.cuasar.com/spider_beta/
 Curious George - www.analyticsseo.com/crawler
 curl/7.10.x (i386-redhat-linux-gnu) libcurl/7.10.x OpenSSL/0.9.7a ipv6 zlib/1.1.4
 curl/7.7.x (i386--freebsd4.3) libcurl 7.7.x (SSL 0.9.6) (ipv6 enabled)
@@ -400,7 +401,7 @@ DNS-Tools Header-Analyzer
 DoCoMo/1.0/Nxxxi/c10
 DoCoMo/1.0/Nxxxi/c10/TB
 DoCoMo/1.0/P502i/c10 (Google CHTML Proxy/1.0)
-DoCoMo/2.0 P900iV(c100;TB;W24H11) 
+DoCoMo/2.0 P900iV(c100;TB;W24H11)
 DoCoMo/2.0 SH901iS(c100;TB;W24H12),gzip(gfe) (via translate.google.com)
 DoCoMo/2.0 SH902i (compatible; Y!J-SRD/1.0; http://help.yahoo.co.jp/help/jp/search/indexing/indexing-27.html)
 DoCoMo/2.0/SO502i (compatible; Y!J-SRD/1.0; http://help.yahoo.co.jp/help/jp/search/indexing/indexing-27.html)
@@ -616,7 +617,7 @@ findlinks/1.1-a8 (+http://wortschatz.uni-leipzig.de/findlinks/)
 findlinks/1.1-a9 (+http://wortschatz.uni-leipzig.de/findlinks/)
 findlinks/1.1 (+http://wortschatz.uni-leipzig.de/findlinks/)
 findlinks/2.0.1 (+http://wortschatz.uni-leipzig.de/findlinks/)
-findlinks/x.xxx (+http://wortschatz.uni-leipzig.de/findlinks/) 
+findlinks/x.xxx (+http://wortschatz.uni-leipzig.de/findlinks/)
 FineBot
 Finjan-prefetch
 Firefly/1.0
@@ -728,6 +729,7 @@ Googlebot (gocrawl v0.4)
 Googlebot-Image/1.0
 Googlebot-Image/1.0 ( http://www.googlebot.com/bot.html)
 Googlebot/Test ( http://www.googlebot.com/bot.html)
+Google Favicon
 Gordon's Spider/Nutch-0.9 (http://www.sharethis.com; gordon@sharethis.com)
 gosquared-thumbnailer/1.0
 Go!Zilla 3.x (www.gozilla.com)
@@ -1166,7 +1168,7 @@ Marvin v0.3
 MaSagool/1.0 (MaSagool; http://sagool.jp/; info@sagool.jp)
 Mass Downloader 2.x
 MasterSeek
-Mata Hari/2.00 
+Mata Hari/2.00
 Matrix S.p.A. - FAST Enterprise Crawler 6 (Unknown admin e-mail address)
 maxomobot/dev-20051201 (maxomo; http://67.102.134.34:4047/MAXOMO/MAXOMObot.html; maxomobot@maxomo.com)
 MaxPointCrawler/Nutch-1.10 (maxpoint.crawler at maxpointinteractive dot com)
@@ -1245,7 +1247,7 @@ mozDex/0.xx-dev (mozDex; http://www.mozdex.com/en/bot.html; spider@mozdex.com)
 Mozilla/2.0 (compatible; Ask Jeeves)
 Mozilla/2.0 (compatible; Ask Jeeves/Teoma)
 Mozilla/2.0 (compatible; Ask Jeeves/Teoma; +http://about.ask.com/en/docs/about/webmasters.shtml)
-Mozilla/2.0 (compatible; Ask Jeeves/Teoma; http://about.ask.com/en/docs/about/webmasters.shtml) 
+Mozilla/2.0 (compatible; Ask Jeeves/Teoma; http://about.ask.com/en/docs/about/webmasters.shtml)
 Mozilla/2.0 (compatible; Ask Jeeves/Teoma; +http://sp.ask.com/docs/about/tech_crawling.html)
 Mozilla/2.0 (compatible; Ask Jeeves/Teoma; http://sp.ask.com/docs/about/tech_crawling.html)
 Mozilla/2.0 compatible; Check&Get 1.1x (Windows 98)
@@ -1662,7 +1664,7 @@ Mozilla/5.0 (compatible; spbot/4.4.2; +http://OpenLinkProfiler.org/bot )
 Mozilla/5.0 (compatible; special_archiver/3.3.0 +http://www.loc.gov/webarchiving/notice_to_webmasters.html)
 Mozilla/5.0 (compatible; Speedy Spider; http://www.entireweb.com/about/search_tech/speedy_spider/)
 Mozilla/5.0 (compatible; SpiderLing (a SPIDER for LINGustic research); +http://nlp.fi.muni.cz/projects/biwec/)
-Mozilla/5.0 (compatible; SpurlBot/0.2) 
+Mozilla/5.0 (compatible; SpurlBot/0.2)
 Mozilla/5.0 (compatible; SputnikBot/2.3; +http://corp.sputnik.ru/webmaster)
 Mozilla/5.0 (compatible; startmebot/1.0; +http://www.start.me/bot)
 Mozilla/5.0 (compatible; Steeler/3.5; http://www.tkl.iis.u-tokyo.ac.jp/~crawler/)
@@ -2364,10 +2366,10 @@ SQ Webscanner
 Sqworm/2.9.81-BETA (beta_release; 20011102-760; i686-pc-linux-gnu)
 Sqworm/2.9.85-BETA (beta_release; 20011115-775; i686-pc-linux-gnu)
 SSL Labs (https://www.ssllabs.com/about/assessment.html)
-SSurf15a 11 
+SSurf15a 11
 StackRambler/2.0
 StackRambler/2.0 (MSIE incompatible)
-StackRambler/x.x 
+StackRambler/x.x
 S.T.A.L.K.E.R. (http://www.seo-tools.net/en/bot.aspx)
 Stamina/1.4
 Star Downloader
@@ -2682,7 +2684,7 @@ wwwster/1.x (Beta- mailto:gue@cis.uni-muenchen.de)
 wxDownload Fast
 x28-job-bot; +http://x28.ch/bot.html
 Xaldon_WebSpider/2.0.b1
-X-Crawler 
+X-Crawler
 Xenu Link Sleuth 1.xx
 Xenu's Link Sleuth 1.x[a-z]
 Xerka WebBot v1.0.0 [UPVOpenDir]
@@ -2750,7 +2752,7 @@ Yoleo Consumer v0.2
 yoofind/yoofind-0.1-dev (yoono webcrawler; http://www.yoono.com ; MyEmail)
 yoogliFetchAgent/0.1
 yoono/1.0 web-crawler/1.0
-YottaCars_Bot/4.12 (+http://www.yottacars.com) Car Search Engine 
+YottaCars_Bot/4.12 (+http://www.yottacars.com) Car Search Engine
 YottaShopping_Bot/4.12 (+http://www.yottashopping.com) Shopping Search Engine
 Z-Add Link Checker (http://w3.z-add.co.uk/linkcheck/)
 Zao/0.1 (http://www.kototoi.org/zao/)
