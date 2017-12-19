@@ -5,27 +5,33 @@
 
 ### install
 
-    npm install isbot --save
+```console
+$ npm install isbot --save
+```
 
 ### usage
 
-    isBot(req.headers['user-agent'])
+```js
+isBot(req.headers['user-agent'])
 
-    isBot("Googlebot/2.1 (+http://www.google.com/bot.html)") // true
+isBot("Googlebot/2.1 (+http://www.google.com/bot.html)") // true
 
-    isBot("Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36") // false
+isBot("Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36") // false
+```
 
 ### extending
 
-    isBot("Mozilla/5.0") // false
+```js
+isBot("Mozilla/5.0") // false
 
-    var myList = [
-        'istat',
-        'newspaper',
-        'httpclient',
-        '^mozilla/\\d\\.\\d$',
-    ];
+var myList = [
+    'istat',
+    'newspaper',
+    'httpclient',
+    '^mozilla/\\d\\.\\d$',
+];
 
-    isBot.extend(myList);
+isBot.extend(myList);
 
-    isBot("Mozilla/5.0") // true
+isBot("Mozilla/5.0") // true
+```
