@@ -128,7 +128,7 @@ BacklinkCrawler (http://www.backlinktest.com/crawler.html)
 BackStreet Browser 3.x
 Bad Neighborhood Header Detector (http://www.bad-neighborhood.com/header_detector.php)
 BaiduImagespider+(+http://www.baidu.jp/search/s308.html)
-BaiDuSpider
+BaiduSpider
 Baiduspider+(+http://help.baidu.jp/system/05.html)
 Baiduspider+(+http://www.baidu.com/search/spider.htm)
 Baiduspider+(+http://www.baidu.com/search/spider_jp.html)
