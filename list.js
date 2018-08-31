@@ -231,6 +231,7 @@ module.exports = [
     'Goldfire Server',
     'Google Wireless Transcoder',
     'Google Favicon',
+    'Google Page Speed Insights',
     'GroupHigh/',
     'H010818',
     'HTTPGet',
