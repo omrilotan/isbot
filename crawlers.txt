@@ -730,6 +730,7 @@ Googlebot-Image/1.0
 Googlebot-Image/1.0 ( http://www.googlebot.com/bot.html)
 Googlebot/Test ( http://www.googlebot.com/bot.html)
 Google Favicon
+Google Page Speed Insights
 Gordon's Spider/Nutch-0.9 (http://www.sharethis.com; gordon@sharethis.com)
 gosquared-thumbnailer/1.0
 Go!Zilla 3.x (www.gozilla.com)
