@@ -763,7 +763,7 @@ module.exports = [
     'photon/',
     'picosearch/',
     'pingspot/',
-    'p:interestbot',
+    'pinterestbot',
     'pockey-gethtml/',
     'pockey-gethtml/x\\.xx',
     'pockey/x\\.x\\.x',
