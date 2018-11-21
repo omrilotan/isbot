@@ -2017,7 +2017,7 @@ Pingdom GIGRIB (http://www.pingdom.com)
 PINGOMETER_BOT_(HTTPS://PINGOMETER.COM)
 Pingoscope
 PingSpot/1.0 (http://www.pingspot.org/)
-Pinterest/0.2 (+http://www.pinterest.com/)
+Pinterest/0.2 (+http://www.pinterest.com/bot)
 pipeLiner/0.3a (PipeLine Spider;http://www.pipeline-search.com/webmaster.html; webmaster'at'pipeline-search.com)
 pipeLiner/0.xx (PipeLine Spider; http://www.pipeline-search.com/webmaster.html)
 Pita
@@ -2782,3 +2782,5 @@ zspider/0.9-dev http://feedback.redkolibri.com/
 ZumBot/1.0 (ZUM Search; http://help.zum.com/inquiry)
 ZyBorg/1.0 (ZyBorg@WISEnut.com; http://www.WISEnut.com)
 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36 Google (+https://developers.google.com/+/web/snippet/)
+Mozilla/5.0 (compatible; Pinterestbot/1.0; +https://www.pinterest.com/bot.html)
+Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Pinterestbot/1.0; +https://www.pinterest.com/bot.html)
