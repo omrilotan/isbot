@@ -2735,6 +2735,7 @@ Yahoo-Test/4.0
 Yahoo-VerticalCrawler-FormerWebCrawler/3.9 crawler at trd dot overture dot com; http://www.alltheweb.com/help/webmaster/crawler
 YandeG 1.03
 Yandex/1.01.001 (compatible; Win16; I)
+Mozilla/5.0 (Linux; Android 7.0; SM-T585 Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) version / 4.0 Chrome/56.0.2924.87 Safari/537.36 YandexSearch/7.71 / apad YandexSearchBrowser/7.71
 Yanga WorldSearch Bot v1.1/beta (http://www.yanga.co.uk/)
 yarienavoir.net/0.2
 Yasaklibot/v1.2 (http://www.Yasakli.com/bot.php)
