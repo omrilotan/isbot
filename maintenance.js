@@ -41,6 +41,9 @@ async function sortTextFile(file) {
       // Remove empty lines
       .filter(Boolean)
 
+      // Remove wrapping white spaces
+      .map(line => line.trim())
+
       // Case insensitive sort
       .sort(sort)
 
