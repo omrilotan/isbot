@@ -1,7 +1,13 @@
-Jorgee
-MediaGet2 2.01.373
-MediaGet2
-MediaGet
+-DIE-KRAEHE- META-SEARCH-ENGINE/1.1 http://www.die-kraehe.de
+:robot/1.0 (linux) ( admin e-mail: undefined http://www.neofonie.de/loesungen/search/robot.html )
+!Susie (http://www.sync2it.com/susie)
+( Robots.txt Validator http://www.searchengineworld.com/cgi-bin/robotcheck.cgi )
+*/Nutch-0.9-dev
++SitiDi.net/SitiDiBot/1.0 (+Have Good Day)
+<a href='http://www.unchaos.com/'> UnChaos </a> From Chaos To Order Hybrid Web Search Engine.(vadim_gonchar@unchaos.com)
+<a href='http://www.unchaos.com/'> UnChaos Bot Hybrid Web Search Engine. </a> (vadim_gonchar@unchaos.com)
+<b> UnChaosBot From Chaos To Order UnChaos Hybrid Web Search Engine at www.unchaos.com </b> (info@unchaos.com)
+<http://www.sygol.com/> http://www.sygol.com
 123spider-Bot (Version: 1.02, powered by www.123spider.de
 192.comAgent
 2Bone_LinkChecker/1.0 libwww-perl/5.64
@@ -9,6 +15,7 @@ MediaGet
 404 Checker [http://www.404checker.com/user-agent]
 4anything.com LinkChecker v2.0
 8484 Boston Project v 1.0
+A-Online Search
 A1 Keyword Research/1.0.2 (+http://www.micro-sys.dk/products/keyword-research/) miggibot/2007.03.27
 A1 Sitemap Generator/1.0 (+http://www.micro-sys.dk/products/sitemap-generator/) miggibot/2006.01.24
 aardvark-crawler
@@ -30,23 +37,21 @@ Accoona-AI-Agent/1.1.2
 Accoona-AI-Agent/1.1.2 (aicrawler at accoonabot dot com)
 Ack (http://www.ackerm.com/)
 AcoiRobot
-Acoon-Robot 4.0.x.[xx] (http://www.acoon.de)
 Acoon Robot v1.50.001
 Acoon Robot v1.52 (http://www.acoon.de)
+Acoon-Robot 4.0.x.[xx] (http://www.acoon.de)
 Acoon-Robot v3.xx (http://www.acoon.de and http://www.acoon.com)
 Acorn/Nutch-0.9 (Non-Profit Search Engine; acorn.isara.org; acorn at isara dot org)
+Ad Muncher v4.xx.x
+Ad Muncher v4x Build xxxxx
 Adaxas Spider (http://www.adaxas.net/)
 AddThis.com robot tech.support@clearspring.com
 ADmantX Platform Semantic Analyzer - ADform - ADmantX Inc. - www.admantx.com - support@admantx.com
-Ad Muncher v4x Build xxxxx
-Ad Muncher v4.xx.x
 AESOP_com_SpiderMan
 agadine/1.x.x (+http://www.agada.de)
-AgentName/0.1 libwww-perl/5.48
 Agent-SharewarePlazaFileCheckBot/2.0+(+http://www.SharewarePlaza.com)
+AgentName/0.1 libwww-perl/5.48
 agentslug.com - website monitoring tool
-<a href='http://www.unchaos.com/'> UnChaos </a> From Chaos To Order Hybrid Web Search Engine.(vadim_gonchar@unchaos.com)
-<a href='http://www.unchaos.com/'> UnChaos Bot Hybrid Web Search Engine. </a> (vadim_gonchar@unchaos.com)
 AIBOT/2.1 By +(www.21seek.com A Real artificial intelligence search engine China)
 AideRSS/1.0 (aiderss.com)
 aipbot/1.0 (aipbot; http://www.aipbot.com; aipbot@aipbot.com)
@@ -73,7 +78,6 @@ AnswerBus (http://www.answerbus.com/)
 AntBot/1.0 (http://www.ant.com)
 antibot-V1.1.5/i586-linux-2.2
 AnzwersCrawl/2.0 (anzwerscrawl@anzwers.com.au;Engine)
-A-Online Search
 Apexoo Spider 1.x
 Aport
 AppEngine-Google; (+http://code.google.com/appengine; appid: s~closure-compiler-hrd)
@@ -130,8 +134,8 @@ Bad Neighborhood Header Detector (http://www.bad-neighborhood.com/header_detecto
 BaiduImagespider+(+http://www.baidu.jp/search/s308.html)
 BaiduSpider
 Baiduspider+(+http://help.baidu.jp/system/05.html)
-Baiduspider+(+http://www.baidu.com/search/spider.htm)
 Baiduspider+(+http://www.baidu.com/search/spider_jp.html)
+Baiduspider+(+http://www.baidu.com/search/spider.htm)
 Balihoo/Nutch-1.0-dev (Crawler for Balihoo.com search engine - obeys robots.txt and robots meta tags ; http://balihoo.com/index.aspx; robot at balihoo dot com)
 BanBots/1.2 (spider@banbots.com)
 BarraHomeCrawler (albertof@barrahome.org)
@@ -143,10 +147,10 @@ BeamMachine/0.5 (dead link remover of www.beammachine.net)
 beautybot/1.0 (+http://www.uchoose.de/crawler/beautybot/)
 BebopBot/2.5.1 ( crawler http://www.apassion4jazz.net/bebopbot.html )
 BeebwareDirectory/v0.01
-BigBrother/1.6e
 Big Brother (http://pauillac.inria.fr/~fpottier/)
-BigCliqueBOT/1.03-dev (bigclicbot; http://www.bigclique.com; bot@bigclique.com)
 Big Fish v1.0
+BigBrother/1.6e
+BigCliqueBOT/1.03-dev (bigclicbot; http://www.bigclique.com; bot@bigclique.com)
 BIGLOTRON (Beta 2;GNU/Linux)
 Bigsearch.ca/Nutch-x.x-dev (Bigsearch.ca Internet Spider; http://www.bigsearch.ca/; info@enhancededge.com)
 Bilbo/2.3b-UNIX
@@ -159,6 +163,7 @@ BingPreview/1.0b
 Bitacle bot/1.1
 Bitacle Robot (V:1.0;) (http://www.bitacle.com)
 bitlybot/3.0 (+http://bit.ly/)
+bl.uk_lddc_bot/3.3.0-SNAPSHOT-2014-10-07T09:33:31Z (+http://www.bl.uk/aboutus/legaldeposit/websites/websites/faqswebmaster/index.html)
 BlackWidow
 Blaiz-Bee/1.0 (+http://www.blaiz.net)
 Blaiz-Bee/2.00.8222 (BE Internet Search Engine http://www.rawgrunt.com)
@@ -167,9 +172,9 @@ BlitzBOT@tricus.com (Mozilla compatible)
 BlitzBOT@tricus.net
 BlitzBOT@tricus.net (Mozilla compatible)
 BlogBot/1.x
-Bloglines/3.1 (http://www.bloglines.com)
-Bloglines-Images/0.1 (http://www.bloglines.com)
 Bloglines Title Fetch/1.0 (http://www.bloglines.com)
+Bloglines-Images/0.1 (http://www.bloglines.com)
+Bloglines/3.1 (http://www.bloglines.com)
 BlogMap (http://www.feedmap.net)
 Blogpulse (info@blogpulse.com)
 BlogPulseLive (support@blogpulse.com)
@@ -182,7 +187,6 @@ BlogzIce/1.0 (+http://icerocket.com; rhodes@icerocket.com)
 BlogzIce/1.0 +http://www.icerocket.com/
 BloobyBot
 Bloodhound/Nutch-0.9 (Testing Crawler for Research - obeys robots.txt and robots meta tags ; http://balihoo.com/index.aspx; robot at balihoo dot com)
-bl.uk_lddc_bot/3.3.0-SNAPSHOT-2014-10-07T09:33:31Z (+http://www.bl.uk/aboutus/legaldeposit/websites/websites/faqswebmaster/index.html)
 BMLAUNCHER
 Bobby/4.0.x RPT-HTTPClient/0.3-3E
 boitho.com-dc/0.79 ( http://www.boitho.com/dcbot.html )
@@ -196,10 +200,10 @@ boitho.com-robot/1.1
 boitho.com-robot/1.x
 boitho.com-robot/1.x (http://www.boitho.com/bot.html)
 Bookdog/x.x
-BookmarkBase(2/;http://bookmarkbase.com)
 Bookmark Buddy bookmark checker (http://www.bookmarkbuddy.net/)
 Bookmark Renewal Check Agent [http://www.bookmark.ne.jp/]
 Bookmark Renewal Check Agent [http://www.bookmark.ne.jp/] (Version 2.0beta)
+BookmarkBase(2/;http://bookmarkbase.com)
 bot-pge.chlooe.com/1.0.0 (+http://www.chlooe.com/)
 BoxSeaBot/0.5 (http://boxsea.com/crawler)
 BPImageWalker/2.0 (www.bdbrandprotect.com)
@@ -218,7 +222,6 @@ BuildCMS crawler (http://www.buildcms.com/crawler)
 Bulkfeeds/r1752 (http://bulkfeeds.net/)
 BullsEye
 bumblebee@relevare.com
-<b> UnChaosBot From Chaos To Order UnChaos Hybrid Web Search Engine at www.unchaos.com </b> (info@unchaos.com)
 BunnySlippers
 BurstFindCrawler/1.1 (crawler.burstfind.com; http://crawler.burstfind.com; crawler@burstfind.com)
 Buscaplus Robi/1.0 (http://www.buscaplus.com/robi/)
@@ -239,10 +242,10 @@ CazoodleBot/CazoodleBot-0.1 (CazoodleBot Crawler; http://www.cazoodle.com/cazood
 CCBot/1.0 (+http://www.commoncrawl.org/bot.html)
 CCBot/2.0 (http://commoncrawl.org/faq/)
 ccubee/x.x
-CentiverseBot
-CentiverseBot/3.0 (http://www.centiverse-project.net)
-CentiverseBot - investigator
 CE-Preload
+CentiverseBot
+CentiverseBot - investigator
+CentiverseBot/3.0 (http://www.centiverse-project.net)
 Ceramic Tile Installation Guide (http://www.floorstransformed.com)
 cfetch/1.0
 cg-eye interactive
@@ -258,8 +261,8 @@ ChristCRAWLER 2.0
 cIeNcIaFiCcIoN.nEt Spider (http://www.cienciaficcion.net)
 CipinetBot (http://www.cipinet.com/bot.html)
 Cityreview Robot (+http://www.cityreview.org/crawler/)
-CJB.NET Proxy
 CJ Spider/
+CJB.NET Proxy
 ClariaBot/1.0
 Claymont.com
 CloakDetect/0.9 (+http://fulltext.seznam.cz/)
@@ -289,12 +292,12 @@ Comrite/0.7.1 (Nutch; http://lucene.apache.org/nutch/bot.html; nutch-agent@lucen
 Confuzzledbot/X.X (+http://www.confuzzled.lu/bot/)
 ContactBot/0.2
 ContentSmartz
+Convera Internet Spider V6.x
 ConveraCrawler/0.2
+ConveraCrawler/0.9 (+http://www.authoritativeweb.com/crawl)
 ConveraCrawler/0.9d ( http://www.authoritativeweb.com/crawl)
 ConveraCrawler/0.9d (+http://www.authoritativeweb.com/crawl)
 ConveraCrawler/0.9e (+http://ews.converasearch.com/crawl.htm)
-ConveraCrawler/0.9 (+http://www.authoritativeweb.com/crawl)
-Convera Internet Spider V6.x
 ConveraMultiMediaCrawler/0.1 (+http://www.authoritativeweb.com/crawl)
 CoolBot
 CopperEgg/RevealUptime/FremontCA(linode)
@@ -308,13 +311,13 @@ Covario-IDS/1.0 (Covario; http://www.covario.com/ids; support at covario dot com
 Cowbot-0.1 (NHN Corp. / +82-2-3011-1954 / nhnbot@naver.com)
 Cowbot-0.1.x (NHN Corp. / +82-2-3011-1954 / nhnbot@naver.com)
 CrawlConvera0.1 (CrawlConvera@yahoo.com)
-crawler4j (http://code.google.com/p/crawler4j/)
-Crawler admin@crawler.de
-crawler@alexa.com
-CrawlerBoy Pinpoint.com
 Crawler (cometsearch@cometsystems.com)
+Crawler admin@crawler.de
 Crawler powered by contentDetection (www.mindup.de)
 Crawler V 0.2.x admin@crawler.de
+crawler@alexa.com
+crawler4j (http://code.google.com/p/crawler4j/)
+CrawlerBoy Pinpoint.com
 Crawllybot/0.1 (Crawllybot; +http://www.crawlly.com; crawler@crawlly.com)
 CreativeCommons/0.06-dev (Nutch; http://www.nutch.org/docs/en/bot.html; nutch-agent@lists.sourceforge.net)
 CrocCrawler vx.3 [en] (http://www.croccrawler.com) (X11; I; Linux 2.0.44 i686)
@@ -329,8 +332,8 @@ curl/7.7.x (i386--freebsd4.3) libcurl 7.7.x (SSL 0.9.6) (ipv6 enabled)
 curl/7.8 (i686-pc-linux-gnu) libcurl 7.8 (OpenSSL 0.9.6)
 curl/7.9.x (win32) libcurl 7.9.x
 CurryGuide SiteScan 1.1
-Custom Spider www.bisnisseek.com /1.0
 Custo x.x (www.netwu.com)
+Custom Spider www.bisnisseek.com /1.0
 cuwhois/1.0 (+http://www.cuwhois.com/)
 CyberPatrol SiteCat Webbot (http://www.cyberpatrol.com/cyberpatrolcrawler.asp)
 CyberSpyder Link Test/2.1.12 (admin@mspennyworth.com)
@@ -347,8 +350,8 @@ DataFountains/DMOZ Downloader
 DataFountains/Dmoz Downloader (http://ivia.ucr.edu/useragents.shtml)
 DataFountains/DMOZ Feature Vector Corpus Creator (http://ivia.ucr.edu/useragents.shtml)
 datagnionbot (+http://www.datagnion.com/bot.html)
-DataparkSearch/4.35-02122005 ( http://www.dataparksearch.org/)
 DataparkSearch/4.35 ( http://www.dataparksearch.org/)
+DataparkSearch/4.35-02122005 ( http://www.dataparksearch.org/)
 DataparkSearch/4.36 ( http://www.dataparksearch.org/)
 DataparkSearch/4.37-23012006 ( http://www.dataparksearch.org/)
 DataparkSearch/4.47 (+http://dataparksearch.org/bot)
@@ -364,40 +367,39 @@ DBrowse 1.4d
 DC-Sakura/x.xx
 dCSbot/1.1
 DDD
+de.searchengine.comBot 1.2 (http://de.searchengine.com/spider)
 DeadLinkCheck/0.4.0 libwww-perl/5.xx
+Deep Link Calculator v1.0
 deepak-USC/ISI
 DeepIndex
-DeepIndexer.ca
 DeepIndex ( http://www.zetbot.com )
 DeepIndex (www.en.deepindex.com)
-Deep Link Calculator v1.0
-DeleGate/9.0.5-fix1
+DeepIndexer.ca
 del.icio.us-thumbnails/1.0 Mozilla/5.0 (compatible; Konqueror/3.4; FreeBSD) KHTML/3.4.2 (like Gecko)
+DeleGate/9.0.5-fix1
 Demo Bot DOT 16b
 Demo Bot Z 16b
 Denmex websearch (http://search.denmex.com)
 Der große BilderSauger 2.00u
-de.searchengine.comBot 1.2 (http://de.searchengine.com/spider)
 dev-spider2.searchpsider.com/1.3b
 DiaGem/1.1 (http://www.skyrocket.gr.jp/diagem.html)
 DialogSearch.com Bot 1.4;http://dialogsearch.com/webmasters
-DiamondBot
 Diamond/x.0
--DIE-KRAEHE- META-SEARCH-ENGINE/1.1 http://www.die-kraehe.de
+DiamondBot
 Digger/1.0 JDK/1.3.0rc3
 DigOut4U
 DIIbot/1.2
 disastrous/1.0.5 (running with Python 2.5.1; http://www.bortzmeyer.org/disastrous.html; archangel77@del.icio.us)
+DISCo Pump x.x
 disco/Nutch-0.9 (experimental crawler; www.discoveryengine.com; disco-crawl@discoveryengine.com)
 disco/Nutch-1.0-dev (experimental crawler; www.discoveryengine.com; disco-crawl@discoveryengine.com)
-DISCo Pump x.x
 DittoSpyder
 dlman
 dloader(NaverRobot)/1.0
 dlvr.it/1.0 (+http://dlvr.it/)
 dlw3robot/x.y (in TclX by http://hplyot.obspm.fr/~dl/)
-DNSRight.com WebBot Link Ckeck Tool. Report abuse to: dnsr@dnsright.com
 DNS-Tools Header-Analyzer
+DNSRight.com WebBot Link Ckeck Tool. Report abuse to: dnsr@dnsright.com
 DoCoMo/1.0/Nxxxi/c10
 DoCoMo/1.0/Nxxxi/c10/TB
 DoCoMo/1.0/P502i/c10 (Google CHTML Proxy/1.0)
@@ -409,14 +411,14 @@ dodgebot/experimental
 Domain Re-Animator Bot (http://domainreanimator.com) - support@domainreanimator.com
 DotBot/1.0.1 (http://www.dotnetdotcom.org/#info, crawler@dotnetdotcom.org)
 Download Demon/3.x.x.x
-DownloadDirect.1.0
 Download Druid 2.x
-Download.exe(1.1) (+http://www.sql-und-xml.de/freeware-tools/)
 Download Express 1.0
 Download Master
 Download Ninja 3.0
-Download-Tipp Linkcheck (http://download-tipp.de/)
 Download Wonder
+Download-Tipp Linkcheck (http://download-tipp.de/)
+Download.exe(1.1) (+http://www.sql-und-xml.de/freeware-tools/)
+DownloadDirect.1.0
 downnotifier.com monitoring
 DowntimeDetector/1.0 (+http://downforeveryoneorjustme.com)
 Drecombot/1.0 (http://career.drecom.jp/bot.html)
@@ -431,17 +433,19 @@ dtSearchSpider
 Dual Proxy
 dubaiindex (adressendeutschland.de)
 DuckDuckBot/1.0; (+http://duckduckgo.com/duckduckbot.html)
-Dumbot(version 0.1 beta)
 Dumbot(version 0.1 beta - dumbfind.com)
 Dumbot(version 0.1 beta - http://www.dumbfind.com/dumbot.html)
+Dumbot(version 0.1 beta)
 DwnldBot (+http://dwnld.me)
+e-sense 1.0 ea(www.vigiltech.com/esensedisclaim.html)
+e-SocietyRobot(http://www.yama.info.waseda.ac.jp/~yamana/es/)
 eApolloBot/2.0 (compatible; heritrix/2.0.0-SNAPSHOT-20071024.170148 +http://www.eapollo-opto.com)
-EARTHCOM.info/1.xbeta [www.earthcom.info]
 EARTHCOM.info/1.x [www.earthcom.info]
+EARTHCOM.info/1.xbeta [www.earthcom.info]
+Easy-Thumb (https://www.easy-thumb.net/)
 EasyBib AutoCite (http://content.easybib.com/autocite/)
 EasyDL/3.xx
 EasyDL/3.xx http://keywen.com/Encyclopedia/Bot
-Easy-Thumb (https://www.easy-thumb.net/)
 EBrowse 1.4b
 EchO!/2.0
 Educate Search VxB
@@ -460,18 +464,16 @@ EMPAS_ROBOT
 EnaBot/1.x (http://www.enaball.com/crawler.html)
 Enfish Tracker
 Enterprise_Search/1.0
-Enterprise_Search/1.00.xxx;MSSQL (http://www.innerprise.net/es-spider.asp)
 Enterprise_Search/1.0.xxx
-envolk/1.7 (+http://www.envolk.com/envolkspiderinfo.php)
+Enterprise_Search/1.00.xxx;MSSQL (http://www.innerprise.net/es-spider.asp)
 envolk[ITS]spider/1.6 ( http://www.envolk.com/envolkspider.html)
 envolk[ITS]spider/1.6 (+http://www.envolk.com/envolkspider.html)
 envolk[ITS]spider/1.6(+http://www.envolk.com/envolkspider.html)
+envolk/1.7 (+http://www.envolk.com/envolkspiderinfo.php)
 EroCrawler
-eseek-larbin_2.6.2 (crawler@exactseek.com)
-e-sense 1.0 ea(www.vigiltech.com/esensedisclaim.html)
-ESISmartSpider
 ES.NET_Crawler/2.0 (http://search.innerprise.net/)
-e-SocietyRobot(http://www.yama.info.waseda.ac.jp/~yamana/es/)
+eseek-larbin_2.6.2 (crawler@exactseek.com)
+ESISmartSpider
 EsperanzaBot(+http://www.esperanza.to/bot/)
 eStyleSearch 4 (compatible; MSIE 6.0; Windows NT 5.0)
 ESurf15a 15
@@ -484,15 +486,15 @@ eventax/1.3 (eventax; http://www.eventax.de/; info@eventax.de)
 Everest-Vulcan Inc./0.1 (R&D project; host=e-1-24; http://everest.vulcan.com/crawlerhelp)
 Everest-Vulcan Inc./0.1 (R&D project; http://everest.vulcan.com/crawlerhelp)
 Evliya Celebi v0.151 - http://ilker.ulak.net.tr
-Exabot/2.0
-Exabot/3.0
 Exabot-Images/1.0
 Exabot-Test/1.0
-exactseek.com
+Exabot/2.0
+Exabot/3.0
 ExactSeek Crawler/0.1
-ExactSeekCrawler/1.0
 exactseek-crawler-2.63 (crawler@exactseek.com)
 exactseek-pagereaper-2.63 (crawler@exactseek.com)
+exactseek.com
+ExactSeekCrawler/1.0
 Exalead NG/MimeLive Client (convert/http/0.120)
 Excalibur Internet Spider V6.5.4
 Execrawl/1.0 (Execrawl; http://www.execrawl.com/; bot@execrawl.com)
@@ -505,20 +507,14 @@ ExtractorPro
 Extreme Picture Finder
 EyeCatcher (Download-tipp.de)/1.0
 facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)
-Factbot 1.09 (see http://www.factbites.com/webmasters.php)
 factbot : http://www.factbites.com/robots
+Factbot 1.09 (see http://www.factbites.com/webmasters.php)
 FaEdit/2.0.x
 FairAd Client
 FANGCrawl/0.01
 FARK.com link verifier
-fastbot crawler beta 2.0 (+http://www.fastbot.de)
-fastbot crawler beta 4.0 (+http://www.fastbot.de)
-FastBug http://www.ay-up.com
-FastCrawler 3.0.1 (crawler@1klik.dk)
-FastCrawler 3.0.X (crawler@1klik.dk) - http://www.1klik.dk
 Fast Crawler Gold Edition
 FAST Enteprise Crawler/6 (www dot fastsearch dot com)
-FAST Enterprise Crawler/6.4 (helpdesk at fast.no)
 FAST Enterprise Crawler 6 (Experimental)
 FAST Enterprise Crawler 6 / Scirus scirus-crawler@fast.no; http://www.scirus.com/srsapp/contactus/
 FAST Enterprise Crawler 6 used by Cobra Development (admin@fastsearch.com)
@@ -530,10 +526,10 @@ FAST Enterprise Crawler 6 used by Sensis.com.au Web Crawler (search_comments\at\
 FAST Enterprise Crawler 6 used by Singapore Press Holdings (crawler@sphsearch.sg)
 FAST Enterprise Crawler 6 used by WWU (wardi@uni-muenster.de)
 FAST Enterprise Crawler/6 (www.fastsearch.com)
+FAST Enterprise Crawler/6.4 (helpdesk at fast.no)
 FAST FirstPage retriever (compatible; MSIE 5.5; Mozilla/4.0)
 FAST MetaWeb Crawler (helpdesk at fastsearch dot com)
 Fast PartnerSite Crawler
-FastSearch Web Crawler for Verizon SuperPages (kevin.watters@fastsearch.com)
 FAST-WebCrawler/2.2.10 (Multimedia Search) (crawler@fast.no; http://www.fast.no/faq/faqfastwebsearch/faqfastwebcrawler.html)
 FAST-WebCrawler/2.2.6 (crawler@fast.no; http://www.fast.no/faq/faqfastwebsearch/faqfastwebcrawler.html)
 FAST-WebCrawler/2.2.7 (crawler@fast.no; http://www.fast.no/faq/faqfastwebsearch/faqfastwebcrawler.html)http://www.fast.no
@@ -553,6 +549,12 @@ FAST-WebCrawler/3.8 (atw-crawler at fast dot no; http://fast.no/support/crawler.
 FAST-WebCrawler/3.8/Fresh (atw-crawler at fast dot no; http://fast.no/support/crawler.asp)
 FAST-WebCrawler/3.x Multimedia
 FAST-WebCrawler/3.x Multimedia (mm dash crawler at fast dot no)
+fastbot crawler beta 2.0 (+http://www.fastbot.de)
+fastbot crawler beta 4.0 (+http://www.fastbot.de)
+FastBug http://www.ay-up.com
+FastCrawler 3.0.1 (crawler@1klik.dk)
+FastCrawler 3.0.X (crawler@1klik.dk) - http://www.1klik.dk
+FastSearch Web Crawler for Verizon SuperPages (kevin.watters@fastsearch.com)
 Favcollector/2.0 (info@favcollector.com http://www.favcollector.com/)
 FavIconizer
 favo.eu crawler/0.6 (http://www.favo.eu)
@@ -562,24 +564,24 @@ Favorites Sweeper v.2.03
 Faxobot/1.0
 FDM 1.x
 FDM 2.x
+Feed Seeker Bot (RSS Feed Seeker http://www.MyNewFavoriteThing.com/fsb.php)
+Feed::Find/0.0x
 Feed24.com
 Feedbin
 FeedBucket/1.0 (+http://www.feedbucket.com)
 FeedCatBot/3.0 (+http://www.feedcat.net/)
 FeedChecker/0.01
-Feedfetcher-Google; (+http://www.google.com/feedfetcher.html)
 Feedfetcher-Google-iGoogleGadgets; (+http://www.google.com/feedfetcher.html)
+Feedfetcher-Google; (+http://www.google.com/feedfetcher.html)
 Feedfetcher-Nuesbyte; (+http://www.nuesbyte.com)
-Feed::Find/0.0x
 FeedForAll rss2html.php v2
 FeedHub FeedDiscovery/1.0 (http://www.feedhub.com)
 FeedHub MetaDataFetcher/1.0 (http://www.feedhub.com)
 Feedjit Favicon Crawler 1.0
 FeedlyBot/1.0 (http://feedly.com)
-Feed Seeker Bot (RSS Feed Seeker http://www.MyNewFavoriteThing.com/fsb.php)
 Felix - Mixcat Crawler (+http://mixcat.com)
-Fetch/2.0a (CMS Detection/Web/SEO analysis tool, see http://guess.scritch.org)
 fetch libfetch/2.0
+Fetch/2.0a (CMS Detection/Web/SEO analysis tool, see http://guess.scritch.org)
 FFC Trap Door Spider
 Filangy/0.01-beta (Filangy; http://www.nutch.org/docs/en/bot.html; filangy-agent@filangy.com)
 Filangy/1.0x (Filangy; http://www.filangy.com/filangyinfo.jsp?inc=robots.jsp; filangy-agent@filangy.com)
@@ -589,13 +591,21 @@ FileHound x.x
 Filtrbox/1.0
 FindAnISP.com_ISP_Finder_v99a
 Findexa Crawler (http://www.findexa.no/gulesider/article26548.ece)
-findlinks/1.06 (+http://wortschatz.uni-leipzig.de/findlinks/)
+findlinks/1.0 (+http://wortschatz.uni-leipzig.de/findlinks/)
 findlinks/1.0.8 (+http://wortschatz.uni-leipzig.de/findlinks/)
 findlinks/1.0.9 (+http://wortschatz.uni-leipzig.de/findlinks/)
-findlinks/1.0 (+http://wortschatz.uni-leipzig.de/findlinks/)
+findlinks/1.06 (+http://wortschatz.uni-leipzig.de/findlinks/)
+findlinks/1.1 (+http://wortschatz.uni-leipzig.de/findlinks/)
+findlinks/1.1-a3 (+http://wortschatz.uni-leipzig.de/findlinks/)
+findlinks/1.1-a4 (+http://wortschatz.uni-leipzig.de/findlinks/)
+findlinks/1.1-a5 (+http://wortschatz.uni-leipzig.de/findlinks/)
+findlinks/1.1-a7 (+http://wortschatz.uni-leipzig.de/findlinks/)
+findlinks/1.1-a8 ( http://wortschatz.uni-leipzig.de/findlinks/)
+findlinks/1.1-a8 (+http://wortschatz.uni-leipzig.de/findlinks/)
+findlinks/1.1-a9 (+http://wortschatz.uni-leipzig.de/findlinks/)
+findlinks/1.1.1 (+http://wortschatz.uni-leipzig.de/findlinks/)
 findlinks/1.1.1-a1 (+http://wortschatz.uni-leipzig.de/findlinks/)
 findlinks/1.1.1-a5 (+http://wortschatz.uni-leipzig.de/findlinks/)
-findlinks/1.1.1 (+http://wortschatz.uni-leipzig.de/findlinks/)
 findlinks/1.1.2-a5 (+http://wortschatz.uni-leipzig.de/findlinks/)
 findlinks/1.1.3-beta1 (+http://wortschatz.uni-leipzig.de/findlinks/)
 findlinks/1.1.3-beta2 (+http://wortschatz.uni-leipzig.de/findlinks/)
@@ -608,29 +618,21 @@ findlinks/1.1.5-beta7 (+http://wortschatz.uni-leipzig.de/findlinks/)
 findlinks/1.1.6-beta1 (+http://wortschatz.uni-leipzig.de/findlinks/)
 findlinks/1.1.6-beta4 (+http://wortschatz.uni-leipzig.de/findlinks/)
 findlinks/1.1.6-beta6 (+http://wortschatz.uni-leipzig.de/findlinks/)
-findlinks/1.1-a3 (+http://wortschatz.uni-leipzig.de/findlinks/)
-findlinks/1.1-a4 (+http://wortschatz.uni-leipzig.de/findlinks/)
-findlinks/1.1-a5 (+http://wortschatz.uni-leipzig.de/findlinks/)
-findlinks/1.1-a7 (+http://wortschatz.uni-leipzig.de/findlinks/)
-findlinks/1.1-a8 ( http://wortschatz.uni-leipzig.de/findlinks/)
-findlinks/1.1-a8 (+http://wortschatz.uni-leipzig.de/findlinks/)
-findlinks/1.1-a9 (+http://wortschatz.uni-leipzig.de/findlinks/)
-findlinks/1.1 (+http://wortschatz.uni-leipzig.de/findlinks/)
 findlinks/2.0.1 (+http://wortschatz.uni-leipzig.de/findlinks/)
 findlinks/x.xxx (+http://wortschatz.uni-leipzig.de/findlinks/)
 FineBot
 Finjan-prefetch
 Firefly/1.0
 Firefly/1.0 (compatible; Mozilla 4.0; MSIE 5.5)
-Firefox_1.0.6 (kasparek@naparek.cz)
 Firefox (kastaneta03@hotmail.com)
+Firefox_1.0.6 (kasparek@naparek.cz)
 FirstGov.gov Search - POC:firstgov.webmasters@gsa.gov
 firstsbot
 Flapbot/0.7.2 (Flaptor Crawler; http://www.flaptor.com; crawler at flaptor period com)
 FlashGet
 FLATARTS_FAVICO
-Flexum/2.0
 Flexum spider
+Flexum/2.0
 FlickBot 2.0 RPT-HTTPClient/0.3-3
 flunky
 flyindex.net 1.0/http://www.flyindex.net
@@ -660,11 +662,11 @@ g2Crawler nobody@airmail.net
 g2reader-bot/1.0 (+http://www.g2reader.com/)
 GAChecker (+http://www.gachecker.com)
 Gagglebot
+GAIS Robot/1.0B2
 Gaisbot/3.0 (indexer@gais.cs.ccu.edu.tw; http://gais.cs.ccu.edu.tw/robot.php)
 Gaisbot/3.0 (jerry_wu@openfind.com.tw; http://gais.cs.ccu.edu.tw/robot.php)
 Gaisbot/3.0+(robot05@gais.cs.ccu.edu.tw;+http://gais.cs.ccu.edu.tw/robot.php)
 Gaisbot/3.0+(robot06@gais.cs.ccu.edu.tw;+http://gais.cs.ccu.edu.tw/robot.php)
-GAIS Robot/1.0B2
 GalaxyBot/1.0 (http://www.galaxy.com/galaxybot.html)
 Gallent Search Spider v1.4 Robot 2 (http://robot.GallentSearch.com)
 gamekitbot/1.0 (+http://www.uchoose.de/crawler/gamekitbot/)
@@ -673,8 +675,8 @@ GammaSpider/1.0
 GarlikCrawler/1.2 (http://garlik.com/, crawler@garlik.com)
 gazz/x.x (gazz@nttrd.com)
 Genderanalyzer/1.0
-generic_crawler/01.0217/
 Generic Mobile Phone (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html)
+generic_crawler/01.0217/
 genieBot ((http://64.5.245.11/faq/faq.html))
 genieBot (http://64.5.245.11/faq/faq.html)
 geniebot wgao@genieknows.com
@@ -698,21 +700,23 @@ gigabaz/3.1x (baz@gigabaz.com; http://gigabaz.com/gigabaz/)
 GigablastOpenSource/1.0
 Gigabot/1.0
 Gigabot/2.0
-Gigabot/2.0att
 Gigabot/2.0 (gigablast.com)
-Gigabot/2.0/gigablast.com/spider.html
 Gigabot/2.0 (http://www.gigablast.com/spider.html)
 Gigabot/2.0; http://www.gigablast.com/spider.html
+Gigabot/2.0/gigablast.com/spider.html
+Gigabot/2.0att
 Gigabot/3.0 (http://www.gigablast.com/spider.html)
-GigabotSiteSearch/2.0 (sitesearch.gigablast.com)
 Gigabot/x.0
+GigabotSiteSearch/2.0 (sitesearch.gigablast.com)
 gipo-crawler/Nutch-1.10 (Global Internet Policy Observatory crawler)
 GNODSPIDER (www.gnod.net)
 Go-Ahead-Got-It/1.1
+Go!Zilla 3.x (www.gozilla.com)
+Go!Zilla/4.x.x.xx
 Goblin/0.9 (http://www.goguides.org/)
 Goblin/0.9.x (http://www.goguides.org/goblin-info.html)
-GOFORITBOT ( http://www.goforit.com/about/ )
 GoForIt.com
+GOFORITBOT ( http://www.goforit.com/about/ )
 GoGuides.Org Link Check
 GoldenFeed Spider 1.0 (http://www.goldenfeed.com)
 Goldfire Server
@@ -720,28 +724,26 @@ gonzo1[P] +http://www.suchen.de/popups/faq.jsp
 gonzo2[P] +http://www.suchen.de/faq.html
 gooblog/2.0 (http://help.goo.ne.jp/contact/)
 Goofer/0.2
-Googlebot/2.1 ( http://www.googlebot.com/bot.html)
-Googlebot/2.1 (+http://www.googlebot.com/bot.html)
-Googlebot/2.1 ( http://www.google.com/bot.html)
-Googlebot/2.1 (+http://www.google.com/bot.html)
-Googlebot/2.X (+http://www.googlebot.com/bot.html)
+Google Favicon
+Google Page Speed Insights
 Googlebot (gocrawl v0.4)
 Googlebot-Image/1.0
 Googlebot-Image/1.0 ( http://www.googlebot.com/bot.html)
+Googlebot/2.1 ( http://www.google.com/bot.html)
+Googlebot/2.1 ( http://www.googlebot.com/bot.html)
+Googlebot/2.1 (+http://www.google.com/bot.html)
+Googlebot/2.1 (+http://www.googlebot.com/bot.html)
+Googlebot/2.X (+http://www.googlebot.com/bot.html)
 Googlebot/Test ( http://www.googlebot.com/bot.html)
-Google Favicon
-Google Page Speed Insights
 Gordon's Spider/Nutch-0.9 (http://www.sharethis.com; gordon@sharethis.com)
 gosquared-thumbnailer/1.0
-Go!Zilla 3.x (www.gozilla.com)
-Go!Zilla/4.x.x.xx
 GrapeFX/0.3 libwww/5.4.0
 great-plains-web-spider/flatlandbot (Flatland Industries Web Spider; http://www.flatlandindustries.com/flatlandbot.php; jason@flatlandindustries.com)
 gridwell (http://search.gridwell.com)
 GrigorBot 0.8 (http://www.grigor.biz/bot.html)
 Gromit/1.0
-grub-client
 grub crawler(http://www.grub.org)
+grub-client
 gsa-crawler (Enterprise; GID-01422; jplastiras@google.com)
 gsa-crawler (Enterprise; GID-01742;gsatesting@rediffmail.com)
 gsa-crawler (Enterprise; GIX-02057; dm@enhesa.com)
@@ -773,8 +775,8 @@ Helix/1.x ( http://www.sitesearch.ca/helix/)
 HenriLeRobotMirago (http://www.miragorobot.com/scripts/frinfo.asp)
 HenrytheMiragoRobot
 HenryTheMiragoRobot (http://www.miragorobot.com/scripts/mrinfo.asp)
-HiDownload
 Hi! I'm CsCrawler my homepage: http://www.kde.cs.uni-kassel.de/lehre/ss2005/googlespam/crawler.html RPT-HTTPClient/0.3-3
+HiDownload
 Hippias/0.9 Beta
 HitList
 Hitwise Spider v1.0 http://www.hitwise.com
@@ -788,8 +790,8 @@ holmes/3.12.4 (http://morfeo.centrum.cz/bot)
 holmes/3.9 (onet.pl)
 holmes/3.9 (someurl.co.cc)
 holmes/3.xx (OnetSzukaj/5.0; +http://szukaj.onet.pl)
-HolmesBot (http://holmes.ge)
 holmes/x.x
+HolmesBot (http://holmes.ge)
 HomePageSearch(hpsearch.uni-trier.de)
 Homerbot: www.homerweb.com
 Honda-Search/0.7.2 (Nutch; http://lucene.apache.org/nutch/bot.html; search@honda-search.com)
@@ -804,38 +806,37 @@ htdig/3.1.6 (http://computerorgs.com)
 htdig/3.1.6 (mathieu.peltier@inrialpes.fr)
 htdig/3.1.6 (unconfigured@htdig.searchengine.maintainer)
 htdig/3.1.x (root@localhost)
+Html Link Validator (www.lithopssoft.com)
 HTML2JPG Blackbox, http://www.html2jpg.com
 HTML2JPG Enterprise
-Html Link Validator (www.lithopssoft.com)
 HTMLParser/1.x
+HTTP Retriever
+HTTP-Header-Abfrage/1.0 (http://www.internalscripts.de/werkzeuge/http-header-abfrage.php)
+HTTP::Lite/2.x.x
 http://Anonymouse.org/ (Unix)
 http://arachnode.net 1.4
 http://Ask.24x.Info/ (http://narres.it/)
-HTTPEyes
-HTTP-Header-Abfrage/1.0 (http://www.internalscripts.de/werkzeuge/http-header-abfrage.php)
 http://hilfe.acont.de/bot.html ACONTBOT
-HTTP::Lite/2.x.x
 http://OzySoftware.com/Index.html
-HTTPResume v. 1.x
-HTTP Retriever
 http://www.almaden.ibm.com/cs/crawler
+http://www.almaden.ibm.com/cs/crawler   [wf84]
 http://www.almaden.ibm.com/cs/crawler [rc1.wf.ibm.com]
 http://www.almaden.ibm.com/cs/crawler [wf216]
-http://www.almaden.ibm.com/cs/crawler   [wf84]
 http://www.ip2location.com
 http://www.istarthere.com_spider@istarthere.com
 http://www.mabontland.com
 http://www.monogol.de
 http://www.sygol.com
-<http://www.sygol.com/> http://www.sygol.com
 http://www.timelyweb.com/
 http://www.trendtech.dk/spider.asp)
+HTTPEyes
+HTTPResume v. 1.x
 HubSpot Marketing Grader
 HyperEstraier/1.x.xx
 HyperZbozi.cz Feeder/3.1
 i1searchbot/2.0 (i1search web crawler; http://www.i1search.com; crawler@i1search.com)
 ia_archiver
-IAArchiver-1.0
+ia_archiver-web.archive.org
 ia_archiver/1.6
 ia_archiver/8.0 (Windows 2.4; en-US;)
 ia_archiver/8.1 (Windows 2000 1.9; en-US;)
@@ -845,19 +846,19 @@ ia_archiver/8.8 (Windows XP 7.2; en-US;)
 ia_archiver/8.9 (Linux 1.0; en-US;)
 ia_archiver/8.9 (Windows 3.9; en-US;)
 ia_archiver/8.9 (Windows NT 3.1; en-US;)
-ia_archiver-web.archive.org
+IAArchiver-1.0
 iaskspider
 iaskspider/2.0(+http://iask.com/help/help_index.html)
 iaskspider2 (iask@staff.sina.com.cn)
-ICC-Crawler/2.0 (Mozilla-compatible; ; http://www.nict.go.jp/en/univ-com/plan/crawl.html)
 ICC-Crawler(Mozilla-compatible; http://kc.nict.go.jp/icc/crawl.html; icc-crawl(at)ml(dot)nict(dot)go(dot)jp)
 ICC-Crawler(Mozilla-compatible;http://kc.nict.go.jp/icc/crawl.html;icc-crawl-contact(at)ml(dot)nict(dot)go(dot)jp)
+ICC-Crawler/2.0 (Mozilla-compatible; ; http://www.nict.go.jp/en/univ-com/plan/crawl.html)
+ICCrawler - ICjobs (http://www.icjobs.de/bot.htm)
 iCCrawler (http://www.iccenter.net)
 iCCrawler (http://www.iccenter.net/bot.htm)
-ICCrawler - ICjobs (http://www.icjobs.de/bot.htm)
 ichiro/2.0 (http://help.goo.ne.jp/door/crawler.html)
-ichiro/2.0+(http://help.goo.ne.jp/door/crawler.html)
 ichiro/2.0 (ichiro@nttr.co.jp)
+ichiro/2.0+(http://help.goo.ne.jp/door/crawler.html)
 ichiro/3.0 (http://help.goo.ne.jp/door/crawler.html)
 ichiro/3.0 (http://search.goo.ne.jp/option/use/sub4/sub4-1/)
 ichiro/4.0 (http://help.goo.ne.jp/door/crawler.html)
@@ -877,26 +878,27 @@ igdeSpyder (compatible; igde.ru; +http://igde.ru/doc/tech.html)
 iGetter/1.x (Macintosh;G;PPC)
 iGetter/2 (Macintosh; U; PPC Mac OS X; en)
 IIITBOT/1.1 (Indian Language Web Search Engine; http://webkhoj.iiit.net; pvvpr at iiit dot ac dot in)
-ilial/Nutch-0.9-dev
 ilial/Nutch-0.9 (Ilial, Inc. is a Los Angeles based Internet startup company. For more information please visit http://www.ilial.com/crawler; http://www.ilial.com/crawler; crawl@ilial.com)
+ilial/Nutch-0.9-dev
 IlseBot/1.x
-IlTrovatore/1.2 (IlTrovatore; http://www.iltrovatore.it/bot.html; bot@iltrovatore.it)
+IlTrovatore-Setaccio ( http://www.iltrovatore.it)
 Iltrovatore-Setaccio/0.3-dev (Indexing; http://www.iltrovatore.it/bot.html; info@iltrovatore.it)
-iltrovatore-setaccio/1.2-dev (spidering; http://www.iltrovatore.it/aiuto/.....)
 IlTrovatore-Setaccio/1.2 ( http://www.iltrovatore.it/aiuto/faq.html)
 Iltrovatore-Setaccio/1.2 (It-bot; http://www.iltrovatore.it/bot.html; info@iltrovatore.it)
-IlTrovatore-Setaccio ( http://www.iltrovatore.it)
+iltrovatore-setaccio/1.2-dev (spidering; http://www.iltrovatore.it/aiuto/.....)
+IlTrovatore/1.2 (IlTrovatore; http://www.iltrovatore.it/bot.html; bot@iltrovatore.it)
 ImageEngine/1.0
 ImageWalker/2.0 (www.bdbrandprotect.com)
 ImplisenseBot 1.1
-IncyWincy/2.1(loopimprovements.com/robot.html)
 IncyWincy data gatherer(webmaster@loopimprovements.com
+IncyWincy page crawler(webmaster@loopimprovements.com
 IncyWincy(http://www.look.com)
 IncyWincy(http://www.loopimprovements.com/robot.html)
-IncyWincy page crawler(webmaster@loopimprovements.com
+IncyWincy/2.1(loopimprovements.com/robot.html)
 IndexTheWeb.com Crawler7
 Industry Program 1.0.x
 Inet library
+info@pubblisito.com- (http://www.pubblisito.com) il Sud dei Motori di Ricerca
 Infoaxe./Nutch-0.9
 infoConveraCrawler/0.8 ( http://www.authoritativeweb.com/crawl)
 InfoFly/1.0 (http://www.versions-project.org/)
@@ -905,7 +907,6 @@ INFOMINE/8.0 Adders
 INFOMINE/8.0 RemoteServices
 INFOMINE/8.0 VLCrawler (http://infomine.ucr.edu/useragents)
 InfoNaviRobot(F107)
-info@pubblisito.com- (http://www.pubblisito.com) il Sud dei Motori di Ricerca
 InfoSeek Sidewinder/0.9
 InfoSeek Sidewinder/1.0A
 InfoSeek Sidewinder/1.1A
@@ -923,9 +924,9 @@ integrity/1.6
 Intelix/0.x (cs; http://www.microton.cz/intelix/; microton@@microton.cz)
 Interarchy/x.x.x (InterarchyCrawler)
 Interdose AntiSpamBot/2.0 (+http://www.piep.net)
+Internet Ninja x.0
 InternetArchive/0.8-dev(Nutch;http://lucene.apache.org/nutch/bot.html;nutch-agent@lucene.apache
 InternetLinkAgent/3.1
-Internet Ninja x.0
 InternetSeer.com
 internetVista monitor (Mozilla compatible)
 IOI/2.0 (ISC Open Index crawler; http://index.isc.org/; bot@index.isc.org)
@@ -936,23 +937,24 @@ ipv6-test.com validator
 iqdb/0.1 (+http://iqdb.org/)
 Iria/1.xxa
 IRLbot/1.0 ( http://irl.cs.tamu.edu/crawler)
-IRLbot/2.0 (compatible; MSIE 6.0; http://irl.cs.tamu.edu/crawler)
 IRLbot/2.0 ( http://irl.cs.tamu.edu/crawler)
 IRLbot/2.0 (+http://irl.cs.tamu.edu/crawler)
-IRLbot/3.0 (compatible; MSIE 6.0; http://irl.cs.tamu.edu/crawler/)
+IRLbot/2.0 (compatible; MSIE 6.0; http://irl.cs.tamu.edu/crawler)
 IRLbot/3.0 (compatible; MSIE 6.0; http://irl.cs.tamu.edu/crawler)
+IRLbot/3.0 (compatible; MSIE 6.0; http://irl.cs.tamu.edu/crawler/)
 Irokez.cz monitoring v1.2 - (http://www.irokez.cz, Irokez.cz, crawl)
 Irvine/1.x.x
-ISC Systems iRc Search 2.1
 Is is up? (+http://isitup.org)
+ISC Systems iRc Search 2.1
 iskanie (+http://www.iskanie.com)
 IssueCrawler
 isurf (tszhu@canada.com)
 it2media-domain-crawler/2.0
 IUPUI Research Bot v 1.9a
-iVia/4.0 CanonizeUrl (http://infomine.ucr.edu/iVia/useragents.shtml
 iVia Page Fetcher (http://ivia.ucr.edu/useragents.shtml)
+iVia/4.0 CanonizeUrl (http://infomine.ucr.edu/iVia/useragents.shtml
 IWAgent/ 1.0 - www.brandprotect.com
+J-PHONE/3.0/J-SH07
 Jabot/6.x (http://odin.ingrid.org/)
 Jabot/7.x.x (http://odin.ingrid.org/)
 Jack
@@ -967,9 +969,9 @@ JetCar
 Jigsaw/2.2.x W3C_CSS_Validator_JFouffa/2.0
 JobSpider_BA/1.1
 JordoMedia/1.0 RSS File Reader (http://www.jordomedia.com)
+Jorgee
 Journster [alpha] (http://journster.com/)
 Journster.com RSS/Atom aggregator 0.5 (http://www.journster.com/bot.phtml)
-J-PHONE/3.0/J-SH07
 JRTS Check Favorites Utility
 JRTwine Software Check Favorites Utility
 Jyxobot/1
@@ -988,14 +990,14 @@ Kenjin Spider
 Kevin http://dznet.com/kevin/
 Kevin http://websitealert.net/kevin/
 KFSW-Bot (Version: 1.01 powered by KFSW www.kfsw.de)
-kinjabot (http://www.kinja.com)
 kinja-imagebot (http://www.kinja.com/)
+kinjabot (http://www.kinja.com)
 KIT-Fireball/2.0
 KIT-Fireball/2.0 (compatible; Mozilla 4.0; MSIE 5.5)
 KnowItAll(knowitall@cs.washington.edu)
 Knowledge.com/0.x
-Kontiki Client x.xx
 KO_Yappo_Robot/1.0.4(http://yappo.com/info/robot.html)
+Kontiki Client x.xx
 Krugle/Krugle,Nutch/0.8+ (Krugle web crawler; http://www.krugle.com/crawler/info.html; webcrawler@krugle.com)
 KSbot/1.0 (KnowledgeStorm crawler; http://www.knowledgestorm.com/resources/content/crawler/index.html; crawleradmin@knowledgestorm.com)
 kuloko-bot/0.x
@@ -1003,55 +1005,56 @@ kulokobot www.kuloko.com kuloko@backweave.com
 kulturarw3/0.1
 KummHttp/1.1 (compatible; KummClient; Linux rulez)
 Kyoto-Crawler/n1.0 (Mozilla-compatible; kyoto-crawler-contact@nlp.ist.i.kyoto-u.ac.jp; http://nlp.ist.i.kyoto-u.ac.jp/?crawling)
+L.webis/0.87 (http://webalgo.iit.cnr.it/index.php?pg=lwebis)
 Labrador/0.2; http://ir.dcs.gla.ac.uk/labrador; craigm@dcs.gla.ac.uk
 Lachesis
 LapozzBot/1.4 ( http://robot.lapozz.com)
 LapozzBot/1.4 (+http://robot.lapozz.com)
 LapozzBot/1.5 (+http://robot.lapozz.hu)
+larbin (samualt9@bigfoot.com)
 larbin_2.1.1 larbin2.1.1@somewhere.com
 larbin_2.2.0 (crawl@compete.com)
 larbin_2.2.1_de_Viennot (Laurent.Viennot@inria.fr)
-larbin_2.2.2_guillaume (guillaume@liafa.jussieu.fr)
 larbin_2.2.2 (sugayama@lab7.kuis.kyoto-u.ac.jp)
+larbin_2.2.2_guillaume (guillaume@liafa.jussieu.fr)
 larbin_2.5.0 (larbin2.5.0@unspecified.mail)
+larbin_2.6_basileocaml (basile.starynkevitch@cea.fr)
 larbin_2.6.0 (larbin2.6.0@unspecified.mail)
 larbin_2.6.1 (larbin2.6.1@unspecified.mail)
 larbin_2.6.1 larbin2.6.1@unspecified.mail
-larbin_2.6.2 dthunen@princeton.edu
 larbin_2.6.2 (hamasaki@grad.nii.ac.jp)
-larbin_2.6.2 kalou@kalou.net
-larbin_2.6.2 (larbin2.6.2@unspecified.mail)
-larbin_2.6.2 larbin2.6.2@unspecified.mail
 larbin_2.6.2 (larbin@correa.org)
-larbin_2.6.2 larbin@correa.org
-larbin_2.6.2 listonATccDOTgatechDOTedu
+larbin_2.6.2 (larbin2.6.2@unspecified.mail)
 larbin_2.6.2 (listonATccDOTgatechDOTedu)
 larbin_2.6.2 (pierre@micro-fun.ch)
-larbin_2.6.2 pierre@micro-fun.ch
 larbin_2.6.2 (pimenas@systems.tuc.gr)
 larbin_2.6.2 (tom@lemurconsulting.com)
 larbin_2.6.2 (vitalbox1@hotmail.com)
+larbin_2.6.2 dthunen@princeton.edu
+larbin_2.6.2 kalou@kalou.net
+larbin_2.6.2 larbin@correa.org
+larbin_2.6.2 larbin2.6.2@unspecified.mail
+larbin_2.6.2 listonATccDOTgatechDOTedu
+larbin_2.6.2 pierre@micro-fun.ch
 larbin_2.6.2 vitalbox1@hotmail.com
+larbin_2.6.3 (larbin@behner.org)
+larbin_2.6.3 (larbin2.6.3@unspecified.mail)
+larbin_2.6.3 (ltaa_web_crawler@groupes.epfl.ch)
+larbin_2.6.3 (wgao@genieknows.com)
 larbin_2.6.3 capveg@cs.umd.edu
-larbin_2.6.3_for_(http://cosco.hiit.fi/search/) tsilande@hiit.fi
 larbin_2.6.3 ghary@sohu.com
 larbin_2.6.3 gqnmgsp@ruc.edu.cn
-larbin_2.6.3 (larbin2.6.3@unspecified.mail)
 larbin_2.6.3 larbin2.6.3@unspecified.mail
-larbin_2.6.3 (larbin@behner.org)
-larbin_2.6.3 (ltaa_web_crawler@groupes.epfl.ch)
 larbin_2.6.3 ltaa_web_crawler@groupes.epfl.ch
 larbin_2.6.3 tangyi858@163.com
-larbin_2.6.3 (wgao@genieknows.com)
 larbin_2.6.3 zumesun@hotmail.com
-larbin_2.6_basileocaml (basile.starynkevitch@cea.fr)
+larbin_2.6.3_for_(http://cosco.hiit.fi/search/) tsilande@hiit.fi
 larbin_devel (http://pauillac.inria.fr/~ailleret/prog/larbin/)
-LARBIN-EXPERIMENTAL (efp@gmx.net)
-LARBIN-EXPERIMENTAL efp@gmx.net
-larbin (samualt9@bigfoot.com)
 larbin_test (nobody@airmail.etn)
 larbin_test nobody@airmail.etn
 larbin_xy250 larbin2.6.3@unspecified.mail
+LARBIN-EXPERIMENTAL (efp@gmx.net)
+LARBIN-EXPERIMENTAL efp@gmx.net
 lawinfo-crawler/Nutch-0.9-dev (Crawler for lawinfo.com pages; http://www.lawinfo.com; webmaster@lawinfo.com)
 ldspider (http://code.google.com/p/ldspider/wiki/Robots)
 LECodeChecker/3.0 libgetdoc/1.0
@@ -1083,12 +1086,14 @@ LijitSpider/Nutch-0.9 (Reports crawler; http://www.lijit.com/; info(a)lijit(d)co
 Lincoln State Web Browser
 linguatools-bot/Nutch-1.6 (searching for translated pages; http://www.linguatools.de/linguatoolsbot.html; peter dot kolb at linguatools dot org)
 Linguee Bot (http://www.linguee.com/bot; bot@linguee.com)
+Link Valet Online 1.1
+Link Valet Online 1.x
+link_check3.plx libwww-perl/5.65
 LinkAlarm/2.x
 linkapediabot (+http://www.linkapedia.com)
 linkbot
 Linkbot
 Linkbot x.0
-link_check3.plx libwww-perl/5.65
 LinkCheck (linkcheck@inter7.com http://www.inter7.com/linkcheck)
 LinkedInBot/1.0 (compatible; Mozilla/5.0; Jakarta Commons-HttpClient/3.1 +http://www.linkedin.com)
 LinkLint-checkonly/2.x.x
@@ -1096,19 +1101,17 @@ LinkLint-spider/2.x.x
 linknzbot
 LinkPimpin v1.0
 LinkProver 2.1
+Links - http://gossamer-threads.com/scripts/links/
 Links 2.0 (http://gossamer-threads.com/scripts/links/)
+Links SQL (http://gossamer-threads.com/scripts/links-sql/)
 Links4US-Crawler, (+http://links4us.com/)
 LinkScan/11.0beta2 UnixShareware robot from Elsop.com (used by Indiafocus/Indiainfo)
 LinkScan/9.0g Unix
 LinkScan/x.x Unix
-Links - http://gossamer-threads.com/scripts/links/
 LinksManager.com (http://linksmanager.com/linkchecker.html)
 LinkSonar/1.35
-Links SQL (http://gossamer-threads.com/scripts/links-sql/)
 LinkStats Bot
 LinkSweeper/1.x
-Link Valet Online 1.1
-Link Valet Online 1.x
 LinkWalker
 LinkWalker/2.0
 LinkWalker/3.0 (http://www.brandprotect.com)
@@ -1133,7 +1136,13 @@ LTI/LemurProject Nutch Spider/Nutch-1.0-dev (lti crawler for CMU; http://www.lti
 LTI/LemurProject Nutch Spider/Nutch-1.0-dev (Research spider using Nutch; http://www.lemurproject.org; mhoy@cs.cmu.edu)
 luchs.at URL checker
 LumpImageSearch/0.1 (+http://lump.co/about/bot)
-L.webis/0.87 (http://webalgo.iit.cnr.it/index.php?pg=lwebis)
+lwp-trivial/1.32
+lwp-trivial/1.33
+lwp-trivial/1.34
+lwp-trivial/1.35
+lwp-trivial/1.36
+lwp-trivial/1.38
+lwp-trivial/1.41
 LWP::Simple/5.22
 LWP::Simple/5.36
 LWP::Simple/5.48
@@ -1142,13 +1151,6 @@ LWP::Simple/5.51
 LWP::Simple/5.53
 LWP::Simple/5.63
 LWP::Simple/5.803
-lwp-trivial/1.32
-lwp-trivial/1.33
-lwp-trivial/1.34
-lwp-trivial/1.35
-lwp-trivial/1.36
-lwp-trivial/1.38
-lwp-trivial/1.41
 Lycos_Spider_(modspider)
 Lycos_Spider_(T-Rex)
 Mac Finder 1.0.xx
@@ -1175,6 +1177,9 @@ maxomobot/dev-20051201 (maxomo; http://67.102.134.34:4047/MAXOMO/MAXOMObot.html;
 MaxPointCrawler/Nutch-1.10 (maxpoint.crawler at maxpointinteractive dot com)
 MDbot/1.0 (+http://www.megadownload.net/bot.html)
 MediaCrawler-1.0 (Experimental)
+MediaGet
+MediaGet2
+MediaGet2 2.01.373
 Mediapartners-Google/2.1
 Mediapartners-Google/2.1 ( http://www.googlebot.com/bot.html)
 MediaSearch/0.1
@@ -1186,9 +1191,9 @@ Mercator-2.0
 Mercator-Scrub-1.1
 Mergadobot/3.0.2 (+http://mergado.cz)
 Metaeuro Web Crawler/0.2 (MetaEuro Web Search Clustering Engine; http://www.metaeuro.com; crawler at metaeuro dot com)
-MetagerBot/0.8-dev (MetagerBot; http://metager.de;  )
-MetaGer-LinkChecker
 MetaGer_PreChecker0.1
+MetaGer-LinkChecker
+MetagerBot/0.8-dev (MetagerBot; http://metager.de;  )
 MetaInspector/4.7.2 (+https://github.com/jaimeiniesta/metainspector)
 MetaProducts Download Express/1.x
 Metaspinner/0.01 (Metaspinner; http://www.meta-spinner.de/; support@meta-spinner.de/)
@@ -1198,11 +1203,11 @@ MFC Foundation Class Library 4.0
 MFHttpScan
 MicroBaz
 Microsearch.ru Bot 1.3;http://microsearch.ru/webmasters
-Microsoft_Internet_Explorer_5.00.438 (fjones@isd.net)
 Microsoft Log Parser 2.2
-MicrosoftPrototypeCrawler (How's my crawling? mailto:newbiecrawler@hotmail.com)
 Microsoft Small Business Indexer
 Microsoft URL Control - 6.00.8xxx
+Microsoft_Internet_Explorer_5.00.438 (fjones@isd.net)
+MicrosoftPrototypeCrawler (How's my crawling? mailto:newbiecrawler@hotmail.com)
 MIIxpc/4.2
 Mindjet MindManager
 mindUpBot (datenbutler.de)
@@ -1211,9 +1216,9 @@ miniRank/1.6 (Website ranking; www.minirank.com; robot)
 Missauga Locate 1.0.0
 Missigua Locator 1.9
 Missouri College Browse
-Misterbot-Nutch/0.7.1 (Misterbot-Nutch; http://www.misterbot.fr; admin@misterbot.fr)
 Mister Pix II 2.02a
 Mister PiX version.dll
+Misterbot-Nutch/0.7.1 (Misterbot-Nutch; http://www.misterbot.fr; admin@misterbot.fr)
 Miva (AlgoFeedback@miva.com)
 Mizzu Labs 2.2
 MJ12bot/v1.0.5 (http://majestic12.co.uk/bot.php?+)
@@ -1235,65 +1240,66 @@ MojeekBot/0.2 (archi; http://www.mojeek.com/bot.html)
 MojeekBot/0.x (archi; http://www.mojeek.com/bot.html)
 monkeyagent
 montastic-monitor http://www.montastic.com
-Moreoverbot/5.00 (+http://www.moreover.com)
+More yacy  user agents strings -->>
 Moreoverbot/5.00 (+http://www.moreover.com; webmaster@moreover.com)
+Moreoverbot/5.00 (+http://www.moreover.com)
 Moreoverbot/5.1 ( http://w.moreover.com; webmaster@moreover.com) Mozilla/5.0
 Moreoverbot/x.00 (+http://www.moreover.com)
-More yacy  user agents strings -->>
 Morning Paper 1.0 (robots.txt compliant!)
 Morris - Mixcat Crawler ( http://mixcat.com)
 Motoricerca-Robots.txt-Checker/1.0 (http://tool.motoricerca.info/robots-checker.phtml)
 Mouse-House/7.4 (spider_monkey spider info at www.mobrien.com/sm.shtml)
 mozDex/0.xx-dev (mozDex; http://www.mozdex.com/en/bot.html; spider@mozdex.com)
+Mozilla (Mozilla@somewhere.com)
+Mozilla 4.0(compatible; BotSeer/1.0; +http://botseer.ist.psu.edu)
 Mozilla/2.0 (compatible; Ask Jeeves)
-Mozilla/2.0 (compatible; Ask Jeeves/Teoma)
 Mozilla/2.0 (compatible; Ask Jeeves/Teoma; +http://about.ask.com/en/docs/about/webmasters.shtml)
-Mozilla/2.0 (compatible; Ask Jeeves/Teoma; http://about.ask.com/en/docs/about/webmasters.shtml)
 Mozilla/2.0 (compatible; Ask Jeeves/Teoma; +http://sp.ask.com/docs/about/tech_crawling.html)
+Mozilla/2.0 (compatible; Ask Jeeves/Teoma; http://about.ask.com/en/docs/about/webmasters.shtml)
 Mozilla/2.0 (compatible; Ask Jeeves/Teoma; http://sp.ask.com/docs/about/tech_crawling.html)
-Mozilla/2.0 compatible; Check&Get 1.1x (Windows 98)
+Mozilla/2.0 (compatible; Ask Jeeves/Teoma)
 Mozilla/2.0 (compatible; EZResult -- Internet Search Engine)
 Mozilla/2.0 (compatible; NEWT ActiveX; Win32)
 Mozilla/2.0 (compatible; T-H-U-N-D-E-R-S-T-O-N-E)
-Mozilla/3.01 (Compatible; Links2Go Similarity Engine)
+Mozilla/2.0 compatible; Check&Get 1.1x (Windows 98)
 Mozilla/3.0 (compatible; Fluffy the spider; http://www.searchhippo.com/; info@searchhippo.com)
 Mozilla/3.0 (compatible; Indy Library)
 Mozilla/3.0 (compatible; Linkman)
-Mozilla/3.0 (compatible; MuscatFerret/1.5.4; claude@euroferret.com)
 Mozilla/3.0 (compatible; MuscatFerret/1.5; olly@muscat.co.uk)
+Mozilla/3.0 (compatible; MuscatFerret/1.5.4; claude@euroferret.com)
 Mozilla/3.0 (compatible; MuscatFerret/1.6.x; claude@euroferret.com)
 Mozilla/3.0 (compatible; netart generator/1.0; libwww-perl/5.64)
 Mozilla/3.0 (compatible; PerMan Surfer 3.0; Win95)
 Mozilla/3.0 (compatible; REL Software Web Link Validator 2.x)
 Mozilla/3.0 (compatible; scan4mail (advanced version) http://www.peterspages.net/?scan4mail)
 Mozilla/3.0 (compatible; ScollSpider; http://www.webwobot.com)
-Mozilla/3.0 (Compatible;Viking/1.8)
+Mozilla/3.0 (compatible; Web Link Validator 2.x)Web Link Validator http://www.relsoftware.com/ link validation software
 Mozilla/3.0 (compatible; WebCapture x.x; Auto; Windows)
 Mozilla/3.0 (compatible; Webinator-DEV01.home.iprospect.com/2.56)
 Mozilla/3.0 (compatible; Webinator-indexer.cyberalert.com/2.56)
-Mozilla/3.0 (compatible; Web Link Validator 2.x)Web Link Validator http://www.relsoftware.com/ link validation software
+Mozilla/3.0 (Compatible;Viking/1.8)
 Mozilla/3.0 (DreamPassport/3.0)
 Mozilla/3.0 (INGRID/3.0 MT; webcrawler@NOSPAMexperimental.net; http://aanmelden.ilse.nl/?aanmeld_mode=webhints)
+Mozilla/3.0 (Slurp.so/Goo; slurp@inktomi.com; http://www.inktomi.com/slurp.html)
 Mozilla/3.0 (Slurp/cat; slurp@inktomi.com; http://www.inktomi.com/slurp.html)
 Mozilla/3.0 (Slurp/si; slurp@inktomi.com; http://www.inktomi.com/slurp.html)
-Mozilla/3.0 (Slurp.so/Goo; slurp@inktomi.com; http://www.inktomi.com/slurp.html)
 Mozilla/3.0 (Vagabondo/1.1 MT; webcrawler@NOSPAMwise-guys.nl; http://webagent.wise-guys.nl/)
 Mozilla/3.0 (Vagabondo/1.x MT; webagent@wise-guys.nl; http://webagent.wise-guys.nl/)
 Mozilla/3.0 (Vagabondo/2.0 MT; webcrawler@NOSPAMexperimental.net; http://aanmelden.ilse.nl/?aanmeld_mode=webhints)
 Mozilla/3.0 (Vagabondo/2.0 MT; webcrawler@NOSPAMwise-guys.nl; http://webagent.wise-guys.nl/)
-Mozilla/4.01 (compatible; NORAD National Defence Network)
-Mozilla/4.04 (compatible; Dulance bot; +http://www.dulance.com/bot.jsp)
+Mozilla/3.01 (Compatible; Links2Go Similarity Engine)
 Mozilla/4.0 (agadine3.0) www.agada.de
 Mozilla/4.0 (CMS Crawler: http://www.cmscrawler.com)
-Mozilla/4.0 (compatible; Advanced Email Extractor v2.xx)
+Mozilla/4.0 (compatible;  Vagabondo/2.2; webcrawler at wise-guys dot nl; http://webagent.wise-guys.nl/)
+Mozilla/4.0 (compatible;  Vagabondo/4.0Beta; webcrawler at wise-guys dot nl; http://webagent.wise-guys.nl/; http://www.wise-guys.nl/)
+Mozilla/4.0 (compatible;  Vagabondo/4.0Beta; webcrawler at wise-guys dot nl; http://webagent.wise-guys.nl/)
 Mozilla/4.0 (compatible; <a href=http://www.reget.com>ReGet Deluxe 5.1</a>; Windows NT 5.1)
+Mozilla/4.0 (compatible; Advanced Email Extractor v2.xx)
 Mozilla/4.0 (compatible; Arachmo)
-Mozilla/4.0 (compatible: AstraSpider V.2.1 : astrafind.com)
-Mozilla/4.0 (compatible; BlitzBot)
-Mozilla/4.0 (compatible; B-l-i-t-z-B-O-T)
 Mozilla/4.0 (compatible; B_L_I_T_Z_B_O_T)
+Mozilla/4.0 (compatible; B-l-i-t-z-B-O-T)
+Mozilla/4.0 (compatible; BlitzBot)
 Mozilla/4.0 (compatible; BorderManager 3.0)
-Mozilla 4.0(compatible; BotSeer/1.0; +http://botseer.ist.psu.edu)
 Mozilla/4.0 (compatible; BOTW Spider; +http://botw.org)
 Mozilla/4.0 (compatible; Cerberian Drtrs Version-3.2-Build-0)
 Mozilla/4.0 (compatible; Cerberian Drtrs Version-3.2-Build-1)
@@ -1305,57 +1311,51 @@ Mozilla/4.0 (compatible; DepSpid/5.0x; +http://about.depspid.net)
 Mozilla/4.0 (compatible; DnloadMage 1.0)
 Mozilla/4.0 (compatible; FastCrawler3 support-fastcrawler3@fast.no)
 Mozilla/4.0 (compatible; FDSE robot)
-Mozilla/4.0 (compatible: FDSE robot)
-Mozilla/4.0 compatible FurlBot/Furl Search 2.0 (FurlBot; http://www.furl.net; wn.furlbot@looksmart.net)
 Mozilla/4.0 (compatible; GPU p2p crawler http://gpu.sourceforge.net/search_engine.php)
 Mozilla/4.0 (compatible; grub-client-0.2.x; Crawl your stuff with http://grub.org)
 Mozilla/4.0 (compatible; grub-client-0.3.x; Crawl your own stuff with http://grub.org)
 Mozilla/4.0 (compatible; grub-client-2.x)
-Mozilla/4.0 (compatible;HostTracker/2.0;+http://www.host-tracker.com/)
 Mozilla/4.0 (compatible; ICS 1.2.xxx)
 Mozilla/4.0 (compatible; IDwhois/2.0alpha-10102619; Linux; en-US; +http://idwhois.info/about)
 Mozilla/4.0 (compatible; IE-Favorites-Check-0.5)
 Mozilla/4.0 (compatible; Iplexx Spider/1.0 http://www.iplexx.at)
 Mozilla/4.0 (compatible; KeepNI web site monitor)
 Mozilla/4.0 (compatible; Link Utility; http://net-promoter.com)
-Mozilla/4.0 (compatible; MSIE 4.01; Vonna.com b o t)
-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320; SPV M700; OpVer 19.123.2.733) OrangeBot-Mobile 2008.0 (mobilesearch.support@orange-ftgroup.com)
 Mozilla/4.0 (compatible; MSIE 4.0; Windows NT; Site Server 3.0 Robot) ACR
 Mozilla/4.0 (compatible; MSIE 4.0; Windows NT; Site Server 3.0 Robot) Indonesia Interactive
-Mozilla/4.0 (compatible; MSIE 5.01; Windows 95) via <B>Avirt Gateway Server</B> v4.0
-Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0) (samualt9@bigfoot.com)
+Mozilla/4.0 (compatible; MSIE 4.01; Vonna.com b o t)
+Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320; SPV M700; OpVer 19.123.2.733) OrangeBot-Mobile 2008.0 (mobilesearch.support@orange-ftgroup.com)
 Mozilla/4.0 (compatible; MSIE 5.0; NetNose-Crawler 2.0; A New Search Experience: http://www.netnose.com)
 Mozilla/4.0 (compatible; MSIE 5.0; Win32) via proxy gateway CERN-HTTPD/3.0 libwww/2.17
-Mozilla/4.0_(compatible;_MSIE_5.0;_Windows_95)_TrueRobot/1.4 libwww/5.2.8
 Mozilla/4.0 (compatible; MSIE 5.0; Windows 95) TrueRobot; 1.5
-Mozilla/4.0 (compatible; MSIE 5.0; Windows 95) VoilaBot; 1.6
-Mozilla/4.0_(compatible;_MSIE_5.0;_Windows_95)_VoilaBot/1.6 libwww/5.3.2
 Mozilla/4.0 (compatible; MSIE 5.0; Windows 95) VoilaBot BETA 1.2 (http://www.voila.com/)
+Mozilla/4.0 (compatible; MSIE 5.0; Windows 95) VoilaBot; 1.6
 Mozilla/4.0 (compatible; MSIE 5.0; Windows ME; Link Checker 2.x.xx http://www.kyosoft.com)
 Mozilla/4.0 (compatible; MSIE 5.0; Windows NT; DigExt; DTS Agent
 Mozilla/4.0 (compatible; MSIE 5.0; Windows NT; Girafabot; girafabot at girafa dot com; http://www.girafa.com)
 Mozilla/4.0 (compatible; MSIE 5.0; www.galaxy.com; www.psychedelix.com)
 Mozilla/4.0 (compatible; MSIE 5.0; www.galaxy.com; www.psychedelix.com/; http://www.galaxy.com/info/crawler.html)
 Mozilla/4.0 (compatible; MSIE 5.0; YANDEX)
+Mozilla/4.0 (compatible; MSIE 5.01; Windows 95) via <B>Avirt Gateway Server</B> v4.0
+Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0) (samualt9@bigfoot.com)
 Mozilla/4.0 (compatible; MSIE 5.5; AOL 4.0; Windows 98; GoBeez (www.gobeez.com))
 Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 4.0; obot)
 Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 4.0; QXW03018)
 Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.0; AspTear 1.5)
-Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.0) Fetch API Request
 Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.0; mowser; http://www.mowser.com)
+Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.0) Fetch API Request
 Mozilla/4.0 (compatible; MSIE 6.0 compatible; Asterias Crawler v4; +http://www.singingfish.com/help/spider.html; webmaster@singingfish.com); SpiderThread  Revision: 3.10
 Mozilla/4.0 (compatible; MSIE 6.0; MSIE 5.5; Windows NT 5.1) Skampy/0.9.x [en]
 Mozilla/4.0 (compatible; MSIE 6.0; TargetSeek/1.0; +http://www.targetgroups.net/TargetSeek.html)
-Mozilla/4.0 (compatible; MSIE 6.0; Windows 98) REL Software Web Link Validator 2.x)
 Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; support@illumit.com; http://www.illumit.com/Products/weblight/)
+Mozilla/4.0 (compatible; MSIE 6.0; Windows 98) REL Software Web Link Validator 2.x)
 Mozilla/4.0 (compatible; MSIE 6.0; Windows 98) Web Link Validator 2.x)
 Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 4.0; Girafabot; girafabot at girafa dot com; http://www.girafa.com)
 Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; Google Wireless Transcoder;)
-Mozilla/4.0 (compatible;MSIE 6.0; Windows NT 5.0; H010818)
 Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; ODP entries t_st; http://tuezilla.de/t_st-odp-entries-agent.html)
 Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; ODP links test; http://tuezilla.de/test-odp-links-agent.html)
-Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0) SEOChat::Bot v1.1
 Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; ZoomSpider.net bot; .NET CLR 1.1.4322)
+Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0) SEOChat::Bot v1.1
 Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Covac UPPS Cathan 1.2.5;)
 Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Crayon Crawler; snprtz|T04056566514940; (R1 1.5))
 Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; heritrix/1.3.0 http://www.cs.washington.edu/research/networking/websys/)
@@ -1374,35 +1374,25 @@ Mozilla/4.0 (compatible; NaverBot/1.0; http://help.naver.com/delete_main.asp)
 Mozilla/4.0 (compatible; Netcraft Web Server Survey)
 Mozilla/4.0 (compatible; NetPromoter Spider;http://www.net-promoter.com/)
 Mozilla/4.0 (compatible; Powermarks/3.5; Windows 95/98/2000/NT)
-Mozilla/4.0 (compatible: Shoula robot)
 Mozilla/4.0 (compatible; SpeedySpider; www.entireweb.com)
 Mozilla/4.0 (compatible; SPENG)
 Mozilla/4.0 (compatible; SuperCleaner 2.xx; Windows 98)
 Mozilla/4.0 (compatible; Synapse)
-Mozilla/4.0 (Compatible); URLBase 6
-Mozilla/4.0 (compatible;  Vagabondo/2.2; webcrawler at wise-guys dot nl; http://webagent.wise-guys.nl/)
-Mozilla/4.0 (compatible;  Vagabondo/4.0Beta; webcrawler at wise-guys dot nl; http://webagent.wise-guys.nl/)
-Mozilla/4.0 (compatible;  Vagabondo/4.0Beta; webcrawler at wise-guys dot nl; http://webagent.wise-guys.nl/; http://www.wise-guys.nl/)
 Mozilla/4.0 (compatible; Vagabondo/4.0; webcrawler at wise-guys dot nl; http://webagent.wise-guys.nl/; http://www.wise-guys.nl/)
 Mozilla/4.0 (compatible; WebCapture 3.0; Windows)
 Mozilla/4.0 (compatible; WSN Links)
 Mozilla/4.0 (compatible; www.euro-directory.com; urlchecker1.0)
 Mozilla/4.0 (compatible; www.galaxy.com)
 Mozilla/4.0 (compatible; www.linkguard.com Linkguard Online 1.0; Windows NT)
-Mozilla/4.0 (compatible; Yahoo Japan; for robot study; kasugiya)
 Mozilla/4.0 (compatible; Y!J; for robot study; keyoshid)
+Mozilla/4.0 (compatible; Yahoo Japan; for robot study; kasugiya)
 Mozilla/4.0 (compatible; Zealbot 1.0)
-Mozilla/4.0(compatible; Zealbot 1.0)
-Mozilla/4.0 compatible ZyBorg/1.0 Dead Link Checker (wn.dlc@looksmart.net; http://www.WISEnutbot.com)
-Mozilla/4.0 compatible ZyBorg/1.0 Dead Link Checker (wn.zyborg@looksmart.net; http://www.WISEnutbot.com)
-Mozilla/4.0 compatible ZyBorg/1.0 DLC (wn.zyborg@looksmart.net; http://www.WISEnutbot.com)
-Mozilla/4.0 compatible ZyBorg/1.0 for Homepage (ZyBorg@WISEnutbot.com; http://www.WISEnutbot.com)
-Mozilla/4.0 compatible ZyBorg/1.0 (wn-14.zyborg@looksmart.net; http://www.WISEnutbot.com)
-Mozilla/4.0 compatible ZyBorg/1.0 (wn-16.zyborg@looksmart.net; http://www.WISEnutbot.com)
-Mozilla/4.0 compatible ZyBorg/1.0 (wn.zyborg@looksmart.net; http://www.WISEnutbot.com)
-Mozilla/4.0 compatible ZyBorg/1.0 (ZyBorg@WISEnutbot.com; http://www.WISEnutbot.com)
-Mozilla/4.0 efp@gmx.net
-Mozilla/4.0 [en] (Ask Jeeves Corporate Spider)
+Mozilla/4.0 (compatible;HostTracker/2.0;+http://www.host-tracker.com/)
+Mozilla/4.0 (compatible;MSIE 6.0; Windows NT 5.0; H010818)
+Mozilla/4.0 (compatible: AstraSpider V.2.1 : astrafind.com)
+Mozilla/4.0 (compatible: FDSE robot)
+Mozilla/4.0 (compatible: Shoula robot)
+Mozilla/4.0 (Compatible); URLBase 6
 Mozilla/4.0 (fantomBrowser)
 Mozilla/4.0 (fantomCrew Browser)
 Mozilla/4.0 (JemmaTheTourist;http://www.activtourist.com)
@@ -1410,17 +1400,36 @@ Mozilla/4.0 (MobilePhone SCP-5500/US/1.0) NetFront/3.0 MMP/2.0 (compatible; Goog
 Mozilla/4.0 (MobilePhone SCP-5500/US/1.0) NetFront/3.0 MMP/2.0 FAKE (compatible; Googlebot/2.1; http://www.google.com/bot.html)
 Mozilla/4.0 (Mozilla; http://www.mozilla.org/docs/en/bot.html; master@mozilla.com)
 Mozilla/4.0 (Sleek Spider/1.2)
+Mozilla/4.0 [en] (Ask Jeeves Corporate Spider)
+Mozilla/4.0 compatible FurlBot/Furl Search 2.0 (FurlBot; http://www.furl.net; wn.furlbot@looksmart.net)
+Mozilla/4.0 compatible ZyBorg/1.0 (wn-14.zyborg@looksmart.net; http://www.WISEnutbot.com)
+Mozilla/4.0 compatible ZyBorg/1.0 (wn-16.zyborg@looksmart.net; http://www.WISEnutbot.com)
+Mozilla/4.0 compatible ZyBorg/1.0 (wn.zyborg@looksmart.net; http://www.WISEnutbot.com)
+Mozilla/4.0 compatible ZyBorg/1.0 (ZyBorg@WISEnutbot.com; http://www.WISEnutbot.com)
+Mozilla/4.0 compatible ZyBorg/1.0 Dead Link Checker (wn.dlc@looksmart.net; http://www.WISEnutbot.com)
+Mozilla/4.0 compatible ZyBorg/1.0 Dead Link Checker (wn.zyborg@looksmart.net; http://www.WISEnutbot.com)
+Mozilla/4.0 compatible ZyBorg/1.0 DLC (wn.zyborg@looksmart.net; http://www.WISEnutbot.com)
+Mozilla/4.0 compatible ZyBorg/1.0 for Homepage (ZyBorg@WISEnutbot.com; http://www.WISEnutbot.com)
+Mozilla/4.0 efp@gmx.net
+Mozilla/4.0_(compatible;_MSIE_5.0;_Windows_95)_TrueRobot/1.4 libwww/5.2.8
+Mozilla/4.0_(compatible;_MSIE_5.0;_Windows_95)_VoilaBot/1.6 libwww/5.3.2
+Mozilla/4.0(compatible; Zealbot 1.0)
+Mozilla/4.01 (compatible; NORAD National Defence Network)
+Mozilla/4.04 (compatible; Dulance bot; +http://www.dulance.com/bot.jsp)
 Mozilla/4.5 RPT-HTTPClient/0.3-2
 Mozilla/4.6 [en] (http://www.cnet.com/)
-Mozilla/4.72 [en] (BACS http://www.ba.be)
 Mozilla/4.7 (compatible; http://eidetica.com/spider)
 Mozilla/4.7 (compatible; Intelliseek; http://www.intelliseek.com)
-Mozilla/4.7 (compatible; Whizbang)
 Mozilla/4.7 (compatible; WhizBang; http://www.whizbang.com/crawler)
+Mozilla/4.7 (compatible; Whizbang)
 Mozilla/4.7 [en](BecomeBot@exava.com)
 Mozilla/4.7 [en](Exabot@exava.com)
+Mozilla/4.72 [en] (BACS http://www.ba.be)
+Mozilla/5.0 (+http://www.eurekster.com/mammoth) Mammoth/0.1
+Mozilla/5.0 (+http://www.sli-systems.com/) Mammoth/0.1
 Mozilla/5.0 (Anturis Agent)
 Mozilla/5.0 (Clustered-Search-Bot/1.0; support@clush.com; http://www.clush.com/)
+Mozilla/5.0 (compatible; +http://www.evri.com/evrinid)
 Mozilla/5.0 (compatible; 007ac9 Crawler; http://crawler.007ac9.net/)
 Mozilla/5.0 (compatible; 008/0.83; http://www.80legs.com/spider.html;) Gecko/2008032620
 Mozilla/5.0 (compatible; 008/0.83; http://www.80legs.com/webcrawler.html) Gecko/2008032620
@@ -1434,12 +1443,10 @@ Mozilla/5.0 (compatible; AnyApexBot/1.0; +http://www.anyapex.com/bot.html)
 Mozilla/5.0 (compatible; Apercite; +http://www.apercite.fr/robot/index.html)
 Mozilla/5.0 (compatible; Applebot/0.3; +http://www.apple.com/go/applebot)
 Mozilla/5.0 (compatible; Arachnophilia/1.0; +http://arachnys.com/)
+Mozilla/5.0 (compatible; archive.org_bot; Wayback Machine Live Record; +http://archive.org/details/archive.org_bot)
 Mozilla/5.0 (compatible; archive.org_bot/1.10.0 +http://www.loc.gov/minerva/crawl.html)
 Mozilla/5.0 (compatible; archive.org_bot/1.13.1x http://crawler.archive.org)
 Mozilla/5.0 (compatible; archive.org_bot/1.5.0-200506132127 http://crawler.archive.org) Hurricane Katrina
-Mozilla/5.0 (compatible;archive.org_bot/1.7.1; collectionId=316; Archive-It; +http://www.archive-it.org)
-Mozilla/5.0 (compatible;archive.org_bot/heritrix-1.9.0-200608171144 +http://pandora.nla.gov.au/crawl.html)
-Mozilla/5.0 (compatible; archive.org_bot; Wayback Machine Live Record; +http://archive.org/details/archive.org_bot)
 Mozilla/5.0 (compatible; Ask Jeeves/Teoma;  http://about.ask.com/en/docs/about/webmasters.shtml)
 Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)
 Mozilla/5.0 (compatible; BanBots/2.0b; Fetch; +http://www.banbots.com)
@@ -1479,8 +1486,8 @@ Mozilla/5.0 (compatible; DeuSu/5.0.2; +https://deusu.de/robot.html)
 Mozilla/5.0 (compatible; Diffbot/0.1; +http://www.diffbot.com)
 Mozilla/5.0 (compatible; discobot/1.0; +http://discoveryengine.com/discobot.html)
 Mozilla/5.0 (compatible; dlcbot/0.1; +http://www.drlinkcheck.com/)
-Mozilla/5.0 (compatible; DNS-Digger/1.0; +http://www.dnsdigger.com)
 Mozilla/5.0 (compatible; DNS-Digger-Explorer/1.0; +http://www.dnsdigger.com)
+Mozilla/5.0 (compatible; DNS-Digger/1.0; +http://www.dnsdigger.com)
 Mozilla/5.0 (compatible; DomainAppender /1.0; +http://www.profound.net/domainappender)
 Mozilla/5.0 (compatible; DomainMacroCrawler/0.1; +http://domainmacro.com)
 Mozilla/5.0 (compatible; DomainSigmaCrawler/0.1; +http://domainsigma.com/robot)
@@ -1489,16 +1496,16 @@ Mozilla/5.0 (compatible; DomainTunoCrawler/0.1; +http://www.domaintuno.com/robot
 Mozilla/5.0 (compatible; DotBot/1.1; http://www.dotnetdotcom.org/, crawler@dotnetdotcom.org)
 Mozilla/5.0 (compatible; DotBot/1.1; http://www.opensiteexplorer.org/dotbot, help@moz.com)
 Mozilla/5.0 (compatible; DuckDuckGo-Favicons-Bot/1.0; +http://duckduckgo.com)
-Mozilla/5.0 (compatible; EARTHCOM/2.2; +http://enter4u.eu)
 Mozilla/5.0 (compatible; EARTHCOM.info/2.01; http://www.earthcom.info)
+Mozilla/5.0 (compatible; EARTHCOM/2.2; +http://enter4u.eu)
 Mozilla/5.0 (compatible; EasouSpider; +http://www.easou.com/search/spider.html)
 Mozilla/5.0 (compatible; egothor/8.0g; +http://ego.ms.mff.cuni.cz/)
 Mozilla/5.0 (compatible; Embedly/0.2; snap; +http://support.embed.ly/)
 Mozilla/5.0 (compatible; etoolsbot/1.0; +https://etools.io/bots/)
 Mozilla/5.0 (compatible; EuripBot/2.0; +http://www.eurip.com)
 Mozilla/5.0 (compatible; EveryoneSocialBot/1.0; support@everyonesocial.com http://everyonesocial.com/)
-Mozilla/5.0 (compatible; Exabot/3.0; +http://www.exabot.com/go/robot)
 Mozilla/5.0 (compatible; Exabot Test/3.0; +http://www.exabot.com/go/robot)
+Mozilla/5.0 (compatible; Exabot/3.0; +http://www.exabot.com/go/robot)
 Mozilla/5.0 (compatible; ExchangleBot/3.0; +https://www.exchangle.com/exchangling)
 Mozilla/5.0 (compatible; ExpertSearchSpider +http://www.expertsearch.nl/spider)
 Mozilla/5.0 (compatible; Exploratodo/1.0; +http://www.exploratodo.com
@@ -1516,9 +1523,9 @@ Mozilla/5.0 (compatible; Genieo/1.0 http://www.genieo.com/webfilter.html)
 Mozilla/5.0 (compatible; GimmeUSAbot/1.0; +https://gimmeusa.com/pages/crawler)
 Mozilla/5.0 (compatible; Gluten Free Crawler/1.0; +http://glutenfreepleasure.com/)
 Mozilla/5.0 (compatible; Goodzer/2.0; crawler@goodzer.com)
-Mozilla/5.0 (compatible; Googlebot/2.1; https://www.deepcrawl.com/bot)
 Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
 Mozilla/5.0 (compatible; Googlebot/2.1; http://www.google.com/bot.html)
+Mozilla/5.0 (compatible; Googlebot/2.1; https://www.deepcrawl.com/bot)
 Mozilla/5.0 (compatible; GrapeshotCrawler/2.0; +http://www.grapeshot.co.uk/crawler.php)
 Mozilla/5.0 (compatible; GroupHigh/1.0; +http://www.grouphigh.com/)
 Mozilla/5.0 (compatible; GurujiBot/1.0; +http://www.guruji.com/en/WebmasterFAQ.html)
@@ -1531,8 +1538,8 @@ Mozilla/5.0 (compatible; heritrix/1.14.4 +http://www.exif-search.com)
 mozilla/5.0 (compatible; heritrix/1.3.0 http://archive.crawler.org)
 Mozilla/5.0 (compatible; heritrix/1.4.0 +http://www.chepi.net)
 Mozilla/5.0 (compatible; heritrix/1.4t http://www.truveo.com/)
-Mozilla/5.0 (compatible; heritrix/1.5.0-200506231921 http://pandora.nla.gov.au/crawl.html)
 Mozilla/5.0 (compatible; heritrix/1.5.0 http://www.l3s.de/~kohlschuetter/projects/crawling/)
+Mozilla/5.0 (compatible; heritrix/1.5.0-200506231921 http://pandora.nla.gov.au/crawl.html)
 Mozilla/5.0 (compatible; heritrix/1.6.0 http://www.worio.com/)
 Mozilla/5.0 (compatible; heritrix/1.7.0 +http://www.greaterera.com/)
 Mozilla/5.0 (compatible; Heritrix/1.8.0 http://www.hanzoarchives.com)
@@ -1544,7 +1551,6 @@ Mozilla/5.0 (compatible; Hermit Search. Com; +http://www.hermitsearch.com)
 Mozilla/5.0 (compatible; Heurekabot/3.1; +http://sluzby.heureka.cz/)
 Mozilla/5.0 (compatible; houzzbot; +http://www.houzz.com/)
 Mozilla/5.0 (compatible; http://alyze.info)
-Mozilla/5.0 (compatible; +http://www.evri.com/evrinid)
 Mozilla/5.0 (compatible; http://www.IsMySiteUp.Net/bot/ )
 Mozilla/5.0 (compatible; http://www.UptimeAuditor.com/bot/ )
 Mozilla/5.0 (compatible; HyperCrawl/0.2; +http://www.seograph.net/bot.html)
@@ -1575,7 +1581,6 @@ Mozilla/5.0 (compatible; Lipperhey-Kaus-Australis/5.0; +https://www.lipperhey.co
 Mozilla/5.0 (compatible; LoadTimeBot/0.9; +http://www.loadtime.net/bot.html)
 Mozilla/5.0 (compatible; ltbot/0.3.6 +http://www.kdsl.tu-darmstadt.de/de/kdsl/research-program/crawling-and-semantic-structuring/)
 Mozilla/5.0 (compatible; LXRbot/1.0;http://www.lxrmarketplace.com/,support@lxrmarketplace.com)
-Mozilla/5.0 (compatible;MAINSEEK_BOT)
 Mozilla/5.0 (compatible; meanpathbot/1.0; +http://www.meanpath.com/meanpathbot.html)
 Mozilla/5.0 (compatible; MegaIndex.ru/2.0; +http://megaindex.com/crawler)
 Mozilla/5.0 (compatible; memoryBot/1.24.11 +http://internetmemory.org/en/)
@@ -1586,7 +1591,6 @@ Mozilla/5.0 (compatible; MJ12bot/v1.2.4; http://www.majestic12.co.uk/bot.php?+)
 Mozilla/5.0 (compatible; MJ12bot/v1.4.5; http://www.majestic12.co.uk/bot.php?+)
 Mozilla/5.0 (compatible; MojeekBot/0.6; +https://www.mojeek.com/bot.html)
 Mozilla/5.0 (compatible; MojeekBot/2.0; http://www.mojeek.com/bot.html)
-Mozilla/5.0+(compatible; Monitority/1.0; http://www.monitority.com/)
 Mozilla/5.0 (compatible; MonTools.com)
 Mozilla/5.0 (compatible; MOSBookmarks/v2.6-Plus; Link Checker)
 Mozilla/5.0 (compatible; MotoMinerBot/1.0; +https://motominer.com/Bot)
@@ -1618,15 +1622,15 @@ Mozilla/5.0 (compatible; parsijoo-update-crawler; +http://www.parsijoo.ir/; ehsa
 Mozilla/5.0 (compatible; PEAR HTTP_Request class; http://feed.moo.jp/)
 Mozilla/5.0 (compatible; Peew/1.0; http://www.peew.de/crawler/)
 Mozilla/5.0 (compatible; Pi-Monster; https://pricepi.com/)
-Mozilla/5.0+(compatible;+PiplBot;++http://www.pipl.com/bot/)
+Mozilla/5.0 (compatible; Pinterestbot/1.0; +https://www.pinterest.com/bot.html)
 Mozilla/5.0 (compatible; Plukkie/1.6; http://www.botje.com/plukkie.htm)
 Mozilla/5.0 (compatible; pmoz.info ODP link checker; +http://pmoz.info/doc/botinfo.htm)
 Mozilla/5.0 (compatible; pogodak.ba/3.x)
 Mozilla/5.0 (compatible; Pogodak.hr/3.1)
 Mozilla/5.0 (compatible; PrivacyAwareBot/1.1; +http://www.privacyaware.org)
 Mozilla/5.0 (compatible; Prlog/1.0; +http://prlog.ru/)
-Mozilla/5.0 (compatible; ProductoDownloadUrlBot/1.0; +http://www.producto.de/)
 Mozilla/5.0 (compatible; Pro Sitemaps Generator; https://pro-sitemaps.com) Gecko Pro-Sitemaps/1.0
+Mozilla/5.0 (compatible; ProductoDownloadUrlBot/1.0; +http://www.producto.de/)
 Mozilla/5.0 (compatible; Proximic crawler; +http://www.proximic.com/en/about-us/contact-us.html)
 Mozilla/5.0 (compatible; proximic; +http://www.proximic.com/info/spider.php)
 Mozilla/5.0 (compatible; PWeBot/3.1; http://www.programacionweb.net/robot.php)
@@ -1685,21 +1689,19 @@ Mozilla/5.0 (compatible; TWMBot/0.1; +http://thewebminer.com)
 Mozilla/5.0 (compatible; UASlinkChecker/2.1; +https://udger.com/support/UASlinkChecker)
 Mozilla/5.0 (compatible; uMBot-FC/1.0; mailto: crawling@ubermetrics-technologies.com)
 Mozilla/5.0 (compatible; UnisterBot; http://www.bluekiwi.de/misc/imprint)
-Mozilla/5.0+(compatible; UptimeRobot/2.0; http://www.uptimerobot.com/)
 Mozilla/5.0 (compatible; Urlfilebot/2.2; +http://urlfile.com/bot.html)
 Mozilla/5.0 (compatible; Vagabondo/2.1; webcrawler at wise-guys dot nl; http://webagent.wise-guys.nl/)
 Mozilla/5.0 (compatible; vkShare; +http://vk.com/dev/Share)
 Mozilla/5.0 (compatible; Wappalyzer; +https://github.com/AliasIO/Wappalyzer)
 Mozilla/5.0 (compatible; WBSearchBot/1.1; +http://www.warebay.com/bot.html)
 Mozilla/5.0 (compatible; WbSrch/1.1 +http://wbsrch.com)
+Mozilla/5.0 (compatible; Web-Monitoring/1.0; +http://monoid.nic.ru/)
 Mozilla/5.0 (compatible; WebCookies/1.0; +https://webcookies.org/faq/#agent)
 Mozilla/5.0 (compatible; WebCorp/5.0; +http://www.webcorp.org.uk)
 Mozilla/5.0 (compatible; Webduniabot/1.0; +http://search.webdunia.com/bot.aspx)
-mozilla/5.0 (compatible; webmastercoffee/0.7; +http://webmastercoffee.com/about)
 Mozilla/5.0 (compatible; Webmaster tools +http://sitexy.com/)
-Mozilla/5.0 (compatible; Web-Monitoring/1.0; +http://monoid.nic.ru/)
+mozilla/5.0 (compatible; webmastercoffee/0.7; +http://webmastercoffee.com/about)
 Mozilla/5.0 (compatible; WeViKaBot/1.0; +http://www.wevika.de/)
-Mozilla/5.0 (compatible;WI Job Roboter Spider Version 3;+http://www.webintegration.at)
 Mozilla/5.0 (compatible; Windows NT 5.0; phpwebbrainBot/0.1 - http://www.monsterli.ch/phpwebbrain/)
 Mozilla/5.0 (compatible; wmtips.com/1.0; +http://www.wmtips.com/tools/)
 Mozilla/5.0 (compatible; worio bot heritrix/1.10.0 +http://worio.com)
@@ -1714,7 +1716,6 @@ Mozilla/5.0 (compatible; Yahoo! Slurp China; http://misc.yahoo.com.cn/help.html)
 Mozilla/5.0 (compatible; Yahoo! Slurp; http://help.yahoo.com/help/us/ysearch/slurp)
 Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)
 Mozilla/5.0 (compatible; YandexImages/3.0; +http://yandex.com/bots)
-Mozilla/5.0 compatible; yelpspider/yelpspider-1.0 (Crawlerbot run by Yelp Inc; yelpbot at yelp dot com)
 Mozilla/5.0 (compatible; YesupBot/1.0; +http://www.yesup.net/bot.html)
 Mozilla/5.0 (compatible; Yeti/1.1; +http://help.naver.com/robots/)
 Mozilla/5.0 (compatible; YioopBot; +http://173.13.143.74/bot.php)
@@ -1725,76 +1726,86 @@ Mozilla/5.0 (compatible; YoudaoBot/1.0; http://www.youdao.com/help/webmaster/spi
 Mozilla/5.0 (compatible; Zenbot/1.3; +http://zen.co.za/webmasters/)
 Mozilla/5.0 (compatible; zermelo +http://www.powerset.com) [email:paul@page-store.com,crawl@powerset.com]
 Mozilla/5.0 (compatible; zitebot support [at] zite [dot] com +http://zite.com)
-Mozilla/5.0 eCairn-Grabber/1.0 (+http://ecairn.com/grabber)
-Mozilla/5.0 [en] (compatible; Gulper Web Bot 0.2.4 www.ecsl.cs.sunysb.edu/~maxim/cgi-bin/Link/GulperBot)
-Mozilla/5.0 gURLChecker/0.x.x (Linux)
-Mozilla/5.0 GurujiBot/1.0 ( http://www.guruji.com/en/WebmasterFAQ.html)
-Mozilla/5.0 GurujiBot/1.0 (+http://www.guruji.com/en/WebmasterFAQ.html)
-Mozilla/5.0 (+http://www.eurekster.com/mammoth) Mammoth/0.1
-Mozilla/5.0 (+http://www.sli-systems.com/) Mammoth/0.1
+Mozilla/5.0 (compatible;archive.org_bot/1.7.1; collectionId=316; Archive-It; +http://www.archive-it.org)
+Mozilla/5.0 (compatible;archive.org_bot/heritrix-1.9.0-200608171144 +http://pandora.nla.gov.au/crawl.html)
+Mozilla/5.0 (compatible;MAINSEEK_BOT)
+Mozilla/5.0 (compatible;WI Job Roboter Spider Version 3;+http://www.webintegration.at)
 Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25 ( compatible; CloudServerMarketSpider/1.0; +http://cloudservermarket.com/spider.html )
 Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25 (compatible; SMTBot/1.0; +http://www.similartech.com/smtbot)
 Mozilla/5.0 (KeepRight OpenStreetMap Checker; http://keepright.at) Gecko/20100101 Firefox/22.0
-Mozilla/5.0 larbin@unspecified.mail
 Mozilla/5.0 (Linux; Android 4.1.2; Galaxy Nexus Build/JZO54K; GTmetrix http://gtmetrix.com/) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/26.0.1410.58 Mobile Safari/537.22
+Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Pinterestbot/1.0; +https://www.pinterest.com/bot.html)
 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/537.13+ (KHTML, like Gecko) Version/5.1.7 Safari/534.57.2; Shoppimon Analyzer (http://www.shoppimon.com/)
 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11 KimonoLabs/0.2
 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9) AppleWebKit/537.71 (KHTML, like Gecko) Version/7.0 Safari/537.71 (Rival IQ, rivaliq.com)
-Mozilla/5.0 Moreover/5.1 (+http://www.moreover.com; webmaster@moreover.com)
 Mozilla/5.0 (Nekstbot; http://nekst.ipipan.waw.pl/nekstbot/)
 Mozilla/5.0 (nomore404.com robot/1.1; +https://nomore404.com/)
 Mozilla/5.0 (Slurp/cat; slurp@inktomi.com; http://www.inktomi.com/slurp.html)
 Mozilla/5.0 (Slurp/si; slurp@inktomi.com; http://www.inktomi.com/slurp.html)
 Mozilla/5.0 (TweetmemeBot/4.0; +http://datasift.com/bot.html) Gecko/20100101 Firefox/31.0
 Mozilla/5.0 (Twiceler-0.9 http://www.cuill.com/twiceler/robot.html)
-Mozilla/5.0 URL-Spider
-Mozilla/5.0 usww.com-Spider-for-w8.net
 Mozilla/5.0 (Version: xxxx Type:xx)
 Mozilla/5.0 (wgao@genieknows.com)
-Mozilla/5.0 wgao@genieknows.com
 Mozilla/5.0 (WhatsMyIP.org Text_to_Code_Ratio_Tool) http://whatsmyip.org/ua
-Mozilla/5.0 whoiam [http://www.axxus.de/]
-Mozilla/5.0 (Windows;) NimbleCrawler 1.12 obeys UserAgent NimbleCrawler For problems contact: crawler@health
-Mozilla/5.0 (Windows;) NimbleCrawler 1.12 obeys UserAgent NimbleCrawler For problems contact: crawler@healthline.com
 Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.79 Safari/537.4 LinkTiger 2.0
 Mozilla/5.0 (Windows NT 5.1) BrokenLinkCheck.com/1.1
 Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0 Safari/537.36 YottaaMonitor
-Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.89 Safari/537.1; http://spyonweb.com spyonweb@gmail.com
 Mozilla/5.0 (Windows NT 6.1; compatible; BDCbot/1.0; +http://ecommerce.bigdatacorp.com.br/faq.aspx) ppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 Safari/537.36
 Mozilla/5.0 (Windows NT 6.1; Win64; x64) KomodiaBot/1.0
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0 AppEngine-Google; (+http://code.google.com/appengine; appid: s~aeshortener)
 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11 GotSiteMonitor.com
 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36 TinEye/1.0 (via http://www.tineye.com/)
-Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0 AppEngine-Google; (+http://code.google.com/appengine; appid: s~aeshortener)
 Mozilla/5.0 (Windows NT 6.1; WOW64) SkypeUriPreview Preview/0.5
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.89 Safari/537.1; http://spyonweb.com spyonweb@gmail.com
 Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/98 Safari/537.4 (StatusCake)
 Mozilla/5.0 (Windows NT 6.2; WOW64) Runet-Research-Crawler (itrack.ru/research/cmsrate; rating@itrack.ru)
-Mozilla/5.0 (Windows NT 6.3;compatible; Leikibot/1.0; +http://www.leiki.com)
-Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/534.34 (KHTML, like Gecko) Websnapr/3.0 Safari/534.34
 Mozilla/5.0 (Windows NT 6.3; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0 (NetShelter ContentScan, contact abuse@inpwrd.com for information)
+Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/534.34 (KHTML, like Gecko) Websnapr/3.0 Safari/534.34
+Mozilla/5.0 (Windows NT 6.3;compatible; Leikibot/1.0; +http://www.leiki.com)
 Mozilla/5.0 (Windows; U; MSIE 9.0; Windows NT 9.0; en-US) AppEngine-Google; (+http://code.google.com/appengine; appid: s~virustotalcloud)
 Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.7.7) NimbleCrawler 1.11 obeys UserAgent NimbleCrawler For problems contact: crawler_at_dataalchemy.com
-Mozilla/5.0 (Windows; U; Windows NT 5.1; en; rv:1.9.0.13) Gecko/2009073022 Firefox/3.5.2 (.NET CLR 3.5.30729) SurveyBot/2.3 (DomainTools)
 Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.6) Gecko/20070725 Firefox/2.0.0.6 - James BOT - WebCrawler http://cognitiveseo.com/bot.html
 Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.3) SPEng
 Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) Speedy Spider (http://www.entireweb.com/about/search_tech/speedy_spider/)
+Mozilla/5.0 (Windows; U; Windows NT 5.1; en; rv:1.9.0.13) Gecko/2009073022 Firefox/3.5.2 (.NET CLR 3.5.30729) SurveyBot/2.3 (DomainTools)
 Mozilla/5.0 (Windows; U; Windows NT 5.1; fr; rv:1.8.1) VoilaBot BETA 1.2 (support.voilabot@orange-ftgroup.com)
 Mozilla/5.0 (Windows; U; Windows NT 6.0; en-GB; rv:1.0; trendictionbot0.5.0; trendiction search; http://www.trendiction.de/bot; please let us know of any problems; web at trendiction.com) Gecko/20071127 Firefox/3.0.0.11
+Mozilla/5.0 (Windows;) NimbleCrawler 1.12 obeys UserAgent NimbleCrawler For problems contact: crawler@health
+Mozilla/5.0 (Windows;) NimbleCrawler 1.12 obeys UserAgent NimbleCrawler For problems contact: crawler@healthline.com
 Mozilla/5.0 (X11; compatible; semantic-visions.com crawler; HTTPClient 3.1)
+Mozilla/5.0 (X11; Linux x86_64; rv:10.0.12) Gecko/20100101 Firefox/21.0 WordPress.com mShots
 Mozilla/5.0 (X11; Linux x86_64) adbeat.com/policy AppleWebKit/537.21 (KHTML, like Gecko) Firefox/34.0 Safari/537.21
 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.34 (KHTML, like Gecko) Qt/4.8.3 Safari/534.34 https://linkpeek.com
-Mozilla/5.0 (X11; Linux x86_64; rv:10.0.12) Gecko/20100101 Firefox/21.0 WordPress.com mShots
+Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36 Google (+https://developers.google.com/+/web/snippet/)
 Mozilla/5.0 (X11; U; Linux Core i7-4980HQ; de; rv:32.0; compatible; JobboerseBot; https://www.jobboerse.com/bot.htm) Gecko/20100101 Firefox/38.0
-Mozilla/5.0 (X11; U; Linux i686; de; rv:1.9.0.1; compatible; iCjobs Stellenangebote Jobs; http://www.icjobs.de) Gecko/20100401 iCjobs/3.2.3
-Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.2.1; aggregator:Spinn3r (Spinn3r 3.1); http://spinn3r.com/robot) Gecko/20021130
 Mozilla/5.0 (X11; U; Linux i686 (x86_64); en-US; rv:1.8.1.11) Gecko/20080109 (Charlotte/0.9t; http://www.searchme.com/support/)
 Mozilla/5.0 (X11; U; Linux i686 (x86_64); en-US; rv:1.8.1.11) Gecko/20080109 (Charlotte/0.9t; http://www.searchme.com/support/) (Charlotte/0.9t; http://www.searchme.com/support/)
 Mozilla/5.0 (X11; U; Linux i686 (x86_64); en-US; rv:1.9.2.19) Gecko WebThumb/1.0
+Mozilla/5.0 (X11; U; Linux i686; de; rv:1.9.0.1; compatible; iCjobs Stellenangebote Jobs; http://www.icjobs.de) Gecko/20100401 iCjobs/3.2.3
+Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.2.1; aggregator:Spinn3r (Spinn3r 3.1); http://spinn3r.com/robot) Gecko/20021130
 Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.0.19; aggregator:Spinn3r (Spinn3r 3.1); http://spinn3r.com/robot) Gecko/2010040121 Firefox/3.0.19
-Mozilla (Mozilla@somewhere.com)
+Mozilla/5.0 [en] (compatible; Gulper Web Bot 0.2.4 www.ecsl.cs.sunysb.edu/~maxim/cgi-bin/Link/GulperBot)
+Mozilla/5.0 compatible; yelpspider/yelpspider-1.0 (Crawlerbot run by Yelp Inc; yelpbot at yelp dot com)
+Mozilla/5.0 eCairn-Grabber/1.0 (+http://ecairn.com/grabber)
+Mozilla/5.0 gURLChecker/0.x.x (Linux)
+Mozilla/5.0 GurujiBot/1.0 ( http://www.guruji.com/en/WebmasterFAQ.html)
+Mozilla/5.0 GurujiBot/1.0 (+http://www.guruji.com/en/WebmasterFAQ.html)
+Mozilla/5.0 larbin@unspecified.mail
+Mozilla/5.0 Moreover/5.1 (+http://www.moreover.com; webmaster@moreover.com)
+Mozilla/5.0 URL-Spider
+Mozilla/5.0 usww.com-Spider-for-w8.net
+Mozilla/5.0 wgao@genieknows.com
+Mozilla/5.0 whoiam [http://www.axxus.de/]
+Mozilla/5.0+(compatible; Monitority/1.0; http://www.monitority.com/)
+Mozilla/5.0+(compatible; UptimeRobot/2.0; http://www.uptimerobot.com/)
+Mozilla/5.0+(compatible;+PiplBot;++http://www.pipl.com/bot/)
 MQbot metaquerier.cs.uiuc.edu/crawler
 MQBOT/Nutch-0.9-dev (MQBOT Nutch Crawler; http://falcon.cs.uiuc.edu; mqbot@cs.uiuc.edu)
-msnbot/0.11 ( http://search.msn.com/msnbot.htm)
+MSNBOT_Mobile MSMOBOT Mozilla/2.0 (compatible; MSIE 4.02; Windows CE; Default)
+msnbot-media/1.0 (+http://search.msn.com/msnbot.htm)
+msnbot-Products/1.0 (+http://search.msn.com/msnbot.htm)
 MSNBOT/0.1 (http://search.msn.com/msnbot.htm)
+msnbot/0.11 ( http://search.msn.com/msnbot.htm)
 msnbot/0.9 (+http://search.msn.com/msnbot.htm)
 MSNBOT/0.xx (http://search.msn.com/msnbot.htm)
 msnbot/1.0 (+http://search.msn.com/msnbot.htm)
@@ -1802,15 +1813,12 @@ msnbot/1.1
 msnbot/1.1 (+http://search.msn.com/msnbot.htm)
 msnbot/2.0b
 msnbot/2.1
-msnbot-media/1.0 (+http://search.msn.com/msnbot.htm)
-MSNBOT_Mobile MSMOBOT Mozilla/2.0 (compatible; MSIE 4.02; Windows CE; Default)
-msnbot-Products/1.0 (+http://search.msn.com/msnbot.htm)
 msnbot/x.xx ( http://search.msn.com/msnbot.htm)
 MSNPTC/1.0
 MSProxy/2.0
 MSRBOT
-MSRBOT (http://research.microsoft.com/research/sv/msrbot/)
 MSRBOT (http://research.microsoft.com/research/sv/msrbot)
+MSRBOT (http://research.microsoft.com/research/sv/msrbot/)
 Mulder, VCR-1.0
 multiBlocker browser
 multicrawler ( http://sw.deri.org/2006/04/multicrawler/robots.html)
@@ -1830,16 +1838,17 @@ NalezenCzBot/1.0 (http://www.nalezen.cz/about-crawler)
 NameOfAgent (CMS Spider)
 naoFavicon4IE/1.xx
 NASA Search 1.0
-NationalDirectoryAddURL/1.0
 NationalDirectory-WebSpider/1.3
-NaverBot-1.0 (NHN Corp. / +82-2-3011-1954 / nhnbot@naver.com)
+NationalDirectoryAddURL/1.0
 NaverBot_dloader/1.5
+NaverBot-1.0 (NHN Corp. / +82-2-3011-1954 / nhnbot@naver.com)
 NavissoBot
 NavissoBot/1.7  (+http://navisso.com/)
 NCSA Beta 1 (http://vias.ncsa.uiuc.edu/viasarchivinginformation.html)
 Nebullabot/2.2 (http://bot.nebulla.info)
 NEC Research Agent -- compuman at research.nj.nec.com
 NerdyBot
+Net-Seekr Bot/Net-Seekr Bot V1 (http://www.net-seekr.com)
 NetAnts/1.2x
 netEstate Impressumscrawler (+http://www.netestate.de/De/Loesungen/Impressumscrawler)
 netEstate NE Crawler (+http://www.website-datenbank.de/)
@@ -1850,14 +1859,13 @@ NetMechanic Vx.0
 NetNoseCrawler/v1.0
 Netprospector JavaCrawler
 NetPumper/x.xx
+NetResearchServer(http://www.look.com)
 NetResearchServer/2.5(loopimprovements.com/robot.html)
 NetResearchServer/2.7(loopimprovements.com/robot.html)
 NetResearchServer/2.8(loopimprovements.com/robot.html)
 NetResearchServer/3.5(loopimprovements.com/robot.html)
 NetResearchServer/4.0(loopimprovements.com/robot.html)
-NetResearchServer(http://www.look.com)
 NetResearchServer/x.x(loopimprovements.com/robot.html)
-Net-Seekr Bot/Net-Seekr Bot V1 (http://www.net-seekr.com)
 NetSeer/Nutch-0.9 (NetSeer Crawler; http://www.netseer.com; crawler@netseer.com)
 NetSprint -- 2.0
 NetWhatCrawler/0.06-dev (NetWhatCrawler from NetWhat.com; http://www.netwhat.com; support@netwhat.com)
@@ -1868,11 +1876,11 @@ NewsGator/2.5 (http://www.newsgator.com; Microsoft Windows NT 5.1.2600.0; .NET  
 NextGenSearchBot 1 (for information visit http://www.eliyon.com/NextGenSearchBot)
 NextGenSearchBot 1 (for information visit http://www.zoominfo.com/About/misc/NextGenSearchBot.aspx)
 NextopiaBOT (+http://www.nextopia.com) distributed crawler client beta v0.x
-NG/2.0
 NG-Search/0.86 ( http://www.ng-search.com)
 NG-Search/0.86 (+http://www.ng-search.com)
-NG-Search/0.90 (NG-SearchBot; http://www.ng-search.com;  )
 NG-Search/0.9.8 (http://www.ng-search.com)
+NG-Search/0.90 (NG-SearchBot; http://www.ng-search.com;  )
+NG/2.0
 nicebot
 NICO/1.0
 NIF/1.1 (http://www.newsisfree.com/robot.php users:)
@@ -1880,43 +1888,42 @@ Nikita the Spider (http://NikitaTheSpider.com/)
 NITLE Blog Spider/0.01
 Nitro Downloader 1.x (www.klsofttools.com)
 Noago Spider
+Nokia-WAPToolkit/1.2 googlebot(at)googlebot.com
 Nokia6300/2.0 (05.50) Profile/MIDP-2.0 Configuration/CLDC-1.1 (botmobi http://find.mobi/bot.html abuse@mtld.mobi)
 Nokia6610/1.0 (3.09) Profile/MIDP-1.0 Configuration/CLDC-1.0 (compatible;YahooSeeker/M1A1-R2D2; http://help.yahoo.com/help/us/ysearch/crawling/crawling-01.html)
-Nokia-WAPToolkit/1.2 googlebot(at)googlebot.com
 NokodoBot/1.x (+http://nokodo.com/bot.htm)
 Norbert the Spider(Burf.com)
 Norton-Safeweb
 noxtrumbot/1.0 (crawler@noxtrum.com)
 noyona_0_1
 NP/0.1 (NP; http://www.nameprotect.com; npbot@nameprotect.com)
-NPBot-1/2.0
 NPBot (http://www.nameprotect.com/botinfo.html)
+NPBot-1/2.0
 Nsauditor/1.x
 nsyght.com/Nutch-1.0-dev (nsyght.com; Nsyght.com)
 nsyght.com/Nutch-x.x (nsyght.com; search.nsyght.com)
 nttdirectory_robot/0.9 (super-robot@super.navi.ocn.ne.jp)
 Nucleus SiteList LinkChecker/1.1
-nuSearch Spider <a href='http://www.nusearch.com'>www.nusearch.com</a> (compatible; MSIE 4.01)
 nuSearch Spider (compatible; MSIE 4.01; Windows NT)
 NuSearch Spider (compatible; MSIE 6.0)
 Nusearch Spider (www.nusearch.com)
+nuSearch Spider <a href='http://www.nusearch.com'>www.nusearch.com</a> (compatible; MSIE 4.01)
 NuSearch Spider www.nusearch.com
 Nutch
-*/Nutch-0.9-dev
-Nutch/2.2.1 (page scorer; http://integralads.com/site-indexing-policy/)
 Nutch crawler/Nutch-0.9 (picapage.com; admin@picapage.com)
+Nutch/2.2.1 (page scorer; http://integralads.com/site-indexing-policy/)
+Nutch/Nutch-0.9 (Eurobot; http://www.ayell.eu )
 NutchCVS/0.05 (Nutch; http://www.nutch.org/docs/en/bot.html; nutch-agent@lists.sourceforge.net)
 NutchCVS/0.06-dev (Nutch; http://www.nutch.org/docs/en/bot.html; jagdeepssandhu@hotmail.com)
 NutchCVS/0.06-dev (Nutch; http://www.nutch.org/docs/en/bot.html; nutch-agent@lists.sourceforge.net)
 NutchCVS/0.0x-dev (Nutch; http://www.nutch.org/docs/bot.html; nutch-agent@lists.sourceforge.net)
-NutchCVS/0.7.1 (Nutch; http://lucene.apache.org/nutch/bot.html; nutch-agent@lucene.apache.org)
+NutchCVS/0.7 (Nutch; http://lucene.apache.org/nutch/bot.html; nutch-agent@lucene.apache.org)
 NutchCVS/0.7.1 (Nutch running at UW; http://crawlers.cs.washington.edu/; sycrawl@cs.washington.edu)
 NutchCVS/0.7.1 (Nutch running at UW; http://www.nutch.org/docs/en/bot.html; sycrawl@cs.washington.edu)
+NutchCVS/0.7.1 (Nutch; http://lucene.apache.org/nutch/bot.html; nutch-agent@lucene.apache.org)
 NutchCVS/0.7.2 (Nutch; http://lucene.apache.org/nutch/bot.html; nutch-agent@lucene.apache.org)
-NutchCVS/0.7 (Nutch; http://lucene.apache.org/nutch/bot.html; nutch-agent@lucene.apache.org)
 NutchCVS/0.8-dev (Nutch; http://lucene.apache.org/nutch/bot.html; nutch-agent@lucene.apache.org)
 NutchEC2Test/Nutch-0.9-dev (Testing Nutch on Amazon EC2.; http://lucene.apache.org/nutch/bot.html; ec2test at lucene.com)
-Nutch/Nutch-0.9 (Eurobot; http://www.ayell.eu )
 NutchOrg/0.0x-dev (Nutch; http://www.nutch.org/docs/bot.html; nutch-agent@lists.sourceforge.net)
 nutchsearch/Nutch-0.9 (Nutch Search 1.0; herceg_novi at yahoo dot com)
 NutchVinegarCrawl/Nutch-0.8.1 (Vinegar; http://www.cs.washington.edu; eytanadar at gmail dot com)
@@ -1927,8 +1934,8 @@ ObjectsSearch/0.0x (ObjectsSearch; http://www.ObjectsSearch.com/bot.html; suppor
 oBot ((compatible;Win32))
 Ocelli/1.x (http://www.globalspec.com/Ocelli)
 Octopus
-Octora Beta Bot - www.octora.com
 Octora Beta - www.octora.com
+Octora Beta Bot - www.octora.com
 oegp v. 1.3.0
 OliverPerry
 omgilibot/0.3  http://www.omgili.com/Crawler.html
@@ -1954,8 +1961,8 @@ OmniExplorer_Bot/x.xx (+http://www.omni-explorer.com) WorldIndexer
 onCHECK Linkchecker von www.scientec.de fuer www.onsinn.de
 onCHECK-Robot, www.onsearch.de
 Onet.pl SA- http://szukaj.onet.pl
-Online24-Bot (Version: 1.0x, powered by www.online24.de)
 online link validator (http://www.dead-links.com/)
+Online24-Bot (Version: 1.0x, powered by www.online24.de)
 OntoSpider/1.0 libwww-perl/5.65
 OOZBOT/0.17 (--; http://www.setooz.com/oozbot.html; pvvpr at iiit dot ac dot in)
 OOZBOT/0.20 ( -- ; http://www.setooz.com/oozbot.html ; agentname at setooz dot_com )
@@ -1983,12 +1990,12 @@ ownCloud News/5.3.6 (+https://owncloud.org/; 1 subscriber;)
 ozelot/2.7.3 (Search engine indexer; www.flying-cat.de/ozelot; ozelot@flying-cat.de)
 PADLibrary Spider
 Page Analyzer v4.0 ( http://www.ranks.nl/ )
+Page Valet/4.1pre5
+page_verifier (http://www.securecomputing.com/goto/pv)
 PageBitesHyperBot/600 (http://www.pagebites.com/)
 Pagebull http://www.pagebull.com/
 PagesInventory (robot http://www.pagesinventory.com)
 Pagestacker Bot
-Page Valet/4.1pre5
-page_verifier (http://www.securecomputing.com/goto/pv)
 PagmIEDownload
 Panopta v1.1
 panscient.com
@@ -2012,8 +2019,8 @@ Piffany_Web_Spider_v0.x
 PigeonBot1.0 BETA
 PingALink Monitoring Services 1.0
 PingALink Monitoring Services 1.0 (http://www.pingalink.com)
-Pingdom.com_bot_version_1.4_(http://www.pingdom.com/)
 Pingdom GIGRIB (http://www.pingdom.com)
+Pingdom.com_bot_version_1.4_(http://www.pingdom.com/)
 PINGOMETER_BOT_(HTTPS://PINGOMETER.COM)
 Pingoscope
 PingSpot/1.0 (http://www.pingspot.org/)
@@ -2026,10 +2033,10 @@ PlagiarBot/1.0
 PlantyNet_WebRobot_V1.9 dhkang@plantynet.com
 PluckFeedCrawler/2.0 (compatible; Mozilla 4.0; MSIE 5.5; http://www.pluck.com; 1 subscribers)
 Pluggd/Nutch-0.9 (automated crawler http://www.pluggd.com;support at pluggd dot com)
-Pockey7.x.x(WIN32GUI)
 Pockey-GetHTML/4.12.0 (Win32; GUI; ix86)
 Pockey-GetHTML/x.xx
 Pockey/x.x.x
+Pockey7.x.x(WIN32GUI)
 Poirot
 polybot 1.0 (http://cis.poly.edu/polybot/)
 Pompos/1.1 http://pompos.iliad.fr
@@ -2038,17 +2045,17 @@ Pompos/1.3 http://dir.com/pompos.html
 Pompos/1.x http://dir.com/pompos.html
 Pompos/1.x pompos@iliad.fr
 Popdexter/1.0
-PortalBSpider/2.0 (spider@portalb.com)
 Port Huron Labs
 Port Monitor check service 1.0 | http://www.port-monitor.com
+PortalBSpider/2.0 (spider@portalb.com)
 PostFavorites
 PostPost/1.0 (+http://postpo.st/crawlers)
 potbot 1.0
-PRCrawler/Nutch-0.9 (data mining development project; crawler@projectrialto.com)
 pr-cy.ru Screenshot Bot
+PRCrawler/Nutch-0.9 (data mining development project; crawler@projectrialto.com)
 Priceonomics Analysis Engine - Fetch/1.0
-PrivacyFinder/1.1
 PrivacyFinder Cache Bot v1.0
+PrivacyFinder/1.1
 Production Bot 0116B
 Production Bot 2016B
 Production Bot DOT 3016B
@@ -2092,8 +2099,8 @@ Qseero v1.0.0
 QuepasaCreep ( crawler@quepasacorp.com )
 QuepasaCreep v0.9.1x
 QueryN Metasearch
-QweeryBot/3.01 ( http://qweerybot.qweery.nl)
 Qweery_robot.txt_CheckBot/3.01 (http://qweerybot.qweery.com)
+QweeryBot/3.01 ( http://qweerybot.qweery.nl)
 R6_CommentReader_(www.radian6.com/crawler)
 R6_CommentReader(www.radian6.com/crawler)
 R6_FeedFetcher_(www.radian6.com/crawler)
@@ -2101,8 +2108,8 @@ rabaz (rabaz at gigabaz dot com)
 RaBot/1.0 Agent-admin/phortse@hanmail.net
 radian6_default_(www.radian6.com/crawler)
 ramBot xtreme x.x
-RAMPyBot/0.8-dev (Nutch; http://lucene.apache.org/nutch/bot.html; nutch-agent@lucene.apache.org)
 RAMPyBot - www.giveRAMP.com/0.1 (RAMPyBot - www.giveRAMP.com; http://www.giveramp.com/bot.html; support@giveRAMP.com)
+RAMPyBot/0.8-dev (Nutch; http://lucene.apache.org/nutch/bot.html; nutch-agent@lucene.apache.org)
 Rank Exec (rankexec.com) Reciprocal Link Manager 1.x/bot
 RankFlex.com Webspider
 Rankivabot/3.2 (www.rankiva.com; 3.2; vzmxikn)
@@ -2125,8 +2132,8 @@ RedCarpet/1.2 (http://www.redcarpet-inc.com/robots.html)
 RedCell/0.1 (InfoSec Search Bot (Coming Soon); http://www.telegenetic.net/bot.html; lhall@telegenetic.net)
 RedCell/0.1 (RedCell; telegenetic.net/bot.html; lhall_at_telegenetic.net)
 RedKernel WWW-Spider 2/0 (+http://www-spider.redkernel-softwares.com/)
-RelateIQ Crawler www.relateiq.com
 REL Link Checker Lite x.x
+RelateIQ Crawler www.relateiq.com
 ResponseCodeTest/1.1
 Rewebber/1.2 libwww-perl/5.41
 rico/0.1
@@ -2137,12 +2144,10 @@ RMA/1.0 (compatible; RealMedia)
 RoboCrawl (http://www.canadiancontent.net)
 RoboCrawl (www.canadiancontent.net)
 RoboPal (http://www.findpal.com/)
-:robot/1.0 (linux) ( admin e-mail: undefined http://www.neofonie.de/loesungen/search/robot.html )
 Robot: NutchCrawler- Owner: wdavies@acm.org
-Robots_Tester_http_www.searchenginepromotionhelp.com
-( Robots.txt Validator http://www.searchengineworld.com/cgi-bin/robotcheck.cgi )
 Robot@SuperSnooper.Com
 Robot/www.pj-search.com
+Robots_Tester_http_www.searchenginepromotionhelp.com
 Robozilla/1.0
 rogerbot/1.0 (http://www.moz.com/dp/rogerbot, rogerbot-crawler@moz.com)
 Rotondo/3.1 libwww/5.3.1
@@ -2157,6 +2162,8 @@ Rubbot/1.0 (+http://rubhub.com/)
 Ruby, link_thumbnailer
 RufusBot (Rufus Web Miner; http://64.124.122.252/feedback.html)
 RufusBot (Rufus Web Miner; http://www.webaroo.com/rooSiteOwners.html)
+S.T.A.L.K.E.R. (http://www.seo-tools.net/en/bot.aspx)
+S&L Spider (http://search.hirners.com/)
 SafariBookmarkChecker (+http://www.coriolis.ch/)
 SafeAds.xyz bot
 SafeDNS search bot/Nutch-1.9 (https://www.safedns.com/searchbot; support [at] safedns [dot] com)
@@ -2173,17 +2180,13 @@ ScanWeb
 ScholarUniverse/0.8 (Nutch;+http://scholaruniverse.com/bot.jsp; fetch-agent@scholaruniverse.com)
 schwarzmann.biz-Spider_for_paddel.org+(http://www.innerprise.net/usp-spider.asp)
 ScollSpider/2.0 (+http://www.webwobot.com/ScollSpider.php)
-Scooter/1.0
-Scooter/1.0 scooter@pa.dec.com
-Scooter/1.1 (custom)
-Scooter/2.0 G.R.A.B. V1.1.0
-Scooter/2.0 G.R.A.B. X2.0
-Scooter2_Mercator_x-x.0
+Scooter_bh0-3.0.3
+Scooter_trk3-3.0.3
 Scooter-3.0.EU
 Scooter-3.0.FS
 Scooter-3.0.HD
-Scooter-3.0QI
 Scooter-3.0.VNS
+Scooter-3.0QI
 Scooter-3.2
 Scooter-3.2.BT
 Scooter-3.2.DIL
@@ -2192,18 +2195,22 @@ Scooter-3.2.JT
 Scooter-3.2.NIV
 Scooter-3.2.SF0
 Scooter-3.2.snippet
-Scooter/3.3
 Scooter-3.3dev
-Scooter/3.3.QA.pczukor
-Scooter/3.3_SF
-Scooter/3.3.vscooter
 Scooter-ARS-1.1
 Scooter-ARS-1.1-ih
-Scooter_bh0-3.0.3
-Scooter_trk3-3.0.3
 scooter-venus-3.0.vns
 Scooter-W3-1.0
 Scooter-W3.1.2
+Scooter/1.0
+Scooter/1.0 scooter@pa.dec.com
+Scooter/1.1 (custom)
+Scooter/2.0 G.R.A.B. V1.1.0
+Scooter/2.0 G.R.A.B. X2.0
+Scooter/3.3
+Scooter/3.3_SF
+Scooter/3.3.QA.pczukor
+Scooter/3.3.vscooter
+Scooter2_Mercator_x-x.0
 ScoutAbout
 ScoutAnt/0.1; +http://www.ant.com/what_is_ant.com/
 scoutmaster
@@ -2213,23 +2220,23 @@ Scrubby/2.1 (http://www.scrubtheweb.com/)
 Scrubby/2.2 (http://www.scrubtheweb.com/)
 Scrubby/2.x (http://www.scrubtheweb.com/)
 Scrubby/3.0 (+http://www.scrubtheweb.com/help/technology.html)
-Search+
-Search/1.0 (http://www.innerprise.net/es-spider.asp)
-searchbot admin@google.com
-SearchByUsa/2 (SearchByUsa; http://www.SearchByUsa.com/bot.html; info@SearchByUsa.com)
+Search-Engine-Studio
 search.ch V1.4
 search.ch V1.4.2 (spiderman@search.ch; http://www.search.ch)
+search.KumKie.com
+Search/1.0 (http://www.innerprise.net/es-spider.asp)
+Search+
+searchbot admin@google.com
+SearchByUsa/2 (SearchByUsa; http://www.SearchByUsa.com/bot.html; info@SearchByUsa.com)
 SearchdayBot
-Search-Engine-Studio
 SearchExpress Spider0.99
 SearchGuild_DMOZ_Experiment (chris@searchguild.com)
 SearchGuild/DMOZ/Experiment (searchguild@gmail.com)
 Searchit-Now Robot/2.2 (+http://www.searchit-now.co.uk)
-search.KumKie.com
 Searchmee! Spider v0.98a
 SearchSight/2.0 (http://SearchSight.com/)
-Searchspider/1.2 (SearchSpider; http://www.searchspider.com; webmaster@searchspider.com)
 SearchSpider.com/1.1
+Searchspider/1.2 (SearchSpider; http://www.searchspider.com; webmaster@searchspider.com)
 SearchTone2.0 - IDEARE
 seebot/2.0 (+http://www.seegnify.com/bot)
 Seekbot/1.0 (http://www.seekbot.net/bot.html)
@@ -2241,18 +2248,18 @@ Seeker.lookseek.com
 semaforo.net
 Semager/1.1 (http://www.semager.de/blog/semager-bots/)
 Semager/1.x (http://www.semager.de)
+Semantic Health Web Crawler - Research Project - Dept. of Medical Informatics - Heilbronn University
 semanticdiscovery/0.1
 semanticdiscovery/0.x
-Semantic Health Web Crawler - Research Project - Dept. of Medical Informatics - Heilbronn University
 SemanticScholarBot/1.0 (+http://s2.allenai.org/bot.html)
-Sensis.com.au Web Crawler (search_comments\at\sensis\dot\com\dot\au)
 Sensis Web Crawler (search_comments\at\sensis\dot\com\dot\au)
+Sensis.com.au Web Crawler (search_comments\at\sensis\dot\com\dot\au)
 SentiBot www.sentibot.eu (compatible with Googlebot)
+Seo Servis - Analyza zdrojoveho kodu
+seo-nastroj.cz
 Seobility (SEO-Check; http://bit.ly/1dJuuzs)
 SEOCentro Page Keyword Analyzer v1.2
 SeoCheck (FischerNetzDesign Seo Checker, info@fischernetzdesign.de)
-seo-nastroj.cz
-Seo Servis - Analyza zdrojoveho kodu
 Server Density Service Monitoring v2
 ServiceUptime.robot
 SeznamBot/1.0
@@ -2294,29 +2301,27 @@ SiteTaggerBot (http://www.sitetagger.com/bot.htm)
 SiteTruth.com site rating system
 SiteUptime.com
 SiteXpert
-+SitiDi.net/SitiDiBot/1.0 (+Have Good Day)
 Skampy/0.9.x (http://www.skaffe.com/skampy-info.html)
 Skimpy/0.x (http://www.skaffe.com/skampy-info.html)
 Skywalker/0.1 (Skywalker; anonymous; anonymous)
 Slack-ImgProxy 0.59 (+https://api.slack.com/robots)
 Slarp/0.1
 Slider_Search_v1-de
-S&L Spider (http://search.hirners.com/)
-Slurp/2.0-KiteWeekly (slurp@inktomi.com; http://www.inktomi.com/slurp.html)
 Slurp/2.0 (slurp@inktomi.com; http://www.inktomi.com/slurp.html)
+Slurp/2.0-KiteWeekly (slurp@inktomi.com; http://www.inktomi.com/slurp.html)
 Slurp/si (slurp@inktomi.com; http://www.inktomi.com/slurp.html)
 Slurpy Verifier/1.0
+SlySearch (slysearch@slysearch.com)
 SlySearch/1.0 http://www.plagiarism.org/crawler/robotinfo.html
 SlySearch/1.x http://www.slysearch.com
-SlySearch (slysearch@slysearch.com)
 SmartDownload/1.2.67 (Win32; Jan 12 1999)
 SmartDownload/1.2.77 (Win32; Feb 1 2000)
 SmartDownload/1.2.77 (Win32; Jun 19 2001)
 smartwit.com
 SmiffyDCMetaSpider/1.0
+snap.com beta crawler v0
 Snapbot/1.0
 Snapbot/1.0 (Snap Shots, +http://www.snap.com)
-snap.com beta crawler v0
 Snappy/1.1 ( http://www.urltrends.com/ )
 SnykeBot/0.6 (http://www.snyke.com)
 SocSciBot ()
@@ -2332,6 +2337,7 @@ sohu-search
 Sosospider+(+http://help.soso.com/webspider.htm)
 SpeedDownload/1.x
 speedfind ramBot xtreme 8.1
+Speedy Spider ( http://www.entireweb.com/speedy.html )
 Speedy Spider (Beta/1.0; www.entireweb.com)
 Speedy Spider (Beta/x.x; speedy@entireweb.com)
 Speedy Spider (Entireweb; Beta/1.0; http://www.entireweb.com/about/search_tech/speedyspider/)
@@ -2339,31 +2345,30 @@ Speedy Spider (Entireweb; Beta/1.1; http://www.entireweb.com/about/search_tech/s
 Speedy Spider (Entireweb; Beta/1.2; http://www.entireweb.com/about/search_tech/speedyspider/)
 Speedy Spider (Entireweb; Beta/1.3; http://www.entireweb.com/about/search_tech/speedyspider/)
 Speedy Spider (http://www.entireweb.com)
-Speedy_Spider (http://www.entireweb.com)
 Speedy Spider (http://www.entireweb.com/about/search_tech/speedy_spider/)
 Speedy Spider (http://www.entireweb.com/about/search_tech/speedyspider/)
-Speedy Spider ( http://www.entireweb.com/speedy.html )
+Speedy_Spider (http://www.entireweb.com)
 Sphere Scout&v4.0 - scout at sphere dot com
 Sphider
 Spida/0.1
-spider.batsch.com
-SpiderKU/0.x
-SpiderMan
-Spider/maxbot.com admin@maxbot.com
-SpiderMonkey/7.0x (SpiderMonkey.ca info at http://spidermonkey.ca/sm.shtml)
 Spider-Sleek/2.0 (+http://search-info.com/linktous.html)
+spider.batsch.com
 Spider.TerraNautic.net - v:1.04
 spider.yellopet.com - www.yellopet.com
+Spider/maxbot.com admin@maxbot.com
+SpiderKU/0.x
+SpiderMan
+SpiderMonkey/7.0x (SpiderMonkey.ca info at http://spidermonkey.ca/sm.shtml)
 Spinne/2.0
 Spinne/2.0 med
 Spinne/2.0 med_AH
 Spock Crawler (http://www.spock.com/crawler)
 sportsuchmaschine.de-Robot (Version: 1.02- powered by www.sportsuchmaschine.de)
 sproose/0.1-alpha (sproose crawler; http://www.sproose.com/bot.html; crawler@sproose.com)
+SQ Webscanner
+Squid-Prefetch
 squidclam
 SquidClamAV_Redirector 1.x.x
-Squid-Prefetch
-SQ Webscanner
 Sqworm/2.9.81-BETA (beta_release; 20011102-760; i686-pc-linux-gnu)
 Sqworm/2.9.85-BETA (beta_release; 20011115-775; i686-pc-linux-gnu)
 SSL Labs (https://www.ssllabs.com/about/assessment.html)
@@ -2371,7 +2376,6 @@ SSurf15a 11
 StackRambler/2.0
 StackRambler/2.0 (MSIE incompatible)
 StackRambler/x.x
-S.T.A.L.K.E.R. (http://www.seo-tools.net/en/bot.aspx)
 Stamina/1.4
 Star Downloader
 StarDownloader/1.xx
@@ -2387,17 +2391,16 @@ suchbot
 Suchknecht.at-Robot
 suchpadbot/1.0 (+http://www.suchpad.de)
 Sufog/Nutch-2.2.1 (www.sufog.com; www.sufog.com)
+Super Monitoring
 Superarama.com-Tarama-Botu-v.01
 SuperBot/x.x (Win32)
 SuperBot/x.x.x.xx (Windows XP)
 Superdownloads Spiderman
-Super Monitoring
 SurferF3 1/0
 SurfMaster
 SurveyBot/2.2 <a href='http://www.whois.sc'>Whois Source</a>
 SurveyBot/2.3 (Whois Source)
 SurveyBot/2.3+(Whois+Source)
-!Susie (http://www.sync2it.com/susie)
 suzuran
 Swooglebot/2.0. (+http://swoogle.umbc.edu/swooglebot.htm)
 SWSBot-Images/1.2 http://www.smartwaresoft.com/swsbot12.html
@@ -2420,17 +2423,17 @@ TECOMAC-Crawler/0.x
 Tecomi Bot (http://www.tecomi.com/bot.htm)
 Teemer (NetSeer, Inc. is a Los Angeles based Internet startup company.; http://www.netseer.com/crawler.html; crawler@netseer.com)
 Teleport Pro/1.2x(.1xxx)
-teoma_agent1
-teomaagent1 [crawler-admin@teoma.com]
-teomaagent crawler-admin@teoma.com
 Teoma MP
+teoma_agent1
+teomaagent crawler-admin@teoma.com
+teomaagent1 [crawler-admin@teoma.com]
 Teradex Mapper; mapper@teradex.com; http://www.teradex.com
 TeragramCrawler
 terraminds-bot/1.0 (support@terraminds.de)
 TerrawizBot/1.0 (+http://www.terrawiz.com/bot.html)
+Test spider
 TestCrawler/Nutch-0.9 (Testing Crawler for Research ; http://balihoo.com/index.aspx; tgautier at balihoo dot com)
 Testomatobot/1.0 (Linux x86_64; +http://www.testomato.com/testomatobot) minicrawler/3.0.1
-Test spider
 TheRarestParser/0.2a (http://therarestwords.com/)
 TheSuBot/0.1 (www.thesubot.de)
 TheSuBot/0.2 (www.thesubot.de)
@@ -2450,9 +2453,9 @@ Tools4noobs.com/1.0 Spider
 Topodia/1.2-dev (Topodia - Crawler for HTTP content indexing; http://www.topodia.com/; support@topodia.com)
 TOPOS robot/1.1 (http://www.topos.com.ua/)
 traazibot/testengine (+http://www.traazi.de)
-Trailfire/0.7.1 (Nutch; http://lucene.apache.org/nutch/bot.html; nutch-agent@lucene.apache.org)
 Trailfire-bot/0.7.1 (Nutch; http://lucene.apache.org/nutch/bot.html; nutch-agent@lucene.apache.org)
 Trailfire-bot/0.7.1 (Trailfire page content analyzer; http://trailfire.com; info@trailfire.com)
+Trailfire/0.7.1 (Nutch; http://lucene.apache.org/nutch/bot.html; nutch-agent@lucene.apache.org)
 Trampelpfad-Spider
 Trampelpfad-Spider-v0.1
 tricosMetaCheck 1.2216-08-1999 (http://www.tricos.com/metacheck)
@@ -2470,8 +2473,8 @@ TutorGig/1.5 (+http://www.tutorgig.com/crawler)
 Tutorial Crawler 1.4 (http://www.tutorgig.com/crawler)
 TwengaBot
 TwengaBot-2.0 Champigny (+http://www.twenga.com/bot.html)
-Twiceler-0.9 http://www.cuill.com/twiceler/robot.html
 Twiceler www.cuill.com/robots.html
+Twiceler-0.9 http://www.cuill.com/twiceler/robot.html
 Twisted PageGetter
 Twitturly / v0.x
 Twotrees Reactive Filter V2.0
@@ -2486,36 +2489,36 @@ Under the Rainbow 2.2
 unknownght.com Web Server IIS vs Apache Survey. See Results at www.DNSRight.com
 UofTDB_experiment (leehyun@cs.toronto.edu)
 updated/0.1-alpha (updated crawler; http://www.updated.com; crawler@updated.com)
-updated/0.1beta (updated.com; http://www.updated.com; crawler@updated.om)
 updated/0.1-beta (updated; http://www.updated.com; updated@updated.com)
+updated/0.1beta (updated.com; http://www.updated.com; crawler@updated.om)
 Uptimebot
 UptimeBot(www.uptimebot.com)
 UptimeDog Robot (www.uptimedog.com)
 URI::Fetch/0.06
+URL Spider Pro/x.xx (innerprise.net)
+URL_Spider_Pro/x.x
+URL_Spider_Pro/x.x+(http://www.innerprise.net/usp-spider.asp)
 URLBase/6.x
 URLBlaze
 urlfan-bot/1.0; +http://www.urlfan.com/site/bot/350.html
 URLGetFile
-URL_Spider_Pro/x.x
-URL_Spider_Pro/x.x+(http://www.innerprise.net/usp-spider.asp)
-URL Spider Pro/x.xx (innerprise.net)
 User-Agent:  BoardReader Favicon Fetcher /1.0 info@boardreader.com
 User-Agent:  BoardReader Image Fetcher /1.0 info@boardreader.com
-User-Agent: FileHeap! file downloader (http://www.fileheap.com)
 User-Agent:  LjSEEK Picture-Bot /1.0 contact@ljseek.com
-user-agent=Mozilla/3.01Gold
+User-Agent: FileHeap! file downloader (http://www.fileheap.com)
 User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)
 User-Agent: Mozilla/4.0 (SKIZZLE! Distributed Internet Spider v1.0 - www.SKIZZLE.com)
+user-agent=Mozilla/3.01Gold
 USyd-NLP-Spider (http://www.it.usyd.edu.au/~vinci/bot.html)
 UtilMind HTTPGet
 uTorrent/1500
 VadixBot
+Vagabondo-WAP/2.0 (webcrawler at wise-guys dot nl; http://webagent.wise-guys.nl/)/1.0 Profile
 Vagabondo/1.x MT (webagent@wise-guys.nl)
 Vagabondo/2.0 MT
 Vagabondo/2.0 MT (webagent at wise-guys dot nl)
 Vagabondo/2.0 MT (webagent@NOSPAMwise-guys.nl)
 Vagabondo/3.0 (webagent at wise-guys dot nl)
-Vagabondo-WAP/2.0 (webcrawler at wise-guys dot nl; http://webagent.wise-guys.nl/)/1.0 Profile
 Vakes/0.01 (Vakes; http://www.vakes.com/; search@vakes.com)
 vb wininet
 vebidoobot
@@ -2523,8 +2526,8 @@ versus 0.2 (+http://versus.integis.ch)
 versus crawler eda.baykan@epfl.ch
 Verticrawlbot
 VeryGoodSearch.com.DaddyLongLegs
-Verzamelgids/2.2 (http://www.verzamelgids.nl)
 verzamelgids.nl - Networking4all Bot/x.x
+Verzamelgids/2.2 (http://www.verzamelgids.nl)
 Vespa Crawler
 virus_detector (virus_harvester@securecomputing.com)
 Virusdie crawler/2.1
@@ -2538,20 +2541,20 @@ Vorboss Web Crawler [crawl@vorboss.net]/Nutch-2.3
 VORTEX/1.2 ( http://marty.anstey.ca/robots/vortex/)
 Vortex/2.2 ( http://marty.anstey.ca/robots/vortex/)
 Vortex/2.2 (+http://marty.anstey.ca/robots/vortex/)
+voyager-hc/1.0
 voyager/2.0 (http://www.kosmix.com/crawler.html)
 voyager/2.0 (http://www.kosmix.com/html/crawler.html)
-voyager-hc/1.0
 VSE/1.0 (testcrawler@hotmail.com)
 VSE/1.0 (testcrawler@vivisimo.com)
 vspider
 vspider/3.x
 VWBOT/Nutch-0.9-dev (VWBOT Nutch Crawler; http://vwbot.cs.uiuc.edu;+vwbot@cs.uiuc.edu
 VYU2 (GNU; OpenRISC)
+W3C_Validator/1.xxx libwww-perl/5.xx
 W3C-checklink/3.x.x.x libwww-perl/5.xx
 W3C-checklink/4.x [4.xx] libwww-perl/5.xxx
-W3CRobot/5.4.0 libwww/5.4.0
-W3C_Validator/1.xxx libwww-perl/5.xx
 W3C-WebCon/5.x.x libwww/5.x.x
+W3CRobot/5.4.0 libwww/5.4.0
 w3dt.net httphr/2.0
 W3SiteSearch Crawler_v1.1 http://www.w3sitesearch.de
 wadaino.jp-crawler 0.2 (http://wadaino.jp/)
@@ -2561,15 +2564,20 @@ Wavefire/0.8-dev (Wavefire; http://www.wavefire.com; info@wavefire.com)
 Waypath development crawler - info at waypath dot com
 Waypath Scout v2.x - info at waypath dot com
 WDG_Validator/1.1
+Web Image Collector
+Web Link Validator 1.5
+Web Snooper
+web-bekannt (Version: 1.02, powered by www.internetservice-franken.de)
+web-bekannt (Version: 1.02, powered by www.web-bekannt.de)
+Web-Bot V1.03
+Web-sniffer.me/1.0.0 (+http://web-sniffer.me/)
+Web-sniffer/1.1.0 (+http://web-sniffer.net/)
 web2express.org/Nutch-0.9-dev (leveled playing field; http://web2express.org/; info at web2express.org)
 WebAlta Crawler/1.2.1 (http://www.webalta.ru/bot.html)
 WebarooBot (Webaroo Bot; http://64.124.122.252/feedback.html)
 WebarooBot (Webaroo Bot; http://www.webaroo.com/rooSiteOwners.html)
 WebAuto/3.4xxx (WinNT; I)
 webbandit/4.xx.0
-web-bekannt (Version: 1.02, powered by www.internetservice-franken.de)
-web-bekannt (Version: 1.02, powered by www.web-bekannt.de)
-Web-Bot V1.03
 WebBug/5.x
 Webclipping.com
 webcollage/1.114
@@ -2588,12 +2596,10 @@ WebFilter Robot 1.x
 WebFindBot(http://www.web-find.com)
 Webglimpse 2.xx.x (http://webglimpse.net)
 webGobbler/1.x.x
-Web Image Collector
 WebImages 0.3 ( http://herbert.groot.jebbink.nl/?app=WebImages )
 webinatorbot 1.1; +http://www.webinator.de
 WebLight/4.x.x (support@illumit.com; http://www.illumit.com/Products/weblight/)
 Weblink's checker/
-Web Link Validator 1.5
 Weblog Attitude Diffusion 1.0
 webmeasurement-bot, http://rvs.informatik.uni-leipzig.de
 WebMiner/x.x [en] (Win98; I)
@@ -2602,18 +2608,15 @@ WebPix 1.0 (www.netwu.com)
 WebRACE/1.1 (University of Cyprus- Distributed Crawler)
 WebRankSpider/1.37 (+http://ulm191.server4you.de/crawler/)
 WebReaper [info@webreaper.net]
-WebReaper vx.x - www.webreaper.net
 WebReaper [webreaper@webreaper.net]
+WebReaper vx.x - www.webreaper.net
+WebSearch.COM.AU/3.0.1 (The Australian Search Engine; http://WebSearch.COM.AU; Search@WebSearch.COM.AU)
 WebSearchBench WebCrawler v0.1(Experimental)
 WebSearchBench WebCrawler V1.0 (Beta)- Prof. Dr.-Ing. Christoph Lindemann- Universität Dortmund- cl@cs.uni-dortmund.de- http://websearchbench.cs.uni-dortmund.de/
-WebSearch.COM.AU/3.0.1 (The Australian Search Engine; http://WebSearch.COM.AU; Search@WebSearch.COM.AU)
 Website Explorer/0.9.x.x
 Website eXtractor
 websitepulse checker/3.0 (compatible; MSIE 5.5; Netscape 4.75; Linux)
 WebsiteWorth v1.0
-Web-sniffer/1.1.0 (+http://web-sniffer.net/)
-Web-sniffer.me/1.0.0 (+http://web-sniffer.me/)
-Web Snooper
 Webspinne/1.0 webmaster@webspinne.de
 Websquash.com (Add url robot)
 WebStat/1.0 (Unix; beta; 20040314)
@@ -2631,9 +2634,9 @@ Wells Search II
 WEP Search 00
 WeSEE_Bot:we_help_monitize_your_site (http://www.wesee.com/bot/)
 WFARC
-Wget/1.x+cvs-stable (Red Hat modified)
 Wget/1.x.x+cvs
 Wget/1.x(.x)GNU wget http://www.gnu.org/software/wget/wget.html - file downloader
+Wget/1.x+cvs-stable (Red Hat modified)
 WhatsApp/2.17.107 A
 Whatsup/x.x
 whatUseek_winona/3.0
@@ -2645,9 +2648,9 @@ WillyBot/1.1 (http://www.willyfogg.com/info/willybot)
 WinGet 1.1
 WinHTTP Example/1.0
 WinkBot/0.06 (Wink.com search engine web crawler; http://www.wink.com/Wink:WinkBot; winkbot@wink.com)
+Wir sind die Borg (Version: 1.03, Sie wurden Assimiliert +http://www.yammba.com/suchmaschine/bot.html)
 WIRE/0.11 (Linux; i686; Bot,Robot,Spider,Crawler,aromano@cli.di.unipi.it)
 WIRE/0.x (Linux; i686; Bot,Robot,Spider,Crawler)
-Wir sind die Borg (Version: 1.03, Sie wurden Assimiliert +http://www.yammba.com/suchmaschine/bot.html)
 WISEbot/1.0 (WISEbot@koreawisenut.com; http://wisebot.koreawisenut.com)
 WiseWire-Spider2
 wish-project (http://wish.slis.tsukuba.ac.jp/)
@@ -2656,36 +2659,36 @@ WoFindeIch Robot 1.0(+http://www.search.wofindeich.com/robot.php)
 Woko robot 3.0
 WomlpeFactory/0.1 (+http://www.Womple.com/bot.html)
 woobot/1.1
-woriobot ( http://www.worio.com/)
 worio heritrix bot (+http://worio.com/)
+woriobot ( http://www.worio.com/)
 WorldBrewBot/2.1 (+http://www.marketbrew.com/)
 WorldLight
 WorQmada/1.0
 Wotbox/2.01 (+http://www.wotbox.com/bot/)
 Wotbox/alpha0.6 (bot@wotbox.com; http://www.wotbox.com)
 Wotbox/alpha0.x.x (bot@wotbox.com; http://www.wotbox.com) Java/1.4.1_02
-WSB, http://websearchbench.cs.uni-dortmund.de
 WSB WebCrawler V1.0 (Beta)- cl@cs.uni-dortmund.de
+WSB, http://websearchbench.cs.uni-dortmund.de
 wscheck.com/1.0.0 (+http://wscheck.com/)
 wume_crawler/1.1 (http://wume.cse.lehigh.edu/~xiq204/crawler/)
 Wusage/x.0@boutell.com
 Wwlib/Linux
 WWSBOT 1.x [--- http://www.analyzer.nu ---]
+WWW-Mechanize/1.1x
+WWW::LayeredExtractor::Handler::Feed/0.01
 www.arianna.it
 www.business-socket.com registry verify/1.x
-WWWC/1.0x
 www.deadlinkchecker.com XMLHTTP/1.0 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36
 www.doweb.co.uk crawler
-WWWeasel Robot v1.00 (http://wwweasel.de)
-WWW::LayeredExtractor::Handler::Feed/0.01
-WWW-Mechanize/1.1x
-WWWOFFLE/2.x
 www.probethenet.com scanner
+WWWC/1.0x
+WWWeasel Robot v1.00 (http://wwweasel.de)
+WWWOFFLE/2.x
 wwwster/1.x (Beta- mailto:gue@cis.uni-muenchen.de)
 wxDownload Fast
+X-Crawler
 x28-job-bot; +http://x28.ch/bot.html
 Xaldon_WebSpider/2.0.b1
-X-Crawler
 Xenu Link Sleuth 1.xx
 Xenu's Link Sleuth 1.x[a-z]
 Xerka WebBot v1.0.0 [UPVOpenDir]
@@ -2694,10 +2697,16 @@ xirq/0.1-beta (xirq; http://www.xirq.com; xirq@xirq.com)
 XRL/2.00b1 (Linux; i686; en-us) (+http://metamark.net/about)
 Xylix
 xyro_(xcrawler@cosmos.inria.fr)
+Y!J-ASR/0.1 crawler (http://www.yahoo-help.jp/app/answers/detail/p/595/a_id/42716/)
+Y!J-BSC/1.0 (http://help.yahoo.co.jp/help/jp/search/indexing/indexing-15.html)
+Y!J-SRD/1.0
+Y!J/1.0 (http://help.yahoo.co.jp/help/jp/search/indexing/indexing-15.html)
+Y!OASIS/TEST no-ad Mozilla/4.08 [en] (X11; I; FreeBSD 2.2.8-STABLE i386)
+yacy (www.yacy.net; v20040602; i386 Linux 2.4.26-gentoo-r13; java 1.4.2_06; MET/en)
+yacybot (-global; amd64 Linux 3.16.0-4-amd64; java 1.7.0_75; Europe/en) http://yacy.net/bot.html
 yacybot (amd64 Linux 2.6.16-2-amd64-k8-smp; java 1.5.0_10; Europe/en) http://yacy.net/yacy/bot.html
 yacybot (amd64 Linux 2.6.28-18-generic; java 1.6.0_0; Europe/en) http://yacy.net/bot.html
 yacybot (amd64 Windows 7 6.1; java 1.6.0_17; Europe/de) http://yacy.net/bot.html
-yacybot (-global; amd64 Linux 3.16.0-4-amd64; java 1.7.0_75; Europe/en) http://yacy.net/bot.html
 yacybot (i386 Linux 2.6.22-14-generic; java 1.6.0_03; Europe/de) http://yacy.net/bot.html
 yacybot (i386 Linux 2.6.23; java 1.6.0_04; Europe/en) http://yacy.net/bot.html
 yacybot (i386 Linux 2.6.23; java 1.6.0_17; Europe/en) http://yacy.net/bot.html
@@ -2716,23 +2725,22 @@ yacybot (x86 Windows XP 5.1; java 1.5.0_06; Europe/de) yacy.net
 yacybot (x86 Windows XP 5.1; java 1.6.0_11; Europe/de) http://yacy.net/bot.html
 yacybot (x86 Windows XP 5.1; java 1.6.0_12; Europe/de) http://yacy.net/bot.html
 yacybot (x86 Windows XP 5.1; java 1.6.0; Europe/de) http://yacy.net/yacy/bot.html
-yacy (www.yacy.net; v20040602; i386 Linux 2.4.26-gentoo-r13; java 1.4.2_06; MET/en)
+Yahoo Pipes 1.0
 Yahoo-Blogs/v3.9 (compatible; Mozilla 4.0; MSIE 5.5; http://help.yahoo.com/help/us/ysearch/crawling/crawling-02.html )
-YahooFeedSeeker/2.0 (compatible; Mozilla 4.0; MSIE 5.5; http://publisher.yahoo.com/rssguide)
-Yahoo! Mindset
 Yahoo-MMAudVid/1.0 (mms dash mmaudvidcrawler dash support at yahoo dash inc dot com)
 Yahoo-MMAudVid/2.0(mms dash mm aud vid crawler dash support at yahoo dash inc.com ;Mozilla 4.0 compatible; MSIE 7.0;Windows NT 5.0; .NET CLR 2.0)
 Yahoo-MMCrawler/3.x (mm dash crawler at trd dot overture dot com)
-Yahoo Pipes 1.0
+Yahoo-Test/4.0
+Yahoo-VerticalCrawler-FormerWebCrawler/3.9 crawler at trd dot overture dot com; http://www.alltheweb.com/help/webmaster/crawler
+Yahoo! Mindset
+YahooFeedSeeker/2.0 (compatible; Mozilla 4.0; MSIE 5.5; http://publisher.yahoo.com/rssguide)
+YahooSeeker-Testing/v3.9 (compatible; Mozilla 4.0; MSIE 5.5; http://search.yahoo.com/)
 YahooSeeker/1.0 (compatible; Mozilla 4.0; MSIE 5.5; http://help.yahoo.com/help/us/shop/merchant/)
 YahooSeeker/1.0 (compatible; Mozilla 4.0; MSIE 5.5; http://search.yahoo.com/yahooseeker.html)
 YahooSeeker/1.1 (compatible; Mozilla 4.0; MSIE 5.5; http://help.yahoo.com/help/us/shop/merchant/)
 YahooSeeker/1.2 (compatible; Mozilla 4.0; MSIE 5.5; yahooseeker at yahoo-inc dot com ; http://help.yahoo.com/help/us/shop/merchant/)
 YahooSeeker/bsv3.9 (compatible; Mozilla 4.0; MSIE 5.5; http://help.yahoo.com/help/us/ysearch/crawling/crawling-02.html )
 YahooSeeker/CafeKelsa-dev (compatible; Konqueror/3.2; FreeBSD ;cafekelsa-dev-webmaster@yahoo-inc.com )
-YahooSeeker-Testing/v3.9 (compatible; Mozilla 4.0; MSIE 5.5; http://search.yahoo.com/)
-Yahoo-Test/4.0
-Yahoo-VerticalCrawler-FormerWebCrawler/3.9 crawler at trd dot overture dot com; http://www.alltheweb.com/help/webmaster/crawler
 YandeG 1.03
 Yandex/1.01.001 (compatible; Win16; I)
 Mozilla/5.0 (Linux; Android 7.0; SM-T585 Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) version / 4.0 Chrome/56.0.2924.87 Safari/537.36 YandexSearch/7.71 / apad YandexSearchBrowser/7.71
@@ -2744,11 +2752,6 @@ Yeti/0.01 (nhn/1noon, yetibot@naver.com, check robots.txt daily and follows it)
 Yeti/1.0 (+http://help.naver.com/robots/)
 Yeti/1.0 (NHN Corp.; http://help.naver.com/robots/)
 yggdrasil/Nutch-0.9 (yggdrasil biorelated search engine; www dot biotec dot tu minus dresden do de slash schroeder; heiko dot dietze at biotec dot tu minus dresden dot de)
-Y!J/1.0 (http://help.yahoo.co.jp/help/jp/search/indexing/indexing-15.html)
-Y!J-ASR/0.1 crawler (http://www.yahoo-help.jp/app/answers/detail/p/595/a_id/42716/)
-Y!J-BSC/1.0 (http://help.yahoo.co.jp/help/jp/search/indexing/indexing-15.html)
-Y!J-SRD/1.0
-Y!OASIS/TEST no-ad Mozilla/4.08 [en] (X11; I; FreeBSD 2.2.8-STABLE i386)
 YodaoBot/1.0 (http://www.yodao.com/help/webmaster/spider/; )
 Yoleo Consumer v0.2
 yoofind/yoofind-0.1-dev (yoono webcrawler; http://www.yoono.com ; MyEmail)
@@ -2757,9 +2760,9 @@ yoono/1.0 web-crawler/1.0
 YottaCars_Bot/4.12 (+http://www.yottacars.com) Car Search Engine
 YottaShopping_Bot/4.12 (+http://www.yottashopping.com) Shopping Search Engine
 Z-Add Link Checker (http://w3.z-add.co.uk/linkcheck/)
-Zao/0.1 (http://www.kototoi.org/zao/)
 Zao-Crawler
 Zao-Crawler 0.2b
+Zao/0.1 (http://www.kototoi.org/zao/)
 ZBot/1.00 (icaulfield@zeus.com)
 Zearchit
 ZeBot_lseek.net (bot@ze.bz)
@@ -2769,9 +2772,9 @@ Zemanta Aggregator/0.9 +http://www.zemanta.com
 Zend_Http_Client
 zermelo Mozilla/5.0 compatible; heritrix/1.12.1 (+http://www.powerset.com) [email:crawl@powerset.com,email:paul@page-store.com]
 zerxbot/Version 0.6 libwww-perl/5.79
-Zeusbot/0.07 (Ulysseek's web-crawling robot; http://www.zeusbot.com; agent@zeusbot.com)
 Zeus ThemeSite Viewer Webster Pro V2.9 Win32
 Zeus xxxxx Webster Pro V2.9 Win32
+Zeusbot/0.07 (Ulysseek's web-crawling robot; http://www.zeusbot.com; agent@zeusbot.com)
 Ziggy -- The Clown From Hell!!
 ZipppBot/0.xx (ZipppBot; http://www.zippp.net; webmaster@zippp.net)
 ZIPPPCVS/0.xx (ZipppBot/.xx;http://www.zippp.net; webmaster@zippp.net)
@@ -2782,6 +2785,3 @@ Zscho.de Crawler/Nutch-1.0-Zscho.de-semantic_patch (Zscho.de Crawler
 zspider/0.9-dev http://feedback.redkolibri.com/
 ZumBot/1.0 (ZUM Search; http://help.zum.com/inquiry)
 ZyBorg/1.0 (ZyBorg@WISEnut.com; http://www.WISEnut.com)
-Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36 Google (+https://developers.google.com/+/web/snippet/)
-Mozilla/5.0 (compatible; Pinterestbot/1.0; +https://www.pinterest.com/bot.html)
-Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Pinterestbot/1.0; +https://www.pinterest.com/bot.html)
