@@ -480,8 +480,6 @@ module.exports = [
     'Xylix',
     'Y!J-ASR',
     'YandeG',
-    'YandexImages',
-    'YandexMetrika',
     'Yoleo',
     'Yoono',
     'Zao',
