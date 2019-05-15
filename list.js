@@ -8,7 +8,7 @@ module.exports = [
     'archive',
     'archiving',
     'auto',
-    'bot',
+    '(?<! cu)bot',
     'capture',
     'check',
     'classify',
