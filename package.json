@@ -4,7 +4,8 @@
   "description": "detects bots/crawlers/spiders via the user agent.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test.js"
+    "test": "mocha test.js",
+    "prepare": "node maintenance"
   },
   "repository": {
     "type": "git",
