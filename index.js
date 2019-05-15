@@ -1,5 +1,9 @@
 var list = require('./list');
-var regex = new RegExp('(' + list.join('|') + ')', 'i');
+var regex;
+function update() {
+	regex = new RegExp('(' + list.join('|') + ')', 'i');
+}
+update();
 
 module.exports = function(userAgent) {
     return regex.test(userAgent);
@@ -7,5 +11,16 @@ module.exports = function(userAgent) {
 
 module.exports.extend = function(additionalFilters){
     list = list.concat(additionalFilters);
-    regex = new RegExp('(' + list.join('|') + ')', 'i');
+    update();
+}
+
+module.exports.exclude = function(excludedFilters){
+    var i = excludedFilters.length;
+    while (i--) {
+      var index = list.lastIndexOf(excludedFilters[i]);
+      if (index > 0) {
+        list.splice(index, 1);
+      }
+    }
+    update();
 }

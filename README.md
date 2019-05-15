@@ -35,3 +35,18 @@ isBot.extend(myList);
 
 isBot("Mozilla/5.0") // true
 ```
+
+### excluding
+
+```js
+isBot('Ceramic Tile Installation Guide') // true
+
+var myList = [
+	'Ceramic Tile Installation Guide',
+	'NORAD National Defence Network'
+];
+
+isBot.exclude(myList);
+
+isBot('Ceramic Tile Installation Guide') // false
+```
