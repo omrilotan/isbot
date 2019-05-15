@@ -3,35 +3,51 @@
 const { promises: { readFile, writeFile } } = require('fs');
 const { join } = require('path');
 
-['browsers', 'crawlers'].forEach(sort);
+// Case insensitive sort
+const sort = (a, b) => a.toLowerCase().localeCompare(b.toLowerCase());
 
-async function sort(file) {
-	const filename = join(
-		__dirname,
-		`${file}.txt`
-	);
+// Sort text files
+['browsers', 'crawlers'].forEach(sortTextFile);
 
-	const buffer = await readFile(filename);
-	const list = buffer.toString().split('\n');
+// Sort rules list
+const json = join(__dirname, 'list.json');
+const list = require(json);
 
-	await writeFile(
-		filename,
+writeFile(
+  json,
+  JSON.stringify(
+    Array.from(new Set(list)).sort(sort),
+    null,
+    4
+  )
+);
 
-		// List without duplicates
-		Array.from(new Set(list))
 
-			// Remove empty lines
-			.filter(Boolean)
+async function sortTextFile(file) {
+  const filename = join(
+    __dirname,
+    `${file}.txt`
+  );
 
-			// Case insensitive sort
-			.sort(
-				(a, b) => a.toLowerCase().localeCompare(b.toLowerCase())
-			)
+  const buffer = await readFile(filename);
+  const list = buffer.toString().split('\n');
 
-			// Convert to list
-			.join('\n')
+  await writeFile(
+    filename,
 
-			// Add one empty line at the end
-			.concat('\n')
-	);
+    // List without duplicates
+    Array.from(new Set(list))
+
+      // Remove empty lines
+      .filter(Boolean)
+
+      // Case insensitive sort
+      .sort(sort)
+
+      // Convert to list
+      .join('\n')
+
+      // Add one empty line at the end
+      .concat('\n')
+  );
 }
