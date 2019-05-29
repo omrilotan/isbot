@@ -37,3 +37,34 @@ describe('Extend', function(){
         isBot(customBrowser).should.be.true;
     });
 });
+
+describe('Exclude', function(){
+    var cubot = 'Mozilla/5.0 (Linux; Android 8.0.0; CUBOT_P20) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Mobile Safari/537.36';
+    var excludedFilters = ['bot'];
+
+    afterEach(function() {
+        delete require.cache[require.resolve('./')];
+        delete require.cache[require.resolve('./list')];
+        isBot = require('./');
+    });
+
+    it('should detect Cubot as bot', function() {
+        isBot(cubot).should.be.true;
+    });
+
+    it('should not detect Cubot as bot', function() {
+        isBot.exclude(excludedFilters);
+        isBot(cubot).should.be.false;
+    });
+
+    it('should detect Googlebot, but not Cubot (use case)', function() {
+        isBot('Googlebot').should.be.true;
+        isBot(cubot).should.be.true;
+
+        isBot.exclude(excludedFilters);
+        isBot.extend(['googlebot']);
+
+        isBot('Googlebot').should.be.true;
+        isBot(cubot).should.be.false;
+    });
+});
