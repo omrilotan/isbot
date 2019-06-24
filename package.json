@@ -3,6 +3,7 @@
   "version": "2.3.0",
   "description": "detects bots/crawlers/spiders via the user agent.",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "test": "mocha test.js"
   },
