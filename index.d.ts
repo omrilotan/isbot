@@ -2,7 +2,7 @@
  * Detect if a user agent is a bot, crawler or spider
  * @param userAgent The user agent
  */
-function testUserAgent(userAgent: string): boolean;
+declare function testUserAgent(userAgent: string): boolean;
 
 /**
  * Extend the built-in list of bot user agent
