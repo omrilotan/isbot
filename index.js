@@ -1,4 +1,4 @@
-var list = require('./list');
+var list = require('./list.json');
 var regex;
 function update() {
 	regex = new RegExp('(' + list.join('|') + ')', 'i');
