@@ -9,8 +9,8 @@ const { join } = require('path');
 const dedup = list => Array.from(new Set(list));
 
 (async() => {
-	sortTextFile('../crawlers.txt');
-	sortTextFile('../browsers.txt');
+	sortTextFile('./crawlers.txt');
+	sortTextFile('./browsers.txt');
 	sortJSON('../list.json');
 })();
 
@@ -34,7 +34,7 @@ function sort(a, b) {
  */
 async function sortJSON(filename) {
 	const filepath = join(__dirname, filename);
-	const list = require(`../${filename}`);
+	const list = require(filename);
 
 	await writeFile(
 		filepath,
