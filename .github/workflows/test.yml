@@ -1,0 +1,14 @@
+name: Test
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [ '12', '10', '8', '6' ]
+    steps:
+    - uses: actions/checkout@v1
+    - run: npm i
+    - run: npm t
