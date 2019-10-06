@@ -68,3 +68,21 @@ describe('Exclude', function(){
         isBot(cubot).should.be.false;
     });
 });
+
+describe('redundant crawler rules', function(){
+    after(function() {
+        delete require.cache[require.resolve('./')];
+        delete require.cache[require.resolve('./list')];
+    });
+
+    var list = require('./list.json').slice();
+    var rule;
+
+    while (rule = list.pop()) {
+        it('needs rule [' + rule +']', function() {
+            isBot.exclude([rule]);
+            isBot(rule).should.be.false;
+            isBot.extend([rule]);
+        });
+    }
+});
