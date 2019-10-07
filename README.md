@@ -1,7 +1,6 @@
-# isbot
+# isbot [![](https://img.shields.io/npm/v/isbot.svg)](https://www.npmjs.com/package/isbot)
 
-[![Build Status](https://semaphoreci.com/api/v1/projects/b2ac790f-18fc-46d5-8726-2019a62a0996/541851/badge.svg)](https://semaphoreci.com/gorangajic/isbot-2)
-
+[![Tests Status](https://github.com/gorangajic/isbot/workflows/Test/badge.svg)](https://github.com/gorangajic/isbot/actions)
 
 ### install
 
