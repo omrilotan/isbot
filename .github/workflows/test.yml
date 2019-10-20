@@ -3,7 +3,19 @@ name: Test
 on: [push]
 
 jobs:
-  build:
+  lint:
+    name: Syntax
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [ '10' ]
+    steps:
+    - uses: actions/checkout@v1
+    - run: npm i
+    - run: npm run lint -- --plugin log
+    - run: npm run ts
+  test:
+    name: Test
     runs-on: ubuntu-latest
     strategy:
       matrix:

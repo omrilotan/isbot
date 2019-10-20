@@ -1,12 +1,15 @@
 {
   "name": "isbot",
-  "version": "2.4.1",
+  "version": "2.5.0",
   "description": "detects bots/crawlers/spiders via the user agent.",
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
-    "test": "mocha test.js",
-    "sort": "node ./scripts/sort.js"
+    "prepare": "./scripts/download-crawlers-json.sh",
+    "sort": "./scripts/sort.js",
+    "test": "mocha tests/*.js",
+    "lint": "standard",
+    "ts": "tsc"
   },
   "repository": {
     "type": "git",
@@ -26,8 +29,10 @@
   },
   "homepage": "https://github.com/gorangajic/isbot",
   "devDependencies": {
-    "chai": "^3.2.0",
+    "eslint-plugin-log": "^1.2.3",
     "mocha": "^2.2.5",
-    "should": "^7.0.2"
+    "standard": "^14.3.1",
+    "typescript": "^3.6.4",
+    "user-agents": "^1.0.412"
   }
 }
