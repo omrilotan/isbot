@@ -1,2 +1,4 @@
-*.txt
-test.js
+.*
+tests/*
+scripts/*
+tsconfig.json

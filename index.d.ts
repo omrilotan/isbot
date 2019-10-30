@@ -2,20 +2,26 @@
  * Detect if a user agent is a bot, crawler or spider
  * @param userAgent The user agent
  */
-declare function testUserAgent(userAgent: string): boolean;
+declare function isbot(userAgent: string): boolean;
 
-/**
- * Extend the built-in list of bot user agent
- * @param additionalFilters An array of user agents
- */
-declare function extend(additionalFilters: string[]): void;
+declare namespace isbot {
+  /**
+   * Extend the built-in list of bot user agent
+   * @param additionalFilters An array of user agents
+   */
+  function extend(additionalFilters: string[]): void;
 
-/**
- * Removes a set of user agent from the built-in list
- * @param excludedFilters An array of user agents
- */
-declare function exclude(excludedFilters: string[]): void;
+  /**
+   * Removes a set of user agent from the built-in list
+   * @param excludedFilters An array of user agents
+   */
+  function exclude(excludedFilters: string[]): void;
 
-testUserAgent.extend = extend;
-testUserAgent.exclude = exclude;
-export = testUserAgent;
+  /**
+   * Return the respective match for bot user agent rule
+   * @param excludedFilters An array of user agents
+   */
+  function find(userAgent: string): string;
+}
+
+export = isbot;

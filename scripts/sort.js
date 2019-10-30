@@ -1,5 +1,7 @@
-const { promises: { readFile, writeFile } } = require('fs');
-const { join } = require('path');
+#!/usr/bin/env node
+
+const { promises: { readFile, writeFile } } = require('fs')
+const { join } = require('path')
 
 /**
  * Create array without the duplicates
@@ -8,11 +10,11 @@ const { join } = require('path');
  */
 const dedup = list => Array.from(new Set(list));
 
-(async() => {
-	sortTextFile('./crawlers.txt');
-	sortTextFile('./browsers.txt');
-	sortJSON('../list.json');
-})();
+(async () => {
+  sortTextFile('../tests/fixtures/crawlers.txt')
+  sortTextFile('../tests/fixtures/browsers.txt')
+  sortJSON('../list.json')
+})()
 
 /**
  * Case insensitive Sort
@@ -20,11 +22,11 @@ const dedup = list => Array.from(new Set(list));
  * @param  {String} b
  * @return {Number}
  */
-function sort(a, b) {
-	a = a.toLowerCase();
-	b = b.toLowerCase();
+function sort (a, b) {
+  a = a.toLowerCase()
+  b = b.toLowerCase()
 
-	return a > b ? 1 : b > a ? -1 : 0;
+  return a > b ? 1 : b > a ? -1 : 0
 }
 
 /**
@@ -32,18 +34,18 @@ function sort(a, b) {
  * @param  {String} filename
  * @return {undefined}
  */
-async function sortJSON(filename) {
-	const filepath = join(__dirname, filename);
-	const list = require(filename);
+async function sortJSON (filename) {
+  const filepath = join(__dirname, filename)
+  const list = require(filename)
 
-	await writeFile(
-		filepath,
-		JSON.stringify(
-			dedup(list).sort(sort),
-			null,
-			2
-		)
-	);
+  await writeFile(
+    filepath,
+    JSON.stringify(
+      dedup(list).sort(sort),
+      null,
+      2
+    )
+  )
 }
 
 /**
@@ -51,16 +53,15 @@ async function sortJSON(filename) {
  * @param  {String} filename
  * @return {undefined}
  */
-async function sortTextFile(filename) {
-	const filepath = join(__dirname, `../${filename}`);
-	const crawlers = await readFile(filepath);
-	const list = crawlers.toString()
-		.trim()
-		.split('\n')
-		.filter(Boolean)
-		.map(s => s.trim())
-		.sort(sort);
+async function sortTextFile (filename) {
+  const filepath = join(__dirname, filename)
+  const crawlers = await readFile(filepath)
+  const list = crawlers.toString()
+    .trim()
+    .split('\n')
+    .filter(Boolean)
+    .map(s => s.trim())
+    .sort(sort)
 
-	await writeFile(filepath, dedup(list).join('\n'));
+  await writeFile(filepath, dedup(list).join('\n'))
 }
-
