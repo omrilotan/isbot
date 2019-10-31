@@ -2,8 +2,8 @@ name: Maintenance
 
 on:
   schedule:
-    # At 12:00 on Monday and Thursday
-    - cron:  '0 12 * * 1,4'
+    # At 10:00 on Monday and Thursday
+    - cron:  '0 10 * * 1,4'
 
 jobs:
   test:
