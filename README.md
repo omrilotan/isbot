@@ -2,7 +2,7 @@
 
 Detect bots/crawlers/spiders via the user agent.
 
-[![Tests Status](https://github.com/gorangajic/isbot/workflows/Test/badge.svg)](https://github.com/gorangajic/isbot/actions)
+[![](https://github.com/gorangajic/isbot/workflows/Test/badge.svg)](https://github.com/gorangajic/isbot/actions?query=workflow%3ATest) [![](https://github.com/gorangajic/isbot/workflows/Maintenance/badge.svg)](https://github.com/gorangajic/isbot/actions?query=workflow%3AMaintenance)
 
 ### install
 
