@@ -1,0 +1,41 @@
+version: 2.1
+
+commands:
+  tests:
+    steps:
+      - checkout
+      - run: npm i
+      - run: npm t
+      - run: npm run lint -- --plugin log
+      - run: npm run ts
+
+jobs:
+  test_node_6:
+    docker:
+      - image: circleci/node:6
+    steps:
+      - tests
+  test_node_8:
+    docker:
+      - image: circleci/node:8
+    steps:
+      - tests
+  test_node_10:
+    docker:
+      - image: circleci/node:10
+    steps:
+      - tests
+  test_node_12:
+    docker:
+      - image: circleci/node:12
+    steps:
+      - tests
+
+workflows:
+  version: 2.1
+  test:
+    jobs:
+      - test_node_6
+      - test_node_8
+      - test_node_10
+      - test_node_12
