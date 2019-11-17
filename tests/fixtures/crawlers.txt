@@ -2091,6 +2091,7 @@ Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/533.20.25 (KHTML, li
 Mozilla/5.0 (Windows;) NimbleCrawler 1.12 obeys UserAgent NimbleCrawler For problems contact: crawler@health
 Mozilla/5.0 (Windows;) NimbleCrawler 1.12 obeys UserAgent NimbleCrawler For problems contact: crawler@healthline.com
 Mozilla/5.0 (X11; compatible; semantic-visions.com crawler; HTTPClient 3.1)
+Mozilla/5.0 (X11; Datanyze; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
 Mozilla/5.0 (X11; Linux x86_64) adbeat.com/policy AppleWebKit/537.21 (KHTML, like Gecko) Firefox/34.0 Safari/537.21
 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.34 (KHTML, like Gecko) Qt/4.8.3 Safari/534.34 https://linkpeek.com
 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36 Google (+https://developers.google.com/+/web/snippet/)
@@ -3162,4 +3163,3 @@ Zscho.de Crawler/Nutch-1.0-Zscho.de-semantic_patch (Zscho.de Crawler
 zspider/0.9-dev http://feedback.redkolibri.com/
 ZumBot/1.0 (ZUM Search; http://help.zum.com/inquiry)
 ZyBorg/1.0 (ZyBorg@WISEnut.com; http://www.WISEnut.com)
-Mozilla/5.0 (X11; Datanyze; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36

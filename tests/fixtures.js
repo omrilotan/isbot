@@ -17,7 +17,7 @@ const random = Array.from(
     Array(1000)
       .fill()
       .map(
-        () => new UserAgent(({ userAgent }) => !/phantomjs/i.test(userAgent)).toString()
+        () => new UserAgent(({ userAgent }) => !/phantomjs|chrome-lighthouse|cubot/i.test(userAgent)).toString()
       )
   )
 )

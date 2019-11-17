@@ -30,9 +30,9 @@
   "homepage": "https://github.com/gorangajic/isbot",
   "devDependencies": {
     "eslint-plugin-log": "^1.2.3",
-    "mocha": "^2.2.5",
+    "mocha": "^6.2.2",
     "standard": "^14.3.1",
-    "typescript": "^3.6.4",
-    "user-agents": "^1.0.412"
+    "typescript": "^3.7.2",
+    "user-agents": "^1.0.443"
   }
 }
