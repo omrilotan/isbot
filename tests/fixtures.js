@@ -1,5 +1,6 @@
 /* eslint-env mocha */
 
+const assert = require('assert')
 const { bold } = require('chalk')
 const UserAgent = require('user-agents')
 const { fixture, listings } = require('./helpers')
@@ -17,7 +18,7 @@ const random = Array.from(
     Array(1000)
       .fill()
       .map(
-        () => new UserAgent(({ userAgent }) => !/phantomjs|chrome-lighthouse|cubot/i.test(userAgent)).toString()
+        () => new UserAgent(({ userAgent }) => !/phantomjs|chrome-lighthouse|swurl/i.test(userAgent)).toString()
       )
   )
 )
@@ -63,5 +64,19 @@ describe('Test user-agent fixtures', function () {
         throw new Error(`Detected ${bots.length} user agent strings as bots:\n${listings(bots)}`)
       }
     })
+  })
+
+  describe('patches', function () {
+    const cubot = 'Mozilla/5.0 (Linux; Android 8.0.0; CUBOT_P20) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Mobile Safari/537.36'
+
+    try {
+      /\d+(?!%)/.exec('I\'ve got 99 problems and a bot ain\'t one')
+
+      it('should apply CUBOT patch when lookbehind assertion is supported', function () {
+        assert(!isBot(cubot))
+      })
+    } catch (error) {
+      xit('does not support lookbehind assertion')
+    }
   })
 })

@@ -56,17 +56,6 @@ isBot.exclude(myList);
 isBot('Ceramic Tile Installation Guide') // false
 ```
 
-### `extend` and `exclude` use case
-Use [lookbehind assertion](https://github.com/tc39/proposal-regexp-lookbehind), introduced in V8 version 4.9 to exclude "Cubot" from "bot" rule
-
-```js
-isBot.exclude(['bot']);
-isBot.extend(['(?<! cu)bot']); // Recognise cubot browser as legit browser
-
-isBot('Mozilla/5.0 (Linux; Android 8.0.0; CUBOT_P20) ...') // false
-isBot('Googlebot/2.1 (+http://www.google.com/bot.html)') // true
-```
-
 ### Verbose result
 Return the respective match for bot user agent rule
 
