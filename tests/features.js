@@ -4,11 +4,6 @@ const assert = require('assert')
 const { cleanup } = require('./helpers')
 let isBot = require('..')
 
-const customBrowser = 'Mozilla/5.0'
-const extendList = ['^mozilla/\\d\\.\\d$']
-const cubot = 'Mozilla/5.0 (Linux; Android 8.0.0; CUBOT_P20) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Mobile Safari/537.36'
-const excludedFilters = ['bot']
-
 describe('Features', function () {
   afterEach(function () {
     cleanup()
@@ -26,35 +21,38 @@ describe('Features', function () {
   })
 
   describe('isbot.extend', function () {
-    it(`should not detect (${customBrowser}) as bot`, function () {
-      assert(!isBot(customBrowser))
+    const useragent = 'Mozilla/5.0'
+    const rule = '^mozilla\\/\\d\\.\\d$'
+
+    it(`should not detect "${useragent}" as bot`, function () {
+      assert(!isBot(useragent))
     })
 
-    it(`should detect (${customBrowser}) as bot`, function () {
-      isBot.extend(extendList)
-      assert(isBot(customBrowser))
+    it(`should detect "${useragent}" as bot`, function () {
+      isBot.extend([rule])
+      assert(isBot(useragent))
+    })
+
+    it('should not extend an existing item', function () {
+      isBot.extend([rule])
+      isBot.extend([rule])
+      isBot.extend([rule])
+      isBot.exclude([rule])
+      assert(!isBot(useragent))
     })
   })
 
   describe('isbot.exclude', function () {
-    it('should detect Cubot as bot', function () {
-      assert(isBot(cubot))
+    const useragent = 'Mozilla/4.0 (compatible; B-l-i-t-z-B-O-T)'
+    const rule = 'B-l-i-t-z-B-O-T'
+
+    it(`should not detect "${useragent}" as bot`, function () {
+      assert(isBot(useragent))
     })
 
-    it('should not detect Cubot as bot', function () {
-      isBot.exclude(excludedFilters)
-      assert(!isBot(cubot))
-    })
-
-    it('should detect Googlebot, but not Cubot (use case)', function () {
-      assert(isBot('Googlebot'))
-      assert(isBot(cubot))
-
-      isBot.exclude(excludedFilters)
-      isBot.extend(['googlebot'])
-
-      assert(isBot('Googlebot'))
-      assert(!isBot(cubot))
+    it(`should detect "${useragent}" as bot`, function () {
+      isBot.exclude([rule])
+      assert(!isBot(useragent))
     })
   })
 

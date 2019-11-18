@@ -6,15 +6,16 @@ commands:
       - checkout
       - run: npm i
       - run: npm t
-      - run: npm run lint -- --plugin log
-      - run: npm run ts
 
 jobs:
   test_node_6:
     docker:
       - image: circleci/node:6
     steps:
-      - tests
+      - checkout
+      - run: npm i
+      - run: npm run prepare
+      - run: npm t
   test_node_8:
     docker:
       - image: circleci/node:8
@@ -30,6 +31,8 @@ jobs:
       - image: circleci/node:12
     steps:
       - tests
+      - run: npm run lint -- --plugin log
+      - run: npm run ts
 
 workflows:
   version: 2.1

@@ -11,6 +11,10 @@ describe('Check for redundant crawler rules', function () {
   afterEach(function () {
     cleanup()
     isBot = require('..')
+
+    // return to original list - no patches
+    isBot.exclude(list)
+    isBot.extend(list)
   })
 
   it(`should include ${bold(length)} non redundant rules`, function () {

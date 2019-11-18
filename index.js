@@ -7,7 +7,6 @@ var regex
 function update () {
   regex = new RegExp('(' + list.join('|') + ')', 'i')
 }
-update()
 
 /**
  * Check if string matches known crawler patterns
@@ -34,8 +33,19 @@ module.exports.find = function (userAgent) {
  * @return {void}
  */
 module.exports.extend = function (additionalFilters) {
-  list = list.concat(additionalFilters)
+  list = list.concat(
+    additionalFilters.filter(included)
+  )
   update()
+}
+
+/**
+ * Check if item is included in list
+ * @param  {string} rule
+ * @return {boolean}
+ */
+function included (rule) {
+  return list.indexOf(rule) === -1
 }
 
 /**
@@ -53,3 +63,15 @@ module.exports.exclude = function (excludedFilters) {
   }
   update()
 }
+
+try {
+  // Address: Cubot browser
+  // Risk: Uses lookbehind assertion
+  /(?<! cu)bot/.test('dangerbot')
+  list.splice(list.lastIndexOf('bot'), 1)
+  list.push('(?<! cu)bot')
+} catch (error) {
+  // ignore errors
+}
+
+update()
