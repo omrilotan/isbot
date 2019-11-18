@@ -14,7 +14,12 @@ jobs:
     docker:
       - image: circleci/node:6
     steps:
-      - tests
+      - checkout
+      - run: npm i
+      - run: npm run prepare
+      - run: npm t
+      - run: npm run lint -- --plugin log
+      - run: npm run ts
   test_node_8:
     docker:
       - image: circleci/node:8
