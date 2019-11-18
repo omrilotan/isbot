@@ -33,6 +33,24 @@ jobs:
       - tests
       - run: npm run lint -- --plugin log
       - run: npm run ts
+  publish:
+    docker:
+      - image: circleci/node:12
+    steps:
+      - run:
+          name: Stop if remote tag already exists
+          command: |
+            if [ ! -z $(git ls-remote --tags origin | grep "v$(cat package.json | jq ".version" -r)") ]; then
+              circleci step halt
+            fi
+      - run:
+          name: Add publish token
+          command: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+      - run: npm publish
+      - run:
+          name: Add git tag
+          command: git tag -a "v$(cat package.json | jq ".version" -r)" -m "$(git show -s --format=%B | tr -d '\n')"
+      - run: git push origin --tags
 
 workflows:
   version: 2.1
@@ -42,3 +60,8 @@ workflows:
       - test_node_8
       - test_node_10
       - test_node_12
+      - publish:
+          filters:
+            branches:
+              only:
+                - master
