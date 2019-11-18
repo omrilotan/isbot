@@ -77,7 +77,7 @@ describe('Test user-agent fixtures', function () {
     const cubot = 'Mozilla/5.0 (Linux; Android 8.0.0; CUBOT_P20) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Mobile Safari/537.36'
 
     try {
-      /\d+(?!%)/.exec('I\'ve got 99 problems and a bot ain\'t one')
+      /(?<! cu)bot/.test('dangerbot')
 
       it('should apply CUBOT patch when lookbehind assertion is supported', function () {
         assert(!isBot(cubot))
