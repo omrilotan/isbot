@@ -12,13 +12,20 @@ const moreCrawlers = require('./fixtures/crawler-user-agents.json').reduce(
   []
 )
 
+const BOTS = [
+  'phantomjs',
+  'chrome-lighthouse',
+  'swurl',
+  parseInt(process.versions.node) === 6 && 'cubot'
+].filter(Boolean)
+
 // Generate a list of unique user agent strings
 const random = Array.from(
   new Set(
     Array(1000)
       .fill()
       .map(
-        () => new UserAgent(({ userAgent }) => !/phantomjs|chrome-lighthouse|swurl/i.test(userAgent)).toString()
+        () => new UserAgent(({ userAgent }) => !new RegExp(BOTS.join('|'), 'i').test(userAgent)).toString()
       )
   )
 )
