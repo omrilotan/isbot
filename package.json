@@ -7,7 +7,9 @@
   "scripts": {
     "prepare": "./scripts/download-crawlers-json.sh",
     "sort": "./scripts/sort.js",
-    "test": "mocha tests/*.js",
+    "test": "mocha tests/*.js --exclude 'tests/.*'",
+    "prebrowser": "rollup --config .rollup.js",
+    "browser": "karma start .karma.js",
     "lint": "standard",
     "ts": "tsc"
   },
@@ -29,8 +31,17 @@
   },
   "homepage": "https://github.com/gorangajic/isbot",
   "devDependencies": {
+    "@rollup/plugin-json": "^4.0.0",
     "eslint-plugin-log": "^1.2.3",
+    "karma": "^4.4.1",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-cli": "^2.0.0",
+    "karma-firefox-launcher": "^1.2.0",
+    "karma-mocha": "^1.3.0",
+    "karma-mocha-reporter": "^2.2.5",
     "mocha": "^2.5.3",
+    "rollup": "^1.27.3",
+    "rollup-plugin-commonjs": "^10.1.0",
     "standard": "^14.3.1",
     "typescript": "^3.7.2",
     "user-agents": "^1.0.443"
