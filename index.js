@@ -67,7 +67,7 @@ module.exports.exclude = function (excludedFilters) {
 try {
   // Address: Cubot browser
   // Risk: Uses lookbehind assertion
-  /(?<! cu)bot/.test('dangerbot')
+  new RegExp('(?<! cu)bot').test('dangerbot')
   list.splice(list.lastIndexOf('bot'), 1)
   list.push('(?<! cu)bot')
 } catch (error) {
