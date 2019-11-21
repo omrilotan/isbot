@@ -26,11 +26,12 @@ jobs:
       - image: circleci/node:10
     steps:
       - tests
-  test_node_12:
+  test_latest:
     docker:
-      - image: circleci/node:12
+      - image: circleci/node:12-browsers
     steps:
       - tests
+      - run: npm run browser
       - run: npm run lint -- --plugin log
       - run: npm run ts
   publish:
@@ -63,13 +64,13 @@ workflows:
       - test_node_6
       - test_node_8
       - test_node_10
-      - test_node_12
+      - test_latest
       - publish:
           requires:
             - test_node_6
             - test_node_8
             - test_node_10
-            - test_node_12
+            - test_latest
           filters:
             branches:
               only:
