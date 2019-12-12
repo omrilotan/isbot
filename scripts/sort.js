@@ -63,5 +63,5 @@ async function sortTextFile (filename) {
     .map(s => s.trim())
     .sort(sort)
 
-  await writeFile(filepath, dedup(list).join('\n'))
+  await writeFile(filepath, dedup(list).join('\n') + '\n')
 }
