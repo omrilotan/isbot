@@ -5,7 +5,7 @@ var regex
  * Refresh the local regex variable (clusure)
  */
 function update () {
-  regex = new RegExp('(' + list.join('|') + ')', 'i')
+  regex = new RegExp(list.join('|'), 'i')
 }
 
 /**
