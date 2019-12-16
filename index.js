@@ -34,7 +34,7 @@ module.exports.find = function (userAgent) {
  */
 module.exports.extend = function (additionalFilters) {
   list = list.concat(
-    additionalFilters.filter(included)
+    additionalFilters.map(lowercase).filter(included)
   )
   update()
 }
@@ -48,6 +48,10 @@ function included (rule) {
   return list.indexOf(rule) === -1
 }
 
+function lowercase (rule) {
+  return rule.toLowerCase()
+}
+
 /**
  * Exclude patterns from bot pattern rule
  * @param  {array} excludedFilters
@@ -56,7 +60,7 @@ function included (rule) {
 module.exports.exclude = function (excludedFilters) {
   var i = excludedFilters.length
   while (i--) {
-    var index = list.lastIndexOf(excludedFilters[i])
+    var index = list.lastIndexOf(excludedFilters[i].toLowerCase())
     if (index > -1) {
       list.splice(index, 1)
     }

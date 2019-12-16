@@ -40,6 +40,13 @@ describe('Features', function () {
       isBot.exclude([rule])
       assert(!isBot(useragent))
     })
+
+    it('should treat extend as case insensitive (will extend existing rule with different case)', function () {
+      isBot.extend(['^Axios/'])
+      isBot.find('^Axios/')
+      isBot.exclude(['^Axios/'])
+      assert(!isBot('Axios/'))
+    })
   })
 
   describe('isbot.exclude', function () {
@@ -52,6 +59,12 @@ describe('Features', function () {
 
     it(`should detect "${useragent}" as bot`, function () {
       isBot.exclude([rule])
+      assert(!isBot(useragent))
+    })
+
+    it('should treat exclude as case insensitive (will exclude duplicates with different case)', function () {
+      isBot.extend([rule])
+      isBot.exclude([rule.toUpperCase()])
       assert(!isBot(useragent))
     })
   })
