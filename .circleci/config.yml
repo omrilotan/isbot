@@ -42,7 +42,7 @@ jobs:
       - run:
           name: Stop if remote tag already exists
           command: |
-            [ -z "$(git ls-remote --tags origin | grep $(cat package.json | jq '.version' -r) | tr -d '\n')" ] || circleci step halt
+            [ -z "$(git ls-remote --tags origin | grep -F $(cat package.json | jq '.version' -r) | tr -d '\n')" ] || circleci step halt
       - run:
           name: Set git user
           command: |
