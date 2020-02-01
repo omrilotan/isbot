@@ -7,7 +7,7 @@ const list = require('../list.json').slice()
 const { length } = list
 
 describe('Check for redundant crawler rules', function () {
-  this.timeout(15000)
+  this.timeout(20000)
   afterEach(function () {
     cleanup()
     isBot = require('..')
