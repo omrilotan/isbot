@@ -1,6 +1,6 @@
 {
   "name": "isbot",
-  "version": "2.5.5",
+  "version": "2.5.4",
   "description": "detects bots/crawlers/spiders via the user agent.",
   "keywords": [
     "bot",
@@ -34,6 +34,7 @@
     "ts": "tsc"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^11.0.2",
     "@rollup/plugin-json": "^4.0.2",
     "eslint-plugin-log": "^1.2.3",
     "karma": "^4.4.1",
@@ -44,7 +45,6 @@
     "karma-mocha-reporter": "^2.2.5",
     "mocha": "^5.2.0",
     "rollup": "^1.31.0",
-    "rollup-plugin-commonjs": "^10.1.0",
     "standard": "^14.3.1",
     "typescript": "^3.7.5",
     "user-agents": "^1.0.519"
