@@ -26,17 +26,34 @@ jobs:
       - image: circleci/node:10
     steps:
       - tests
-  test_latest:
+  test_node_12:
     docker:
-      - image: circleci/node:12-browsers
+      - image: circleci/node:12
     steps:
       - tests
+  test_node_latest:
+    docker:
+      - image: circleci/node:latest
+    steps:
+      - tests
+  test_browsers:
+    docker:
+      - image: circleci/node:latest-browsers
+    steps:
+      - checkout
+      - run: npm i
       - run: npm run browser
+  lint_and_types:
+    docker:
+      - image: circleci/node:latest
+    steps:
+      - checkout
+      - run: npm i
       - run: npm run lint -- --plugin log
       - run: npm run ts
   publish:
     docker:
-      - image: circleci/node:12
+      - image: circleci/node:latest
     steps:
       - checkout
       - run:
@@ -64,13 +81,19 @@ workflows:
       - test_node_6
       - test_node_8
       - test_node_10
-      - test_latest
+      - test_node_12
+      - test_node_latest
+      - test_browsers
+      - lint_and_types
       - publish:
           requires:
             - test_node_6
             - test_node_8
             - test_node_10
-            - test_latest
+            - test_node_12
+            - test_node_latest
+            - test_browsers
+            - lint_and_types
           filters:
             branches:
               only:
