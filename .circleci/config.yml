@@ -73,6 +73,23 @@ jobs:
           name: Add publish token
           command: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
       - run: npm publish
+  periodic:
+    docker:
+      - image: circleci/node:latest
+    steps:
+      - checkout
+      - run: npm i
+      - run: |
+            npm t || curl --request POST \
+              --url https://api.github.com/repos/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}/issues \
+              --header 'authorization: Bearer ${GITHUB_TOKEN}' \
+              --header 'content-type: application/json' \
+              --data '{
+                  "title": "Automated issue for failing periodic tests",
+                  "body": "This issue is automatically created. The tests are failing on branch ${CIRCLE_BRANCH}",
+                  "assignees": [ "omrilotan" ],
+                  "labels": [ "automated", "maintenance" ]
+                }'
 
 workflows:
   version: 2.1
@@ -94,6 +111,17 @@ workflows:
             - test_node_latest
             - test_browsers
             - lint_and_types
+          filters:
+            branches:
+              only:
+                - master
+  scheduled:
+    jobs:
+      - periodic
+    triggers:
+      - schedule:
+          # Every Monday at 09:00
+          cron: "0 9 * * 1"
           filters:
             branches:
               only:
