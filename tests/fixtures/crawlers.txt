@@ -2020,6 +2020,7 @@ Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KH
 Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-T715Y Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Safari/537.36 evaliant
 Mozilla/5.0 (Linux; Android 6.1.1; SAMSUNG SM-G925F Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/51.0.2704.81 Mobile Safari/537.36 evaliant
 Mozilla/5.0 (Linux; Android 7.0; SM-T585 Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) version / 4.0 Chrome/56.0.2924.87 Safari/537.36 YandexSearch/7.71 / apad YandexSearchBrowser/7.71
+Mozilla/5.0 (Linux; Android 9) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/79.0.3945.136 Mobile Safari/537.36 DuckDuckGo/5
 Mozilla/5.0 (linux; u; android 4.1.1; ja-jp; sgpt12 build/tjs0166) applewebkit/534.30 (khtml, like gecko) version/4.0 safari/534.30 yjapp-android jp.co.yahoo.android.yjtop/2.1.8 evaliant
 Mozilla/5.0 (Linux; U; Android 4.4.2; id; SM-G900 Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/9.9.2.467 U3/0.8.0 Mobile Safari/534.30 evaliant
 Mozilla/5.0 (Linux; U; Android 5.0.1; en-US; GT-I9505 Build/LRX22C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.9.8.770 U3/0.8.0 Mobile Safari/534.30 evaliant
