@@ -44,7 +44,7 @@ async function sortJSON (filename) {
       dedup(list).sort(sort),
       null,
       2
-    )
+    ) + '\n'
   )
 }
 
