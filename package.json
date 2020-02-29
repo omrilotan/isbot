@@ -1,6 +1,6 @@
 {
   "name": "isbot",
-  "version": "2.5.7",
+  "version": "2.6.0",
   "description": "detects bots/crawlers/spiders via the user agent.",
   "keywords": [
     "bot",

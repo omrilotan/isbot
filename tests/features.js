@@ -65,4 +65,11 @@ describe('Features', function () {
       assert.strictEqual(isBot.find('Googlebot'), 'bot')
     })
   })
+
+  describe('function chaining', function () {
+    it('should return self for setter functions', function () {
+      assert.strictEqual(isBot.extend([]), isBot)
+      assert.strictEqual(isBot.exclude([]).exclude([]), isBot)
+    })
+  })
 })

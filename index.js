@@ -13,7 +13,7 @@ function update () {
  * @param  {string} userAgent
  * @return {boolean}
  */
-module.exports = function (userAgent) {
+function isbot (userAgent) {
   return regex.test(userAgent)
 }
 
@@ -22,7 +22,7 @@ module.exports = function (userAgent) {
  * @param  {string} userAgent
  * @return {string}
  */
-module.exports.find = function (userAgent) {
+isbot.find = function (userAgent) {
   var match = userAgent.match(regex)
   return match && match[0]
 }
@@ -32,11 +32,12 @@ module.exports.find = function (userAgent) {
  * @param  {array} additionalFilters
  * @return {void}
  */
-module.exports.extend = function (additionalFilters) {
+isbot.extend = function (additionalFilters) {
   list = list.concat(
     additionalFilters.filter(included)
   )
   update()
+  return isbot
 }
 
 /**
@@ -53,7 +54,7 @@ function included (rule) {
  * @param  {array} excludedFilters
  * @return {void}
  */
-module.exports.exclude = function (excludedFilters) {
+isbot.exclude = function (excludedFilters) {
   var i = excludedFilters.length
   while (i--) {
     var index = list.lastIndexOf(excludedFilters[i])
@@ -62,6 +63,7 @@ module.exports.exclude = function (excludedFilters) {
     }
   }
   update()
+  return isbot
 }
 
 try {
@@ -75,3 +77,5 @@ try {
 }
 
 update()
+
+module.exports = isbot
