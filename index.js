@@ -30,7 +30,7 @@ isbot.find = function (userAgent) {
 /**
  * Extent patterns for known crawlers
  * @param  {array} additionalFilters
- * @return {void}
+ * @return {object}
  */
 isbot.extend = function (additionalFilters) {
   list = list.concat(
@@ -52,7 +52,7 @@ function included (rule) {
 /**
  * Exclude patterns from bot pattern rule
  * @param  {array} excludedFilters
- * @return {void}
+ * @return {object}
  */
 isbot.exclude = function (excludedFilters) {
   var i = excludedFilters.length
