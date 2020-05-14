@@ -5,22 +5,9 @@ commands:
     steps:
       - checkout
       - run: npm i
-      - run: npm t
+      - run: npm run unit
 
 jobs:
-  test_node_6:
-    docker:
-      - image: circleci/node:6
-    steps:
-      - checkout
-      - run: npm i
-      - run: npm run prepare
-      - run: npm t
-  test_node_8:
-    docker:
-      - image: circleci/node:8
-    steps:
-      - tests
   test_node_10:
     docker:
       - image: circleci/node:10
@@ -43,13 +30,14 @@ jobs:
       - checkout
       - run: npm i
       - run: npm run browser
-  lint_and_types:
+  lint_sort_and_types:
     docker:
       - image: circleci/node:latest
     steps:
       - checkout
       - run: npm i
       - run: npm run lint -- --plugin log
+      - run: npm run sort && git diff --quiet || exit 1
       - run: npm run ts
   publish:
     docker:
@@ -95,22 +83,18 @@ workflows:
   version: 2.1
   test:
     jobs:
-      - test_node_6
-      - test_node_8
       - test_node_10
       - test_node_12
       - test_node_latest
       - test_browsers
-      - lint_and_types
+      - lint_sort_and_types
       - publish:
           requires:
-            - test_node_6
-            - test_node_8
             - test_node_10
             - test_node_12
             - test_node_latest
             - test_browsers
-            - lint_and_types
+            - lint_sort_and_types
           filters:
             branches:
               only:

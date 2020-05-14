@@ -70,6 +70,8 @@ try {
   new RegExp('(?<! cu)bot').test('dangerbot')
   list.splice(list.lastIndexOf('bot'), 1)
   list.push('(?<! cu)bot')
+  list.splice(list.lastIndexOf('search'), 1)
+  list.push('(?<! (ya|yandex))search')
 } catch (error) {
   // ignore errors
 }

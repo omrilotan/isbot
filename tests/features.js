@@ -2,19 +2,19 @@
 
 const assert = require('assert')
 const { cleanup } = require('./helpers')
-let isBot = require('..')
+let isbot = require('..')
 
-describe('Features', function () {
+describe('features', function () {
   afterEach(function () {
     cleanup()
-    isBot = require('..')
+    isbot = require('..')
   })
 
   describe('isbot', function () {
     it('should always return a boolean', function () {
       [
         'Mozilla', 'Googlebot', 'Something else'
-      ].map(isBot).forEach(
+      ].map(isbot).forEach(
         result => assert.strictEqual(typeof result, 'boolean')
       )
     })
@@ -25,44 +25,44 @@ describe('Features', function () {
     const rule = '^mozilla\\/\\d\\.\\d$'
 
     it(`should not detect "${useragent}" as bot`, function () {
-      assert(!isBot(useragent))
+      assert(!isbot(useragent))
     })
 
     it(`should detect "${useragent}" as bot`, function () {
-      isBot.extend([rule])
-      assert(isBot(useragent))
+      isbot.extend([rule])
+      assert(isbot(useragent))
     })
 
     it('should not extend an existing item', function () {
-      isBot.extend([rule])
-      isBot.extend([rule])
-      isBot.extend([rule])
-      isBot.exclude([rule])
-      assert(!isBot(useragent))
+      isbot.extend([rule])
+      isbot.extend([rule])
+      isbot.extend([rule])
+      isbot.exclude([rule])
+      assert(!isbot(useragent))
     })
   })
 
   describe('isbot.exclude', function () {
-    const useragent = 'Mozilla/4.0 (compatible; B-l-i-t-z-B-O-T)'
-    const rule = 'B-l-i-t-z-B-O-T'
+    const useragent = 'axios/1.2'
+    const rule = '^axios/'
 
     it(`should not detect "${useragent}" as bot`, function () {
-      assert(isBot(useragent))
+      assert(isbot(useragent))
     })
 
     it(`should detect "${useragent}" as bot`, function () {
-      isBot.exclude([rule])
-      assert(!isBot(useragent))
+      isbot.exclude([rule])
+      assert(!isbot(useragent))
     })
   })
 
   describe('isbot.find', function () {
     it('should return null for non bot browser', function () {
-      assert.strictEqual(isBot.find('Mozilla'), null)
+      assert.strictEqual(isbot.find('Mozilla'), null)
     })
 
     it('should return the rule used to identify as bot', function () {
-      assert.strictEqual(isBot.find('Googlebot'), 'bot')
+      assert.strictEqual(isbot.find('Googlebot'), 'bot')
     })
   })
 })
