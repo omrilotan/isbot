@@ -1,3 +1,11 @@
+# next
+
+## Crawlers list update
+Add pattern for Hydra by addthis
+
+## Testing
+Add legit browser user-agent strings
+
 # 3.0.0: Maintainability and performance through automation
 
 The API and code **has not changed**
