@@ -1,13 +1,12 @@
 /* eslint-env mocha */
 
 const assert = require('assert')
-const { cleanup } = require('./helpers')
-let isbot = require('..')
+const { fresh } = require('./helpers')
+let isbot
 
 describe('features', function () {
-  afterEach(function () {
-    cleanup()
-    isbot = require('..')
+  beforeEach(function () {
+    isbot = fresh()
   })
 
   describe('isbot', function () {

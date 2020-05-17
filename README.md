@@ -8,58 +8,49 @@ Detect bots/crawlers/spiders using the user agent string.
 
 ### install
 
-```console
-$ npm i isbot
-```
-
 ## Usage
 
 ```js
-var isbot = require('isbot');
+const isbot = require('isbot');
 ```
 
 ### Simple detection
 
 ```js
-isbot(req.headers['user-agent'])
+// Nodejs HTTP
+isbot(request.getHeader('User-Agent'))
 
+// ExpressJS
+isbot(req.get['user-agent'])
+
+// User Agent string
 isbot('Googlebot/2.1 (+http://www.google.com/bot.html)') // true
-
 isbot('Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36') // false
 ```
 
-### Extending more user agents
+### Add crawler user agents
 Add rules to user agent match RegExp
 
 ```js
 isbot('Mozilla/5.0') // false
-
-var myList = [
+isbot.extend([
     'istat',
-    'newspaper',
     'httpclient',
-    '^mozilla/\\d\\.\\d$',
-];
-
-isbot.extend(myList);
-
+    '^mozilla/\\d\\.\\d$'
+])
 isbot('Mozilla/5.0') // true
 ```
 
-### Excluding known crawlers
+### Remove matches of known crawlers
 Remove rules to user agent match RegExp (see existing rules in `list.json` file)
 
 ```js
-isbot('Ceramic Tile Installation Guide') // true
-
-var myList = [
-	'Ceramic Tile Installation Guide',
-	'NORAD National Defence Network'
-];
-
-isbot.exclude(myList);
-
-isbot('Ceramic Tile Installation Guide') // false
+isbot('Google Page Speed Insights') // true
+isbot.exclude([
+  'Google Page Speed Insights',
+  'Chrome-Lighthouse'
+])
+isbot('Google Page Speed Insights') // false
 ```
 
 ### Verbose result
@@ -68,6 +59,8 @@ Return the respective match for bot user agent rule
 ```js
 isbot.find('Googlebot/2.1 (+http://www.google.com/bot.html)') // 'bot'
 ```
+
+## Data sources
 
 ### Crawlers user agents:
 - [user-agents.net](https://user-agents.net/bots)

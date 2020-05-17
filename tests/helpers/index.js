@@ -80,18 +80,11 @@ module.exports.browsers = [
 ]
 
 /**
- * Clean module files
- */
-module.exports.cleanup = function () {
-  delete require.cache[require.resolve('../..')]
-  delete require.cache[require.resolve('../../list')]
-}
-
-/**
  * Clean module files and reload
  */
 module.exports.fresh = function () {
-  module.exports.cleanup()
+  delete require.cache[require.resolve('../..')]
+  delete require.cache[require.resolve('../../list')]
 
   return require('../..')
 }

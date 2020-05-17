@@ -1,26 +1,24 @@
 {
   "name": "isbot",
   "version": "3.0.0",
-  "description": "detects bots/crawlers/spiders via the user agent.",
+  "description": "🤖 detect bots/crawlers/spiders via the user agent.",
   "keywords": [
     "bot",
     "crawlers",
     "spiders",
     "googlebot",
-    "useragent"
+    "useragent",
+    "🤖"
   ],
   "author": "Goran Gajic",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/gorangajic/isbot/issues"
-  },
   "homepage": "https://github.com/gorangajic/isbot",
   "repository": {
     "type": "git",
     "url": "https://github.com/gorangajic/isbot"
   },
   "engines": {
-    "node": ">=6"
+    "node": ">=10"
   },
   "main": "index.js",
   "types": "index.d.ts",
