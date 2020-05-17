@@ -1,7 +1,9 @@
 # next
 
 ## Crawlers list update
-Add pattern for Hydra by addthis
+Add patterns for:
+- [Hydra by addthis](https://github.com/addthis/hydra)
+- [RebelMouse](https://www.rebelmouse.com/rebelmouse-public-api)
 
 ## Testing
 Add legit browser user-agent strings

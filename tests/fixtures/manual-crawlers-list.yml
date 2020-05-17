@@ -10,6 +10,8 @@ Medusa by pymedusa:
   - python/unicode Medusa/0.2.14 (Windows; 10; d26d37e1-3389-11e9-8d14-1c1b0d9d2a41)
 proximic:
   - Mozilla/5.0 (compatible; proximic; +http://www.proximic.com/info/spider.php)
+RebelMouse:
+  - RebelMouse/0.1 Mozilla/5.0 (compatible; http://rebelmouse.com) Gecko/20100101 Firefox/7.0.1
 RuxitSynthetic:
   - Chrome/80.0.3987.87 Safari/537.36 RuxitSynthetic/1.0 v6191106029376332690 t7889551165227354132
 TinEye:
