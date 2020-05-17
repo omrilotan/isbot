@@ -1,4 +1,4 @@
 node_modules
-package-lock.json
-tests/fixtures/crawler-user-agents.json
+tests/fixtures/user-agents.net.bot-crawler.txt
+tests/fixtures/crawler-user-agents-monperrus.json
 tests/.browser-tests.js

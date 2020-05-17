@@ -2,19 +2,31 @@
 
 const { promises: { readFile, writeFile } } = require('fs')
 const { join } = require('path')
+const YAML = require('yaml')
 
 /**
  * Create array without the duplicates
  * @param  {Array} list
  * @return {Array}
  */
-const dedup = list => Array.from(new Set(list));
+const dedup = list => Array.from(new Set(list))
 
-(async () => {
-  sortTextFile('../tests/fixtures/crawlers.txt')
-  sortTextFile('../tests/fixtures/browsers.txt')
-  sortJSON('../list.json')
-})()
+/**
+ * Return a lowercase copy
+ * @param  {string} str
+ * @return {string}
+ */
+const downcase = str => str.toLowerCase()
+
+async function start () {
+  await Promise.all([
+    sortYamlFile('../tests/fixtures/manual-crawlers-list.yml'),
+    sortYamlFile('../tests/fixtures/manual-legit-browsers.yml'),
+    sortJSON('../list.json')
+  ])
+}
+
+start()
 
 /**
  * Case insensitive Sort
@@ -49,19 +61,37 @@ async function sortJSON (filename) {
 }
 
 /**
- * Read, sort, and save plain text file
+ * Read, sort, and save Yaml file
  * @param  {String} filename
  * @return {undefined}
  */
-async function sortTextFile (filename) {
+async function sortYamlFile (filename) {
   const filepath = join(__dirname, filename)
-  const crawlers = await readFile(filepath)
-  const list = crawlers.toString()
-    .trim()
-    .split('\n')
-    .filter(Boolean)
-    .map(s => s.trim())
-    .sort(sort)
+  const content = (await readFile(filepath)).toString()
+  const data = YAML.parse(content)
 
-  await writeFile(filepath, dedup(list).join('\n') + '\n')
+  const sorted = Object.fromEntries(
+    Object.entries(
+      data
+
+    // Sort keys
+    ).sort(
+      ([_a], [_b]) => {
+        const [a, b] = [_a, _b].map(downcase)
+
+        return a > b ? 1 : a < b ? -1 : 0
+      }
+
+    // Remove duplicates and sort lists
+    ).map(
+      ([k, v]) => [k, dedup(v).sort((a, b) => a > b ? 1 : a < b ? -1 : 0)]
+    )
+  )
+
+  YAML.scalarOptions.str.fold.lineWidth = Infinity
+
+  await writeFile(
+    filepath,
+    YAML.stringify(sorted)
+  )
 }
