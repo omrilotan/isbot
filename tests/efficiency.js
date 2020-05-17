@@ -50,6 +50,7 @@ describe('efficiency', () => {
           return
         }
 
+        // Relieve memory intensive processes by offloading batches to worker thread
         const worker = new Worker(script)
         worker.on(
           'message',
