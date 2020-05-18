@@ -45,6 +45,7 @@ module.exports.crawlers = [
 const BOTS = new RegExp([
   'adbeat.com',
   'chrome-lighthouse',
+  'googleweblight',
   'JavaFX',
   'phantomjs',
   'swurl',
