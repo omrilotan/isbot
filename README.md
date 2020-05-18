@@ -70,7 +70,7 @@ This package aims to identify "Good bots". Those who voluntarily identify themse
 ### What doesn't "isbot" do?
 It does not try to recognise malicious bots or programs disguising themselves as real users.
 
-###Why would I want to identify good bots?
+### Why would I want to identify good bots?
 Recognising good bots such as web crawlers is useful for multiple purposes. Although it is not recommended to serve different content to web crawlers like Googlebot, you can still elect to
 - Flag bot pageviews to consider in business analysis
 - Prefer to serve cached content and relieve service load
