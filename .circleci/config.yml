@@ -96,11 +96,31 @@ workflows:
   version: 2.1
   test:
     jobs:
-      - test_node_10
-      - test_node_12
-      - test_node_latest
-      - test_browsers
-      - lint_sort_and_types
+      - test_node_10:
+        filters:
+          branches:
+            ignore:
+              - gh-pages
+      - test_node_12:
+        filters:
+          branches:
+            ignore:
+              - gh-pages
+      - test_node_latest:
+        filters:
+          branches:
+            ignore:
+              - gh-pages
+      - test_browsers:
+        filters:
+          branches:
+            ignore:
+              - gh-pages
+      - lint_sort_and_types:
+        filters:
+          branches:
+            ignore:
+              - gh-pages
       - publish:
           requires:
             - test_node_10
