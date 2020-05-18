@@ -1,20 +1,52 @@
+AlertSite Monitoring:
+  - Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0 DejaClick/2.9.7.2
+Burp Collaborator Scanner:
+  - Godzilla/17.0 (Unknown Operator; Nexus 5X Build/MMB29P) NoWebKit/5.36 (DOM, like Rhino; n7vbji2k0wt3rsbev55blgx17sdk8lwek97zvo.burpcollaborator.net) TOR/540.5.35487 Torrent 2654.76
+  - Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36 root@8f6gtjctw9glvnasfrq438tprig56wty20ghwkf9.burpcollaborator.net
+  - Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36'+(select load_file('x97bjuqgzjb9cjiodeygpdyxkoqledf164uzhp5e.burpcollaborator.netszc'))+'
+  - http://5iojs2zo8rkhlrrwmm7oyl75twztnlo9ex9kz8o.burpcollaborator.net/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36
+ClamAV Website Scanner:
+  - ClamAV 0.95.3
+  - "ClamAV/0.101.5 (OS: linux-gnu, ARCH: x86_64, CPU: x86_64)"
 coccoc:
   - Mozilla/5.0 (compatible; coccocbot-web/1.0; +http://help.coccoc.com/searchengine)
+Dotcom Monitor:
+  - Mozilla/5.0 (Linux; U; Android 2.2; en-us; SCH-I800 Build/FROYO) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1 DMBrowser-BV
+  - Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36 DMBrowser/2.1 (BV; LV)
+  - Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0) DMBrowser/2.1 (UV)
 Flipboard:
   - Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:28.0) Gecko/20100101 Firefox/28.0 (FlipboardProxy/1.6; +http://flipboard.com/browserproxy)
+Google WebLight Proxy:
+  - Dalvik/2.1.0 (Linux; U; Android 5.1.1_r1; Samsung Galaxy S4 Build/SGH-I337M)(googleweblight)
+  - Mozilla/5.0 (Linux; Android 4.2.1; en-us; Nexus 5 Build/JOP40D) AppleWebKit/535.19 (KHTML, like Gecko; googleweblight) Chrome/38.0.1025.166 Mobile Safari/535.19
+  - Mozilla/5.0 (Linux; Android 4.2.1; en-us; Nexus 5 Build/JOP40D) AppleWebKit/535.19 (KHTML, like Gecko; googleweblight) Chrome/38.0.1025.166 Mobile Safari/535.19,gzip(gfe)
+  - Mozilla/5.0 (Windows; Linux; Android 4.2.1; en-us; Nexus 5 Build/JOP40D) AppleWebKit/535.19 (KHTML, like Gecko; googleweblight) Chrome/38.0.1025.166 Mobile Safari/535.19
+  - Nokia5800d-1/5.0 (SymbianOS/9.4; Series60/5.3 Nokia5800d-1/111.050.1511; Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1; googleweblight) AppleWebKit/533.4 (KHTML, like Gecko, googleweblight) NokiaBrowser/8.3.7.4 Mobile Safari/533.4 3gpp-gba
+HighWinds Content Delivery System:
+  - HWCDN/GFS v1.80.995-4.38.2369.el7 CDS/AT2
+  - HWCDN/GFS v1.80.995-4.38.2369.el7 CDS/DA2
+  - HWCDN/GFS v1.89.1003-1.3.2692.el7 CDS/AT2
+Hobbit:
+  - Hobbit bbtest-net/4.3.0-0.beta2
 Hydra by addthis:
   - Mozilla/4.0 (Hydra)
   - Mozilla/5.0 (Hydra Proxy)
+Jorgee Vulnerability Scanner:
+  - Mozilla/5.0 Jorgee
 Medusa by pymedusa:
   - python/unicode Medusa/0.2.14 (Windows; 10; 3174120f-3388-11e9-b8bd-1c1b0d9d2a41)
   - python/unicode Medusa/0.2.14 (Windows; 10; d26d37e1-3389-11e9-8d14-1c1b0d9d2a41)
+Monit:
+  - Monit/5.23.0
 proximic:
   - Mozilla/5.0 (compatible; proximic; +http://www.proximic.com/info/spider.php)
 RebelMouse:
   - RebelMouse/0.1 Mozilla/5.0 (compatible; http://rebelmouse.com) Gecko/20100101 Firefox/7.0.1
 RuxitSynthetic:
   - Chrome/80.0.3987.87 Safari/537.36 RuxitSynthetic/1.0 v6191106029376332690 t7889551165227354132
-TinEye:
-  - Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0 TinEye/1.0 (via http://www.tineye.com/)
-Yahoo Ad monitoring:
-  - Mozilla/5.0 (compatible; Yahoo Ad monitoring; https://help.yahoo.com/kb/yahoo-ad-monitoring-SLN24857.html) yahoo.adquality.lwd.desktop/1523838870-60
+Sogou Search Dog:
+  - Mozilla/5.0 (Linux; Android 9; NX569J Build/PQ3A.190505.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.106 Mobile Safari/537.36 AWP/2.0 SogouMSE,SogouMobileBrowser/5.21.8
+updown.io monitoring:
+  - updown.io daemon 2.2
+Xymon Site Monitor:
+  - Xymon xymonnet/4.3.17

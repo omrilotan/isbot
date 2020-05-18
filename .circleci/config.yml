@@ -61,9 +61,22 @@ jobs:
           name: Add publish token
           command: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
       - run: npm publish
-  periodic:
+  pages:
     docker:
       - image: circleci/node:latest
+    steps:
+      - checkout
+      - run: npm i
+      - run: npm run build
+      - run:
+          name: Copy circleci config
+          command: cp -r .circleci playground/dist/
+      - run:
+          name: Post to gh-pages
+          command: curl ci-cd.net/v1/gh/pages | bash -s playground/dist/.
+  periodic:
+    docker:
+      - image: circleci/node:latest-browsers
     steps:
       - checkout
       - run: npm i
@@ -99,6 +112,9 @@ workflows:
             branches:
               only:
                 - master
+      - pages:
+          requires:
+            - publish
   scheduled:
     jobs:
       - periodic
