@@ -1,5 +1,7 @@
 .*
 tests/*
 scripts/*
+src/*
+docs/*
 tsconfig.json
 CHANGELOG.md
