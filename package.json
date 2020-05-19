@@ -1,6 +1,6 @@
 {
   "name": "isbot",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "🤖 detect bots/crawlers/spiders via the user agent.",
   "keywords": [
     "bot",
@@ -12,7 +12,7 @@
   ],
   "author": "Goran Gajic",
   "license": "MIT",
-  "homepage": "https://github.com/gorangajic/isbot",
+  "homepage": "https://gorangajic.github.io/isbot",
   "repository": {
     "type": "git",
     "url": "https://github.com/gorangajic/isbot"
