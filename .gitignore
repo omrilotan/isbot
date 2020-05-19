@@ -1,6 +1,0 @@
-.cache
-node_modules
-tests/fixtures/user-agents.net.bot-crawler.txt
-tests/fixtures/crawler-user-agents-monperrus.json
-tests/.browser-tests.js
-docs
