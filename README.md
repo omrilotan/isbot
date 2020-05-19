@@ -75,7 +75,7 @@ Recognising good bots such as web crawlers is useful for multiple purposes. Alth
 - Flag bot pageviews to consider in business analysis
 - Prefer to serve cached content and relieve service load
 - Omit third party solutions' code (tags, pixels)
-> I is not recommended to whitelist requests for any reason based on user agent header only. Instead other methods of identification can be added such as reverse dns lookup.
+> It is not recommended to whitelist requests for any reason based on user agent header only. Instead other methods of identification can be added such as reverse dns lookup.
 
 ## Data sources
 
