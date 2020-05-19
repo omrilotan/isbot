@@ -39,7 +39,7 @@ describe('efficiency', () => {
       done()
     })
 
-    it(`${length} rules are is necessary, and have examples`, function (done) {
+    it(`${length} rules are necessary, and have examples`, function (done) {
       const errors = []
       update(`${length - list.length}/${length}. Error count: ${errors.length}`)
 

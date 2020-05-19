@@ -1,0 +1,9 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>isbot</ShortName>
+  <LongName>isbot CHECK</LongName>
+  <Description>isbot CHECK</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <OutputEncoding>UTF-8</OutputEncoding>
+  <AdultContent>false</AdultContent>
+  <Url type="text/html" method="get" template="https://gorangajic.github.io/isbot/?ua={searchTerms}"/>
+</OpenSearchDescription>
