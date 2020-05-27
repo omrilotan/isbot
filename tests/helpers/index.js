@@ -40,7 +40,7 @@ module.exports.crawlers = [
       )
     )
   ).flat()
-]
+].filter(Boolean)
 
 const BOTS = new RegExp([
   'adbeat.com',
@@ -78,7 +78,7 @@ module.exports.browsers = [
       )
     )
   ).flat()
-]
+].filter(Boolean)
 
 /**
  * Clean module files and reload
