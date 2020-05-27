@@ -1,4 +1,15 @@
-# next
+# 3.0.2
+
+## Optimise pattern list
+Combine all google products: Google browsers' user agent do not contain the word "Google".
+
+## Add bots
+- M4A1-WAPCHOI/2.0 (Java; U; MIDP-2.0; vi; NokiaC5-00.2) WAPCHOI/1.0.0 UCPro/9.4.1.377 U2/1.0.0 Mobile UNTRUSTED/1.0 3gpp-gba
+- Mozilla/5.0 (compatible; Domains Project/1.0.3; +https://github.com/tb0hdan/domains)
+
+Overall reduces list by 25 rules (from 345 rules to 320)
+
+# 3.0.1
 
 ## Crawlers list update
 Add patterns for:
