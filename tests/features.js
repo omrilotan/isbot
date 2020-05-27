@@ -61,7 +61,7 @@ describe('features', function () {
     })
 
     it('should return the rule used to identify as bot', function () {
-      assert.strictEqual(isbot.find('Googlebot'), 'bot')
+      assert.strictEqual(isbot.find('Mozilla/5.0 (compatible; SemrushBot-SA/0.97; +http://www.semrush.com/bot.html)'), 'Bot')
     })
   })
 })
