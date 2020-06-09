@@ -1,3 +1,8 @@
+# 3.0.3
+
+## Add bots
+- Respond to crawler user agents added to user-agents.net/bots
+
 # 3.0.2
 
 ## Optimise pattern list
