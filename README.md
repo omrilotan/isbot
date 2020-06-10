@@ -46,12 +46,9 @@ isbot('Mozilla/5.0') // true
 Remove rules to user agent match RegExp (see existing rules in `list.json` file)
 
 ```js
-isbot('Google Page Speed Insights') // true
-isbot.exclude([
-  'Google Page Speed Insights',
-  'Chrome-Lighthouse'
-])
-isbot('Google Page Speed Insights') // false
+isbot('Chrome-Lighthouse') // true
+isbot.exclude(['Chrome-Lighthouse'])
+isbot('Chrome-Lighthouse') // false
 ```
 
 ### Verbose result
