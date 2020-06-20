@@ -5,9 +5,19 @@ const UserAgent = require('user-agents')
 require('array-flat-polyfill')
 
 const crawlerUserAgentsText = '../fixtures/user-agents.net.bot-crawler.txt'
+const botsIgnoreList = '../fixtures/user-agents.net-bots-ignore-list.txt'
 const crawlerUserAgentsJson = '../fixtures/crawler-user-agents-monperrus.json'
 const crawlerUserAgentsYaml = '../fixtures/manual-crawlers-list.yml'
 const browserUserAgentsYaml = '../fixtures/manual-legit-browsers.yml'
+
+const ignoreList = readFileSync(
+  join(
+    __dirname,
+    '../fixtures/',
+    botsIgnoreList
+  ),
+  'utf-8'
+).trim().split('\n')
 
 /**
  * List of known crawlers
@@ -40,7 +50,7 @@ module.exports.crawlers = [
       )
     )
   ).flat()
-].filter(Boolean)
+].filter(Boolean).filter(ua => !ignoreList.includes(ua))
 
 const BOTS = new RegExp([
   'adbeat.com',
