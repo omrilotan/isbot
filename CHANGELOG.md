@@ -1,3 +1,8 @@
+# 3.0.4
+- [`Hexometer`](https://hexometer.com/)
+- Respond to crawler user agents added to user-agents.net/bots
+- Add an "ignoreList" to exclude user agents from user-agents.net
+
 # 3.0.3
 
 ## Add bots
