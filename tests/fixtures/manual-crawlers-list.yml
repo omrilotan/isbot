@@ -44,6 +44,9 @@ proximic:
   - Mozilla/5.0 (compatible; proximic; +http://www.proximic.com/info/spider.php)
 RebelMouse:
   - RebelMouse/0.1 Mozilla/5.0 (compatible; http://rebelmouse.com) Gecko/20100101 Firefox/7.0.1
+Rigor Synythetic Monitoring:
+  - Mozilla/5.0 (X11; Linux x86_64; Rigor) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36
+  - Mozilla/5.0 (X11; Linux x86_64; rv:45.0; Rigor) Gecko/20100101 Firefox/45.0
 RuxitSynthetic:
   - Chrome/80.0.3987.87 Safari/537.36 RuxitSynthetic/1.0 v6191106029376332690 t7889551165227354132
 Sogou Search Dog:
