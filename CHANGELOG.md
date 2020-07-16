@@ -1,5 +1,6 @@
 # 3.0.5
 - Respond to crawler user agents added to user-agents.net/bots
+- Add [Rigor synthetic monitoring](https://rigor.com/)
 
 # 3.0.4
 - [`Hexometer`](https://hexometer.com/)
