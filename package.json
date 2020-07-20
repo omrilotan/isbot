@@ -25,6 +25,7 @@
   "scripts": {
     "prebuild": "which parcel || npm i parcel-bundler --no-save",
     "build": "parcel build src/index.html --out-dir docs --public-url .",
+    "postbuild": "echo isbot.js.org > docs/CNAME",
     "prestart": "which parcel || npm i parcel-bundler --no-save",
     "start": "parcel src/index.html --out-dir docs",
     "prepare": "./scripts/download-fixtures.sh",

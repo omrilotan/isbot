@@ -7,7 +7,7 @@ Detect bots/crawlers/spiders using the user agent string.
 [![](https://img.shields.io/circleci/build/github/gorangajic/isbot?style=flat-square)](https://circleci.com/gh/gorangajic/isbot) [![](https://img.shields.io/npm/dt/isbot?style=flat-square)](https://www.npmjs.com/package/isbot) [![](https://img.shields.io/github/last-commit/gorangajic/isbot?style=flat-square)](https://github.com/gorangajic/isbot/graphs/commit-activity) [![](https://img.shields.io/librariesio/sourcerank/npm/isbot?style=flat-square)](https://libraries.io/npm/isbot)
 
 ## Check it out
-[Visit the online checker](https://gorangajic.github.io/isbot)
+[Visit the online checker](https://isbot.js.org)
 
 ## Usage
 
