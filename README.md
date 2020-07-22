@@ -55,7 +55,7 @@ isbot('Chrome-Lighthouse') // false
 Return the respective match for bot user agent rule
 
 ```js
-isbot.find('Googlebot/2.1 (+http://www.google.com/bot.html)') // 'bot'
+isbot.find('Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0 DejaClick/2.9.7.2') // 'DejaClick'
 ```
 
 ## Definitions
