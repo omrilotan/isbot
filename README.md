@@ -1,13 +1,12 @@
 # isbot 🤖/👨‍🦰
 
-Detect bots/crawlers/spiders using the user agent string.
+[![](./src/isbot.svg)](https://isbot.js.org)
 
 [![](https://img.shields.io/npm/v/isbot.svg?style=flat-square)](https://www.npmjs.com/package/isbot) [![](https://img.shields.io/node/v/isbot?style=flat-square)](https://nodejs.org/en/download/releases/) [![](https://img.shields.io/bundlephobia/minzip/isbot?style=flat-square)](https://bundlephobia.com/result?p=isbot)
 
 [![](https://img.shields.io/circleci/build/github/gorangajic/isbot?style=flat-square)](https://circleci.com/gh/gorangajic/isbot) [![](https://img.shields.io/npm/dt/isbot?style=flat-square)](https://www.npmjs.com/package/isbot) [![](https://img.shields.io/github/last-commit/gorangajic/isbot?style=flat-square)](https://github.com/gorangajic/isbot/graphs/commit-activity) [![](https://img.shields.io/librariesio/sourcerank/npm/isbot?style=flat-square)](https://libraries.io/npm/isbot)
 
-## Check it out
-[Visit the online checker](https://isbot.js.org)
+Detect bots/crawlers/spiders using the user agent string.
 
 ## Usage
 
