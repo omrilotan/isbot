@@ -85,3 +85,4 @@ Recognising good bots such as web crawlers is useful for multiple purposes. Alth
 
 ### Non bot user agents:
 - [Manual list](./tests/fixtures/manual-legit-browsers.yml) (source: [whatismybrowser.com](https://developers.whatismybrowser.com/useragents/explore/software_name/))
+- [user-agents npm package](https://www.npmjs.com/package/user-agents)
