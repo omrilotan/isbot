@@ -7,6 +7,11 @@ Burp Collaborator Scanner:
   - Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36 root@8f6gtjctw9glvnasfrq438tprig56wty20ghwkf9.burpcollaborator.net
   - Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36'+(select load_file('x97bjuqgzjb9cjiodeygpdyxkoqledf164uzhp5e.burpcollaborator.netszc'))+'
   - http://5iojs2zo8rkhlrrwmm7oyl75twztnlo9ex9kz8o.burpcollaborator.net/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36
+Catchpoint:
+  - Mozilla/4.0 (compatible; Catchpoint)
+  - Mozilla/5.0 (Linux; U; Android 4.0.2; en-us; Catchpoint) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
+  - Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0; Catchpoint) like Gecko
+  - Mozilla/5.0 (X11; Linux x86_64; Catchpoint) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.90 Safari/537.36
 ClamAV Website Scanner:
   - ClamAV 0.95.3
   - "ClamAV/0.101.5 (OS: linux-gnu, ARCH: x86_64, CPU: x86_64)"
