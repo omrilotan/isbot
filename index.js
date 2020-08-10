@@ -65,11 +65,12 @@ module.exports.exclude = function (excludedFilters) {
 }
 
 try {
-  // Address: Cubot browser
   // Risk: Uses lookbehind assertion
   new RegExp('(?<! cu)bot').test('dangerbot')
+  // Addresses: Cubot device
   list.splice(list.lastIndexOf('bot'), 1)
   list.push('(?<! cu)bot')
+  // Addresses: Yandex browser
   list.splice(list.lastIndexOf('search'), 1)
   list.push('(?<! (ya|yandex))search')
 } catch (error) {
