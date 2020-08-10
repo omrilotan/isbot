@@ -9,19 +9,16 @@
 Detect bots/crawlers/spiders using the user agent string.
 
 ## Usage
-
-```js
-const isbot = require('isbot');
-```
-
 ### Simple detection
 
 ```js
+const isbot = require('isbot')
+
 // Nodejs HTTP
 isbot(request.getHeader('User-Agent'))
 
 // ExpressJS
-isbot(req.get['user-agent'])
+isbot(req.get('user-agent'))
 
 // User Agent string
 isbot('Googlebot/2.1 (+http://www.google.com/bot.html)') // true
