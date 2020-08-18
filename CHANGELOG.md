@@ -1,3 +1,9 @@
+# Next
+- Add [SignalR client](https://github.com/dotnet/aspnetcore/search?q=signalr&unscoped_q=signalr)
+
+# 3.0.7
+- Reduce pattern complexity by 14
+
 # 3.0.6
 - Respond to crawler user agents added to user-agents.net/bots
 - ApplicationHealthService: Ping Service

@@ -38,10 +38,10 @@
     "test": "npm run sort && npm run unit && npm run browser && npm run lint && npm run ts"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^14.0.0",
+    "@rollup/plugin-commonjs": "^15.0.0",
     "@rollup/plugin-json": "^4.1.0",
     "array-flat-polyfill": "^1.0.1",
-    "eslint-plugin-log": "^1.2.3",
+    "eslint-plugin-log": "^1.2.4",
     "karma": "^5.1.1",
     "karma-chrome-launcher": "^3.1.0",
     "karma-cli": "^2.0.0",
@@ -49,7 +49,7 @@
     "karma-mocha": "^2.0.1",
     "karma-mocha-reporter": "^2.2.5",
     "mocha": "^8.1.1",
-    "rollup": "^2.23.0",
+    "rollup": "^2.26.3",
     "standard": "^14.3.4",
     "stdline": "^0.1.0",
     "typescript": "^3.9.7",
