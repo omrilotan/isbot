@@ -1,5 +1,8 @@
-# Next
+# 3.0.8
 - Add [SignalR client](https://github.com/dotnet/aspnetcore/search?q=signalr&unscoped_q=signalr)
+- Add FirePHP
+- Reduce complexity for UAs containing "amiga" (by 3)
+- Reduce complexity for UAs containing "download" (by 2)
 
 # 3.0.7
 - Reduce pattern complexity by 14
