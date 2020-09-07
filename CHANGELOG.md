@@ -3,6 +3,7 @@
 
 # 3.0.8
 - Add FirePHP
+- Reduce complexity for UAs containing "amiga" (by 3)
 - Reduce complexity for UAs containing "download" (by 2)
 
 # 3.0.7
