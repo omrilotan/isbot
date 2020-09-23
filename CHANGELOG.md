@@ -1,3 +1,10 @@
+# 3.0.9
+- Add Shared Web Credentials tool
+- Add Java runtime request
+- Add [2GDPR](https://2gdpr.com/)
+- Add GetRight
+- Add [Pompos](http://pompos.iliad.fr)
+
 # 3.0.8
 - Add [SignalR client](https://github.com/dotnet/aspnetcore/search?q=signalr&unscoped_q=signalr)
 - Add FirePHP

@@ -142,6 +142,7 @@
   "^PEAR HTTP_Request",
   "^photon/",
   "^PHP",
+  "^Pompos/",
   "^Postman",
   "^postrank",
   "^python",
