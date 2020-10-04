@@ -1,3 +1,7 @@
+# 3.0.10
+- Add [Sistrix (SEO)](https://www.sistrix.com/)
+- JavaOS (Discontinued in 2003)
+
 # 3.0.9
 - Add Shared Web Credentials tool
 - Add Java runtime request
