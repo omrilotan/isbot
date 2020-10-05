@@ -11,14 +11,12 @@ const crawlerUserAgentsJson = '../fixtures/crawler-user-agents-monperrus.json'
 const crawlerUserAgentsYaml = '../fixtures/manual-crawlers-list.yml'
 const browserUserAgentsYaml = '../fixtures/manual-legit-browsers.yml'
 
-const ignoreList = readFileSync(
-  join(
-    __dirname,
-    '../fixtures/',
-    botsIgnoreList
-  ),
+const read = file => readFileSync(
+  join(__dirname, file),
   'utf-8'
-).trim().split('\n')
+)
+
+const ignoreList = read(botsIgnoreList).trim().split('\n')
 
 /**
  * List of known crawlers
@@ -27,23 +25,11 @@ const ignoreList = readFileSync(
 module.exports.crawlers = [
 
   // Read from text file
-  ...readFileSync(
-    join(
-      __dirname,
-      '../fixtures/',
-      crawlerUserAgentsText
-    ),
-    'utf-8'
-  ).trim().split('\n'),
+  ...read(crawlerUserAgentsText).trim().split('\n'),
 
   // Read from a different text file
-  ...readFileSync(
-    join(
-      __dirname,
-      '../fixtures',
-      liveWebcrawlers
-    ),
-    'utf-8'
+  ...read(
+    liveWebcrawlers
   ).split('\n').map(
     line => line.split('records - ')[1]
   ).filter(
@@ -61,9 +47,8 @@ module.exports.crawlers = [
   // Read from Yaml file
   ...Object.values(
     parse(
-      readFileSync(
-        join(__dirname, crawlerUserAgentsYaml),
-        'utf-8'
+      read(
+        crawlerUserAgentsYaml
       )
     )
   ).flat()
@@ -100,9 +85,8 @@ module.exports.browsers = [
   // Read from Yaml file
   ...Object.values(
     parse(
-      readFileSync(
-        join(__dirname, browserUserAgentsYaml),
-        'utf-8'
+      read(
+        browserUserAgentsYaml
       )
     )
   ).flat()
