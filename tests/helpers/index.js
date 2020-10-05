@@ -49,7 +49,7 @@ module.exports.crawlers = [
   ).filter(
     Boolean
   ).filter(
-    line => !line.includes('CUBOT')
+    line => !line.includes('CUBOT') // Lots of unrecognisable CUBOT user agent strings in this list
   ),
 
   // Read from JSON file
