@@ -6,6 +6,7 @@ require('array-flat-polyfill')
 
 const crawlerUserAgentsText = '../fixtures/user-agents.net.bot-crawler.txt'
 const botsIgnoreList = '../fixtures/user-agents.net-bots-ignore-list.txt'
+const liveWebcrawlers = '../fixtures/live_webcrawlers.txt'
 const crawlerUserAgentsJson = '../fixtures/crawler-user-agents-monperrus.json'
 const crawlerUserAgentsYaml = '../fixtures/manual-crawlers-list.yml'
 const browserUserAgentsYaml = '../fixtures/manual-legit-browsers.yml'
@@ -34,6 +35,22 @@ module.exports.crawlers = [
     ),
     'utf-8'
   ).trim().split('\n'),
+
+  // Read from a different text file
+  ...readFileSync(
+    join(
+      __dirname,
+      '../fixtures',
+      liveWebcrawlers
+    ),
+    'utf-8'
+  ).split('\n').map(
+    line => line.split('records - ')[1]
+  ).filter(
+    Boolean
+  ).filter(
+    line => !line.includes('CUBOT')
+  ),
 
   // Read from JSON file
   ...require(crawlerUserAgentsJson).reduce(
