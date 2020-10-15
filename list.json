@@ -20,6 +20,7 @@
   "^ApplicationHealthService",
   "^asafaweb\\.com",
   "^asynchttp",
+  "^AvsDeviceSdk/",
   "^axios/",
   "^Azureus",
   "^biglotron",
