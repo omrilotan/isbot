@@ -37,6 +37,7 @@
   "^Custom$",
   "^DAP ",
   "^DavClnt",
+  "^Discourse",
   "^Dispatch/\\d",
   "^Disqus/",
   "^DuckDuckGo",
