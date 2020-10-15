@@ -97,31 +97,37 @@ workflows:
   test:
     jobs:
       - test_node_10:
+          context: globalenv
           filters:
             branches:
               ignore:
                 - gh-pages
       - test_node_12:
+          context: globalenv
           filters:
             branches:
               ignore:
                 - gh-pages
       - test_node_latest:
+          context: globalenv
           filters:
             branches:
               ignore:
                 - gh-pages
       - test_browsers:
+          context: globalenv
           filters:
             branches:
               ignore:
                 - gh-pages
       - lint_sort_and_types:
+          context: globalenv
           filters:
             branches:
               ignore:
                 - gh-pages
       - publish:
+          context: globalenv
           requires:
             - test_node_10
             - test_node_12
@@ -133,16 +139,16 @@ workflows:
               only:
                 - master
       - pages:
+          context: globalenv
           requires:
             - publish
-  scheduled:
-    jobs:
-      - periodic
-    triggers:
-      - schedule:
-          # Every Monday at 09:00
-          cron: "0 9 * * 1"
-          filters:
-            branches:
-              only:
-                - master
+  # scheduled:
+  #   jobs:
+  #     - periodic
+  #   triggers:
+  #     - schedule:
+  #         cron: "0 9 * * 1"
+  #         filters:
+  #           branches:
+  #             only:
+  #               - master

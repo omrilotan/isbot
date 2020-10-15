@@ -16,7 +16,12 @@ const read = file => readFileSync(
   'utf-8'
 )
 
-const ignoreList = read(botsIgnoreList).trim().split('\n')
+const ignoreList = read(botsIgnoreList)
+  .trim()
+  .split('\n')
+  .filter(
+    line => !line.startsWith('#')
+  )
 
 /**
  * List of known crawlers
