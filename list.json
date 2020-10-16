@@ -72,6 +72,7 @@
   "^JetBrains",
   "^Jetty/",
   "^Jigsaw",
+  "^kube-probe",
   "^libtorrent",
   "^libwww",
   "^linkdex",
