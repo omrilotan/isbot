@@ -22,6 +22,7 @@ async function start () {
   await Promise.all([
     sortYamlFile('../tests/fixtures/manual-crawlers-list.yml'),
     sortYamlFile('../tests/fixtures/manual-legit-browsers.yml'),
+    sortTextFile('../tests/fixtures/user-agents.net-bots-ignore-list.txt'),
     sortJSON('../list.json')
   ])
 }
@@ -93,5 +94,27 @@ async function sortYamlFile (filename) {
   await writeFile(
     filepath,
     YAML.stringify(sorted)
+  )
+}
+
+/**
+ * Read, sort, and save text file
+ * @param  {String} filename
+ * @return {undefined}
+ */
+async function sortTextFile (filename) {
+  const filepath = join(__dirname, filename)
+  const lines = dedup(
+    (await readFile(filepath)).toString()
+      .split('\n')
+      .filter(Boolean)
+      .sort(sort)
+  )
+    .join('\n')
+    .concat('\n')
+
+  await writeFile(
+    filepath,
+    lines
   )
 }

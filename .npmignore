@@ -4,4 +4,4 @@ scripts/*
 src/*
 docs/*
 tsconfig.json
-CHANGELOG.md
+CONTRIBUTING.md

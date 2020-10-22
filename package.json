@@ -1,6 +1,6 @@
 {
   "name": "isbot",
-  "version": "3.0.13",
+  "version": "3.0.14",
   "description": "🤖 detect bots/crawlers/spiders via the user agent.",
   "keywords": [
     "bot",
@@ -15,7 +15,7 @@
   "homepage": "https://isbot.js.org",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gorangajic/isbot"
+    "url": "https://github.com/omrilotan/isbot"
   },
   "engines": {
     "node": ">=10"

@@ -2,6 +2,8 @@ AlertSite Monitoring:
   - Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0 DejaClick/2.9.7.2
 Application Health Service:
   - ApplicationHealthService/1.0
+AWS:
+  - ELB-HealthChecker/2.0
 Burp Collaborator Scanner:
   - Godzilla/17.0 (Unknown Operator; Nexus 5X Build/MMB29P) NoWebKit/5.36 (DOM, like Rhino; n7vbji2k0wt3rsbev55blgx17sdk8lwek97zvo.burpcollaborator.net) TOR/540.5.35487 Torrent 2654.76
   - Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36 root@8f6gtjctw9glvnasfrq438tprig56wty20ghwkf9.burpcollaborator.net
@@ -67,6 +69,10 @@ Medusa by pymedusa:
   - python/unicode Medusa/0.2.14 (Windows; 10; d26d37e1-3389-11e9-8d14-1c1b0d9d2a41)
 Monit:
   - Monit/5.23.0
+PerimeterX:
+  - PerimeterX Integration Services
+Prometheus:
+  - check_http/v2.1.2 (monitoring-plugins 2.1.2)
 proximic:
   - Mozilla/5.0 (compatible; proximic; +http://www.proximic.com/info/spider.php)
 RebelMouse:
