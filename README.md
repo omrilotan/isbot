@@ -77,9 +77,12 @@ Recognising good bots such as web crawlers is useful for multiple purposes. Alth
 
 ### Crawlers user agents:
 - [user-agents.net](https://user-agents.net/bots)
-- [crawler-user-agents repo](https://raw.githubusercontent.com/monperrus/crawler-user-agents)
+- [crawler-user-agents repo](https://raw.githubusercontent.com/monperrus/crawler-user-agents/master/crawler-user-agents.json)
+- [myip.ms](https://www.myip.ms/files/bots/live_webcrawlers.txt)
 - [Manual list](./tests/fixtures/manual-crawlers-list.yml)
 
 ### Non bot user agents:
-- [Manual list](./tests/fixtures/manual-legit-browsers.yml) (source: [whatismybrowser.com](https://developers.whatismybrowser.com/useragents/explore/software_name/))
 - [user-agents npm package](https://www.npmjs.com/package/user-agents)
+- [Manual list](./tests/fixtures/manual-legit-browsers.yml) (source: [whatismybrowser.com](https://developers.whatismybrowser.com/useragents/explore/software_name/))
+
+Missing something? Please [open an issue](https://github.com/omrilotan/isbot/issues/new/choose)
