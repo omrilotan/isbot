@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Check user agent string
+    url: https://isbot.js.org
+    about: Check a user agent string with latest version
+  - name: How to contribute
+    url: https://github.com/omrilotan/isbot/tree/master/CONTRIBUTING.md
+    about: A really short explenation on contributing to this project

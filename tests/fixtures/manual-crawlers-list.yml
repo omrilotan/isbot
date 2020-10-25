@@ -64,6 +64,8 @@ Jorgee Vulnerability Scanner:
   - Mozilla/5.0 Jorgee
 Kuberneters:
   - kube-probe/1.15
+ltx71:
+  - ltx71 - (http://ltx71.com/)
 Medusa by pymedusa:
   - python/unicode Medusa/0.2.14 (Windows; 10; 3174120f-3388-11e9-b8bd-1c1b0d9d2a41)
   - python/unicode Medusa/0.2.14 (Windows; 10; d26d37e1-3389-11e9-8d14-1c1b0d9d2a41)
