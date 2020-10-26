@@ -1,3 +1,5 @@
+/* eslint-env mocha */
+
 const list = require('../list.json')
 
 describe('list', () => {
