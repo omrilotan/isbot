@@ -10,6 +10,7 @@ const liveWebcrawlers = '../fixtures/live_webcrawlers.txt'
 const crawlerUserAgentsJson = '../fixtures/crawler-user-agents-monperrus.json'
 const crawlerUserAgentsYaml = '../fixtures/manual-crawlers-list.yml'
 const browserUserAgentsYaml = '../fixtures/manual-legit-browsers.yml'
+const matomoBotsYaml = '../fixtures/matomo-bots.yml'
 
 const read = file => readFileSync(
   join(__dirname, file),
@@ -56,7 +57,17 @@ module.exports.crawlers = [
         crawlerUserAgentsYaml
       )
     )
-  ).flat()
+  ).flat(),
+
+  // Matomo list
+  ...parse(
+    read(
+      matomoBotsYaml
+    )
+  ).map(
+    ({ user_agent }) => user_agent // eslint-disable-line camelcase
+  )
+
 ].filter(Boolean).filter(ua => !ignoreList.includes(ua))
 
 const BOTS = new RegExp([
