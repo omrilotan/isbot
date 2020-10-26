@@ -56,7 +56,7 @@ function included (rule) {
 module.exports.exclude = function (excludedFilters) {
   var i = excludedFilters.length
   while (i--) {
-    var index = list.lastIndexOf(excludedFilters[i])
+    var index = list.lastIndexOf(excludedFilters[i].toLowerCase())
     if (index > -1) {
       list.splice(index, 1)
     }
