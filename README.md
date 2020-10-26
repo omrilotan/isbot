@@ -42,7 +42,7 @@ Remove rules to user agent match RegExp (see existing rules in `list.json` file)
 
 ```js
 isbot('Chrome-Lighthouse') // true
-isbot.exclude(['chrome-lighthouse']) // rules are case insensitive
+isbot.exclude(['chrome-lighthouse']) // pattern is case insensitive
 isbot('Chrome-Lighthouse') // false
 ```
 
