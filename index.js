@@ -73,6 +73,9 @@ try {
   // Addresses: Yandex browser
   list.splice(list.lastIndexOf('search'), 1)
   list.push('(?<! (ya|yandex))search')
+  // Addresses: libhttp browser
+  list.splice(list.lastIndexOf('http'), 1)
+  list.push('(?<!(lib))http')
 } catch (error) {
   // ignore errors
 }
