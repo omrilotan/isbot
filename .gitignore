@@ -3,5 +3,6 @@ node_modules
 tests/fixtures/user-agents.net.bot-crawler.txt
 tests/fixtures/live_webcrawlers.txt
 tests/fixtures/crawler-user-agents-monperrus.json
+tests/fixtures/matomo-bots.yml
 tests/.browser-tests.js
 docs

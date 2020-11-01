@@ -21,7 +21,7 @@ isbot(request.getHeader('User-Agent'))
 isbot(req.get('user-agent'))
 
 // User Agent string
-isbot('Googlebot/2.1 (+http://www.google.com/bot.html)') // true
+isbot('Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)') // true
 isbot('Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36') // false
 ```
 
@@ -32,7 +32,6 @@ Add rules to user agent match RegExp
 isbot('Mozilla/5.0') // false
 isbot.extend([
     'istat',
-    'httpclient',
     '^mozilla/\\d\\.\\d$'
 ])
 isbot('Mozilla/5.0') // true
@@ -43,7 +42,7 @@ Remove rules to user agent match RegExp (see existing rules in `list.json` file)
 
 ```js
 isbot('Chrome-Lighthouse') // true
-isbot.exclude(['Chrome-Lighthouse'])
+isbot.exclude(['chrome-lighthouse']) // pattern is case insensitive
 isbot('Chrome-Lighthouse') // false
 ```
 
@@ -79,6 +78,7 @@ Recognising good bots such as web crawlers is useful for multiple purposes. Alth
 - [user-agents.net](https://user-agents.net/bots)
 - [crawler-user-agents repo](https://raw.githubusercontent.com/monperrus/crawler-user-agents/master/crawler-user-agents.json)
 - [myip.ms](https://www.myip.ms/files/bots/live_webcrawlers.txt)
+- [matomo.org](https://github.com/matomo-org/device-detector/blob/master/Tests/fixtures/bots.yml)
 - [Manual list](./tests/fixtures/manual-crawlers-list.yml)
 
 ### Non bot user agents:
