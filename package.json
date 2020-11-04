@@ -8,6 +8,7 @@
     "spiders",
     "googlebot",
     "useragent",
+    "user agent parsing",
     "🤖"
   ],
   "author": "Goran Gajic",
@@ -38,22 +39,22 @@
     "test": "npm run sort && npm run unit && npm run browser && npm run lint && npm run ts"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^15.1.0",
+    "@rollup/plugin-commonjs": "^16.0.0",
     "@rollup/plugin-json": "^4.1.0",
     "array-flat-polyfill": "^1.0.1",
     "eslint-plugin-log": "^1.2.6",
     "karma": "^5.2.3",
     "karma-chrome-launcher": "^3.1.0",
     "karma-cli": "^2.0.0",
-    "karma-firefox-launcher": "^2.0.0",
+    "karma-firefox-launcher": "^2.1.0",
     "karma-mocha": "^2.0.1",
     "karma-mocha-reporter": "^2.2.5",
-    "mocha": "^8.2.0",
+    "mocha": "^8.2.1",
     "pug": "^3.0.0",
-    "rollup": "^2.32.1",
-    "standard": "^15.0.0",
+    "rollup": "^2.33.1",
+    "standard": "^15.0.1",
     "stdline": "^1.0.0",
-    "typescript": "^4.0.3",
+    "typescript": "^4.0.5",
     "user-agents": "^1.0.559",
     "yaml": "^1.10.0"
   }
