@@ -1,28 +1,19 @@
 version: 2.1
 
-commands:
-  tests:
+jobs:
+  test:
+    parameters:
+      image:
+        description: docker image
+        default: circleci/node:latest
+        type: string
+    working_directory: ~/app
+    docker:
+      - image: <<parameters.image>>
     steps:
       - checkout
       - run: npm i
       - run: npm run unit
-
-jobs:
-  test_node_10:
-    docker:
-      - image: circleci/node:10
-    steps:
-      - tests
-  test_node_12:
-    docker:
-      - image: circleci/node:12
-    steps:
-      - tests
-  test_node_latest:
-    docker:
-      - image: circleci/node:latest
-    steps:
-      - tests
   test_browsers:
     docker:
       - image: circleci/node:latest-browsers
@@ -96,19 +87,14 @@ workflows:
   version: 2.1
   test:
     jobs:
-      - test_node_10:
-          context: globalenv
-          filters:
-            branches:
-              ignore:
-                - gh-pages
-      - test_node_12:
-          context: globalenv
-          filters:
-            branches:
-              ignore:
-                - gh-pages
-      - test_node_latest:
+      - test:
+          matrix:
+            parameters:
+              image:
+                - circleci/node:10
+                - circleci/node:12
+                - circleci/node:14
+                - circleci/node:latest
           context: globalenv
           filters:
             branches:
@@ -129,9 +115,7 @@ workflows:
       - publish:
           context: globalenv
           requires:
-            - test_node_10
-            - test_node_12
-            - test_node_latest
+            - test
             - test_browsers
             - lint_sort_and_types
           filters:
