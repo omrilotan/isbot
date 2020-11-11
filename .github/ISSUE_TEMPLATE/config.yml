@@ -4,5 +4,5 @@ contact_links:
     url: https://isbot.js.org
     about: Check a user agent string with latest version
   - name: How to contribute
-    url: https://github.com/omrilotan/isbot/tree/master/CONTRIBUTING.md
+    url: https://github.com/omrilotan/isbot/tree/main/CONTRIBUTING.md
     about: A really short explenation on contributing to this project

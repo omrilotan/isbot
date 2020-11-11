@@ -121,7 +121,7 @@ workflows:
           filters:
             branches:
               only:
-                - master
+                - main
       - pages:
           context: globalenv
           requires:
@@ -135,4 +135,4 @@ workflows:
   #         filters:
   #           branches:
   #             only:
-  #               - master
+  #               - main
