@@ -1,3 +1,26 @@
+# 3.0.16
+- Add pagespeed (Serf)
+
+# 3.0.15
+- Recognise a bunch of more bots
+- Optimise some of the list so we still have the same length
+
+# 3.0.14
+- Add Gozilla
+- Add PerimeterX Integration Services
+
+# 3.0.13
+- Add Kubernetes probe bot (ping and health-check) @simonecorsi
+
+# 3.0.12
+- Add [Discourse onebox](https://github.com/discourse/onebox) is used for link preview generation
+- [Alexa Voice Service](https://github.com/alexa/avs-device-sdk)
+- Reduce complexity by funding more common patterns
+
+# 3.0.11
+- Add 5538 known crawler user agent strings from [myip.ms](https://www.myip.ms)
+- Reduce complexity by 79 by introducing "https?:" pattern
+
 # 3.0.10
 - Add [Sistrix (SEO)](https://www.sistrix.com/)
 - JavaOS (Discontinued in 2003)
