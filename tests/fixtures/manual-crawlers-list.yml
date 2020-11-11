@@ -73,6 +73,8 @@ Monit:
   - Monit/5.23.0
 PerimeterX:
   - PerimeterX Integration Services
+Pingdom:
+  - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.100 Chrome/61.0.3163.100 Safari/537.36 PingdomPageSpeed/1.0 (pingbot/2.0; +http://www.pingdom.com/)
 Prometheus:
   - check_http/v2.1.2 (monitoring-plugins 2.1.2)
 proximic:
