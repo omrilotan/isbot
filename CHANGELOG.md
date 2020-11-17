@@ -1,3 +1,7 @@
+# 3.0.17
+- Add SmallProxy
+- Add CaptiveNetworkSupport
+
 # 3.0.16
 - Add pagespeed (Serf)
 
