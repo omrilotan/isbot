@@ -5,5 +5,5 @@
   <InputEncoding>UTF-8</InputEncoding>
   <OutputEncoding>UTF-8</OutputEncoding>
   <AdultContent>false</AdultContent>
-  <Url type="text/html" method="get" template="https://gorangajic.github.io/isbot/?ua={searchTerms}"/>
+  <Url type="text/html" method="get" template="https://isbot.js.org/?ua={searchTerms}"/>
 </OpenSearchDescription>

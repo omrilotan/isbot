@@ -1,0 +1,5 @@
+* text eol=lf
+
+.github/**/* linguist-vendored
+scripts/* linguist-vendored
+src/* linguist-vendored

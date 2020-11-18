@@ -86,7 +86,7 @@ Add patterns for:
 ## Testing
 Add some legit browser user-agent strings
 Fix periodic tests environment
-Add [a tester page](https://gorangajic.github.io/isbot) to check user agents easily
+Add [a tester page](https://isbot.js.org) to check user agents easily
 
 # 3.0.0: Maintainability and performance through automation
 
