@@ -1,6 +1,6 @@
 # isbot 🤖/👨‍🦰
 
-[![](./src/isbot.svg)](https://isbot.js.org)
+[![](./page/isbot.svg)](https://isbot.js.org)
 
 [![](https://img.shields.io/npm/v/isbot.svg?style=flat-square)](https://www.npmjs.com/package/isbot) [![](https://img.shields.io/node/v/isbot?style=flat-square)](https://nodejs.org/en/download/releases/) [![](https://img.shields.io/bundlephobia/minzip/isbot?style=flat-square)](https://bundlephobia.com/result?p=isbot)
 

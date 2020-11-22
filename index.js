@@ -33,9 +33,7 @@ module.exports.find = function (userAgent) {
  * @return {void}
  */
 module.exports.extend = function (additionalFilters) {
-  list = list.concat(
-    additionalFilters.filter(included)
-  )
+  [].push.apply(list, additionalFilters.filter(included))
   update()
 }
 

@@ -1,7 +1,7 @@
 .*
 tests/*
 scripts/*
-src/*
+page/*
 docs/*
 tsconfig.json
 CONTRIBUTING.md
