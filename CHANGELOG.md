@@ -1,5 +1,6 @@
-# Unreleased
+# 3.0.17
 - Add Neustar WPM
+- Internal change accommodates TypeScript compiler
 
 # 3.0.16
 - Add pagespeed (Serf)

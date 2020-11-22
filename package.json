@@ -1,6 +1,6 @@
 {
   "name": "isbot",
-  "version": "3.0.16",
+  "version": "3.0.17",
   "description": "🤖 detect bots/crawlers/spiders via the user agent.",
   "keywords": [
     "bot",
@@ -25,10 +25,10 @@
   "types": "index.d.ts",
   "scripts": {
     "prebuild": "which parcel || npm i parcel-bundler --no-save",
-    "build": "parcel build src/index.pug --out-dir docs --public-url .",
+    "build": "parcel build page/index.pug --out-dir docs --public-url .",
     "postbuild": "echo isbot.js.org > docs/CNAME",
     "prestart": "which parcel || npm i parcel-bundler --no-save",
-    "start": "parcel src/index.pug --out-dir docs",
+    "start": "parcel page/index.pug --out-dir docs",
     "prepare": "./scripts/download-fixtures.sh",
     "sort": "./scripts/sort.js",
     "unit": "node --experimental-worker ./node_modules/.bin/mocha tests/*.js --exclude 'tests/.*'",
