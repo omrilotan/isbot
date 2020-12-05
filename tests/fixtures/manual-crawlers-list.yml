@@ -100,3 +100,5 @@ Woorank Test Tool:
   - Mozilla/5.0 (compatible; woorankreview/2.0; +https://www.woorank.com/)
 Xymon Site Monitor:
   - Xymon xymonnet/4.3.17
+Go HTTP request:
+  - Go-http-client/1.1
