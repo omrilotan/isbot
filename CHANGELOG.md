@@ -1,3 +1,7 @@
+# 3.0.18
+- Add [AngleSharp parser](https://github.com/AngleSharp/AngleSharp)
+- Some Maintenance
+
 # 3.0.17
 - Add Neustar WPM
 - Internal change accommodates TypeScript compiler
