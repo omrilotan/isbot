@@ -24,12 +24,14 @@
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
+    "postinstall": "./scripts/download-fixtures.sh",
     "prebuild": "which parcel || npm i parcel-bundler --no-save",
     "build": "parcel build page/index.pug --out-dir docs --public-url .",
     "postbuild": "echo isbot.js.org > docs/CNAME",
+    "precontributors": "curl -f https://api.github.com/repos/omrilotan/isbot/contributors > contributors.json",
+    "contributors": "./scripts/contributors.js",
     "prestart": "which parcel || npm i parcel-bundler --no-save",
     "start": "parcel page/index.pug --out-dir docs",
-    "prepare": "./scripts/download-fixtures.sh",
     "sort": "./scripts/sort.js",
     "unit": "node --experimental-worker ./node_modules/.bin/mocha tests/*.js --exclude 'tests/.*'",
     "prebrowser": "rollup --config .rollup.js",
@@ -39,7 +41,7 @@
     "test": "npm run sort && npm run unit && npm run browser && npm run lint && npm run ts"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^16.0.0",
+    "@rollup/plugin-commonjs": "^17.0.0",
     "@rollup/plugin-json": "^4.1.0",
     "array-flat-polyfill": "^1.0.1",
     "eslint-plugin-log": "^1.2.6",
@@ -51,7 +53,7 @@
     "karma-mocha-reporter": "^2.2.5",
     "mocha": "^8.2.1",
     "pug": "^3.0.0",
-    "rollup": "^2.33.1",
+    "rollup": "^2.34.2",
     "standard": "^15.0.1",
     "stdline": "^1.0.0",
     "typescript": "^4.0.5",

@@ -6,3 +6,5 @@ tests/fixtures/crawler-user-agents-monperrus.json
 tests/fixtures/matomo-bots.yml
 tests/.browser-tests.js
 docs
+contributors.json
+AUTHORS
