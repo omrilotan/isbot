@@ -1,3 +1,6 @@
+# 3.0.19
+- Fix: It's not needed to download fixtures at postinstall
+
 # 3.0.18
 - Add [AngleSharp parser](https://github.com/AngleSharp/AngleSharp)
 - Some Maintenance
