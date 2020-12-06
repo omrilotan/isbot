@@ -9,3 +9,5 @@ curl -f https://raw.githubusercontent.com/matomo-org/device-detector/master/Test
 
 echo "Download crawler list from crawler-user-agents repo"
 curl -f https://raw.githubusercontent.com/monperrus/crawler-user-agents/master/crawler-user-agents.json > tests/fixtures/crawler-user-agents-monperrus.json
+
+date -u > tests/fixtures/downloaded
