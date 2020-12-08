@@ -1,0 +1,28 @@
+name: 'RunTests'
+on:
+  push:
+    branches:
+      - auto_issue
+  schedule:
+    - cron: '0 9 * * 0'
+jobs:
+  check:
+    name: Check
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node:
+          - 14
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+    - name: Install dependencies
+      run: npm i
+    - name: Run tests
+      run: echo $(./scripts/maintenance-test.js) >> $GITHUB_ENV
+    - name: openIssue
+      uses: JasonEtco/create-an-issue@v2
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        filename: .github/failed-tests.md
