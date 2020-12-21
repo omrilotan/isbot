@@ -74,6 +74,9 @@ try {
   // Addresses: libhttp browser
   list.splice(list.lastIndexOf('http'), 1)
   list.push('(?<!(lib))http')
+  // Addresses: java based browsers
+  list.splice(list.lastIndexOf('java'), 1)
+  list.push('java(?!;)')
 } catch (error) {
   // ignore errors
 }
