@@ -1,6 +1,6 @@
 {
   "name": "isbot",
-  "version": "3.0.20",
+  "version": "3.0.21",
   "description": "🤖 detect bots/crawlers/spiders via the user agent.",
   "keywords": [
     "bot",
@@ -24,6 +24,7 @@
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
+    "clean": "rm -rf .cache && rm -rf docs",
     "prebuild": "which parcel || npm i parcel-bundler --no-save",
     "build": "parcel build page/index.pug --out-dir docs --public-url .",
     "postbuild": "echo isbot.js.org > docs/CNAME",
