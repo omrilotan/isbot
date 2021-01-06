@@ -1,3 +1,15 @@
+# 3.0.23
+- Recognise Mozilla MozacFetch as natural non bot browser
+
+# 3.0.22
+- Add generic term: "manager"
+
+# 3.0.21
+- Reduce pattern complexity
+
+# 3.0.20
+- Add Anonymous and bit.ly
+
 # 3.0.19
 - Fix: It's not needed to download fixtures at postinstall
 

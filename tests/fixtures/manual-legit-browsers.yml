@@ -218,6 +218,8 @@ Motorola Internet:
   - MOT-V177/0.1.75 UP.Browser/6.2.3.9.c.12 (GUI) MMP/2.0 UP.Link/6.3.1.13.0
   - MOT-VE240/00.72 UP.Browser/7.2.7.5.548 (GUI) MMP/2.0 Novarra-Vision/8.0
   - mot-V3/OE.40.79R MIB/2.2.1 profile/MIDP-2.0 configuration/CLDC-1.0 UP.Link/6.2.3.15.0
+Mozilla Android Components:
+  - MozacFetch/49.0.20200702190156
 NetFront:
   - SonyEricssonW810i/R46EA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Link/6.3.0.0.0(Linux LLC 1.2)
 Netscape Navigator:

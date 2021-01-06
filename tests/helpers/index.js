@@ -89,6 +89,7 @@ const BOTS = new RegExp([
   'phantomjs',
   'swurl',
   'Hexometer',
+  'BuiltWith',
   parseInt(process.versions.node) === 6 && 'cubot'
 ].filter(Boolean).join('|'), 'i')
 

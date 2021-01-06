@@ -79,6 +79,8 @@ Prometheus:
   - check_http/v2.1.2 (monitoring-plugins 2.1.2)
 proximic:
   - Mozilla/5.0 (compatible; proximic; +http://www.proximic.com/info/spider.php)
+Puffin:
+  - Mozilla/5.0 (X11; U; U; Linux x86_64; en-us) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 Puffin/8.5.0.42207AP
 RebelMouse:
   - RebelMouse/0.1 Mozilla/5.0 (compatible; http://rebelmouse.com) Gecko/20100101 Firefox/7.0.1
 Rigor Synythetic Monitoring:
