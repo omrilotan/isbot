@@ -77,6 +77,9 @@ try {
   // Addresses: java based browsers
   list.splice(list.lastIndexOf('java'), 1)
   list.push('java(?!;)')
+  // Addresses: java based browsers
+  list.splice(list.lastIndexOf('fetch'), 1)
+  list.push('(?<!(mozac))fetch')
 } catch (error) {
   // ignore errors
 }
