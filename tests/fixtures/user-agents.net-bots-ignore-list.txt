@@ -1,5 +1,6 @@
 # These browsers are legit user agent even though they are included in some Bot listings. Not all bots identify themselves, these ones don't.
 Lynx/2.9.0dev.5 libwww-FM/2.14 SSL-MM/1.4.1 GNUTLS/3.6.13
+Mozilla / 5.0 (Linux; Android 7.0; GHIA_ZEUS_3G) AppleWebKit / 537.36 (KHTML, como Gecko) Chrome / 87.0.4280.101 Mobile Safari / 537.36
 Mozilla/5.0 (en-us) AppleWebKit/525.13 (KHTML, like Gecko) Version/3.1 Safari/525.13
 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 DuckDuckGo/7
 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 DuckDuckGo/7
