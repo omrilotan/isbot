@@ -11,7 +11,14 @@ Mozilla/5.0 (Windows; rv:55.0) Gecko/20100101 Firefox/55.0
 Mozilla/5.0 (Windows; rv:65.0) Gecko/20100101 Firefox/65.0
 Mozilla/5.0 (Windows; rv:81.0) Gecko/20100101 Firefox/81.0
 Mozilla/5.0 (X11; U; U; Linux x86_64; en-us) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 Puffin/8.5.0.42207AP
+NokiaC2-05/2.0 (08.60) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 (Java; U; kau; nokiac2-05) UCBrowser8.3.0.154/69/405/UCWEB Mobile UNTRUSTED/1.0
 NokiaC3-00/5.0 (08.65) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 (Java; U; en-us; nokiac3-00) UCBrowser8.3.0.154/69/444/UCWEB Mobile UNTRUSTED/1.0
 NokiaX2-05/2.0 (08.30) Profile/MIDP-2.1 Configuration/CLDC-1.1 UCWEB/2.0 (Java; U; MIDP-2.0; en-US; NokiaX2-05) U2/1.0.0 UCBrowser/9.5.0.449 U2/1.0.0 Mobile UNTRUSTED/1.0
+RadiosNet/2.5.1 (Java; Android)
+RadiosNet/2.6.0 (Java; Android)
+RadiosNet/2.6.1 (Java; Android)
+revolt
 SonyEricssonJ20i/R7CA Profile/MIDP-2.1 Configuration/CLDC-1.1 UNTRUSTED/1.0 UCWEB/2.0 (Java; U; MIDP-2.0; ru; SonyEricssonJ20i) U2/1.0.0 UCBrowser/9.5.0.449 U2/1.0.0 Mobile
+Stewdio Windmaker 2.2
+webcollage.original/1.176
 windows 7 pro 64 bit, opera stable software browser, active x controls, java updater , java script

@@ -89,6 +89,8 @@ Dooble:
   - Mozilla/5.0 (X11; OpenBSD amd64) AppleWebKit/605.1.15 (KHTML, like Gecko) Dooble/2.1.9.2
 DuckDuckGo:
   - Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/84.0.4147.111 Mobile DuckDuckGo/5 Safari/537.36
+EA Origin Browser:
+  - webcollage.original/1.176
 Edge:
   - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.92 Safari/537.36 Edg/81.0.416.45
   - Mozilla/5.0 (Windows IoT 10.0; Android 6.0.1; WebView/3.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Mobile Safari/537.36 Edge/17.17134
@@ -309,6 +311,12 @@ QQ:
   - Mozilla/5.0 (Linux; U; Android 6.0; zh-cn; FRD-AL00 Build/HUAWEIFRD-AL00) AppleWebKit/537.36 (KHTML, like Gecko)Version/4.0 Chrome/37.0.0.0 MQQBrowser/6.0 Mobile Safari/537.36
   - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.134 Safari/537.36 QQBrowser/3.8.3858.400
   - Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2727.400
+RadiosNet (radios.com.br):
+  - RadiosNet/2.5.1 (Java; Android)
+  - RadiosNet/2.6.0 (Java; Android)
+  - RadiosNet/2.6.1 (Java; Android)
+Revolt (github.com/aperezdc/revolt):
+  - revolt
 Roku Ultra:
   - Roku4640X/DVP-7.70 (297.70E04154A)
 Safari:
@@ -431,6 +439,8 @@ WeChat:
   - Mozilla/5.0 (Linux; Android 7.0; FRD-AL00 Build/HUAWEIFRD-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.49 Mobile MQQBrowser/6.2 TBS/043602 Safari/537.36 MicroMessenger/6.5.16.1120 NetType/WIFI Language/zh_CN
   - Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 MicroMessenger/6.5.2.501 NetType/WIFI WindowsWechat QBCore/3.43.691.400 QQBrowser/9.0.2524.400
   - Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) Mobile/14G60 wxwork/2.1.5 MicroMessenger/6.3.22
+Windmaker (stewd.io/w/windmaker):
+  - Stewdio Windmaker 2.2
 Xumo Media Player:
   - Xumo/1.1 (Linux;Android 5.1.1) AmznExoPlayerLib/2.9.0
   - Xumo/2.6.19 (Linux;Android 7.1.1) ExoPlayerLib/2.9.0
