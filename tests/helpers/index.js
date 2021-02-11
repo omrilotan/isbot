@@ -28,9 +28,13 @@ const ignoreList = read(botsIgnoreList)
  * For some reason, UCWEB are all considered bots by these guys
  * @type RegExp
  */
-const USERAGENT_NET_CRAWLER_EXCLUDE_PATTERN = new RegExp([
+const NOT_REALLY_CRAWLERS_PATTERN = new RegExp([
   'ucmini',
-  'NokiaC3-00\\/5\\.0 \\(\\d+\\.\\d+\\) Profile\\/MIDP-2\\.1 Configuration\\/CLDC-1\\.1 UCWEB\\/2\\.0 \\(Java; U; MIDP-2\\.0;'
+  '^radiosnet',
+  '^NokiaC2',
+  '^NokiaC3',
+  '^NokiaX2',
+  '^Mozilla\\/5\\.0 \\(Windows; rv:\\d{2}\\.0\\) Gecko/20100101 Firefox\\/\\d{2}\\.0$'
 ].join('|'), 'i')
 
 /**
@@ -41,7 +45,7 @@ module.exports.crawlers = [
 
   // Read from text file
   ...read(crawlerUserAgentsText).trim().split('\n').filter(
-    line => !USERAGENT_NET_CRAWLER_EXCLUDE_PATTERN.test(line)
+    line => !NOT_REALLY_CRAWLERS_PATTERN.test(line)
   ),
 
   // Read from a different text file

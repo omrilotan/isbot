@@ -1,3 +1,9 @@
+# 3.0.24
+- Add Prometheus new user agent (prometheus)
+- Add RestSharp .NET HTTP client
+- Add M2E Pro Cron Service
+- Deprecate asafaweb.com (EOL)
+
 # 3.0.23
 - Recognise Mozilla MozacFetch as natural non bot browser
 
