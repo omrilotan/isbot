@@ -2,6 +2,7 @@
 - Add Prometheus new user agent (prometheus)
 - Add RestSharp .NET HTTP client
 - Add M2E Pro Cron Service
+- Add Deluge
 - Deprecate asafaweb.com (EOL)
 
 # 3.0.23

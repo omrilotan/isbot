@@ -37,6 +37,7 @@
   "^dap ",
   "^datadog agent/",
   "^davclnt",
+  "^deluge",
   "^discourse",
   "^dispatch/\\d",
   "^disqus/",
