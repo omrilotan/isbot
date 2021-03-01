@@ -30,6 +30,7 @@ const ignoreList = read(botsIgnoreList)
  */
 const NOT_REALLY_CRAWLERS_PATTERN = new RegExp([
   'ucmini',
+  'splash',
   '^radiosnet',
   '^NokiaC2',
   '^NokiaC3',
