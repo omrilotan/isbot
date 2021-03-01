@@ -1,7 +1,6 @@
 [
   " daum[/|\\s]",
   " deusu/",
-  " splash ",
   "(?:^|\\s)site",
   "@[a-z]",
   "\\(at\\)[a-z]",

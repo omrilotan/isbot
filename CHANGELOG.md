@@ -1,5 +1,5 @@
 # 3.0.25
-- Address webview "Channel/googleplay"
+- Address webview "Channel/googleplay", "GoogleApp/"
 - Add 4 more bot patterns
 
 # 3.0.24

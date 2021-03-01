@@ -70,7 +70,7 @@ try {
   list.push('(?<! cu)bot')
   // Addresses: Android webview
   list.splice(list.lastIndexOf('google'), 1)
-  list.push('(?<! channel\\/)google')
+  list.push('(?<! channel\\/)google(?!app\\/)')
   // Addresses: Yandex browser
   list.splice(list.lastIndexOf('search'), 1)
   list.push('(?<! (ya|yandex))search')
