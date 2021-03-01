@@ -1,3 +1,7 @@
+# 3.0.25
+- Address webview "Channel/googleplay"
+- Add 4 more bot patterns
+
 # 3.0.24
 - Add Prometheus new user agent (prometheus)
 - Add RestSharp .NET HTTP client

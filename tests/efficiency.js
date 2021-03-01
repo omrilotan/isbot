@@ -24,7 +24,7 @@ describe('efficiency', () => {
         )
 
         if (redundant) {
-          if (!redundant.source.startsWith('^')) {
+          if (!redundant.source.startsWith('^') && !redundant.source.startsWith('(?<!')) {
             errors.push(`Rule "${rule}" is made redundant by rule "${redundant.source}"`)
           }
         }

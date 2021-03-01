@@ -18,8 +18,10 @@
   "^apache",
   "^applicationhealthservice",
   "^arachni/",
+  "^astute srm",
   "^avsdevicesdk/",
   "^axios/",
+  "^bidtellect/",
   "^biglotron",
   "^blackboard safeassign",
   "^blocknote.net",
@@ -92,6 +94,7 @@
   "^octopus",
   "^offline explorer",
   "^ossproxy",
+  "^pagething",
   "^panscient",
   "^perimeterx",
   "^photon/",
@@ -237,6 +240,7 @@
   "wappalyzer",
   "webglance",
   "webkit2png",
+  "whatcms/",
   "wordpress",
   "zgrab"
 ]
