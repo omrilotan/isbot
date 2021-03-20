@@ -14,5 +14,6 @@ Mozilla/5.0 (X11; U; U; Linux x86_64; en-us) AppleWebKit/537.36 (KHTML, like Gec
 revolt
 SonyEricssonJ20i/R7CA Profile/MIDP-2.1 Configuration/CLDC-1.1 UNTRUSTED/1.0 UCWEB/2.0 (Java; U; MIDP-2.0; ru; SonyEricssonJ20i) U2/1.0.0 UCBrowser/9.5.0.449 U2/1.0.0 Mobile
 Stewdio Windmaker 2.2
+UCWEB/2.0 (Java; U; MIDP-2.0; ru; NokiaE71-1Opera/9.80 (J2ME/MIDP; Opera Mini/8.0.35626/19.886; U; ru) UCBrowser/9.5.0.449 U2/1.0.0 Mobile UNTRUSTED/1.0
 webcollage.original/1.176
 windows 7 pro 64 bit, opera stable software browser, active x controls, java updater , java script
