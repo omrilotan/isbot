@@ -1,3 +1,6 @@
+# 3.0.26
+- Open source projects with indication to github.com
+
 # 3.0.25
 - Address webview "Channel/googleplay", "GoogleApp/"
 - Add 4 more bot patterns
