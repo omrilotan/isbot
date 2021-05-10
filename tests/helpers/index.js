@@ -24,7 +24,7 @@ const browserUserAgentsList = Object.values(
       browserUserAgentsYaml
     )
   )
-).flat();
+).flat()
 
 const ignoreList = read(botsIgnoreList)
   .trim()
