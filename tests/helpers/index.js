@@ -32,7 +32,7 @@ const ignoreList = read(botsIgnoreList)
   .filter(
     line => !line.startsWith('#')
   )
-  .concat(browserUserAgentsList)
+  .concat(...browserUserAgentsList)
 
 /**
  * For some reason, UCWEB are all considered bots by these guys
@@ -40,6 +40,8 @@ const ignoreList = read(botsIgnoreList)
  */
 const NOT_REALLY_CRAWLERS_PATTERN = new RegExp([
   'ucmini',
+  'archivebox',
+  'SogouMSE',
   'splash',
   '^radiosnet',
   '^NokiaC2',
