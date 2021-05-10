@@ -42,7 +42,7 @@
     "test": "npm run sort && npm run unit && npm run browser && npm run lint && npm run ts"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-commonjs": "^19.0.0",
     "@rollup/plugin-json": "^4.1.0",
     "array-flat-polyfill": "^1.0.1",
     "eslint-plugin-log": "^1.2.6",
