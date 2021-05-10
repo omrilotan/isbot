@@ -17,12 +17,22 @@ const read = file => readFileSync(
   'utf-8'
 )
 
+// Read from Yaml file
+const browserUserAgentsList = Object.values(
+  parse(
+    read(
+      browserUserAgentsYaml
+    )
+  )
+).flat();
+
 const ignoreList = read(botsIgnoreList)
   .trim()
   .split('\n')
   .filter(
     line => !line.startsWith('#')
   )
+  .concat(browserUserAgentsList)
 
 /**
  * For some reason, UCWEB are all considered bots by these guys
@@ -115,14 +125,7 @@ module.exports.browsers = [
     )
   ),
 
-  // Read from Yaml file
-  ...Object.values(
-    parse(
-      read(
-        browserUserAgentsYaml
-      )
-    )
-  ).flat()
+  ...browserUserAgentsList
 ].filter(Boolean)
 
 /**
