@@ -91,6 +91,7 @@ Dooble:
   - Mozilla/5.0 (X11; FreeBSD amd64) AppleWebKit/605.1.15 (KHTML, like Gecko) Dooble/2.1.9.2
   - Mozilla/5.0 (X11; OpenBSD amd64) AppleWebKit/605.1.15 (KHTML, like Gecko) Dooble/2.1.9.2
 DuckDuckGo:
+  - AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.138 DuckDuckGo/5 Safari/537.36
   - Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/84.0.4147.111 Mobile DuckDuckGo/5 Safari/537.36
 EA Origin Browser:
   - webcollage.original/1.176
@@ -408,6 +409,7 @@ UC:
   - Nokia200/2.0 (11.81) Profile/MIDP-2.1 Configuration/CLDC-1.1 UCWEB/2.0(Java; U; MIDP-2.0; en-us; nokia200) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile
   - NokiaC2-00/2.0 (03.45) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 (Java; U; kau; nokiac2-00) UCBrowser8.3.0.154/70/352/UCWEB Mobile
   - UCWEB/2.0 (Symbian; U; S60 V5; en-US; Nokia5250) U2/1.0.0 UCBrowser/8.9.0.277 U2/1.0.0 Mobile
+  - UNTRUSTED/1.0 UCWEB/2.0 (Java; U; MIDP-2.0; ru; MotorolaVE66) U2/1.0.0 UCBrowser/9.4.1.377 U2/1.0.0 Mobile
 Viber:
   - Mozilla/5.0 (Linux; Android 7.1.2; G011A Build/N2G48H; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.158 Safari/537.36 Viber/11.9.5.8
   - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.6.0 Chrome/45.0.2454.101 Safari/537.36 Viber
@@ -458,3 +460,5 @@ Yandex:
   - Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 YaBrowser/17.7.1.791 Yowser/2.5 Safari/537.36
   - Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 YaBrowser/17.6.1.749 Yowser/2.5 Safari/537.36
   - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 YaBrowser/17.3.1.873 (beta) Yowser/2.5 Safari/537.36
+ZZZ_GLITCHES:
+  - LWPrCa2l') OR 941=(SELECT 941 FROM PG_SLEEP(15))--

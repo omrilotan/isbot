@@ -9,7 +9,7 @@ const botsIgnoreList = '../fixtures/user-agents.net-bots-ignore-list.txt'
 const liveWebcrawlers = '../fixtures/live_webcrawlers.txt'
 const crawlerUserAgentsJson = '../fixtures/crawler-user-agents-monperrus.json'
 const crawlerUserAgentsYaml = '../fixtures/manual-crawlers-list.yml'
-const browserUserAgentsYaml = '../fixtures/manual-legit-browsers.yml'
+const legitBrowserUserAgentsYaml = '../fixtures/manual-legit-browsers.yml'
 const matomoBotsYaml = '../fixtures/matomo-bots.yml'
 
 const read = file => readFileSync(
@@ -17,12 +17,21 @@ const read = file => readFileSync(
   'utf-8'
 )
 
+const legitBrowserUserAgents = Object.values(
+  parse(
+    read(
+      legitBrowserUserAgentsYaml
+    )
+  )
+).flat()
+
 const ignoreList = read(botsIgnoreList)
   .trim()
   .split('\n')
   .filter(
     line => !line.startsWith('#')
   )
+  .concat(legitBrowserUserAgents)
 
 /**
  * For some reason, UCWEB are all considered bots by these guys
@@ -116,13 +125,7 @@ module.exports.browsers = [
   ),
 
   // Read from Yaml file
-  ...Object.values(
-    parse(
-      read(
-        browserUserAgentsYaml
-      )
-    )
-  ).flat()
+  ...legitBrowserUserAgents
 ].filter(Boolean)
 
 /**
