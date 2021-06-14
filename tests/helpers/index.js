@@ -9,7 +9,7 @@ const botsIgnoreList = '../fixtures/user-agents.net-bots-ignore-list.txt'
 const liveWebcrawlers = '../fixtures/live_webcrawlers.txt'
 const crawlerUserAgentsJson = '../fixtures/crawler-user-agents-monperrus.json'
 const crawlerUserAgentsYaml = '../fixtures/manual-crawlers-list.yml'
-const browserUserAgentsYaml = '../fixtures/manual-legit-browsers.yml'
+const legitBrowserUserAgentsYaml = '../fixtures/manual-legit-browsers.yml'
 const matomoBotsYaml = '../fixtures/matomo-bots.yml'
 
 const read = file => readFileSync(
@@ -17,12 +17,21 @@ const read = file => readFileSync(
   'utf-8'
 )
 
+const legitBrowserUserAgents = Object.values(
+  parse(
+    read(
+      legitBrowserUserAgentsYaml
+    )
+  )
+).flat()
+
 const ignoreList = read(botsIgnoreList)
   .trim()
   .split('\n')
   .filter(
     line => !line.startsWith('#')
   )
+  .concat(legitBrowserUserAgents)
 
 /**
  * For some reason, UCWEB are all considered bots by these guys
@@ -45,9 +54,7 @@ const NOT_REALLY_CRAWLERS_PATTERN = new RegExp([
 module.exports.crawlers = [
 
   // Read from text file
-  ...read(crawlerUserAgentsText).trim().split('\n').filter(
-    line => !NOT_REALLY_CRAWLERS_PATTERN.test(line)
-  ),
+  ...read(crawlerUserAgentsText).trim().split('\n'),
 
   // Read from a different text file
   ...read(
@@ -84,15 +91,21 @@ module.exports.crawlers = [
     ({ user_agent }) => user_agent // eslint-disable-line camelcase
   )
 
-].filter(Boolean).filter(ua => !ignoreList.includes(ua))
+].filter(Boolean).filter(
+  ua => !ignoreList.includes(ua)
+).filter(
+  line => !NOT_REALLY_CRAWLERS_PATTERN.test(line)
+)
 
 const BOTS = new RegExp([
   'adbeat.com',
+  'archivebox',
   'chrome-lighthouse',
   'googleweblight',
   'JavaFX',
   'phantomjs',
   'swurl',
+  'sogoumobilebrowser',
   'Hexometer',
   'BuiltWith',
   parseInt(process.versions.node) === 6 && 'cubot'
@@ -116,13 +129,7 @@ module.exports.browsers = [
   ),
 
   // Read from Yaml file
-  ...Object.values(
-    parse(
-      read(
-        browserUserAgentsYaml
-      )
-    )
-  ).flat()
+  ...legitBrowserUserAgents
 ].filter(Boolean)
 
 /**

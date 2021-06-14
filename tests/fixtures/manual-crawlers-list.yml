@@ -1,5 +1,7 @@
 AlertSite Monitoring:
   - Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0 DejaClick/2.9.7.2
+Alipay:
+  - Mozilla/5.0 (iPhone; CPU iPhone OS 11_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15G77 ChannelId(73) NebulaSDK/1.8.100112 Nebula PSDType(1) AlipayDefined(nt:4G,ws:320|504|2.0) AliApp(AP/10.1.30.300) AlipayClient/10.1.30.300 Alipay Language/zh-Hans
 Application Health Service:
   - ApplicationHealthService/1.0
 AWS:
@@ -100,6 +102,8 @@ Monit:
   - Monit/5.23.0
 Ngios Monitor:
   - check_http/v2.2.1 (nagios-plugins 2.2.1)
+Nibbler (nibbler.silktide.com):
+  - nibbler
 Nuclei:
   - Nuclei - Open-source project (github.com/projectdiscovery/nuclei)
 Other Site Monitor Bots:
