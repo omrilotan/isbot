@@ -38,15 +38,13 @@ const ignoreList = read(botsIgnoreList)
  * @type RegExp
  */
 const NOT_REALLY_CRAWLERS_PATTERN = new RegExp([
-  '^mozilla\\/5\\.0 \\(windows; rv:\\d{2}\\.0\\) gecko/20100101 firefox\\/\\d{2}\\.0$',
-  '^nokiac2',
-  '^nokiac3',
-  '^nokiax2',
-  '^radiosnet',
-  'archivebox',
-  'nebulasdk',
+  'ucmini',
   'splash',
-  'ucmini'
+  '^radiosnet',
+  '^NokiaC2',
+  '^NokiaC3',
+  '^NokiaX2',
+  '^Mozilla\\/5\\.0 \\(Windows; rv:\\d{2}\\.0\\) Gecko/20100101 Firefox\\/\\d{2}\\.0$'
 ].join('|'), 'i')
 
 /**
@@ -94,18 +92,20 @@ module.exports.crawlers = [
   )
 
 ].filter(Boolean).filter(
-  line => !NOT_REALLY_CRAWLERS_PATTERN.test(line)
-).filter(
   ua => !ignoreList.includes(ua)
+).filter(
+  line => !NOT_REALLY_CRAWLERS_PATTERN.test(line)
 )
 
 const BOTS = new RegExp([
   'adbeat.com',
+  'archivebox',
   'chrome-lighthouse',
   'googleweblight',
   'JavaFX',
   'phantomjs',
   'swurl',
+  'sogoumobilebrowser',
   'Hexometer',
   'BuiltWith',
   parseInt(process.versions.node) === 6 && 'cubot'

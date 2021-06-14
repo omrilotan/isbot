@@ -102,6 +102,8 @@ Monit:
   - Monit/5.23.0
 Ngios Monitor:
   - check_http/v2.2.1 (nagios-plugins 2.2.1)
+Nibbler (nibbler.silktide.com):
+  - nibbler
 Nuclei:
   - Nuclei - Open-source project (github.com/projectdiscovery/nuclei)
 Other Site Monitor Bots:
