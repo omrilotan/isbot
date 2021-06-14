@@ -44,7 +44,8 @@ const NOT_REALLY_CRAWLERS_PATTERN = new RegExp([
   '^NokiaC2',
   '^NokiaC3',
   '^NokiaX2',
-  '^Mozilla\\/5\\.0 \\(Windows; rv:\\d{2}\\.0\\) Gecko/20100101 Firefox\\/\\d{2}\\.0$'
+  '^Mozilla\\/5\\.0 \\(Windows; rv:\\d{2}\\.0\\) Gecko/20100101 Firefox\\/\\d{2}\\.0$',
+  'ArchiveBox'
 ].join('|'), 'i')
 
 /**
