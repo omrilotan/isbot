@@ -38,14 +38,15 @@ const ignoreList = read(botsIgnoreList)
  * @type RegExp
  */
 const NOT_REALLY_CRAWLERS_PATTERN = new RegExp([
-  'ucmini',
-  'splash',
+  '^mozilla\\/5\\.0 \\(windows; rv:\\d{2}\\.0\\) gecko/20100101 firefox\\/\\d{2}\\.0$',
+  '^nokiac2',
+  '^nokiac3',
+  '^nokiax2',
   '^radiosnet',
-  '^NokiaC2',
-  '^NokiaC3',
-  '^NokiaX2',
-  '^Mozilla\\/5\\.0 \\(Windows; rv:\\d{2}\\.0\\) Gecko/20100101 Firefox\\/\\d{2}\\.0$',
-  'ArchiveBox'
+  'archivebox',
+  'nebulasdk',
+  'splash',
+  'ucmini'
 ].join('|'), 'i')
 
 /**
@@ -55,9 +56,7 @@ const NOT_REALLY_CRAWLERS_PATTERN = new RegExp([
 module.exports.crawlers = [
 
   // Read from text file
-  ...read(crawlerUserAgentsText).trim().split('\n').filter(
-    line => !NOT_REALLY_CRAWLERS_PATTERN.test(line)
-  ),
+  ...read(crawlerUserAgentsText).trim().split('\n'),
 
   // Read from a different text file
   ...read(
@@ -94,7 +93,11 @@ module.exports.crawlers = [
     ({ user_agent }) => user_agent // eslint-disable-line camelcase
   )
 
-].filter(Boolean).filter(ua => !ignoreList.includes(ua))
+].filter(Boolean).filter(
+  line => !NOT_REALLY_CRAWLERS_PATTERN.test(line)
+).filter(
+  ua => !ignoreList.includes(ua)
+)
 
 const BOTS = new RegExp([
   'adbeat.com',
