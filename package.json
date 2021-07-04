@@ -1,6 +1,6 @@
 {
   "name": "isbot",
-  "version": "3.0.27",
+  "version": "4.0.0-rc.1",
   "description": "🤖 detect bots/crawlers/spiders via the user agent.",
   "keywords": [
     "bot",
@@ -11,7 +11,6 @@
     "user agent parsing",
     "🤖"
   ],
-  "author": "Goran Gajic",
   "license": "Unlicense",
   "homepage": "https://isbot.js.org",
   "repository": {
@@ -19,46 +18,68 @@
     "url": "https://github.com/omrilotan/isbot"
   },
   "engines": {
-    "node": ">=10"
+    "node": ">=12"
   },
-  "main": "index.js",
+  "type": "commonjs",
+  "main": "./index.js",
+  "module": "./index.mjs",
+  "browser": "./index.mjs",
+  "exports": {
+    ".": {
+      "browser": "./index.mjs",
+      "import": "./index.mjs",
+      "require": "./index.js",
+      "node": "./index.js",
+      "default": "./index.js"
+    }
+  },
   "types": "index.d.ts",
   "scripts": {
-    "clean": "rm -rf .cache && rm -rf docs",
-    "prebuild": "which parcel || npm i parcel-bundler --no-save",
-    "build": "parcel build page/index.pug --out-dir docs --public-url .",
-    "postbuild": "echo isbot.js.org > docs/CNAME",
-    "precontributors": "curl -f https://api.github.com/repos/omrilotan/isbot/contributors > contributors.json",
-    "contributors": "./scripts/contributors.js",
+    "clean": "rm -rf .cache docs fixtures/downloads fixtures/index.json tests/browser/dist.js tests/esm/node_modules /index.*",
+    "prepare": "./scripts/prepare/index.js",
     "prestart": "which parcel || npm i parcel-bundler --no-save",
     "start": "parcel page/index.pug --out-dir docs",
-    "sort": "./scripts/sort.js",
-    "preunit": "[ -f \"tests/fixtures/downloaded\" ] || ./scripts/download-fixtures.sh",
-    "unit": "node --experimental-worker ./node_modules/.bin/mocha tests/*.js --exclude 'tests/.*'",
-    "prebrowser": "rollup --config .rollup.js",
-    "browser": "karma start .karma.js",
+    "prepage": "which parcel || npm i parcel-bundler --no-save",
+    "page": "parcel build page/index.pug --out-dir docs --public-url .",
+    "postpage": "echo isbot.js.org > docs/CNAME",
+    "authors": "./scripts/authors/index.js",
+    "sort": "./scripts/sort/index.js",
+    "ensure": "[ -e \"index.js\" ] || npm run build",
+    "build": "rollup --config .rollup.js",
+    "postbuild": "npm run symlink && node --experimental-modules ./node_modules/.bin/mocha tests/esm/spec.js && mocha tests/cjs/spec.js && npm run browser",
+    "pretest": "npm run prepare",
+    "test": "npm run spec && npm run efficiency",
+    "prespec": "npm run prepare",
+    "spec": "node --experimental-modules --experimental-json-modules ./node_modules/.bin/mocha tests/specs/spec.js",
+    "preefficiency": "npm run prepare",
+    "efficiency": "node --expose-gc --experimental-modules --experimental-json-modules ./node_modules/.bin/mocha tests/specs/spec.js",
+    "symlink": "./scripts/symlink/index.js",
+    "prebrowser": "npm run ensure && npm run symlink && rollup --config tests/browser/rollup.js",
+    "browser": "karma start tests/browser/karma.js",
     "lint": "standard",
+    "prets": "npm run ensure",
     "ts": "tsc",
-    "test": "npm run sort && npm run unit && npm run browser && npm run lint && npm run ts"
+    "prepublishOnly": "npm run authors && npm run build"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^17.0.0",
+    "@lets/wait": "^2.0.2",
     "@rollup/plugin-json": "^4.1.0",
-    "array-flat-polyfill": "^1.0.1",
+    "@rollup/plugin-node-resolve": "^13.0.0",
     "eslint-plugin-log": "^1.2.6",
-    "karma": "^5.2.3",
+    "form-data": "^4.0.0",
+    "karma": "^6.3.4",
     "karma-chrome-launcher": "^3.1.0",
     "karma-cli": "^2.0.0",
-    "karma-firefox-launcher": "^2.1.0",
+    "karma-firefox-launcher": "^2.1.1",
     "karma-mocha": "^2.0.1",
     "karma-mocha-reporter": "^2.2.5",
-    "mocha": "^8.2.1",
+    "mocha": "^9.0.1",
     "pug": "^3.0.0",
-    "rollup": "^2.34.2",
-    "standard": "^15.0.1",
+    "rollup": "^2.52.7",
+    "standard": "^16.0.3",
     "stdline": "^1.0.0",
-    "typescript": "^4.0.5",
-    "user-agents": "^1.0.559",
+    "typescript": "^4.3.5",
+    "user-agents": "^1.0.701",
     "yaml": "^1.10.0"
   }
 }

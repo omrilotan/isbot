@@ -1,125 +1,32 @@
 version: 2.1
-
-jobs:
-  test:
-    parameters:
-      image:
-        description: docker image
-        default: circleci/node:latest
-        type: string
-    working_directory: ~/app
-    docker:
-      - image: <<parameters.image>>
-    steps:
-      - checkout
-      - run: npm i
-      - run: npm run unit
-  test_browsers:
-    docker:
-      - image: circleci/node:latest-browsers
-    steps:
-      - checkout
-      - run: npm i
-      - run: npm run browser
-  lint_sort_and_types:
-    docker:
-      - image: circleci/node:latest
-    steps:
-      - checkout
-      - run: npm i
-      - run: npm run lint -- --plugin log
-      - run: npm run sort
-      - run: git diff --quiet || exit 1
-      - run: npm run ts
-  publish:
-    docker:
-      - image: circleci/node:latest
-    steps:
-      - checkout
-      - run:
-          name: Stop if remote tag already exists
-          command: |
-            [ -z "$(git ls-remote --tags origin | grep -F $(cat package.json | jq '.version' -r) | tr -d '\n')" ] || circleci step halt
-      - run:
-          name: Set git user
-          command: |
-            git config --global user.name "$(git show -s --format=%an)"
-            git config --global user.email "$(git show -s --format=%ae)"
-      - run:
-          name: Add git tag
-          command: git tag -a "v$(cat package.json | jq ".version" -r)" -m "$(git show -s --format=%B | tr -d '\n')"
-      - run: git push origin --tags
-      - run: npm run contributors
-      - run:
-          name: Add publish token
-          command: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
-      - run: npm publish
-  pages:
-    docker:
-      - image: circleci/node:latest
-    steps:
-      - checkout
-      - run: npm i
-      - run: npm run build
-      - run:
-          name: Copy circleci config
-          command: cp -r .circleci docs/
-      - run:
-          name: Post to gh-pages
-          command: curl ci-cd.net/v1/gh/pages | bash -s docs/.
-  periodic:
-    docker:
-      - image: circleci/node:latest-browsers
-    steps:
-      - checkout
-      - run: npm i
-      - run: |
-            npm t || curl --request POST \
-              --url https://api.github.com/repos/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}/issues \
-              --header 'authorization: Bearer ${GITHUB_TOKEN}' \
-              --header 'content-type: application/json' \
-              --data '{
-                  "title": "Automated issue for failing periodic tests",
-                  "body": "This issue is automatically created. The tests are failing on branch ${CIRCLE_BRANCH}",
-                  "assignees": [ "omrilotan" ],
-                  "labels": [ "automated", "maintenance" ]
-                }'
-
 workflows:
-  version: 2.1
   test:
     jobs:
-      - test:
+      - build:
+          context: globalenv
+          filters:
+            branches:
+              ignore:
+                - gh-pages
+      - tests:
+          context: globalenv
+          requires:
+            - build
+      - compatibility:
+          context: globalenv
           matrix:
             parameters:
               image:
-                - circleci/node:10
                 - circleci/node:12
                 - circleci/node:14
-                - circleci/node:latest
-          context: globalenv
-          filters:
-            branches:
-              ignore:
-                - gh-pages
-      - test_browsers:
-          context: globalenv
-          filters:
-            branches:
-              ignore:
-                - gh-pages
-      - lint_sort_and_types:
-          context: globalenv
-          filters:
-            branches:
-              ignore:
-                - gh-pages
+                - circleci/node:16
+          requires:
+            - build
       - publish:
           context: globalenv
           requires:
-            - test
-            - test_browsers
-            - lint_sort_and_types
+            - tests
+            - compatibility
           filters:
             branches:
               only:
@@ -138,3 +45,101 @@ workflows:
   #           branches:
   #             only:
   #               - main
+jobs:
+  build:
+    docker:
+      - image: circleci/node:latest-browsers
+    steps:
+      - checkout
+      - run: node -v
+      - run: npm i
+      - run: npm run build
+      - persist_to_workspace:
+          root: .
+          paths:
+            - .
+  tests:
+    working_directory: ~/app
+    docker:
+      - image: circleci/node:latest-browsers
+    steps:
+      - run: node -v
+      - attach_workspace:
+          at: .
+      - run: npm run lint -- --fix
+      - run: npm run sort
+      - run: git diff --quiet || exit 1
+      - run: npm t
+      - run: npm run ts
+  compatibility:
+    parameters:
+      image:
+        description: docker image
+        default: circleci/node:latest
+        type: string
+    working_directory: ~/app
+    docker:
+      - image: <<parameters.image>>
+    steps:
+      - run: node -v
+      - attach_workspace:
+          at: .
+      - run: npm run spec
+  publish:
+    working_directory: ~/app
+    docker:
+      - image: circleci/node:latest
+    steps:
+      - checkout
+      - run:
+          name: Stop if remote tag already exists
+          command: |
+            [ -z "$(git ls-remote --tags origin | grep -F $(cat package.json | jq '.version' -r) | tr -d '\n')" ] || circleci step halt
+      - run:
+          name: Set git user
+          command: |
+            git config --global user.name "$(git show -s --format=%an)"
+            git config --global user.email "$(git show -s --format=%ae)"
+      - run:
+          name: Add publish token
+          command: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+      - attach_workspace:
+          at: .
+      - run: npm run authors
+      - run: npm publish
+      - run:
+          name: Add git tag
+          command: git tag -a "v$(cat package.json | jq ".version" -r)" -m "$(git show -s --format=%B | tr -d '\n')"
+      - run: git push origin --tags
+  pages:
+    working_directory: ~/app
+    docker:
+      - image: circleci/node:latest
+    steps:
+      - checkout
+      - run: npm i
+      - run: npm run page
+      - run:
+          name: Copy circleci config
+          command: cp -r .circleci docs/
+      - run:
+          name: Post to gh-pages
+          command: curl ci-cd.net/v1/gh/pages | bash -s docs/.
+  periodic:
+    working_directory: ~/app
+    docker:
+      - image: circleci/node:latest-browsers
+    steps:
+      - checkout
+      - run: npm i
+      - run: |
+            npm run spec || curl --request POST \
+              --url https://api.github.com/repos/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}/issues \
+              --header 'authorization: Bearer ${GITHUB_TOKEN}' \
+              --header 'content-type: application/json' \
+              --data '{
+                  "title": "Automated issue for failing periodic tests",
+                  "body": "This issue is automatically created. The tests are failing on branch ${CIRCLE_BRANCH}",
+                  "assignees": [ "omrilotan" ],
+                  "labels": [ "automated", "maintenance" ]
+                }'

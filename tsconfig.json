@@ -12,6 +12,6 @@
     "esModuleInterop": true,
     "resolveJsonModule": true
   },
-  "include": ["index.js", "list.json", "index.d.ts"],
+  "include": ["index.js", "index.d.ts"],
   "exclude": []
 }

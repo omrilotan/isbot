@@ -1,4 +1,6 @@
-import isbot from '..';
+import isbot from '../src/index.js'
+import { amend } from '../src/amend/index.js'
+import list from '../src/list.json'
 
 (function () {
   const textarea = document.querySelector('textarea')
@@ -6,6 +8,9 @@ import isbot from '..';
   let timer
 
   const query = window.location.search.replace(/\?ua=(.*)$/, '$1')
+
+  amend(list)
+  const pattern = new RegExp(list.join('|'), 'i')
 
   textarea.innerHTML = query
     ? decodeURIComponent(query)
@@ -34,11 +39,16 @@ import isbot from '..';
         ? 'I think so, yes'
         : 'I don\'t think so, no',
       result
-        ? `The pattern that I recognise is <kbd>${isbot.find(value)}</kbd>`
+        ? `The pattern that I recognise is <kbd>${find(value)}</kbd>`
         : 'I could not find a pattern I recognise'
     ].join('\n')
 
     output.className = ''
     setTimeout(() => { output.className = 'highlight' }, 100)
+  }
+
+  function find (ua) {
+    const match = ua.match(pattern)
+    return match && match[0]
   }
 })()

@@ -1,8 +1,16 @@
 .*
-tests/*
+
 scripts/*
 page/*
 docs/*
+
 tsconfig.json
+
+fixtures/*
+tests/*
+spec.js
+
+src/*
+
 CONTRIBUTING.md
 contributors.json
