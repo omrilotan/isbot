@@ -52,7 +52,7 @@
     "prespec": "npm run prepare",
     "spec": "node --experimental-modules --experimental-json-modules ./node_modules/.bin/mocha tests/specs/spec.js",
     "preefficiency": "npm run prepare",
-    "efficiency": "node --expose-gc --experimental-modules --experimental-json-modules ./node_modules/.bin/mocha tests/specs/spec.js",
+    "efficiency": "node --expose-gc --experimental-modules --experimental-json-modules ./node_modules/.bin/mocha tests/efficiency/spec.js",
     "symlink": "./scripts/symlink/index.js",
     "prebrowser": "npm run ensure && npm run symlink && rollup --config tests/browser/rollup.js",
     "browser": "karma start tests/browser/karma.js",

@@ -8,9 +8,6 @@ tsconfig.json
 
 fixtures/*
 tests/*
-spec.js
-
 src/*
 
 CONTRIBUTING.md
-contributors.json

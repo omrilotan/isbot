@@ -1,3 +1,10 @@
+AAA App User Agent String Examples - Native and Webview based user agent forms for a correct app user agent string composition:
+  - ExampleApp/1 Dalvik/2.1.0 (Linux; U; Android 6.0.1; vivo 1610 Build/MMB29M)
+  - ExampleApp/1 iPhone5,2 iOS/10_1 CFNetwork/808.3 Darwin/16.3.0
+  - ExampleApp/1 Windows Phone/10.0 Microsoft; Lumia 550
+  - Mozilla/5.0 (iPhone; CPU iPhone OS 12_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 WebViewApp ExampleApp/1 iPhone11,8
+  - Mozilla/5.0 (Linux; Android 9; Pixel Build/PQ3A.190801.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.73 Mobile Safari/537.36 WebViewApp ExampleApp/1
+  - Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; Microsoft; Lumia 535 Dual SIM) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.0.0 Mobile Safari/537.36 Edge/13.0 WebViewApp ExampleApp/1
 Amazon 4K Fire TV:
   - Mozilla/5.0 (Linux; Android 5.1; AFTS Build/LMY47O) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/41.99900.2250.0242 Safari/537.36
 Android:
@@ -177,6 +184,7 @@ Iceweasel:
 Instagram:
   - Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16A366 Instagram 66.0.0.14.101 (iPhone10,2; iOS 12_0; pt_BR; pt-BR; scale=2.61; gamut=wide; 1080x1920; 126719886)
   - Mozilla/5.0 (iPhone; CPU iPhone OS 13_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 123.1.0.26.115 (iPhone11,8; iOS 13_3; en_US; en-US; scale=2.00; 828x1792; 190542906)
+  - Mozilla/5.0 (Linux; Android 11; Pixel 2 Build/RP1A.201005.004.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/91.0.4472.120 Mobile Safari/537.36 Instagram 194.0.0.36.172 Android (30/11; 420dpi; 1080x1878; Google/google; Pixel 2; walleye; walleye; en_US; 301484483)
   - Mozilla/5.0 (Linux; Android 7.0; Lenovo K33b36 Build/NRD90N; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/65.0.3325.109 Mobile Safari/537.36 Instagram 41.0.0.13.92 Android (24/7.0; 480dpi; 1080x1920; LENOVO/Lenovo; Lenovo K33b36; K33b36; qcom; pt_BR; 103516666)
   - Mozilla/5.0 (Linux; Android 7.0; TRT-LX3 Build/HUAWEITRT-LX3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.80 Mobile Safari/537.36 Instagram 70.0.0.22.98 Android (24/7.0; 320dpi; 720x1208; HUAWEI; TRT-LX3; HWTRT-Q; qcom; es_CO; 130580485)
 Internet Explorer:
@@ -484,7 +492,7 @@ Yandex:
   - Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 YaBrowser/17.7.1.791 Yowser/2.5 Safari/537.36
   - Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 YaBrowser/17.6.1.749 Yowser/2.5 Safari/537.36
   - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 YaBrowser/17.3.1.873 (beta) Yowser/2.5 Safari/537.36
-ZZZ_GLITCHES_AND_MISCELLANEOUS These browsers are legit user agent even though they are included in some bot listings (not all bots identify themselves):
+ZZZ Glitches and Misidentified Browsers - These browsers are legit user agent even though they are included in some bot listings (not all bots identify themselves):
   - asafaweb.com
   - l9tcpid/v1.0.0
   - LWPrCa2l') OR 941=(SELECT 941 FROM PG_SLEEP(15))--

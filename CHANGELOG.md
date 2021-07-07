@@ -24,6 +24,7 @@ const isbotExtended = ua => /chrome-lighthouse/i.test(ua) ? false : isbot(ua)
 
 ## List updates
 - Remove WAPCHOI from bot list
+- Recognise Google/google user agent for Android webview
 
 # 3.0.27
 - Add a few known crawlers
