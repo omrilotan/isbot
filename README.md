@@ -64,3 +64,22 @@ We use external data sources on top of our own lists to keep up to date
 - A Manual list
 
 Missing something? Please [open an issue](https://github.com/omrilotan/isbot/issues/new/choose)
+
+## Major releases ([view changelog](./CHANGELOG.md))
+
+### [Version 4](https://github.com/omrilotan/isbot/releases/tag/v4.0.0)
+#### TL;DR
+- Remove additional functions other than "isbot" (extend, exclude, find)
+- Remove official support for node < 12
+
+### [Version 3](https://github.com/omrilotan/isbot/releases/tag/v3.0.0)
+#### TL;DR
+- Remove testing on node 6 and 8
+
+### [Version 2](https://github.com/omrilotan/isbot/releases/tag/v2.0.0)
+#### TL;DR
+- Change return value for isbot: `true` instead of matched string
+
+### [Version 1](https://github.com/omrilotan/isbot/releases/tag/v1.0.0)
+#### TL;DR
+- No functional change

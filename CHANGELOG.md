@@ -21,6 +21,7 @@ const isbotExtended = ua => /chrome-lighthouse/i.test(ua) ? false : isbot(ua)
 
 ## New features
 - Native support for ESM and CommonJS
+- Start maintaining a security policy
 
 ## List updates
 - Remove WAPCHOI from bot list

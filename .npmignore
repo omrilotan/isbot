@@ -1,4 +1,6 @@
 .*
+*.md
+LICENSE
 
 scripts/*
 page/*
@@ -9,5 +11,3 @@ tsconfig.json
 fixtures/*
 tests/*
 src/*
-
-CONTRIBUTING.md

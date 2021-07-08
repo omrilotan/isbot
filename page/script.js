@@ -12,9 +12,13 @@ import list from '../src/list.json'
   amend(list)
   const pattern = new RegExp(list.join('|'), 'i')
 
-  textarea.innerHTML = query
-    ? decodeURIComponent(query)
-    : navigator.userAgent
+  textarea.childNodes.forEach(child => child.parentNode?.removeChild(child))
+  textarea.appendChild(document.createTextNode(
+    query
+      ? decodeURIComponent(query)
+      : navigator.userAgent
+    )
+  )
   textarea.addEventListener('keyup', change)
   textarea.addEventListener('paste', change)
   textarea.addEventListener('focus', () => textarea.select())
