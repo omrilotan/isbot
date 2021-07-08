@@ -4,14 +4,18 @@ about: Anything else you want to report
 assignees: omrilotan
 ---
 
-## Steps to reproduce
+Steps to reproduce
+-------
 <!-- Describe the operations you have performed -->
 
-## Expected behaviour
+Expected behaviour
+-------
 <!-- Describe what you expected to happen -->
 
-## Actual behaviour
+Actual behaviour
+-------
 <!-- Describe what actually occurred -->
 
-## Additional details
+Additional details
+-------
 <!-- Describe the environment and anything that can help asses the issue -->

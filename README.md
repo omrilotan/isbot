@@ -30,9 +30,9 @@ isbot('Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrom
 ```
 
 ## Definitions
-- **Bot.** Autonomous program imitating or replacing some aspect of a human behaviour, performing repetitive tasks much faster than human users could.
-- **Good bot.** Automated programs who visit websites in order to collect useful information. Web crawlers, site scrapers, stress testers, preview builders and other programs are welcomed on most websites because they serve purposes of mutual benefits.
-- **Bad bot.** Programs which are designed to perform malicious actions, ultimately hurting businesses. Testing credential databases, DDoS attacks, spam bots.
+-   **Bot.** Autonomous program imitating or replacing some aspect of a human behaviour, performing repetitive tasks much faster than human users could.
+-   **Good bot.** Automated programs who visit websites in order to collect useful information. Web crawlers, site scrapers, stress testers, preview builders and other programs are welcomed on most websites because they serve purposes of mutual benefits.
+-   **Bad bot.** Programs which are designed to perform malicious actions, ultimately hurting businesses. Testing credential databases, DDoS attacks, spam bots.
 
 ## Clarifications
 ### What does "isbot" do?
@@ -43,9 +43,9 @@ It does not try to recognise malicious bots or programs disguising themselves as
 
 ### Why would I want to identify good bots?
 Recognising good bots such as web crawlers is useful for multiple purposes. Although it is not recommended to serve different content to web crawlers like Googlebot, you can still elect to
-- Flag pageviews to consider with **business analysis**.
-- Prefer to serve cached content and **relieve service load**.
-- Omit third party solutions' code (tags, pixels) and **reduce costs**.
+-   Flag pageviews to consider with **business analysis**.
+-   Prefer to serve cached content and **relieve service load**.
+-   Omit third party solutions' code (tags, pixels) and **reduce costs**.
 > It is not recommended to whitelist requests for any reason based on user agent header only. Instead other methods of identification can be added such as reverse dns lookup.
 
 ## Data sources
@@ -53,15 +53,15 @@ Recognising good bots such as web crawlers is useful for multiple purposes. Alth
 We use external data sources on top of our own lists to keep up to date
 
 ### Crawlers user agents:
-- [user-agents.net](https://user-agents.net/bots)
-- [crawler-user-agents repo](https://raw.githubusercontent.com/monperrus/crawler-user-agents/master/crawler-user-agents.json)
-- [myip.ms](https://www.myip.ms/files/bots/live_webcrawlers.txt)
-- [matomo.org](https://github.com/matomo-org/device-detector/blob/master/Tests/fixtures/bots.yml)
-- A Manual list
+-   [user-agents.net](https://user-agents.net/bots)
+-   [crawler-user-agents repo](https://raw.githubusercontent.com/monperrus/crawler-user-agents/master/crawler-user-agents.json)
+-   [myip.ms](https://www.myip.ms/files/bots/live_webcrawlers.txt)
+-   [matomo.org](https://github.com/matomo-org/device-detector/blob/master/Tests/fixtures/bots.yml)
+-   A Manual list
 
 ### Non bot user agents:
-- [user-agents npm package](https://www.npmjs.com/package/user-agents)
-- A Manual list
+-   [user-agents npm package](https://www.npmjs.com/package/user-agents)
+-   A Manual list
 
 Missing something? Please [open an issue](https://github.com/omrilotan/isbot/issues/new/choose)
 
@@ -69,17 +69,17 @@ Missing something? Please [open an issue](https://github.com/omrilotan/isbot/iss
 
 ### [Version 4](https://github.com/omrilotan/isbot/releases/tag/v4.0.0)
 #### TL;DR
-- Remove additional functions other than "isbot" (extend, exclude, find)
-- Remove official support for node < 12
+-   Remove additional functions other than "isbot" (extend, exclude, find)
+-   Remove official support for node < 12
 
 ### [Version 3](https://github.com/omrilotan/isbot/releases/tag/v3.0.0)
 #### TL;DR
-- Remove testing on node 6 and 8
+-   Remove testing on node 6 and 8
 
 ### [Version 2](https://github.com/omrilotan/isbot/releases/tag/v2.0.0)
 #### TL;DR
-- Change return value for isbot: `true` instead of matched string
+-   Change return value for isbot: `true` instead of matched string
 
 ### [Version 1](https://github.com/omrilotan/isbot/releases/tag/v1.0.0)
 #### TL;DR
-- No functional change
+-   No functional change

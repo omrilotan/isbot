@@ -57,6 +57,7 @@
     "prebrowser": "npm run ensure && npm run symlink && rollup --config tests/browser/rollup.js",
     "browser": "karma start tests/browser/karma.js",
     "lint": "standard",
+    "remark": "remark .",
     "prets": "npm run ensure",
     "ts": "tsc",
     "prepublishOnly": "npm run authors && npm run build"
@@ -75,6 +76,8 @@
     "karma-mocha-reporter": "^2.2.5",
     "mocha": "^9.0.1",
     "pug": "^3.0.0",
+    "remark-cli": "^9.0.0",
+    "remark-preset-lint-recommended": "^5.0.0",
     "rollup": "^2.52.7",
     "standard": "^16.0.3",
     "stdline": "^1.0.0",
