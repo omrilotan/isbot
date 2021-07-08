@@ -27,21 +27,24 @@ import list from '../src/list.json'
 
   function check (value = textarea.innerHTML) {
     value = value.trim()
+    output.childNodes.forEach(child => child.parentNode?.removeChild(child))
     if (value === '') {
-      output.innerHTML = 'Insert user agent string in the text box'
+      output.appendChild(
+        document.createTextNode(
+          'Insert user agent string in the text box'
+        )
+      )
       return
     }
 
     const result = isbot(value)
-
-    output.innerHTML = [
-      result
-        ? 'I think so, yes'
-        : 'I don\'t think so, no',
-      result
-        ? `The pattern that I recognise is <kbd>${find(value)}</kbd>`
-        : 'I could not find a pattern I recognise'
-    ].join('\n')
+    output.appendChild(
+      document.createTextNode(
+        result
+          ? `I think so, yes\nThe pattern that I recognise is "${find(value)}"`
+          : 'I don\'t think so, no\nI could not find a pattern I recognise'
+      )
+    )
 
     output.className = ''
     setTimeout(() => { output.className = 'highlight' }, 100)
