@@ -32,6 +32,8 @@ Dotcom Monitor:
   - Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0) DMBrowser/2.1 (UV)
   - Mozilla/5.0 (Linux; U; Android 2.2; en-us; SCH-I800 Build/FROYO) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1 DMBrowser-BV
   - Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36 DMBrowser/2.1 (BV; LV)
+Facebook:
+  - facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)
 FirePHP:
   - SAMSUNG-S8000/S8000XXIF3 SHP/VPP/R5 Jasmine/1.0 Nextreaming SMM-MMS/1.92.0 profile/MIDP-2.1 configuration/CLDC-1.1 FirePHP/0.3(Linux LLC 1.2)
 Flipboard:
@@ -90,9 +92,17 @@ Hydra by addthis:
   - Mozilla/5.0 (Hydra Proxy)
 Jorgee Vulnerability Scanner:
   - Mozilla/5.0 Jorgee
+Knowledge AI:
+  - The Knowledge AI
 Kuberneters:
   - applicationhealthservice/1.0
   - kube-probe/1.15
+Lighthouse:
+  - Mozilla/5.0 (Macintosh; intel mac os x 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.175 Safari/537.36 Chrome-Lighthouse
+Linespider:
+  - Mozilla/5.0 (compatible; linespider/1.1; +https://lin.ee/4dwxkth)
+Linkedin:
+  - linkedinbot/1.0 (compatible; mozilla/5.0; apache-httpclient +http://www.linkedin.com)
 ltx71:
   - ltx71 - (http://ltx71.com/)
 M2E Pro Cron Service:
@@ -102,6 +112,9 @@ Medusa by pymedusa:
   - python/unicode Medusa/0.2.14 (Windows; 10; d26d37e1-3389-11e9-8d14-1c1b0d9d2a41)
 Monit:
   - Monit/5.23.0
+Moz:
+  - Mozilla/5.0 (compatible; DotBot/1.2; +https://opensiteexplorer.org/dotbot; help@moz.com)
+  - rogerbot/1.2 (https://moz.com/help/guides/moz-procedures/what-is-rogerbot, rogerbot-crawler+aardwolf-crawler-45@moz.com)
 Ngios Monitor:
   - check_http/v2.2.1 (nagios-plugins 2.2.1)
 Nibbler (nibbler.silktide.com):
@@ -133,10 +146,17 @@ Sistrix:
   - Mozilla/5.0 (compatible; Optimizer)
   - Mozilla/5.0 (Linux; Android 7.0; Moto G (4)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4143.7 Mobile Safari/537.36 Chrome-Lighthouse
   - Python-urllib/3.7
+Skype:
+  - Mozilla/5.0 (Windows nt 6.1; wow64) SkypeURIPreview Preview/0.5
 Sogou Search Dog:
   - Mozilla/5.0 (Linux; Android 9; NX569J Build/PQ3A.190505.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.106 Mobile Safari/537.36 AWP/2.0 SogouMSE,SogouMobileBrowser/5.21.8
+SWCD:
+  - SWCD (Unknown Version) CFNetwork/1107.1 Darwin/19.0.0
 updown.io monitoring:
   - updown.io daemon 2.2
+WhatsApp:
+  - WhatsApp/2.21.12.21 A
+  - whatsapp/2.2123.8 n
 Woorank Test Tool:
   - Mozilla/5.0 (compatible; woorankreview/2.0; +https://www.woorank.com/)
   - Mozilla/5.0 (iPad; CPU OS 11_0 like Mac OS X) AppleWebKit/604.1.34 (KHTML, like Gecko) Version/11.0 Mobile/15A5341f Safari/604.1 (compatible; woorankreview/2.0; +https://www.woorank.com/)
@@ -146,3 +166,5 @@ Xymon Site Monitor:
   - Xymon xymonnet/4.3.17
 Yahoo Ad monitoring:
   - Mozilla/5.0 (compatible; Yahoo Ad monitoring; https://help.yahoo.com/kb/yahoo-ad-monitoring-SLN24857.html) tands-prod-eng.hlfs-prod---sieve.hlfs-rest_client/1624415525-0
+Yeti:
+  - Mozilla/5.0 (compatible; yeti/1.1; +http://naver.me/spd)

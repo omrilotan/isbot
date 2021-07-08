@@ -12,7 +12,7 @@ export function amend (list) {
     list.push('(?<! cu)bot')
     // Addresses: Android webview
     list.splice(list.lastIndexOf('google'), 1)
-    list.push('(?<! (channel\\/|google\\/))google(?!app\\/)')
+    list.push('(?<! (channel\\/|google\\/))google(?!(app|\\/google))')
 
     // Addresses: Yandex browser
     list.splice(list.lastIndexOf('search'), 1)
