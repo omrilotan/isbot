@@ -17,6 +17,7 @@ workflows:
           matrix:
             parameters:
               image:
+                - circleci/node:10
                 - circleci/node:12
                 - circleci/node:14
                 - circleci/node:16
@@ -59,7 +60,7 @@ jobs:
           paths:
             - .
   tests:
-    working_directory: ~/app
+    working_directory: ~/project
     docker:
       - image: circleci/node:latest-browsers
     steps:
@@ -78,16 +79,24 @@ jobs:
         description: docker image
         default: circleci/node:latest
         type: string
-    working_directory: ~/app
+    working_directory: ~/project
     docker:
-      - image: <<parameters.image>>
+      - image: << parameters.image >>
     steps:
       - run: node -v
       - attach_workspace:
           at: .
-      - run: npm run spec
+      - run: npm run symlink
+      - run: npm run cjs
+      - when:
+          condition:
+            matches:
+              pattern: "circleci/node:1[2-6]"
+              value: << parameters.image >>
+          steps:
+            - run: npm run esm
   publish:
-    working_directory: ~/app
+    working_directory: ~/project
     docker:
       - image: circleci/node:latest
     steps:
@@ -113,7 +122,7 @@ jobs:
           command: git tag -a "v$(cat package.json | jq ".version" -r)" -m "$(git show -s --format=%B | tr -d '\n')"
       - run: git push origin --tags
   pages:
-    working_directory: ~/app
+    working_directory: ~/project
     docker:
       - image: circleci/node:latest
     steps:
@@ -127,7 +136,7 @@ jobs:
           name: Post to gh-pages
           command: curl ci-cd.net/v1/gh/pages | bash -s docs/.
   periodic:
-    working_directory: ~/app
+    working_directory: ~/project
     docker:
       - image: circleci/node:latest-browsers
     steps:

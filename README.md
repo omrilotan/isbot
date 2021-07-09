@@ -70,7 +70,6 @@ Missing something? Please [open an issue](https://github.com/omrilotan/isbot/iss
 ### [Version 4](https://github.com/omrilotan/isbot/releases/tag/v4.0.0)
 #### TL;DR
 -   Remove additional functions other than "isbot" (extend, exclude, find)
--   Remove official support for node < 12
 
 ### [Version 3](https://github.com/omrilotan/isbot/releases/tag/v3.0.0)
 #### TL;DR

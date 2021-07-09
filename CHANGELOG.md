@@ -2,7 +2,6 @@
 
 ## 4.0.0
 ### Breaking changes
--   Remove support for node < 12
 -   Remove additional functions (extend, exclude). `isbot` is a single function module now. No more extend and exclude.
 ```js
 import isbot from 'isbot'
