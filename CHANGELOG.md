@@ -1,25 +1,6 @@
 # Changelog
 
-## 4.0.0
-### Breaking changes
--   Remove additional functions (extend, exclude). `isbot` is a single function module now. No more extend and exclude.
-```js
-import isbot from 'isbot'
-```
-
-#### Migration instructions
-We have removed all the extended logic from isbot. We feel its use was very minor and we're all about maintaining a tight, effective list of known bots and crawlers 🕷 .
-*Extend*: Detect custom user agent strings on top of isbot
-```js
-import isbot from 'isbot'
-const isbotExtended = ua => /my_custom_pattern|another_one/i.test(ua) || isbot(ua)
-```
-*Exclude*: Prevent this user agent from being detected as bot
-```js
-import isbot from 'isbot'
-const isbotExtended = ua => /chrome-lighthouse/i.test(ua) ? false : isbot(ua)
-```
-
+## 3.1.0
 ### New features
 -   Native support for ESM and CommonJS
 -   Start maintaining a security policy

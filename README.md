@@ -29,6 +29,35 @@ isbot('Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 
 isbot('Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36') // false
 ```
 
+## Additional functionality
+
+### Extend: Add user agent patterns
+Add rules to user agent match RegExp: Array of strings
+
+```js
+isbot('Mozilla/5.0') // false
+isbot.extend([
+    'istat',
+    '^mozilla/\\d\\.\\d$'
+])
+isbot('Mozilla/5.0') // true
+```
+
+### Exclude: Remove matches of known crawlers
+Remove rules to user agent match RegExp (see existing rules in `src/list.json` file)
+
+```js
+isbot('Chrome-Lighthouse') // true
+isbot.exclude(['chrome-lighthouse']) // pattern is case insensitive
+isbot('Chrome-Lighthouse') // false
+```
+
+### Find: Verbose result
+Return the respective match for bot user agent rule
+```js
+isbot.find('Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0 DejaClick/2.9.7.2') // 'DejaClick'
+```
+
 ## Definitions
 -   **Bot.** Autonomous program imitating or replacing some aspect of a human behaviour, performing repetitive tasks much faster than human users could.
 -   **Good bot.** Automated programs who visit websites in order to collect useful information. Web crawlers, site scrapers, stress testers, preview builders and other programs are welcomed on most websites because they serve purposes of mutual benefits.
@@ -67,13 +96,9 @@ Missing something? Please [open an issue](https://github.com/omrilotan/isbot/iss
 
 ## Major releases ([view changelog](./CHANGELOG.md))
 
-### [Version 4](https://github.com/omrilotan/isbot/releases/tag/v4.0.0)
-#### TL;DR
--   Remove additional functions other than "isbot" (extend, exclude, find)
-
 ### [Version 3](https://github.com/omrilotan/isbot/releases/tag/v3.0.0)
 #### TL;DR
--   Remove testing on node 6 and 8
+-   Remove testing for node 6 and 8
 
 ### [Version 2](https://github.com/omrilotan/isbot/releases/tag/v2.0.0)
 #### TL;DR

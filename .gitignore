@@ -3,7 +3,7 @@ node_modules
 /docs
 /fixtures/downloads/*
 /fixtures/index.json
-/tests/browser/dist.js
+dist.js
 /AUTHORS
 /index.*
 !/index.d.ts
