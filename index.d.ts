@@ -1,27 +1,27 @@
 /**
  * Detect if a user agent is a bot, crawler or spider
- * @param userAgent The user agent
+ * @param ua A user agent string
  */
-declare function isbot(userAgent: string): boolean;
+declare function isbot(ua: string): boolean;
 
 declare namespace isbot {
   /**
    * Extend the built-in list of bot user agent
-   * @param additionalFilters An array of user agents
+   * @param filters An array of user agents
    */
-  function extend(additionalFilters: string[]): void;
+  function extend(filters: string[]): void;
 
   /**
    * Removes a set of user agent from the built-in list
-   * @param excludedFilters An array of user agents
+   * @param filters An array of user agents
    */
-  function exclude(excludedFilters: string[]): void;
+  function exclude(filters: string[]): void;
 
   /**
    * Return the respective match for bot user agent rule
-   * @param excludedFilters An array of user agents
+   * @param ua A user agent string
    */
-  function find(userAgent: string): string;
+  function find(ua: string): string;
 }
 
 export = isbot;

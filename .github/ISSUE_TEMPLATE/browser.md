@@ -6,8 +6,10 @@ labels: bug, good first issue
 assignees: omrilotan
 ---
 
-## User Agent String
+User Agent String
+-------
 <!-- Insert user agent string or how to get to this browser -->
 
-## Reproduce
+Reproduce
+-------
 <!-- steps to reproduce, system where this issue happened -->

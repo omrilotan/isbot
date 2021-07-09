@@ -1,8 +1,13 @@
 .*
-tests/*
+*.md
+LICENSE
+
 scripts/*
 page/*
 docs/*
+
 tsconfig.json
-CONTRIBUTING.md
-contributors.json
+
+fixtures/*
+tests/*
+src/*
