@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.2.0
+### New features
+-   Typescript definition (isbot) supports any. Where a non-string argument is cast to a string before execution
+
 ## 3.1.0
 ### New features
 -   Native support for ESM and CommonJS

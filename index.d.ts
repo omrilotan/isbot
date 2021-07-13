@@ -1,8 +1,8 @@
 /**
  * Detect if a user agent is a bot, crawler or spider
- * @param ua A user agent string
+ * @param ua A user agent string. Non strings will be cast to string before the check
  */
-declare function isbot(ua: string): boolean;
+declare function isbot(ua: any): boolean;
 
 declare namespace isbot {
   /**
