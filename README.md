@@ -94,16 +94,19 @@ We use external data sources on top of our own lists to keep up to date
 
 Missing something? Please [open an issue](https://github.com/omrilotan/isbot/issues/new/choose)
 
-## Major releases ([view changelog](./CHANGELOG.md))
+## Major releases breaking changes ([full changelog](./CHANGELOG.md))
 
 ### [Version 3](https://github.com/omrilotan/isbot/releases/tag/v3.0.0)
-#### TL;DR
--   Remove testing for node 6 and 8
+Remove testing for node 6 and 8
 
 ### [Version 2](https://github.com/omrilotan/isbot/releases/tag/v2.0.0)
-#### TL;DR
--   Change return value for isbot: `true` instead of matched string
+Change return value for isbot: `true` instead of matched string
 
 ### [Version 1](https://github.com/omrilotan/isbot/releases/tag/v1.0.0)
-#### TL;DR
--   No functional change
+No functional change
+
+## Real world data
+
+| Execution times in milliseconds
+| -
+| ![](https://user-images.githubusercontent.com/516342/125660283-c6ef9db8-6162-449b-912d-7b7ae97ef411.png)
