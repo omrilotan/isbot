@@ -6,6 +6,8 @@ Application Health Service:
   - ApplicationHealthService/1.0
 AWS:
   - ELB-HealthChecker/2.0
+Bit Discovery:
+  - bitdiscovery
 Burp Collaborator Scanner:
   - Godzilla/17.0 (Unknown Operator; Nexus 5X Build/MMB29P) NoWebKit/5.36 (DOM, like Rhino; n7vbji2k0wt3rsbev55blgx17sdk8lwek97zvo.burpcollaborator.net) TOR/540.5.35487 Torrent 2654.76
   - http://5iojs2zo8rkhlrrwmm7oyl75twztnlo9ex9kz8o.burpcollaborator.net/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36
@@ -25,6 +27,8 @@ coccoc:
   - Mozilla/5.0 (compatible; coccocbot-web/1.0; +http://help.coccoc.com/searchengine)
 Dareboost test tool:
   - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36 DareBoost
+Datanyze:
+  - Mozilla/5.0 (X11; Datanyze; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
 Discourse Onebox:
   - Discourse Forum Onebox v2.6.0.beta2
   - Discourse/2.6.0.beta3
