@@ -46,6 +46,7 @@
   "^dispatch/\\d",
   "^disqus/",
   "^duckduckgo",
+  "^ddg_android/",
   "^enigma browser",
   "^evernote clip resolver",
   "^facebook",
