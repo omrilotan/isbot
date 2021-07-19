@@ -46,9 +46,9 @@ DuckDuckGo:
   - ddg_android/5.90.0 (com.duckduckgo.mobile.android; Android API 28)
   - ddg_android/5.90.0 (com.duckduckgo.mobile.android; Android API 30)
   - DuckDuckBot/1.0; (+http://duckduckgo.com/duckduckbot.html)
-  - Mozilla/5.0 (compatible; DuckDuckGo-Favicons-Bot/1.0; +http://duckduckgo.com)
-  - Mozilla/5.0 (compatible; DuckDuckBot-Https/1.1; https://duckduckgo.com/duckduckbot)
   - DuckDuckGo/0 CFNetwork/1126 Darwin/19.5.0
+  - Mozilla/5.0 (compatible; DuckDuckBot-Https/1.1; https://duckduckgo.com/duckduckbot)
+  - Mozilla/5.0 (compatible; DuckDuckGo-Favicons-Bot/1.0; +http://duckduckgo.com)
 Exabot:
   - Mozilla/5.0 (compatible; Exabot/3.0; +http://www.exabot.com/go/robot)
   - Mozilla/5.0 (compatible; Konqueror/3.5; Linux) KHTML/3.5.5 (like Gecko) (Exabot-Thumbnails)
