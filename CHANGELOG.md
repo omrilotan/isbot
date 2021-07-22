@@ -1,5 +1,8 @@
 # Changelog
 
+## 3.2.1
+-   Add bitdiscovery, Invision bot, ddg_android (duckduckgo)
+
 ## 3.2.0
 ### New features
 -   Typescript definition (isbot) supports any. Where a non-string argument is cast to a string before execution
