@@ -257,5 +257,9 @@
   "websitemetadataretriever",
   "whatcms/",
   "wordpress",
-  "zgrab"
+  "zgrab",
+  "robot",
+  "crawling",
+  "crawler",
+  "googlebot",
 ]
