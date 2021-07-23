@@ -3,7 +3,6 @@
 const { promises: { mkdir, writeFile } } = require('fs')
 const { join } = require('path')
 const write = require('../lib/write')
-const exists = require('../lib/exists')
 const args = require('./args')
 const build = require('./build')
 const { download } = require('./externals')
@@ -39,12 +38,10 @@ async function start ({ argv }) {
     log('No new files were downloaded')
   }
 
-  if (news || !(await exists(join(fixturesDirectory, 'index.json')))) {
-    log('Create fixtures JSON')
-    const { browsers, crawlers } = await build({ fixturesDirectory, downloadsDirectory })
-    await writeFile(
-      join(fixturesDirectory, 'index.json'),
-      JSON.stringify({ browsers, crawlers }, null, 2) + '\n'
-    )
-  }
+  log('Create fixtures JSON')
+  const { browsers, crawlers } = await build({ fixturesDirectory, downloadsDirectory })
+  await writeFile(
+    join(fixturesDirectory, 'index.json'),
+    JSON.stringify({ browsers, crawlers }, null, 2) + '\n'
+  )
 };
