@@ -3,7 +3,6 @@
 const { promises: { mkdir, writeFile } } = require('fs')
 const { join } = require('path')
 const write = require('../lib/write')
-const exists = require('../lib/exists')
 const args = require('./args')
 const build = require('./build')
 const { download } = require('./externals')
