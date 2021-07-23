@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.2.2
+-   One mode duckduckgo pattern
+
+## 3.2.1
+-   Add bitdiscovery, Invision bot, ddg_android (duckduckgo), Braze, [gobuster](https://github.com/OJ/gobuster)
+
 ## 3.2.0
 ### New features
 -   Typescript definition (isbot) supports any. Where a non-string argument is cast to a string before execution
