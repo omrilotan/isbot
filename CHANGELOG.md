@@ -1,7 +1,7 @@
 # Changelog
 
 ## 3.2.1
--   Add bitdiscovery, Invision bot, ddg_android (duckduckgo)
+-   Add bitdiscovery, Invision bot, ddg_android (duckduckgo), Braze, [gobuster](https://github.com/OJ/gobuster)
 
 ## 3.2.0
 ### New features
