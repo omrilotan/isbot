@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.2.4
+-   Add some RSS readers detection
+
+## 3.2.3
+-   Refine amiga user agent detection
+
 ## 3.2.2
 -   One mode duckduckgo pattern
 

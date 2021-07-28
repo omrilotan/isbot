@@ -10,6 +10,8 @@ ADMantX:
   - ADmantX Platform Semantic Analyzer - ADmantX Inc. - www.admantx.com - support@admantx.com
 aHrefs Bot:
   - "Mozilla/5.0 (compatible; AhrefsBot/5.0; +http://ahrefs.com/robot/) AppEngine-Google; (+http://code.google.com/appengine; appid: s~proxyfile1-hrd)"
+Akregator:
+  - Akregator/1.2.9; librss/remnants
 AlertSite Monitoring:
   - Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0 DejaClick/2.9.7.2
 Alexa:
@@ -30,6 +32,8 @@ ApacheBench:
   - ApacheBench/2.3
 Apple:
   - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Safari/605.1.15 (Applebot/0.1; +http://www.apple.com/go/applebot)
+Apple PubSub:
+  - Apple-PubSub/65.28
 Applebot:
   - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/600.2.5 (KHTML, like Gecko) Version/8.0.2 Safari/600.2.5 (Applebot/0.1)
 Application Health Service:
@@ -81,6 +85,8 @@ BrandVerity:
   - Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:41.0) Gecko/20100101 Firefox/55.0 BrandVerity/1.0 (http://www.brandverity.com/why-is-brandverity-visiting-me)
 Braze:
   - Braze Sender f3c381e4920fede7f46d83610f0abf15fdc10433
+Breaker:
+  - Breaker/v315 (subscribers=9999; feed-id=123456; url=https://www.breaker.audio/url-slug-to-podcast)
 Browsershots:
   - Browsershots
 BUbiNG:
@@ -156,6 +162,8 @@ Dotcom Monitor:
   - Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0) DMBrowser/2.1 (UV)
   - Mozilla/5.0 (Linux; U; Android 2.2; en-us; SCH-I800 Build/FROYO) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1 DMBrowser-BV
   - Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36 DMBrowser/2.1 (BV; LV)
+Downcast:
+  - Downcast/2.9.11 (iPhone; iOS 9.2; Scale/2.00)
 DuckDuckGo:
   - DDG-Android-3.1.0
   - ddg_android/5.90.0 (com.duckduckgo.mobile.android; Android API 28)
@@ -199,6 +207,10 @@ Feedbin:
   - Feedbin - 9 subscribers
 FeedBurner:
   - FeedBurner/1.0 (http://www.FeedBurner.com)
+FeedDemon:
+  - FeedDemon/4.5 (http://www.feeddemon.com/; Microsoft Windows XP)
+Feeddler RSS Reader:
+  - FeeddlerRSS 2.4 (iPad; iPhone OS 5.1.1; en_US)
 Feedly:
   - MetaFeedly/1.0 (http://www.feedly.com)
 Feedspot:
@@ -320,6 +332,8 @@ IP-Guide Crawler:
   - IP-Guide.com Crawler/1.0 (https://ip-guide.com)
 IPS Agent:
   - Mozilla/5.0 (compatible; ips-agent)
+JetBrains Omea Reader:
+  - JetBrains Omea Reader 2.2 (http://www.jetbrains.com/omea/reader/)
 Jorgee Vulnerability Scanner:
   - Mozilla/5.0 Jorgee
 Kaspersky:
@@ -337,6 +351,8 @@ LCC:
   - LCC (+http://corpora.informatik.uni-leipzig.de/crawler_faq.html)
 Let's Encrypt Validation:
   - Mozilla/5.0 (compatible; Let's Encrypt validation server; +https://www.letsencrypt.org)
+Liferea:
+  - Liferea/1.10.6 (Linux; en_US.UTF8; http://liferea.sf.net/) AppleWebKit (KHTML, like Gecko)
 Lighthouse:
   - Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5 Build/MRA58N) AppleWebKit/537.36(KHTML, like Gecko) Chrome/61.0.3116.0 Mobile Safari/537.36 Chrome-Lighthouse
 Linespider:
@@ -402,10 +418,17 @@ Netcraft Survey Bot:
   - Netcraft SSL Server Survey - contact info@netcraft.com
 NetLyzer FastProbe:
   - NetLyzer FastProbe
+NetNewsWire:
+  - NetNewsWire/4.0.0 (Mac OS X; http://netnewswireapp.com/mac/; gzip-happy)
 Netvibes:
   - "Netvibes (http://www.netvibes.com/; 8 subscribers; feedID: 2244192)"
+Newsbeuter:
+  - newsbeuter/2.4 (Linux 3.2.0-23-generic; i686; http://www.newsbeuter.org/) libcurl/7.22.0 GnuTLS/2.12.14 zlib/1.2.3.4 libidn/1.23 librtmp/2.3
 NewsBlur:
   - NewsBlur Page Fetcher - 7 subscribers - http://www.newsblur.com/site/3966817/analytics-piwik (Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_1) AppleWebKit/534.48.3 (KHTML, like Gecko) Version/5.1 Safari/534.48.3)
+  - NewsBlur/4.0.1 CFNetwork/672.1.13 Darwin/14.0.0
+NewsBlur Mobile App:
+  - NewsBlur iPad App v3.6
 NewsGator:
   - NewsGatorOnline/2.0 (http://www.newsgator.com; 2 subscribers)
 Ngios Monitor:
@@ -469,8 +492,12 @@ Prometheus:
   - prometheus/2.18.1
 proximic:
   - Mozilla/5.0 (compatible; proximic; +http://www.proximic.com/info/spider.php)
+Pulp:
+  - Pulp/1.5.2 (iPad; http://www.acrylicapps.com/pulp/)
 QuerySeekerSpider:
   - QuerySeekerSpider ( http://queryseeker.com/bot.html )
+QuiteRSS:
+  - Mozilla/5.0 (Windows NT 6.1) AppleWebKit/602.1 (KHTML, like Gecko) QuiteRSS/0.18.12 Safari/602.1
 Quora Link Preview:
   - Quora Link Preview/1.0 (http://www.quora.com)
 Qwantify:
@@ -479,10 +506,14 @@ Rainmeter:
   - Rainmeter WebParser plugin
 RamblerMail Image Proxy:
   - RamblerMail/6.0 (incompatible; ImageProxy/6.0)
+ReadKit:
+  - ReadKit/7017 CFNetwork/673.2.1 Darwin/13.1.0 (x86_64) (MacBookPro10%2C1)
 RebelMouse:
   - RebelMouse/0.1 Mozilla/5.0 (compatible; http://rebelmouse.com) Gecko/20100101 Firefox/7.0.1
 Reddit Bot:
   - Mozilla/5.0 (compatible; redditbot/1.0; +http://www.reddit.com/feedback)
+Reeder:
+  - Reeder/3.2 CFNetwork/672.1.12 Darwin/14.0.0
 Rigor Synythetic Monitoring:
   - Mozilla/5.0 (X11; Linux x86_64; Rigor) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36
   - Mozilla/5.0 (X11; Linux x86_64; rv:45.0; Rigor) Gecko/20100101 Firefox/45.0
@@ -490,6 +521,12 @@ Rogerbot:
   - rogerbot/1.0 (http://www.moz.com/dp/rogerbot, rogerbot-crawler@moz.com)
 ROI Hunter:
   - ROI Hunter; https://api-dev.roihunter.com
+RSS Bandit:
+  - RssBandit/1.9.0.1002 (.NET CLR 2.0.50727.7512; WinNT 6.2.9200.0; http://www.rssbandit.org)
+RSS Junkie:
+  - RSS Junkie Daemon
+RSSOwl:
+  - RSSOwl/2.2.1.201312301316 (X11; U; en)
 RSSRadio Bot:
   - RSSRadio (Push Notification Scanner;support@dorada.co.uk)
 RuxitSynthetic:
