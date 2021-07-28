@@ -5,14 +5,36 @@ AAA App User Agent String Examples - Native and Webview based user agent forms f
   - Mozilla/5.0 (iPhone; CPU iPhone OS 12_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 WebViewApp ExampleApp/1 iPhone11,8
   - Mozilla/5.0 (Linux; Android 9; Pixel Build/PQ3A.190801.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.73 Mobile Safari/537.36 WebViewApp ExampleApp/1
   - Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; Microsoft; Lumia 535 Dual SIM) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.0.0 Mobile Safari/537.36 Edge/13.0 WebViewApp ExampleApp/1
+ABrowse:
+  - Mozilla/5.0 (compatible; U; ABrowse 0.6; Syllable) AppleWebKit/420+ (KHTML, like Gecko)
 Amazon 4K Fire TV:
   - Mozilla/5.0 (Linux; Android 5.1; AFTS Build/LMY47O) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/41.99900.2250.0242 Safari/537.36
+Amiga:
+  - Amiga-AWeb/3.4.167SE
+  - AmigaVoyager/3.4.4 (MorphOS/PPC native)
+  - IBrowse/2.4demo (AmigaOS 3.9; 68K)
+  - Mozilla/5.0 (Amiga; PowerPC AmigaOS 4.1; Odyssey Web Browser; rv:1.23) AppleWebKit/538.1 (KHTML, like Gecko) OWB/1.23 Safari/538.1
+  - Mozilla/5.0 (AmigaOs; 4.0; en-US; rv:1.8.1.21pre)  AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.666.4147.105 Safari/537.36
+  - Mozilla/5.0 (compatible; IBrowse 2.5.3; AmigaOS 3.1.2)
+  - Mozilla/5.0 (PowerPC AmigaOS 4.1; Odyssey Web Browser; rv:1.23) AppleWebKit/538.1 (KHTML, like Gecko) OWB/1.23 Safari/538.1
+  - Mozilla/6.0 (compatible; Amiga-AWeb)
+  - Mozilla/6.0 (compatible; MSIE 7.01; Amiga-AWeb)
+  - Mozilla/6.0 (Macintosh; U; Amiga-AWeb) Safari 2.9
+  - Voyager3/AmigaoS3.1
+Amiga Aweb:
+  - Mozilla/6.0 (Macintosh; U; Amiga-AWeb) Safari 3.1
+Amiga Voyager:
+  - AmigaVoyager/3.2 (AmigaOS/MC680x0)
+Amigo:
+  - Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.74 Safari/537.36 MRCHROME
 Android:
   - Dalvik/2.1.0 (Linux; U; Android 5.1.1; AFTT Build/LVY48F) CTV
   - Dalvik/2.1.0 (Linux; U; Android 9; Portal Build/PKQ1.191225.001)
   - Dalvik/2.1.0 (Linux; U; Android 9; SM-G965U Build/PPR1.180610.011)
   - Mozilla/5.0 (Linux; U; Android 2.1-update1; de-de; HTC Desire 1.19.161.5 Build/ERE27) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17(Linux LLC 1.2)
   - Mozilla/5.0 (Linux; U; Android 2.2) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1
+Android Browser:
+  - Mozilla/5.0 (Linux; U; Android 4.04; pt-pt; H135 Build/MocorDroid2.3.5) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1
 Android WebView:
   - Mozilla/5.0 (Linux; Android 10; SM-G973F Build/QQ3A.200805.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/85.0.4183.101 Mobile Safari/537.36 trill_2021806060 JsSdk/1.0 NetType/WIFI Channel/googleplay AppName/musical_ly app_version/18.6.6 ByteLocale/fr ByteFullLocale/fr Region/FR
   - Mozilla/5.0 (Linux; Android 8.1.0; BQ-5516L Build/O11019; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.117 Mobile Safari/537.36 trill_2021509030 JsSdk/1.0 NetType/WIFI Channel/googleplay AppName/musical_ly app_version/15.9.3 ByteLocale/ru-RU ByteFullLocale/ru-RU Region/RU AppSkin/white
@@ -24,6 +46,7 @@ Apple TV:
   - AppleTV5,3/9.1.1
   - AppleTV6,2/11.1
 Arora:
+  - "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US) AppleWebKit/532.1 (KHTML, like Gecko) Arora/0.10.1 (Git: 1329 e5385f3) Safari/532.1"
   - Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-US) AppleWebKit/533.3 (KHTML, like Gecko) Arora/0.11.0 Safari/533.3
   - Mozilla/5.0 (Windows; U; ; en-NZ) AppleWebKit/527 (KHTML, like Gecko, Safari/419.3) Arora/0.8.0
   - "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/527+ (KHTML, like Gecko, Safari/419.3) Arora/0.6 (Change: )"
@@ -35,11 +58,17 @@ Avant:
   - Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Avant Browser; Avant Browser; InfoPath.2)
   - Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/4.0; Avant Browser; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2; .NET4.0C; Tablet PC 2.0; .NET4.0E; Avant Browser)
   - Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; Avant Browser; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/2; MAEM; .NET4.0C; .NET4.0E; EIE10;ENUSWOL)
+Avant Browser:
+  - Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; Avant Browser; InfoPath.1)
 Baidu Box App:
   - Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_1 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Mobile/14A403 baiduboxapp/11.0.0.12 (Baidu; P2 10.0.1)
   - Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 SP-engine/2.16.0 main/1.0 baiduboxapp/11.20.0.17 (Baidu; P2 13.3.1) NABar/1.0
   - Mozilla/5.0 (Linux; Android 5.1.1; vivo X7 Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.116 Mobile Safari/537.36 baiduboxapp/8.6.5 (Baidu; P1 5.1.1)
   - Mozilla/5.0 (Linux; U; Android 4.1.2; zh-cn; HUAWEI MT1-U06 Build/HuaweiMT1-U06) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 baiduboxapp/042_2.7.3_diordna_8021_027/IEWAUH_61_2.1.4_60U-1TM+IEWAUH/7300001a/|544176010472968/1
+Baidu Spark:
+  - Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; BIDUBrowser 2.6)
+Beonex:
+  - Mozilla/5.0 (Windows; U; Win9x; en; Stable) Gecko/20020911 Beonex/0.8.1-stable
 Bing Search App:
   - Mozilla/5.0 (iPhone; CPU iPhone OS 12_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/605.1.15 BingWeb/6.37.2.0
   - Mozilla/5.0 (Linux; Android 8.0.0; SM-G960U Build/R16NW; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.110 Mobile Safari/537.36 BingWeb/9.4.26267402
@@ -51,10 +80,19 @@ Blackberry Browser:
 Brave:
   - Mozilla/5.0 (Linux; Android 8.0.0; SM-G935F Build/R16NW) AppleWebKit/537.36 (KHTML, like Gecko) Brave Chrome/69.0.3497.100 Mobile Safari/537.36
   - Mozilla/5.0 (Linux; Android 9; Nokia 7 plus) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Mobile Safari/537.36 Brave/74
+  - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) brave/0.7.9 Chrome/47.0.2526.73 Electron/0.36.2 Safari/537.36
   - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) brave/0.8.3 Chrome/49.0.2623.108 Brave/0.37.3 Safari/537.36
   - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Brave Chrome/80.0.3987.132 Safari/537.36
   - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) brave/0.8.3 Chrome/49.0.2623.108 Brave/0.37.3 Safari/537.36
   - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Brave Chrome/76.0.3809.132 Safari/537.36
+Camino:
+  - Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en; rv:1.9.2.28) Gecko/20120308 Camino/2.1.2 (like Firefox/3.6.28)
+Charon:
+  - Mozilla/4.08 (Charon; Inferno)
+Cheetah Browser:
+  - Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.137 Safari/537.36 LBBROWSER
+Cheshire:
+  - Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en) AppleWebKit/418.9 (KHTML, like Gecko, Safari) Safari/419.3 Cheshire/1.0.ALPHA
 Chrome:
   - Mozilla/5.0 (Linux; Android 4.4.2; SM-G7102 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
   - Mozilla/5.0 (Linux; Android 5.1.1; Nexus 5 Build/LMY48B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.65 Mobile Safari/537.36
@@ -62,6 +100,7 @@ Chrome:
   - Mozilla/5.0 (Linux; Android 7.0; BLL-L22 Build/HUAWEIBLL-L22) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36
   - Mozilla/5.0 (Linux; Android 9; ANE-LX1; Tesseract/1.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Mobile Safari/537.36
   - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+  - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
   - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
   - Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.83 Safari/537.1
   - Mozilla/5.0 (X11; CrOS x86_64 11895.118.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.159 Safari/537.36
@@ -69,13 +108,19 @@ Chrome:
   - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36
 Chromecast:
   - Mozilla/5.0 (CrKey armv7l 1.5.16041) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.0 Safari/537.36
+ChromePlus:
+  - Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.13 (KHTML, like Gecko) Chrome/9.0.597.98 Safari/534.13 ChromePlus/1.6.0.0
 Chromium:
   - Mozilla/5.0 (Linux; Ubuntu 14.04 like Android 4.4) AppleWebKit/537.36 Chromium/35.0.1870.2 Mobile Safari/537.36
   - Mozilla/5.0 (SMART-TV; X11; Linux armv7l) AppleWebKit/537.42 (KHTML, like Gecko) Chromium/25.0.1349.2 Chrome/25.0.1349.2 Safari/537.42
   - Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/65.0.3325.181 Chrome/65.0.3325.181 Safari/537.36
   - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.30 (KHTML, like Gecko) Ubuntu/11.04 Chromium/12.0.742.112 Chrome/12.0.742.112 Safari/534.30
+  - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/31.0.1650.63 Chrome/31.0.1650.63 Safari/537.36
+CometBird:
+  - Mozilla/5.0 (Windows NT 6.2; WOW64; rv:11.0) Gecko/20100101 Firefox/11.0 CometBird/11.0
 Comodo Dragon:
   - Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.75 Safari/537.1 Comodo_Dragon/21.0.2.0
+  - Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Comodo_Dragon/17.1.0.0 Chrome/17.0.963.38 Safari/535.11
   - Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.3 (KHTML, like Gecko) Comodo_Dragon/6.0.0.10 Chrome/6.0.472.63 Safari/534.3
   - Mozilla/5.0 (X11; U; Linux x86_64; en-US) AppleWebKit/532.5 (KHTML, like Gecko) Comodo_Dragon/4.1.1.11 Chrome/4.1.249.1042 Safari/532.5
 Comodo IceDragon:
@@ -84,8 +129,11 @@ Comodo IceDragon:
   - Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0 IceDragon/65.0.2
   - Mozilla/5.0 (Windows NT 10.0; WOW64; rv:40.0) Gecko/20100101 IceDragon/40.1.1.18 Firefox/40.0.2
   - Mozilla/5.0 (Windows NT 6.1; rv:26.0) Gecko/20100101 Firefox/26.0 IceDragon/26.0.0.2
+Conkeror:
+  - Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 conkeror/1.0pre
 CoolNovo:
   - Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.2; CoolNovo/2.0.9.20)
+  - Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.110 Safari/537.36 CoolNovo/2.0.9.20
   - Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.110 Safari/537.36 CoolNovo/2.0.9.20
 Cubot:
   - Mozilla/5.0 (Linux; Android 4.2.2; CUBOT C11 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Mobile Safari/537.36 OPR/18.0.1290.66961
@@ -126,9 +174,13 @@ Electron Application:
   - Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) discord/0.0.306 Chrome/78.0.3904.130 Electron/7.1.11 Safari/537.36
   - Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) electron/1.0.0 Chrome/53.0.2785.113 Electron/1.4.3 Safari/537.36
   - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/3.3.2 Chrome/61.0.3163.100 Electron/2.0.18 Safari/537.36
+Elinks:
+  - ELinks/0.12~pre6-1ubuntu1 (textmode; Ubuntu; Linux 3.11.0-13-generic i686; 100x25-2)
 "ESPN: Sports News & Highlights App":
   - ESPN App/6.12.0 Dalvik/2.1.0 (Linux; U; Android 9; SM-G965U Build/PPR1.180610.011)
   - espn app/6.14.0 dalvik/2.1.0 (linux; u; android 5.1.1; kfsuwi build/lvy48f)
+Facebook:
+  - Mozilla/5.0 (Windows NT 10.0.16299.98; osmeta 10.3.3308) AppleWebKit/602.1.1 (KHTML, like Gecko) Version/9.0 Safari/602.1.1 osmeta/10.3.3308 Build/3308 [FBAN/FBW;FBAV/140.0.0.232.179;FBBV/83145113;FBDV/WindowsDevice;FBMD/Predator G9-793;FBSN/Windows;FBSV/10.0.16299.125;FBSS/1;FBCR/;FBID/desktop;FBLC/de_DE;FBOP/45;FBRV/0]
 Facebook App:
   - Mozilla/5.0 (iPhone; CPU iPhone OS 11_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15G77 [FBAN/FBIOS;FBAV/183.0.0.41.81;FBBV/119182652;FBDV/iPhone6,2;FBMD/iPhone;FBSN/iOS;FBSV/11.4.1;FBSS/2;FBCR/VIVO;FBID/phone;FBLC/pt_BR;FBOP/5;FBRV/0]
   - Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPhone11,8;FBMD/iPhone;FBSN/iOS;FBSV/13.3.1;FBSS/2;FBID/phone;FBLC/en_US;FBOP/5;FBCR/]
@@ -137,7 +189,10 @@ Facebook App:
 Fennec:
   - Mozilla/5.0 (Android; Linux armv7l; rv:2.0.1) Gecko/20100101 Firefox/4.0.1 Fennec/2.0.1(Linux LLC 1.2)
   - Mozilla/5.0 (Maemo; Linux armv7l; rv:2.0.1) Gecko/20100101 Firefox/4.0.1 Fennec/2.0.1(Linux LLC 1.2)
+Firebird:
+  - Mozilla/5.0 (Windows; U; Win95; en-US; rv:1.5) Gecko/20031007 Firebird/0.7
 Firefox:
+  - Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:26.0) Gecko/20100101 Firefox/26.0
   - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10; rv:33.0) Gecko/20100101 Firefox/33.0
   - Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0
   - Mozilla/5.0 (Windows NT 5.1; rv:7.0.1) Gecko/20100101 Firefox/7.0.1
@@ -160,6 +215,8 @@ Firefox Lite:
   - Mozilla/5.0 (Linux; Android 8.1.0; BKK-LX2 Build/HONORBKK-LX2; rv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Rocket/2.1.2(17721) Chrome/79.0.3945.93 Mobile Safari/537.36
   - Mozilla/5.0 (Linux; Android 9; SM-N935K Build/PPR1.180610.011; rv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Rocket/2.1.10(18757) Chrome/80.0.3987.119 Mobile Safari/537.36
   - Mozilla/5.0 (Linux; U; Android 4.3.1; en-us; SAMSUNG-SGH-I727 Build/JLS36I) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 CyanogenMod/10.2.0/skyrocket
+Fireweb Navigator:
+  - Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:2.0) Treco/20110515 Fireweb Navigator/2.4
 Flipboard:
   - Mozilla/5.0 (iPad; CPU OS 12_1_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16C50 Flipboard/4.2.32
   - Mozilla/5.0 (Linux; Android 4.4.2; SM-G7102 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36 Flipboard/2.2.9/2199,2.2.9.2199,Ù¢Ù Ù¡Ù¤-Ù Ù¤-Ù Ù§ Ù¡Ù§:Ù¢Ù§, +Ù Ù¢Ù Ù
@@ -171,6 +228,13 @@ Flock:
   - Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8b5) Gecko/20051102 Flock/0.4 Firefox/1.0+
   - Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.0.12; photobucket) Gecko/20070531 Firefox/1.5.0.12 Flock/0.7.14
   - Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.0.19) Gecko/2010062819 Firefox/3.0.19 Flock/2.6.1
+  - Mozilla/5.0 (Windows; U; Windows NT 6.1; pl; rv:1.9.0.16) Gecko/2010021013 Firefox/3.0.16 Flock/2.5.6
+Fluid:
+  - Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_6; en-us) AppleWebKit/528.16 (KHTML, like Gecko) Fluid/0.9.6 Safari/528.16
+Galeon:
+  - Mozilla/5.0 (X11; U; FreeBSD i386; en-US; rv:1.7.12) Gecko/20051105 Galeon/1.3.21
+GNOME Web:
+  - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.26+ (KHTML, like Gecko) Version/5.0 Safari/534.26+ Ubuntu/10.10 (2.30.6-1ubuntu5) Epiphany/2.30.6
 Google Nexus Player:
   - Dalvik/2.1.0 (Linux; U; Android 6.0.1; Nexus Player Build/MMB29T)
 Google Search App:
@@ -182,7 +246,16 @@ Hulu:
   - hulu/3.65.0.308030 (android 9; en_us; sm-g965u; build/ppr1.180610.011;)
   - hulu/50000130 cfnetwork/976 darwin/18.2.0
   - Hulu/6.8.1 (iOS 13.3; en_US; iPhone12,1; 17C54)
+IBrowse:
+  - Mozilla/5.0 (compatible; IBrowse 3.0; AmigaOS4.0)
+iCab:
+  - Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_5_8; en-us) AppleWebKit/533.19.4 (KHTML, like Gecko) iCab/4.8 Safari/533.16
+IceCat:
+  - Mozilla/5.0 (X11; U; Linux sparc64; es-PY; rv:5.0) Gecko/20100101 IceCat/5.0 (like Firefox/5.0; Debian-6.0.1)
+IceDragon:
+  - Mozilla/5.0 (Windows NT 6.2; WOW64; rv:25.0) Gecko/20100101 Firefox/25.0 IceDragon/25.0.0.1
 Iceweasel:
+  - Mozilla/5.0 (X11; Linux x86_64; rv:17.0) Gecko/20131030 Firefox/17.0 Iceweasel/17.0.10
   - Mozilla/5.0 (X11; Linux x86_64; rv:38.0) Gecko/20100101 Firefox/38.0 Iceweasel/38.4.0
   - Mozilla/5.0 (X11; U; Linux i686; fr; rv:1.9.0.11) Gecko/2009061212 Iceweasel/3.0.6 (Debian-3.0.6-1)
 Instagram:
@@ -199,6 +272,7 @@ Internet Explorer:
   - Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)
   - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; KTXN)
   - Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; Touch; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; Tablet PC 2.0; wbx 1.0.0; rv:11.0) like Gecko
+  - Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; TNJB; rv:11.0) like Gecko
   - Mozilla/5.0 CK={} (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko
 Internet Explorer Mobile:
   - Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)
@@ -209,6 +283,14 @@ Internet Explorer Mobile:
   - Mozilla/5.0 (Mobile; Windows Phone 8.1; Android 4.0; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; NOKIA; Lumia 635) like iPhone OS 7_0_3 Mac OS X AppleWebKit/537 (KHTML, like Gecko) Mobile Safari/537
 Internet TV:
   - Opera/9.80 (Linux mips; U; InettvBrowser/2.2 (00014A;SonyDTV115;0002;0100) KDL40EX520; CC/XLA; en) Presto/2.7.61 Version/11.00
+Iron:
+  - Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Iron/26.0.1450.0 Chrome/26.0.1450.0 Safari/537.36
+K-meleon:
+  - Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.24pre) Gecko/20100228 K-Meleon/1.5.4
+Kapiko:
+  - Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9) Gecko/20080705 Firefox/3.0 Kapiko/3.0
+Kazehakase:
+  - Mozilla/5.0 (X11; U; FreeBSD i386; en-US; rv:1.8.1.18) Gecko/20081206 Firefox/2.0.0.18 Kazehakase/0.5.4
 Kindle:
   - Dalvik/2.1.0 (Linux; U; Android 5.1.1; KFSUWI Build/LVY48F)
   - Mozilla/5.0 (Linux; U; Android 2.3.4; en-us; Kindle Fire Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533
@@ -216,11 +298,15 @@ Kindle:
   - Mozilla/5.0 (X11; U; Linux armv7l like Android; en-us) AppleWebKit/531.2+ (KHTML, like Gecko) Version/5.0 Safari/533.2+ Kindle/3.0+
 Konqueror:
   - Mozilla/5.0 (compatible; Konqueror/3.2; Linux) (KHTML, like Gecko)
+  - Mozilla/5.0 (compatible; Konqueror/3.4; CYGWIN_NT-5.1) KHTML/3.4.89 (like Gecko)
   - Mozilla/5.0 (compatible; Konqueror/4.4; Linux) KHTML/4.4.5 (like Gecko) Kubuntu
   - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.21 (KHTML, like Gecko) konqueror/4.14.16 Safari/537.21
+Links:
+  - Links (2.1pre23; Linux 3.5.0 i686; 237x63)
 Lunascape:
   - Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; .NET CLR 1.1.4322; Lunascape 1.2)
   - Mozilla/5.0 (iPhone; CPU iPhone OS 12_1_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16D5039a Safari/605.1 iLunascape/4310
+  - Mozilla/5.0 (Windows; N; Windows NT 5.2; ru-RU) AppleWebKit/529 (KHTML, like Gecko, Safari/529.0) Lunascape/4.9.9.94
   - Mozilla/5.0 (Windows; U; Windows NT 6.0; ja; rv:1.9.1.15) Gecko/20101029 Firefox/3.5.15 Lunascape/6.3.4.23051 ( .NET CLR 3.5.30729)
 Lynx:
   - Lynx/2.8.5rel.1 libwww-FM/2.15FC SSL-MM/1.4.1c OpenSSL/0.9.7e-dev
@@ -230,10 +316,17 @@ Lynx:
 Maxthon:
   - Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; FunWebProducts-MyWay; Maxthon; .NET CLR 1.1.4322)
   - Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; Maxthon)
+  - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.22 (KHTML, like Gecko) Maxthon/4.1.2.2000 Chrome/25.0.1364.99 Safari/537.22
   - Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/4.4.8.1000 Chrome/30.0.1599.101 Safari/537.36
 Mercury:
   - Mozilla/5.0 (iPad; CPU OS 7_0_4 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Mercury/8.9.4 Mobile/11B554a Safari/9537.53
   - Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; IE8Mercury; rv:11.0) like Gecko
+MicroB:
+  - Mozilla/5.0 (X11; U; Linux armv7l; en-GB; rv:1.9.2a1pre) Gecko/20090514 Firefox/3.0 Tablet browser 0.9.7 RX-34
+Microsoft Outlook:
+  - Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; MAGW; .NET4.0C; .NET4.0E; Microsoft Outlook 14.0.7113; ms-office; MSOffice 14)
+Midori:
+  - Mozilla/5.0 (Macintosh; U; Intel Mac OS X; de-de) AppleWebKit/535+ (KHTML, like Gecko) Version/5.0 Safari/535.22+ Midori/0.4
 Minefield:
   - Mozilla/5.0 (Windows NT 6.1; WOW64; rv:2.0b4pre) Gecko/20100815 Minefield/4.0b4pre(Linux LLC 1.2)
 Minix NEO X5:
@@ -248,8 +341,14 @@ Motorola Internet:
   - MOT-VE240/00.72 UP.Browser/7.2.7.5.548 (GUI) MMP/2.0 Novarra-Vision/8.0
 Mozilla Android Components:
   - MozacFetch/49.0.20200702190156
+NCSA Mosaic:
+  - NCSA_Mosaic/2.7b5 (X11;Linux 2.6.7 i686) libwww/2.12 modified
 NetFront:
   - SonyEricssonW810i/R46EA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Link/6.3.0.0.0(Linux LLC 1.2)
+NetPositive:
+  - Mozilla/3.0 (compatible; NetPositive/2.2.1; BeOS)
+Netscape:
+  - Mozilla/5.0 (X11; U; Linux 2.4.2-2 i586; en-US; m18) Gecko/20010131 Netscape6/6.01
 Netscape Navigator:
   - Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.7.12) Gecko/20050915
   - Mozilla/5.0 (Windows; U; Win 9x 4.90; SG; rv:1.9.2.4) Gecko/20101104 Netscape/9.1.0285
@@ -269,9 +368,13 @@ Nook:
   - Mozilla/5.0 (Linux; Android 4.4.2; BN NookHD+ Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36
   - Mozilla/5.0 (Linux; U; Android 2.3.4; en-us; NOOK BNTV250 Build/GINGERBREAD 1.4.3) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Safari/533.1
   - Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; BN NookHD+ Build/JDQ39E) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30 CyanogenMod/10.1.3/ovation
+Odyssey Web Browser:
+  - Mozilla/5.0 (Macintosh; PowerPC MorphOS 3.7; Odyssey Web Browser; rv:1.23) AppleWebKit/538.1 (KHTML, like Gecko) OWB/1.23 Safari/538.1
 Office:
   - Microsoft Office/16.0 (Windows NT 10.0; MAPI 16.0.8431; Pro)
   - Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; MSOffice 12)
+OmniWeb:
+  - Mozilla/5.0 (Macintosh; Intel  Mac OS X 10_9_1; en-US) AppleWebKit/9537.73.11 (KHTML, like Gecko) Version/7.0 Safari/537.71 OmniWeb/v624.0
 OneBrowser:
   - OneBrowser/4.2.0/Adr(Linux; U; Android 4.2.1; en-us; HUAWEI G610-U00 Build/HuaweiG610-U00) AppleWebKit/533.1 (KHTML, like Gecko) Mobile Safari/533.1
   - OneBrowser/for Blackberry3.0.0 (BlackBerry9320/7.1.0.398)
@@ -283,12 +386,17 @@ Opera:
   - Opera/9.25 (Windows NT 6.0; U; en)(Linux LLC 1.2)
   - Opera/9.80 (Linux armv7l) Presto/2.12.407 Version/12.51 , D50u-D1-UHD/V1.5.16-UHD (Vizio, D50u-D1, Wireless)
   - Opera/9.80 (Macintosh; Intel Mac OS X 10.6.8; U; de) Presto/2.9.168 Version/11.52
+  - Opera/9.80 (Windows NT 5.1; U; de) Presto/2.2.15 Version/10.10
   - Opera/9.80 (Windows NT 6.1; WOW64) Presto/2.12.388 Version/12.18
 Opera Mini:
   - Mozilla/5.0 (iPhone; CPU iPhone OS 8_1_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) OPiOS/9.1.0.86723 Mobile/12B440 Safari/9537.53
   - Opera/8.01 (J2ME/MIDP; Opera Mini/3.1.10423/1724; en; U; ssr)
   - Opera/9.80 (Android; Opera Mini/12.0.1987/37.7327; U; pl) Presto/2.12.423 Version/12.16
   - Opera/9.80 (BlackBerry; Opera Mini/6.5.27548/27.2020; U; en) Presto/2.8.119 Version/11.10
+Opera Neon:
+  - Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.21 Safari/537.36 MMS/1.0.2459.0
+Opera Next:
+  - Mozilla/5.0 (Macintosh; Intel Mac OS X 1091) AppleWebKit/537.36 (KHTML like Gecko) Chrome/33.0.1750.91 Safari/537.36 OPR/20.0.1387.37 (Edition Next)
 Opera Touch:
   - Mozilla/5.0 (iPad; CPU OS 12_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) OPT/1.11.0 Mobile/15E148
   - Mozilla/5.0 (iPhone; CPU iPhone OS 12_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) OPT/5 Mobile/16B92
@@ -297,6 +405,8 @@ Opera Touch:
 Orca:
   - Mozilla/5.0 (Linux; Android 6.0; CAM-UL00 Build/HONORCAM-UL00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.85 Mobile Safari/537.36
   - Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1.6) Gecko/20091222 Firefox/3.5.6 Orca/1.2 build 6
+Ordissimo:
+  - Mozilla/5.0 (X11; Linux i686; rv:45.0) Gecko/20100101 Firefox/45.0 Ordissimo/3.8.6.6+svn37147
 Outlook:
   - Microsoft Office/14.0 (Windows NT 6.1; Microsoft Outlook 14.0.7143; Pro)
   - Mozilla/4.0 (compatible; ms-office; MSOffice 16)
@@ -310,9 +420,12 @@ Ovi:
   - Mozilla/5.0 (Series40; Nokia200/11.64; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/2.0.2.68.14
   - Mozilla/5.0 (Series40; NokiaX2-01/08.65; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.9.17.2
 Pale Moon:
+  - Mozilla/5.0 (Windows NT 5.1; rv:52.9) Gecko/20100101 Goanna/3.4 Firefox/52.9 PaleMoon/27.9.1a1
   - Mozilla/5.0 (Windows NT 6.0; rv:12.0) Gecko/20120424 Firefox/12.0 PaleMoon/12.0
   - Mozilla/5.0 (Windows NT 6.2; Win64; x64; rv:24.0) Gecko/20140419 Firefox/24.0 PaleMoon/24.5.0
   - Mozilla/5.0 (X11; Linux i686; rv:45.9) Gecko/20100101 Goanna/3.0 Firefox/45.9 PaleMoon/27.1.2
+Phoenix:
+  - Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.2b) Gecko/20021029 Phoenix/0.4
 Pinterest App:
   - Mozilla/5.0 (iPad; CPU OS 6_1_3 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Mobile/10B329 [Pinterest/iOS]
   - Mozilla/5.0 (Linux; Android 5.1.1; KFDOWI Build/LVY48F; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.110 Safari/537.36 [Pinterest/Android]
@@ -325,6 +438,8 @@ PlayStation 4:
   - PS4Application libhttp/1.000 (PS4) CoreMedia libhttp/6.72 (PlayStation 4)
 Playstation Vita:
   - Mozilla/5.0 (PlayStation Vita 3.61) AppleWebKit/537.73 (KHTML, like Gecko) Silk/3.2
+Postbox:
+  - Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.1.8) Gecko/20100317 Postbox/1.1.3
 PowerPoint:
   - Microsoft Office PowerPoint 2013
   - Microsoft Office/16.0 (Windows NT 10.0; Microsoft PowerPoint 16.0.10325; Pro)
@@ -338,6 +453,12 @@ QQ:
   - Mozilla/5.0 (Linux; U; Android 6.0; zh-cn; FRD-AL00 Build/HUAWEIFRD-AL00) AppleWebKit/537.36 (KHTML, like Gecko)Version/4.0 Chrome/37.0.0.0 MQQBrowser/6.0 Mobile Safari/537.36
   - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.134 Safari/537.36 QQBrowser/3.8.3858.400
   - Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2727.400
+QQ Browser:
+  - Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.48 Safari/537.36 QQBrowser/8.0.3197.400
+QtWebEngine:
+  - Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.5.1 Chrome/40.0.2214.115 Safari/537.36
+QuickTime:
+  - QuickTime/7.6.6 (qtver=7.6.6;cpu=IA32;os=Mac 10.6.8)
 RadiosNet (radios.com.br):
   - RadiosNet/2.1.1 (Java; Android)
   - RadiosNet/2.2.3 (Java; Android)
@@ -349,8 +470,12 @@ RadiosNet (radios.com.br):
   - RadiosNet/2.6.0 (Java; Android)
   - RadiosNet/2.6.1 (Java; Android)
   - RadiosNet/2.6.2 (Java; Android)
+Rekonq:
+  - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.21 (KHTML, like Gecko) rekonq/2.3.2 Safari/537.21
 Revolt (github.com/aperezdc/revolt):
   - revolt
+RockMelt:
+  - Mozilla/5.0 (Windows NT 6.1) AppleWebKit/535.7 (KHTML, like Gecko) RockMelt/0.16.91.483 Chrome/16.0.912.77 Safari/535.7
 Roku Ultra:
   - Roku4640X/DVP-7.70 (297.70E04154A)
 Safari:
@@ -361,19 +486,25 @@ Safari:
   - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1.1 Safari/605.1.15
   - Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_8; en-us) AppleWebKit/531.9 (KHTML, like Gecko) Version/4.0.3 Safari/531.9
   - Mozilla/5.0 (Windows NT 5.1) AppleWebKit/534.27+ (KHTML, like Gecko) Version/5.0.4 Safari/533.20.27
+Sailfish Browser:
+  - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36 SailfishBrowser/Rulz ~LenovoG780
 Samsung:
   - Mozilla/5.0 (Linux; Android 5.0; SAMSUNG SM-G900F Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.1 Chrome/34.0.1847.76 Mobile Safari/537.36
   - Mozilla/5.0 (Linux; Android 7.0; SAMSUNG SM-G610M Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/7.4 Chrome/59.0.3071.125 Mobile Safari/537.36
   - Mozilla/5.0 (Linux; Android 9; SAMSUNG SM-G960U) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/10.2 Chrome/71.0.3578.99 Mobile Safari/537.36
 SeaMonkey:
   - Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:36.0) Gecko/20100101 Firefox/36.0 SeaMonkey/2.33.1
+  - Mozilla/5.0 (Windows NT 6.2; WOW64; rv:20.0) Gecko/20100101 Firefox/20.0 SeaMonkey/2.17.1
   - Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.23) Gecko/20090825 SeaMonkey/1.1.18
   - Mozilla/5.0 (X11; Linux x86_64; rv:29.0) Gecko/20100101 Firefox/29.0 SeaMonkey/2.26
+Seznam Browser:
+  - Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36 SznProhlizec/3.0.0
 Silk:
   - Mozilla/5.0 (Linux; Android 5.1.1; KFFOWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Silk/60.2.12 like Chrome/60.0.3112.107 Safari/537.36
   - Mozilla/5.0 (Linux; Android 5.1.1; KFSUWI) AppleWebKit/537.36 (KHTML, like Gecko) Silk/80.5.3 like Chrome/80.0.3987.162 Safari/537.36
   - Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_3; en-us; Silk/1.0.146.3-Gen4_12000410) AppleWebKit/533.16 (KHTML, like Gecko) Version/5.0 Safari/533.16 Silk-Accelerated=true
 Sleipnir:
+  - Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0; Sleipnir/2.9.18)
   - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.59.10 (KHTML, like Gecko) Version/5.1 Safari/6534.59.10 Sleipnir/4.5.1
   - Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36 Sleipnir/6.2.14
 SlimBrowser:
@@ -387,10 +518,13 @@ Snapchat:
   - Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.1 Mobile/15E148 Snapchat/11.36.0.36 (like Safari/604.1)
   - Mozilla/5.0 (Linux; Android 10; SM-G973U Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/79.0.3945.136 Mobile Safari/537.36Snapchat10.74.6.0 (SM-G973U; Android 10#G973USQS2CSL1#29; gzip)
   - Mozilla/5.0 (Linux; Android 8.1.0; LG-Q710AL Build/O11019; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/73.0.3683.90 Mobile Safari/537.36Snapchat10.54.0.31 (LG-Q710AL; Android 8.1.0#1916317118700#27; gzip)
+Snowshoe:
+  - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.21 (KHTML, like Gecko) Snowshoe/1.0.0 Safari/537.21
 Sogou Explorer:
   - Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; SE 2.X MetaSr 1.0; SE 2.X MetaSr 1.0; .NET CLR 2.0.50727; SE 2.X MetaSr 1.0)
   - Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 SE 2.X MetaSr 1.0
   - Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0; SE 2.X MetaSr 1.0) like Gecko
+  - Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36 SE 2.X MetaSr 1.0
 Songbird:
   - Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.7; en-US; rv:1.9.2.3) Gecko/20101201 Songbird/2.2.0 (20130204083602)
   - Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8) Gecko/20060206 Songbird/0.1
@@ -413,6 +547,10 @@ SRWare Iron:
   - Mozilla/5.0 (Windows NT 6.1) AppleWebKit/534.24 (KHTML, like Gecko) Iron/11.0.700.1 Chrome/11.0.700.1 Safari/534.24
   - Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2300.0 Iron/43.0.2300.0 Safari/537.36
   - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2950.0 Iron Safari/537.36
+Sunrise:
+  - Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en) AppleWebKit/418.9.1 (KHTML, like Gecko) Sunrise/1.6.5 like Safari/419.3
+Swiftfox:
+  - Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1) Gecko/20061024 Firefox/2.0 (Swiftfox)
 Tesla:
   - Mozilla/5.0 (Linux; Android 7.0; Tesla_SP6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.143 Mobile Safari/537.36
   - Mozilla/5.0 (X11; GNU/Linux) AppleWebKit/537.36 (KHTML, like Gecko) Chromium/79.0.3945.130 Chrome/79.0.3945.130 Safari/537.36 Tesla/2020.12.1-299292ad7782
@@ -425,6 +563,7 @@ TheWorld:
 Thunderbird:
   - Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:60.0) Gecko/20100101 Thunderbird/60.6.1 Lightning/6.2.6.1
   - Mozilla/5.0 (Windows NT 10.0; WOW64; rv:60.0) Gecko/20100101 Thunderbird/60.7.0 Lightning/6.2.7
+  - Mozilla/5.0 (X11; Linux i686; rv:17.0) Gecko/20130330 Thunderbird/17.0.5
   - Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Thunderbird/45.8.0
 Tor Browser:
   - Mozilla/5.0 (Android 9; Mobile; rv:78.0) Gecko/78.0 Firefox/78.0
@@ -447,6 +586,8 @@ UC:
   - UCWEB/2.0 (Java; U; MIDP-2.0; ru; NokiaE71-1Opera/9.80 (J2ME/MIDP; Opera Mini/8.0.35626/19.886; U; ru) UCBrowser/9.5.0.449 U2/1.0.0 Mobile UNTRUSTED/1.0
   - UCWEB/2.0 (Symbian; U; S60 V5; en-US; Nokia5250) U2/1.0.0 UCBrowser/8.9.0.277 U2/1.0.0 Mobile
   - UNTRUSTED/1.0 UCWEB/2.0 (Java; U; MIDP-2.0; ru; MotorolaVE66) U2/1.0.0 UCBrowser/9.4.1.377 U2/1.0.0 Mobile
+undefined:
+  - Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.452) Gecko/20041027 Mnenhy/0.6.0.104
 Viber:
   - Mozilla/5.0 (Linux; Android 7.1.2; G011A Build/N2G48H; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.158 Safari/537.36 Viber/11.9.5.8
   - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.6.0 Chrome/45.0.2454.101 Safari/537.36 Viber
@@ -472,6 +613,8 @@ Webkit:
   - Mozilla/5.0 (iPhone; CPU iPhone OS 12_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [LinkedInApp]
   - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/605.1.15 (KHTML, like Gecko)
   - Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/533+ (KHTML, like Gecko)
+WebPositive:
+  - Mozilla/5.0 (compatible; U; Webpositive/533.4; Haiku) AppleWebkit/533.4 (KHTML, like gecko) Chrome/5.0.375.55 Safari/533.4
 WebView:
   - Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; ARM; Trident/6.0; Touch; WebView/1.0)
   - Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Win64; x64; Trident/6.0; MASMJS; WebView/1.0)
@@ -485,6 +628,8 @@ WeChat:
   - Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) Mobile/14G60 wxwork/2.1.5 MicroMessenger/6.3.22
   - Mozilla/5.0 (Linux; Android 7.0; FRD-AL00 Build/HUAWEIFRD-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.49 Mobile MQQBrowser/6.2 TBS/043602 Safari/537.36 MicroMessenger/6.5.16.1120 NetType/WIFI Language/zh_CN
   - Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 MicroMessenger/6.5.2.501 NetType/WIFI WindowsWechat QBCore/3.43.691.400 QQBrowser/9.0.2524.400
+Whale Browser:
+  - Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Whale/0.7.33.5 Safari/537.36
 Windmaker (stewd.io/w/windmaker):
   - Stewdio Windmaker 2.2
 Xumo Media Player:
@@ -499,6 +644,8 @@ Yandex:
   - Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 YaBrowser/17.7.1.791 Yowser/2.5 Safari/537.36
   - Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 YaBrowser/17.6.1.749 Yowser/2.5 Safari/537.36
   - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 YaBrowser/17.3.1.873 (beta) Yowser/2.5 Safari/537.36
+Yandex Browser:
+  - Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 YaBrowser/13.10.1500.9323 Safari/537.36
 ZZZ Glitches and Misidentified Browsers - These browsers are legit user agent even though they are included in some bot listings (not all bots identify themselves):
   - asafaweb.com
   - l9tcpid/v1.0.0
@@ -506,7 +653,7 @@ ZZZ Glitches and Misidentified Browsers - These browsers are legit user agent ev
   - Mozilla / 5.0 (Linux; Android 7.0; GHIA_ZEUS_3G) AppleWebKit / 537.36 (KHTML, como Gecko) Chrome / 87.0.4280.101 Mobile Safari / 537.36
   - Mozilla/5.0 (en-us) AppleWebKit/525.13 (KHTML, like Gecko) Version/3.1 Safari/525.13
   - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/602.1 (KHTML, like Gecko) splash Version/10.0 Safari/602.1 | text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 | en,*
+  - mWebView.getSettings().setUserAgentString(\x22Mozilla/5.0 (Amiga; U; AmigaOS 1.3; en; rv:1.8.1.19);
   - My User Agent 1.0
   - revolt
-  - Stewdio Windmaker 2.2
   - webcollage.original/1.176
