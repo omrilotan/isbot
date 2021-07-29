@@ -1,7 +1,9 @@
 import { Isbot } from './isbot/index.js'
 
 const createInterface = instance => Object.defineProperties(
-  ua => instance.test(ua),
+  function isbot(ua) {
+    return instance.test(ua)
+  },
   {
     find: { get: () => ua => instance.find(ua) },
     extend: { get: () => list => instance.extend(list) },
