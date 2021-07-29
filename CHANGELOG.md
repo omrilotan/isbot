@@ -1,5 +1,8 @@
 # Changelog
 
+## 3.3.0
+-   Add "spawn" interface
+
 ## 3.2.4
 -   Add some RSS readers detection
 

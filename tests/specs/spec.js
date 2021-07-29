@@ -44,6 +44,7 @@ describe(
         isbot.extend([rule])
         isbot.extend([rule])
         isbot.exclude([rule])
+        console.log(isbot.list)
         assert(!isbot(useragent))
       })
     })
@@ -73,6 +74,33 @@ describe(
 
       it('should return the rule used to identify as bot', () => {
         equal(isbot.find('Mozilla/5.0 (compatible; SemrushBot-SA/0.97; +http://www.semrush.com/bot.html)'), 'Bot')
+      })
+    })
+
+    describe('isbot.spawn', () => {
+      it('should spawn isbot with its own list', () => {
+        const newUA = 'nothing'
+        const botUA = 'Mozilla/5.0 (compatible; SemrushBot-SA/0.97; +http://www.semrush.com/bot.html)'
+        const isbot2 = isbot.spawn([newUA])
+        assert(!isbot(newUA))
+        assert(isbot2(newUA))
+        assert(isbot(botUA))
+        assert(!isbot2(botUA))
+      })
+      it('should not affect each others lists', () => {
+        const newUA = 'nothing'
+        const isbot1 = isbot.spawn()
+        const isbot2 = isbot.spawn()
+        isbot1.extend([newUA])
+        assert(isbot1(newUA))
+        assert(!isbot2(newUA))
+      })
+      it('should spawn from instance\'s list', () => {
+        const newUA = 'nothing'
+        const isbot1 = isbot.spawn()
+        isbot1.extend([newUA])
+        const isbot2 = isbot1.spawn()
+        assert(isbot2(newUA))
       })
     })
   }

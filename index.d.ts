@@ -7,21 +7,28 @@ declare function isbot(ua: any): boolean;
 declare namespace isbot {
   /**
    * Extend the built-in list of bot user agent
-   * @param filters An array of user agents
+   * @param {string[]} filters An array of regular expression patterns
    */
   function extend(filters: string[]): void;
 
   /**
    * Removes a set of user agent from the built-in list
-   * @param filters An array of user agents
+   * @param {string[]} filters An array of regular expression patterns
    */
   function exclude(filters: string[]): void;
 
   /**
    * Return the respective match for bot user agent rule
-   * @param ua A user agent string
+   * @param {string} ua A user agent string
    */
   function find(ua: string): string;
+
+  /**
+   * Create a new isbot function complete with all its interface
+   * @param {string[]} list of strings representing regular expression patterns
+   * @returns isbot function with full interface
+   */
+  function spawn(list?: string[]): isbot;
 }
 
 export = isbot;

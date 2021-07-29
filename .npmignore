@@ -6,6 +6,7 @@ scripts/*
 page/*
 docs/*
 
+babel.config.json
 tsconfig.json
 
 fixtures/*
