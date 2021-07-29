@@ -10,6 +10,10 @@ const { equal, fail } = assert
 describe(
   'specs',
   () => {
+    it('should not break with empty input', () => {
+      equal(isbot(), false)
+    })
+
     it(`should return false for all ${browsers.length} browsers`, () => {
       const recognised = browsers.filter(isbot)
       recognised.length && fail([
@@ -68,6 +72,10 @@ describe(
     })
 
     describe('isbot.find', () => {
+      it('should not break with empty input', () => {
+        equal(isbot.find(), null)
+      })
+
       it('should return null for non bot browser', () => {
         equal(isbot.find('Mozilla'), null)
       })

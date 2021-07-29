@@ -4,20 +4,27 @@ import { amend } from '../amend/index.js'
 amend(list)
 
 /**
- *
+ * Test user agents for matching patterns
  */
 export class Isbot {
+  /**
+   * @type {string[]}
+   */
   #list;
+
+  /**
+   * @type {RegExp}
+   */
   #pattern;
+
   constructor (patterns) {
-    if (patterns) {
-      this.#list = patterns
-    } else {
-      this.#list = list.slice()
-    }
+    this.#list = patterns || list.slice()
     this.#update()
   }
 
+  /**
+   * Recreate the pattern from rules list
+   */
   #update () {
     this.#pattern = new RegExp(
       this.#list.join('|'),
@@ -34,20 +41,21 @@ export class Isbot {
     return this.#list.indexOf(rule.toLowerCase())
   }
 
-  get list () {
-    return this.#list
-  }
-
+  /**
+   * Match given string against out pattern
+   * @param  {string} ua User Agent string
+   * @returns {boolean}
+   */
   test (ua) {
     return this.#pattern.test(ua)
   }
 
   /**
    * Get the match for strings' known crawler pattern
-   * @param  {string} ua
-   * @return {string}
+   * @param  {string} ua User Agent string
+   * @returns {string}
    */
-  find (ua) {
+  find (ua = '') {
     const match = ua.match(this.#pattern)
     return match && match[0]
   }
@@ -55,9 +63,9 @@ export class Isbot {
   /**
    * Extent patterns for known crawlers
    * @param  {string[]} filters
-   * @return {void}
+   * @returns {void}
    */
-  extend (filters) {
+  extend (filters = []) {
     [].push.apply(
       this.#list,
       filters.filter(
@@ -72,9 +80,9 @@ export class Isbot {
   /**
    * Exclude patterns from bot pattern rule
    * @param  {string[]} filters
-   * @return {void}
+   * @returns {void}
    */
-  exclude (filters) {
+  exclude (filters = []) {
     let { length } = filters
     while (length--) {
       const index = this.#index(filters[length])
@@ -85,6 +93,11 @@ export class Isbot {
     this.#update()
   }
 
+  /**
+   * Create a new Isbot instance using given list or self's list
+   * @param  {string[]} [list]
+   * @returns {Isbot}
+   */
   spawn (list) {
     return new Isbot(list || this.#list)
   }
