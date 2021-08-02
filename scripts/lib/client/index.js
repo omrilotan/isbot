@@ -33,7 +33,7 @@ module.exports = function client ({ url, method = 'GET', data, headers = {} } = 
               headers
             )
           },
-          (response) => {
+          response => {
             if (Math.floor(response.statusCode / 100) !== 2) {
               const error = new Error(response.statusText)
               error.code = response.statusCode
@@ -59,7 +59,7 @@ module.exports = function client ({ url, method = 'GET', data, headers = {} } = 
           }
         ).on(
           'error',
-          (error) => reject(error)
+          reject
         )
 
         form && form.pipe(instance)

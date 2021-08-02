@@ -69,7 +69,7 @@ export class Isbot {
     [].push.apply(
       this.#list,
       filters.filter(
-        (rule) => this.#index(rule) === -1
+        rule => this.#index(rule) === -1
       ).map(
         filter => filter.toLowerCase()
       )
