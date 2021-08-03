@@ -58,6 +58,23 @@ Return the respective match for bot user agent rule
 isbot.find('Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0 DejaClick/2.9.7.2') // 'DejaClick'
 ```
 
+### Spawn: Create new instances
+Create new instances of isbot. Instance is spawned using spawner's list as base
+```js
+const one = isbot.spawn()
+const two = isbot.spawn()
+
+two.exclude(['chrome-lighthouse'])
+one('Chrome-Lighthouse') // true
+two('Chrome-Lighthouse') // false
+```
+Create isbot using custom list (**instead** of the maintained list)
+```js
+const lean = isbot.spawn([ 'bot' ])
+lean('Googlebot') // true
+lean('Chrome-Lighthouse') // false
+```
+
 ## Definitions
 -   **Bot.** Autonomous program imitating or replacing some aspect of a human behaviour, performing repetitive tasks much faster than human users could.
 -   **Good bot.** Automated programs who visit websites in order to collect useful information. Web crawlers, site scrapers, stress testers, preview builders and other programs are welcomed on most websites because they serve purposes of mutual benefits.
@@ -96,13 +113,13 @@ Missing something? Please [open an issue](https://github.com/omrilotan/isbot/iss
 
 ## Major releases breaking changes ([full changelog](./CHANGELOG.md))
 
-### [Version 3](https://github.com/omrilotan/isbot/releases/tag/v3.0.0)
+### [**Version 3**](https://github.com/omrilotan/isbot/releases/tag/v3.0.0)
 Remove testing for node 6 and 8
 
-### [Version 2](https://github.com/omrilotan/isbot/releases/tag/v2.0.0)
+### [**Version 2**](https://github.com/omrilotan/isbot/releases/tag/v2.0.0)
 Change return value for isbot: `true` instead of matched string
 
-### [Version 1](https://github.com/omrilotan/isbot/releases/tag/v1.0.0)
+### [**Version 1**](https://github.com/omrilotan/isbot/releases/tag/v1.0.0)
 No functional change
 
 ## Real world data

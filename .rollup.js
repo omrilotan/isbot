@@ -1,5 +1,6 @@
 const { join } = require('path')
-const json = require('@rollup/plugin-json');
+const json = require('@rollup/plugin-json')
+const { babel } = require('@rollup/plugin-babel')
 
 module.exports = [
   {
@@ -22,7 +23,8 @@ module.exports = [
       preferConst: true
     },
     plugins: [
-      json()
+      json(),
+      babel({ babelHelpers: 'bundled' })
     ]
   })
 )
