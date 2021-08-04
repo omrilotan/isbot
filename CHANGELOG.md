@@ -1,5 +1,8 @@
 # Changelog
 
+## 3.3.1
+-   Fix in type definition
+
 ## 3.3.0
 -   Add "spawn" interface
 
