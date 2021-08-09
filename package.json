@@ -81,7 +81,7 @@
     "karma-mocha-reporter": "^2.2.5",
     "mocha": "^9.0.3",
     "pug": "^3.0.0",
-    "remark-cli": "^9.0.0",
+    "remark-cli": "^10.0.0",
     "remark-preset-lint-recommended": "^5.0.0",
     "rollup": "^2.55.0",
     "standard": "^16.0.3",
