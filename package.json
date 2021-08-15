@@ -37,6 +37,7 @@
   "scripts": {
     "clean": "rm -rf .cache docs fixtures/downloads fixtures/index.json tests/browser/dist.js tests/esm/node_modules /index.*",
     "prepare": "./scripts/prepare/index.js",
+    "pushmodules": "./scripts/pushmodules/index.sh",
     "prestart": "which parcel || npm i parcel-bundler --no-save",
     "start": "parcel page/index.pug --out-dir docs",
     "prepage": "which parcel || npm i parcel-bundler --no-save",
