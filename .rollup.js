@@ -20,10 +20,10 @@ module.exports = [
       strict: false,
       sourcemap: true,
       sourcemapFile: join(__dirname, [ 'index', ext, 'map' ].join('.')),
-      preferConst: true
+      preferConst: false
     },
     plugins: [
-      json(),
+      json({ compact: true }),
       babel({ babelHelpers: 'bundled' })
     ]
   })
