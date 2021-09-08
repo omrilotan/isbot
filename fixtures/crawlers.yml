@@ -196,11 +196,12 @@ eZ Publish Link Validator:
 Ezooms:
   - Mozilla/5.0 (compatible; Ezooms/1.0; help@moz.com)
 Facebook:
+  - facebookcatalog/1.0
   - facebookexternalhit/1.0 (+http://www.facebook.com/externalhit_uatext.php)
+  - facebookexternalhit/1.1
   - facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)
-  - facebot
-Facebook External Hit:
   - facebookplatform/1.0 (+http://developers.facebook.com)
+  - facebot
 Feed Wrangler:
   - Feed Wrangler/1.0 (3 subscribers; feed-id=248559; http://feedwrangler.net; Allow like Gecko)
 Feedbin:

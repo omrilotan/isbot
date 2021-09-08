@@ -460,10 +460,11 @@ QtWebEngine:
   - Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.5.1 Chrome/40.0.2214.115 Safari/537.36
 QuickTime:
   - QuickTime/7.6.6 (qtver=7.6.6;cpu=IA32;os=Mac 10.6.8)
-RadiosNet (radios.com.br):
+RadiosNet (:
   - RadiosNet/2.1.1 (Java; Android)
   - RadiosNet/2.2.3 (Java; Android)
   - RadiosNet/2.2.5 (Java; Android)
+  - RadiosNet/2.3.3 (Java; Android)
   - RadiosNet/2.4.2 (Java; Android)
   - RadiosNet/2.5.0 (Java; Android)
   - RadiosNet/2.5.1 (Java; Android)
