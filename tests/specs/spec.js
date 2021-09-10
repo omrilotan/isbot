@@ -5,6 +5,7 @@ import isbot from '../../src/index.js'
 import fixtures from '../../fixtures/index.json'
 
 const { browsers = [], crawlers = [] } = fixtures
+
 const { equal, fail } = assert
 
 describe(
@@ -16,6 +17,7 @@ describe(
 
     it(`should return false for all ${browsers.length} browsers`, () => {
       const recognised = browsers.filter(isbot)
+
       recognised.length && fail([
         `Recognised as bots ${recognised.length} user agents:`,
         ...recognised
@@ -31,14 +33,14 @@ describe(
     })
 
     describe('isbot.extend', () => {
-      const useragent = 'Mozilla/5.0'
-      const rule = '^mozilla\\/\\d\\.\\d$'
+      const useragent = 'Mozilla/5.0 (Linux) Randomagent/93.0'
+      const rule = 'randomagent/\\d+\\.\\d+'
 
-      it(`should not detect "${useragent}" as bot`, () => {
+      it(`should not detect "${rule}" as bot`, () => {
         assert(!isbot(useragent))
       })
 
-      it(`should detect "${useragent}" as bot`, () => {
+      it(`should detect "${rule}" as bot`, () => {
         isbot.extend([rule])
         assert(isbot(useragent))
       })
@@ -54,14 +56,14 @@ describe(
     })
 
     describe('isbot.exclude', () => {
-      const useragent = 'axios/1.2'
-      const rule = '^axios/'
+      const useragent = 'Mozilla/5.0 (Macintosh; intel mac os x 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.175 Safari/537.36 Chrome-Lighthouse'
+      const rule = 'chrome-lighthouse'
 
-      it(`should not detect "${useragent}" as bot`, () => {
+      it(`should detect "${rule}" as bot`, () => {
         assert(isbot(useragent))
       })
 
-      it(`should detect "${useragent}" as bot`, () => {
+      it(`should not detect "${rule}" as bot`, () => {
         isbot.exclude([rule])
         assert(!isbot(useragent))
       })
@@ -77,7 +79,7 @@ describe(
       })
 
       it('should return null for non bot browser', () => {
-        equal(isbot.find('Mozilla'), null)
+        equal(isbot.find('Mozilla/5.0 (Linux) Firefox/93.0'), null)
       })
 
       it('should return the rule used to identify as bot', () => {
@@ -87,26 +89,26 @@ describe(
 
     describe('isbot.spawn', () => {
       it('should spawn isbot with its own list', () => {
-        const newUA = 'nothing'
+        const newUA = 'Mozilla/5.0 (Linux) NeoBrowser/93.0'
         const botUA = 'Mozilla/5.0 (compatible; SemrushBot-SA/0.97; +http://www.semrush.com/bot.html)'
-        const isbot2 = isbot.spawn([newUA])
+        const isbot2 = isbot.spawn(['neobrowser'])
         assert(!isbot(newUA))
         assert(isbot2(newUA))
         assert(isbot(botUA))
         assert(!isbot2(botUA))
       })
       it('should not affect each others lists', () => {
-        const newUA = 'nothing'
+        const newUA = 'Mozilla/5.0 (Linux) NeoBrowser/93.0'
         const isbot1 = isbot.spawn()
         const isbot2 = isbot.spawn()
-        isbot1.extend([newUA])
+        isbot1.extend(['neobrowser'])
         assert(isbot1(newUA))
         assert(!isbot2(newUA))
       })
       it('should spawn from instance\'s list', () => {
-        const newUA = 'nothing'
+        const newUA = 'Mozilla/5.0 (Linux) NeoBrowser/93.0'
         const isbot1 = isbot.spawn()
-        isbot1.extend([newUA])
+        isbot1.extend(['neobrowser'])
         const isbot2 = isbot1.spawn()
         assert(isbot2(newUA))
       })
