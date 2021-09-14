@@ -25,6 +25,7 @@
   "module": "./index.mjs",
   "browser": "./index.mjs",
   "exports": {
+    "./package.json": "./package.json",
     ".": {
       "browser": "./index.mjs",
       "import": "./index.mjs",
