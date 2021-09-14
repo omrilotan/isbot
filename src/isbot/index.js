@@ -47,7 +47,7 @@ export class Isbot {
    * @returns {boolean}
    */
   test (ua) {
-    return this.#pattern.test(ua)
+    return Boolean(ua) && this.#pattern.test(ua)
   }
 
   /**

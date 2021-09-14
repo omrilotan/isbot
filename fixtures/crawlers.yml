@@ -8,6 +8,8 @@ AddThis.com:
   - AddThis.com robot tech.support@clearspring.com
 ADMantX:
   - ADmantX Platform Semantic Analyzer - ADmantX Inc. - www.admantx.com - support@admantx.com
+Agentslug:
+  - agentslug.com - website monitoring tool
 aHrefs Bot:
   - "Mozilla/5.0 (compatible; AhrefsBot/5.0; +http://ahrefs.com/robot/) AppEngine-Google; (+http://code.google.com/appengine; appid: s~proxyfile1-hrd)"
 Akregator:
@@ -43,6 +45,8 @@ Arachni:
   - Arachni/v1.5.1
 archive.org bot:
   - Mozilla/5.0 (compatible; special_archiver/3.2.0 +http://www.loc.gov/webarchiving/notice_to_webmasters.html)
+ArchiveBox:
+  - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.61 Safari/537.36 ArchiveBox/{VERSION} (+https://github.com/ArchiveBox/ArchiveBox/)
 Ask Jeeves:
   - Mozilla/2.0 (compatible; Ask Jeeves/Teoma)
 AspiegelBot:
@@ -75,6 +79,9 @@ Bloglovin:
   - Bloglovin/1.0 (http://www.bloglovin.com; 1 subscribers)
 Blogtrottr:
   - Blogtrottr/2.0
+Blogtrottr feed fetcher:
+  - Blogtrottr/2.0
+  - Blogtrottr/3.0
 BoardReader:
   - BoardReader Favicon Fetcher /1.0 info@boardreader.com
 BoardReader Blog Indexer:
@@ -174,6 +181,10 @@ DuckDuckGo:
   - Mozilla/5.0 (compatible; DuckDuckGo-Favicons-Bot/1.0; +http://duckduckgo.com)
 DuckDuckGo Bot:
   - Mozilla/5.0 (compatible; DuckDuckGo-Favicons-Bot/1.0; +http://duckduckgo.com)
+EA Origin Browser:
+  - webcollage.original/1.176
+  - webcollage/1.182
+  - webcollage/1.183
 Easou Spider:
   - Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_0 like Mac OS X; en-us; EasouSpider; +http://www.easou.com/search/spider.html)
 eCairn-Grabber:
@@ -225,6 +236,8 @@ FirePHP:
 Flipboard:
   - Mozilla/5.0 (compatible; FlipboardRSS/1.2; +http://flipboard.com/browserproxy)
   - Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:28.0) Gecko/20100101 Firefox/28.0 (FlipboardProxy/1.6; +http://flipboard.com/browserproxy)
+Foregenix:
+  - Foregenix Web Scan 1.100000 (www.foregenix.com/scan)
 FreshRSS:
   - FreshRSS/1.12.0 (Linux; https://freshrss.org)
 Generic Bot:
@@ -346,6 +359,8 @@ Kouio:
 Kuberneters:
   - applicationhealthservice/1.0
   - kube-probe/1.15
+l9tcpid (github.com/LeakIX/l9tcpid):
+  - l9tcpid/v1.1.0
 Larbin web crawler:
   - larbin_2.6.3 larbin2.6.3@unspecified.mail
 LCC:
@@ -432,6 +447,9 @@ NewsBlur Mobile App:
   - NewsBlur iPad App v3.6
 NewsGator:
   - NewsGatorOnline/2.0 (http://www.newsgator.com; 2 subscribers)
+Newspaper:
+  - newspaper/0.0.8
+  - newspaper/0.2.8
 Ngios Monitor:
   - check_http/v2.2.1 (nagios-plugins 2.2.1)
 Nibbler (nibbler.silktide.com):
@@ -484,6 +502,8 @@ Pingdom Bot:
   - Pingdom.com_bot_version_1.4_(http://www.pingdom.com/)
 Pinterest:
   - Mozilla/5.0 (compatible; Pinterestbot/1.0; http://www.pinterest.com/bot.html)
+Placid.app:
+  - placid.app/v1
 PocketParser:
   - PocketParser/2.0 (+https://getpocket.com/pocketparser_ua)
 PritTorrent:
@@ -702,6 +722,8 @@ Wappalyzer:
   - Mozilla/5.0 (compatible; Wappalyzer; +https://github.com/AliasIO/Wappalyzer)
 WebbCrawler:
   - WebbCrawler 1.0 ( http://badcheese.com/crawler.html )
+WebGazer:
+  - WebGazer/1.0 (+https://www.webgazer.io)
 Weborama:
   - weborama-fetcher (+http://www.weborama.com)
 WebPageTest:

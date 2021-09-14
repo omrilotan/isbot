@@ -1,5 +1,12 @@
 # Changelog
 
+## 3.3.3
+-   Add generic patterns (name/version) reduces pattern list size by >20%
+-   Internal formatting
+
+## 3.3.2
+-   Remove const keyword from build (Fix)
+
 ## 3.3.1
 -   Fix in type definition
 

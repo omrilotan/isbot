@@ -18,15 +18,22 @@ module.exports = async function build ({ fixturesDirectory, downloadsDirectory }
 async function browsers ({ fixturesDirectory, downloadsDirectory }) {
   const browsers = await readYaml(join(fixturesDirectory, 'browsers.yml'))
 
-  const list = await crawlers({ fixturesDirectory, downloadsDirectory })
+  const knownCrawlers = await crawlers({ fixturesDirectory, downloadsDirectory })
 
   // Generate a random list of unique user agent strings
-  const random = Array(1000)
+  const random = Array(2000)
     .fill()
     .map(
-      () => new UserAgent(
-        ({ ua }) => ua !== list
-      )
+      () => new UserAgent()
+    )
+    .map(
+      ({ data: { userAgent: ua } }) => ua
+    )
+    .filter(
+      ua => !knownCrawlers.includes(ua)
+    )
+    .filter(
+      Boolean
     )
 
   return browsers.concat(random)
