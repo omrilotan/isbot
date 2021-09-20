@@ -1,7 +1,6 @@
 node_modules
 /.cache
 /docs
-/fixtures/downloads/*
 /fixtures/index.json
 dist.js
 /AUTHORS
