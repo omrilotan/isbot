@@ -6,6 +6,7 @@ const FormData = require('form-data')
  * @param {string} ø.url
  * @param {string} [ø.method='GET']
  * @param {object<string, string>} [data]
+ * @param {object<string, string>} [headers={}]
  * @returns {Promise<string>} response body
  */
 module.exports = function client ({ url, method = 'GET', data, headers = {} } = {}) {

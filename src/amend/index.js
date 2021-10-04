@@ -28,7 +28,7 @@ export function amend (list) {
   // Addresses: java based browsers
   list.splice(list.lastIndexOf('java'), 1)
   list.push('java(?!;)')
-  // Addresses: java based browsers
+  // Addresses: Mozilla nightly build https://github.com/mozilla-mobile/android-components/search?q=MozacFetch
   list.splice(list.lastIndexOf('fetch'), 1)
   list.push('(?<!(mozac))fetch')
 
