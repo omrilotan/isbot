@@ -609,6 +609,8 @@ Site24x7 Website Monitoring:
   - Site24x7
 Siteimprove:
   - Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0) LinkCheck by Siteimprove.com
+SiteScoreBot:
+  - SiteScoreBot v20210315 - https://sitescore.ai
 SiteSucker:
   - SiteSucker for macOS/2.10.5
 Sixy.ch:
@@ -788,3 +790,5 @@ Zoom:
   - zoombot (linkbot 1.0 http://suite.seozoom.it/bot.html)
 ZumBot:
   - ZumBot/1.0 (ZUM Search; http://help.zum.com/inquiry)
+ZZZ Glitches and Errornous User Agent Strings:
+  - "123"

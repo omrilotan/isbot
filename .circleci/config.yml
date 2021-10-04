@@ -52,6 +52,7 @@ jobs:
       - image: circleci/node:latest-browsers
     steps:
       - checkout
+      - run: git submodule update --init --recursive
       - run: node -v
       - run: npm i
       - run: npm run build
@@ -101,6 +102,7 @@ jobs:
       - image: circleci/node:latest-browsers
     steps:
       - checkout
+      - run: git submodule update --init --recursive
       - run:
           name: Stop if remote tag already exists
           command: |
@@ -127,6 +129,7 @@ jobs:
       - image: circleci/node:latest
     steps:
       - checkout
+      - run: git submodule update --init --recursive
       - run: npm i
       - run: npm run page
       - run:
@@ -141,6 +144,7 @@ jobs:
       - image: circleci/node:latest-browsers
     steps:
       - checkout
+      - run: git submodule update --init --recursive
       - run: npm i
       - run: |
             npm run spec || curl --request POST \
