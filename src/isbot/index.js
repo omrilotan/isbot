@@ -56,11 +56,11 @@ export class Isbot {
    * @returns {string}
    */
   find (ua = '') {
-    let { length: index } = this.#list;
+    let { length: index } = this.#list
     while (index--) {
       const pattern = new RegExp(this.#list[index], 'i')
       if (pattern.test(ua)) {
-        return this.#list[index];
+        return this.#list[index]
       }
     }
     return null

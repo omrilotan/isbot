@@ -88,9 +88,9 @@ describe(
 
       it('should be able to remove match using find', () => {
         const ua = 'Mozilla/5.0 (Linux; Android 10; SNE-LX1 Build/HUAWEISNE-L21; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/94.0.4606.71 Mobile Safari/537.36 hap/1079/huawei com.huawei.fastapp/11.4.1.310 com.frvr.worlds.quickapp/4.0.17 ({"packageName":"quickSearch","type":"other","extra":"{}"})'
-        equal(isbot(ua), true);
+        equal(isbot(ua), true)
         isbot.exclude([isbot.find(ua)])
-        equal(isbot(ua), false);
+        equal(isbot(ua), false)
       })
     })
 
