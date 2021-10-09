@@ -56,8 +56,14 @@ export class Isbot {
    * @returns {string}
    */
   find (ua = '') {
-    const match = ua.match(this.#pattern)
-    return match && match[0]
+    let { length: index } = this.#list;
+    while (index--) {
+      const pattern = new RegExp(this.#list[index], 'i')
+      if (pattern.test(ua)) {
+        return this.#list[index];
+      }
+    }
+    return null
   }
 
   /**
