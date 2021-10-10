@@ -3,6 +3,8 @@ import { amend } from '../amend/index.js'
 
 amend(list)
 
+const flags = 'i'
+
 /**
  * Test user agents for matching patterns
  */
@@ -43,7 +45,7 @@ export class Isbot {
   #update () {
     this.#pattern = new RegExp(
       this.#list.join('|'),
-      'i'
+      flags
     )
   }
 
@@ -82,7 +84,7 @@ export class Isbot {
    */
   matches (ua = '') {
     return this.#list.filter(
-      entry => new RegExp(entry, 'i').test(ua)
+      entry => new RegExp(entry, flags).test(ua)
     )
   }
 
