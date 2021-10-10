@@ -20,6 +20,21 @@ export class Isbot {
   constructor (patterns) {
     this.#list = patterns || list.slice()
     this.#update()
+
+    const isbot = ua => this.test(ua)
+
+    return Object.defineProperties(
+      isbot,
+      Object.getOwnPropertyNames(Isbot.prototype).filter(
+        prop => !['constructor'].includes(prop)
+      ).reduce(
+        (accumulator, prop) => Object.assign(
+          accumulator,
+          { [prop]: { get: () => this[prop].bind(this) } }
+        ),
+        {}
+      )
+    )
   }
 
   /**
@@ -53,17 +68,34 @@ export class Isbot {
   /**
    * Get the match for strings' known crawler pattern
    * @param  {string} ua User Agent string
-   * @returns {string}
+   * @returns {string|null}
    */
   find (ua = '') {
-    let { length: index } = this.#list
-    while (index--) {
-      const pattern = new RegExp(this.#list[index], 'i')
-      if (pattern.test(ua)) {
-        return this.#list[index]
+    const match = ua.match(this.#pattern)
+    return match && match[0]
+  }
+
+  /**
+   * Get the patterns that match user agent string if any
+   * @param  {string} ua User Agent string
+   * @returns {string[]}
+   */
+  matches (ua = '') {
+    return this.#list.filter(
+      entry => {
+        const pattern = new RegExp(entry, 'i')
+        return pattern.test(ua)
       }
-    }
-    return null
+    )
+  }
+
+  /**
+   * Clear all patterns that match user agent
+   * @param  {string} ua User Agent string
+   * @returns {void}
+   */
+  clear (ua = '') {
+    this.exclude(this.matches(ua))
   }
 
   /**

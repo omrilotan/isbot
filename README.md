@@ -53,9 +53,24 @@ isbot('Chrome-Lighthouse') // false
 ```
 
 ### Find: Verbose result
-Return the pattern that matched the user agent string
+Return the respective match for bot user agent rule
 ```js
-isbot.find('Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0 DejaClick/2.9.7.2') // 'dejaclick'
+isbot.find('Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0 DejaClick/2.9.7.2') // 'DejaClick'
+```
+
+### Matches: Get patterns
+Return all patterns that match the user agent string
+```js
+isbot.matches('Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0 SearchRobot/1.0') // ['bot', 'search']
+```
+
+### Clear:
+Remove all matching patterns so this user agent string will pass
+```js
+const ua = 'Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0 SearchRobot/1.0';
+isbot(ua) // true
+isbot.clear(ua)
+isbot(ua) // false
 ```
 
 ### Spawn: Create new instances
