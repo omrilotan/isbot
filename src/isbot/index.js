@@ -82,10 +82,7 @@ export class Isbot {
    */
   matches (ua = '') {
     return this.#list.filter(
-      entry => {
-        const pattern = new RegExp(entry, 'i')
-        return pattern.test(ua)
-      }
+      entry => new RegExp(entry, 'i').test(ua)
     )
   }
 
