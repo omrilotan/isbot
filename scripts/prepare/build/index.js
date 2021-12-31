@@ -83,13 +83,13 @@ async function readYaml (path) {
  * @param {Function} fn
  * @returns {Function}
  */
-function wrap(fn) {
-  return function() {
+function wrap (fn) {
+  return function () {
     try {
-      return fn.apply(this, arguments);
+      return fn.apply(this, arguments)
     } catch (error) {
-      error.message = [ error.message, stringify(arguments) ].join(': ')
-      throw error;
+      error.message = [error.message, stringify(arguments)].join(': ')
+      throw error
     }
   }
 }
@@ -99,10 +99,10 @@ function wrap(fn) {
  * @param {any[]} array
  * @returns
  */
-function stringify(array) {
+function stringify (array) {
   try {
-    return JSON.stringify(array).substring(0, 100);
+    return JSON.stringify(array).substring(0, 100)
   } catch (error) {
-    return array.map(item => `${item}`).join(', ').substring(0, 100);
+    return array.map(item => `${item}`).join(', ').substring(0, 100)
   }
 }
