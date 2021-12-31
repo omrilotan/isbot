@@ -302,6 +302,8 @@ Hobbit:
 HTTP Clients (Software Library):
   - Apache-HttpClient/4.3.6 (java 1.5)
   - axios/0.19.2
+  - axios/0.21.4, XFF:35.228.69.34
+  - axios/0.18.1,gzip(gfe)
   - Go 1.1 package http
   - go-http-client/1.1
   - go-resty/2.3.0 (https://github.com/go-resty/resty)
@@ -323,6 +325,7 @@ HTTP Clients (Software Library):
   - Python-urllib/2.7
   - RestSharp/106.5.4.0
   - WinHTTP
+  - LWP Network
 HTTPMon:
   - HTTPMon/1.0b (http://www.httpmon.com)
 HubPages:
@@ -792,3 +795,5 @@ ZumBot:
   - ZumBot/1.0 (ZUM Search; http://help.zum.com/inquiry)
 ZZZ Glitches and Errornous User Agent Strings:
   - "123"
+  - iphone 6 plus;afengineurl=https://intoli.com:443;traceId=63028f8e-c5fc-4846-993f-59a96268a85d
+  - Chrome
