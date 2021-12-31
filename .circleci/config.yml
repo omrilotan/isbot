@@ -49,7 +49,7 @@ workflows:
 jobs:
   build:
     docker:
-      - image: circleci/node:latest-browsers
+      - image: circleci/node:16-browsers
     steps:
       - checkout
       - run: git submodule update --init --recursive
@@ -63,7 +63,7 @@ jobs:
   tests:
     working_directory: ~/project
     docker:
-      - image: circleci/node:latest-browsers
+      - image: circleci/node:16-browsers
     steps:
       - run: node -v
       - attach_workspace:
@@ -78,7 +78,7 @@ jobs:
     parameters:
       image:
         description: docker image
-        default: circleci/node:latest
+        default: circleci/node:16
         type: string
     working_directory: ~/project
     docker:
@@ -99,7 +99,7 @@ jobs:
   publish:
     working_directory: ~/project
     docker:
-      - image: circleci/node:latest-browsers
+      - image: circleci/node:16-browsers
     steps:
       - checkout
       - run: git submodule update --init --recursive
@@ -126,7 +126,7 @@ jobs:
   pages:
     working_directory: ~/project
     docker:
-      - image: circleci/node:latest
+      - image: circleci/node:16
     steps:
       - checkout
       - run: git submodule update --init --recursive
@@ -141,7 +141,7 @@ jobs:
   periodic:
     working_directory: ~/project
     docker:
-      - image: circleci/node:latest-browsers
+      - image: circleci/node:16-browsers
     steps:
       - checkout
       - run: git submodule update --init --recursive
