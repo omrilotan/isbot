@@ -3,6 +3,8 @@ import { amend } from '../amend/index.js'
 
 amend(list)
 
+const flags = 'i'
+
 /**
  * Test user agents for matching patterns
  */
@@ -20,6 +22,21 @@ export class Isbot {
   constructor (patterns) {
     this.#list = patterns || list.slice()
     this.#update()
+
+    const isbot = ua => this.test(ua)
+
+    return Object.defineProperties(
+      isbot,
+      Object.getOwnPropertyNames(Isbot.prototype).filter(
+        prop => !['constructor'].includes(prop)
+      ).reduce(
+        (accumulator, prop) => Object.assign(
+          accumulator,
+          { [prop]: { get: () => this[prop].bind(this) } }
+        ),
+        {}
+      )
+    )
   }
 
   /**
@@ -28,7 +45,7 @@ export class Isbot {
   #update () {
     this.#pattern = new RegExp(
       this.#list.join('|'),
-      'i'
+      flags
     )
   }
 
@@ -53,11 +70,31 @@ export class Isbot {
   /**
    * Get the match for strings' known crawler pattern
    * @param  {string} ua User Agent string
-   * @returns {string}
+   * @returns {string|null}
    */
   find (ua = '') {
     const match = ua.match(this.#pattern)
     return match && match[0]
+  }
+
+  /**
+   * Get the patterns that match user agent string if any
+   * @param  {string} ua User Agent string
+   * @returns {string[]}
+   */
+  matches (ua = '') {
+    return this.#list.filter(
+      entry => new RegExp(entry, flags).test(ua)
+    )
+  }
+
+  /**
+   * Clear all patterns that match user agent
+   * @param  {string} ua User Agent string
+   * @returns {void}
+   */
+  clear (ua = '') {
+    this.exclude(this.matches(ua))
   }
 
   /**

@@ -45,7 +45,7 @@ import list from '../src/list.json'
     output.appendChild(
       document.createTextNode(
         result
-          ? `I think so, yes\nThe pattern that I recognise is ‟${find(value)}”`
+          ? `I think so, yes\nThe pattern that was matched is ‟${find(value)}”`
           : 'I don\'t think so, no\nI could not find a pattern I recognise'
       )
     )

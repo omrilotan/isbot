@@ -28,6 +28,20 @@ declare namespace isbot {
   function find(ua: string): string|null;
 
   /**
+   * Get the patterns that match user agent string if any
+   * @param  {string} ua User Agent string
+   * @returns {string[]}
+   */
+  function matches(ua: string): string[];
+
+  /**
+   * Clear all patterns that match user agent
+   * @param  {string} ua User Agent string
+   * @returns {void}
+   */
+  function clear(ua: string): void;
+
+  /**
    * Create a new isbot function complete with all its interface
    * @param {string[]} list of strings representing regular expression patterns
    * @returns isbot function with full interface

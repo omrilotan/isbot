@@ -27,10 +27,10 @@ async function browsers ({ fixturesDirectory, downloadsDirectory }) {
       () => new UserAgent()
     )
     .map(
-      ({ data: { userAgent: ua } }) => ua
+      wrap(({ data: { userAgent: ua } }) => ua)
     )
     .filter(
-      ua => !knownCrawlers.includes(ua)
+      wrap(ua => !knownCrawlers.includes(ua))
     )
     .filter(
       Boolean
@@ -48,19 +48,19 @@ async function crawlers ({ fixturesDirectory, downloadsDirectory }) {
   const browsers = await readYaml(join(fixturesDirectory, 'browsers.yml'))
   const downloadedFiles = await readdir(downloadsDirectory)
   const downloaded = downloadedFiles.filter(
-    file => file.endsWith('.json')
+    wrap(file => file.endsWith('.json'))
   ).map(
-    file => require(join(downloadsDirectory, file))
+    wrap(file => require(join(downloadsDirectory, file)))
   ).flat()
 
   return crawlers.concat(downloaded).filter(
-    ua => !ua.startsWith('#')
+    wrap(ua => !ua.startsWith('#'))
   ).filter(
-    ua => !/ucweb|cubot/i.test(ua) // I don't know why it's in so many crawler lists
+    wrap(ua => !/ucweb|cubot/i.test(ua)) // I don't know why it's in so many crawler lists
   ).filter(
-    ua => !browsers.includes(ua)
+    wrap(ua => !browsers.includes(ua))
   ).filter(
-    ua => ua.length < 4e3
+    wrap(ua => ua.length < 4e3)
   )
 }
 
@@ -76,4 +76,33 @@ async function readYaml (path) {
       content.toString()
     )
   ).flat()
+}
+
+/**
+ * Wrap a filter function to add arguments to error messages
+ * @param {Function} fn
+ * @returns {Function}
+ */
+function wrap (fn) {
+  return function () {
+    try {
+      return fn.apply(this, arguments)
+    } catch (error) {
+      error.message = [error.message, stringify(arguments)].join(': ')
+      throw error
+    }
+  }
+}
+
+/**
+ * Stringify an array of arguments
+ * @param {any[]} array
+ * @returns
+ */
+function stringify (array) {
+  try {
+    return JSON.stringify(array).substring(0, 100)
+  } catch (error) {
+    return array.map(item => `${item}`).join(', ').substring(0, 100)
+  }
 }

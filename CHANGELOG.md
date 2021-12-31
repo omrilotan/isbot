@@ -1,7 +1,11 @@
 # Changelog
 
+## 3.4.0
+-   Add "matches" and "clear" to interface
+-   Recognise axios/ user agent as bot
+
 ## 3.3.4
-- Add "package.json" to exports ([#165](https://github.com/omrilotan/isbot/pull/165)) by [javivelasco](https://github.com/omrilotan/isbot/commits?author=javivelasco)
+-   Add "package.json" to exports ([#165](https://github.com/omrilotan/isbot/pull/165)) by [javivelasco](https://github.com/omrilotan/isbot/commits?author=javivelasco)
 
 ## 3.3.3
 -   Add generic patterns (name/version) reduces pattern list size by >20%
