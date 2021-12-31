@@ -21,6 +21,7 @@ workflows:
                 - circleci/node:12
                 - circleci/node:14
                 - circleci/node:16
+                - circleci/node:17
           requires:
             - build
       - publish:
@@ -78,7 +79,7 @@ jobs:
     parameters:
       image:
         description: docker image
-        default: circleci/node:16
+        default: circleci/node:latest
         type: string
     working_directory: ~/project
     docker:
@@ -92,7 +93,7 @@ jobs:
       - when:
           condition:
             matches:
-              pattern: "circleci/node:1[2-6]"
+              pattern: "circleci/node:1[2-7]"
               value: << parameters.image >>
           steps:
             - run: npm run esm
