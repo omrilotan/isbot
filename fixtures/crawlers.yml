@@ -156,6 +156,8 @@ Daum:
   - Mozilla/5.0 (compatible; MSIE or Firefox mutant;) Daum 4.1
 Dazoobot:
   - Mozilla/5.0 (compatible; Dazoobot/0.1; +http://dazoo.fr)
+DeepNOC:
+  - deepnoc - https://deepnoc.com/bot
 Discobot:
   - Mozilla/5.0 (compatible; discobot/1.0; +http://discoveryengine.com/discobot.html)
 Discourse Onebox:
@@ -432,8 +434,9 @@ Nagios check_http:
   - check_http/v1.5 (nagios-plugins 1.5)
 NalezenCzBot:
   - NalezenCzBot/1.0 (http://www.nalezen.cz/about-crawler)
-Naver Yeti:
+Naver:
   - Mozilla/5.0 (compatible; Yeti/1.1; +http://naver.me/spd)
+  - Mozilla/5.0 (Linux; Android 8.0.0; SM-N950N Build/R16NW; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/79.0.3945.88 Mobile Safari/537.36 NAVER(inapp; search; 1000; 11.8.4; 11)
   - Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.0 Safari/537.36 (compatible; Yeti/1.1; +http://naver.me/spd)
 nbertaupete95:
   - Mozilla/5.0/Firefox/42.0 - nbertaupete95(at)gmail.com
@@ -677,6 +680,8 @@ The Knowledge AI:
   - The Knowledge AI
 theoldreader:
   - Mozilla/5.0 (compatible; theoldreader.com; 1 subscribers; feed-id=aaa)
+Thumbor:
+  - Thumbor/6.7.5, Mozilla/5.0 (Linux; Android 9; RAZER Phone Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.111 Mobile Safari/537.36 AlohaBrowser/2.13.1
 TinEye Crawler:
   - TinEye-bot/0.02 (see http://www.tineye.com/crawler.html)
 Tiny Tiny RSS:
@@ -711,6 +716,10 @@ URLAppendBot:
   - Mozilla/5.0 (compatible; URLAppendBot/1.0; +http://www.profound.net/urlappendbot.html)
 Vagabondo:
   - Mozilla/4.0 (compatible;  Vagabondo/4.0; http://webagent.wise-guys.nl/; http://www.wise-guys.nl/)
+Var:
+  - Anonymous, Mozilla/5.0 (Linux; Android 11; CPH2211) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.166 Mobile Safari/537.36 OPR/65.2.3381.61420
+  - Anonymous, Mozilla/5.0 (Linux; Android 9; RAZER Phone Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.111 Mobile Safari/537.36 AlohaBrowser/2.13.1
+  - Anonymous, Mozilla/5.0 (X11; Linux Mint x86_64) AppleWebKit/537.37 (KHTML, like Gecko) Chrome/50.0.2272.105 Safari/537.37 Vivaldi/1.5.201.2
 Visual Site Mapper Crawler:
   - Mozilla/5.0 (compatible; VSMCrawler; http://www.visualsitemapper.com/crawler/)
 VK Share Button:
