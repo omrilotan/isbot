@@ -1,5 +1,8 @@
 # Changelog
 
+## 3.4.1
+-   Add recognised bots user agent patterns
+
 ## 3.4.0
 -   Add "matches" and "clear" to interface
 -   Recognise axios/ user agent as bot
