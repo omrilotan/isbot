@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.4.2
+-   Add generic term: "proxy"
+-   Optimise "email" rule
+-   Add Rexx
+
 ## 3.4.1
 -   Add recognised bots user agent patterns
 

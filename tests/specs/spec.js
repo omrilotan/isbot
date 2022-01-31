@@ -25,7 +25,7 @@ describe(
 
       recognised.length && fail([
         `Recognised as bots ${recognised.length} user agents:`,
-        ...recognised
+        ...recognised.map(item => ` - ${item}`)
       ].join('\n'))
     })
 
