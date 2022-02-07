@@ -15,6 +15,7 @@ export function amend (list) {
   // Addresses: Cubot device
   list.splice(list.lastIndexOf('bot'), 1)
   list.push('(?<! cu)bot')
+
   // Addresses: Android webview
   list.splice(list.lastIndexOf('google'), 1)
   list.push('(?<! (channel\\/|google\\/))google(?!(app|\\/google))')
@@ -22,12 +23,15 @@ export function amend (list) {
   // Addresses: Yandex browser
   list.splice(list.lastIndexOf('search'), 1)
   list.push('(?<! (ya|yandex))search')
+
   // Addresses: libhttp browser
   list.splice(list.lastIndexOf('http'), 1)
   list.push('(?<!(lib))http')
+
   // Addresses: java based browsers
   list.splice(list.lastIndexOf('java'), 1)
   list.push('java(?!;)')
+
   // Addresses: Mozilla nightly build https://github.com/mozilla-mobile/android-components/search?q=MozacFetch
   list.splice(list.lastIndexOf('fetch'), 1)
   list.push('(?<!(mozac))fetch')
