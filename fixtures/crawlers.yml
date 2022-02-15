@@ -516,6 +516,8 @@ Placid.app:
   - placid.app/v1
 PocketParser:
   - PocketParser/2.0 (+https://getpocket.com/pocketparser_ua)
+Postman:
+  - PostmanRuntime/7.29.0
 PritTorrent:
   - PritTorrent/1.0
 Prometheus:

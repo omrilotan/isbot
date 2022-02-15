@@ -1,5 +1,8 @@
 # Changelog
 
+## [3.4.3](https://github.com/omrilotan/isbot/compare/v3.4.2...v3.4.3)
+-   Add Postman
+
 ## [3.4.2](https://github.com/omrilotan/isbot/compare/v3.4.1...v3.4.2)
 -   Add generic term: "proxy"
 -   Optimise "email" rule
