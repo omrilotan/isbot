@@ -425,6 +425,8 @@ Monit:
   - Monit/5.23.0
 Monitor.Us:
   - Mozilla/5.0 (compatible; www.monitor.us - free monitoring service; http://www.monitor.us)
+Morningscore:
+  - Mozilla/5.0 (Morningscore/1.0)
 Moz:
   - Mozilla/5.0 (compatible; DotBot/1.2; +https://opensiteexplorer.org/dotbot; help@moz.com)
   - rogerbot/1.2 (https://moz.com/help/guides/moz-procedures/what-is-rogerbot, rogerbot-crawler+aardwolf-crawler-45@moz.com)
