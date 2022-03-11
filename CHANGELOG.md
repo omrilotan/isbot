@@ -1,5 +1,8 @@
 # Changelog
 
+## [3.4.4](https://github.com/omrilotan/isbot/compare/v3.4.3...v3.4.4)
+-   Add [Morningscore](https://morningscore.io/)
+
 ## [3.4.3](https://github.com/omrilotan/isbot/compare/v3.4.2...v3.4.3)
 -   Add Postman
 
