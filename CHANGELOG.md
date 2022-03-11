@@ -1,5 +1,10 @@
 # Changelog
 
+## [3.4.5](https://github.com/omrilotan/isbot/compare/v3.4.4...v3.4.5)
+-   Add CF-UC web crawler
+-   Add TagInspector
+-   Add Request-Pomise
+
 ## [3.4.4](https://github.com/omrilotan/isbot/compare/v3.4.3...v3.4.4)
 -   Add [Morningscore](https://morningscore.io/)
 

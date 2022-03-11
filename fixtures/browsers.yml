@@ -315,6 +315,7 @@ Lunascape:
 Lynx:
   - Lynx/2.8.5rel.1 libwww-FM/2.15FC SSL-MM/1.4.1c OpenSSL/0.9.7e-dev
   - Lynx/2.8.9rel.1 libwww-FM/2.14 SSL-MM/1.4.1 GNUTLS/3.6.5
+  - Lynx/2.9.0dev.4 libwww-FM/2.14 SSL-MM/1.4.1 GNUTLS/2.12.23
   - Lynx/2.9.0dev.5 libwww-FM/2.14 SSL-MM/1.4.1 GNUTLS/3.6.13
   - Lynx/2.9.0dev.6 libwww-FM/2.14 SSL-MM/1.4.1 OpenSSL/1.1.1j-dev
 Maxthon:

@@ -124,6 +124,8 @@ ccBot crawler:
   - CCBot/2.0 (http://commoncrawl.org/faq/)
 Censys:
   - Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)
+CF-UC:
+  - CF-UC User Agent v.1d.374049
 ClamAV Website Scanner:
   - ClamAV 0.95.3
   - "ClamAV/0.101.5 (OS: linux-gnu, ARCH: x86_64, CPU: x86_64)"
@@ -549,6 +551,8 @@ Reddit Bot:
   - Mozilla/5.0 (compatible; redditbot/1.0; +http://www.reddit.com/feedback)
 Reeder:
   - Reeder/3.2 CFNetwork/672.1.12 Darwin/14.0.0
+Request-Promise:
+  - Request-Promise
 Rigor Synythetic Monitoring:
   - Mozilla/5.0 (X11; Linux x86_64; Rigor) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36
   - Mozilla/5.0 (X11; Linux x86_64; rv:45.0; Rigor) Gecko/20100101 Firefox/45.0
@@ -674,6 +678,8 @@ Survey Bot:
   - Mozilla/5.0 (Windows; U; Windows NT 5.1; en; rv:1.9.0.13) Gecko/2009073022 Firefox/3.5.2 (.NET CLR 3.5.30729) SurveyBot/2.3 (DomainTools)
 SWCD:
   - SWCD (Unknown Version) CFNetwork/1107.1 Darwin/19.0.0
+TagInspector:
+  - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) TagInspector/500.1 Chrome/90.0.4430.72 Safari/537.36 Edg/90.0.818.42
 Tarmot Gezgin:
   - Tarmot Gezgin/1.0 (compatible; TarmotGezgin/1.1; +http://www.tarmot.com/gezgin)
 Telegram:
