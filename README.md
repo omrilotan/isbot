@@ -6,7 +6,7 @@
 
 [![](https://img.shields.io/circleci/build/github/omrilotan/isbot?style=flat-square)](https://circleci.com/gh/omrilotan/isbot) [![](https://img.shields.io/npm/dt/isbot?style=flat-square)](https://www.npmjs.com/package/isbot) [![](https://img.shields.io/github/last-commit/omrilotan/isbot?style=flat-square)](https://github.com/omrilotan/isbot/graphs/commit-activity)
 
-[![](https://img.shields.io/librariesio/sourcerank/npm/isbot?style=flat-square)](https://libraries.io/npm/isbot) [![](https://badges.openbase.io/js/rating/isbot.svg)](https://openbase.io/js/isbot#rate)
+[![](https://img.shields.io/librariesio/sourcerank/npm/isbot?style=flat-square)](https://libraries.io/npm/isbot) [![](https://badges.openbase.io/js/rating/isbot.svg)](https://openbase.io/js/isbot#rate) [![](https://deepscan.io/api/teams/14776/projects/17857/branches/423729/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=14776&pid=17857&bid=423729)
 
 Detect bots/crawlers/spiders using the user agent string.
 
