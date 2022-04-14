@@ -472,6 +472,8 @@ NLCrawler:
   - nlcrawler/1.0 (+http://northernlight.com/)
 Nmap:
   - Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+Nodejs:
+  - undici
 Nuclei:
   - Nuclei - Open-source project (github.com/projectdiscovery/nuclei)
 Nutch-based Bot:
@@ -820,3 +822,4 @@ ZZZ Glitches and Errornous User Agent Strings:
   - "123"
   - Chrome
   - iphone 6 plus;afengineurl=https://intoli.com:443;traceId=63028f8e-c5fc-4846-993f-59a96268a85d
+  - U2FsdGVkX1+uKxeH2946/bMTDvtm/Fr0nWjvFR/oPtc64LSh1Gg0qkbJUIhLpSw5h/mjF86TFOXrl4U2SG1KBi4BC0EfphyIzeOxVXkpBWHDMfJnkrFGrubrRGjmJNIN49DKkOcjVgq2/iVDBMSAQe30k9wNIDtflfnlrOrmDPkXiYNjLbohSHLaNWS/GK5hu62gkOH25c9i1B+jMq5kc590HoQqJ0o4es9QrEnwluMsYPbQy14LxgPjeCQveiPHPXtkSM7TmfTY53HEJdbFHylstSOJNTQclbL67BKx33M=
