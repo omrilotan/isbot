@@ -1,5 +1,9 @@
 # Changelog
 
+## [3.4.6](https://github.com/omrilotan/isbot/compare/v3.4.5...v3.4.6)
+-   Add nodejs native agent (undici)
+-   Add random long string
+
 ## [3.4.5](https://github.com/omrilotan/isbot/compare/v3.4.4...v3.4.5)
 -   Add CF-UC web crawler
 -   Add TagInspector

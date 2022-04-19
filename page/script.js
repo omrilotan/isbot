@@ -2,7 +2,7 @@ import isbot from '../src/index.js'
 import { amend } from '../src/amend/index.js'
 import list from '../src/list.json'
 
-(function () {
+{
   const textarea = document.querySelector('textarea')
   const output = document.querySelector('output')
   let timer
@@ -10,7 +10,6 @@ import list from '../src/list.json'
   const query = window.location.search.replace(/\?ua=(.*)$/, '$1')
 
   amend(list)
-  const pattern = new RegExp(list.join('|'), 'i')
 
   textarea.childNodes.forEach(child => child.parentNode?.removeChild(child))
   textarea.appendChild(document.createTextNode(
@@ -29,9 +28,31 @@ import list from '../src/list.json'
     timer = setTimeout(check, 200, value)
   }
 
+  function showMatch (output, ua) {
+    const pattern = document.createElement('kbd')
+    pattern.appendChild(
+      document.createTextNode(isbot.matches(ua)?.pop())
+    )
+    output.appendChild(
+      document.createTextNode(
+        'I think so, yes\nThe pattern that was matched is: '
+      )
+    )
+    output.appendChild(pattern)
+  }
+  function noMatch (output) {
+    output.appendChild(
+      document.createTextNode(
+        'I don\'t think so, no\nI could not find a pattern I recognise'
+      )
+    )
+  }
+
   function check (value = textarea.innerHTML) {
     value = value.trim()
-    output.childNodes.forEach(child => child.parentNode?.removeChild(child))
+    while (output.firstChild) {
+      output.removeChild(output.firstChild)
+    }
     if (value === '') {
       output.appendChild(
         document.createTextNode(
@@ -41,21 +62,11 @@ import list from '../src/list.json'
       return
     }
 
-    const result = isbot(value)
-    output.appendChild(
-      document.createTextNode(
-        result
-          ? `I think so, yes\nThe pattern that was matched is ‟${find(value)}”`
-          : 'I don\'t think so, no\nI could not find a pattern I recognise'
-      )
-    )
+    isbot(value)
+      ? showMatch(output, value)
+      : noMatch(output)
 
     output.className = ''
     setTimeout(() => { output.className = 'highlight' }, 100)
   }
-
-  function find (ua) {
-    const match = ua.match(pattern)
-    return match && match[0]
-  }
-})()
+}

@@ -31,10 +31,8 @@ module.exports = async function sortYamlFile (filepath) {
     )
   )
 
-  YAML.scalarOptions.str.fold.lineWidth = Infinity
-
   await writeFile(
     filepath,
-    YAML.stringify(sorted)
+    YAML.stringify(sorted, undefined, { lineWidth: Infinity })
   )
 }
