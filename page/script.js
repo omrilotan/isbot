@@ -2,7 +2,7 @@ import isbot from '../src/index.js'
 import { amend } from '../src/amend/index.js'
 import list from '../src/list.json'
 
-(function () {
+{
   const textarea = document.querySelector('textarea')
   const output = document.querySelector('output')
   let timer
@@ -28,6 +28,26 @@ import list from '../src/list.json'
     timer = setTimeout(check, 200, value)
   }
 
+  function showMatch (output, ua) {
+    const pattern = document.createElement('kbd')
+    pattern.appendChild(
+      document.createTextNode(isbot.matches(ua)?.pop())
+    )
+    output.appendChild(
+      document.createTextNode(
+        'I think so, yes\nThe pattern that was matched is: '
+      )
+    )
+    output.appendChild(pattern)
+  }
+  function noMatch (output) {
+    output.appendChild(
+      document.createTextNode(
+        'I don\'t think so, no\nI could not find a pattern I recognise'
+      )
+    )
+  }
+
   function check (value = textarea.innerHTML) {
     value = value.trim()
     while (output.firstChild) {
@@ -42,26 +62,11 @@ import list from '../src/list.json'
       return
     }
 
-    if (isbot(value)) {
-      const pattern = document.createElement('kbd')
-      pattern.appendChild(
-        document.createTextNode(isbot.matches(value)?.pop())
-      )
-      output.appendChild(
-        document.createTextNode(
-          'I think so, yes\nThe pattern that was matched is: '
-        )
-      )
-      output.appendChild(pattern)
-    } else {
-      output.appendChild(
-        document.createTextNode(
-          'I don\'t think so, no\nI could not find a pattern I recognise'
-        )
-      )
-    }
+    isbot(value)
+      ? showMatch(output, value)
+      : noMatch(output)
 
     output.className = ''
     setTimeout(() => { output.className = 'highlight' }, 100)
   }
-})()
+}
