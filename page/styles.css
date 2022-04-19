@@ -50,6 +50,6 @@ output {
 kbd {
   display: inline-block;
   background: #eee;
-  font-size: .8em;
+  font-size: 0.8em;
   padding: 0 0.2em;
 }
