@@ -351,6 +351,8 @@ IIS Site Analysis:
   - iisbot/1.0 (+http://www.iis.net/iisbot.html)
 inoreader:
   - Mozilla/5.0 (compatible; inoreader.com; 2 subscribers)
+Interasco:
+  - InterascoAgent/1.0
 Invision:
   - Invision Community 4
 IP-Guide Crawler:

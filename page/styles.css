@@ -46,3 +46,10 @@ output {
   white-space: pre-line;
   font-size: 2em;
 }
+
+kbd {
+  display: inline-block;
+  background: #eee;
+  font-size: .8em;
+  padding: 0 0.2em;
+}

@@ -10,7 +10,6 @@ import list from '../src/list.json'
   const query = window.location.search.replace(/\?ua=(.*)$/, '$1')
 
   amend(list)
-  const pattern = new RegExp(list.join('|'), 'i')
 
   textarea.childNodes.forEach(child => child.parentNode?.removeChild(child))
   textarea.appendChild(document.createTextNode(
@@ -31,7 +30,9 @@ import list from '../src/list.json'
 
   function check (value = textarea.innerHTML) {
     value = value.trim()
-    output.childNodes.forEach(child => child.parentNode?.removeChild(child))
+    while (output.firstChild) {
+      output.removeChild(output.firstChild)
+    }
     if (value === '') {
       output.appendChild(
         document.createTextNode(
@@ -41,21 +42,26 @@ import list from '../src/list.json'
       return
     }
 
-    const result = isbot(value)
-    output.appendChild(
-      document.createTextNode(
-        result
-          ? `I think so, yes\nThe pattern that was matched is ‟${find(value)}”`
-          : 'I don\'t think so, no\nI could not find a pattern I recognise'
+    if (isbot(value)) {
+      const pattern = document.createElement('kbd')
+      pattern.appendChild(
+        document.createTextNode(isbot.matches(value)?.pop())
       )
-    )
+      output.appendChild(
+        document.createTextNode(
+          'I think so, yes\nThe pattern that was matched is: '
+        )
+      )
+      output.appendChild(pattern)
+    } else {
+      output.appendChild(
+        document.createTextNode(
+          'I don\'t think so, no\nI could not find a pattern I recognise'
+        )
+      )
+    }
 
     output.className = ''
     setTimeout(() => { output.className = 'highlight' }, 100)
-  }
-
-  function find (ua) {
-    const match = ua.match(pattern)
-    return match && match[0]
   }
 })()
