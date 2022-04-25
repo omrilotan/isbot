@@ -28,17 +28,24 @@ import list from '../src/list.json'
     timer = setTimeout(check, 200, value)
   }
 
+  function append(parent, tag, string) {
+    if (tag) {
+        const ele = document.createElement('kbd')
+        ele.appendChild(document.createTextNode(string))
+        parent.appendChild(ele)
+    } else {
+        parent.appendChild(document.createTextNode(string))
+    }
+  }
+
   function showMatch (output, ua) {
-    const pattern = document.createElement('kbd')
-    pattern.appendChild(
-      document.createTextNode(isbot.matches(ua)?.pop())
-    )
-    output.appendChild(
-      document.createTextNode(
-        'I think so, yes\nThe pattern that was matched is: '
-      )
-    )
-    output.appendChild(pattern)
+    const fragment = document.createDocumentFragment()
+    append(fragment, null, 'I think so, yes\n')
+    append(fragment, null, 'The substring ')
+    append(fragment, 'kbd', isbot.find(ua))
+    append(fragment, null, ' matches the pattern ')
+    append(fragment, 'kbd', isbot.matches(ua)?.pop())
+    output.appendChild(fragment)
   }
   function noMatch (output) {
     output.appendChild(

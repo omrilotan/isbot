@@ -12,12 +12,12 @@ export class Isbot {
   /**
    * @type {string[]}
    */
-  #list;
+  #list
 
   /**
    * @type {RegExp}
    */
-  #pattern;
+  #pattern
 
   constructor (patterns) {
     this.#list = patterns || list.slice()
