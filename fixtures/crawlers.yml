@@ -126,6 +126,10 @@ Censys:
   - Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)
 CF-UC:
   - CF-UC User Agent v.1d.374049
+Chrome Headless:
+  - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/100.0.4896.88 Safari/537.36
+  - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/83.0.4103.61 Safari/537.36
+  - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/92.0.4512.0 Safari/537.36
 ClamAV Website Scanner:
   - ClamAV 0.95.3
   - "ClamAV/0.101.5 (OS: linux-gnu, ARCH: x86_64, CPU: x86_64)"
@@ -440,10 +444,9 @@ Nagios check_http:
   - check_http/v1.5 (nagios-plugins 1.5)
 NalezenCzBot:
   - NalezenCzBot/1.0 (http://www.nalezen.cz/about-crawler)
-Naver:
-  - Mozilla/5.0 (compatible; Yeti/1.1; +http://naver.me/spd)
+Naver Search:
+  - Mozilla/5.0 (Linux; Android 12; SM-G975N Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/90.0.4430.232 Whale/1.0.0.0 Crosswalk/26.90.3.21 Mobile Safari/537.36 NAVER(inapp; search; 1010; 11.11.3)
   - Mozilla/5.0 (Linux; Android 8.0.0; SM-N950N Build/R16NW; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/79.0.3945.88 Mobile Safari/537.36 NAVER(inapp; search; 1000; 11.8.4; 11)
-  - Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.0 Safari/537.36 (compatible; Yeti/1.1; +http://naver.me/spd)
 nbertaupete95:
   - Mozilla/5.0/Firefox/42.0 - nbertaupete95(at)gmail.com
 Netcraft Survey Bot:
@@ -800,9 +803,9 @@ Yandex:
   - Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)
 Yandex Bot:
   - Mozilla/5.0 (compatible; YandexVerticals/1.0; http://yandex.com/bots)
-Yeti:
+Yeti (Naver):
   - Mozilla/5.0 (compatible; yeti/1.1; +http://naver.me/spd)
-Yeti/Naverbot:
+  - Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.0 Safari/537.36 (compatible; Yeti/1.1; +http://naver.me/spd)
   - Yeti/1.1 (Naver Corp.; http://help.naver.com/robots/)
 Youdao Bot:
   - Mozilla/5.0 (compatible; YoudaoBot/1.0; http://www.youdao.com/help/webmaster/spider/; )
