@@ -28,13 +28,13 @@ import list from '../src/list.json'
     timer = setTimeout(check, 200, value)
   }
 
-  function append(parent, tag, string) {
+  function append (parent, tag, string) {
     if (tag) {
-        const ele = document.createElement('kbd')
-        ele.appendChild(document.createTextNode(string))
-        parent.appendChild(ele)
+      const ele = document.createElement('kbd')
+      ele.appendChild(document.createTextNode(string))
+      parent.appendChild(ele)
     } else {
-        parent.appendChild(document.createTextNode(string))
+      parent.appendChild(document.createTextNode(string))
     }
   }
 
