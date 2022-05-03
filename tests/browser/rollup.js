@@ -1,6 +1,5 @@
 const { join } = require('path')
 const { nodeResolve } = require('@rollup/plugin-node-resolve')
-const json = require('@rollup/plugin-json')
 
 module.exports = {
   input: join(__dirname, 'spec.js'),
@@ -10,7 +9,6 @@ module.exports = {
     name: 'isbot'
   },
   plugins: [
-    json(),
     nodeResolve({ browser: true })
   ]
 }
