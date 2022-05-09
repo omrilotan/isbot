@@ -55,6 +55,8 @@
     "test": "npm run spec && npm run efficiency",
     "prespec": "npm run prepare",
     "spec": "node --experimental-modules --experimental-json-modules ./node_modules/.bin/mocha tests/specs/spec.js",
+    "jest": "cd jest && npm t",
+    "postjest": "cd ..",
     "preefficiency": "npm run prepare",
     "efficiency": "node --expose-gc --experimental-modules --experimental-json-modules ./node_modules/.bin/mocha tests/efficiency/spec.js",
     "symlink": "./scripts/symlink/index.js",

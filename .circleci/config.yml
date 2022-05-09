@@ -79,6 +79,7 @@ jobs:
       - run: git diff --quiet || exit 1
       - run: npm run remark
       - run: npm t
+      - run: npm run jest
       - run: npm run ts
   compatibility:
     parameters:
