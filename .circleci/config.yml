@@ -17,11 +17,10 @@ workflows:
           matrix:
             parameters:
               image:
-                - circleci/node:10
-                - circleci/node:12
-                - circleci/node:14
-                - circleci/node:16
-                - circleci/node:17
+                - cimg/node:12.22
+                - cimg/node:14.18
+                - cimg/node:16.15
+                - cimg/node:18.0
           requires:
             - build
       - publish:
@@ -50,12 +49,18 @@ workflows:
 jobs:
   build:
     docker:
-      - image: circleci/node:16-browsers
+      - image: cimg/node:current-browsers
     steps:
       - checkout
       - run: git submodule update --init --recursive
       - run: node -v
       - run: npm i
+      - run: |
+          wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+          echo "deb http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee -a /etc/apt/sources.list.d/google-chrome.list
+          sudo apt update
+          sudo apt install -y google-chrome-stable xvfb
+          sudo apt install firefox
       - run: npm run build
       - persist_to_workspace:
           root: .
@@ -64,7 +69,7 @@ jobs:
   tests:
     working_directory: ~/project
     docker:
-      - image: circleci/node:16-browsers
+      - image: cimg/node:current-browsers
     steps:
       - run: node -v
       - attach_workspace:
@@ -79,7 +84,7 @@ jobs:
     parameters:
       image:
         description: docker image
-        default: circleci/node:latest
+        default: cimg/node:latest
         type: string
     working_directory: ~/project
     docker:
@@ -93,14 +98,14 @@ jobs:
       - when:
           condition:
             matches:
-              pattern: "circleci/node:1[2-7]"
+              pattern: "cimg/node:1[2-8]-.*"
               value: << parameters.image >>
           steps:
             - run: npm run esm
   publish:
     working_directory: ~/project
     docker:
-      - image: circleci/node:16-browsers
+      - image: cimg/node:current-browsers
     steps:
       - checkout
       - run: git submodule update --init --recursive
@@ -127,7 +132,7 @@ jobs:
   pages:
     working_directory: ~/project
     docker:
-      - image: circleci/node:16
+      - image: cimg/node:lts
     steps:
       - checkout
       - run: git submodule update --init --recursive
@@ -142,7 +147,7 @@ jobs:
   periodic:
     working_directory: ~/project
     docker:
-      - image: circleci/node:16-browsers
+      - image: cimg/node:current-browsers
     steps:
       - checkout
       - run: git submodule update --init --recursive
