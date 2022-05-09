@@ -1,0 +1,15 @@
+{
+  "type": "module",
+  "scripts": {
+    "cjs": "jest cjs",
+    "esm": "node --experimental-vm-modules ./node_modules/.bin/jest esm",
+    "pretest": "which jest || npm i",
+    "test": "npm run esm && npm run cjs"
+  },
+  "dependencies": {
+    "isbot": "../"
+  },
+  "devDependencies": {
+    "jest": "^28.1.0"
+  }
+}
