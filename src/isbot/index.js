@@ -1,4 +1,4 @@
-import list from '../list.json'
+import list from '../list.json' assert { type: 'json' }
 import { amend } from '../amend/index.js'
 
 amend(list)

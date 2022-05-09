@@ -2,8 +2,8 @@
 
 import { strict } from 'assert'
 import wait from '@lets/wait'
-import list from '../../src/list.json'
-import fixtures from '../../fixtures/index.json'
+import list from '../../src/list.json' assert { type: 'json' }
+import fixtures from '../../fixtures/index.json' assert { type: 'json' }
 import stdline from 'stdline'
 
 const { fail } = strict

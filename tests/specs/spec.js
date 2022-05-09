@@ -2,7 +2,7 @@
 
 import { strict as assert } from 'assert'
 import isbot from '../../src/index.js'
-import fixtures from '../../fixtures/index.json'
+import fixtures from '../../fixtures/index.json' assert { type: 'json' }
 
 const { browsers = [], crawlers = [] } = fixtures
 
