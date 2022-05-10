@@ -43,12 +43,12 @@ import list from '../src/list.json'
     const is = isbot(ua)
     const found = is && isbot.find(ua)
     const pattern = found
-      ? isbot.matches(ua)?.find(pattern => new RegExp(pattern, 'i').test(found))
-      : null
+        ? isbot.matches(ua)?.find(pattern => new RegExp(pattern, 'i').test(found))
+        : null
 
     is
-      ? append(fragment, null, 'I think so, yes\n')
-      : append(fragment, null, 'I don\'t think so, no\nI could not find a pattern I recognise')
+        ? append(fragment, null, 'I think so, yes\n')
+        : append(fragment, null, 'I don\'t think so, no\nI could not find a pattern I recognise')
     found && append(fragment, null, 'The substring ')
     found && append(fragment, 'kbd', found)
     pattern && append(fragment, null, ' matches the pattern ')
