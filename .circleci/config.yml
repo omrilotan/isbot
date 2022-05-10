@@ -49,7 +49,7 @@ workflows:
 jobs:
   build:
     docker:
-      - image: cimg/node:current-browsers
+      - image: cimg/node:lts-browsers
     steps:
       - checkout
       - run: git submodule update --init --recursive
@@ -69,7 +69,7 @@ jobs:
   tests:
     working_directory: ~/project
     docker:
-      - image: cimg/node:current-browsers
+      - image: cimg/node:lts-browsers
     steps:
       - run: node -v
       - attach_workspace:
@@ -105,7 +105,7 @@ jobs:
   publish:
     working_directory: ~/project
     docker:
-      - image: cimg/node:current-browsers
+      - image: cimg/node:lts-browsers
     steps:
       - checkout
       - run: git submodule update --init --recursive
@@ -135,8 +135,8 @@ jobs:
       - image: cimg/node:lts
     steps:
       - checkout
-      - run: git submodule update --init --recursive
-      - run: npm i
+      - attach_workspace:
+          at: .
       - run: npm run page
       - run:
           name: Copy circleci config
@@ -147,7 +147,7 @@ jobs:
   periodic:
     working_directory: ~/project
     docker:
-      - image: cimg/node:current-browsers
+      - image: cimg/node:lts-browsers
     steps:
       - checkout
       - run: git submodule update --init --recursive

@@ -1,4 +1,4 @@
-import isbot from '../src/index.js'
+import isbot from '..'
 import { amend } from '../src/amend/index.js'
 import list from '../src/list.json'
 
@@ -38,21 +38,22 @@ import list from '../src/list.json'
     }
   }
 
-  function showMatch (output, ua) {
+  function details (ua) {
     const fragment = document.createDocumentFragment()
-    append(fragment, null, 'I think so, yes\n')
-    append(fragment, null, 'The substring ')
-    append(fragment, 'kbd', isbot.find(ua))
-    append(fragment, null, ' matches the pattern ')
-    append(fragment, 'kbd', isbot.matches(ua)?.pop())
-    output.appendChild(fragment)
-  }
-  function noMatch (output) {
-    output.appendChild(
-      document.createTextNode(
-        'I don\'t think so, no\nI could not find a pattern I recognise'
-      )
-    )
+    const is = isbot(ua)
+    const found = is && isbot.find(ua)
+    const pattern = found
+      ? isbot.matches(ua)?.find(pattern => new RegExp(pattern, 'i').test(found))
+      : null
+
+    is
+      ? append(fragment, null, 'I think so, yes\n')
+      : append(fragment, null, 'I don\'t think so, no\nI could not find a pattern I recognise')
+    found && append(fragment, null, 'The substring ')
+    found && append(fragment, 'kbd', found)
+    pattern && append(fragment, null, ' matches the pattern ')
+    pattern && append(fragment, 'kbd', pattern)
+    return fragment
   }
 
   function check (value = textarea.innerHTML) {
@@ -69,9 +70,7 @@ import list from '../src/list.json'
       return
     }
 
-    isbot(value)
-      ? showMatch(output, value)
-      : noMatch(output)
+    output.appendChild(details(value))
 
     output.className = ''
     setTimeout(() => { output.className = 'highlight' }, 100)
