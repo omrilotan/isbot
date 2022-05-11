@@ -12,9 +12,12 @@ Amazon 4K Fire TV:
 Amiga:
   - Amiga-AWeb/3.4.167SE
   - AmigaOS 4.0 AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94 Tablet Safari/537.36)
+  - AmigaVoyager/3.2 (AmigaOS/MC680x0)
   - AmigaVoyager/3.4.4 (MorphOS/PPC native)
   - IBrowse/2.4demo (AmigaOS 3.9; 68K)
   - IBrowse/2.5.4demo (Amiga; AmigaOS 3.1.4; Build 25.96 68K)
+  - IBrowse/2.5.5 (Amiga; MorphOS 3.16; Build 25.99 68K)
+  - IBrowse/2.55 (AmigaOS 3.2)
   - Mozilla/5.0 (Amiga; PowerPC AmigaOS 4.1; Odyssey Web Browser; rv:1.23) AppleWebKit/538.1 (KHTML, like Gecko) OWB/1.23 Safari/538.1
   - Mozilla/5.0 (AmigaOs; 4.0; en-US; rv:1.8.1.21pre)  AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.666.4147.105 Safari/537.36
   - Mozilla/5.0 (compatible; IBrowse 2.5.3; AmigaOS 3.1.2)
@@ -22,13 +25,8 @@ Amiga:
   - Mozilla/6.0 (compatible; Amiga-AWeb)
   - Mozilla/6.0 (compatible; MSIE 7.01; Amiga-AWeb)
   - Mozilla/6.0 (Macintosh; U; Amiga-AWeb) Safari 2.9
-  - Voyager3/AmigaoS3.1
-Amiga Aweb:
   - Mozilla/6.0 (Macintosh; U; Amiga-AWeb) Safari 3.1
-Amiga IBrowse:
-  - IBrowse/2.55 (AmigaOS 3.2)
-Amiga Voyager:
-  - AmigaVoyager/3.2 (AmigaOS/MC680x0)
+  - Voyager3/AmigaoS3.1
 Amigo:
   - Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.74 Safari/537.36 MRCHROME
 Android:
