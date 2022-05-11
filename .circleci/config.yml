@@ -108,7 +108,6 @@ jobs:
       - image: cimg/node:lts-browsers
     steps:
       - checkout
-      - run: git submodule update --init --recursive
       - run:
           name: Stop if remote tag already exists
           command: |
