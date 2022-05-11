@@ -2,13 +2,13 @@
 *.md
 LICENSE
 
-scripts/*
-page/*
 docs/*
+fixtures/*
+jest/*
+page/*
+scripts/*
+src/*
+tests/*
 
 babel.config.json
 tsconfig.json
-
-fixtures/*
-tests/*
-src/*
