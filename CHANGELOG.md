@@ -1,5 +1,8 @@
 # Changelog
 
+## [3.4.7](https://github.com/omrilotan/isbot/compare/v3.4.6...v3.4.7)
+-   Add Zoom Webhook
+
 ## [3.4.6](https://github.com/omrilotan/isbot/compare/v3.4.5...v3.4.6)
 -   Add nodejs native agent (undici)
 -   Add random long string

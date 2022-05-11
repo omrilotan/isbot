@@ -819,7 +819,9 @@ Ze List:
   - zelist.ro feed parser (+http://www.zelist.ro)
 Zookabot:
   - Zookabot/2.5;++http://zookabot.com
-Zoom:
+Zoom Webhook:
+  - Zoom Marketplace/1.0a
+ZoomBot (seozoom.it):
   - zoombot (linkbot 1.0 http://suite.seozoom.it/bot.html)
 ZumBot:
   - ZumBot/1.0 (ZUM Search; http://help.zum.com/inquiry)
