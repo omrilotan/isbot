@@ -36,7 +36,9 @@ module.exports = function client ({ url, method = 'GET', data, headers = {} } = 
           },
           response => {
             if (Math.floor(response.statusCode / 100) !== 2) {
-              const error = new Error(response.statusText)
+              const error = new Error('Failed request')
+              error.url = url
+              error.status = [response.statusCode, response.statusText].filter(Boolean).join(' ')
               error.code = response.statusCode
               error.headers = JSON.stringify(response.headers)
               reject(error)
