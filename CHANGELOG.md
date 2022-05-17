@@ -1,5 +1,9 @@
 # Changelog
 
+## [3.4.8](https://github.com/omrilotan/isbot/compare/v3.4.7...v3.4.8)
+-   Replace single space pattern with literal white space, which is more efficient
+-   Add a more generic identifier to simplified user agent names
+
 ## [3.4.7](https://github.com/omrilotan/isbot/compare/v3.4.6...v3.4.7)
 -   Add Zoom Webhook
 
