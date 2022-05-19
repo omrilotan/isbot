@@ -1,11 +1,12 @@
 {
   "type": "commonjs",
   "scripts": {
-    "cjs": "jest cjs -c jest.config.js",
-    "esm": "jest esm -c jest.config.js",
-    "ts": "jest ts -c jest.config.ts.js",
+    "browser": "jest esm --env='jsdom'",
+    "cjs": "jest cjs",
+    "esm": "jest esm",
     "pretest": "which jest || npm i",
-    "test": "npm run esm && npm run cjs && npm run ts"
+    "test": "npm run esm && npm run cjs && npm run browser && npm run ts",
+    "ts": "jest ts"
   },
   "dependencies": {
     "isbot": "../"
@@ -17,6 +18,7 @@
     "@types/jest": "^27.5.0",
     "babel-jest": "^28.1.0",
     "jest": "^28.1.0",
+    "jest-environment-jsdom": "^28.1.0",
     "ts-jest": "^28.0.2"
   }
 }
