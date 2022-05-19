@@ -1,5 +1,8 @@
 # Changelog
 
+## [3.5.0](https://github.com/omrilotan/isbot/compare/v3.4.8...v3.5.0)
+-   Specify browser and node entries for require and import (resolves issue with jest 28)
+
 ## [3.4.8](https://github.com/omrilotan/isbot/compare/v3.4.7...v3.4.8)
 -   Replace single space pattern with literal white space, which is more efficient
 -   Add a more generic identifier to simplified user agent names
