@@ -84,6 +84,7 @@ jobs:
       - run: git diff --quiet || exit 1
       - run: npm run remark
       - run: npm t
+      - run: npm run jest
       - run: npm run ts
   compatibility:
     parameters:
@@ -151,7 +152,7 @@ jobs:
   periodic:
     working_directory: ~/project
     docker:
-      - image: cimg/node:lts-browsers
+      - image: cimg/node:lts
     steps:
       - checkout
       - run: git submodule update --init --recursive

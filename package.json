@@ -1,6 +1,6 @@
 {
   "name": "isbot",
-  "version": "3.4.8",
+  "version": "3.5.0",
   "description": "🤖 detect bots/crawlers/spiders via the user agent.",
   "keywords": [
     "bot",
@@ -27,10 +27,16 @@
   "exports": {
     "./package.json": "./package.json",
     ".": {
-      "browser": "./index.mjs",
+      "browser": {
+        "import": "./index.mjs",
+        "require": "./index.js"
+      },
+      "node": {
+        "import": "./index.mjs",
+        "require": "./index.js"
+      },
       "import": "./index.mjs",
       "require": "./index.js",
-      "node": "./index.js",
       "default": "./index.js"
     }
   },
@@ -55,6 +61,8 @@
     "test": "npm run spec && npm run efficiency",
     "prespec": "npm run prepare",
     "spec": "node --experimental-modules --experimental-json-modules ./node_modules/.bin/mocha tests/specs/spec.js",
+    "jest": "cd jest && npm t",
+    "postjest": "cd ..",
     "preefficiency": "npm run prepare",
     "efficiency": "node --expose-gc --experimental-modules --experimental-json-modules ./node_modules/.bin/mocha tests/efficiency/spec.js",
     "symlink": "./scripts/symlink/index.js",
