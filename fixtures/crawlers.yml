@@ -222,22 +222,6 @@ Facebook:
   - facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)
   - facebookplatform/1.0 (+http://developers.facebook.com)
   - facebot
-Feed Wrangler:
-  - Feed Wrangler/1.0 (3 subscribers; feed-id=248559; http://feedwrangler.net; Allow like Gecko)
-Feedbin:
-  - Feedbin - 9 subscribers
-FeedBurner:
-  - FeedBurner/1.0 (http://www.FeedBurner.com)
-FeedDemon:
-  - FeedDemon/4.5 (http://www.feeddemon.com/; Microsoft Windows XP)
-Feeddler RSS Reader:
-  - FeeddlerRSS 2.4 (iPad; iPhone OS 5.1.1; en_US)
-Feedly:
-  - MetaFeedly/1.0 (http://www.feedly.com)
-Feedspot:
-  - Feedspot http://www.feedspot.com
-Fever:
-  - Fever/1.38 (Feed Parser; http://feedafever.com; Allow like Gecko)
 Findxbot:
   - Mozilla/5.0 (compatible; Findxbot/1.0; +http://www.findxbot.com)
 FirePHP:
@@ -247,8 +231,6 @@ Flipboard:
   - Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:28.0) Gecko/20100101 Firefox/28.0 (FlipboardProxy/1.6; +http://flipboard.com/browserproxy)
 Foregenix:
   - Foregenix Web Scan 1.100000 (www.foregenix.com/scan)
-FreshRSS:
-  - FreshRSS/1.12.0 (Linux; https://freshrss.org)
 Generic Bot:
   - SeopultContentAnalyzer/1.0
 Genieo Web filter:
@@ -374,8 +356,6 @@ Kaspersky:
   - Kaspersky Lab CFR link resolver cfradmins@kaspersky.com
 Knowledge AI:
   - The Knowledge AI
-Kouio:
-  - kouio.com RSS reader - 6 subscribers
 Kuberneters:
   - applicationhealthservice/1.0
   - kube-probe/1.15
@@ -407,8 +387,6 @@ M2E Pro Cron Service:
   - M2E Pro Cron Service/1.0
 Magpie-Crawler:
   - magpie-crawler/1.1 (U; Linux amd64; en-GB; +http://www.brandwatch.net)
-MagpieRSS:
-  - MagpieRSS/0.72 (+http://magpierss.sf.net)
 Mail.Ru Bot:
   - Mozilla/5.0 (compatible; Linux x86_64; Mail.RU_Bot/Fast/2.0; +http://go.mail.ru/help/robots)
 masscan:
@@ -543,8 +521,6 @@ Pulp:
   - Pulp/1.5.2 (iPad; http://www.acrylicapps.com/pulp/)
 QuerySeekerSpider:
   - QuerySeekerSpider ( http://queryseeker.com/bot.html )
-QuiteRSS:
-  - Mozilla/5.0 (Windows NT 6.1) AppleWebKit/602.1 (KHTML, like Gecko) QuiteRSS/0.18.12 Safari/602.1
 Quora Link Preview:
   - Quora Link Preview/1.0 (http://www.quora.com)
 Qwantify:
@@ -570,14 +546,26 @@ Rogerbot:
   - rogerbot/1.0 (http://www.moz.com/dp/rogerbot, rogerbot-crawler@moz.com)
 ROI Hunter:
   - ROI Hunter; https://api-dev.roihunter.com
-RSS Bandit:
-  - RssBandit/1.9.0.1002 (.NET CLR 2.0.50727.7512; WinNT 6.2.9200.0; http://www.rssbandit.org)
-RSS Junkie:
+RSS Feed Readers:
+  - Bloglines/3.1 (http://www.bloglines.com)
+  - Feed Wrangler/1.0 (3 subscribers; feed-id=248559; http://feedwrangler.net; Allow like Gecko)
+  - Feedbin - 9 subscribers
+  - FeedBurner/1.0 (http://www.FeedBurner.com)
+  - FeedDemon/4.5 (http://www.feeddemon.com/; Microsoft Windows XP)
+  - FeeddlerRSS 2.4 (iPad; iPhone OS 5.1.1; en_US)
+  - Feedspot http://www.feedspot.com
+  - Fever/1.38 (Feed Parser; http://feedafever.com; Allow like Gecko)
+  - FreshRSS/1.12.0 (Linux; https://freshrss.org)
+  - kouio.com RSS reader - 6 subscribers
+  - MagpieRSS/0.72 (+http://magpierss.sf.net)
+  - MetaFeedly/1.0 (http://www.feedly.com)
+  - Mozilla/5.0 (feeder.co; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+  - Mozilla/5.0 (Windows NT 6.1) AppleWebKit/602.1 (KHTML, like Gecko) QuiteRSS/0.18.12 Safari/602.1
   - RSS Junkie Daemon
-RSSOwl:
+  - RssBandit/1.9.0.1002 (.NET CLR 2.0.50727.7512; WinNT 6.2.9200.0; http://www.rssbandit.org)
   - RSSOwl/2.2.1.201312301316 (X11; U; en)
-RSSRadio Bot:
   - RSSRadio (Push Notification Scanner;support@dorada.co.uk)
+  - Tiny Tiny RSS/1.11.4c63934 (http://tt-rss.org/)
 RuxitSynthetic:
   - Chrome/80.0.3987.87 Safari/537.36 RuxitSynthetic/1.0 v6191106029376332690 t7889551165227354132
   - Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/56.0.2924.75 Mobile/14E5239e Safari/602.1 RuxitSynthetic/1.0
@@ -704,8 +692,6 @@ Thumbor:
   - Thumbor/6.7.5, Mozilla/5.0 (Linux; Android 9; RAZER Phone Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.111 Mobile Safari/537.36 AlohaBrowser/2.13.1
 TinEye Crawler:
   - TinEye-bot/0.02 (see http://www.tineye.com/crawler.html)
-Tiny Tiny RSS:
-  - Tiny Tiny RSS/1.11.4c63934 (http://tt-rss.org/)
 TLSProbe:
   - TLSProbe/1.0 (+https://scan.trustnet.venafi.com/)
 TraceMyFile:
@@ -832,5 +818,6 @@ ZZZ Glitches and Errornous User Agent Strings:
   - "123"
   - Chrome
   - default_user_agent
+  - ipad
   - iphone 6 plus;afengineurl=https://intoli.com:443;traceId=63028f8e-c5fc-4846-993f-59a96268a85d
   - U2FsdGVkX1+uKxeH2946/bMTDvtm/Fr0nWjvFR/oPtc64LSh1Gg0qkbJUIhLpSw5h/mjF86TFOXrl4U2SG1KBi4BC0EfphyIzeOxVXkpBWHDMfJnkrFGrubrRGjmJNIN49DKkOcjVgq2/iVDBMSAQe30k9wNIDtflfnlrOrmDPkXiYNjLbohSHLaNWS/GK5hu62gkOH25c9i1B+jMq5kc590HoQqJ0o4es9QrEnwluMsYPbQy14LxgPjeCQveiPHPXtkSM7TmfTY53HEJdbFHylstSOJNTQclbL67BKx33M=
