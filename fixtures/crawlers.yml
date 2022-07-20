@@ -694,6 +694,8 @@ TinEye Crawler:
   - TinEye-bot/0.02 (see http://www.tineye.com/crawler.html)
 TLSProbe:
   - TLSProbe/1.0 (+https://scan.trustnet.venafi.com/)
+ToolBot:
+  - "SEO Consulting; Redirect Checker Tool V.02; IP:"
 TraceMyFile:
   - Mozilla/5.0 (compatible; tracemyfile/1.0)
 Trendiction Bot:
