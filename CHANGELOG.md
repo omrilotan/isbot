@@ -1,7 +1,11 @@
 # Changelog
 
+## [3.5.2](https://github.com/omrilotan/isbot/compare/v3.5.1...v3.5.2)
+-   Build supports more interpolation (transform class etc.)
+
 ## [3.5.1](https://github.com/omrilotan/isbot/compare/v3.5.0...v3.5.1)
 -   Add SERP (Search Engine Results Pages) Reputation Management tools
+
 ## [3.5.0](https://github.com/omrilotan/isbot/compare/v3.4.8...v3.5.0)
 -   Specify browser and node entries for require and import (resolves issue with jest 28)
 
