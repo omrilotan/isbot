@@ -1,5 +1,9 @@
 # Changelog
 
+## [3.5.3](https://github.com/omrilotan/isbot/compare/v3.5.2...v3.5.3)
+-   Fix for "Google Pixel" combination
+-   Add strings starting with "custom"
+
 ## [3.5.2](https://github.com/omrilotan/isbot/compare/v3.5.1...v3.5.2)
 -   Build supports more interpolation (transform class etc.)
 
