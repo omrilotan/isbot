@@ -48,6 +48,7 @@ archive.org bot:
 ArchiveBox:
   - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.61 Safari/537.36 ArchiveBox/0.6.2
   - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.61 Safari/537.36 ArchiveBox/{VERSION} (+https://github.com/ArchiveBox/ArchiveBox/)
+  - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/605.1.15 ArchiveBox/{VERSION} (+https://github.com/ArchiveBox/ArchiveBox/)
 Ask Jeeves:
   - Mozilla/2.0 (compatible; Ask Jeeves/Teoma)
 AspiegelBot:
@@ -352,6 +353,8 @@ JetBrains Omea Reader:
   - JetBrains Omea Reader 2.2 (http://www.jetbrains.com/omea/reader/)
 Jorgee Vulnerability Scanner:
   - Mozilla/5.0 Jorgee
+jsjcw_scanner:
+  - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36 jsjcw_scanner
 Kaspersky:
   - Kaspersky Lab CFR link resolver cfradmins@kaspersky.com
 Knowledge AI:
