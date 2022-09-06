@@ -18,7 +18,7 @@ export function amend (list) {
 
   // Addresses: Android webview
   list.splice(list.lastIndexOf('google'), 1)
-  list.push('(?<! (channel\\/|google\\/))google(?!(app|\\/google))')
+  list.push('(?<! (channel/|google/))google(?!(app|/google| pixel))')
 
   // Addresses: Yandex browser
   list.splice(list.lastIndexOf('search'), 1)

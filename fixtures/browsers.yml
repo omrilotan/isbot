@@ -239,6 +239,12 @@ GNOME Web:
   - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.26+ (KHTML, like Gecko) Version/5.0 Safari/534.26+ Ubuntu/10.10 (2.30.6-1ubuntu5) Epiphany/2.30.6
 Google Nexus Player:
   - Dalvik/2.1.0 (Linux; U; Android 6.0.1; Nexus Player Build/MMB29T)
+Google Pixel:
+  - Google pixel
+  - Mozilla/5.0 (Linux; Android 12; Pixel 3a) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36
+  - Mozilla/5.0 (Linux; Android 13; Pixel 6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36
+  - Mozilla/5.0 (Linux; Android 7.1.2; google Pixel 2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36
+  - Safari/600.2.5 MobileRicardo (Google Pixel 6; android 13) ricardo.ch/8.28.2-82802 (debug) deviceId/dfa51331-fdeb-46d7-aa01-8d09a263ef90
 Google Search App:
   - Mozilla/5.0 (iPad; CPU OS 9_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/10.0.63022 Mobile/13B143 Safari/600.1.4
   - Mozilla/5.0 (iPhone; CPU iPhone OS 13_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/102.0.304944559 Mobile/15E148 Safari/604.1
