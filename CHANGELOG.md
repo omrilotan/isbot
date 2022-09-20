@@ -1,5 +1,8 @@
 # Changelog
 
+## [3.5.4](https://github.com/omrilotan/isbot/compare/v3.5.3...v3.5.4)
+-   Add strings starting with the word "nginx"
+
 ## [3.5.3](https://github.com/omrilotan/isbot/compare/v3.5.2...v3.5.3)
 -   Fix for "Google Pixel" combination
 -   Add strings starting with "custom"
