@@ -74,6 +74,7 @@
   "^my browser$",
   "^navermailapp",
   "^netsurf",
+  "^nginx\\W",
   "^node-superagent",
   "^octopus",
   "^offline explorer",
