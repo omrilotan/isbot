@@ -47,6 +47,11 @@ declare namespace isbot {
    * @returns isbot function with full interface
    */
   function spawn(list?: string[]): typeof isbot;
+
+  /**
+   * A copy of the regular expression pattern
+   */
+  const pattern: RegExp;
 }
 
 export = isbot;

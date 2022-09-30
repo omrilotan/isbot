@@ -1,5 +1,8 @@
 # Changelog
 
+## [3.6.0](https://github.com/omrilotan/isbot/compare/v3.5.4...v3.6.0)
+-   Expose a copy of the regular expression pattern via isbot.pattern getter
+
 ## [3.5.4](https://github.com/omrilotan/isbot/compare/v3.5.3...v3.5.4)
 -   Add strings starting with the word "nginx"
 

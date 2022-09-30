@@ -6,7 +6,7 @@ import fixtures from '../../fixtures/index.json' assert { type: 'json' }
 
 const { browsers = [], crawlers = [] } = fixtures
 
-const { equal, fail } = assert
+const { equal, fail, notEqual } = assert
 let spawn
 
 describe(
@@ -130,6 +130,21 @@ describe(
         spawn1.extend(['neobrowser'])
         const spawn2 = spawn1.spawn()
         assert(spawn2(newUA))
+      })
+    })
+
+    describe('spawn.pattern', () => {
+      it('should expose the regular expression', () => {
+        assert(spawn.pattern instanceof RegExp)
+
+        const { pattern: re1 } = spawn
+        const { pattern: re2 } = spawn
+
+        notEqual(re1, re2)
+        equal(re1.toString(), re2.toString())
+
+        re2.compile('something')
+        notEqual(re1.toString(), re2.toString())
       })
     })
   }
