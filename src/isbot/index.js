@@ -27,13 +27,22 @@ export class Isbot {
 
     return Object.defineProperties(
       isbot,
-      Object.getOwnPropertyNames(Isbot.prototype).filter(
-        prop => !['constructor'].includes(prop)
-      ).reduce(
-        (accumulator, prop) => Object.assign(
-          accumulator,
-          { [prop]: { get: () => this[prop].bind(this) } }
-        ),
+      Object.entries(Object.getOwnPropertyDescriptors(Isbot.prototype)).reduce(
+        (accumulator, [prop, descriptor]) => {
+          if (typeof descriptor.value === 'function') {
+            Object.assign(
+              accumulator,
+              { [prop]: { value: this[prop].bind(this) } }
+            )
+          }
+          if (typeof descriptor.get === 'function') {
+            Object.assign(
+              accumulator,
+              { [prop]: { get: () => this[prop] } }
+            )
+          }
+          return accumulator
+        },
         {}
       )
     )
@@ -56,6 +65,14 @@ export class Isbot {
    */
   #index (rule) {
     return this.#list.indexOf(rule.toLowerCase())
+  }
+
+  /**
+   * Get a clone of the pattern
+   * @type RegExp
+   */
+  get pattern () {
+    return new RegExp(this.#pattern)
   }
 
   /**

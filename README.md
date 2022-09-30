@@ -86,6 +86,11 @@ lean('Googlebot') // true
 lean('Chrome-Lighthouse') // false
 ```
 
+### Get a copy of the Regular Expression pattern
+```js
+const { pattern } = isbot
+```
+
 ## Definitions
 -   **Bot.** Autonomous program imitating or replacing some aspect of a human behaviour, performing repetitive tasks much faster than human users could.
 -   **Good bot.** Automated programs who visit websites in order to collect useful information. Web crawlers, site scrapers, stress testers, preview builders and other programs are welcomed on most websites because they serve purposes of mutual benefits.
