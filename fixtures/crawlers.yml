@@ -138,6 +138,7 @@ ClamAV Website Scanner:
 Cliqzbot:
   - Cliqzbot/0.1 (+http://cliqz.com/company/cliqzbot)
 CloudFlare:
+  - Cloudflare Custom Hostname Verification
   - Mozilla/5.0 (compatible; CloudFlare-AlwaysOnline/1.0; +http://www.cloudflare.com/always-online) AppleWebKit/534.34
   - Mozilla/5.0 (compatible; Cloudflare-AMP/1.0; +https://amp.cloudflare.com/doc/fetcher.html) AppleWebKit/534.34
   - "Mozilla/5.0 (compatible;Cloudflare-Healthchecks/1.0;+https://www.cloudflare.com/; healthcheck-id: f867e0e43eca7aa4)"
@@ -172,6 +173,9 @@ Discobot:
 Discourse Onebox:
   - Discourse Forum Onebox v2.6.0.beta2
   - Discourse/2.6.0.beta3
+Domain Control Violation:
+  - COMODO DCV
+  - Sectigo DCV
 Domain Re-Animator Bot:
   - support@domainreanimator.com
 DotBot:
