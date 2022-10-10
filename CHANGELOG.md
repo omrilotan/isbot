@@ -1,5 +1,8 @@
 # Changelog
 
+## [3.6.1](https://github.com/omrilotan/isbot/compare/v3.6.0...v3.6.1)
+-   Edit list and exception patterns (more bots, simpler pattern)
+
 ## [3.6.0](https://github.com/omrilotan/isbot/compare/v3.5.4...v3.6.0)
 -   Expose a copy of the regular expression pattern via isbot.pattern getter
 

@@ -12,29 +12,23 @@ export function amend (list) {
     return list
   }
 
-  // Addresses: Cubot device
-  list.splice(list.lastIndexOf('bot'), 1)
-  list.push('(?<! cu)bot')
-
-  // Addresses: Android webview
-  list.splice(list.lastIndexOf('google'), 1)
-  list.push('(?<! (channel/|google/))google(?!(app|/google| pixel))')
-
-  // Addresses: Yandex browser
-  list.splice(list.lastIndexOf('search'), 1)
-  list.push('(?<! (ya|yandex))search')
-
-  // Addresses: libhttp browser
-  list.splice(list.lastIndexOf('http'), 1)
-  list.push('(?<!(lib))http')
-
-  // Addresses: java based browsers
-  list.splice(list.lastIndexOf('java'), 1)
-  list.push('java(?!;)')
-
-  // Addresses: Mozilla nightly build https://github.com/mozilla-mobile/android-components/search?q=MozacFetch
-  list.splice(list.lastIndexOf('fetch'), 1)
-  list.push('(?<!(mozac))fetch')
+  [
+    // Addresses: Cubot device
+    ['bot', '(?<! cu)bot'],
+    // Addresses: Android webview
+    ['google', '(?<! (channel/|google/))google(?!(app|/google| pixel))'],
+    // Addresses: libhttp browser
+    ['http', '(?<!(lib))http'],
+    // Addresses: java based browsers
+    ['java', 'java(?!;)']
+  ].forEach(
+    ([search, replace]) => {
+      const index = list.lastIndexOf(search)
+      if (~index) {
+        list.splice(index, 1, replace)
+      }
+    }
+  )
 
   return list
 }

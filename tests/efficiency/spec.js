@@ -16,7 +16,7 @@ const clone = () => list.slice()
 describe('efficiency', () => {
   describe(`All rules are needed. Check each one against ${crawlers.length} user agent strings`, () => {
     it('should find no unneeded rules', async function () {
-      this.timeout(20000)
+      this.timeout(30000)
 
       const redundantRules = []
 
@@ -46,7 +46,7 @@ describe('efficiency', () => {
   })
   describe(`Rules can not be prefixed with a hat. Check each one against ${crawlers.length} user agent strings`, () => {
     it('should not be missing a hat', async function () {
-      this.timeout(20000)
+      this.timeout(30000)
 
       const rulesWithNoHat = []
 
