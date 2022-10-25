@@ -1,5 +1,9 @@
 # Changelog
 
+## [3.6.2](https://github.com/omrilotan/isbot/compare/v3.6.1...v3.6.2)
+-   Recognise Uptime-Kuma/1.18.0
+-   Reintroduce Yandex Search app exclusion
+
 ## [3.6.1](https://github.com/omrilotan/isbot/compare/v3.6.0...v3.6.1)
 -   Edit list and exception patterns (more bots, simpler pattern)
 

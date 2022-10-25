@@ -55,7 +55,6 @@ describe(
         spawn.extend([rule])
         spawn.extend([rule])
         spawn.exclude([rule])
-        console.log(spawn.list)
         assert(!spawn(useragent))
       })
     })
