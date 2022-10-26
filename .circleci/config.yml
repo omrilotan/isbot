@@ -1,15 +1,4 @@
 version: 2.1
-commands:
-  browsers:
-    steps:
-      - run:
-          name: Install browsers
-          command: |
-            wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-            echo "deb http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee -a /etc/apt/sources.list.d/google-chrome.list
-            sudo apt update
-            sudo apt install -y google-chrome-stable xvfb
-            sudo apt install firefox
 workflows:
   test:
     jobs:
@@ -66,7 +55,6 @@ jobs:
       - run: git submodule update --init --recursive
       - run: node -v
       - run: npm i
-      - browsers
       - run: npm run build
       - persist_to_workspace:
           root: .
@@ -129,8 +117,6 @@ jobs:
           command: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
       - attach_workspace:
           at: .
-      - browsers
-      - run: npm run build
       - run: npm publish
       - run:
           name: Add git tag
