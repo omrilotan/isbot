@@ -4,7 +4,7 @@ commands:
     steps:
       - run:
           name: Configure browsers
-          command: CHROME_BIN=/usr/bin/google-chrome karma start --single-run
+          command: export CHROME_BIN=/usr/bin/google-chrome
 workflows:
   test:
     jobs:
