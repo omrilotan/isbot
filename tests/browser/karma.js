@@ -1,10 +1,10 @@
 const { output: { file } } = require('./rollup.js')
+const { env: { CI } } = process
 
 module.exports = (config) => {
   const { LOG_INFO: logLevel } = config
-
   config.set({
-    browsers: ['Chrome', 'Firefox'],
+    browsers: ['Chrome', CI ? undefined : 'Firefox'].filter(Boolean),
     frameworks: ['mocha'],
     port: 9876,
     logLevel,
@@ -12,10 +12,10 @@ module.exports = (config) => {
     concurrency: 1,
     hooks: [
       'karma-chrome-launcher',
-      'karma-firefox-launcher',
+      CI ? undefined : 'karma-firefox-launcher',
       'karma-mocha',
       'karma-mocha-reporter'
-    ],
+    ].filter(Boolean),
     reporters: ['mocha'],
     basePath: __dirname,
     files: [file]

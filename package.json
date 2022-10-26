@@ -1,6 +1,6 @@
 {
   "name": "isbot",
-  "version": "3.6.1",
+  "version": "3.6.2",
   "description": "🤖 detect bots/crawlers/spiders via the user agent.",
   "keywords": [
     "bot",
@@ -79,8 +79,9 @@
     "@babel/plugin-syntax-import-assertions": "^7.18.6",
     "@babel/preset-env": "^7.19.4",
     "@lets/wait": "^2.0.2",
-    "@rollup/plugin-babel": "^6.0.0",
-    "@rollup/plugin-node-resolve": "^15.0.0",
+    "@rollup/plugin-babel": "^6.0.2",
+    "@rollup/plugin-json": "^5.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.1",
     "acorn-import-assertions": "^1.8.0",
     "eslint-plugin-log": "^1.2.6",
     "form-data": "^4.0.0",
@@ -94,12 +95,11 @@
     "pug": "^3.0.0",
     "remark-cli": "^11.0.0",
     "remark-preset-lint-recommended": "^6.0.0",
-    "rollup": "^2.79.1",
-    "rollup-plugin-import-assert": "^2.1.0",
+    "rollup": "^3.2.3",
     "standard": "^17.0.0",
     "stdline": "^1.0.0",
     "typescript": "^4.8.4",
-    "user-agents": "^1.0.1164",
+    "user-agents": "^1.0.1180",
     "yaml": "^2.1.3"
   }
 }

@@ -16,11 +16,13 @@ export function amend (list) {
     // Addresses: Cubot device
     ['bot', '(?<! cu)bot'],
     // Addresses: Android webview
-    ['google', '(?<! (channel/|google/))google(?!(app|/google| pixel))'],
+    ['google', '(?<! (?:channel/|google/))google(?!(app|/google| pixel))'],
     // Addresses: libhttp browser
-    ['http', '(?<!(lib))http'],
+    ['http', '(?<!(?:lib))http'],
     // Addresses: java based browsers
-    ['java', 'java(?!;)']
+    ['java', 'java(?!;)'],
+    // Addresses: Yandex Search App
+    ['search', '(?<! ya(?:yandex)?)search']
   ].forEach(
     ([search, replace]) => {
       const index = list.lastIndexOf(search)

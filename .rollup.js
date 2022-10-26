@@ -1,7 +1,7 @@
 const { join } = require('path')
 const { babel } = require('@rollup/plugin-babel')
-const { importAssertionsPlugin } = require('rollup-plugin-import-assert')
 const { importAssertions } = require('acorn-import-assertions')
+const json = require('@rollup/plugin-json')
 
 module.exports = [
   {
@@ -20,13 +20,12 @@ module.exports = [
       name: 'isbot',
       strict: false,
       sourcemap: true,
-      sourcemapFile: join(__dirname, [ 'index', ext, 'map' ].join('.')),
-      preferConst: false
+      sourcemapFile: join(__dirname, [ 'index', ext, 'map' ].join('.'))
     },
     acornInjectPlugins: [ importAssertions ],
     plugins: [
       babel({ babelHelpers: 'bundled' }),
-      importAssertionsPlugin()
+      json()
     ]
   })
 )
