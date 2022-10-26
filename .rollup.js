@@ -20,8 +20,7 @@ module.exports = [
       name: 'isbot',
       strict: false,
       sourcemap: true,
-      sourcemapFile: join(__dirname, [ 'index', ext, 'map' ].join('.')),
-      preferConst: false
+      sourcemapFile: join(__dirname, [ 'index', ext, 'map' ].join('.'))
     },
     acornInjectPlugins: [ importAssertions ],
     plugins: [

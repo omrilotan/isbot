@@ -1,4 +1,10 @@
 version: 2.1
+commands:
+  browsers:
+    steps:
+      - run:
+          name: Configure browsers
+          command: CHROME_BIN=/usr/bin/google-chrome karma start --single-run
 workflows:
   test:
     jobs:
@@ -55,6 +61,7 @@ jobs:
       - run: git submodule update --init --recursive
       - run: node -v
       - run: npm i
+      - browsers
       - run: npm run build
       - persist_to_workspace:
           root: .
@@ -117,6 +124,7 @@ jobs:
           command: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
       - attach_workspace:
           at: .
+      - browsers
       - run: npm publish
       - run:
           name: Add git tag
