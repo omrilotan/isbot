@@ -10,6 +10,7 @@ commands:
             sudo apt update
             sudo apt install -y google-chrome-stable xvfb
             sudo apt install firefox
+            sudo snap install firefox
 workflows:
   test:
     jobs:
