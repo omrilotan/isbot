@@ -1,10 +1,10 @@
 const { output: { file } } = require('./rollup.js')
+const { env: { CI } } = process;
 
 module.exports = (config) => {
   const { LOG_INFO: logLevel } = config
-
   config.set({
-    browsers: ['Chrome', 'Firefox'],
+    browsers: ['Chrome', CI ? 'Firefox' : undefined ].filter(Boolean),
     frameworks: ['mocha'],
     port: 9876,
     logLevel,
