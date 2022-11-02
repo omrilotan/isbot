@@ -763,6 +763,8 @@ Weborama:
   - weborama-fetcher (+http://www.weborama.com)
 WebPageTest:
   - Mozilla/5.0 (Linux; Android 6.0.1; Moto G (4) Build/MPJ24.139-64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Mobile Safari/537.36 PTST/180829.190838
+WebPurify:
+  - WebPurify(callback)
 WebSitePulse:
   - websitepulse checker/1.1 (compatible; MSIE 5.5; Netscape 4.75; Linux)
 WeSEE:Search:

@@ -1,5 +1,8 @@
 # Changelog
 
+## [3.6.3](https://github.com/omrilotan/isbot/compare/v3.6.2...v3.6.3)
+-   Adjust single word pattern: Add brackets
+
 ## [3.6.2](https://github.com/omrilotan/isbot/compare/v3.6.1...v3.6.2)
 -   Recognise Uptime-Kuma/1.18.0
 -   Reintroduce Yandex Search app exclusion
