@@ -774,6 +774,8 @@ WhatsApp:
   - whatsapp/2.2123.8 n
 WikiDo:
   - WikiDo/1.1 (http://wikido.com; crawler@wikido.com)
+Wininet-APIs https://web.archive.org/web/20100715071639/http://blogs.msdn.com/b/jpsanders/archive/2009/04/17/how-to-get-certificate-information-using-wininet-apis.aspx:
+  - Test Certificate Info
 WooRank:
   - Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 (compatible; woorankreview/2.0; +https://www.woorank.com/)
 Woorank Test Tool:

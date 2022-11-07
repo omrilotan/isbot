@@ -77,7 +77,7 @@
   "devDependencies": {
     "@babel/eslint-parser": "^7.19.1",
     "@babel/plugin-syntax-import-assertions": "^7.20.0",
-    "@babel/preset-env": "^7.19.4",
+    "@babel/preset-env": "^7.20.2",
     "@lets/wait": "^2.0.2",
     "@rollup/plugin-babel": "^6.0.2",
     "@rollup/plugin-json": "^5.0.1",
@@ -99,7 +99,7 @@
     "standard": "^17.0.0",
     "stdline": "^1.0.0",
     "typescript": "^4.8.4",
-    "user-agents": "^1.0.1187",
+    "user-agents": "^1.0.1192",
     "yaml": "^2.1.3"
   }
 }
