@@ -1,5 +1,8 @@
 # Changelog
 
+## [3.6.4](https://github.com/omrilotan/isbot/compare/v3.6.3...v3.6.4)
+-   Add [Fuzz Faster U Fool](https://github.com/ffuf/ffuf)
+
 ## [3.6.3](https://github.com/omrilotan/isbot/compare/v3.6.2...v3.6.3)
 -   Adjust single word pattern: Add brackets
 

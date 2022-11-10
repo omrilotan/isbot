@@ -237,6 +237,8 @@ Flipboard:
   - Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:28.0) Gecko/20100101 Firefox/28.0 (FlipboardProxy/1.6; +http://flipboard.com/browserproxy)
 Foregenix:
   - Foregenix Web Scan 1.100000 (www.foregenix.com/scan)
+Fuzz Faster U Fool (https://github.com/ffuf/ffuf):
+  - Fuzz Faster U Fool v1.5.0-dev
 Generic Bot:
   - SeopultContentAnalyzer/1.0
 Genieo Web filter:

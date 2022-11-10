@@ -1,6 +1,6 @@
 {
   "name": "isbot",
-  "version": "3.6.3",
+  "version": "3.6.4",
   "description": "🤖 detect bots/crawlers/spiders via the user agent.",
   "keywords": [
     "bot",
@@ -99,7 +99,7 @@
     "standard": "^17.0.0",
     "stdline": "^1.0.0",
     "typescript": "^4.8.4",
-    "user-agents": "^1.0.1192",
+    "user-agents": "^1.0.1195",
     "yaml": "^2.1.3"
   }
 }
