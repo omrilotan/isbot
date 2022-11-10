@@ -1,5 +1,8 @@
 # Changelog
 
+## [3.6.5](https://github.com/omrilotan/isbot/compare/v3.6.5...v3.6.5)
+-   Improvement: List reduced by >50 patterns for a better one-word pattern
+
 ## [3.6.4](https://github.com/omrilotan/isbot/compare/v3.6.3...v3.6.4)
 -   Add [Fuzz Faster U Fool](https://github.com/ffuf/ffuf)
 
