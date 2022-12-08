@@ -848,6 +848,7 @@ ZumBot:
   - ZumBot/1.0 (ZUM Search; http://help.zum.com/inquiry)
 ZZZ Miscellaneous Glitches and Errornous User Agent Strings:
   - "123"
+  - <class 'fake_useragent.fake.FakeUserAgent'>
   - Chrome
   - default_user_agent
   - ipad
