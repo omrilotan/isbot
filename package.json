@@ -80,7 +80,7 @@
     "@babel/preset-env": "^7.20.2",
     "@lets/wait": "^2.0.2",
     "@rollup/plugin-babel": "^6.0.3",
-    "@rollup/plugin-json": "^5.0.2",
+    "@rollup/plugin-json": "^6.0.0",
     "@rollup/plugin-node-resolve": "^15.0.1",
     "acorn-import-assertions": "^1.8.0",
     "eslint-plugin-log": "^1.2.6",
