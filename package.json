@@ -80,7 +80,7 @@
     "@babel/preset-env": "^7.20.2",
     "@lets/wait": "^2.0.2",
     "@rollup/plugin-babel": "^6.0.3",
-    "@rollup/plugin-json": "^5.0.2",
+    "@rollup/plugin-json": "^6.0.0",
     "@rollup/plugin-node-resolve": "^15.0.1",
     "acorn-import-assertions": "^1.8.0",
     "eslint-plugin-log": "^1.2.6",
@@ -91,15 +91,15 @@
     "karma-firefox-launcher": "^2.1.1",
     "karma-mocha": "^2.0.1",
     "karma-mocha-reporter": "^2.2.5",
-    "mocha": "^10.0.0",
+    "mocha": "^10.2.0",
     "pug": "^3.0.0",
     "remark-cli": "^11.0.0",
     "remark-preset-lint-recommended": "^6.0.0",
-    "rollup": "^3.6.0",
+    "rollup": "^3.9.0",
     "standard": "^17.0.0",
     "stdline": "^1.0.0",
     "typescript": "^4.9.4",
-    "user-agents": "^1.0.1222",
-    "yaml": "^2.1.3"
+    "user-agents": "^1.0.1246",
+    "yaml": "^2.2.1"
   }
 }
