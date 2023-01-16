@@ -95,11 +95,11 @@
     "pug": "^3.0.0",
     "remark-cli": "^11.0.0",
     "remark-preset-lint-recommended": "^6.0.0",
-    "rollup": "^3.9.0",
+    "rollup": "^3.10.0",
     "standard": "^17.0.0",
     "stdline": "^1.0.0",
     "typescript": "^4.9.4",
-    "user-agents": "^1.0.1246",
+    "user-agents": "^1.0.1262",
     "yaml": "^2.2.1"
   }
 }
