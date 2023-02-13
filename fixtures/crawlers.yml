@@ -506,6 +506,8 @@ Other Site Monitor Bots:
   - LogicMonitor SiteMonitor/1.0
 Outbrain:
   - Mozilla/5.0 (Java) outbrain
+Pagebust:
+  - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko; compatible; pageburst) Chrome/109.0.5414.101 Safari/537.36
 PaperLiBot:
   - Mozilla/5.0 (compatible; PaperLiBot/2.1; http://support.paper.li/entries/20023257-what-is-paper-li)
 PerimeterX:
