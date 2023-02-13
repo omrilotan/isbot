@@ -30,7 +30,10 @@ workflows:
                 - cimg/node:12.22
                 - cimg/node:14.18
                 - cimg/node:16.15
-                - cimg/node:18.0
+                - cimg/node:18.4
+                - cimg/node:19.6
+                - cimg/node:lts
+                - cimg/node:current
           requires:
             - build
       - publish:
