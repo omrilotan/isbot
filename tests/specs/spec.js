@@ -96,12 +96,20 @@ describe(
         spawn.exclude(spawn.matches(ua))
         equal(spawn(ua), false)
       })
+    })
 
+    describe('spawn.clear', () => {
       it('should clear all rules relevant to a user agent string', () => {
         const ua = 'Mozilla/5.0 (Linux; Android 10; SNE-LX1 Build/HUAWEISNE-L21; wv) AppleWebKit/537.36 (KHTML, like Gecko) Spider/1.0 Robot/1.0 Search/1.0 Chrome/94.0.4606.71'
         equal(spawn(ua), true)
         spawn.clear(ua)
         equal(spawn(ua), false)
+      })
+
+      it('should clear the pattern', () => {
+        equal(spawn('Chrome-Lighthouse'), true)
+        spawn.clear(['chrome-lighthouse'])
+        equal(spawn('Chrome-Lighthouse'), false)
       })
     })
 

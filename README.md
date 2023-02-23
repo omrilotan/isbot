@@ -31,21 +31,21 @@ isbot('Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrom
 Add rules to user agent match RegExp: Array of strings
 
 ```js
-isbot('Mozilla/5.0') // false
+isbot('Mozilla/5.0 (X11) Firefox/111.0') // false
 isbot.extend([
     'istat',
-    '^mozilla/\\d\\.\\d$'
+    'x11'
 ])
-isbot('Mozilla/5.0') // true
+isbot('Mozilla/5.0 (X11) Firefox/111.0') // true
 ```
 
 ### Exclude: Remove matches of known crawlers
 Remove rules to user agent match RegExp (see existing rules in `src/list.json` file)
 
 ```js
-isbot('Chrome-Lighthouse') // true
+isbot('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4590.2 Safari/537.36 Chrome-Lighthouse') // true
 isbot.exclude(['chrome-lighthouse']) // pattern is case insensitive
-isbot('Chrome-Lighthouse') // false
+isbot('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4590.2 Safari/537.36 Chrome-Lighthouse') // false
 ```
 
 ### Find: Verbose result
