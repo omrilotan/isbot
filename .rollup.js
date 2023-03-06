@@ -9,6 +9,9 @@ module.exports = [
   },
   {
     ext: 'mjs', format: 'es'
+  },
+  {
+    ext: 'umd.js', format: 'umd'
   }
 ].map(
   ({ ext, format }) => ({

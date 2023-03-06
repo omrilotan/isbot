@@ -1,5 +1,8 @@
 # Changelog
 
+## [3.7.0](https://github.com/omrilotan/isbot/compare/v3.6.6...v3.7.0)
+-   Add a UMD build: /index.umd.js
+
 ## [3.6.6](https://github.com/omrilotan/isbot/compare/v3.6.5...v3.6.6)
 -   Add CryptoAPI to known bots list
 -   Add Pageburst
