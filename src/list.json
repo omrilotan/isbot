@@ -169,5 +169,7 @@
   "websitemetadataretriever",
   "whatcms/",
   "wordpress",
-  "zgrab"
+  "zgrab",
+  "/googlebot/i",
+  "/AdsBot/i"
 ]
