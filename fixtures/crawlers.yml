@@ -519,6 +519,8 @@ PetalBot:
   - Mozilla/5.0 (Linux; Android 7.0;) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Safari/537.36 (compatible; PetalBot;+https://webmaster.petalsearch.com/site/petalbot)
 Phantomas:
   - phantomas/1.11.0 (PhantomJS/1.9.8; linux x64)
+PhantomJS:
+  - Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.0.0 Safari/538.1
 PHP Server Monitor:
   - Mozilla/5.0 (compatible; phpservermon/3.1.1; +http://www.phpservermonitor.org)
 Picsearch bot:
