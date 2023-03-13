@@ -415,6 +415,8 @@ Mastodon Bot:
   - http.rb/3.2.0 (Mastodon/2.4.3; +https://uwu.social/)
 Meanpath Bot:
   - Mozilla/5.0 (compatible; meanpathbot/1.0; +http://www.meanpath.com/meanpathbot.html)
+MediaHubMX:
+  - MediaHubMX/2
 Medusa by pymedusa:
   - python/unicode Medusa/0.2.14 (Windows; 10; 3174120f-3388-11e9-b8bd-1c1b0d9d2a41)
   - python/unicode Medusa/0.2.14 (Windows; 10; d26d37e1-3389-11e9-8d14-1c1b0d9d2a41)
