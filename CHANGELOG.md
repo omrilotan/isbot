@@ -1,8 +1,11 @@
 # Changelog
 
+## [3.6.8](https://github.com/omrilotan/isbot/compare/v3.6.7...v3.6.8)
+-   Add Speedcurve: [Maximilian Haupt](https://github.com/0x7f)
+
 ## [3.6.7](https://github.com/omrilotan/isbot/compare/v3.6.6...v3.6.7)
 -   Add PhantomJS substring
--
+
 ## [3.6.6](https://github.com/omrilotan/isbot/compare/v3.6.5...v3.6.6)
 -   Add CryptoAPI to known bots list
 -   Add Pageburst
