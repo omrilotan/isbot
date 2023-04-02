@@ -475,6 +475,7 @@ RadiosNet:
   - RadiosNet/2.2.3 (Java; Android)
   - RadiosNet/2.2.4 (Java; Android)
   - RadiosNet/2.2.5 (Java; Android)
+  - RadiosNet/2.3.1 (Java; Android)
   - RadiosNet/2.3.2 (Java; Android)
   - RadiosNet/2.3.3 (Java; Android)
   - RadiosNet/2.4.0 (Java; Android)
@@ -487,6 +488,7 @@ RadiosNet:
   - RadiosNet/2.6.1 (Java; Android)
   - RadiosNet/2.6.2 (Java; Android)
   - RadiosNet/2.7.0 (Java; Android)
+  - RadiosNet/2.7.1 (Java; Android)
 Rekonq:
   - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.21 (KHTML, like Gecko) rekonq/2.3.2 Safari/537.21
 RockMelt:
@@ -668,6 +670,7 @@ ZZZ Glitches and Misidentified Browsers - These browsers are legit user agent ev
   - Hello, world
   - LWPrCa2l') OR 941=(SELECT 941 FROM PG_SLEEP(15))--
   - Mozilla / 5.0 (Linux; Android 7.0; GHIA_ZEUS_3G) AppleWebKit / 537.36 (KHTML, como Gecko) Chrome / 87.0.4280.101 Mobile Safari / 537.36
+  - Mozilla/5.0 (compatible; Lucidworks-Anda/2.0/0.10; +; )
   - Mozilla/5.0 (en-us) AppleWebKit/525.13 (KHTML, like Gecko) Version/3.1 Safari/525.13
   - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) splash Version/10.0 Chrome/98.0.4758.80 Safari/537.36
   - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/602.1 (KHTML, like Gecko) splash Version/10.0 Safari/602.1 | text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 | en,*

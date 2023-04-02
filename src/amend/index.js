@@ -15,6 +15,8 @@ export function amend (list) {
   [
     // Addresses: Cubot device
     ['bot', '(?<! cu)bot'],
+    // Addresses: Client substring
+    ['client', '(?<! (?:goggalaxy/))client'],
     // Addresses: Android webview
     ['google', '(?<! (?:channel/|google/))google(?!(app|/google| pixel))'],
     // Addresses: libhttp browser
