@@ -681,6 +681,9 @@ Soso Spider:
   - Sosospider+(+http://help.soso.com/webspider.htm)
 Sparkler:
   - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Sparkler/0.2.0-SNAPSHOT
+Speedcurve:
+  - Mozilla/5.0 (iPhone; CPU iPhone OS 15_0_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 PTST/SpeedCurve/230120.120134
+  - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36 PTST/SpeedCurve/230120.120134
 Spinn3r:
   - Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.0.19; aggregator:Spinn3r (Spinn3r 3.1); http://spinn3r.com/robot) Gecko/2010040121 Firefox/3.0.19
 Spotify:
