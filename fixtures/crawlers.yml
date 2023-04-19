@@ -508,9 +508,10 @@ Other Site Monitor Bots:
   - LogicMonitor SiteMonitor/1.0
 Outbrain:
   - Mozilla/5.0 (Java) outbrain
-Pagebust:
+Pageburst:
   - Mozilla/5.0 (iPad; CPU OS 9_1 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko; compatible; pageburst) CriOS/79.0.3945.117 Mobile/13B143 Safari/601.1.46
   - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko; compatible; pageburst) Chrome/109.0.5414.101 Safari/537.36
+  - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko; compatible; pageburst) Chrome/111.0.5563.146 Safari/537.36
 PaperLiBot:
   - Mozilla/5.0 (compatible; PaperLiBot/2.1; http://support.paper.li/entries/20023257-what-is-paper-li)
 PerimeterX:
@@ -874,6 +875,7 @@ ZZZ Miscellaneous Glitches and Errornous User Agent Strings:
   - default_user_agent
   - ipad
   - iphone 6 plus;afengineurl=https://intoli.com:443;traceId=63028f8e-c5fc-4846-993f-59a96268a85d
+  - Mozilla/5.0 (Linux; Android 10; FIG-AL10 Build/HUAWEIFIG-AL10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.0.0MQQBrowser/6.2 TBS/045223 Mobile Safari/537.36 MMWEBID/1214 MicroMessenger/7.0.14.1660(0x27000E39) Process/tools NetType/4G Language/zh_CN ABI/arm64 WeChat/arm64 wechatdevtools qcloudcdn-xinan
   - Mozilla/5.0 (Linux; Android 10; M6 Note Build/N2G47H; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.0.0MQQBrowser/6.2 TBS/045223 Mobile Safari/537.36 MMWEBID/9551 MicroMessenger/7.0.14.1660(0x27000E37) Process/tools NetType/4G Language/zh_CN ABI/arm64 WeChat/arm64 wechatdevtools qcloudcdn-xinan
   - pisya
   - search.marginalia.nu

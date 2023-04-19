@@ -1,5 +1,9 @@
 # Changelog
 
+## [3.6.9](https://github.com/omrilotan/isbot/compare/v3.6.8...v3.6.9)
+-   Adjust GOGGalaxy pattern
+-   Update built files
+
 ## [3.6.8](https://github.com/omrilotan/isbot/compare/v3.6.7...v3.6.8)
 -   Add Speedcurve: [Maximilian Haupt](https://github.com/0x7f)
 -   Exclude specific "client" substrings
