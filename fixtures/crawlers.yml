@@ -22,8 +22,6 @@ Alexa Crawler:
   - ia_archiver (+http://www.alexa.com/site/help/webmasters; crawler@alexa.com)
 Alexa Site Audit:
   - Mozilla/5.0 (compatible; alexa site audit/1.0; http://www.alexa.com/help/webmasters; )
-Alipay:
-  - Mozilla/5.0 (iPhone; CPU iPhone OS 11_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15G77 ChannelId(73) NebulaSDK/1.8.100112 Nebula PSDType(1) AlipayDefined(nt:4G,ws:320|504|2.0) AliApp(AP/10.1.30.300) AlipayClient/10.1.30.300 Alipay Language/zh-Hans
 Amazon Route53 Health Check:
   - Amazon-Route53-Health-Check-Service (ref b0eb04d5-cb5e-40e7-839b-558e52fc3f0d; report http://amzn.to/1vsZADi)
 Amorank Spider:

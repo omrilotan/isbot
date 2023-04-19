@@ -1,5 +1,8 @@
 # Changelog
 
+## [3.6.10](https://github.com/omrilotan/isbot/compare/v3.6.9...v3.6.10)
+-   Adjust the "client" substring pattern
+
 ## [3.6.9](https://github.com/omrilotan/isbot/compare/v3.6.8...v3.6.9)
 -   Adjust GOGGalaxy pattern
 -   Update built files
