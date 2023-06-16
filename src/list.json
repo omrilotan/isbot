@@ -126,7 +126,7 @@
   "monitor",
   "morningscore/",
   "neustar wpm",
-  "[^g]news",
+  "(^|[^g])news",
   "nutch",
   "offbyone",
   "optimize",
