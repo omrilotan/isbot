@@ -6,3 +6,4 @@ dist.js
 /AUTHORS
 /index.*
 !/index.d.ts
+/.idea

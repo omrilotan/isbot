@@ -239,6 +239,8 @@ GNOME Web:
   - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.26+ (KHTML, like Gecko) Version/5.0 Safari/534.26+ Ubuntu/10.10 (2.30.6-1ubuntu5) Epiphany/2.30.6
 Gog Galaxy:
   - GOGGalaxyClient/2.0.62.26 (GOG Galaxy) 83b6745cff679691b69876bc7ee33e05e5d90bda (win10 x64)
+Google News:
+  - Mozilla/5.0 (Linux; Android 14; Pixel 6 Build/UPB3.230519.014) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.21 Mobile Safari/537.36 GNews Android/2022137898
 Google Nexus Player:
   - Dalvik/2.1.0 (Linux; U; Android 6.0.1; Nexus Player Build/MMB29T)
 Google Pixel:
