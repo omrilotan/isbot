@@ -845,8 +845,8 @@ Yahoo! Slurp:
 Yandex:
   - Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)
 Yandex Bot:
-  - Mozilla/5.0 (compatible; YandexVerticals/1.0; http://yandex.com/bots)
   - Mozilla/5.0 (compatible; YaDirectFetcher/1.0; Dyatel)
+  - Mozilla/5.0 (compatible; YandexVerticals/1.0; http://yandex.com/bots)
 Yeti (Naver):
   - Mozilla/5.0 (compatible; yeti/1.1; +http://naver.me/spd)
   - Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.0 Safari/537.36 (compatible; Yeti/1.1; +http://naver.me/spd)
