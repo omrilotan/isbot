@@ -22,6 +22,8 @@ Alexa Crawler:
   - ia_archiver (+http://www.alexa.com/site/help/webmasters; crawler@alexa.com)
 Alexa Site Audit:
   - Mozilla/5.0 (compatible; alexa site audit/1.0; http://www.alexa.com/help/webmasters; )
+Amaya:
+  - amaya/10 libwww/5.4.0
 Amazon Route53 Health Check:
   - Amazon-Route53-Health-Check-Service (ref b0eb04d5-cb5e-40e7-839b-558e52fc3f0d; report http://amzn.to/1vsZADi)
 Amorank Spider:
@@ -844,6 +846,7 @@ Yandex:
   - Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)
 Yandex Bot:
   - Mozilla/5.0 (compatible; YandexVerticals/1.0; http://yandex.com/bots)
+  - Mozilla/5.0 (compatible; YaDirectFetcher/1.0; Dyatel)
 Yeti (Naver):
   - Mozilla/5.0 (compatible; yeti/1.1; +http://naver.me/spd)
   - Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.0 Safari/537.36 (compatible; Yeti/1.1; +http://naver.me/spd)

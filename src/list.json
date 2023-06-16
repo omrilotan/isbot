@@ -1,6 +1,7 @@
 [
   " daum[ /]",
   " deusu/",
+  " yadirectfetcher",
   "(?:^| )site",
   "@[a-z]",
   "\\(at\\)[a-z]",
@@ -12,6 +13,7 @@
   "^[^ ]{50,}$",
   "^active",
   "^ad muncher",
+  "^amaya",
   "^anglesharp/",
   "^anonymous",
   "^avsdevicesdk/",
