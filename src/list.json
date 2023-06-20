@@ -3,7 +3,7 @@
   " deusu/",
   " yadirectfetcher",
   "(?:^| )site",
-  "(^|[^g])news",
+  "(?:^|[^g])news",
   "@[a-z]",
   "\\(at\\)[a-z]",
   "\\(github\\.com/",

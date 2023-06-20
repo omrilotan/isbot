@@ -1,5 +1,8 @@
 # Changelog
 
+## [3.6.12](https://github.com/omrilotan/isbot/compare/v3.6.11...v3.6.12)
+-   mem: Make a group non capturing
+
 ## [3.6.11](https://github.com/omrilotan/isbot/compare/v3.6.10...v3.6.11)
 -   Fix "news" pattern to allow [Google News Android App](https://play.google.com/store/apps/details?id=com.google.android.apps.magazines&hl=en&gl=US&pli=1) [@pulzarraider](https://github.com/pulzarraider)
 -   Add YaDirectFetcher, amaya
