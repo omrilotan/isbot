@@ -1,5 +1,8 @@
 # Changelog
 
+## [3.6.13](https://github.com/omrilotan/isbot/compare/v3.6.12...v3.6.13)
+-   Treat Splash browser as bot
+
 ## [3.6.12](https://github.com/omrilotan/isbot/compare/v3.6.11...v3.6.12)
 -   mem: Make a group non capturing
 
