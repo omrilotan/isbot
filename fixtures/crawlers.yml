@@ -693,6 +693,8 @@ Speedcurve:
   - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36 PTST/SpeedCurve/230120.120134
 Spinn3r:
   - Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.0.19; aggregator:Spinn3r (Spinn3r 3.1); http://spinn3r.com/robot) Gecko/2010040121 Firefox/3.0.19
+Splash:
+  - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) splash Version/10.0 Chrome/98.0.4758.80 Safari/537.36
 Spotify:
   - Spotify/1.0
 Sputnik Bot:
