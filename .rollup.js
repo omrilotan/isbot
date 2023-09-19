@@ -5,6 +5,9 @@ const json = require('@rollup/plugin-json')
 
 module.exports = [
   {
+    ext: 'iife.js', format: 'iife'
+  },
+  {
     ext: 'js', format: 'cjs'
   },
   {
