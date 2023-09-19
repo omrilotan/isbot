@@ -1,5 +1,8 @@
 # Changelog
 
+## [3.7.00](https://github.com/omrilotan/isbot/compare/v3.6.13...v3.7.00)
+-   Expose iife and support JSDeliver CDN
+
 ## [3.6.13](https://github.com/omrilotan/isbot/compare/v3.6.12...v3.6.13)
 -   Treat Splash browser as bot [@viraptor](https://github.com/viraptor)
 

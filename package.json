@@ -1,6 +1,6 @@
 {
   "name": "isbot",
-  "version": "3.6.13",
+  "version": "3.7.0",
   "description": "🤖 detect bots/crawlers/spiders via the user agent.",
   "keywords": [
     "bot",
@@ -24,6 +24,7 @@
   "main": "./index.js",
   "module": "./index.mjs",
   "browser": "./index.mjs",
+  "jsdelivr": "./index.iife.js",
   "exports": {
     "./package.json": "./package.json",
     ".": {
