@@ -25,6 +25,13 @@ isbot('Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 
 isbot('Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36') // false
 ```
 
+Using JSDeliver CDN you can import an iife script
+```html
+<script src="https://cdn.jsdelivr.net/npm/isbot/index.iife.min.js"></script>
+// isbot is global
+isbot(navigator.userAgent)
+```
+
 ## Additional functionality
 
 ### Extend: Add user agent patterns
