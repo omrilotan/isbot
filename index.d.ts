@@ -15,6 +15,7 @@ declare namespace isbot {
 
   /**
    * Removes a set of user agent from the built-in list
+   * This function requires konwnledge of the internal structure of the list - which may change at any time. It is recommended to use the `clear` function instead
    * @param {string[]} filters An array of regular expression patterns
    * @returns {void}
    */

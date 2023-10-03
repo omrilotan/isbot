@@ -52,6 +52,8 @@ isbot('Mozilla/5.0 (X11) Firefox/111.0') // true
 ### Exclude: Remove matches of known crawlers
 Remove rules to user agent match RegExp (see existing rules in `src/list.json` file)
 
+> This function requires konwnledge of the internal structure of the list - which may change at any time. It is recommended to use the `clear` function instead
+
 ```js
 isbot('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4590.2 Safari/537.36 Chrome-Lighthouse') // true
 isbot.exclude(['chrome-lighthouse']) // pattern is case insensitive
