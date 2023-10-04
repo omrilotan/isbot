@@ -1,5 +1,9 @@
 # Changelog
 
+## [4.0.0](https://github.com/omrilotan/isbot/compare/v3.7.00...v4.0.0)
+-   Stop active support for EOL node versions 14, 12
+-   No code changes
+
 ## [3.7.00](https://github.com/omrilotan/isbot/compare/v3.6.13...v3.7.00)
 -   Expose iife and support JSDeliver CDN
 

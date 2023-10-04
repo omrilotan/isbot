@@ -141,6 +141,9 @@ Missing something? Please [open an issue](https://github.com/omrilotan/isbot/iss
 
 ## Major releases breaking changes ([full changelog](./CHANGELOG.md))
 
+### [**Version 4**](https://github.com/omrilotan/isbot/releases/tag/v4.0.0)
+Remove testing for node 14 and 12
+
 ### [**Version 3**](https://github.com/omrilotan/isbot/releases/tag/v3.0.0)
 Remove testing for node 6 and 8
 
