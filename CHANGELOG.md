@@ -1,6 +1,9 @@
 # Changelog
 
-## [3.7.00](https://github.com/omrilotan/isbot/compare/v3.6.13...v3.7.00)
+## [3.7.1](https://github.com/omrilotan/isbot/compare/v3.7.0...v3.7.1)
+-   Replace "ghost" with "inspect" to avoid false positives
+
+## [3.7.0](https://github.com/omrilotan/isbot/compare/v3.6.13...v3.7.0)
 -   Expose iife and support JSDeliver CDN
 
 ## [3.6.13](https://github.com/omrilotan/isbot/compare/v3.6.12...v3.6.13)
