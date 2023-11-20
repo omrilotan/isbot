@@ -5,6 +5,7 @@ import list from '../src/list.json'
 {
   const textarea = document.querySelector('textarea')
   const output = document.querySelector('output')
+  const copyLink = document.querySelector('[id="copy-link"]')
   let timer
 
   const query = window.location.search.replace(/\?ua=(.*)$/, '$1')
@@ -75,4 +76,24 @@ import list from '../src/list.json'
     output.className = ''
     setTimeout(() => { output.className = 'highlight' }, 100)
   }
+
+  copyLink.addEventListener('click', () => {
+    const { protocol, host, pathname } = document.location
+    navigator.clipboard.writeText([
+      protocol, '//', host, pathname, '?ua=', encodeURIComponent(textarea.value)
+    ].join(''))
+    const dialog = document.createElement('dialog')
+    dialog.appendChild(document.createTextNode('copied to clipboard'))
+    document.body.appendChild(dialog)
+    setTimeout(() => {
+      dialog.showModal()
+      setTimeout(() => {
+        dialog.addEventListener('transitionend', () => {
+          dialog.close()
+          document.body.removeChild(dialog)
+        })
+        dialog.style.opacity = 0
+      }, 2000)
+    }, 0)
+  })
 }

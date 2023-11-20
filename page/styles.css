@@ -75,3 +75,26 @@ kbd {
   font-size: 0.8em;
   padding: 0 0.2em;
 }
+dialog {
+  position: fixed;
+  top: 10vh;
+  left: 0;
+  z-index: 100;
+  width: 20vw;
+  margin: 0 40vw;
+  padding: 1em;
+  background: var(--color-foreground);
+  color: var(--color-highlight);
+  text-shadow: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1em;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  box-shadow: var(--color-shadow) 0 0 0 .5em;
+}
+
+dialog[open] {
+  opacity: 1;
+}
