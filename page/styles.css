@@ -1,5 +1,6 @@
 :root {
   --color-background: #e5e5e5;
+  --color-code-background: #eee;
   --color-foreground: #333;
   --color-shadow: #0d275041;
   --color-highlight: #fff;
@@ -10,7 +11,7 @@
   padding: 0;
 }
 
-html {
+html, textarea, button {
   font: 100 100%/1.4 -apple-system, "BlinkMacSystemFont", "Helvetica Neue", "Helvetica", "Lucida Grande", "Arial", sans-serif;
 }
 
@@ -46,7 +47,7 @@ h1 {
 }
 
 textarea {
-  font-size: 2em;
+  font-size: 1.7em;
   width: 100%;
   height: 5em;
   padding: .5em;
@@ -71,27 +72,40 @@ output {
 
 kbd {
   display: inline-block;
-  background: #eee;
+  background: var(--color-code-background);
   font-size: 0.8em;
   padding: 0 0.2em;
 }
+
+button {
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  border-width: 0;
+  color: var(--color-foreground);
+  text-shadow: var(--color-highlight) 1px 1px 0;
+  background: var(--color-background);
+  color: var(--color-foreground);
+  box-shadow: var(--color-shadow) .1em .1em .1em,
+              inset var(--color-highlight) .1em .1em .1em,
+              inset var(--color-shadow) -.1em -.1em .1em;
+  cursor: pointer;
+  margin: 0 0 1em;
+}
+
 dialog {
   position: fixed;
   top: 10vh;
-  left: 0;
-  z-index: 100;
+  left: 40vw;
   width: 20vw;
-  margin: 0 40vw;
   padding: 1em;
   background: var(--color-foreground);
   color: var(--color-highlight);
   text-shadow: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   border-radius: 1em;
   opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity .5s ease-in-out;
   box-shadow: var(--color-shadow) 0 0 0 .5em;
 }
 

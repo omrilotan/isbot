@@ -1,6 +1,4 @@
 import isbot from '..'
-import { amend } from '../src/amend/index.js'
-import list from '../src/list.json'
 
 {
   const textarea = document.querySelector('textarea')
@@ -8,17 +6,11 @@ import list from '../src/list.json'
   const copyLink = document.querySelector('[id="copy-link"]')
   let timer
 
-  const query = window.location.search.replace(/\?ua=(.*)$/, '$1')
-
-  amend(list)
+  const url = new URL(window.location.href)
+  const ua = url.searchParams.get('ua')
 
   textarea.childNodes.forEach(child => child.parentNode?.removeChild(child))
-  textarea.appendChild(document.createTextNode(
-    query
-      ? decodeURIComponent(query)
-      : navigator.userAgent
-  )
-  )
+  textarea.appendChild(document.createTextNode(ua || navigator.userAgent))
   textarea.addEventListener('keyup', change)
   textarea.addEventListener('paste', change)
   textarea.addEventListener('focus', () => textarea.select())
@@ -72,12 +64,10 @@ import list from '../src/list.json'
     }
 
     output.appendChild(details(value))
-
-    output.className = ''
-    setTimeout(() => { output.className = 'highlight' }, 100)
   }
 
-  copyLink.addEventListener('click', () => {
+  copyLink.addEventListener('click', (event) => {
+    event.preventDefault()
     const { protocol, host, pathname } = document.location
     navigator.clipboard.writeText([
       protocol, '//', host, pathname, '?ua=', encodeURIComponent(textarea.value)
@@ -85,15 +75,13 @@ import list from '../src/list.json'
     const dialog = document.createElement('dialog')
     dialog.appendChild(document.createTextNode('copied to clipboard'))
     document.body.appendChild(dialog)
+    dialog.showModal()
     setTimeout(() => {
-      dialog.showModal()
-      setTimeout(() => {
-        dialog.addEventListener('transitionend', () => {
-          dialog.close()
-          document.body.removeChild(dialog)
-        })
-        dialog.style.opacity = 0
-      }, 2000)
-    }, 0)
+      dialog.addEventListener('transitionend', () => {
+        dialog.close()
+        document.body.removeChild(dialog)
+      })
+      dialog.style.opacity = 0
+    }, 1000)
   })
 }
