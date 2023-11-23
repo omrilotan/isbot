@@ -35,6 +35,7 @@ body {
 
 form {
   width: 90vw;
+  max-width: 1400px;
   padding: 1em 0;
   text-align: center;
 }
