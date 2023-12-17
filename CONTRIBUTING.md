@@ -10,16 +10,18 @@ Please feel free to [open an issue](https://github.com/omrilotan/isbot/issues/ne
 
 ## Pattern verification tests
 
-Prepare lists of user agent strings before testing
+Prepare lists of user agent strings before testing. This should happen automatically the first time, but it's recommended to update the lists before running tests.
+
 ```js
 npm run prepare -- -f
 ```
 
 ### Lists
--   Manual legit browsers list: [fixtures/browsers.yml](https://github.com/omrilotan/isbot/blob/main/fixtures/browsers.yml)
--   Manual known crawlers list: [fixtures/crawlers.yml](https://github.com/omrilotan/isbot/blob/main/fixtures/crawlers.yml)
--   Downloaded resources end up in [fixtures/downloads](https://github.com/omrilotan/isbot/blob/main/fixtures/downloads) folder
--   [user-agents](https://www.npmjs.com/package/user-agents) package is used to add randomly generated browser user agents
+
+- Manual legit browsers list: [fixtures/browsers.yml](https://github.com/omrilotan/isbot/blob/main/fixtures/browsers.yml)
+- Manual known crawlers list: [fixtures/crawlers.yml](https://github.com/omrilotan/isbot/blob/main/fixtures/crawlers.yml)
+- Downloaded resources end up in [fixtures/downloads](https://github.com/omrilotan/isbot/blob/main/fixtures/downloads) folder
+- [user-agents](https://www.npmjs.com/package/user-agents) package is used to add randomly generated browser user agents
 
 ### Misidentification
 

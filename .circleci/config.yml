@@ -27,11 +27,7 @@ workflows:
           matrix:
             parameters:
               image:
-                - cimg/node:12.22
-                - cimg/node:14.18
-                - cimg/node:16.15
-                - cimg/node:18.4
-                - cimg/node:19.6
+                - cimg/node:18.19
                 - cimg/node:lts
                 - cimg/node:current
           requires:
@@ -44,31 +40,29 @@ workflows:
           filters:
             branches:
               only:
-                - main
+                - next
       - pages:
           context: globalenv
           requires:
             - publish
-  # scheduled:
-  #   jobs:
-  #     - periodic
-  #   triggers:
-  #     - schedule:
-  #         cron: "0 9 * * 1"
-  #         filters:
-  #           branches:
-  #             only:
-  #               - main
+  scheduled:
+    jobs:
+      - periodic
+    triggers:
+      - schedule:
+          cron: "0 9 * * 1"
+          filters:
+            branches:
+              only:
+                - next
 jobs:
   build:
     docker:
-      - image: cimg/node:lts-browsers
+      - image: cimg/node:lts
     steps:
       - checkout
-      - run: git submodule update --init --recursive
       - run: node -v
       - run: npm i
-      - browsers
       - run: npm run build
       - persist_to_workspace:
           root: .
@@ -77,18 +71,24 @@ jobs:
   tests:
     working_directory: ~/project
     docker:
-      - image: cimg/node:lts-browsers
+      - image: cimg/node:lts
     steps:
       - run: node -v
       - attach_workspace:
           at: .
-      - run: npm run lint
-      - run: npm run sort
-      - run: git diff --quiet || exit 1
-      - run: npm run remark
+      - run: npm run format
+      - run:
+          name: Push autofixes
+          command: |
+            if [ "$(git diff --quiet && echo 0 || echo $?)" -gt 0 ]; then
+              git config --global user.email omrilotan@users.noreply.github.com --replace-all
+              git config --global user.name omrilotan --replace-all
+              git commit -am "😎 Autofix"
+              git remote set-url origin https://$CIRCLE_USERNAME:$GITHUB_API_TOKEN@github.com/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME.git
+              git push -u origin HEAD:${CIRCLE_BRANCH}
+              exit 1
+            fi
       - run: npm t
-      - run: npm run jest
-      - run: npm run ts
   compatibility:
     parameters:
       image:
@@ -102,19 +102,11 @@ jobs:
       - run: node -v
       - attach_workspace:
           at: .
-      - run: npm run symlink
-      - run: npm run cjs
-      - when:
-          condition:
-            matches:
-              pattern: "cimg/node:1[2-8]-.*"
-              value: << parameters.image >>
-          steps:
-            - run: npm run esm
+      - run: npm t
   publish:
     working_directory: ~/project
     docker:
-      - image: cimg/node:lts-browsers
+      - image: cimg/node:lts
     steps:
       - checkout
       - run:
@@ -132,7 +124,7 @@ jobs:
       - attach_workspace:
           at: .
       - browsers
-      - run: npm publish
+      - run: npm publish --tag next
       - run:
           name: Add git tag
           command: git tag -a "v$(cat package.json | jq ".version" -r)" -m "$(git show -s --format=%B | tr -d '\n')"
@@ -151,19 +143,18 @@ jobs:
           command: cp -r .circleci docs/
       - run:
           name: Post to gh-pages
-          command: curl ci-cd.net/v1/gh/pages | bash -s docs/.
+          command: echo ./scripts/gh-pages/procedure.sh | bash -s
   periodic:
     working_directory: ~/project
     docker:
       - image: cimg/node:lts
     steps:
       - checkout
-      - run: git submodule update --init --recursive
       - run: npm i
       - run: |
-            npm run spec || curl --request POST \
+            npm t || curl --request POST \
               --url https://api.github.com/repos/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}/issues \
-              --header 'authorization: Bearer ${GITHUB_TOKEN}' \
+              --header 'authorization: Bearer ${ISBOT_ISSUE_TOKEN}' \
               --header 'content-type: application/json' \
               --data '{
                   "title": "Automated issue for failing periodic tests",
