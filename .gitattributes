@@ -1,5 +1,3 @@
 * text eol=lf
 
-.github/**/* linguist-vendored
-scripts/* linguist-vendored
-page/* linguist-vendored
+fixtures/downloads/* linguist-vendored

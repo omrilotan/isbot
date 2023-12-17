@@ -1,14 +1,12 @@
-const downcase = require('../downcase')
-
 /**
  * Case insensitive Sort
  * @param  {string} a
  * @param  {string} b
  * @returns {number}
  */
-module.exports = function sort (a, b) {
-  a = downcase(a)
-  b = downcase(b)
+export function sort(a, b) {
+	a = a.toLowerCase();
+	b = b.toLowerCase();
 
-  return a > b ? 1 : b > a ? -1 : 0
+	return a > b ? 1 : b > a ? -1 : 0;
 }
