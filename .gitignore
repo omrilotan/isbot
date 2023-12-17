@@ -1,8 +1,9 @@
 node_modules
-/.cache
-/docs
+
+# Auomatically built files
+/src/pattern.ts
+/index*
+/*.d.ts
 /fixtures/index.json
-dist.js
 /AUTHORS
-/index.*
-!/index.d.ts
+/docs

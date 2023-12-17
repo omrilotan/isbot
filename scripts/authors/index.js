@@ -1,29 +1,36 @@
 #!/usr/bin/env node
 
-const { promises: { writeFile } } = require('fs')
-const { join } = require('path')
-const client = require('../lib/client')
-const sortBy = require('./sortBy')
+import { writeFile } from "node:fs/promises";
 
-start()
+/**
+ * sortBy Sort a list of objects by the value of a key
+ * @param {object[]} list
+ * @param {string} key
+ * @returns {object[]}
+ */
+const sortBy = (list, key) =>
+	list.sort(function (a, b) {
+		const [_a, _b] = [a, b].map((i) => i[key]);
+		if (_a < _b) return 1;
+		if (_a > _b) return -1;
+		return 0;
+	});
 
-async function start () {
-  const response = await client({
-    url: 'https://api.github.com/repos/omrilotan/isbot/contributors',
-    headers: {
-      'Content-Type': 'application/json',
-      'User-Agent': 'omrilotan/isbot'
-    }
-  })
+start();
 
-  const contributors = sortBy(
-    JSON.parse(response),
-    'contributions').map(
-    ({ login, html_url: url }) => `${login} (${url})\n`
-  ).join('')
+async function start() {
+	const response = await fetch(
+		"https://api.github.com/repos/omrilotan/isbot/contributors",
+		{
+			headers: new Headers([
+				["Content-Type", "application/json"],
+				["User-Agent", "omrilotan/isbot"],
+			]),
+		},
+	);
+	const contributors = sortBy(await response.json(), "contributions")
+		.map(({ login, html_url: url }) => `${login} (${url})`)
+		.join("\n");
 
-  await writeFile(
-    join(__dirname, '..', '..', 'AUTHORS'),
-    contributors
-  )
+	await writeFile("AUTHORS", contributors);
 }
