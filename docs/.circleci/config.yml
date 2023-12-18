@@ -1,0 +1,164 @@
+version: 2.1
+commands:
+  browsers:
+    steps:
+      - run:
+          name: Configure browsers
+          command: |
+            wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+            echo "deb http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee -a /etc/apt/sources.list.d/google-chrome.list
+            sudo apt update
+            sudo apt install -y google-chrome-stable xvfb
+workflows:
+  test:
+    jobs:
+      - build:
+          context: globalenv
+          filters:
+            branches:
+              ignore:
+                - gh-pages
+      - tests:
+          context: globalenv
+          requires:
+            - build
+      - compatibility:
+          context: globalenv
+          matrix:
+            parameters:
+              image:
+                - cimg/node:18.19
+                - cimg/node:lts
+                - cimg/node:current
+          requires:
+            - build
+      - publish:
+          context: globalenv
+          requires:
+            - tests
+            - compatibility
+          filters:
+            branches:
+              only:
+                - next
+      - pages:
+          context: globalenv
+          requires:
+            - publish
+  scheduled:
+    jobs:
+      - periodic
+    triggers:
+      - schedule:
+          cron: "0 9 * * 1"
+          filters:
+            branches:
+              only:
+                - next
+jobs:
+  build:
+    docker:
+      - image: cimg/node:lts
+    steps:
+      - checkout
+      - run: node -v
+      - run: npm i
+      - run: npm run build
+      - persist_to_workspace:
+          root: .
+          paths:
+            - .
+  tests:
+    working_directory: ~/project
+    docker:
+      - image: cimg/node:lts
+    steps:
+      - run: node -v
+      - attach_workspace:
+          at: .
+      - run: npm run format
+      - run:
+          name: Push autofixes
+          command: |
+            if [ "$(git diff --quiet && echo 0 || echo $?)" -gt 0 ]; then
+              git config --global user.email omrilotan@users.noreply.github.com --replace-all
+              git config --global user.name omrilotan --replace-all
+              git commit -am "😎 Autofix"
+              git remote set-url origin https://$CIRCLE_USERNAME:$GITHUB_API_TOKEN@github.com/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME.git
+              git push -u origin HEAD:${CIRCLE_BRANCH}
+              exit 1
+            fi
+      - run: npm t
+  compatibility:
+    parameters:
+      image:
+        description: docker image
+        default: cimg/node:latest
+        type: string
+    working_directory: ~/project
+    docker:
+      - image: << parameters.image >>
+    steps:
+      - run: node -v
+      - attach_workspace:
+          at: .
+      - run: npm t
+  publish:
+    working_directory: ~/project
+    docker:
+      - image: cimg/node:lts
+    steps:
+      - checkout
+      - run:
+          name: Stop if remote tag already exists
+          command: |
+            [ -z "$(git ls-remote --tags origin | grep -F $(cat package.json | jq '.version' -r) | tr -d '\n')" ] || circleci step halt
+      - run:
+          name: Set git user
+          command: |
+            git config --global user.name "$(git show -s --format=%an)"
+            git config --global user.email "$(git show -s --format=%ae)"
+      - run:
+          name: Add publish token
+          command: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+      - attach_workspace:
+          at: .
+      - browsers
+      - run: npm publish --tag next
+      - run:
+          name: Add git tag
+          command: git tag -a "v$(cat package.json | jq ".version" -r)" -m "$(git show -s --format=%B | tr -d '\n')"
+      - run: git push origin --tags
+  pages:
+    working_directory: ~/project
+    docker:
+      - image: cimg/node:lts
+    steps:
+      - checkout
+      - attach_workspace:
+          at: .
+      - run: npm run page
+      - run:
+          name: Copy circleci config
+          command: cp -r .circleci docs/
+      - run:
+          name: Post to gh-pages
+          command: echo ./scripts/gh-pages/procedure.sh | bash -s
+  periodic:
+    working_directory: ~/project
+    docker:
+      - image: cimg/node:lts
+    steps:
+      - checkout
+      - run: npm i
+      - run: |
+            npm t || curl --request POST \
+              --url https://api.github.com/repos/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}/issues \
+              --header 'authorization: Bearer ${ISBOT_ISSUE_TOKEN}' \
+              --header 'content-type: application/json' \
+              --data '{
+                  "title": "Automated issue for failing periodic tests",
+                  "body": "This issue is automatically created. The tests are failing on branch ${CIRCLE_BRANCH}",
+                  "assignees": [ "omrilotan" ],
+                  "labels": [ "automated", "maintenance" ]
+                }'
