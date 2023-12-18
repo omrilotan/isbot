@@ -6,6 +6,17 @@
 
 Detect bots/crawlers/spiders using the user agent string.
 
+> ## Releasing Version 4: deprecation notice
+>
+> ### Version 4 will become the "latest" version on npm on January 2024
+>
+> `npm i isbot@4` or `npm i isbot@next`
+>
+> I'll be releasing version 4 as "latest" soon. Migration is simple, just replace `import isbot from "isbot"` with `import { isbot } from "isbot"` in your code.
+>
+> If you are using extended functionality, there will be more changes and the feature you're using is no longer supported as is. Please open an issue if you need help migrating.
+> Please visit [isbot](https://isbot.js.org) for more information.
+
 ## Usage
 
 ```js
