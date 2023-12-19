@@ -1,5 +1,9 @@
 # Changelog
 
+## [4.0.1](https://github.com/omrilotan/isbot/compare/v4.0.0...v4.0.1)
+
+- Pattern optimisation (performance improvement)
+
 ## [4.0.0](https://github.com/omrilotan/isbot/compare/v3.7.1...v4.0.0)
 
 ### Breaking changes

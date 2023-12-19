@@ -27,6 +27,7 @@ workflows:
           matrix:
             parameters:
               image:
+                - cimg/node:16.20
                 - cimg/node:18.19
                 - cimg/node:lts
                 - cimg/node:current
@@ -102,7 +103,7 @@ jobs:
       - run: node -v
       - attach_workspace:
           at: .
-      - run: npm t
+      - run: npm t -- spec
   publish:
     working_directory: ~/project
     docker:

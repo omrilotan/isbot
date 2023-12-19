@@ -57,12 +57,15 @@ async function crawlers({ fixturesDirectory, downloadsDirectory }) {
 			// Ignore
 		}
 	}
-	return crawlers
-		.concat(downloaded.flat())
-		.filter((ua) => !ua.startsWith("#")) // Remove comments
-		.filter(
-			(ua = "") => !/ucweb|cubot/i.test(ua), // I don't know why it's in so many crawler lists
-		)
-		.filter((ua) => !browsersList.includes(ua)) // Remove browsers manually added to browsers.yml
-		.filter((ua = "") => ua.length < 4e3); // Remove very long user agent strings
+	return crawlers.concat(
+		// Filter the downloaded crawlers lists
+		downloaded
+			.flat()
+			.filter((ua) => !ua.startsWith("#")) // Remove comments
+			.filter(
+				(ua = "") => !/ucweb|cubot/i.test(ua), // I don't know why it's in so many crawler lists
+			)
+			.filter((ua) => !browsersList.includes(ua)) // Remove browsers manually added to browsers.yml
+			.filter((ua = "") => ua.length < 4e3), // Remove very long user agent strings
+	);
 }
