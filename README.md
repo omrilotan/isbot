@@ -68,24 +68,29 @@ Using JSDeliver CDN you can import an iife script
 | isbotPatterns | _{(userAgent: string): string[]}_                   | All regular expressions used to identify bot substrings in the user agent |
 | createIsbot   | _{(pattern: RegExp): (userAgent: string): boolean}_ | Create a custom isbot function                                            |
 
-## Examples
+## Example usages of helper functions
 
-### Create a custom isbot function ignoring Chrome Lighthouse
+Create a custom isbot that does not consider Chrome Lighthouse user agent as bots.
 
 ```ts
-import { createIsbot, list } from "isbot";
+import { createIsbot, isbotMatches, list } from "isbot";
 
+const ChromeLighthouseUserAgentStrings: string[] = [
+  "mozilla/5.0 (macintosh; intel mac os x 10_15_7) applewebkit/537.36 (khtml, like gecko) chrome/94.0.4590.2 safari/537.36 chrome-lighthouse",
+  "mozilla/5.0 (linux; android 7.0; moto g (4)) applewebkit/537.36 (khtml, like gecko) chrome/94.0.4590.2 mobile safari/537.36 chrome-lighthouse",
+];
+const patternsToRemove: Set<string> = new Set(
+  ChromeLighthouseUserAgentStrings.map(isbotMatches).flat(),
+);
 const isbot = createIsbot(
   new RegExp(
-    list
-      .filter((record) => !new RegExp(record, "i").test("Chrome-Lighthouse"))
-      .join("|"),
+    list.filter((record) => patternsToRemove.has(record) === false).join("|"),
     "i",
   ),
 );
 ```
 
-### Create a custom isbot function including another pattern
+Create a custom isbot that considers another pattern as a bot, which is not included in the package originally.
 
 ```ts
 import { createIsbot, list } from "isbot";
