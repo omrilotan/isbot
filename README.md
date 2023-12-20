@@ -73,7 +73,9 @@ const patternsToRemove: Set<string> = new Set(
   ChromeLighthouseUserAgentStrings.map(isbotMatches).flat(),
 );
 const isbot = createIsbotFromList(
-  list.filter((record) => patternsToRemove.has(record) === false).join("|"),
+  list.filter(
+    (record: string): boolean => patternsToRemove.has(record) === false,
+  ),
 );
 ```
 
@@ -82,7 +84,7 @@ Create a custom isbot that considers another pattern as a bot, which is not incl
 ```ts
 import { createIsbotFromList, list } from "isbot";
 
-const isbot = createIsbotFromList(list.concat("shmulik").join("|"));
+const isbot = createIsbotFromList(list.concat("shmulik"));
 ```
 
 ## Definitions

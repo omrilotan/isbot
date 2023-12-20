@@ -3,6 +3,7 @@
 ## [4.1.0](https://github.com/omrilotan/isbot/compare/v4.0.1...v4.1.0)
 
 - Add createIsbotFromList: Create a custom isbot function from a list of string representation patterns
+- Recognise browsers with HMS Core (Huawei Mobile Services) as natural non-bot browsers
 
 ## [4.0.1](https://github.com/omrilotan/isbot/compare/v4.0.0...v4.0.1)
 

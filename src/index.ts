@@ -23,14 +23,16 @@ export const isbot = (userAgent: string): boolean =>
  * Create a custom isbot function with a custom pattern.
  */
 export const createIsbot =
-	(customPattern: RegExp) =>
+	(customPattern: RegExp): ((userAgent: string) => boolean) =>
 	(userAgent: string): boolean =>
 		Boolean(userAgent) && customPattern.test(userAgent);
 
 /**
  * Create a custom isbot function with a custom pattern.
  */
-export const createIsbotFromList = (list: string[]) => {
+export const createIsbotFromList = (
+	list: string[],
+): ((userAgent: string) => boolean) => {
 	const pattern = new RegExp(list.join("|"), "i");
 	return (userAgent: string): boolean =>
 		Boolean(userAgent) && pattern.test(userAgent);
