@@ -23,9 +23,20 @@ export const isbot = (userAgent: string): boolean =>
  * Create a custom isbot function with a custom pattern.
  */
 export const createIsbot =
-	(customPattern: RegExp) =>
+	(customPattern: RegExp): ((userAgent: string) => boolean) =>
 	(userAgent: string): boolean =>
 		Boolean(userAgent) && customPattern.test(userAgent);
+
+/**
+ * Create a custom isbot function with a custom pattern.
+ */
+export const createIsbotFromList = (
+	list: string[],
+): ((userAgent: string) => boolean) => {
+	const pattern = new RegExp(list.join("|"), "i");
+	return (userAgent: string): boolean =>
+		Boolean(userAgent) && pattern.test(userAgent);
+};
 
 /**
  * Find the first part of the user agent that matches a bot pattern.
@@ -45,12 +56,12 @@ export const isbotMatches = (userAgent: string): string[] =>
  * Find the first bot patterns that match the given user agent.
  */
 export const isbotPattern = (userAgent: string): string | null =>
-	list.find((patten) => new RegExp(patten, "i").test(userAgent)) ?? null;
+	list.find((pattern) => new RegExp(pattern, "i").test(userAgent)) ?? null;
 
 /**
  * Find all bot patterns that match the given user agent.
  */
 export const isbotPatterns = (userAgent: string): string[] =>
-	list.filter((patten) => new RegExp(patten, "i").test(userAgent));
+	list.filter((pattern) => new RegExp(pattern, "i").test(userAgent));
 
 export { pattern, list };

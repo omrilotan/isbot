@@ -1,6 +1,6 @@
 # isbot 🤖/👨‍🦰
 
-[![](https://img.shields.io/npm/v/isbot.svg?style=flat-square)](https://www.npmjs.com/package/isbot) [![](https://img.shields.io/npm/dt/isbot?style=flat-square)](https://www.npmjs.com/package/isbot) [![](https://img.shields.io/circleci/build/github/omrilotan/isbot?style=flat-square)](https://circleci.com/gh/omrilotan/isbot) [![](https://img.shields.io/github/last-commit/omrilotan/isbot?style=flat-square)](https://github.com/omrilotan/isbot/graphs/commit-activity) [![](https://data.jsdelivr.com/v1/package/npm/isbot/badge)](https://www.jsdelivr.com/package/npm/isbot)
+[![](https://img.shields.io/npm/v/isbot/next?style=flat-square)](https://www.npmjs.com/package/isbot/v/next) [![](https://img.shields.io/npm/dt/isbot?style=flat-square)](https://www.npmjs.com/package/isbot) [![](https://img.shields.io/circleci/build/github/omrilotan/isbot?style=flat-square)](https://circleci.com/gh/omrilotan/isbot) [![](https://img.shields.io/github/last-commit/omrilotan/isbot?style=flat-square)](https://github.com/omrilotan/isbot/graphs/commit-activity) [![](https://data.jsdelivr.com/v1/package/npm/isbot/badge)](https://www.jsdelivr.com/package/npm/isbot)
 
 [![](./page/isbot.svg)](https://isbot.js.org)
 
@@ -58,22 +58,23 @@ Using JSDeliver CDN you can import an iife script
 
 ## Additional named imports
 
-| import        | Type                                                | Description                                                               |
-| ------------- | --------------------------------------------------- | ------------------------------------------------------------------------- |
-| pattern       | _{RegExp}_                                          | The regular expression used to identify bots                              |
-| list          | _{string[]}_                                        | List of all individual pattern parts                                      |
-| isbotMatch    | _{(userAgent: string): string \| null}_             | The substring matched by the regular expression                           |
-| isbotMatches  | _{(userAgent: string): string[]}_                   | All substrings matched by the regular expression                          |
-| isbotPattern  | _{(userAgent: string): string \| null}_             | The regular expression used to identify bot substring in the user agent   |
-| isbotPatterns | _{(userAgent: string): string[]}_                   | All regular expressions used to identify bot substrings in the user agent |
-| createIsbot   | _{(pattern: RegExp): (userAgent: string): boolean}_ | Create a custom isbot function                                            |
+| import              | Type                                                | Description                                                                  |
+| ------------------- | --------------------------------------------------- | ---------------------------------------------------------------------------- |
+| pattern             | _{RegExp}_                                          | The regular expression used to identify bots                                 |
+| list                | _{string[]}_                                        | List of all individual pattern parts                                         |
+| isbotMatch          | _{(userAgent: string): string \| null}_             | The substring matched by the regular expression                              |
+| isbotMatches        | _{(userAgent: string): string[]}_                   | All substrings matched by the regular expression                             |
+| isbotPattern        | _{(userAgent: string): string \| null}_             | The regular expression used to identify bot substring in the user agent      |
+| isbotPatterns       | _{(userAgent: string): string[]}_                   | All regular expressions used to identify bot substrings in the user agent    |
+| createIsbot         | _{(pattern: RegExp): (userAgent: string): boolean}_ | Create a custom isbot function                                               |
+| createIsbotFromList | _{(list: string): (userAgent: string): boolean}_    | Create a custom isbot function from a list of string representation patterns |
 
 ## Example usages of helper functions
 
 Create a custom isbot that does not consider Chrome Lighthouse user agent as bots.
 
 ```ts
-import { createIsbot, isbotMatches, list } from "isbot";
+import { createIsbotFromList, isbotMatches, list } from "isbot";
 
 const ChromeLighthouseUserAgentStrings: string[] = [
   "mozilla/5.0 (macintosh; intel mac os x 10_15_7) applewebkit/537.36 (khtml, like gecko) chrome/94.0.4590.2 safari/537.36 chrome-lighthouse",
@@ -82,20 +83,17 @@ const ChromeLighthouseUserAgentStrings: string[] = [
 const patternsToRemove: Set<string> = new Set(
   ChromeLighthouseUserAgentStrings.map(isbotMatches).flat(),
 );
-const isbot = createIsbot(
-  new RegExp(
-    list.filter((record) => patternsToRemove.has(record) === false).join("|"),
-    "i",
-  ),
+const isbot = createIsbotFromList(
+  list.filter((record) => patternsToRemove.has(record) === false),
 );
 ```
 
 Create a custom isbot that considers another pattern as a bot, which is not included in the package originally.
 
 ```ts
-import { createIsbot, list } from "isbot";
+import { createIsbotFromList, list } from "isbot";
 
-const isbot = createIsbot(new RegExp(list.concat("shmulik").join("|"), "i"));
+const isbot = createIsbotFromList(list.concat("shmulik"));
 ```
 
 ## Definitions
