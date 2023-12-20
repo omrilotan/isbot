@@ -56,12 +56,12 @@ export const isbotMatches = (userAgent: string): string[] =>
  * Find the first bot patterns that match the given user agent.
  */
 export const isbotPattern = (userAgent: string): string | null =>
-	list.find((patten) => new RegExp(patten, "i").test(userAgent)) ?? null;
+	list.find((pattern) => new RegExp(pattern, "i").test(userAgent)) ?? null;
 
 /**
  * Find all bot patterns that match the given user agent.
  */
 export const isbotPatterns = (userAgent: string): string[] =>
-	list.filter((patten) => new RegExp(patten, "i").test(userAgent));
+	list.filter((pattern) => new RegExp(pattern, "i").test(userAgent));
 
 export { pattern, list };
