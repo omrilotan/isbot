@@ -835,6 +835,8 @@ WordPress:
   - WordPress/4.7.2; https://example.com
 Wotbox:
   - Wotbox/2.01 (+http://www.wotbox.com/bot/)
+XaxisSemanticsClassifier:
+  - Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36 XaxisSemanticsClassifier/1.0
 XenForo:
   - XenForo/2.x (https://www.example.com)
 Xymon Site Monitor:
