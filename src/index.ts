@@ -28,6 +28,15 @@ export const createIsbot =
 		Boolean(userAgent) && customPattern.test(userAgent);
 
 /**
+ * Create a custom isbot function with a custom pattern.
+ */
+export const createIsbotFromList = (list: string[]) => {
+	const pattern = new RegExp(list.join("|"), "i");
+	return (userAgent: string): boolean =>
+		Boolean(userAgent) && pattern.test(userAgent);
+};
+
+/**
  * Find the first part of the user agent that matches a bot pattern.
  */
 export const isbotMatch = (userAgent: string): string | null =>

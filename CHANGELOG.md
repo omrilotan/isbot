@@ -1,5 +1,9 @@
 # Changelog
 
+## [4.1.0](https://github.com/omrilotan/isbot/compare/v4.0.1...v4.1.0)
+
+- Add createIsbotFromList: Create a custom isbot function from a list of string representation patterns
+
 ## [4.0.1](https://github.com/omrilotan/isbot/compare/v4.0.0...v4.0.1)
 
 - Pattern optimisation (performance improvement)
