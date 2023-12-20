@@ -8,6 +8,8 @@ Recognise bots/crawlers/spiders using the user agent string.
 
 > ## Migrate to version 4 today
 >
+> ### Version 4 will become the "latest" version on npm on January 2024
+>
 > `npm i isbot@4` or `npm i isbot@next`
 
 ## Usage
