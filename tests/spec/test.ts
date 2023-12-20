@@ -63,8 +63,9 @@ describe("isbot", () => {
 					(record: string): boolean => patternsToRemove.has(record) === false,
 				),
 			);
-			expect(isbot(ChromeLighthouseUserAgentStrings[0])).toBe(true);
-			expect(isbot2(ChromeLighthouseUserAgentStrings[1])).toBe(false);
+			const [ua] = ChromeLighthouseUserAgentStrings;
+			expect(isbot(ua)).toBe(true);
+			expect(isbot2(ua)).toBe(false);
 		});
 	});
 

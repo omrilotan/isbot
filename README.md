@@ -73,9 +73,7 @@ const patternsToRemove: Set<string> = new Set(
   ChromeLighthouseUserAgentStrings.map(isbotMatches).flat(),
 );
 const isbot = createIsbotFromList(
-  list.filter(
-    (record: string): boolean => patternsToRemove.has(record) === false,
-  ),
+  list.filter((record) => patternsToRemove.has(record) === false),
 );
 ```
 
