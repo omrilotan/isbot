@@ -1,6 +1,6 @@
 # isbot 🤖/👨‍🦰
 
-[![](https://img.shields.io/npm/v/isbot.svg?style=flat-square)](https://www.npmjs.com/package/isbot) [![](https://img.shields.io/npm/dt/isbot?style=flat-square)](https://www.npmjs.com/package/isbot) [![](https://img.shields.io/circleci/build/github/omrilotan/isbot?style=flat-square)](https://circleci.com/gh/omrilotan/isbot) [![](https://img.shields.io/github/last-commit/omrilotan/isbot?style=flat-square)](https://github.com/omrilotan/isbot/graphs/commit-activity) [![](https://data.jsdelivr.com/v1/package/npm/isbot/badge)](https://www.jsdelivr.com/package/npm/isbot)
+[![](https://img.shields.io/npm/v/isbot/next?style=flat-square)](https://www.npmjs.com/package/isbot/v/next) [![](https://img.shields.io/npm/dt/isbot?style=flat-square)](https://www.npmjs.com/package/isbot) [![](https://img.shields.io/circleci/build/github/omrilotan/isbot?style=flat-square)](https://circleci.com/gh/omrilotan/isbot) [![](https://img.shields.io/github/last-commit/omrilotan/isbot?style=flat-square)](https://github.com/omrilotan/isbot/graphs/commit-activity) [![](https://data.jsdelivr.com/v1/package/npm/isbot/badge)](https://www.jsdelivr.com/package/npm/isbot)
 
 [![](./page/isbot.svg)](https://isbot.js.org)
 
