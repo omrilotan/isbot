@@ -1,5 +1,9 @@
 # Changelog
 
+## Pending release
+
+- A slightly neater typescript decleration file
+
 ## [4.1.0](https://github.com/omrilotan/isbot/compare/v4.0.1...v4.1.0)
 
 - Add createIsbotFromList: Create a custom isbot function from a list of string representation patterns
