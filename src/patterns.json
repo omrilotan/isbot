@@ -8,7 +8,7 @@
   "(?<! cu)bot",
   "(?<! ya(?:yandex)?)search",
   "(?<!(?:lib))http",
-  "(?<!hm)score",
+  "(?<![hg]m)score",
   "@[a-z]",
   "\\(at\\)[a-z]",
   "\\(github\\.com/",

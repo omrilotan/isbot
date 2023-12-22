@@ -2,6 +2,9 @@
 
 ## Pending release
 
+## [4.1.1](https://github.com/omrilotan/isbot/compare/v4.1.0...v4.1.1)
+
+- Recognise browsers with GMS Core ([Google's Play Services](https://github.com/microg/GmsCore/wiki)) as natural non-bot browsers
 - A slightly neater typescript decleration file
 
 ## [4.1.0](https://github.com/omrilotan/isbot/compare/v4.0.1...v4.1.0)
