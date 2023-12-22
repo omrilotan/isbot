@@ -256,10 +256,11 @@ Google Pixel:
 Google Search App:
   - Mozilla/5.0 (iPad; CPU OS 9_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/10.0.63022 Mobile/13B143 Safari/600.1.4
   - Mozilla/5.0 (iPhone; CPU iPhone OS 13_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/102.0.304944559 Mobile/15E148 Safari/604.1
-HarmonyOS:
-  - Mozilla/5.0 (Linux; Android 12; HarmonyOS; TET-AN00; HMSCore 6.12.4.312) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 HuaweiBrowser/14.0.5.301 Mobile Safari/537.36
 Hawk QuickBrowser:
   - Mozilla/5.0 (Linux; U; Android 7.0; es-us; Moto C Build/NRD90M.063) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/69.0.3497.100 Mobile Safari/537.36 Hawk/QuickBrowser/2.4.8.22800
+HuaweiBrowser:
+  - Mozilla/5.0 (Linux; Android 10; MAR-LX3A; HMSCore 6.12.4.311; GMSCore 23.48.16) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 HuaweiBrowser/14.0.2.311 Mobile Safari/537.36
+  - Mozilla/5.0 (Linux; Android 12; HarmonyOS; TET-AN00; HMSCore 6.12.4.312) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 HuaweiBrowser/14.0.5.301 Mobile Safari/537.36
 Hulu:
   - hulu/3.65.0.308030 (android 9; en_us; sm-g965u; build/ppr1.180610.011;)
   - hulu/50000130 cfnetwork/976 darwin/18.2.0
