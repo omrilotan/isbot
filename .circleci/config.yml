@@ -44,7 +44,7 @@ workflows:
           filters:
             branches:
               only:
-                - main
+                - "3"
       - pages:
           context: globalenv
           requires:
@@ -132,7 +132,7 @@ jobs:
       - attach_workspace:
           at: .
       - browsers
-      - run: npm publish
+      - run: npm publish --tag legacy
       - run:
           name: Add git tag
           command: git tag -a "v$(cat package.json | jq ".version" -r)" -m "$(git show -s --format=%B | tr -d '\n')"
