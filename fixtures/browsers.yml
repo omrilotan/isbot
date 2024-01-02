@@ -45,8 +45,9 @@ AOL:
   - Mozilla/4.0 (compatible; MSIE 6.0; AOL 9.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)
   - Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 ADG/11.0.2566 AOLBUILD/11.0.2566 Safari/537.36
 Apple TV:
-  - AppleTV5,3/9.1.1
-  - AppleTV6,2/11.1
+  - AppName/1 CFNetwork/758.1.2 Darwin/15.0.0
+  - AppName/1 CFNetwork/758.1.3 AppleTV/16.0.0
+  - Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Mobile/15J380
 Arora:
   - "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US) AppleWebKit/532.1 (KHTML, like Gecko) Arora/0.10.1 (Git: 1329 e5385f3) Safari/532.1"
   - Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-US) AppleWebKit/533.3 (KHTML, like Gecko) Arora/0.11.0 Safari/533.3
@@ -235,6 +236,8 @@ Flock:
   - Mozilla/5.0 (Windows; U; Windows NT 6.1; pl; rv:1.9.0.16) Gecko/2010021013 Firefox/3.0.16 Flock/2.5.6
 Fluid:
   - Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_6; en-us) AppleWebKit/528.16 (KHTML, like Gecko) Fluid/0.9.6 Safari/528.16
+Fubo TV:
+  - fuboTV/4.75.0 (Linux;Android 9; AFTDCT31 Build/PS7664.3772N) FuboPlayer/v1.34.0
 Galeon:
   - Mozilla/5.0 (X11; U; FreeBSD i386; en-US; rv:1.7.12) Gecko/20051105 Galeon/1.3.21
 Ghostery Private Browser:
@@ -257,6 +260,9 @@ Google Search App:
   - Mozilla/5.0 (iPhone; CPU iPhone OS 13_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/102.0.304944559 Mobile/15E148 Safari/604.1
 Hawk QuickBrowser:
   - Mozilla/5.0 (Linux; U; Android 7.0; es-us; Moto C Build/NRD90M.063) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/69.0.3497.100 Mobile Safari/537.36 Hawk/QuickBrowser/2.4.8.22800
+HuaweiBrowser:
+  - Mozilla/5.0 (Linux; Android 10; MAR-LX3A; HMSCore 6.12.4.311; GMSCore 23.48.16) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 HuaweiBrowser/14.0.2.311 Mobile Safari/537.36
+  - Mozilla/5.0 (Linux; Android 12; HarmonyOS; TET-AN00; HMSCore 6.12.4.312) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 HuaweiBrowser/14.0.5.301 Mobile Safari/537.36
 Hulu:
   - hulu/3.65.0.308030 (android 9; en_us; sm-g965u; build/ppr1.180610.011;)
   - hulu/50000130 cfnetwork/976 darwin/18.2.0
@@ -361,6 +367,7 @@ Naver Whale:
   - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.57 Whale/3.14.133.23 Safari/537.36
 NCSA Mosaic:
   - NCSA_Mosaic/2.7b5 (X11;Linux 2.6.7 i686) libwww/2.12 modified
+  - NCSA_Mosaic/2.7ck11 (X11;OpenBSD 7.1 i386) libwww/2.12 modified
 NetFront:
   - SonyEricssonW810i/R46EA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Link/6.3.0.0.0(Linux LLC 1.2)
 NetPositive:
@@ -477,7 +484,6 @@ QtWebEngine:
 QuickTime:
   - QuickTime/7.6.6 (qtver=7.6.6;cpu=IA32;os=Mac 10.6.8)
 RadiosNet:
-  - Lavf/57.83.100, RadiosNet/2.6.2 (Java; Android)
   - RadiosNet/2.1.1 (Java; Android)
   - RadiosNet/2.2.1 (Java; Android)
   - RadiosNet/2.2.3 (Java; Android)
@@ -500,6 +506,8 @@ RadiosNet:
   - RadiosNet/2.8.0 (Java; Android)
 Rekonq:
   - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.21 (KHTML, like Gecko) rekonq/2.3.2 Safari/537.21
+retweet:
+  - retweet/2.17 (iPhone; iOS 17.1.2; Scale/3.00)
 RockMelt:
   - Mozilla/5.0 (Windows NT 6.1) AppleWebKit/535.7 (KHTML, like Gecko) RockMelt/0.16.91.483 Chrome/16.0.912.77 Safari/535.7
 Roku Ultra:
@@ -564,6 +572,8 @@ Spotify:
   - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_0) AppleWebKit/537.36 (KHTML, like Gecko) Spotify/1.1.9.383 Safari/537.36
   - Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Spotify/1.1.31.703 Safari/537.36
   - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Spotify/1.1.10.546 Safari/537.36
+SpringBoard:
+  - SpringBoard/50 CFNetwork/1220.1 Darwin/20.3.0
 SRWare Iron:
   - Mozilla/5.0 (Linux; Android 6.0; IRON_2 Build/1474531013) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.137 Mobile Safari/537.36
   - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3050.0 Iron Safari/537.36
@@ -674,13 +684,14 @@ ZZZ Glitches and Misidentified Browsers - These browsers are legit user agent ev
   - ; Android 11) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.45 Mobile DuckDuckGo/5 Safari/537.36
   - Android 11) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.185 Mobile DuckDuckGo/5 Safari/537.36
   - Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.196 Mobile DuckDuckGo/5 Safari/537.36
-  - daumoa,damoa,daum,daumos,duamoa,duam,duamos
   - GoogleApp/14.35.18.28.arm64
-  - Hello, world
   - LWPrCa2l') OR 941=(SELECT 941 FROM PG_SLEEP(15))--
   - Mozilla / 5.0 (Linux; Android 7.0; GHIA_ZEUS_3G) AppleWebKit / 537.36 (KHTML, como Gecko) Chrome / 87.0.4280.101 Mobile Safari / 537.36
+  - Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; GTB6.5; .NET CLR 2.0.50727; staticlogin:productcboxf09&actlogin&infoZmlsZW5hbWU9UG93ZXJ3b3JkMjAwOU94Zi4yNTI2OS40MDExLmV4ZSZtYWM9N0RDMTUwREU5MUEyNERBOTlBODYxREY3NjQ0Nzc1NDYmcGFzc3BvcnQ9JnZlcnN
   - Mozilla/5.0 (compatible; Lucidworks-Anda/2.0/0.10; +; )
   - Mozilla/5.0 (en-us) AppleWebKit/525.13 (KHTML, like Gecko) Version/3.1 Safari/525.13
   - mWebView.getSettings().setUserAgentString(\x22Mozilla/5.0 (Amiga; U; AmigaOS 1.3; en; rv:1.8.1.19);
   - ozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.166 Mobile DuckDuckGo/5 Safari/537.36
-  - "POST /parser Host: user-agents.net  action=parse&amp;format=[json|xml]&amp;string=Mozilla%2F5.0%20%28Linux%3B%20Android%2012%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Version%2F4.0%20Chrome%2F96.0.4664.104%20Mobile%20DuckDuckGo%2F5%20Safari%2F537.36"
+ZZZ Insignificat bots - These bots have very low appearance rate and are not worth blocking:
+  - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; Banca Caboto s.p.a.)
+  - Opera/9.70 (Linux armv7l ; U; turbotabbee/TSV2.0/1.02Q; fr) Presto/2.2

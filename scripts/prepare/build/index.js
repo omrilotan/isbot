@@ -1,108 +1,71 @@
-const { promises: { readdir, readFile } } = require('fs')
-const { join } = require('path')
-const { parse } = require('yaml')
-const UserAgent = require('user-agents')
-const dedup = require('../../lib/dedup')
-
-module.exports = async function build ({ fixturesDirectory, downloadsDirectory }) {
-  return {
-    browsers: dedup(await browsers({ fixturesDirectory, downloadsDirectory })),
-    crawlers: dedup(await crawlers({ fixturesDirectory, downloadsDirectory }))
-  }
-}
-
-/**
- * List of web browsers user agent strings
- * @returns {string[]}
- */
-async function browsers ({ fixturesDirectory, downloadsDirectory }) {
-  const browsers = await readYaml(join(fixturesDirectory, 'browsers.yml'))
-
-  const knownCrawlers = await crawlers({ fixturesDirectory, downloadsDirectory })
-
-  // Generate a random list of unique user agent strings
-  const random = Array(2000)
-    .fill()
-    .map(
-      () => new UserAgent()
-    )
-    .map(
-      wrap(({ data: { userAgent: ua } }) => ua)
-    )
-    .filter(
-      wrap(ua => !knownCrawlers.includes(ua))
-    )
-    .filter(
-      Boolean
-    )
-
-  return browsers.concat(random)
-}
-
-/**
- * List of known crawlers user agent strings
- * @returns {string[]}
- */
-async function crawlers ({ fixturesDirectory, downloadsDirectory }) {
-  const crawlers = await readYaml(join(fixturesDirectory, 'crawlers.yml'))
-  const browsers = await readYaml(join(fixturesDirectory, 'browsers.yml'))
-  const downloadedFiles = await readdir(downloadsDirectory)
-  const downloaded = downloadedFiles.filter(
-    wrap(file => file.endsWith('.json'))
-  ).map(
-    wrap(file => require(join(downloadsDirectory, file)))
-  ).flat()
-
-  return crawlers.concat(downloaded).filter(
-    wrap(ua => !ua.startsWith('#'))
-  ).filter(
-    wrap(ua => !/ucweb|cubot/i.test(ua)) // I don't know why it's in so many crawler lists
-  ).filter(
-    wrap(ua => !browsers.includes(ua))
-  ).filter(
-    wrap(ua => ua.length < 4e3)
-  )
-}
+import { readdir, readFile } from "node:fs/promises";
+import { join } from "path";
+import { parse } from "yaml";
 
 /**
  * Return the values of objects in our YAML lists
  * @param {string} path File path
  * @returns {string[]}
  */
-async function readYaml (path) {
-  const content = await readFile(path)
-  return Object.values(
-    parse(
-      content.toString()
-    )
-  ).flat()
+const readFixturesYaml = async (path) =>
+	Object.values(parse((await readFile(path)).toString())).flat();
+
+/**
+ * Build the lists of user agent strings
+ * @param {string} fixturesDirectory
+ * @param {string} downloadsDirectory
+ * @returns {Promise<{browsers: string[], crawlers: string[]}>
+ */
+export async function build({ fixturesDirectory, downloadsDirectory }) {
+	return {
+		browsers: Array.from(new Set(await browsers({ fixturesDirectory }))).sort(),
+		crawlers: Array.from(
+			new Set(await crawlers({ fixturesDirectory, downloadsDirectory })),
+		).sort(),
+	};
 }
 
 /**
- * Wrap a filter function to add arguments to error messages
- * @param {Function} fn
- * @returns {Function}
+ * List of web browsers user agent strings
+ * @param {string} fixturesDirectory
+ * @returns {string[]}
  */
-function wrap (fn) {
-  return function () {
-    try {
-      return fn.apply(this, arguments)
-    } catch (error) {
-      error.message = [error.message, stringify(arguments)].join(': ')
-      throw error
-    }
-  }
+async function browsers({ fixturesDirectory }) {
+	return await readFixturesYaml(join(fixturesDirectory, "browsers.yml"));
 }
 
 /**
- * Stringify an array of arguments
- * @param {any[]} array
- * @returns
+ * List of known crawlers user agent strings
+ * @param {string} fixturesDirectory
+ * @param {string} downloadsDirectory
+ * @returns {string[]}
  */
-function stringify (array) {
-  try {
-    return JSON.stringify(array).substring(0, 100)
-  } catch (error) {
-    return array.map(item => `${item}`).join(', ').substring(0, 100)
-  }
+async function crawlers({ fixturesDirectory, downloadsDirectory }) {
+	const crawlers = await readFixturesYaml(
+		join(fixturesDirectory, "crawlers.yml"),
+	);
+	const browsersList = await browsers({ fixturesDirectory });
+	const downloaded = [];
+	for (const file of await readdir(downloadsDirectory)) {
+		if (!file.endsWith(".json")) {
+			continue;
+		}
+		try {
+			const content = await readFile(join(downloadsDirectory, file));
+			downloaded.push(...JSON.parse(content.toString()));
+		} catch (error) {
+			// Ignore
+		}
+	}
+	return crawlers.concat(
+		// Filter the downloaded crawlers lists
+		downloaded
+			.flat()
+			.filter((ua) => !ua.startsWith("#")) // Remove comments
+			.filter(
+				(ua = "") => !/ucweb|cubot/i.test(ua), // I don't know why it's in so many crawler lists
+			)
+			.filter((ua) => !browsersList.includes(ua)) // Remove browsers manually added to browsers.yml
+			.filter((ua = "") => ua.length < 4e3), // Remove very long user agent strings
+	);
 }

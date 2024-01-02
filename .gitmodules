@@ -1,4 +1,0 @@
-[submodule "fixtures/downloads"]
-	path = fixtures/downloads
-	url = git@github.com:omrilotan/isbot.git
-	branch = downloads

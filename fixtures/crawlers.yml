@@ -574,6 +574,9 @@ Reeder:
   - Reeder/3.2 CFNetwork/672.1.12 Darwin/14.0.0
 Request-Promise:
   - Request-Promise
+Rest Client github.com/rest-client/rest-client:
+  - rest-client/2.1.0
+  - rest-client/2.1.0 (linux x86_64) ruby/2.7.6p219
 Rigor Synythetic Monitoring:
   - Mozilla/5.0 (X11; Linux x86_64; Rigor) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36
   - Mozilla/5.0 (X11; Linux x86_64; rv:45.0; Rigor) Gecko/20100101 Firefox/45.0
@@ -835,6 +838,8 @@ WordPress:
   - WordPress/4.7.2; https://example.com
 Wotbox:
   - Wotbox/2.01 (+http://www.wotbox.com/bot/)
+XaxisSemanticsClassifier:
+  - Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36 XaxisSemanticsClassifier/1.0
 XenForo:
   - XenForo/2.x (https://www.example.com)
 Xymon Site Monitor:
@@ -890,5 +895,6 @@ ZZZ Miscellaneous Glitches and Errornous User Agent Strings:
   - Mozilla/5.0 (Linux; Android 10; FIG-AL10 Build/HUAWEIFIG-AL10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.0.0MQQBrowser/6.2 TBS/045223 Mobile Safari/537.36 MMWEBID/1214 MicroMessenger/7.0.14.1660(0x27000E39) Process/tools NetType/4G Language/zh_CN ABI/arm64 WeChat/arm64 wechatdevtools qcloudcdn-xinan
   - Mozilla/5.0 (Linux; Android 10; M6 Note Build/N2G47H; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.0.0MQQBrowser/6.2 TBS/045223 Mobile Safari/537.36 MMWEBID/9551 MicroMessenger/7.0.14.1660(0x27000E37) Process/tools NetType/4G Language/zh_CN ABI/arm64 WeChat/arm64 wechatdevtools qcloudcdn-xinan
   - pisya
+  - "POST /parser Host: user-agents.net  action=parse&amp;format=[json|xml]&amp;string=Mozilla%2F5.0%20%28Linux%3B%20Android%2012%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Version%2F4.0%20Chrome%2F96.0.4664.104%20Mobile%20DuckDuckGo%2F5%20Safari%2F537.36"
   - search.marginalia.nu
   - U2FsdGVkX1+uKxeH2946/bMTDvtm/Fr0nWjvFR/oPtc64LSh1Gg0qkbJUIhLpSw5h/mjF86TFOXrl4U2SG1KBi4BC0EfphyIzeOxVXkpBWHDMfJnkrFGrubrRGjmJNIN49DKkOcjVgq2/iVDBMSAQe30k9wNIDtflfnlrOrmDPkXiYNjLbohSHLaNWS/GK5hu62gkOH25c9i1B+jMq5kc590HoQqJ0o4es9QrEnwluMsYPbQy14LxgPjeCQveiPHPXtkSM7TmfTY53HEJdbFHylstSOJNTQclbL67BKx33M=
