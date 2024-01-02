@@ -506,6 +506,8 @@ RadiosNet:
   - RadiosNet/2.8.0 (Java; Android)
 Rekonq:
   - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.21 (KHTML, like Gecko) rekonq/2.3.2 Safari/537.21
+retweet:
+  - retweet/2.17 (iPhone; iOS 17.1.2; Scale/3.00)
 RockMelt:
   - Mozilla/5.0 (Windows NT 6.1) AppleWebKit/535.7 (KHTML, like Gecko) RockMelt/0.16.91.483 Chrome/16.0.912.77 Safari/535.7
 Roku Ultra:
