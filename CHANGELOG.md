@@ -45,6 +45,10 @@ import { <SOMETHING> }  from "isbot";
 | isbotPatterns | _{(userAgent: string): string[]}_                   | All regular expressions used to identify bot substrings in the user agent |
 | createIsbot   | _{(pattern: RegExp): (userAgent: string): boolean}_ | Create a custom isbot function                                            |
 
+## [3.8.0](https://github.com/omrilotan/isbot/compare/v3.7.1...v3.8.0)
+
+- Add "isbot.isbot" property and "isbot" named export to allow easier migration to version 4
+
 ## [3.7.1](https://github.com/omrilotan/isbot/compare/v3.7.0...v3.7.1)
 
 - Replace "ghost" with "inspect" to avoid false positives
