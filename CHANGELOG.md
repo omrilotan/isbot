@@ -3,6 +3,7 @@
 ## Pending release
 
 - Adjust "bot" pattern to recognise bot as a standalone word or word suffix (excluding "Cubot")
+- Recognise "rest-client" as a bot
 
 ## [4.1.1](https://github.com/omrilotan/isbot/compare/v4.1.0...v4.1.1)
 

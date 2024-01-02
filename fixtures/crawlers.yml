@@ -574,6 +574,9 @@ Reeder:
   - Reeder/3.2 CFNetwork/672.1.12 Darwin/14.0.0
 Request-Promise:
   - Request-Promise
+Rest Client github.com/rest-client/rest-client:
+  - rest-client/2.1.0
+  - rest-client/2.1.0 (linux x86_64) ruby/2.7.6p219
 Rigor Synythetic Monitoring:
   - Mozilla/5.0 (X11; Linux x86_64; Rigor) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36
   - Mozilla/5.0 (X11; Linux x86_64; rv:45.0; Rigor) Gecko/20100101 Firefox/45.0
