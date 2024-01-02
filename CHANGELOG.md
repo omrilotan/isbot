@@ -1,5 +1,8 @@
 # Changelog
 
+## [3.8.0](https://github.com/omrilotan/isbot/compare/v3.7.1...v3.9.0)
+-   Add "isbot.isbot" property and "isbot" named export to allow easier migration to version 4
+
 ## [3.7.1](https://github.com/omrilotan/isbot/compare/v3.7.0...v3.7.1)
 -   Replace "ghost" with "inspect" to avoid false positives
 

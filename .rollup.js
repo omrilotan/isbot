@@ -5,17 +5,17 @@ const json = require('@rollup/plugin-json')
 
 module.exports = [
   {
-    ext: 'iife.js', format: 'iife'
+    ext: 'iife.js', format: 'iife', input: 'index.js'
   },
   {
-    ext: 'js', format: 'cjs'
+    ext: 'js', format: 'cjs', input: 'index.js'
   },
   {
-    ext: 'mjs', format: 'es'
+    ext: 'mjs', format: 'es', input: 'index.m.js'
   }
 ].map(
-  ({ ext, format }) => ({
-    input: join(__dirname, 'src', 'index.js'),
+  ({ ext, format, input }) => ({
+    input: join(__dirname, 'src', input),
     output: {
       file: join(__dirname, [ 'index', ext ].join('.')),
       format,

@@ -84,6 +84,10 @@ export class Isbot {
     return Boolean(ua) && this.#pattern.test(ua)
   }
 
+  isbot (ua) {
+    return Boolean(ua) && this.#pattern.test(ua)
+  }
+
   /**
    * Get the match for strings' known crawler pattern
    * @param  {string} ua User Agent string

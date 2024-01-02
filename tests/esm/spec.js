@@ -1,7 +1,7 @@
 /* eslint-env mocha */
 
 import { strictEqual } from 'assert'
-import isbot from 'isbot'
+import isbotDefault, { isbot } from 'isbot'
 
 describe(
   'esm',
@@ -13,7 +13,10 @@ describe(
   ].forEach(
     ([ua, result]) => it(
       `should return ${result} for ${ua}`,
-      () => strictEqual(isbot(ua), result)
+      () => {
+        strictEqual(isbot(ua), result)
+        strictEqual(isbotDefault(ua), result)
+      }
     )
   )
 )
