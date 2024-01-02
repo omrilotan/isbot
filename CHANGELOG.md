@@ -2,6 +2,8 @@
 
 ## Pending release
 
+- Adjust "bot" pattern to recognise bot as a standalone word or word suffix (excluding "Cubot")
+
 ## [4.1.1](https://github.com/omrilotan/isbot/compare/v4.1.0...v4.1.1)
 
 - Recognise browsers with GMS Core ([Google's Play Services](https://github.com/microg/GmsCore/wiki)) as natural non-bot browsers
