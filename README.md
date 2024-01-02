@@ -41,16 +41,16 @@ Using JSDeliver CDN you can import an iife script
 
 ## Additional named imports
 
-| import              | Type                                                | Description                                                                  |
-| ------------------- | --------------------------------------------------- | ---------------------------------------------------------------------------- |
-| pattern             | _{RegExp}_                                          | The regular expression used to identify bots                                 |
-| list                | _{string[]}_                                        | List of all individual pattern parts                                         |
-| isbotMatch          | _{(userAgent: string): string \| null}_             | The substring matched by the regular expression                              |
-| isbotMatches        | _{(userAgent: string): string[]}_                   | All substrings matched by the regular expression                             |
-| isbotPattern        | _{(userAgent: string): string \| null}_             | The regular expression used to identify bot substring in the user agent      |
-| isbotPatterns       | _{(userAgent: string): string[]}_                   | All regular expressions used to identify bot substrings in the user agent    |
-| createIsbot         | _{(pattern: RegExp): (userAgent: string): boolean}_ | Create a custom isbot function                                               |
-| createIsbotFromList | _{(list: string): (userAgent: string): boolean}_    | Create a custom isbot function from a list of string representation patterns |
+| import              | Type                                              | Description                                                                  |
+| ------------------- | ------------------------------------------------- | ---------------------------------------------------------------------------- |
+| pattern             | _RegExp_                                          | The regular expression used to identify bots                                 |
+| list                | _string[]_                                        | List of all individual pattern parts                                         |
+| isbotMatch          | _(userAgent: string): string \| null_             | The substring matched by the regular expression                              |
+| isbotMatches        | _(userAgent: string): string[]_                   | All substrings matched by the regular expression                             |
+| isbotPattern        | _(userAgent: string): string \| null_             | The regular expression used to identify bot substring in the user agent      |
+| isbotPatterns       | _(userAgent: string): string[]_                   | All regular expressions used to identify bot substrings in the user agent    |
+| createIsbot         | _(pattern: RegExp): (userAgent: string): boolean_ | Create a custom isbot function                                               |
+| createIsbotFromList | _(list: string): (userAgent: string): boolean_    | Create a custom isbot function from a list of string representation patterns |
 
 ## Example usages of helper functions
 
