@@ -1,7 +1,8 @@
 /* eslint-env mocha */
 
 const { strictEqual } = require('assert')
-const isbot = require('isbot')
+const isbotDefault = require('isbot')
+const { isbot } = require('isbot')
 
 describe(
   'cjs',
@@ -13,7 +14,10 @@ describe(
   ].forEach(
     ([ua, result]) => it(
       `should return ${result} for ${ua}`,
-      () => strictEqual(isbot(ua), result)
+      () => {
+        strictEqual(isbot(ua), result)
+        strictEqual(isbotDefault(ua), result)
+      }
     )
   )
 )
