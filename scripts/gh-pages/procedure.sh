@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 message="$(curl -s https://whatthecommit.com/index.txt)"
 git config --global user.name "$(git show -s --format=%an)"
 git config --global user.email "$(git show -s --format=%ae)"
