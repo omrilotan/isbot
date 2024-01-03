@@ -16,14 +16,14 @@ export const list: string[] = patternsList;
 /**
  * Check if the given user agent includes a bot pattern.
  */
-export const isbot = (userAgent: string): boolean =>
+export const isbot = (userAgent: string | null): boolean =>
 	Boolean(userAgent) && pattern.test(userAgent);
 
 /**
  * Create a custom isbot function with a custom pattern.
  */
 export const createIsbot =
-	(customPattern: RegExp): ((userAgent: string) => boolean) =>
+	(customPattern: RegExp): ((userAgent: string | null) => boolean) =>
 	(userAgent: string): boolean =>
 		Boolean(userAgent) && customPattern.test(userAgent);
 
@@ -41,25 +41,29 @@ export const createIsbotFromList = (
 /**
  * Find the first part of the user agent that matches a bot pattern.
  */
-export const isbotMatch = (userAgent: string): string | null =>
-	userAgent.match(pattern)?.[0];
+export const isbotMatch = (userAgent: string | null): string | null =>
+	userAgent?.match(pattern)?.[0] ?? null;
 
 /**
  * Find all parts of the user agent that match a bot pattern.
  */
-export const isbotMatches = (userAgent: string): string[] =>
+export const isbotMatches = (userAgent: string | null): string[] =>
 	list
-		.map((part) => userAgent.match(new RegExp(part, "i"))?.[0])
+		.map((part) => userAgent?.match(new RegExp(part, "i"))?.[0])
 		.filter(Boolean);
 
 /**
  * Find the first bot patterns that match the given user agent.
  */
-export const isbotPattern = (userAgent: string): string | null =>
-	list.find((pattern) => new RegExp(pattern, "i").test(userAgent)) ?? null;
+export const isbotPattern = (userAgent: string | null): string | null =>
+	userAgent
+		? list.find((pattern) => new RegExp(pattern, "i").test(userAgent)) ?? null
+		: null;
 
 /**
  * Find all bot patterns that match the given user agent.
  */
-export const isbotPatterns = (userAgent: string): string[] =>
-	list.filter((pattern) => new RegExp(pattern, "i").test(userAgent));
+export const isbotPatterns = (userAgent: string | null): string[] =>
+	userAgent
+		? list.filter((pattern) => new RegExp(pattern, "i").test(userAgent))
+		: [];

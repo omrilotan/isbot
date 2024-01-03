@@ -1,5 +1,9 @@
 # Changelog
 
+## [4.1.2](https://github.com/omrilotan/isbot/compare/v4.1.1...v4.1.2)
+
+- Accept `null` in place of user agent string to allow header value to be used "as is" (`request.headers.get("user-agent")`)
+
 ## [4.1.1](https://github.com/omrilotan/isbot/compare/v4.1.0...v4.1.1)
 
 - Recognise browsers with GMS Core ([Google's Play Services](https://github.com/microg/GmsCore/wiki)) as natural non-bot browsers

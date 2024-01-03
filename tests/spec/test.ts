@@ -67,6 +67,13 @@ describe("isbot", () => {
 			expect(isbot(ua)).toBe(true);
 			expect(isbot2(ua)).toBe(false);
 		});
+		test("all functions can accept null", () => {
+			expect(isbot(null)).toBe(false);
+			expect(isbotMatch(null)).toBe(null);
+			expect(isbotMatches(null)).toEqual([]);
+			expect(isbotPattern(null)).toBe(null);
+			expect(isbotPatterns(null)).toEqual([]);
+		});
 	});
 
 	describe("fixtures", () => {
