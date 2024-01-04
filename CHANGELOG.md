@@ -1,5 +1,9 @@
 # Changelog
 
+## [4.3.0](https://github.com/omrilotan/isbot/compare/v4.2.0...v4.3.0)
+
+- Accept `undefined` in place of user agent string to allow headers property to be used "as is" (`request.headers["user-agent"]`)
+
 ## [4.2.0](https://github.com/omrilotan/isbot/compare/v4.1.1...v4.2.0)
 
 - Accept `null` in place of user agent string to allow header value to be used "as is" (`request.headers.get("user-agent")`)
