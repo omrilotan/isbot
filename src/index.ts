@@ -53,7 +53,7 @@ export const isbotMatches = (userAgent?: string | null): string[] =>
 		.filter(Boolean);
 
 /**
- * Find the first bot patterns that match the given user agent.
+ * Find the first bot pattern that match the given user agent.
  */
 export const isbotPattern = (userAgent?: string | null): string | null =>
 	userAgent
