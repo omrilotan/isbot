@@ -1,10 +1,12 @@
-import { isbot, isbotMatch, isbotPattern } from "..";
+import { isbot, isbotMatch, isbotPatterns } from "..";
 
 {
-	const textarea = document.querySelector("textarea");
-	const output = document.querySelector("output");
-	const copyLink = document.querySelector('[id="copy-link"]');
-	let timer;
+	const textarea = document.querySelector("textarea") as HTMLTextAreaElement;
+	const output = document.querySelector("output") as HTMLOutputElement;
+	const copyLink = document.querySelector(
+		'[id="copy-link"]',
+	) as HTMLButtonElement;
+	let timer: ReturnType<typeof setTimeout>;
 
 	const url = new URL(window.location.href);
 	const ua = url.searchParams.get("ua");
@@ -16,28 +18,37 @@ import { isbot, isbotMatch, isbotPattern } from "..";
 	textarea.addEventListener("focus", () => textarea.select());
 	check();
 
-	function change({ target: { value } }) {
+	function change({ target }: Event): void {
+		const { value } = target as HTMLTextAreaElement;
 		clearTimeout(timer);
 		timer = setTimeout(check, 200, value);
 	}
 
-	function append(parent, tag, string) {
+	function append(
+		parent: DocumentFragment,
+		tag: string | null,
+		string: string | boolean | null,
+	): void {
 		if (tag) {
 			const ele = document.createElement("kbd");
-			ele.appendChild(document.createTextNode(string));
+			ele.appendChild(document.createTextNode(`${string}`));
 			parent.appendChild(ele);
 		} else {
-			parent.appendChild(document.createTextNode(string));
+			parent.appendChild(document.createTextNode(`${string}`));
 		}
 	}
 
-	function details(ua) {
+	function details(ua: string): DocumentFragment {
 		const fragment = document.createDocumentFragment();
 		const is = isbot(ua);
-		const found = is && isbotMatch(ua);
-		const pattern = is && isbotPattern(ua);
 
 		if (is) {
+			const found = isbotMatch(ua) as string;
+			const patterns = isbotPatterns(ua);
+			const pattern = patterns.find((pattern: string): boolean =>
+				new RegExp(pattern, "i").test(found),
+			) as string;
+			console.log(patterns, pattern);
 			append(fragment, null, "I think so, yes\n");
 			append(fragment, null, "The substring ");
 			append(fragment, "kbd", found);
@@ -53,7 +64,7 @@ import { isbot, isbotMatch, isbotPattern } from "..";
 		return fragment;
 	}
 
-	function check(value = textarea.innerHTML) {
+	function check(value = textarea.innerHTML): void {
 		value = value.trim();
 		while (output.firstChild) {
 			output.removeChild(output.firstChild);
@@ -68,7 +79,7 @@ import { isbot, isbotMatch, isbotPattern } from "..";
 		output.appendChild(details(value));
 	}
 
-	copyLink.addEventListener("click", (event) => {
+	copyLink.addEventListener("click", (event: Event): void => {
 		event.preventDefault();
 		const { protocol, host, pathname } = document.location;
 		navigator.clipboard.writeText(
@@ -85,12 +96,12 @@ import { isbot, isbotMatch, isbotPattern } from "..";
 		dialog.appendChild(document.createTextNode("copied to clipboard"));
 		document.body.appendChild(dialog);
 		dialog.showModal();
-		setTimeout(() => {
+		setTimeout((): void => {
 			dialog.addEventListener("transitionend", () => {
 				dialog.close();
 				document.body.removeChild(dialog);
 			});
-			dialog.style.opacity = 0;
+			dialog.style.opacity = "0";
 		}, 1000);
 	});
 }
