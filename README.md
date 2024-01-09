@@ -39,10 +39,18 @@ Using JSDeliver CDN you can import an iife script
 // isbot is global isbot(navigator.userAgent)
 ```
 
-## Additional named imports
+## How `isbot` maintains accuracy
+
+> `isbot`'s main feature is the accurate identification of bots using a regular expression. It uses expansive and regularly updated lists of user agent strings to create a regular expression that matches bots and only bots.
+>
+> This is done by using a lookbehind pattern which is not supported in all environments. A fallback is provided for environments that do not support lookbehind which is less accurate. The test suite includes a percentage of false positives and false negatives which is deemed acceptable for the fallback: 1% false positive and 75% bot coverage.
+
+## All named imports
 
 | import              | Type                                              | Description                                                                  |
 | ------------------- | ------------------------------------------------- | ---------------------------------------------------------------------------- |
+| isbot               | _(userAgent: string): boolean_                    | Check if the user agent is a bot                                             |
+| isbotNaive          | _(userAgent: string): boolean_                    | Check if the user agent is a bot using a naive pattern (less accurate)       |
 | pattern             | _RegExp_                                          | The regular expression used to identify bots                                 |
 | list                | _string[]_                                        | List of all individual pattern parts                                         |
 | isbotMatch          | _(userAgent: string): string \| null_             | The substring matched by the regular expression                              |

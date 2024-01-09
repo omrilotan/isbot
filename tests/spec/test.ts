@@ -2,6 +2,7 @@ import {
 	pattern,
 	list,
 	isbot,
+	isbotNaive,
 	isbotMatch,
 	isbotMatches,
 	isbotPattern,
@@ -10,11 +11,22 @@ import {
 	createIsbotFromList,
 } from "../../src";
 import { crawlers, browsers } from "../../fixtures";
+let isbotInstance: any;
 
 const BOT_USER_AGENT_EXAMPLE =
 	"Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)";
 const BROWSER_USER_AGENT_EXAMPLE =
 	"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91 Safari/537.36";
+
+const USER_AGENT_COMMON = [
+	"Ada Chat Bot/1.0 Request Block",
+	"Mozilla/5.0 (compatible; Yahoo! Slurp; http://help.yahoo.com/help/us/ysearch/slurp)",
+	"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4590.2 Safari/537.36 Chrome-Lighthouse",
+];
+const USER_AGENT_GOTCHAS = [
+	"Mozilla/5.0 (Linux; Android 10; CUBOT_X30) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36",
+	"PS4Application libhttp/1.000 (PS4) CoreMedia libhttp/6.72 (PlayStation 4)",
+];
 
 describe("isbot", () => {
 	describe("features", () => {
@@ -79,6 +91,65 @@ describe("isbot", () => {
 		);
 	});
 
+	describe("isbotNaive", () => {
+		test.each([75])(
+			"a large number of user agent strings can be detected (>%s%)",
+			(percent) => {
+				const ratio =
+					crawlers.filter((ua) => isbotNaive(ua)).length / crawlers.length;
+				expect(ratio).toBeLessThan(1);
+				expect(ratio).toBeGreaterThan(percent / 100);
+			},
+		);
+		test.each([1])(
+			"a small number of browsers is falsly detected as bots (<%s%)",
+			(percent) => {
+				const ratio =
+					browsers.filter((ua) => isbotNaive(ua)).length / browsers.length;
+				expect(ratio).toBeGreaterThan(0);
+				expect(ratio).toBeLessThan(percent / 100);
+			},
+		);
+	});
+
+	describe("regex fallback", () => {
+		beforeAll(async () => {
+			jest
+				.spyOn(globalThis, "RegExp")
+				.mockImplementation((pattern, flags): RegExp => {
+					if ((pattern as string).includes?.("?<!")) {
+						throw new Error("Invalid regex");
+					}
+					return new RegExp(pattern, flags);
+				});
+			const mdl = await import("../../index.js");
+			if (!mdl) {
+				throw new Error("Module not found");
+			}
+			isbotInstance = mdl.isbot as ReturnType<typeof createIsbot>;
+		});
+		afterAll(() => {
+			jest.restoreAllMocks();
+		});
+		test("Fallback regex detects commong crawlers", () => {
+			USER_AGENT_COMMON.forEach((ua) => {
+				if (!isbotInstance(ua)) {
+					throw new Error(`Failed to detect ${ua} as bot`);
+				}
+			});
+		});
+		test("fallback detects gotchas as bots", () => {
+			USER_AGENT_GOTCHAS.forEach((ua) => {
+				if (!isbotInstance(ua)) {
+					throw new Error(`Failed to detect ${ua} as bot (gotcha)`);
+				}
+			});
+		});
+		test("fallback does not detect browser as bot", () => {
+			expect(isbotInstance(BROWSER_USER_AGENT_EXAMPLE)).toBe(false);
+		});
+	});
+
 	describe("fixtures", () => {
 		test(`✔︎ ${crawlers.length} user agent string should be recognised as crawler`, () => {
 			let successCount = 0;
@@ -105,6 +176,15 @@ describe("isbot", () => {
 			});
 			expect(misidentifiedStrings).toEqual([]);
 			expect(successCount).toBe(browsers.length);
+		});
+	});
+
+	describe("module interface", () => {
+		test("interface is as expected", async () => {
+			const types = Object.entries(await import("../../src/index")).map(
+				([key, value]) => [key, typeof value] as [string, string],
+			);
+			expect(types).toMatchSnapshot();
 		});
 	});
 });
