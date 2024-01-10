@@ -41,7 +41,7 @@ Using JSDeliver CDN you can import an iife script
 
 ## How `isbot` maintains accuracy
 
-> `isbot`'s main feature is the accurate identification of bots using a regular expression. It uses expansive and regularly updated lists of user agent strings to create a regular expression that matches bots and only bots.
+> `isbot`'s prized possession is the accurate identification of bots using a regular expression. It uses expansive and regularly updated lists of user agent strings to create a regular expression that matches bots and only bots.
 >
 > This is done by using a lookbehind pattern which is not supported in all environments. A fallback is provided for environments that do not support lookbehind which is less accurate. The test suite includes a percentage of false positives and false negatives which is deemed acceptable for the fallback: 1% false positive and 75% bot coverage.
 

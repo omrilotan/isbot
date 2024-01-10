@@ -1,25 +1,17 @@
-import { expression } from "./pattern";
+import { fullPattern, regularExpression } from "./pattern";
 import patternsList from "./patterns.json";
 
 /**
  * Naive bot pattern.
  */
-const naiveExpression = /bot|spider|crawl|http|lighthouse/i;
+const naivePattern = /bot|spider|crawl|http|lighthouse/i;
+
+// Workaround for TypeScript's type definition of imported variables and JSON files.
 
 /**
  * A pattern that matches bot identifiers in user agent strings.
  */
-let regex: RegExp;
-
-try {
-	regex = new RegExp(expression, "i");
-} catch (error) {
-	regex = naiveExpression;
-}
-
-export const pattern = regex;
-
-// Workaround for TypeScript's type definition of imported variables and JSON files.
+export const pattern = regularExpression;
 
 /**
  * A list of bot identifiers to be used in a regular expression against user agent strings.
@@ -30,13 +22,22 @@ export const list: string[] = patternsList;
  * Check if the given user agent includes a bot pattern.
  */
 export const isbotNaive = (userAgent?: string | null): boolean =>
-	Boolean(userAgent) && naiveExpression.test(userAgent);
+	Boolean(userAgent) && naivePattern.test(userAgent);
 
 /**
  * Check if the given user agent includes a bot pattern.
  */
-export const isbot = (userAgent?: string | null): boolean =>
-	Boolean(userAgent) && pattern.test(userAgent);
+let usedPattern: RegExp;
+export function isbot(userAgent?: string | null): boolean {
+  if (typeof usedPattern === "undefined") {
+    try {
+      usedPattern = new RegExp(fullPattern, "i");
+    } catch (error) {
+      usedPattern = naivePattern;
+    }
+  }
+  return Boolean(userAgent) && usedPattern.test(userAgent);
+}
 
 /**
  * Create a custom isbot function with a custom pattern.
