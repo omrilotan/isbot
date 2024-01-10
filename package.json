@@ -50,7 +50,7 @@
     "build": "./scripts/build/procedure.sh",
     "format": "./scripts/format/procedure.sh",
     "pretest": "npm run build && npm run prepare",
-    "test": "node --expose-gc node_modules/.bin/jest --verbose",
+    "test": "./scripts/test/procedure.sh",
     "prepublishOnly": "./scripts/prepublish/procedure.sh",
     "prestart": "which parcel || npm i parcel-bundler --no-save",
     "start": "parcel page/index.pug --out-dir docs",
