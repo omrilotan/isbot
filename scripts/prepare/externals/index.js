@@ -3,10 +3,34 @@ import { join } from "node:path";
 import { parse } from "yaml";
 import { exists } from "../../lib/exists/index.js";
 
+const sources = new Map([
+	[
+		"kikobeats.json",
+		"https://raw.githubusercontent.com/Kikobeats/top-crawler-agents/master/index.json",
+	],
+	[
+		"monperrus.json",
+		"https://raw.githubusercontent.com/monperrus/crawler-user-agents/master/crawler-user-agents.json",
+	],
+	[
+		"matomo-org.json",
+		"https://raw.githubusercontent.com/matomo-org/device-detector/master/Tests/fixtures/bots.yml",
+	],
+	["user-agents.net.json", "https://user-agents.net/download"],
+	["myip.ms.json", "https://myip.ms/files/bots/live_webcrawlers.txt"],
+]);
+
 const { log } = console;
 
+/**
+ * Read remote files and create JSON lists locally
+ * @param {string} [ø.dir='..'] Destination directory
+ * @param {boolean} [ø.force] Read even if file exists
+ * @returns {Promise<number[]>}
+ */
 export const download = ({ dir, force = false } = {}) =>
 	Promise.all([
+		kikobeats({ dir, force }),
 		monperrus({ dir, force }),
 		matomoOrg({ dir, force }),
 		userAgentsNet({ dir, force }),
@@ -17,18 +41,18 @@ export const download = ({ dir, force = false } = {}) =>
  * Read remote file and create JSON list locally
  * @param {string} [ø.dir='..'] Destination directory
  * @param {boolean} [ø.force] Read even if file exists
- * @returns {Promise<void>}
+ * @returns {Promise<number>}
  */
 async function monperrus({ dir = join(__dirname, ".."), force = false } = {}) {
-	const destination = join(dir, "monperrus.json");
+	const collection = "monperrus.json";
+	const destination = join(dir, collection);
 	if (!force && (await exists(destination))) {
 		log(`Skip ${destination} - Already exists.`);
 		return 0;
 	}
+
 	log(`Download content for ${destination}`);
-	const response = await fetch(
-		"https://raw.githubusercontent.com/monperrus/crawler-user-agents/master/crawler-user-agents.json",
-	);
+	const response = await fetch(sources.get(collection));
 	const list = (await response.json()).map(({ instances }) => instances).flat();
 	log(`Write ${destination}`);
 	await writeFile(destination, JSON.stringify(list, null, 2) + "\n");
@@ -39,18 +63,39 @@ async function monperrus({ dir = join(__dirname, ".."), force = false } = {}) {
  * Read remote file and create JSON list locally
  * @param {string} [ø.dir='..'] Destination directory
  * @param {boolean} [ø.force] Read even if file exists
- * @returns {Promise<void>}
+ * @returns {Promise<number>}
+ */
+async function kikobeats({ dir = join(__dirname, ".."), force = false } = {}) {
+	const collection = "kikobeats.json";
+	const destination = join(dir, collection);
+	if (!force && (await exists(destination))) {
+		log(`Skip ${destination} - Already exists.`);
+		return 0;
+	}
+
+	log(`Download content for ${destination}`);
+	const response = await fetch(sources.get(collection));
+	const list = await response.json();
+	log(`Write ${destination}`);
+	await writeFile(destination, JSON.stringify(list, null, 2) + "\n");
+	return 1;
+}
+
+/**
+ * Read remote file and create JSON list locally
+ * @param {string} [ø.dir='..'] Destination directory
+ * @param {boolean} [ø.force] Read even if file exists
+ * @returns {Promise<number>}
  */
 async function matomoOrg({ dir = join(__dirname, ".."), force = false } = {}) {
-	const destination = join(dir, "matomo-org.json");
+	const collection = "matomo-org.json";
+	const destination = join(dir, collection);
 	if (!force && (await exists(destination))) {
 		log(`Skip ${destination} - Already exists.`);
 		return 0;
 	}
 	log(`Download content for ${destination}`);
-	const response = await fetch(
-		"https://raw.githubusercontent.com/matomo-org/device-detector/master/Tests/fixtures/bots.yml",
-	);
+	const response = await fetch(sources.get(collection));
 	const list = parse(await response.text()).map(
 		({ user_agent }) => user_agent, // eslint-disable-line camelcase
 	);
@@ -63,19 +108,20 @@ async function matomoOrg({ dir = join(__dirname, ".."), force = false } = {}) {
  * Read remote file and create JSON list locally
  * @param {string} [ø.dir='..'] Destination directory
  * @param {boolean} [ø.force] Read even if file exists
- * @returns {Promise<void>}
+ * @returns {Promise<number>}
  */
 async function userAgentsNet({
 	dir = join(__dirname, ".."),
 	force = false,
 } = {}) {
-	const destination = join(dir, "user-agents.net.json");
+	const collection = "user-agents.net.json";
+	const destination = join(dir, collection);
 	if (!force && (await exists(destination))) {
 		log(`Skip ${destination} - Already exists.`);
 		return 0;
 	}
 	log(`Download content for ${destination}`);
-	const response = await fetch("https://user-agents.net/download", {
+	const response = await fetch(sources.get(collection), {
 		method: "POST",
 		body: [
 			["browser_type", "bot-crawler"],
@@ -98,18 +144,17 @@ async function userAgentsNet({
  * Read remote file and create JSON list locally
  * @param {string} [ø.dir='..'] Destination directory
  * @param {boolean} [ø.force] Read even if file exists
- * @returns {Promise<void>}
+ * @returns {Promise<number>}
  */
 async function myipMs({ dir = join(__dirname, ".."), force = false } = {}) {
-	const destination = join(dir, "myip.ms.json");
+	const collection = "myip.ms.json";
+	const destination = join(dir, collection);
 	if (!force && (await exists(destination))) {
 		log(`Skip ${destination} - Already exists.`);
 		return 0;
 	}
 	log(`Download content for ${destination}`);
-	const response = await fetch(
-		"https://myip.ms/files/bots/live_webcrawlers.txt",
-	);
+	const response = await fetch(sources.get(collection));
 	const list = (await response.text())
 		.split("\n")
 		.map((line) => line.split("records - ")[1])
