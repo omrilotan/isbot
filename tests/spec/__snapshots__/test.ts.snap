@@ -4,43 +4,43 @@ exports[`isbot module interface interface is as expected 1`] = `
 [
   [
     "pattern",
-    "object",
+    "RegExp",
   ],
   [
     "list",
-    "object",
+    "Array",
   ],
   [
     "isbotNaive",
-    "function",
+    "Function",
   ],
   [
     "isbot",
-    "function",
+    "Function",
   ],
   [
     "createIsbot",
-    "function",
+    "Function",
   ],
   [
     "createIsbotFromList",
-    "function",
+    "Function",
   ],
   [
     "isbotMatch",
-    "function",
+    "Function",
   ],
   [
     "isbotMatches",
-    "function",
+    "Function",
   ],
   [
     "isbotPattern",
-    "function",
+    "Function",
   ],
   [
     "isbotPatterns",
-    "function",
+    "Function",
   ],
 ]
 `;

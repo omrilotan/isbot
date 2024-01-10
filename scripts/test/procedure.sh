@@ -2,7 +2,7 @@
 
 failures=0
 
-node --expose-gc node_modules/.bin/jest --verbose
+node --expose-gc node_modules/.bin/jest --verbose $@
 failures=$((failures + $?))
 
 echo $(which es-check)
