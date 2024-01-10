@@ -11,8 +11,10 @@ const pattern = new RegExp(
 	.toString()
 	.slice(1, -1);
 
+const expression = new RegExp(patterns.join("|"), "i").toString();
+
 const code = [
 	`export const fullPattern: string = "${pattern}";`,
-	`export const regularExpression: RegExp = /${pattern}/i;`,
+	`export const regularExpression: RegExp = ${expression};`,
 ].join("\n");
 await writeFile("src/pattern.ts", code);
