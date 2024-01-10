@@ -29,14 +29,14 @@ export const isbotNaive = (userAgent?: string | null): boolean =>
  */
 let usedPattern: RegExp;
 export function isbot(userAgent?: string | null): boolean {
-  if (typeof usedPattern === "undefined") {
-    try {
-      usedPattern = new RegExp(fullPattern, "i");
-    } catch (error) {
-      usedPattern = naivePattern;
-    }
-  }
-  return Boolean(userAgent) && usedPattern.test(userAgent);
+	if (typeof usedPattern === "undefined") {
+		try {
+			usedPattern = new RegExp(fullPattern, "i");
+		} catch (error) {
+			usedPattern = naivePattern;
+		}
+	}
+	return Boolean(userAgent) && usedPattern.test(userAgent);
 }
 
 /**

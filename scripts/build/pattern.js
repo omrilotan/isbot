@@ -13,6 +13,6 @@ const pattern = new RegExp(
 
 const code = [
 	`export const fullPattern: string = "${pattern}";`,
-	`export const regularExpression: RegExp = /${pattern}/i;`
+	`export const regularExpression: RegExp = /${pattern}/i;`,
 ].join("\n");
 await writeFile("src/pattern.ts", code);
