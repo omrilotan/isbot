@@ -31,6 +31,7 @@ let usedPattern: RegExp;
 export function isbot(userAgent?: string | null): boolean {
 	if (typeof usedPattern === "undefined") {
 		try {
+			// Build this RegExp dynamically to avoid syntax errors in older engines.
 			usedPattern = new RegExp(fullPattern, "i");
 		} catch (error) {
 			usedPattern = naivePattern;

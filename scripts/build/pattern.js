@@ -7,9 +7,7 @@ const pattern = new RegExp(
 	patterns
 		.map((pattern) => pattern.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"))
 		.join("|"),
-)
-	.toString()
-	.slice(1, -1);
+).source;
 
 const expression = new RegExp(patterns.join("|"), "i").toString();
 

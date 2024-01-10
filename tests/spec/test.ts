@@ -10,6 +10,7 @@ import {
 	createIsbot,
 	createIsbotFromList,
 } from "../../src";
+import { fullPattern, regularExpression } from "../../src/pattern";
 import { crawlers, browsers } from "../../fixtures";
 let isbotInstance: any;
 
@@ -131,7 +132,7 @@ describe("isbot", () => {
 		afterAll(() => {
 			jest.restoreAllMocks();
 		});
-		test("Fallback regex detects commong crawlers", () => {
+		test("fallback regex detects commong crawlers", () => {
 			USER_AGENT_COMMON.forEach((ua) => {
 				if (!isbotInstance(ua)) {
 					throw new Error(`Failed to detect ${ua} as bot`);
@@ -185,6 +186,10 @@ describe("isbot", () => {
 				([key, value]) => [key, typeof value] as [string, string],
 			);
 			expect(types).toMatchSnapshot();
+		});
+		test("regular expressions exports are as expected", () => {
+			expect(pattern).toBe(regularExpression);
+			expect(new RegExp(fullPattern, "i").toString()).toBe(pattern.toString());
 		});
 	});
 });
