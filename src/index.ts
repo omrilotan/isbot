@@ -19,15 +19,15 @@ export const pattern = regularExpression;
 export const list: string[] = patternsList;
 
 /**
- * Check if the given user agent includes a bot pattern.
+ * Check if the given user agent includes a bot pattern. Naive implementation (less accurate).
  */
 export const isbotNaive = (userAgent?: string | null): boolean =>
 	Boolean(userAgent) && naivePattern.test(userAgent);
 
+let usedPattern: RegExp;
 /**
  * Check if the given user agent includes a bot pattern.
  */
-let usedPattern: RegExp;
 export function isbot(userAgent?: string | null): boolean {
 	if (typeof usedPattern === "undefined") {
 		try {

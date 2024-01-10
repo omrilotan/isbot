@@ -44,6 +44,7 @@
       "default": "./index.js"
     }
   },
+  "sideEffects": false,
   "types": "index.d.ts",
   "scripts": {
     "prepare": "./scripts/prepare/index.js",
