@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`isbot module interface interface is as expected 1`] = `
+[
+  [
+    "pattern",
+    "RegExp",
+  ],
+  [
+    "list",
+    "Array",
+  ],
+  [
+    "isbotNaive",
+    "Function",
+  ],
+  [
+    "isbot",
+    "Function",
+  ],
+  [
+    "createIsbot",
+    "Function",
+  ],
+  [
+    "createIsbotFromList",
+    "Function",
+  ],
+  [
+    "isbotMatch",
+    "Function",
+  ],
+  [
+    "isbotMatches",
+    "Function",
+  ],
+  [
+    "isbotPattern",
+    "Function",
+  ],
+  [
+    "isbotPatterns",
+    "Function",
+  ],
+]
+`;

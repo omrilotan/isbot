@@ -1,6 +1,6 @@
 {
   "name": "isbot",
-  "version": "4.3.0",
+  "version": "4.4.0",
   "description": "🤖 Recognise bots/crawlers/spiders using the user agent string.",
   "keywords": [
     "bot",
@@ -44,13 +44,14 @@
       "default": "./index.js"
     }
   },
+  "sideEffects": false,
   "types": "index.d.ts",
   "scripts": {
     "prepare": "./scripts/prepare/index.js",
     "build": "./scripts/build/procedure.sh",
     "format": "./scripts/format/procedure.sh",
     "pretest": "npm run build && npm run prepare",
-    "test": "node --expose-gc node_modules/.bin/jest --verbose",
+    "test": "./scripts/test/procedure.sh",
     "prepublishOnly": "./scripts/prepublish/procedure.sh",
     "prestart": "which parcel || npm i parcel-bundler --no-save",
     "start": "parcel page/index.pug --out-dir docs",
