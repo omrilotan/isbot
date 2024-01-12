@@ -47,18 +47,18 @@ Using JSDeliver CDN you can import an iife script
 
 ## All named imports
 
-| import              | Type                                              | Description                                                                  |
-| ------------------- | ------------------------------------------------- | ---------------------------------------------------------------------------- |
-| isbot               | _(userAgent: string): boolean_                    | Check if the user agent is a bot                                             |
-| isbotNaive          | _(userAgent: string): boolean_                    | Check if the user agent is a bot using a naive pattern (less accurate)       |
-| pattern             | _RegExp_                                          | The regular expression used to identify bots                                 |
-| list                | _string[]_                                        | List of all individual pattern parts                                         |
-| isbotMatch          | _(userAgent: string): string \| null_             | The substring matched by the regular expression                              |
-| isbotMatches        | _(userAgent: string): string[]_                   | All substrings matched by the regular expression                             |
-| isbotPattern        | _(userAgent: string): string \| null_             | The regular expression used to identify bot substring in the user agent      |
-| isbotPatterns       | _(userAgent: string): string[]_                   | All regular expressions used to identify bot substrings in the user agent    |
-| createIsbot         | _(pattern: RegExp): (userAgent: string): boolean_ | Create a custom isbot function                                               |
-| createIsbotFromList | _(list: string): (userAgent: string): boolean_    | Create a custom isbot function from a list of string representation patterns |
+| import              | Type                             | Description                                                                  |
+| ------------------- | -------------------------------- | ---------------------------------------------------------------------------- |
+| isbot               | _(string?): boolean_             | Check if the user agent is a bot                                             |
+| isbotNaive          | _(string?): boolean_             | Check if the user agent is a bot using a naive pattern (less accurate)       |
+| pattern             | _RegExp_                         | The regular expression used to identify bots                                 |
+| list                | _string[]_                       | List of all individual pattern parts                                         |
+| isbotMatch          | _(string?): string \| null_      | The substring matched by the regular expression                              |
+| isbotMatches        | _(string?): string[]_            | All substrings matched by the regular expression                             |
+| isbotPattern        | _(string?): string \| null_      | The regular expression used to identify bot substring in the user agent      |
+| isbotPatterns       | _(string?): string[]_            | All regular expressions used to identify bot substrings in the user agent    |
+| createIsbot         | _(RegExp): (string?): boolean_   | Create a custom isbot function                                               |
+| createIsbotFromList | _(string[]): (string?): boolean_ | Create a custom isbot function from a list of string representation patterns |
 
 ## Example usages of helper functions
 
