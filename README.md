@@ -108,15 +108,16 @@ Recognising good bots such as web crawlers is useful for multiple purposes. Alth
 
 We use external data sources on top of our own lists to keep up to date
 
-### Crawlers user agents:
+### Crawlers user agents
 
 - [user-agents.net](https://user-agents.net/bots)
-- [crawler-user-agents repo](https://raw.githubusercontent.com/monperrus/crawler-user-agents/master/crawler-user-agents.json)
+- [monperrus/crawler-user-agents](https://github.com/monperrus/crawler-user-agents/blob/master/crawler-user-agents.json)
+- [Kikobeats/top-crawler-agents](https://github.com/Kikobeats/top-crawler-agents/blob/master/index.json)
 - [myip.ms](https://www.myip.ms/files/bots/live_webcrawlers.txt)
 - [matomo.org](https://github.com/matomo-org/device-detector/blob/master/Tests/fixtures/bots.yml)
 - A Manual list
 
-### Non bot user agents:
+### Non bot user agents
 
 - [user-agents npm package](https://www.npmjs.com/package/user-agents)
 - A Manual list
@@ -150,7 +151,3 @@ No functional change
 | Execution times in milliseconds
 | -
 | ![](https://user-images.githubusercontent.com/516342/125660283-c6ef9db8-6162-449b-912d-7b7ae97ef411.png)
-
-```
-
-```
