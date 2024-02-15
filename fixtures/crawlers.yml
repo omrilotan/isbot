@@ -381,6 +381,10 @@ jsjcw_scanner:
   - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36 jsjcw_scanner
 Kaspersky:
   - Kaspersky Lab CFR link resolver cfradmins@kaspersky.com
+keycdn:
+  - keycdn-tools/br
+  - keycdn-tools/h2
+  - keycdn-tools/perf
 Knowledge AI:
   - The Knowledge AI
 Kuberneters:
@@ -431,6 +435,8 @@ MetaInspector:
   - MetaInspector/5.4.0 (+https://github.com/jaimeiniesta/metainspector)
 MetaJobBot:
   - Mozilla/5.0 (compatible; MetaJobBot; http://www.metajob.de/crawler)
+Mixnode:
+  - Mozilla/5.0 (Mixnode) AppleWebKit/537.36 (KHTML, like Gecko)
 Mixrank Bot:
   - Mozilla/5.0 (compatible; MixrankBot; crawler@mixrank.com)
 MJ12 Bot:
@@ -747,6 +753,8 @@ ToolBot:
   - "SEO Consulting; Redirect Checker Tool V.02; IP:"
 TraceMyFile:
   - Mozilla/5.0 (compatible; tracemyfile/1.0)
+Trackable:
+  - Trackable/0.1 NNjCeA
 Trendiction Bot:
   - Mozilla/5.0 (Windows; U; Windows NT 6.0; en-GB; rv:1.0; trendictionbot0.5.0; trendiction search; http://www.trendiction.de/bot; please let us know of any problems; web at trendiction.com) Gecko/20071127 Firefox/3.0.0.11
 TurnitinBot:

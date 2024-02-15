@@ -3,6 +3,7 @@
 ## [5.0.0](https://github.com/omrilotan/isbot/compare/v4.4.0...v5.0.0)
 
 - Remove named export "pattern" from the interface, instead use "getPattern" method
+- Add a couple of bot patterns
 
 ## [4.4.0](https://github.com/omrilotan/isbot/compare/v4.3.0...v4.4.0)
 
