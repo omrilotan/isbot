@@ -1,7 +1,7 @@
 {
   "name": "isbot",
   "version": "5.0.0",
-  "description": "🤖 Recognise bots/crawlers/spiders using the user agent string.",
+  "description": "🤖/👨‍🦰 Recognise bots/crawlers/spiders using the user agent string.",
   "keywords": [
     "bot",
     "crawlers",
