@@ -3,8 +3,8 @@
 exports[`isbot module interface interface is as expected 1`] = `
 [
   [
-    "pattern",
-    "RegExp",
+    "getPattern",
+    "Function",
   ],
   [
     "list",

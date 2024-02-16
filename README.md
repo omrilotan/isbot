@@ -51,7 +51,7 @@ Using JSDeliver CDN you can import an iife script
 | ------------------- | -------------------------------- | ---------------------------------------------------------------------------- |
 | isbot               | _(string?): boolean_             | Check if the user agent is a bot                                             |
 | isbotNaive          | _(string?): boolean_             | Check if the user agent is a bot using a naive pattern (less accurate)       |
-| pattern             | _RegExp_                         | The regular expression used to identify bots                                 |
+| getPattern          | (): _RegExp_                     | The regular expression used to identify bots                                 |
 | list                | _string[]_                       | List of all individual pattern parts                                         |
 | isbotMatch          | _(string?): string \| null_      | The substring matched by the regular expression                              |
 | isbotMatches        | _(string?): string[]_            | All substrings matched by the regular expression                             |
