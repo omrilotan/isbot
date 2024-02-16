@@ -10,7 +10,7 @@ import {
 	createIsbot,
 	createIsbotFromList,
 } from "../../src";
-import { fullPattern, regularExpression } from "../../src/pattern";
+import { fullPattern } from "../../src/pattern";
 import { crawlers, browsers } from "../../fixtures";
 let isbotInstance: any;
 
