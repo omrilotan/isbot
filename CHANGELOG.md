@@ -1,5 +1,9 @@
 # Changelog
 
+## [5.1.0](https://github.com/omrilotan/isbot/compare/v5.0.0...v5.1.0)
+
+- Build now compatibile with older Javascript version: es2016
+
 ## [5.0.0](https://github.com/omrilotan/isbot/compare/v4.4.0...v5.0.0)
 
 - Remove named export "pattern" from the interface, instead use "getPattern" method
