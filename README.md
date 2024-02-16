@@ -51,7 +51,7 @@ Using JSDeliver CDN you can import an iife script
 | ------------------- | -------------------------------- | ---------------------------------------------------------------------------- |
 | isbot               | _(string?): boolean_             | Check if the user agent is a bot                                             |
 | isbotNaive          | _(string?): boolean_             | Check if the user agent is a bot using a naive pattern (less accurate)       |
-| pattern             | _RegExp_                         | The regular expression used to identify bots                                 |
+| getPattern          | (): _RegExp_                     | The regular expression used to identify bots                                 |
 | list                | _string[]_                       | List of all individual pattern parts                                         |
 | isbotMatch          | _(string?): string \| null_      | The substring matched by the regular expression                              |
 | isbotMatches        | _(string?): string[]_            | All substrings matched by the regular expression                             |
@@ -134,6 +134,10 @@ Missing something? Please [open an issue](https://github.com/omrilotan/isbot/iss
 
 ## Major releases breaking changes ([full changelog](./CHANGELOG.md))
 
+### [**Version 5**](https://github.com/omrilotan/isbot/releases/tag/v5.0.0)
+
+Remove named export "pattern" from the interface, instead use "getPattern" method
+
 ### [**Version 4**](https://github.com/omrilotan/isbot/releases/tag/v4.0.0)
 
 Remove `isbot` function default export in favour of a named export.
@@ -153,9 +157,3 @@ Change return value for isbot: `true` instead of matched string
 ### [**Version 1**](https://github.com/omrilotan/isbot/releases/tag/v1.0.0)
 
 No functional change
-
-## Real world data
-
-| Execution times in milliseconds
-| -
-| ![](https://user-images.githubusercontent.com/516342/125660283-c6ef9db8-6162-449b-912d-7b7ae97ef411.png)

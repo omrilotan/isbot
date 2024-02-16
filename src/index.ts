@@ -1,17 +1,24 @@
-import { fullPattern, regularExpression } from "./pattern";
 import patternsList from "./patterns.json";
+import { fullPattern } from "./pattern";
 
 /**
  * Naive bot pattern.
  */
 const naivePattern = /bot|spider|crawl|http|lighthouse/i;
 
-// Workaround for TypeScript's type definition of imported variables and JSON files.
-
-/**
- * A pattern that matches bot identifiers in user agent strings.
- */
-export const pattern = regularExpression;
+let pattern: RegExp;
+export function getPattern(): RegExp {
+	if (pattern instanceof RegExp) {
+		return pattern;
+	}
+	try {
+		// Build this RegExp dynamically to avoid syntax errors in older engines.
+		pattern = new RegExp(fullPattern, "i");
+	} catch (error) {
+		pattern = naivePattern;
+	}
+	return pattern;
+}
 
 /**
  * A list of bot identifiers to be used in a regular expression against user agent strings.
@@ -24,20 +31,11 @@ export const list: string[] = patternsList;
 export const isbotNaive = (userAgent?: string | null): boolean =>
 	Boolean(userAgent) && naivePattern.test(userAgent);
 
-let usedPattern: RegExp;
 /**
  * Check if the given user agent includes a bot pattern.
  */
 export function isbot(userAgent?: string | null): boolean {
-	if (typeof usedPattern === "undefined") {
-		try {
-			// Build this RegExp dynamically to avoid syntax errors in older engines.
-			usedPattern = new RegExp(fullPattern, "i");
-		} catch (error) {
-			usedPattern = naivePattern;
-		}
-	}
-	return Boolean(userAgent) && usedPattern.test(userAgent);
+	return Boolean(userAgent) && getPattern().test(userAgent);
 }
 
 /**
@@ -63,7 +61,7 @@ export const createIsbotFromList = (
  * Find the first part of the user agent that matches a bot pattern.
  */
 export const isbotMatch = (userAgent?: string | null): string | null =>
-	userAgent?.match(pattern)?.[0] ?? null;
+	userAgent?.match(getPattern())?.[0] ?? null;
 
 /**
  * Find all parts of the user agent that match a bot pattern.

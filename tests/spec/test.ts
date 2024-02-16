@@ -1,5 +1,5 @@
 import {
-	pattern,
+	getPattern,
 	list,
 	isbot,
 	isbotNaive,
@@ -32,7 +32,7 @@ const USER_AGENT_GOTCHAS = [
 describe("isbot", () => {
 	describe("features", () => {
 		test("pattern: pattern is a regex", () => {
-			expect(pattern).toBeInstanceOf(RegExp);
+			expect(getPattern()).toBeInstanceOf(RegExp);
 		});
 		test("list: list is an array", () => {
 			expect(list).toBeInstanceOf(Array);
@@ -188,8 +188,9 @@ describe("isbot", () => {
 			expect(types).toMatchSnapshot();
 		});
 		test("regular expressions exports are as expected", () => {
-			expect(pattern).toBe(regularExpression);
-			expect(new RegExp(fullPattern, "i").toString()).toBe(pattern.toString());
+			expect(new RegExp(fullPattern, "i").toString()).toBe(
+				getPattern().toString(),
+			);
 		});
 	});
 });
