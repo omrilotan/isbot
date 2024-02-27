@@ -46,7 +46,7 @@ describe("isbot", () => {
 		});
 		test("isbotMatches: find all patterns in bot user agent string", () => {
 			expect(isbotMatches(BOT_USER_AGENT_EXAMPLE)).toContain("Google");
-			expect(isbotMatches(BOT_USER_AGENT_EXAMPLE)).toHaveLength(3);
+			expect(isbotMatches(BOT_USER_AGENT_EXAMPLE)).toHaveLength(4);
 		});
 		test("isbotPattern: find first pattern in bot user agent string", () => {
 			expect(isbotPattern(BOT_USER_AGENT_EXAMPLE)).toBe(
@@ -57,7 +57,7 @@ describe("isbot", () => {
 			expect(isbotPatterns(BOT_USER_AGENT_EXAMPLE)).toContain(
 				"(?<! (?:channel/|google/))google(?!(app|/google| pixel))",
 			);
-			expect(isbotPatterns(BOT_USER_AGENT_EXAMPLE)).toHaveLength(3);
+			expect(isbotPatterns(BOT_USER_AGENT_EXAMPLE)).toHaveLength(4);
 		});
 		test("createIsbot: create custom isbot function with custom pattern", () => {
 			const customIsbot = createIsbot(/bot/i);
