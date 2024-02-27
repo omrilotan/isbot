@@ -1,5 +1,9 @@
 # Changelog
 
+## [5.1.1](https://github.com/omrilotan/isbot/compare/v5.1.0...v5.1.1)
+
+- Reduce pattern complexity by introducing the substring ".com" and remove a few other substrings
+
 ## [5.1.0](https://github.com/omrilotan/isbot/compare/v5.0.0...v5.1.0)
 
 - Build now compatibile with older Javascript version: es2016
