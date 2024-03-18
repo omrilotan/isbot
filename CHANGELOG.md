@@ -1,5 +1,10 @@
 # Changelog
 
+## [5.1.2](https://github.com/omrilotan/isbot/compare/v5.1.1...v5.1.2)
+
+- Add bots: Cypress, Detectify, InternetMeasurement, BuiltWith
+- Recognise browser: Zip Recruiter job search app, Ecosia android in-app browser
+
 ## [5.1.1](https://github.com/omrilotan/isbot/compare/v5.1.0...v5.1.1)
 
 - Reduce pattern size by introducing the substring ".com" and improve generic pattern
