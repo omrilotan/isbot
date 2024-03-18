@@ -1,7 +1,6 @@
 [
   " daum[ /]",
   " deusu/",
-  " hlb/",
   " yadirectfetcher",
   "(?:^|[^g])news",
   "(?<! (?:channel/|google/))google(?!(app|/google| pixel))",

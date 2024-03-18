@@ -702,4 +702,5 @@ ZZZ Glitches and Misidentified Browsers - These browsers are legit user agent ev
 ZZZ Insignificat bots - These bots have very low appearance rate and are not worth blocking:
   - Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 1.1.4322) 360JK yunjiankong 427691
   - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; Banca Caboto s.p.a.)
+  - Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) HLB/1.247
   - Opera/9.70 (Linux armv7l ; U; turbotabbee/TSV2.0/1.02Q; fr) Presto/2.2
