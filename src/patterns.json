@@ -124,7 +124,7 @@
   "pageburst",
   "parser",
   "perl",
-  "phantom",
+  "phantom\\.?js",
   "pingdom",
   "powermarks",
   "preview",
