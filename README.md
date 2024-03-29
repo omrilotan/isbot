@@ -8,6 +8,14 @@ Recognise bots/crawlers/spiders using the user agent string.
 
 ## Usage
 
+Install
+
+```sh
+npm i isbot
+```
+
+Straightforward usage
+
 ```ts
 import { isbot } from "isbot";
 
@@ -30,20 +38,17 @@ isbot(
 ); // false
 ```
 
-Using JSDeliver CDN you can import an iife script
+Use JSDeliver CDN you can import an iife script
 
 > See specific versions https://www.jsdelivr.com/package/npm/isbot or https://cdn.jsdelivr.net/npm/isbot
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/isbot@4"></script>
-// isbot is global isbot(navigator.userAgent)
+<script>
+  // isbot is now global
+  isbot(navigator.userAgent);
+</script>
 ```
-
-## How `isbot` maintains accuracy
-
-> `isbot`'s prized possession is the accurate identification of bots using a regular expression. It uses expansive and regularly updated lists of user agent strings to create a regular expression that matches bots and only bots.
->
-> This is done by using a lookbehind pattern which is not supported in all environments. A fallback is provided for environments that do not support lookbehind which is less accurate. The test suite includes a percentage of false positives and false negatives which is deemed acceptable for the fallback: 1% false positive and 75% bot coverage.
 
 ## All named imports
 
@@ -62,7 +67,7 @@ Using JSDeliver CDN you can import an iife script
 
 ## Example usages of helper functions
 
-Create a custom isbot that does not consider Chrome Lighthouse user agent as bots.
+Create a custom `isbot` that does not consider Chrome Lighthouse user agent as bots.
 
 ```ts
 import { createIsbotFromList, isbotMatches, list } from "isbot";
@@ -71,11 +76,13 @@ const ChromeLighthouseUserAgentStrings: string[] = [
   "mozilla/5.0 (macintosh; intel mac os x 10_15_7) applewebkit/537.36 (khtml, like gecko) chrome/94.0.4590.2 safari/537.36 chrome-lighthouse",
   "mozilla/5.0 (linux; android 7.0; moto g (4)) applewebkit/537.36 (khtml, like gecko) chrome/94.0.4590.2 mobile safari/537.36 chrome-lighthouse",
 ];
-const patternsToRemove: Set<string> = new Set(
+const patternsToRemove = new Set<string>(
   ChromeLighthouseUserAgentStrings.map(isbotMatches).flat(),
 );
-const isbot = createIsbotFromList(
-  list.filter((record) => patternsToRemove.has(record) === false),
+const isbot: (ua: string) => boolean = createIsbotFromList(
+  list.filter(
+    (record: string): boolean => patternsToRemove.has(record) === false,
+  ),
 );
 ```
 
@@ -110,7 +117,14 @@ Recognising good bots such as web crawlers is useful for multiple purposes. Alth
 - Flag pageviews to consider with **business analysis**.
 - Prefer to serve cached content and **relieve service load**.
 - Omit third party solutions' code (tags, pixels) and **reduce costs**.
-  > It is not recommended to whitelist requests for any reason based on user agent header only. Instead other methods of identification can be added such as [reverse dns lookup](https://www.npmjs.com/package/reverse-dns-lookup).
+
+> It is not recommended to **whitelist** requests for any reason based on user agent header only. Instead, other methods of identification can be added such as [reverse dns lookup](https://www.npmjs.com/package/reverse-dns-lookup).
+
+## How `isbot` maintains accuracy
+
+> `isbot`'s prized possession is the accurate identification of bots using a regular expression. It uses expansive and regularly updated lists of user agent strings to create a regular expression that matches bots and only bots.
+>
+> This is done by using a lookbehind pattern which is not supported in all environments. A fallback is provided for environments that do not support lookbehind which is less accurate. The test suite includes a percentage of false positives and false negatives which is deemed acceptable for the fallback: 1% false positive and 75% bot coverage.
 
 ## Data sources
 
