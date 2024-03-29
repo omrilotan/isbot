@@ -1,5 +1,9 @@
 # Changelog
 
+## [5.1.3](https://github.com/omrilotan/isbot/compare/v5.1.2...v5.1.3)
+
+- Recognise browsers: Ecosia ios in-app browser, Phantom in-app browser
+
 ## [5.1.2](https://github.com/omrilotan/isbot/compare/v5.1.1...v5.1.2)
 
 - Add bots: Cypress, Detectify, InternetMeasurement, BuiltWith
