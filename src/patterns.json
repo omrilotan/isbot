@@ -5,7 +5,7 @@
   "(?:^|[^g])news",
   "(?<! (?:channel/|google/))google(?!(app|/google| pixel))",
   "(?<! cu)bot(?:[^\\w]|_|$)",
-  "(?<!(?: ya| yandex|^job) ?)search",
+  "(?<!(?: ya| yandex|^job|inapp;) ?)search",
   "(?<!(?:lib))http",
   "(?<![hg]m)score",
   "(?<!android|ios)@",

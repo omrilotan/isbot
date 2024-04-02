@@ -365,7 +365,9 @@ Motorola Internet:
   - MOT-VE240/00.72 UP.Browser/7.2.7.5.548 (GUI) MMP/2.0 Novarra-Vision/8.0
 Mozilla Android Components:
   - MozacFetch/49.0.20200702190156
-Naver Whale:
+Naver:
+  - Mozilla/5.0 (iPhone; CPU iPhone OS 17_2_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2 Mobile/15E148 Safari/605.1 NAVER(inapp; search; 2000; 12.3.6; 14PRO)
+  - Mozilla/5.0 (Linux; Android 8.0.0; SM-N950N Build/R16NW; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/79.0.3945.88 Mobile Safari/537.36 NAVER(inapp; search; 1000; 11.8.4; 11)
   - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.57 Whale/3.14.133.23 Safari/537.36
 NCSA Mosaic:
   - NCSA_Mosaic/2.7b5 (X11;Linux 2.6.7 i686) libwww/2.12 modified
@@ -703,6 +705,9 @@ ZZZ Glitches and Misidentified Browsers - These browsers are legit user agent ev
   - User-Agent:Mozilla/5.0 (Macintosh; Intel Mac OS X 11_3_1) AppleWebKit/535.7 (KHTML, like Gecko) Chrome/92.0 Safari /535.7
   - User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.74 Safari/537.36 Edg/90.0.818.62
   - User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0 Safari /537.36
+ZZZ Insignificat bots - Crosswalk project (deprecated):
+  - Mozilla/5.0 (Linux; Android 11;SM-G9866N Build/PR1A.2007820.012; wv) AppleWebKit/537.36 (KHTML,linke Gecko) Version/4.0 Chrome/80.0.3987.163 Whale/1.0.0.0 Crosswalk/25.80.14.26 Mobile Safari/537.36 NAVER(inapp; search; 900; 11.2.5)
+  - Mozilla/5.0 (Linux; Android 12; SM-G975N Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/90.0.4430.232 Whale/1.0.0.0 Crosswalk/26.90.3.21 Mobile Safari/537.36 NAVER(inapp; search; 1010; 11.11.3)
 ZZZ Insignificat bots - These bots have very low appearance rate and are not worth blocking:
   - Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 1.1.4322) 360JK yunjiankong 427691
   - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; Banca Caboto s.p.a.)
