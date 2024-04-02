@@ -534,6 +534,8 @@ Pageburst:
   - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko; compatible; pageburst) Chrome/111.0.5563.146 Safari/537.36
 PaperLiBot:
   - Mozilla/5.0 (compatible; PaperLiBot/2.1; http://support.paper.li/entries/20023257-what-is-paper-li)
+PDRL:
+  - pdrl.fm Analyzer / 1.0.0
 PerimeterX:
   - PerimeterX Integration Services
 PetalBot:
@@ -894,8 +896,6 @@ ZoomBot (seozoom.it):
   - zoombot (linkbot 1.0 http://suite.seozoom.it/bot.html)
 ZumBot:
   - ZumBot/1.0 (ZUM Search; http://help.zum.com/inquiry)
-PDRL:
-  - "pdrl.fm Analyzer / 1.0.0"
 ZZZ Miscellaneous Glitches and Errornous User Agent Strings:
   - "123"
   - <class 'fake_useragent.fake.FakeUserAgent'>
