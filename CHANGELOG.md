@@ -4,6 +4,7 @@
 
 - Recognise search providers inapp browsers
 - Ignore Crosswalk project: An old project that is no longer maintained and has insignificant usage
+- PDRL Analyzer
 
 ## [5.1.3](https://github.com/omrilotan/isbot/compare/v5.1.2...v5.1.3)
 
