@@ -470,9 +470,6 @@ Nagios check_http:
   - check_http/v1.5 (nagios-plugins 1.5)
 NalezenCzBot:
   - NalezenCzBot/1.0 (http://www.nalezen.cz/about-crawler)
-Naver Search:
-  - Mozilla/5.0 (Linux; Android 12; SM-G975N Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/90.0.4430.232 Whale/1.0.0.0 Crosswalk/26.90.3.21 Mobile Safari/537.36 NAVER(inapp; search; 1010; 11.11.3)
-  - Mozilla/5.0 (Linux; Android 8.0.0; SM-N950N Build/R16NW; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/79.0.3945.88 Mobile Safari/537.36 NAVER(inapp; search; 1000; 11.8.4; 11)
 nbertaupete95:
   - Mozilla/5.0/Firefox/42.0 - nbertaupete95(at)gmail.com
 Netcraft Survey Bot:
@@ -537,6 +534,8 @@ Pageburst:
   - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko; compatible; pageburst) Chrome/111.0.5563.146 Safari/537.36
 PaperLiBot:
   - Mozilla/5.0 (compatible; PaperLiBot/2.1; http://support.paper.li/entries/20023257-what-is-paper-li)
+PDRL:
+  - pdrl.fm Analyzer / 1.0.0
 PerimeterX:
   - PerimeterX Integration Services
 PetalBot:

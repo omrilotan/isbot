@@ -1,5 +1,11 @@
 # Changelog
 
+## [5.1.4](https://github.com/omrilotan/isbot/compare/v5.1.3...v5.1.4)
+
+- Recognise search providers inapp browsers
+- Ignore Crosswalk project: An old project that is no longer maintained and has insignificant usage
+- PDRL Analyzer
+
 ## [5.1.3](https://github.com/omrilotan/isbot/compare/v5.1.2...v5.1.3)
 
 - Recognise browsers: Ecosia ios in-app browser, Phantom in-app browser
