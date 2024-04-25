@@ -1,5 +1,9 @@
 # Changelog
 
+## [5.1.5](https://github.com/omrilotan/isbot/compare/v5.1.4...v5.1.5)
+
+- Add substring "watch" to pattern
+
 ## [5.1.4](https://github.com/omrilotan/isbot/compare/v5.1.3...v5.1.4)
 
 - Recognise search providers inapp browsers

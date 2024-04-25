@@ -203,8 +203,11 @@ DuckDuckGo:
   - DDG-Android-3.1.0
   - ddg_android/5.90.0 (com.duckduckgo.mobile.android; Android API 28)
   - ddg_android/5.90.0 (com.duckduckgo.mobile.android; Android API 30)
+  - DuckDuckBot-Https/1.1; (+https://duckduckgo.com/duckduckbot)
   - DuckDuckBot/1.0; (+http://duckduckgo.com/duckduckbot.html)
+  - DuckDuckBot/1.1; (+http://duckduckgo.com/duckduckbot.html)
   - DuckDuckGo/0 CFNetwork/1126 Darwin/19.5.0
+  - DuckDuckGo/5 (com.duckduckgo.mobile.android; android api 33)
   - Mozilla/5.0 (compatible; DuckDuckBot-Https/1.1; https://duckduckgo.com/duckduckbot)
   - Mozilla/5.0 (compatible; DuckDuckGo-Favicons-Bot/1.0; +http://duckduckgo.com)
 DuckDuckGo Bot:
