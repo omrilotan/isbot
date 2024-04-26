@@ -29,6 +29,8 @@ workflows:
               image:
                 - cimg/node:16.20
                 - cimg/node:18.19
+                - cimg/node:20.12
+                - cimg/node:22.0
                 - cimg/node:lts
                 - cimg/node:current
           requires:
