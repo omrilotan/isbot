@@ -4,7 +4,7 @@
 
 [![](./page/isbot.svg)](https://isbot.js.org)
 
-Recognise bots/crawlers/spiders using the user agent string.
+Identify bots, crawlers, and spiders using the user agent string.
 
 ## Usage
 
@@ -43,7 +43,7 @@ Use JSDeliver CDN you can import an iife script
 > See specific versions https://www.jsdelivr.com/package/npm/isbot or https://cdn.jsdelivr.net/npm/isbot
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/isbot@4"></script>
+<script src="https://cdn.jsdelivr.net/npm/isbot@5"></script>
 <script>
   // isbot is now global
   isbot(navigator.userAgent);
