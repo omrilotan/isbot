@@ -1,5 +1,9 @@
 # Changelog
 
+## [5.1.6](https://github.com/omrilotan/isbot/compare/v5.1.5...v5.1.6)
+
+- [FIX] Browser files (jsdeliver): UMD is global and ESM is named
+
 ## [5.1.5](https://github.com/omrilotan/isbot/compare/v5.1.4...v5.1.5)
 
 - Add substring "watch" to pattern

@@ -15,7 +15,7 @@ esbuild src/index.ts --outfile=index.mjs --bundle --platform=neutral --format=es
 failures=$((failures + $?))
 
 echo "→ Build browser file (iife)"
-esbuild src/browser.ts --outfile=index.iife.js --bundle --platform=neutral --format=iife --global-name=isbot --log-level=warning --target=es2016
+esbuild src/browser.ts --outfile=index.iife.js --bundle --platform=neutral --format=iife --log-level=warning --target=es2016
 failures=$((failures + $?))
 
 echo "→ Build TypeScript declaration file"

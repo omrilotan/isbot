@@ -38,9 +38,20 @@ isbot(
 ); // false
 ```
 
-Use JSDeliver CDN you can import an iife script
+Use JSDeliver CDN you can import to the browser directly
 
-> See specific versions https://www.jsdelivr.com/package/npm/isbot or https://cdn.jsdelivr.net/npm/isbot
+> See specific versions and instructions [https://www.jsdelivr.com/package/npm/isbot](https://www.jsdelivr.com/package/npm/isbot)
+
+ESM
+
+```html
+<script type="module">
+  import { isbot } from "https://cdn.jsdelivr.net/npm/isbot@5/+esm";
+  isbot(navigator.userAgent);
+</script>
+```
+
+UMD
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/isbot@5"></script>
