@@ -13,14 +13,14 @@ const readFixturesYaml = async (path) =>
 /**
  * Build the lists of user agent strings
  * @param {string} fixturesDirectory
- * @param {string} downloadsDirectory
+ * @param {string} downloadedDirectory
  * @returns {Promise<{browsers: string[], crawlers: string[]}>
  */
-export async function build({ fixturesDirectory, downloadsDirectory }) {
+export async function build({ fixturesDirectory, downloadedDirectory }) {
 	return {
 		browsers: Array.from(new Set(await browsers({ fixturesDirectory }))).sort(),
 		crawlers: Array.from(
-			new Set(await crawlers({ fixturesDirectory, downloadsDirectory })),
+			new Set(await crawlers({ fixturesDirectory, downloadedDirectory })),
 		).sort(),
 	};
 }
@@ -37,21 +37,21 @@ async function browsers({ fixturesDirectory }) {
 /**
  * List of known crawlers user agent strings
  * @param {string} fixturesDirectory
- * @param {string} downloadsDirectory
+ * @param {string} downloadedDirectory
  * @returns {string[]}
  */
-async function crawlers({ fixturesDirectory, downloadsDirectory }) {
+async function crawlers({ fixturesDirectory, downloadedDirectory }) {
 	const crawlers = await readFixturesYaml(
 		join(fixturesDirectory, "crawlers.yml"),
 	);
 	const browsersList = await browsers({ fixturesDirectory });
 	const downloaded = [];
-	for (const file of await readdir(downloadsDirectory)) {
+	for (const file of await readdir(downloadedDirectory)) {
 		if (!file.endsWith(".json")) {
 			continue;
 		}
 		try {
-			const content = await readFile(join(downloadsDirectory, file));
+			const content = await readFile(join(downloadedDirectory, file));
 			downloaded.push(...JSON.parse(content.toString()));
 		} catch (error) {
 			// Ignore

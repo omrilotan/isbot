@@ -20,7 +20,7 @@ npm run prepare -- -f
 
 - Manual legit browsers list: [fixtures/browsers.yml](https://github.com/omrilotan/isbot/blob/main/fixtures/browsers.yml)
 - Manual known crawlers list: [fixtures/crawlers.yml](https://github.com/omrilotan/isbot/blob/main/fixtures/crawlers.yml)
-- Downloaded resources end up in [fixtures/downloads](https://github.com/omrilotan/isbot/blob/main/fixtures/downloads) folder
+- Downloaded resources end up in [fixtures/downloaded](https://github.com/omrilotan/isbot/blob/main/fixtures/downloaded) folder
 - [user-agents](https://www.npmjs.com/package/user-agents) package is used to add randomly generated browser user agents
 
 ### Misidentification

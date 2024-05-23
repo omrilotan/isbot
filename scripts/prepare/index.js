@@ -21,15 +21,15 @@ start(process);
 async function start({ argv }) {
 	const { force } = args({ argv });
 	const fixturesDirectory = join("fixtures");
-	const downloadsDirectory = join(fixturesDirectory, "downloads");
+	const downloadedDirectory = join(fixturesDirectory, "downloaded");
 
-	await mkdir(downloadsDirectory, { recursive: true });
-	const results = await download({ dir: downloadsDirectory, force });
+	await mkdir(downloadedDirectory, { recursive: true });
+	const results = await download({ dir: downloadedDirectory, force });
 	const news = results.reduce((a, b) => a + b);
 	if (news) {
 		log("Create new timestamp");
 		await writeFile(
-			join(downloadsDirectory, "downloaded"),
+			join(downloadedDirectory, "downloaded"),
 			new Date().toUTCString(),
 		);
 	} else {
@@ -39,7 +39,7 @@ async function start({ argv }) {
 	log("Create fixtures JSON");
 	const { browsers, crawlers } = await build({
 		fixturesDirectory,
-		downloadsDirectory,
+		downloadedDirectory,
 	});
 	await writeFile(
 		join(fixturesDirectory, "index.json"),
