@@ -284,6 +284,7 @@ Iceweasel:
 Instagram:
   - Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16A366 Instagram 66.0.0.14.101 (iPhone10,2; iOS 12_0; pt_BR; pt-BR; scale=2.61; gamut=wide; 1080x1920; 126719886)
   - Mozilla/5.0 (iPhone; CPU iPhone OS 13_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 123.1.0.26.115 (iPhone11,8; iOS 13_3; en_US; en-US; scale=2.00; 828x1792; 190542906)
+  - Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/21F79 Instagram 330.0.3.29.91 (iPhone14,3; iOS 17_5; en_IR@calendar=gregorian; en; scale=3.00; 1125x2436; 595323416)
   - Mozilla/5.0 (Linux; Android 11; Pixel 2 Build/RP1A.201005.004.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/91.0.4472.120 Mobile Safari/537.36 Instagram 194.0.0.36.172 Android (30/11; 420dpi; 1080x1878; Google/google; Pixel 2; walleye; walleye; en_US; 301484483)
   - Mozilla/5.0 (Linux; Android 7.0; Lenovo K33b36 Build/NRD90N; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/65.0.3325.109 Mobile Safari/537.36 Instagram 41.0.0.13.92 Android (24/7.0; 480dpi; 1080x1920; LENOVO/Lenovo; Lenovo K33b36; K33b36; qcom; pt_BR; 103516666)
   - Mozilla/5.0 (Linux; Android 7.0; TRT-LX3 Build/HUAWEITRT-LX3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.80 Mobile Safari/537.36 Instagram 70.0.0.22.98 Android (24/7.0; 320dpi; 720x1208; HUAWEI; TRT-LX3; HWTRT-Q; qcom; es_CO; 130580485)
@@ -383,6 +384,9 @@ Netscape Navigator:
   - Mozilla/5.0 (Windows; U; Win 9x 4.90; SG; rv:1.9.2.4) Gecko/20101104 Netscape/9.1.0285
   - Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.7.2) Gecko/20040804 Netscape/7.2 (ax)
   - Mozilla/5.0 (X11; U; Linux i686; en-US; rv:0.9.3) Gecko/20010801
+NewsSapphire:
+  - Mozilla/5.0 (iPhone; CPU iPhone OS 16_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Version/16.6.1 Mobile/15E148 Safari/605.1.15 NewsSapphire/1.0.420507003
+  - Mozilla/5.0 (iPhone; CPU iPhone OS 17_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Version/17.4.1 Mobile/15E148 Safari/605.1.15 NewsSapphire/1.0.420507003
 Nintendo 3DS:
   - Mozilla/5.0 (Nintendo 3DS; U; ; en) Version/1.7412.EU
 Nintendo Wii U:

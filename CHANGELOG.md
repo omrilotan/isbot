@@ -1,5 +1,10 @@
 # Changelog
 
+## [5.1.7](https://github.com/omrilotan/isbot/compare/v5.1.6...v5.1.7)
+
+- [Pattern] Ignore NewsSapphire in-app browser (news app)
+- [Pattern] Ignore locales with calendar in user agent
+
 ## [5.1.6](https://github.com/omrilotan/isbot/compare/v5.1.5...v5.1.6)
 
 - [FIX] Browser files (jsdeliver): UMD is global and ESM is named
