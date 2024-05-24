@@ -1,14 +1,4 @@
 version: 2.1
-commands:
-  browsers:
-    steps:
-      - run:
-          name: Configure browsers
-          command: |
-            wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-            echo "deb http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee -a /etc/apt/sources.list.d/google-chrome.list
-            sudo apt update
-            sudo apt install -y google-chrome-stable xvfb
 workflows:
   test:
     jobs:
@@ -126,7 +116,13 @@ jobs:
           command: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
       - attach_workspace:
           at: .
-      - browsers
+      - run:
+          name: Configure browsers
+          command: |
+            wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+            echo "deb http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee -a /etc/apt/sources.list.d/google-chrome.list
+            sudo apt update
+            sudo apt install -y google-chrome-stable xvfb
       - run: npm publish
       - run:
           name: Add git tag
@@ -154,6 +150,7 @@ jobs:
     steps:
       - checkout
       - run: npm i
+      - run: npm run prepare -- --force
       - run: |
             npm t || curl --request POST \
               --url https://api.github.com/repos/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}/issues \
