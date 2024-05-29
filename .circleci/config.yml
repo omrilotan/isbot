@@ -154,7 +154,7 @@ jobs:
       - run: |
             npm t || curl --request POST \
               --url https://api.github.com/repos/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}/issues \
-              --header 'authorization: Bearer ${ISBOT_ISSUE_TOKEN}' \
+              --header "authorization: Bearer ${ISBOT_ISSUE_TOKEN}" \
               --header 'content-type: application/json' \
               --data '{
                   "title": "Automated issue for failing periodic tests",
