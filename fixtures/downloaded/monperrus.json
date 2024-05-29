@@ -1145,5 +1145,7 @@
   "Audisto Crawler (desktop; essential; +https://audisto.com/bot)",
   "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; PerplexityBot/1.0; +https://perplexity.ai/perplexitybot)",
   "claudebot",
-  "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; ClaudeBot/1.0; +claudebot@anthropic.com)"
+  "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; ClaudeBot/1.0; +claudebot@anthropic.com)",
+  "Mozilla/5.0 (compatible; Monsidobot/2.2; +http://monsido.com/bot.html; info@monsido.com)",
+  "GroupMeBot/1.0"
 ]

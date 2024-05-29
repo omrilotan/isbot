@@ -1,5 +1,9 @@
 # Changelog
 
+## [5.1.8](https://github.com/omrilotan/isbot/compare/v5.1.7...v5.1.8)
+
+- [Pattern] Recognise timestamp in user agent string - is used to generate unique strings for each request
+
 ## [5.1.7](https://github.com/omrilotan/isbot/compare/v5.1.6...v5.1.7)
 
 - [Pattern] Ignore NewsSapphire in-app browser (news app)
