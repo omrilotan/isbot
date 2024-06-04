@@ -1,5 +1,9 @@
 # Changelog
 
+## [5.1.9](https://github.com/omrilotan/isbot/compare/v5.1.8...v5.1.9)
+
+- [Pattern] A more careful match for RSS substring
+
 ## [5.1.8](https://github.com/omrilotan/isbot/compare/v5.1.7...v5.1.8)
 
 - [Pattern] Recognise timestamp in user agent string - is used to generate unique strings for each request
