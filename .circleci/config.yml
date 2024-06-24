@@ -156,9 +156,10 @@ jobs:
               --url https://api.github.com/repos/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}/issues \
               --header "authorization: Bearer ${ISBOT_ISSUE_TOKEN}" \
               --header 'content-type: application/json' \
-              --data '{
-                  "title": "Automated issue for failing periodic tests",
-                  "body": "This issue is automatically created. The tests are failing on branch ${CIRCLE_BRANCH}",
-                  "assignees": [ "omrilotan" ],
-                  "labels": [ "automated", "maintenance" ]
-                }'
+              --data "{
+                  \"title\": \"Automated issue for failing periodic tests\",
+                  \"body\": \"This issue is automatically created. The tests are failing on job ${CIRCLE_BUILD_URL}\",
+                  \"assignees\": [ \"omrilotan\" ],
+                  \"labels\": [ \"automated\", \"maintenance\" ]
+                }" \
+                exit 1

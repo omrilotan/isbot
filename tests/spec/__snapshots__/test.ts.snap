@@ -3,19 +3,11 @@
 exports[`isbot module interface interface is as expected 1`] = `
 [
   [
-    "getPattern",
-    "Function",
-  ],
-  [
     "list",
     "Array",
   ],
   [
     "isbotNaive",
-    "Function",
-  ],
-  [
-    "isbot",
     "Function",
   ],
   [
@@ -40,6 +32,14 @@ exports[`isbot module interface interface is as expected 1`] = `
   ],
   [
     "isbotPatterns",
+    "Function",
+  ],
+  [
+    "getPattern",
+    "Function",
+  ],
+  [
+    "isbot",
     "Function",
   ],
 ]
