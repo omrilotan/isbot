@@ -76,6 +76,7 @@
   "^zdm/\\d",
   "^zoom marketplace/",
   "^{{.*}}$",
+  "admin",
   "analyzer",
   "archive",
   "ask jeeves/teoma",

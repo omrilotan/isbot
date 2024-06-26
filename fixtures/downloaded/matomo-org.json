@@ -719,6 +719,7 @@
   "Magellan",
   "Mozilla/5.0 (compatible; WebwikiBot/2.1; +https://www.webwiki.co.uk)",
   "phpMyAdmin",
+  "phpMyAdmin/reporting-script",
   "Trackable/0.1 NNjCeA",
   "Matomo/4.15.1",
   "CustomUserAgent/1.0",
@@ -956,5 +957,10 @@
   "Mozilla/5.0 (compatible; Cloudflare-Smart-Transit/1.0; +https://www.cloudflare.com/",
   "Mozilla/5.0 (Linux; Android 11; Moto G Power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Mobile Safari/537.36 CloudflareObservatory/1.0",
   "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 CloudflareObservatory/1.0",
-  "Mozilla/4.0 (compatible; DepSpid/5.07; +http://about.depspid.net)"
+  "Mozilla/4.0 (compatible; DepSpid/5.07; +http://about.depspid.net)",
+  "GlobalWebSearch",
+  "acme.sectigo.com/v2/DV",
+  "acme.sectigo.com/v2/OV",
+  "acme.sectigo.com/v2/EV",
+  "Mozilla/5.0 (compatible; Website-info.net-Robot; https://website-info.net/robot)"
 ]
