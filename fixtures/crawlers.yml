@@ -135,6 +135,8 @@ CATExplorador:
 ccBot crawler:
   - CCBot/1.0 (+https://commoncrawl.org/bot.html)
   - CCBot/2.0 (http://commoncrawl.org/faq/)
+CCleaner:
+  - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 CCleaner/125.0.0.0
 Censys:
   - Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)
 CF-UC:
