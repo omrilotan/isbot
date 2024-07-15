@@ -76,7 +76,7 @@ export const isbotMatches = (userAgent?: string | null): string[] =>
  */
 export const isbotPattern = (userAgent?: string | null): string | null =>
 	userAgent
-		? list.find((pattern) => new RegExp(pattern, "i").test(userAgent)) ?? null
+		? (list.find((pattern) => new RegExp(pattern, "i").test(userAgent)) ?? null)
 		: null;
 
 /**

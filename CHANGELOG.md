@@ -1,5 +1,9 @@
 # Changelog
 
+## [5.1.13](https://github.com/omrilotan/isbot/compare/v5.1.12...v5.1.13)
+
+- [Pattern] Recognise [Owler (Open Web Search Project)](https://openwebsearch.eu/owler/) as a bot
+
 ## [5.1.12](https://github.com/omrilotan/isbot/compare/v5.1.11...v5.1.12)
 
 - [Pattern] Pattern updates: [Project LightSpeed](https://engineering.fb.com/2020/03/02/data-infrastructure/messenger/) browsers are not bots
