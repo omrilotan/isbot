@@ -19,6 +19,9 @@ Straightforward usage
 ```ts
 import { isbot } from "isbot";
 
+// Request
+isbot(request.headers.get("User-Agent"));
+
 // Nodejs HTTP
 isbot(request.getHeader("User-Agent"));
 
