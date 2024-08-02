@@ -395,6 +395,8 @@ Jorgee Vulnerability Scanner:
   - Mozilla/5.0 Jorgee
 jsjcw_scanner:
   - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36 jsjcw_scanner
+Kagi:
+  - Mozilla/5.0 (compatible; Kagibot/1.0; +https://kagi.com/bot)
 Kaspersky:
   - Kaspersky Lab CFR link resolver cfradmins@kaspersky.com
 keycdn:
