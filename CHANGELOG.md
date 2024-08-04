@@ -1,5 +1,9 @@
 # Changelog
 
+## [5.1.14](https://github.com/omrilotan/isbot/compare/v5.1.13...v5.1.14)
+
+- [Pattern] More accurate pattern for names containing "cloud" substring
+
 ## [5.1.13](https://github.com/omrilotan/isbot/compare/v5.1.12...v5.1.13)
 
 - [Pattern] Recognise [Owler (Open Web Search Project)](https://openwebsearch.eu/owler/) as a bot
