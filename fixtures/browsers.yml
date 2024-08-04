@@ -238,6 +238,8 @@ Flock:
   - Mozilla/5.0 (Windows; U; Windows NT 6.1; pl; rv:1.9.0.16) Gecko/2010021013 Firefox/3.0.16 Flock/2.5.6
 Fluid:
   - Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_6; en-us) AppleWebKit/528.16 (KHTML, like Gecko) Fluid/0.9.6 Safari/528.16
+Flutter:
+  - Mozilla/5.0 (Linux; Android 14; I2208 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.196 Mobile Safari/537.36 csh-cashify-flutter csh-store-checkout d2c-back-supported
 Fubo TV:
   - fuboTV/4.75.0 (Linux;Android 9; AFTDCT31 Build/PS7664.3772N) FuboPlayer/v1.34.0
 Galeon:

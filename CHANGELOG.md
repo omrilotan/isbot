@@ -2,7 +2,7 @@
 
 ## [5.1.14](https://github.com/omrilotan/isbot/compare/v5.1.13...v5.1.14)
 
-- [Pattern] More accurate pattern for names containing "cloud" substring
+- [Pattern] More accurate patterns for some substrings
 
 ## [5.1.13](https://github.com/omrilotan/isbot/compare/v5.1.12...v5.1.13)
 
