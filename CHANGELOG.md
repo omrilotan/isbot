@@ -1,5 +1,9 @@
 # Changelog
 
+## [5.1.15](https://github.com/omrilotan/isbot/compare/v5.1.14...v5.1.15)
+
+- [Pattern] Pattern updates for better recognition
+
 ## [5.1.14](https://github.com/omrilotan/isbot/compare/v5.1.13...v5.1.14)
 
 - [Pattern] More accurate patterns for some substrings

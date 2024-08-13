@@ -7,6 +7,8 @@ AAA App User Agent String Examples - Native and Webview based user agent forms f
   - Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; Microsoft; Lumia 535 Dual SIM) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.0.0 Mobile Safari/537.36 Edge/13.0 WebViewApp ExampleApp/1
 ABrowse:
   - Mozilla/5.0 (compatible; U; ABrowse 0.6; Syllable) AppleWebKit/420+ (KHTML, like Gecko)
+AirWatch:
+  - Mozilla/5.0 (iPhone; CPU iPhone OS 17_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Version/17.5.1 Safari/605.1.15 (AirWatch Browser v24.06)
 Amazon 4K Fire TV:
   - Mozilla/5.0 (Linux; Android 5.1; AFTS Build/LMY47O) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/41.99900.2250.0242 Safari/537.36
 Amiga:
@@ -189,6 +191,7 @@ Facebook App:
   - Mozilla/5.0 (iPhone; CPU iPhone OS 11_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15G77 [FBAN/FBIOS;FBAV/183.0.0.41.81;FBBV/119182652;FBDV/iPhone6,2;FBMD/iPhone;FBSN/iOS;FBSV/11.4.1;FBSS/2;FBCR/VIVO;FBID/phone;FBLC/pt_BR;FBOP/5;FBRV/0]
   - Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPhone11,8;FBMD/iPhone;FBSN/iOS;FBSV/13.3.1;FBSS/2;FBID/phone;FBLC/en_US;FBOP/5;FBCR/]
   - Mozilla/5.0 (iPhone; CPU iPhone OS 16_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 LightSpeed [FBAN/MessengerLiteForiOS;FBAV/410.0.0.23.86;FBBV/477357144;FBDV/iPhone14,7;FBMD/iPhone;FBSN/iOS;FBSV/16.2;FBSS/3;FBCR/;FBID/phone;FBLC/en-GB;FBOP/0
+  - Mozilla/5.0 (iPhone; CPU iPhone OS 17_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/21F90 [FBAN/FBPageAdmin;FBAV/400.0.0.21.108;FBBV/620787505;FBDV/iPhone15,3;FBMD/iPhone;FBSN/iOS;FBSV/17.5.1;FBSS/3;FBID/phone;FBLC/en_GB;FBOP/5;FBDI/D9016741-C75C-4FC3-8A3B-34249A953D07;FBRV/0]
   - Mozilla/5.0 (Linux; Android 7.0; SM-G570M Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/69.0.3497.100 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/192.0.0.34.85;]
   - Mozilla/5.0 (Linux; Android 9; SM-G950U Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.149 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/263.0.0.46.121;]
   - Mozilla/5.0 (Windows NT 10.0.16299.98; osmeta 10.3.3308) AppleWebKit/602.1.1 (KHTML, like Gecko) Version/9.0 Safari/602.1.1 osmeta/10.3.3308 Build/3308 [FBAN/FBW;FBAV/140.0.0.232.179;FBBV/83145113;FBDV/WindowsDevice;FBMD/Predator G9-793;FBSN/Windows;FBSV/10.0.16299.125;FBSS/1;FBCR/;FBID/desktop;FBLC/de_DE;FBOP/45;FBRV/0]
@@ -264,6 +267,8 @@ Google Search App:
   - Mozilla/5.0 (iPhone; CPU iPhone OS 13_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/102.0.304944559 Mobile/15E148 Safari/604.1
 Hawk QuickBrowser:
   - Mozilla/5.0 (Linux; U; Android 7.0; es-us; Moto C Build/NRD90M.063) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/69.0.3497.100 Mobile Safari/537.36 Hawk/QuickBrowser/2.4.8.22800
+HiSearch:
+  - Mozilla/5.0 (Linux; Android 10; STK-L21 Build/HUAWEISTK-L21; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/126.0.6478.186 Mobile Safari/537.36 HiSearch/22.0.6.315
 HuaweiBrowser:
   - Mozilla/5.0 (Linux; Android 10; MAR-LX3A; HMSCore 6.12.4.311; GMSCore 23.48.16) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 HuaweiBrowser/14.0.2.311 Mobile Safari/537.36
   - Mozilla/5.0 (Linux; Android 12; HarmonyOS; TET-AN00; HMSCore 6.12.4.312) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 HuaweiBrowser/14.0.5.301 Mobile Safari/537.36
@@ -501,6 +506,7 @@ QQ Browser:
   - Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.48 Safari/537.36 QQBrowser/8.0.3197.400
 QtWebEngine:
   - Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.5.1 Chrome/40.0.2214.115 Safari/537.36
+  - Mozilla/5.0 (X11; Linux x86_64) Miniature.io/6.0 AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.12.4 Chrome/69.0.3497.128 Safari/537.36
 QuickTime:
   - QuickTime/7.6.6 (qtver=7.6.6;cpu=IA32;os=Mac 10.6.8)
 RadiosNet:
@@ -724,5 +730,6 @@ ZZZ Insignificat bots - Crosswalk project (deprecated):
 ZZZ Insignificat bots - These bots have very low appearance rate and are not worth blocking:
   - Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 1.1.4322) 360JK yunjiankong 427691
   - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; Banca Caboto s.p.a.)
+  - Mozilla/5.0 (platform; rv:geckoversion) Gecko/geckotrail Firefox/firefoxversion
   - Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) HLB/1.247
   - Opera/9.70 (Linux armv7l ; U; turbotabbee/TSV2.0/1.02Q; fr) Presto/2.2
