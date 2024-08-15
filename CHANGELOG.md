@@ -1,5 +1,9 @@
 # Changelog
 
+## [5.1.16](https://github.com/omrilotan/isbot/compare/v5.1.15...v5.1.16)
+
+- [Pattern] Treat CCleaner broswer as an actual browser, not a bot
+
 ## [5.1.15](https://github.com/omrilotan/isbot/compare/v5.1.14...v5.1.15)
 
 - [Pattern] Pattern updates for better recognition
