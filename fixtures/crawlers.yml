@@ -120,6 +120,7 @@ Burp Collaborator Scanner:
 Butterfly Robot:
   - Mozilla/5.0 (Macintosh; Butterfly/1.0; +http://labs.topsy.com/butterfly/) Gecko/2009032608 Firefox/3.0.8
 Bytespider:
+  - Mozilla/5.0 (compatible; Bytespider; spider-feedback@bytedance.com) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.0.0 Safari/537.36
   - Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.5668.1446 Mobile Safari/537.36; Bytespider;bytespider@bytedance.com
 CareerBot:
   - Mozilla/5.0 (compatible; CareerBot/1.1; +http://www.career-x.de/bot.html)
