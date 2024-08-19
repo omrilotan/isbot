@@ -138,6 +138,8 @@ Recognising good bots such as web crawlers is useful for multiple purposes. Alth
 
 `isbot` is an asset when it can most accurately identify bots by the user agent string. It uses expansive and regularly updated lists of user agent strings to create a regular expression that matches bots and only bots.
 
+And above everything else, it is maintained by a community of contributers who help keep the list up to date.
+
 ### Fallback
 
 The pattern uses lookbehind methods which are not supported in all environments. A fallback is provided for environments that do not support lookbehind. The fallback is less accurate. The test suite includes a percentage of false positives and false negatives which is deemed acceptable for the fallback: 1% false positive and 75% bot coverage.
