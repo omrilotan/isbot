@@ -4,7 +4,7 @@ import { fullPattern } from "./pattern";
 /**
  * Naive bot pattern.
  */
-const naivePattern = /bot|spider|crawl|http|lighthouse/i;
+const naivePattern = /bot|crawl|http|lighthouse|scan|search|spider/i;
 
 let pattern: RegExp;
 export function getPattern(): RegExp {
