@@ -370,6 +370,7 @@
   "Mozilla/5.0 (compatible; sukibot_heritrix/3.1.1 +http://suki.ling.helsinki.fi/eng/webmasters.html)",
   "Mozilla/5.0 (compatible; MSIE 7.0 +http://www.europarchive.org)",
   "Mozilla/5.0 (compatible; NerdByNature.Bot; http://www.nerdbynature.net/bot)",
+  "Mozilla/5.0 (compatible; SISTRIX Crawler; http://crawler.sistrix.net/)",
   "Mozilla/5.0 (compatible; AhrefsBot/6.1; +http://ahrefs.com/robot/)",
   "Mozilla/5.0 (compatible; AhrefsSiteAudit/6.1; +http://ahrefs.com/robot/)",
   "Mozilla/5.0 (compatible; AhrefsBot/5.2; News; +http://ahrefs.com/robot/)",
@@ -877,7 +878,6 @@
   "WordupInfoSearch/1.0",
   "Mozilla/5.0 (compatible; WebDataStats/1.0 ; +https://webdatastats.com/policy.html)",
   "Jersey/2.25.1 (HttpUrlConnection 1.8.0_141)",
-  "Mozilla/5.0 (compatible; Seekport Crawler; http://seekport.com/)",
   "ZoomBot (Linkbot 1.0 http://suite.seozoom.it/bot.html)",
   "VelenPublicWebCrawler (velen.io)",
   "MoodleBot/1.0",
@@ -1063,6 +1063,7 @@
   "IonCrawl (https://www.ionos.de/terms-gtc/faq-crawler-en/)",
   "Uptime-Kuma/1.18.0",
   "Mozilla/5.0 (compatible; SeekportBot; +https://bot.seekport.com)",
+  "Mozilla/5.0 (compatible; Seekport Crawler; http://seekport.com/)",
   "FreshpingBot/1.0 (+https://freshping.io/)",
   "Feedbin feed-id:2005098 - 2 subscribers",
   "CriteoBot/0.1 (+https://www.criteo.com/criteo-crawler/)",
@@ -1148,5 +1149,6 @@
   "claudebot",
   "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; ClaudeBot/1.0; +claudebot@anthropic.com)",
   "Mozilla/5.0 (compatible; Monsidobot/2.2; +http://monsido.com/bot.html; info@monsido.com)",
-  "GroupMeBot/1.0"
+  "GroupMeBot/1.0",
+  "Vercelbot (+https://vercel.com)"
 ]
