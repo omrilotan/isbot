@@ -50,6 +50,7 @@
   "msnbot/2.0b v1394720947.6703",
   "MSNBot/Nutch-1.5.1",
   "bitlybot/3.0",
+  "Blackbox Exporter/0.24.0",
   "Mozilla/5.0 (compatible; Blekkobot; ScoutJet; +http://blekko.com/about/blekkobot)",
   "Bloglovin/1.0 (http://www.bloglovin.com; 1 subscribers)",
   "Blogtrottr/2.0",
@@ -710,6 +711,7 @@
   "cyberscan.io",
   "Mozilla/5.0 (l9scan/2.0.xxxxxxxxxxxxxxxxxxxxxxxx; +https://leakix.net)",
   "Mozilla/5.0 (compatible; vuhuvBot/1.0; +http://vuhuv.com/bot.html)",
+  "Mozilla/5.0 (compatible; vuhuvRBT/2.0; +https://vuhuv.com/rbt.html)",
   "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0) SiteCheck-sitecrawl by Siteimprove.com",
   "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0) Image size by Siteimprove.com",
   "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0) Probe by Siteimprove.com",
@@ -1018,5 +1020,12 @@
   "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html) https://deepcrawl.com/bot",
   "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html) https://deepcrawl.com/testing",
   "Mozilla/7.0 (compatible; Golfe/1.1; +http://www.goo-olfe.ae/bot.html)",
-  "Mozilla/5.0 (compatible; SpiderLing; +https://nlp.fi.muni.cz/projects/biwec/)"
+  "Mozilla/5.0 (compatible; SpiderLing; +https://nlp.fi.muni.cz/projects/biwec/)",
+  "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Bravebot/1.0; +https://search.brave.com/help/brave-search-crawler) Chrome/W.X.Y.Z Safari/537.36",
+  "Mozilla/5.0 (compatible; 1001FirmsBot/1.0; +https://www.1001firms.com/1001firmsbot.php)",
+  "Google-CloudVertexBot",
+  "Valve/Steam HTTP Client 1.0 (SteamChatURLLookup)",
+  "Oh Dear Sitemap check https://ohdear.app",
+  "Mozilla/5.0 (compatible; OhDear/1.1; +https://ohdear.app/checker; brokenLinks)",
+  "Mozilla/5.0 (compatible; OhDear/1.1; +https://ohdear.app/checker; mixedContent)"
 ]
