@@ -1077,6 +1077,7 @@
   "Mozilla/5.0 (compatible; OdklBot/1.0 like Linux; klass@odnoklassniki.ru)",
   "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; GPTBot/1.0; +https://openai.com/gptbot)",
   "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+  "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; OAI-SearchBot/1.0; +https://openai.com/searchbot",
   "Mozilla/5.0 (compatible; YandexRenderResourcesBot/1.0; +http://yandex.com/bots) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0",
   "LightspeedSystemsCrawler Mozilla/5.0 (Windows; U; MSIE 9.0; Windows NT 9.0; en-US",
   "Mozilla/5.0 (compatible; ev-crawler/1.0; +https://headline.com/legal/crawler)",
@@ -1150,5 +1151,11 @@
   "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; ClaudeBot/1.0; +claudebot@anthropic.com)",
   "Mozilla/5.0 (compatible; Monsidobot/2.2; +http://monsido.com/bot.html; info@monsido.com)",
   "GroupMeBot/1.0",
-  "Vercelbot (+https://vercel.com)"
+  "Vercelbot (+https://vercel.com)",
+  "facebookcatalog/1.0",
+  "meta-externalagent/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/crawler)",
+  "meta-externalagent/1.1",
+  "meta-externalfetcher/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/crawler)",
+  "meta-externalfetcher/1.1",
+  "Mozilla/5.0 (compatible; KeybaseBot; +https://keybase.io)"
 ]

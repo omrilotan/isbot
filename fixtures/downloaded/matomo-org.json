@@ -1027,5 +1027,12 @@
   "Valve/Steam HTTP Client 1.0 (SteamChatURLLookup)",
   "Oh Dear Sitemap check https://ohdear.app",
   "Mozilla/5.0 (compatible; OhDear/1.1; +https://ohdear.app/checker; brokenLinks)",
-  "Mozilla/5.0 (compatible; OhDear/1.1; +https://ohdear.app/checker; mixedContent)"
+  "Mozilla/5.0 (compatible; OhDear/1.1; +https://ohdear.app/checker; mixedContent)",
+  "Mozilla/5.0 Keydrop",
+  "Mozilla/6.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Inspici (www.inspici.com)",
+  "meta-externalagent/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/crawler)",
+  "meta-externalagent/1.1",
+  "meta-externalfetcher/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/crawler)",
+  "meta-externalfetcher/1.1",
+  "peer39_crawler/1.0"
 ]
