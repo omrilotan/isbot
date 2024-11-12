@@ -1034,5 +1034,11 @@
   "meta-externalagent/1.1",
   "meta-externalfetcher/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/crawler)",
   "meta-externalfetcher/1.1",
-  "peer39_crawler/1.0"
+  "peer39_crawler/1.0",
+  "Pandalytics/2.0 (https://domainsbot.com/pandalytics/)",
+  "Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25 ( compatible; CloudServerMarketSpider/1.0; +http://cloudservermarket.com/spider.html )",
+  "Mozilla/5.0 (compatible; GoogleDocs; jam; +http://docs.google.com)",
+  "Mozilla/5.0 (compatible; GoogleDocs; +http://docs.google.com; +Google-Document-Conversion)",
+  "Mozilla/5.0 (compatible; GoogleDocs; apps-spreadsheets; +http://docs.google.com)",
+  "Mozilla/5.0 (compatible; GoogleDocs; apps-presentations; +http://docs.google.com)"
 ]
