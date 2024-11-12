@@ -600,10 +600,6 @@ Request-Promise:
 Rest Client github.com/rest-client/rest-client:
   - rest-client/2.1.0
   - rest-client/2.1.0 (linux x86_64) ruby/2.7.6p219
-Splunk Synythetic Monitoring (Rigor EOL Feb 2025):
-  - Mozilla/5.0 (X11; Linux x86_64; Rigor) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36
-  - Mozilla/5.0 (X11; Linux x86_64; rv:45.0; Rigor) Gecko/20100101 Firefox/45.0
-  - Mozilla/5.0 (X11; Linux x86_64; Splunk Synthetics) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.88 Safari/537.36
 Rogerbot:
   - rogerbot/1.0 (http://www.moz.com/dp/rogerbot, rogerbot-crawler@moz.com)
 ROI Hunter:
@@ -727,6 +723,10 @@ Splash:
   - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) splash Version/10.0 Chrome/98.0.4758.80 Safari/537.36
   - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/602.1 (KHTML, like Gecko) splash Version/10.0 Safari/602.1
   - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/602.1 (KHTML, like Gecko) splash Version/9.0 Safari/602.1
+Splunk Synythetic Monitoring (Rigor EOL Feb 2025):
+  - Mozilla/5.0 (X11; Linux x86_64; Rigor) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36
+  - Mozilla/5.0 (X11; Linux x86_64; rv:45.0; Rigor) Gecko/20100101 Firefox/45.0
+  - Mozilla/5.0 (X11; Linux x86_64; Splunk Synthetics) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.88 Safari/537.36
 Spotify:
   - Spotify/1.0
 Sputnik Bot:
