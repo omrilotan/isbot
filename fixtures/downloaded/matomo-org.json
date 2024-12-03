@@ -1039,5 +1039,8 @@
   "Mozilla/5.0 (compatible; GoogleDocs; jam; +http://docs.google.com)",
   "Mozilla/5.0 (compatible; GoogleDocs; +http://docs.google.com; +Google-Document-Conversion)",
   "Mozilla/5.0 (compatible; GoogleDocs; apps-spreadsheets; +http://docs.google.com)",
-  "Mozilla/5.0 (compatible; GoogleDocs; apps-presentations; +http://docs.google.com)"
+  "Mozilla/5.0 (compatible; GoogleDocs; apps-presentations; +http://docs.google.com)",
+  "Mozilla 5.0 (compatible; Pigafetta/0.5; +http://visual-seo.com/Pigafetta-Bot)",
+  "Mozilla/5.0 (compatible; Cotoyogi/4.0; +https://ds.rois.ac.jp/center8/crawler/",
+  "SuggestBot/1.0"
 ]

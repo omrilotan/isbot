@@ -8,6 +8,8 @@ Aboundexbot:
   - Aboundex/0.3 (http://www.aboundex.com/crawler/)
 Acoon:
   - Mozilla/5.0 (compatible; AcoonBot/4.11.1; +http://www.acoon.de/robot.asp)
+ActiveComply:
+  - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.6613.18 Safari/537.36 (compatible; ActiveComply/2.0; +https://app.activecomply.com/bot)
 AddThis.com:
   - AddThis.com robot tech.support@clearspring.com
 ADMantX:
@@ -22,9 +24,6 @@ AlertSite Monitoring:
   - Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0 DejaClick/2.9.7.2
 Alexa:
   - ia_archiver (+http://www.alexa.com/site/help/webmasters; crawler@alexa.com)
-Alexa Crawler:
-  - ia_archiver (+http://www.alexa.com/site/help/webmasters; crawler@alexa.com)
-Alexa Site Audit:
   - Mozilla/5.0 (compatible; alexa site audit/1.0; http://www.alexa.com/help/webmasters; )
 Amaya:
   - amaya/10 libwww/5.4.0
