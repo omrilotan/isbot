@@ -143,7 +143,7 @@ getters.push(async function userAgentsNet({
 	const response = await fetch(sources.get(collection), {
 		method: "POST",
 		body: [
-			["browser_type", "bot-crawler"],
+			["crawler", "true"],
 			["download", "json"],
 		]
 			.map((entry) => entry.join("="))
@@ -156,7 +156,12 @@ getters.push(async function userAgentsNet({
 	if ((await abort(response, collection, destination)) === true) {
 		return 0;
 	}
-	const list = await response.json();
+	const list = (await response.json()).filter(
+		(ua) =>
+			!/(\.NET CLR|^NSPlayer|RadiosNet|RMA\/|stagefright|^Sony|^UnityPlayer|^User-Agent:|^VLC\/|^Windows-Media-Player\/)/.test(
+				ua,
+			),
+	);
 	log(`Write ${destination}`);
 	await writeFile(destination, JSON.stringify(list, null, 2) + "\n");
 	return 1;

@@ -465,7 +465,6 @@
   "masscan/1.0 (https://github.com/robertdavidgraham/masscan)",
   "Mozilla/5.0/Firefox/42.0 - nbertaupete95(at)gmail.com",
   "Mozilla/5.0 (compatible; oBot/2.3.1; http://www.xforce-security.com/crawler/)",
-  "sqlmap/1.1.8.2#dev (http://sqlmap.org)",
   "Mozilla/5.0 (compatible; theoldreader.com; 1 subscribers; feed-id=aaa)",
   "Sprinklr 2.0",
   "Mozilla/5.0 (X11; Linux x86_64)AppleWebKit/537.36 (KHTML, like Gecko; Google-Ads-Qualify)Chrome/85.0.4183.140 Safari/537.36",
@@ -1042,5 +1041,8 @@
   "Mozilla/5.0 (compatible; GoogleDocs; apps-presentations; +http://docs.google.com)",
   "Mozilla 5.0 (compatible; Pigafetta/0.5; +http://visual-seo.com/Pigafetta-Bot)",
   "Mozilla/5.0 (compatible; Cotoyogi/4.0; +https://ds.rois.ac.jp/center8/crawler/",
-  "SuggestBot/1.0"
+  "SuggestBot/1.0",
+  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 (https://securitee.org/cms-experiment-fall2024/)",
+  "SiteCheckerBotCrawler/1.0 (+http://sitechecker.pro)",
+  "SBIder/0.8-dev (SBIder; http://www.sitesell.com/sbider.html; http://support.sitesell.com/contact-support.html)"
 ]

@@ -1,5 +1,9 @@
 # Changelog
 
+## [5.1.19](https://github.com/omrilotan/isbot/compare/v5.1.18...v5.1.19)
+
+- [Pattern] Pattern updates
+
 ## [5.1.18](https://github.com/omrilotan/isbot/compare/v5.1.17...v5.1.18)
 
 - [Pattern] Pattern updates

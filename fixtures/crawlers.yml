@@ -376,6 +376,8 @@ IDG/IT:
   - IDG/IT (http://spaziodati.eu/)
 IFTTT:
   - IFTTT-Protocol/v1
+iGetter download manager:
+  - iGetter/2 (Macintosh; U; PPC Mac OS X; en)
 IIS Site Analysis:
   - iisbot/1.0 (+http://www.iis.net/iisbot.html)
 inoreader:
@@ -523,6 +525,8 @@ Off By One:
   - Mozilla/4.7 (compatible; OffByOne; Windows 2000) Webster Pro V3.4
 Omgili bot:
   - omgilibot/0.3 +http://www.omgili.com/Crawler.html
+OpenAI (https://www.npmjs.com/package/openai):
+  - OpenAI/JS 4.77.0
 Openindex Spider:
   - Mozilla/5.0 (compatible; OpenindexSpider; +http://www.openindex.io/en/webmasters/spider.html)
 OpenLinkProfiler:

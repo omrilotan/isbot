@@ -517,25 +517,6 @@ QtWebEngine:
 QuickTime:
   - QuickTime/7.6.6 (qtver=7.6.6;cpu=IA32;os=Mac 10.6.8)
 RadiosNet:
-  - RadiosNet/2.1.1 (Java; Android)
-  - RadiosNet/2.2.1 (Java; Android)
-  - RadiosNet/2.2.3 (Java; Android)
-  - RadiosNet/2.2.4 (Java; Android)
-  - RadiosNet/2.2.5 (Java; Android)
-  - RadiosNet/2.3.1 (Java; Android)
-  - RadiosNet/2.3.2 (Java; Android)
-  - RadiosNet/2.3.3 (Java; Android)
-  - RadiosNet/2.4.0 (Java; Android)
-  - RadiosNet/2.4.1 (Java; Android)
-  - RadiosNet/2.4.2 (Java; Android)
-  - RadiosNet/2.5.0 (Java; Android)
-  - RadiosNet/2.5.1 (Java; Android)
-  - RadiosNet/2.5.2 (Java; Android)
-  - RadiosNet/2.6.0 (Java; Android)
-  - RadiosNet/2.6.1 (Java; Android)
-  - RadiosNet/2.6.2 (Java; Android)
-  - RadiosNet/2.7.0 (Java; Android)
-  - RadiosNet/2.7.1 (Java; Android)
   - RadiosNet/2.8.0 (Java; Android)
 Rekonq:
   - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.21 (KHTML, like Gecko) rekonq/2.3.2 Safari/537.21
@@ -737,8 +718,15 @@ ZZZ Insignificat bots - Crosswalk project (deprecated):
   - Mozilla/5.0 (Linux; Android 11;SM-G9866N Build/PR1A.2007820.012; wv) AppleWebKit/537.36 (KHTML,linke Gecko) Version/4.0 Chrome/80.0.3987.163 Whale/1.0.0.0 Crosswalk/25.80.14.26 Mobile Safari/537.36 NAVER(inapp; search; 900; 11.2.5)
   - Mozilla/5.0 (Linux; Android 12; SM-G975N Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/90.0.4430.232 Whale/1.0.0.0 Crosswalk/26.90.3.21 Mobile Safari/537.36 NAVER(inapp; search; 1010; 11.11.3)
 ZZZ Insignificat bots - These bots have very low appearance rate and are not worth blocking:
+  - HTC Streaming Player htc / 1.0 / htc_europe / 4.4.2
+  - IBrowse/2.3 (AmigaOS
+  - LG-H440n/V10i Player/LG Player 1.0 for Android 5.0.1 (stagefright alternative)
+  - LibWWW/5.0 (Linux; Android 7.0; Samsung Galaxy S8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0000.0 Mobile Safari/537.36
   - Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 1.1.4322) 360JK yunjiankong 427691
   - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; Banca Caboto s.p.a.)
+  - Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; Media Center PC 6.0; InfoPath.3; MS-RTC LM 8; Zune 4.7)
+  - Mozilla/5.0 (compatible; Yahoo! Slurp)
   - Mozilla/5.0 (platform; rv:geckoversion) Gecko/geckotrail Firefox/firefoxversion
   - Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) HLB/1.247
   - Opera/9.70 (Linux armv7l ; U; turbotabbee/TSV2.0/1.02Q; fr) Presto/2.2
+  - pinterest/0.
