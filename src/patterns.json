@@ -33,6 +33,7 @@
   "^dispatch/\\d",
   "^downcast/",
   "^duckduckgo",
+  "^email",
   "^facebook",
   "^getright/",
   "^gozilla/",

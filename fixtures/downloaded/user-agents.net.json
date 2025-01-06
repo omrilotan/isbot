@@ -26691,5 +26691,17 @@
   "curl/8.11.1",
   "AdsBot-Google (+http://www.google.com/adsbot.html) [ip:66.249.92.134]",
   "googleplaystorw",
-  "googleplaystore"
+  "googleplaystore",
+  "DuckDuckGo/2 CFNetwork/1335.0.3.4 Darwin/21.6.0",
+  "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/131.0.6778.139 Safari/537.36 [ip:66.249.79.34]",
+  "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/131.0.6778.139 Safari/537.36 [ip:66.249.68.32]",
+  "AdsBot-Google (+http://www.google.com/adsbot.html) [ip:72.14.199.40]",
+  "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/131.0.6778.139 Safari/537.36 [ip:66.249.79.104]",
+  "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/131.0.6778.139 Safari/537.36 [ip:66.249.73.5]",
+  "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/131.0.6778.139 Safari/537.36 [ip:66.249.73.6]",
+  "AdsBot-Google (+http://www.google.com/adsbot.html) [ip:74.125.150.4]",
+  "Java/1.8.0_382-internal",
+  "EmailWolf 1.00 [ip:5.75.174.146]",
+  "gvfs/1.56.1",
+  "Apache-HttpClient/4.5.14 (Java/17.0.1)"
 ]
