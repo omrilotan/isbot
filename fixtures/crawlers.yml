@@ -90,6 +90,8 @@ Blogtrottr:
 Blogtrottr feed fetcher:
   - Blogtrottr/2.0
   - Blogtrottr/3.0
+Bluesky:
+  - mozilla/5.0 applewebkit/537.36 (khtml, like gecko; compatible; bluesky cardyb/1.1; +mailto:support@bsky.app) chrome/w.x.y.z safari/537.36
 BoardReader:
   - BoardReader Favicon Fetcher /1.0 info@boardreader.com
 BoardReader Blog Indexer:
@@ -611,6 +613,8 @@ Rogerbot:
   - rogerbot/1.0 (http://www.moz.com/dp/rogerbot, rogerbot-crawler@moz.com)
 ROI Hunter:
   - ROI Hunter; https://api-dev.roihunter.com
+RSiteAuditor:
+  - Mozilla/5.0 (compatible; RSiteAuditor)
 RSS Feed Readers:
   - Bloglines/3.1 (http://www.bloglines.com)
   - Feed Wrangler/1.0 (3 subscribers; feed-id=248559; http://feedwrangler.net; Allow like Gecko)
