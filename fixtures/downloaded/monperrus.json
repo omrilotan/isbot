@@ -1066,6 +1066,13 @@
   "Mozilla/5.0 (compatible; trovitBot 1.0; +http://www.trovit.com/bot.html)",
   "Mozilla/5.0 (compatible; Adsbot/3.1; +https://seostar.co/robot/)",
   "IonCrawl (https://www.ionos.de/terms-gtc/faq-crawler-en/)",
+  "Uptime-Kuma/1.23.16",
+  "Uptime-Kuma/1.23.15",
+  "Uptime-Kuma/1.23.14",
+  "Uptime-Kuma/1.23.13",
+  "Uptime-Kuma/1.23.12",
+  "Uptime-Kuma/1.23.11",
+  "Uptime-Kuma/1.23.10",
   "Uptime-Kuma/1.18.0",
   "Mozilla/5.0 (compatible; SeekportBot; +https://bot.seekport.com)",
   "Mozilla/5.0 (compatible; Seekport Crawler; http://seekport.com/)",
@@ -1164,5 +1171,8 @@
   "meta-externalfetcher/1.1",
   "AcademicBotRTU (https://academicbot.rtu.lv; mailto:caps@rtu.lv)",
   "Mozilla/5.0 (compatible; KeybaseBot; +https://keybase.io)",
-  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 CookieHubScan/3.0"
+  "Lemmy/0.19.8; +https://leminal.space",
+  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 CookieHubScan/3.0",
+  "Hydrozen.io/1.0",
+  "HTTP Banner Detection (https://security.ipip.net)"
 ]
