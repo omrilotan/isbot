@@ -1,6 +1,6 @@
 {
   "name": "isbot",
-  "version": "5.1.22",
+  "version": "5.1.23",
   "description": "🤖/👨‍🦰 Recognise bots/crawlers/spiders using the user agent string.",
   "keywords": [
     "bot",
@@ -60,7 +60,7 @@
   },
   "devDependencies": {
     "@types/jest": "^29.5.12",
-    "esbuild": "~0.24.0",
+    "esbuild": "^0.25.0",
     "jest": "^29.7.0",
     "prettier": "^3.2.5",
     "pug": "^3.0.2",
