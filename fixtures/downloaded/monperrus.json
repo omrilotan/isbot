@@ -1135,6 +1135,7 @@
   "Iframely/1.3.1 (+https://iframely.com/docs/about) Atlassian",
   "MetaInspector/5.6.0 (+https://github.com/jaimeiniesta/metainspector)",
   "node-fetch/1.0 (+https://github.com/bitinn/node-fetch)",
+  "l9explore/1.2.2",
   "lkxscan/v0.1.0 (+https://leakix.net) l9explore/v1.0.0 (+https://github.com/LeakIX/l9explore)",
   "python-opengraph-jaywink/0.2.0 (+https://github.com/jaywink/python-opengraph)",
   "OpenGraphCheck/2.1 (+https://opengraphcheck.com)",
@@ -1174,5 +1175,9 @@
   "Lemmy/0.19.8; +https://leminal.space",
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 CookieHubScan/3.0",
   "Hydrozen.io/1.0",
-  "HTTP Banner Detection (https://security.ipip.net)"
+  "HTTP Banner Detection (https://security.ipip.net)",
+  "SummalyBot/5.1.0",
+  "MicrosoftPreview/2.0; +https://aka.ms/MicrosoftPreview",
+  "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; GeedoProductSearch; +http://www.geedo.com/product-search.html) Chrome/79.0.3945.88 Safari/537.36",
+  "Mozilla/5.0 (Linux; Android 5.0) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Safari/537.36 (compatible; TikTokSpider; ttspider-feedback@tiktok.com)"
 ]

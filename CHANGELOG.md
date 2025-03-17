@@ -1,5 +1,9 @@
 # Changelog
 
+## [5.1.24](https://github.com/omrilotan/isbot/compare/v5.1.23...v5.1.24)
+
+- [Pattern] Pattern update: Add generic pattern, remove some specific patterns
+
 ## [5.1.23](https://github.com/omrilotan/isbot/compare/v5.1.22...v5.1.23)
 
 - [Pattern] Pattern updates
