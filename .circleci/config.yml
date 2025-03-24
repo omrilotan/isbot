@@ -149,7 +149,7 @@ jobs:
       - image: cimg/node:lts
     steps:
       - checkout
-      - run: npm i
+      - run: npm i --ignore-scripts
       - run: npm run prepare -- --force
       - run: |
             npm t || curl --request POST \

@@ -26,14 +26,18 @@ async function start({ argv }) {
 	await mkdir(downloadedDirectory, { recursive: true });
 	const results = await download({ dir: downloadedDirectory, force });
 	const news = results.reduce((a, b) => a + b);
-	if (news) {
-		log("Create new timestamp");
-		await writeFile(
-			join(downloadedDirectory, "downloaded"),
-			new Date().toUTCString(),
-		);
-	} else {
-		log("No new files were downloaded");
+	switch (news) {
+		case 0:
+			log("No new files were downloaded");
+			break;
+		case results.length:
+			log("All files were downloaded");
+			log("Create new timestamp");
+			await writeFile(join(dir, "downloaded"), new Date().toUTCString());
+			break;
+		default:
+			log(`Some files were downloaded (${news}/${results.length})`);
+			break;
 	}
 
 	log("Create fixtures JSON");

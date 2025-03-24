@@ -1,7 +1,8 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import { parse } from "yaml";
-import { exists } from "../../lib/exists/index.js";
+import { exists } from "../exists/index.js";
+import { fetchWithTimeout } from "../fetchWithTimeout/index.js";
 
 const sources = new Map([
 	[
@@ -56,7 +57,7 @@ getters.push(async function monperrus({
 	}
 
 	log(`Download content for ${destination}`);
-	const response = await fetch(sources.get(collection));
+	const response = await fetchWithTimeout(sources.get(collection));
 	if ((await abort(response, collection, destination)) === true) {
 		return 0;
 	}
@@ -84,7 +85,7 @@ getters.push(async function kikobeats({
 	}
 
 	log(`Download content for ${destination}`);
-	const response = await fetch(sources.get(collection));
+	const response = await fetchWithTimeout(sources.get(collection));
 	if ((await abort(response, collection, destination)) === true) {
 		return 0;
 	}
@@ -111,7 +112,7 @@ getters.push(async function matomoOrg({
 		return 0;
 	}
 	log(`Download content for ${destination}`);
-	const response = await fetch(sources.get(collection));
+	const response = await fetchWithTimeout(sources.get(collection));
 	if ((await abort(response, collection, destination)) === true) {
 		return 0;
 	}
@@ -140,7 +141,7 @@ getters.push(async function userAgentsNet({
 		return 0;
 	}
 	log(`Download content for ${destination}`);
-	const response = await fetch(sources.get(collection), {
+	const response = await fetchWithTimeout(sources.get(collection), {
 		method: "POST",
 		body: [
 			["crawler", "true"],
@@ -184,7 +185,7 @@ getters.push(async function myipMs({
 		return 0;
 	}
 	log(`Download content for ${destination}`);
-	const response = await fetch(sources.get(collection));
+	const response = await fetchWithTimeout(sources.get(collection));
 	if ((await abort(response, collection, destination)) === true) {
 		return 0;
 	}
