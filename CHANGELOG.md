@@ -1,5 +1,9 @@
 # Changelog
 
+## [5.1.26](https://github.com/omrilotan/isbot/compare/v5.1.25...v5.1.26)
+
+- [Pattern] Pattern update
+
 ## [5.1.25](https://github.com/omrilotan/isbot/compare/v5.1.24...v5.1.25)
 
 - [Pattern] Pattern update: Reduce complexity
