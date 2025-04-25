@@ -69,6 +69,8 @@ Baidu:
   - Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)
 Baidu Spider:
   - Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.2.8;baidu Transcoder) Gecko/20100722 Firefox/3.6.8 ( .NET CLR 3.5.30729)
+Barkrowler:
+  - Mozilla/5.0 (compatible; Barkrowler/0.9; +https://babbar.tech/crawler)
 BazQux Reader:
   - Mozilla/5.0 (compatible; BazQux/2.4; +https://bazqux.com/fetcher; 2 subscribers)
 BingBot:
@@ -941,3 +943,5 @@ ZZZ Miscellaneous Glitches and Errornous User Agent Strings:
   - "POST /parser Host: user-agents.net  action=parse&amp;format=[json|xml]&amp;string=Mozilla%2F5.0%20%28Linux%3B%20Android%2012%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Version%2F4.0%20Chrome%2F96.0.4664.104%20Mobile%20DuckDuckGo%2F5%20Safari%2F537.36"
   - search.marginalia.nu
   - U2FsdGVkX1+uKxeH2946/bMTDvtm/Fr0nWjvFR/oPtc64LSh1Gg0qkbJUIhLpSw5h/mjF86TFOXrl4U2SG1KBi4BC0EfphyIzeOxVXkpBWHDMfJnkrFGrubrRGjmJNIN49DKkOcjVgq2/iVDBMSAQe30k9wNIDtflfnlrOrmDPkXiYNjLbohSHLaNWS/GK5hu62gkOH25c9i1B+jMq5kc590HoQqJ0o4es9QrEnwluMsYPbQy14LxgPjeCQveiPHPXtkSM7TmfTY53HEJdbFHylstSOJNTQclbL67BKx33M=
+  - Vyhledavac sluzeb | hlavicka smerovani | najdu.s.holubem.eu
+  - Vyhledavac sluzeb | hlavicka | najdu.s.holubem.eu
