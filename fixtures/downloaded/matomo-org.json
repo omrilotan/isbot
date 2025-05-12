@@ -1071,5 +1071,13 @@
   "Vyhledavac sluzeb | hlavicka smerovani | najdu.s.holubem.eu",
   "Vyhledavac sluzeb | hlavicka | najdu.s.holubem.eu",
   "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.0 Safari/534.34 Siteimprove (Accessibility)",
-  "VORTEX/1.2 ( http://marty.anstey.ca/robots/vortex/)"
+  "VORTEX/1.2 ( http://marty.anstey.ca/robots/vortex/)",
+  "xtate/2.12.4",
+  "Mozilla/5.0 xtate/2.12.4",
+  "FediList Agent/3 (https://fediverse.one/)",
+  "FediList Agent/3 (https://fedilist.com/)",
+  "Grafana/11.1.0",
+  "github-camo (d76dea84)",
+  "Mozilla/5.0 OnlyScans",
+  "Mozilla/5.0; Keydrop.io/1.0(onlyscans.com/about);"
 ]

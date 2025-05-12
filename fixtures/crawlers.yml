@@ -885,6 +885,8 @@ XaxisSemanticsClassifier:
   - Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36 XaxisSemanticsClassifier/1.0
 XenForo:
   - XenForo/2.x (https://www.example.com)
+Xtate State Machine Framework:
+  - Mozilla/5.0 xtate/2.12.4
 Xymon Site Monitor:
   - Xymon xymonnet/4.3.17
 YaCy:
