@@ -10,6 +10,10 @@ User Agent String
 -------
 <!-- Insert user agent string or how to get to this bot -->
 
-Reproduce
+Version
 -------
-<!-- steps to reproduce, system where this issue happened -->
+<!-- Insert version isbot is running on, e.g. 1.2.3 -->
+
+Runtime
+-------
+<!-- Insert runtime, e.g. Node.js, Deno, Browser, etc. -->
