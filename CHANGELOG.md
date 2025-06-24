@@ -161,7 +161,6 @@
 This change is meant to reduce the size of the package and improve performance by building the regular expression in build time instead of runtime.
 
 - Change interface
-
   - Remove default import. Use named import instead: `import { isbot } from "isbot";`
   - Drop `isbot` attached functions from the interface. `isbot.<SOMETHING>` is no longer supported
 
