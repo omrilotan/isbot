@@ -1081,5 +1081,6 @@
   "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Bluesky Cardyb/1.1; +mailto:support@bsky.app) Chrome/W.X.Y.Z Safari/537.36",
   "Mozilla/5.0 (compatible; OpenGraph.io/1.1; +https://opengraph.io/;) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36",
   "Mozilla/5.0 OnlyScans",
-  "Mozilla/5.0; Keydrop.io/1.0(onlyscans.com/about);"
+  "Mozilla/5.0; Keydrop.io/1.0(onlyscans.com/about);",
+  "azure-logic-apps/1.0 (workflow xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx; version xxxxxxxxxxxxxxxxxxxx) microsoft-flow/1.0"
 ]

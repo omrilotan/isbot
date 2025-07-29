@@ -464,6 +464,8 @@ MetaInspector:
   - MetaInspector/5.4.0 (+https://github.com/jaimeiniesta/metainspector)
 MetaJobBot:
   - Mozilla/5.0 (compatible; MetaJobBot; http://www.metajob.de/crawler)
+Microsoft Azure:
+  - azure-logic-apps/1.0 (workflow d8d2e25bef954213b698ec91b43adf06; version ghrckbjkjsaey82v7y3e) microsoft-flow/1.0
 Mixnode:
   - Mozilla/5.0 (Mixnode) AppleWebKit/537.36 (KHTML, like Gecko)
 Mixrank Bot:
