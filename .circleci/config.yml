@@ -17,9 +17,10 @@ workflows:
           matrix:
             parameters:
               image:
-                - cimg/node:18.19
-                - cimg/node:20.12
-                - cimg/node:22.0
+                - cimg/node:18.20
+                - cimg/node:20.19
+                - cimg/node:22.18
+                - cimg/node:24.6
                 - cimg/node:lts
                 - cimg/node:current
           requires:
