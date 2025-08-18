@@ -1166,6 +1166,8 @@
   "GroupMeBot/1.0",
   "Vercelbot (+https://vercel.com)",
   "facebookcatalog/1.0",
+  "meta-externalads/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/crawler)",
+  "meta-externalads/1.1",
   "meta-externalagent/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/crawler)",
   "meta-externalagent/1.1",
   "meta-externalfetcher/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/crawler)",
@@ -1185,5 +1187,6 @@
   "got (https://github.com/sindresorhus/got)",
   "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)",
   "Mozilla/5.0 (compatible; SBIntuitionsBot/0.1; +https://www.sbintuitions.co.jp/bot/)",
-  "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6439.0 Mobile Safari/537.36 +https://sitebulb.com"
+  "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6439.0 Mobile Safari/537.36 +https://sitebulb.com",
+  "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/87.0.4280.88 YextBot/Java Safari/537.36"
 ]
