@@ -249,13 +249,6 @@ eZ Publish Link Validator:
   - eZ Publish Link Validator
 Ezooms:
   - Mozilla/5.0 (compatible; Ezooms/1.0; help@moz.com)
-Facebook:
-  - facebookcatalog/1.0
-  - facebookexternalhit/1.0 (+http://www.facebook.com/externalhit_uatext.php)
-  - facebookexternalhit/1.1
-  - facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)
-  - facebookplatform/1.0 (+http://developers.facebook.com)
-  - facebot
 Feeder.co:
   - Mozilla/5.0 (feeder.co; Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
 Findxbot:
@@ -460,6 +453,15 @@ MediaHubMX:
 Medusa by pymedusa:
   - python/unicode Medusa/0.2.14 (Windows; 10; 3174120f-3388-11e9-b8bd-1c1b0d9d2a41)
   - python/unicode Medusa/0.2.14 (Windows; 10; d26d37e1-3389-11e9-8d14-1c1b0d9d2a41)
+Meta (Facebook):
+  - facebookcatalog/1.0
+  - facebookexternalhit/1.0 (+http://www.facebook.com/externalhit_uatext.php)
+  - facebookexternalhit/1.1
+  - facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)
+  - facebookplatform/1.0 (+http://developers.facebook.com)
+  - facebot
+  - Mozilla/5.0 (compatible; meta-externalagent/1.1)
+  - Mozilla/5.0 (compatible; meta-externalfetcher/1.1)
 MetaInspector:
   - MetaInspector/5.4.0 (+https://github.com/jaimeiniesta/metainspector)
 MetaJobBot:
