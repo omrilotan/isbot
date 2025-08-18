@@ -454,12 +454,12 @@ Medusa by pymedusa:
   - python/unicode Medusa/0.2.14 (Windows; 10; 3174120f-3388-11e9-b8bd-1c1b0d9d2a41)
   - python/unicode Medusa/0.2.14 (Windows; 10; d26d37e1-3389-11e9-8d14-1c1b0d9d2a41)
 Meta (Facebook):
-  - facebookcatalog/1.0
-  - facebookexternalhit/1.0 (+http://www.facebook.com/externalhit_uatext.php)
   - facebookexternalhit/1.1
   - facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)
   - facebookplatform/1.0 (+http://developers.facebook.com)
-  - facebot
+  - Facebot/1.0
+  - Mozilla/5.0 (compatible; FacebookCatalog/1.0)
+  - Mozilla/5.0 (compatible; meta-externalads/1.0; +http://www.facebook.com/externalhit_uatext.php)
   - Mozilla/5.0 (compatible; meta-externalagent/1.1)
   - Mozilla/5.0 (compatible; meta-externalfetcher/1.1)
 MetaInspector:
@@ -723,6 +723,8 @@ Slackbot:
   - Slackbot-LinkExpanding 1.0 (+https://api.slack.com/robots)
 SMTBot:
   - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36 (compatible; SMTBot/1.0; +http://www.similartech.com/smtbot)
+Snapchat:
+  - Mozilla/5.0 (compatible; SnapchatAds/1.0; +https://businesshelp.snapchat.com/s/article/adsbot-crawler)
 Snapchat Proxy:
   - "AppEngine-Google; (+http://code.google.com/appengine; appid: s~snapchat-proxy)"
 Sogou:
@@ -787,6 +789,8 @@ theoldreader:
   - Mozilla/5.0 (compatible; theoldreader.com; 1 subscribers; feed-id=aaa)
 Thumbor:
   - Thumbor/6.7.5, Mozilla/5.0 (Linux; Android 9; RAZER Phone Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.111 Mobile Safari/537.36 AlohaBrowser/2.13.1
+TikTok:
+  - Mozilla/5.0 (compatible; TikTok-Bot/1.0)
 TinEye Crawler:
   - TinEye-bot/0.02 (see http://www.tineye.com/crawler.html)
 TLSProbe:
