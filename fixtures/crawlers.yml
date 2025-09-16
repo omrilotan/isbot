@@ -106,6 +106,8 @@ Braze:
   - Braze Sender f3c381e4920fede7f46d83610f0abf15fdc10433
 Breaker:
   - Breaker/v315 (subscribers=9999; feed-id=123456; url=https://www.breaker.audio/url-slug-to-podcast)
+Brokenlinkcheck.com:
+  - mozilla/5.0 (windows nt 5.1) brokenlinkcheck.com/1.2
 Browsershots:
   - Browsershots
 BUbiNG:
@@ -161,6 +163,7 @@ CloudFlare:
   - "Mozilla/5.0 (compatible;Cloudflare-Healthchecks/1.0;+https://www.cloudflare.com/; healthcheck-id: f867e0e43eca7aa4)"
   - Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Mobile Safari/537.36 CloudflareObservatory/1.0
   - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 CloudflareObservatory/1.0
+  - mozilla/5.0 (macintosh; intel mac os x 10_15_7) applewebkit/537.36 (khtml, like gecko) chrome/109.0.0.0 safari/537.36 cloudflareobservatory/1.0
   - nginx-ssl early hints
 Collectd:
   - collectd/5.5.1
@@ -179,6 +182,7 @@ Dareboost test tool:
   - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36 DareBoost
 Datadog Agent:
   - Datadog Agent/5.10.1
+  - mozilla/5.0 (x11; linux x86_64) applewebkit/537.36 (khtml, like gecko) chrome/138.0.7204.168 safari/537.36 datadogsynthetics
 Datanyze:
   - Mozilla/5.0 (X11; Datanyze; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
 Dataprovider:
@@ -276,8 +280,6 @@ Gmail Image Proxy:
   - Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
 Goo:
   - DoCoMo/2.0 P900i(c100;TB;W24H11) (compatible; ichiro/mobile goo; +http://search.goo.ne.jp/option/use/sub4/sub4-1/)
-Google AdSense:
-  - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/537.36 (KHTML, like Gecko, Mediapartners-Google) Chrome/114.0.5735.179 Safari/537.36
 Google Favicon:
   - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36 Google Favicon
 Google PageSpeed Insights:
@@ -293,20 +295,27 @@ Google services:
   - Dalvik/2.1.0 (Linux; U; Android 5.1.1_r1; Samsung Galaxy S4 Build/SGH-I337M)(googleweblight)
   - FeedFetcher-Google; (+http://www.google.com/feedfetcher.html)
   - Google-Cloud-Tasks
+  - Google-Display-Ads-Bot
   - GoogleAssociationService
+  - Googlebot-Image/1.0
+  - mediapartners-google
   - Mozilla/5.0 (compatible; Google-InspectionTool/1.0)
   - Mozilla/5.0 (compatible; Google-Site-Verification/1.0)
   - Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; AdsBot-Google-Mobile; +http://www.google.com/mobile/a)
+  - mozilla/5.0 (linux; android 4.0.4; galaxy nexus build/imm76b) applewebkit/537.36 (khtml, like gecko; mediapartners-google) chrome/139.0.7258.127 mobile safari/537.36
   - Mozilla/5.0 (Linux; Android 4.2.1; en-us; Nexus 5 Build/JOP40D) AppleWebKit/535.19 (KHTML, like Gecko; googleweblight) Chrome/38.0.1025.166 Mobile Safari/535.19
   - Mozilla/5.0 (Linux; Android 4.2.1; en-us; Nexus 5 Build/JOP40D) AppleWebKit/535.19 (KHTML, like Gecko; googleweblight) Chrome/38.0.1025.166 Mobile Safari/535.19,gzip(gfe)
   - Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.92 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
   - Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.108 Mobile Safari/537.36 (compatible; Google-InspectionTool/1.0)
   - Mozilla/5.0 (Macintosh; intel mac os x 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.175 Safari/537.36 Chrome-Lighthouse
+  - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/537.36 (KHTML, like Gecko, Mediapartners-Google) Chrome/114.0.5735.179 Safari/537.36
+  - mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/123.0.0.0 safari/537.36 googlemessages/15.1
   - Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
   - Mozilla/5.0 (Windows; Linux; Android 4.2.1; en-us; Nexus 5 Build/JOP40D) AppleWebKit/535.19 (KHTML, like Gecko; googleweblight) Chrome/38.0.1025.166 Mobile Safari/535.19
   - Mozilla/5.0 (X11; Linux x86_64)  AppleWebKit/537.36 (KHTML, like Gecko; Google Web Preview)  Chrome/84.0.4147.108 Safari/537.36
   - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36 Google (+https://developers.google.com/+/web/snippet/)
   - Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/84.0.4147.108 Safari/537.36
+  - mozilla/5.0, google-adwords-express
   - Nokia5800d-1/5.0 (SymbianOS/9.4; Series60/5.3 Nokia5800d-1/111.050.1511; Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1; googleweblight) AppleWebKit/533.4 (KHTML, like Gecko, googleweblight) NokiaBrowser/8.3.7.4 Mobile Safari/533.4 3gpp-gba
 Google Structured Data Testing Tool:
   - Google-Structured-Data-Testing-Tool +https://search.google.com/structured-data/testing-tool)
@@ -395,6 +404,8 @@ Jersey (github.com/jersey):
   - Jersey/2.30.payara-p3 (HttpUrlConnection 11.0.25)
 JetBrains Omea Reader:
   - JetBrains Omea Reader 2.2 (http://www.jetbrains.com/omea/reader/)
+JobHunter:
+  - mozilla/5.0 (compatible; jobhunter/1.0)
 Jorgee Vulnerability Scanner:
   - Mozilla/5.0 Jorgee
 jsjcw_scanner:
@@ -467,6 +478,7 @@ MetaInspector:
 MetaJobBot:
   - Mozilla/5.0 (compatible; MetaJobBot; http://www.metajob.de/crawler)
 Microsoft Azure:
+  - azure-logic-apps/1.0 (workflow 971b5bea643343dfa00318ee752abce5; version 08584442669960581077) microsoft-flow/1.0
   - azure-logic-apps/1.0 (workflow d8d2e25bef954213b698ec91b43adf06; version ghrckbjkjsaey82v7y3e) microsoft-flow/1.0
 Mixnode:
   - Mozilla/5.0 (Mixnode) AppleWebKit/537.36 (KHTML, like Gecko)
@@ -562,6 +574,7 @@ Pageburst:
   - Mozilla/5.0 (iPad; CPU OS 9_1 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko; compatible; pageburst) CriOS/79.0.3945.117 Mobile/13B143 Safari/601.1.46
   - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko; compatible; pageburst) Chrome/109.0.5414.101 Safari/537.36
   - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko; compatible; pageburst) Chrome/111.0.5563.146 Safari/537.36
+  - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko; compatible; pageburst) Chrome/139.0.7258.127 Safari/537.36
 PaperLiBot:
   - Mozilla/5.0 (compatible; PaperLiBot/2.1; http://support.paper.li/entries/20023257-what-is-paper-li)
 PDRL:
@@ -580,8 +593,8 @@ Picsearch bot:
   - psbot/0.1 (+http://www.picsearch.com/bot.html)
 Pingdom:
   - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.100 Chrome/61.0.3163.100 Safari/537.36 PingdomPageSpeed/1.0 (pingbot/2.0; +http://www.pingdom.com/)
-Pingdom Bot:
   - Pingdom.com_bot_version_1.4_(http://www.pingdom.com/)
+  - Pingdom.com_v2
 Pinterest:
   - Mozilla/5.0 (compatible; Pinterestbot/1.0; http://www.pinterest.com/bot.html)
 Placid.app:
@@ -706,6 +719,7 @@ SISTRIX Crawler:
 SISTRIX Optimizer:
   - Mozilla/5.0 (compatible; SISTRIX Optimizer; Uptime; +https://www.sistrix.com/faq/uptime)
 Site24x7 Website Monitoring:
+  - mozilla/5.0 (windows nt 6.1; wow64; rv:101.0) gecko/20100101 firefox/101.0 site24x7
   - Site24x7
 Siteimprove:
   - Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0) LinkCheck by Siteimprove.com
@@ -717,14 +731,14 @@ Sixy.ch:
   - sixy.ch/1.0
 Skype:
   - Mozilla/5.0 (Windows nt 6.1; wow64) SkypeURIPreview Preview/0.5
-Skype URI Preview:
-  - Mozilla/5.0 (Windows NT 6.1; WOW64) SkypeUriPreview Preview/0.5
+  - mozilla/5.0 (windows nt 6.1; wow64) skypeuripreview preview/0.5 skype-url-preview@microsoft.com
 Slackbot:
   - Slackbot-LinkExpanding 1.0 (+https://api.slack.com/robots)
 SMTBot:
   - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36 (compatible; SMTBot/1.0; +http://www.similartech.com/smtbot)
 Snapchat:
   - Mozilla/5.0 (compatible; SnapchatAds/1.0; +https://businesshelp.snapchat.com/s/article/adsbot-crawler)
+  - Snap URL Preview Service; bot; snapchat; https://developers.snap.com/robots
 Snapchat Proxy:
   - "AppEngine-Google; (+http://code.google.com/appengine; appid: s~snapchat-proxy)"
 Sogou:
@@ -753,6 +767,7 @@ Splunk Synythetic Monitoring (Rigor EOL Feb 2025):
   - Mozilla/5.0 (X11; Linux x86_64; Rigor) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36
   - Mozilla/5.0 (X11; Linux x86_64; rv:45.0; Rigor) Gecko/20100101 Firefox/45.0
   - Mozilla/5.0 (X11; Linux x86_64; Splunk Synthetics) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.88 Safari/537.36
+  - mozilla/5.0 (x11; linux x86_64; splunk synthetics) applewebkit/537.36 (khtml, like gecko) chrome/135.0.0.0 safari/537.36
 Spotify:
   - Spotify/1.0
 Sputnik Bot:
@@ -874,6 +889,8 @@ WeSEE:Search:
 WhatsApp:
   - WhatsApp/2.21.12.21 A
   - whatsapp/2.2123.8 n
+  - WhatsApp/3.0.0.0 A
+  - whatsapp/784941593 cfnetwork/3826.600.41 darwin/24.6.0
 WikiDo:
   - WikiDo/1.1 (http://wikido.com; crawler@wikido.com)
 Wininet-APIs https://web.archive.org/web/20100715071639/http://blogs.msdn.com/b/jpsanders/archive/2009/04/17/how-to-get-certificate-information-using-wininet-apis.aspx:
@@ -938,6 +955,11 @@ ZoomBot (seozoom.it):
   - zoombot (linkbot 1.0 http://suite.seozoom.it/bot.html)
 ZumBot:
   - ZumBot/1.0 (ZUM Search; http://help.zum.com/inquiry)
+ZZZ Miscellaneous bots:
+  - algoliarecommend/lookingsimilar
+  - emclient/10.3.2619.0
+  - peer39_crawler/1.0
+  - spider/7.6.0.4827 cfnetwork/3826.600.41 darwin/24.6.0
 ZZZ Miscellaneous Glitches and Errornous User Agent Strings:
   - "123"
   - <class 'fake_useragent.fake.FakeUserAgent'>
