@@ -18,7 +18,7 @@ const sources = new Map([
 		"https://raw.githubusercontent.com/matomo-org/device-detector/master/Tests/fixtures/bots.yml",
 	],
 	["user-agents.net.json", "https://user-agents.net/download"],
-	["myip.ms.json", "https://myip.ms/files/bots/live_webcrawlers.txt"],
+	["myip.ms.json", "http://myip.ms/files/bots/live_webcrawlers.txt"], // Keep getting 495 SSL Certificate Error for HTTPS version
 ]);
 
 const { log, warn } = console;
