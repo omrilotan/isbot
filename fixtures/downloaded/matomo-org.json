@@ -1082,5 +1082,17 @@
   "Mozilla/5.0 (compatible; OpenGraph.io/1.1; +https://opengraph.io/;) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36",
   "Mozilla/5.0 OnlyScans",
   "Mozilla/5.0; Keydrop.io/1.0(onlyscans.com/about);",
-  "azure-logic-apps/1.0 (workflow xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx; version xxxxxxxxxxxxxxxxxxxx) microsoft-flow/1.0"
+  "azure-logic-apps/1.0 (workflow xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx; version xxxxxxxxxxxxxxxxxxxx) microsoft-flow/1.0",
+  "Simbiat Software",
+  "Mozilla/5.0 (compatible; Thinkbot/0.5.8; +In_the_test_phase,_if_the_Thinkbot_brings_you_trouble,_please_block_its_IP_address._Thank_you.)",
+  "meta-webindexer",
+  "meta-externalads",
+  "Mozilla/5.0 (compatible; YandexAdditional/1.0; +http://yandex.com/bots)",
+  "Mozilla/5.0 (compatible; YandexAdditionalBot/1.0; +http://yandex.com/bots)",
+  "Mozilla/5.0 (compatible; YandexComBot/3.0; +http://ya.cc/bots)",
+  "Mozilla/5.0 (compatible; YandexDialogs/1.0; +http://yandex.com/bots)",
+  "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Perplexity-User/1.0; +https://perplexity.ai/perplexity-user)",
+  "Mozilla/5.0 (compatible; IbouBot/1.0; +bot@ibou.io; +https://ibou.io/iboubot.html)",
+  "Mozilla/5.0 (compatible; AddSearchBot/1.0; +http://www.addsearch.com/bot; info@addsearch.com)",
+  "TerraCotta https://github.com/CeramicTeam/CeramicTerracotta"
 ]

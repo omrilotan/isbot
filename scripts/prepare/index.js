@@ -33,7 +33,7 @@ async function start({ argv }) {
 		case results.length:
 			log("All files were downloaded");
 			log("Create new timestamp");
-			await writeFile(join(dir, "downloaded"), new Date().toUTCString());
+			await writeFile(join(downloadedDirectory, "downloaded"), new Date().toUTCString());
 			break;
 		default:
 			log(`Some files were downloaded (${news}/${results.length})`);
