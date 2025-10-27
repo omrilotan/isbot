@@ -727,3 +727,5 @@ ZZZ Insignificat bots - These bots have very low appearance rate and are not wor
   - pinterest/0.
 ZZZ Miscellaneous Browsers - These browsers are not bots, but they are not widely used or are misidentified:
   - PodcastRepublic/18.0 (Linux; U; Android 15;zeus/AQ3A.241006.001)
+ZZZ TBD:
+  - Magento/2.4.5 (Findbar 1.5.12)

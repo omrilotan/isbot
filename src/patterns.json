@@ -82,7 +82,7 @@
   "^yandex",
   "^zdm/\\d",
   "^zoom marketplace/",
-  "agent",
+  "agent\\b",
   "analyzer",
   "archive",
   "ask jeeves/teoma",
