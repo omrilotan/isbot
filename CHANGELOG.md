@@ -1,8 +1,8 @@
 # Changelog
 
-## [Unreleased]
+## [5.1.32](https://github.com/omrilotan/isbot/compare/v5.1.31...v5.1.32)
 
-- Undecided purpose of patten changes
+- [Pattern] Pattern updates
 
 ## [5.1.31](https://github.com/omrilotan/isbot/compare/v5.1.30...v5.1.31)
 

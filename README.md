@@ -84,14 +84,14 @@ UMD
 Create a custom `isbot` that does not consider Chrome Lighthouse user agent as bots.
 
 ```ts
-import { createIsbotFromList, isbotMatches, list } from "isbot";
+import { createIsbotFromList, isbotPatterns, list } from "isbot";
 
 const ChromeLighthouseUserAgentStrings: string[] = [
   "mozilla/5.0 (macintosh; intel mac os x 10_15_7) applewebkit/537.36 (khtml, like gecko) chrome/94.0.4590.2 safari/537.36 chrome-lighthouse",
   "mozilla/5.0 (linux; android 7.0; moto g (4)) applewebkit/537.36 (khtml, like gecko) chrome/94.0.4590.2 mobile safari/537.36 chrome-lighthouse",
 ];
 const patternsToRemove = new Set<string>(
-  ChromeLighthouseUserAgentStrings.map(isbotMatches).flat(),
+  ChromeLighthouseUserAgentStrings.map(isbotPatterns).flat(),
 );
 const isbot: (ua: string) => boolean = createIsbotFromList(
   list.filter(

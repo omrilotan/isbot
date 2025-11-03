@@ -278,6 +278,12 @@ Gluten Free Crawler:
   - Mozilla/5.0 (compatible; Gluten Free Crawler/1.0; +http://glutenfreepleasure.com/)
 Gmail Image Proxy:
   - Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+Gomez Site Monitor:
+  - Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko GomezAgent 3.0) Chrome/56.0.2924.87 Safari/537.36
+  - Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0; GomezAgent 3.0) Gecko/20100101 Firefox/38.0
+  - Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko GomezAgent 3.0) Chrome/46.0.2490.71 Safari/537.36
+  - Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko GomezAgent 3.0) Chrome/56.0.2924.87 Safari/537.3
+  - Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko GomezAgent 3.0) Chrome/56.0.2924.87 Safari/537.36
 Goo:
   - DoCoMo/2.0 P900i(c100;TB;W24H11) (compatible; ichiro/mobile goo; +http://search.goo.ne.jp/option/use/sub4/sub4-1/)
 Google Favicon:
