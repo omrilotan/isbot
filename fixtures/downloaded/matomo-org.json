@@ -1094,5 +1094,22 @@
   "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Perplexity-User/1.0; +https://perplexity.ai/perplexity-user)",
   "Mozilla/5.0 (compatible; IbouBot/1.0; +bot@ibou.io; +https://ibou.io/iboubot.html)",
   "Mozilla/5.0 (compatible; AddSearchBot/1.0; +http://www.addsearch.com/bot; info@addsearch.com)",
-  "TerraCotta https://github.com/CeramicTeam/CeramicTerracotta"
+  "TerraCotta https://github.com/CeramicTeam/CeramicTerracotta",
+  "Mozilla/5.0 (compatible; KeybaseBot; +https://keybase.io)",
+  "Hello from Palo Alto Networks, find out more about our scans in https://docs-cortex.paloaltonetworks.com/r/1/Cortex-Xpanse/Scanning-activity",
+  "Mozilla/5.0 (Laravel Reaver .env Presence)",
+  "Mozilla/5.0 (bang2013@atomicmail.io)",
+  "libredtail-http",
+  "Mozilla/5.0 (compatible; Replicate-Bot/1.0; +https://replicate.com/)",
+  "cypex.ai/scanning Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Chrome/126.0.0.0 Safari/537.36",
+  "Mozilla/5.0 (Linux; Android 5.0) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Safari/537.36 (compatible; TikTokSpider; ttspider-feedback@tiktok.com)",
+  "fhms-its-research-scanner/1.0 (+https://fb02itsscan02.fh-muenster.de)",
+  "Mozilla/5.0 (compatible; Together-Bot/1.0; +https://together.ai/)",
+  "Mozilla/5.0 (compatible; xAI-Bot/1.0; +https://x.ai/)",
+  "Mozilla/5.0 (compatible; Groq-Bot/1.0; +https://groq.com/)",
+  "Mozilla/5.0 (compatible; bigsur.ai/1.0)",
+  "Mozilla/5.0 (compatible; Cohere-Command/1.0; +https://cohere.com/)",
+  "cohere-training-data-crawler",
+  "Mozilla/5.0 (compatible; FirecrawlAgent/1.0)",
+  "Mozilliqa\"<?=print(9347655345-4954366);?>\""
 ]

@@ -966,6 +966,7 @@ ZumBot:
 ZZZ Miscellaneous bots:
   - algoliarecommend/lookingsimilar
   - emclient/10.3.2619.0
+  - Mozilla/5.0 (compatible; bigsur.ai/1.0)
   - peer39_crawler/1.0
   - spider/7.6.0.4827 cfnetwork/3826.600.41 darwin/24.6.0
 ZZZ Miscellaneous Glitches and Errornous User Agent Strings:
