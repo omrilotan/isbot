@@ -3,17 +3,14 @@ workflows:
   test:
     jobs:
       - build:
-          context: globalenv
           filters:
             branches:
               ignore:
                 - gh-pages
       - tests:
-          context: globalenv
           requires:
             - build
       - compatibility:
-          context: globalenv
           matrix:
             parameters:
               image:
@@ -77,7 +74,7 @@ jobs:
               git config --global user.email omrilotan@users.noreply.github.com --replace-all
               git config --global user.name omrilotan --replace-all
               git commit -am "😎 Autofix"
-              git remote set-url origin https://$CIRCLE_USERNAME:$GITHUB_API_TOKEN@github.com/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME.git
+              git remote set-url origin https://$CIRCLE_USERNAME:$GITHUB_TOKEN@github.com/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME.git
               git push -u origin HEAD:${CIRCLE_BRANCH}
               exit 1
             fi
@@ -101,7 +98,9 @@ jobs:
     docker:
       - image: cimg/node:lts
     steps:
-      - checkout
+      - run: node -v
+      - attach_workspace:
+          at: .
       - run:
           name: Stop if remote tag already exists
           command: |
@@ -114,15 +113,6 @@ jobs:
       - run:
           name: Add publish token
           command: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
-      - attach_workspace:
-          at: .
-      - run:
-          name: Configure browsers
-          command: |
-            wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-            echo "deb http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee -a /etc/apt/sources.list.d/google-chrome.list
-            sudo apt update
-            sudo apt install -y google-chrome-stable xvfb
       - run: npm publish
       - run:
           name: Add git tag
@@ -154,7 +144,7 @@ jobs:
       - run: |
             npm t || curl --request POST \
               --url https://api.github.com/repos/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}/issues \
-              --header "authorization: Bearer ${ISBOT_ISSUE_TOKEN}" \
+              --header "authorization: Bearer ${GITHUB_TOKEN}" \
               --header 'content-type: application/json' \
               --data "{ \
                   \"title\": \"Automated issue for failing periodic tests\", \

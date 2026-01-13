@@ -15,7 +15,7 @@
   "homepage": "https://isbot.js.org",
   "repository": {
     "type": "git",
-    "url": "https://github.com/omrilotan/isbot"
+    "url": "git+https://github.com/omrilotan/isbot.git"
   },
   "engines": {
     "node": ">=18"

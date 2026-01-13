@@ -27,6 +27,8 @@ Alexa:
   - Mozilla/5.0 (compatible; alexa site audit/1.0; http://www.alexa.com/help/webmasters; )
 Amaya:
   - amaya/10 libwww/5.4.0
+Amazon Kendra:
+  - amazon-kendra-customer-id-1234-1234-1234
 Amazon Route53 Health Check:
   - Amazon-Route53-Health-Check-Service (ref b0eb04d5-cb5e-40e7-839b-558e52fc3f0d; report http://amzn.to/1vsZADi)
 Amorank Spider:
@@ -879,6 +881,8 @@ WebbCrawler:
   - WebbCrawler 1.0 ( http://badcheese.com/crawler.html )
 WebGazer:
   - WebGazer/1.0 (+https://www.webgazer.io)
+WebMoney Advisor:
+  - Mozilla/5.0 (X11; U; Linux i686; ru; rv:1.9.0.5) Gecko/2008121621 Ubuntu/8.04 (hardy) Firefox/3.0.5 WebMoney Advisor
 Weborama:
   - weborama-fetcher (+http://www.weborama.com)
 WebPageTest:
@@ -967,6 +971,8 @@ ZZZ Miscellaneous bots:
   - algoliarecommend/lookingsimilar
   - emclient/10.3.2619.0
   - Mozilla/5.0 (compatible; bigsur.ai/1.0)
+  - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36; Manus-User/1.0
+  - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36; Devin/1.0; +devin.ai
   - peer39_crawler/1.0
   - spider/7.6.0.4827 cfnetwork/3826.600.41 darwin/24.6.0
 ZZZ Miscellaneous Glitches and Errornous User Agent Strings:
