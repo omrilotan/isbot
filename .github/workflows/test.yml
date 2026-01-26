@@ -1,0 +1,119 @@
+name: Test and Publish Workflow
+
+permissions:
+  contents: write
+
+on:
+  push:
+    branches:
+      - main
+      - '!gh-pages'
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+      - run: node -v
+      - run: npm i
+      - run: npm run build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: workspace
+          path: .
+          retention-days: 1
+
+  tests:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+      - uses: actions/download-artifact@v4
+        with:
+          name: workspace
+      - run: node -v
+      - run: npm run format
+      - name: Push autofixes
+        if: always()
+        run: |
+          if [ "$(git diff --quiet && echo 0 || echo $?)" -gt 0 ]; then
+            git config --global user.email omrilotan@users.noreply.github.com
+            git config --global user.name omrilotan
+            git commit -am "😎 Autofix"
+            git push
+          fi
+      - run: npm t
+
+  compatibility:
+    needs: build
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version:
+          - '18.20'
+          - '20.19'
+          - '22.18'
+          - '24.6'
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+      - uses: actions/download-artifact@v4
+        with:
+          name: workspace
+      - run: node -v
+      - run: npm t -- spec
+
+  publish:
+    needs:
+      - tests
+      - compatibility
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+      - uses: actions/download-artifact@v4
+        with:
+          name: workspace
+      - run: node -v
+      - name: Stop if remote tag already exists
+        run: |
+          [ -z "$(git ls-remote --tags origin | grep -F $(cat package.json | jq '.version' -r) | tr -d '\n')" ] || exit 0
+      - name: Set git user
+        run: |
+          git config --global user.name "$(git show -s --format=%an)"
+          git config --global user.email "$(git show -s --format=%ae)"
+      - name: Add publish token
+        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+      - run: npm publish
+      - name: Add git tag
+        run: git tag -a "v$(cat package.json | jq '.version' -r)" -m "$(git show -s --format=%B | tr -d '\n')"
+      - run: git push origin --tags
+
+  pages:
+    needs: publish
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+      - uses: actions/download-artifact@v4
+        with:
+          name: workspace
+      - run: npm run page
+      - name: Copy github workflows config
+        run: mkdir -p docs/.github/workflows && cp -r .github/workflows/* docs/.github/workflows/
+      - name: Post to gh-pages
+        run: bash ./scripts/gh-pages/procedure.sh
+
+
