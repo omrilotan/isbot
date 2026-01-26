@@ -9,6 +9,6 @@ module.exports = {
 	locals: {
 		packageFullName: [name, version].join("@"),
 		description,
-		repositoryUrl,
+		repositoryUrl: repositoryUrl.replace(/^git\+/, "").replace(/\.git$/, ""),
 	},
 };
