@@ -1,8 +1,9 @@
-import { isbot, isbotMatch, isbotPatterns } from "..";
+import { isbot, isbotMatch, isbotPatterns, getPattern } from "..";
 
 {
 	const textarea = document.querySelector("textarea") as HTMLTextAreaElement;
 	const output = document.querySelector("output") as HTMLOutputElement;
+	const code = document.querySelector("pre code") as HTMLElement;
 	const copyLink = document.querySelector(
 		'[id="copy-link"]',
 	) as HTMLButtonElement;
@@ -82,7 +83,7 @@ import { isbot, isbotMatch, isbotPatterns } from "..";
 	copyLink.addEventListener("click", (event: Event): void => {
 		event.preventDefault();
 		const { protocol, host, pathname } = document.location;
-		navigator.clipboard.writeText(
+		copyToClipboard(
 			[
 				protocol,
 				"//",
@@ -91,9 +92,28 @@ import { isbot, isbotMatch, isbotPatterns } from "..";
 				"?ua=",
 				encodeURIComponent(textarea.value),
 			].join(""),
+			"link copied to clipboard",
 		);
+	});
+
+	code.appendChild(document.createTextNode(getPattern().toString()));
+	code.style.userSelect = "all";
+	code.addEventListener("click", (): void => {
+		const range = document.createRange();
+		range.selectNodeContents(code);
+		const selection = window.getSelection();
+		selection?.removeAllRanges();
+		selection?.addRange(range);
+		copyToClipboard(code.textContent || "", "pattern copied to clipboard");
+	});
+
+	function copyToClipboard(
+		text: string,
+		message = "copied to clipboard",
+	): void {
+		navigator.clipboard.writeText(text);
 		const dialog = document.createElement("dialog");
-		dialog.appendChild(document.createTextNode("copied to clipboard"));
+		dialog.appendChild(document.createTextNode(message));
 		document.body.appendChild(dialog);
 		dialog.showModal();
 		setTimeout((): void => {
@@ -103,5 +123,5 @@ import { isbot, isbotMatch, isbotPatterns } from "..";
 			});
 			dialog.style.opacity = "0";
 		}, 1000);
-	});
+	}
 }

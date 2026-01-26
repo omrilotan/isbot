@@ -13,7 +13,8 @@
 
 html,
 textarea,
-button {
+button,
+pre {
 	font:
 		100 100%/1.4 -apple-system,
 		"BlinkMacSystemFont",
@@ -33,7 +34,8 @@ body {
 }
 
 body,
-textarea {
+textarea,
+pre {
 	background: var(--color-background);
 	color: var(--color-foreground);
 	text-shadow: var(--color-background-highlight) 1px 1px 0;
@@ -57,30 +59,40 @@ form {
 
 h1,
 textarea,
-output {
+output,
+pre {
 	margin-bottom: 1em;
 }
 
 h1 {
 	font-weight: 700;
-	font-size: 3em;
+	font-size: 3rem;
 }
 
-textarea {
-	font-size: 1.7em;
+textarea,
+pre {
+	font-size: 1.7rem;
 	width: 100%;
-	height: 5em;
 	padding: 0.5em;
-	resize: vertical;
 	box-sizing: border-box;
-}
-
-textarea {
 	border-radius: 0.5em;
 	box-shadow:
 		inset var(--color-foreground-shadow) 0.5em 0.5em 0.5em,
 		inset var(--color-background-highlight) -0.5em -0.5em 0.5em;
 	border-width: 0;
+}
+
+textarea {
+	height: 5em;
+	resize: vertical;
+}
+
+pre {
+	height: 3em;
+	overflow-x: auto;
+}
+pre code {
+	font-size: 1rem;
 }
 
 output {
