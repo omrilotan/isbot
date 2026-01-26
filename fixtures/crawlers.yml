@@ -971,9 +971,12 @@ ZZZ Miscellaneous bots:
   - algoliarecommend/lookingsimilar
   - emclient/10.3.2619.0
   - Mozilla/5.0 (compatible; bigsur.ai/1.0)
+  - Mozilla/5.0 (compatible; ORT/v1.0.0; visit ORTc.me )
   - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36; Manus-User/1.0
+  - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 SecurityHeaders
   - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36; Devin/1.0; +devin.ai
   - peer39_crawler/1.0
+  - SaferSoftwashLeadGen/2.2 (andrewfegan@local)
   - spider/7.6.0.4827 cfnetwork/3826.600.41 darwin/24.6.0
 ZZZ Miscellaneous Glitches and Errornous User Agent Strings:
   - "123"
