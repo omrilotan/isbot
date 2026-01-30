@@ -1,0 +1,32 @@
+name: Periodic Tests
+
+permissions:
+  issues: write
+
+on:
+  schedule:
+    - cron: '0 9 * * 1'
+
+jobs:
+  periodic:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+      - run: npm i --ignore-scripts
+      - run: npm run prepare -- --force
+      - name: Run tests
+        id: test
+        continue-on-error: true
+        run: npm t
+      - name: Create issue on test failure
+        if: steps.test.outcome == 'failure'
+        run: |
+          gh issue create \
+            --title "Automated issue for failing periodic tests" \
+            --body "This issue is automatically created. The tests are failing on run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
+            --assignee omrilotan \
+            --label automated \
+            --label maintenance
