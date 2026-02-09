@@ -947,6 +947,8 @@ Yeti (Naver):
   - Mozilla/5.0 (compatible; yeti/1.1; +http://naver.me/spd)
   - Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.0 Safari/537.36 (compatible; Yeti/1.1; +http://naver.me/spd)
   - Yeti/1.1 (Naver Corp.; http://help.naver.com/robots/)
+YottaaMonitor:
+  - Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.9.2.28) Gecko/20120306 Firefox/99.0 YottaaMonitor
 Youdao Bot:
   - Mozilla/5.0 (compatible; YoudaoBot/1.0; http://www.youdao.com/help/webmaster/spider/; )
 Yourls:
