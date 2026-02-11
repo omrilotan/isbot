@@ -1,0 +1,9 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>isbot</ShortName>
+  <LongName>isbot user agent match</LongName>
+  <Description>isbot user agent match</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <OutputEncoding>UTF-8</OutputEncoding>
+  <AdultContent>false</AdultContent>
+  <Url type="text/html" method="get" template="https://isbot.js.org/?ua={searchTerms}"/>
+</OpenSearchDescription>
