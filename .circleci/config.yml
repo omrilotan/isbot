@@ -102,6 +102,9 @@ jobs:
       - attach_workspace:
           at: .
       - run:
+          name: Configure SSH
+          command: mkdir -p ~/.ssh && echo -e "Host github.com\n  StrictHostKeyChecking accept-new" >> ~/.ssh/config
+      - run:
           name: Stop if remote tag already exists
           command: |
             [ -z "$(git ls-remote --tags origin | grep -F $(cat package.json | jq '.version' -r) | tr -d '\n')" ] || circleci step halt
@@ -126,6 +129,9 @@ jobs:
       - checkout
       - attach_workspace:
           at: .
+      - run:
+          name: Configure SSH
+          command: mkdir -p ~/.ssh && echo -e "Host github.com\n  StrictHostKeyChecking accept-new" >> ~/.ssh/config
       - run: npm run page
       - run:
           name: Copy circleci config
