@@ -1,4 +1,4 @@
-import { isbot, isbotMatch, isbotPatterns, getPattern } from "..";
+import { isbot, isbotMatch, isbotPatterns, getPattern } from "../index.js";
 
 {
 	const textarea = document.querySelector("textarea") as HTMLTextAreaElement;

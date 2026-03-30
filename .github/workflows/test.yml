@@ -1,0 +1,141 @@
+name: Test and Publish Workflow
+
+permissions:
+  contents: write
+
+on:
+  push:
+    branches:
+      - main
+      - '!gh-pages'
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v6
+        with:
+          node-version: lts/*
+      - run: npm i
+      - run: npm run prepare -- --force
+      - run: npm run build
+      - uses: actions/upload-artifact@v6
+        with:
+          name: build
+          path: |
+            index.js
+            index.mjs
+            index.iife.js
+            index.d.ts
+            browser.global.js
+            browser.global.js.map
+          retention-days: 1
+
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v6
+        with:
+          node-version: lts/*
+      - run: npm i
+      - run: npm run build
+      - run: npm run format
+      - name: Push autofixes
+        if: always() && github.event_name == 'push'
+        run: |
+          if ! git diff --quiet; then
+            git config --global user.email omrilotan@users.noreply.github.com
+            git config --global user.name omrilotan
+            git add -A
+            git commit -m "Autofix"
+            git push origin HEAD:${GITHUB_REF#refs/heads/}
+          fi
+      - run: npm t
+
+  compatibility:
+    needs: build
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version:
+          - '18.20'
+          - '20.19'
+          - '22.18'
+          - '24.6'
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v6
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: node -v
+      - run: npm i
+      - uses: actions/download-artifact@v8
+        with:
+          name: build
+      - run: npm t -- spec
+
+  publish:
+    needs:
+      - tests
+      - compatibility
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    outputs:
+      already_published: ${{ steps.check_tag.outputs.already_published }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v6
+        with:
+          node-version: lts/*
+      - run: node -v
+      - name: Check if remote tag already exists
+        id: check_tag
+        run: |
+          TAG="v$(jq -r '.version' package.json)"
+          if git ls-remote --exit-code --tags origin "refs/tags/${TAG}" >/dev/null; then
+            echo "Tag ${TAG} already exists on origin. Skipping publish and pages."
+            echo "already_published=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "already_published=false" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Set git user
+        if: steps.check_tag.outputs.already_published == 'false'
+        run: |
+          git config --global user.name "$(git show -s --format=%an)"
+          git config --global user.email "$(git show -s --format=%ae)"
+      - run: npm i
+        if: steps.check_tag.outputs.already_published == 'false'
+      - name: Add publish token
+        if: steps.check_tag.outputs.already_published == 'false'
+        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+      - run: npm publish
+        if: steps.check_tag.outputs.already_published == 'false'
+      - name: Add git tag
+        if: steps.check_tag.outputs.already_published == 'false'
+        run: git tag -a "v$(cat package.json | jq '.version' -r)" -m "$(git show -s --format=%B | tr -d '\n')"
+      - run: git push origin --tags
+        if: steps.check_tag.outputs.already_published == 'false'
+
+  pages:
+    needs: publish
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v6
+        with:
+          node-version: lts/*
+      - run: npm i
+      - uses: actions/download-artifact@v8
+        with:
+          name: build
+      - run: npm run page
+      - name: Copy github workflows config
+        run: mkdir -p docs/.github/workflows && cp -r .github/workflows/* docs/.github/workflows/
+      - name: Post to gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: bash ./scripts/gh-pages/procedure.sh

@@ -1,13 +1,11 @@
-import { isbot } from "../../src";
 import list from "../../src/patterns.json";
-import { browsers, crawlers } from "../../fixtures";
-import stdline from "stdline";
+import { crawlers } from "../../fixtures";
+import { update, end } from "stdline";
 
 const wait = (): Promise<void> =>
 	new Promise((resolve) => setTimeout(resolve, 0));
 const TIMEOUT = 60000;
 
-const { update, end } = stdline;
 Object.freeze(list);
 
 const clone = (): string[] => list.slice();
@@ -26,7 +24,7 @@ describe("efficiency", () => {
 					const temp = clone();
 					const [rule] = temp.splice(length, 1);
 					const pattern = new RegExp(temp.join("|"), "i");
-					const isbot = (ua) => pattern.test(ua);
+					const isbot = (ua: string): boolean => pattern.test(ua);
 					const unmatched = crawlers.filter(isbot);
 
 					if (crawlers.length - unmatched.length === 0) {
@@ -66,7 +64,7 @@ describe("efficiency", () => {
 					}
 					temp.push(`^${rule}`);
 					const pattern = new RegExp(temp.join("|"), "i");
-					const isbot = (ua) => pattern.test(ua);
+					const isbot = (ua: string): boolean => pattern.test(ua);
 					const unmatched = crawlers.filter(isbot);
 
 					if (unmatched.length === crawlers.length) {
