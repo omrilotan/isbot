@@ -7,7 +7,7 @@ echo "→ Sort lists"
 failures=$((failures + $?))
 
 echo "→ Format files"
-prettier --write .
+npx prettier --write .
 failures=$((failures + $?))
 
 echo "→ Number of failures: ${failures}"

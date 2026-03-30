@@ -1,3 +1,5 @@
+/// <reference lib="dom" />
+
 import { isbot } from ".";
 
 (function () {
@@ -6,6 +8,7 @@ import { isbot } from ".";
 		return;
 	}
 	if (typeof window === "object") {
+		// @ts-expect-error
 		window.isbot = isbot;
 		return;
 	}
@@ -14,6 +17,7 @@ import { isbot } from ".";
 		return;
 	}
 	if (typeof self === "object") {
+		// @ts-expect-error
 		self.isbot = isbot;
 	}
 })();

@@ -1,6 +1,6 @@
 {
   "name": "isbot",
-  "version": "5.1.36",
+  "version": "5.1.37",
   "description": "🤖/👨‍🦰 Recognise bots/crawlers/spiders using the user agent string.",
   "keywords": [
     "bot",
@@ -21,13 +21,14 @@
     "node": ">=18"
   },
   "files": [
-    "./index*"
+    "./index*",
+    "./AUTHORS"
   ],
   "type": "commonjs",
   "main": "./index.js",
   "module": "./index.mjs",
   "browser": "./index.mjs",
-  "jsdelivr": "./index.iife.js",
+  "jsdelivr": "./browser.global.js",
   "exports": {
     "./package.json": "./package.json",
     ".": {
@@ -50,7 +51,6 @@
     "prepare": "./scripts/prepare/index.js",
     "build": "./scripts/build/procedure.sh",
     "format": "./scripts/format/procedure.sh",
-    "pretest": "npm run build && npm run prepare",
     "test": "./scripts/test/procedure.sh",
     "prepublishOnly": "./scripts/prepublish/procedure.sh",
     "prestart": "which parcel || npm i parcel-bundler --no-save",
@@ -61,14 +61,17 @@
   },
   "devDependencies": {
     "@types/jest": "^30.0.0",
-    "esbuild": "^0.27.2",
     "jest": "^30.0.2",
     "prettier": "^3.6.0",
     "pug": "^3.0.3",
-    "stdline": "^1.1.1",
+    "stdline": "^2.1.0",
     "ts-jest": "^29.4.0",
-    "typescript": "^5.8.3",
-    "user-agents": "^1.1.580",
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.2",
+    "user-agents": "^2.1.4",
     "yaml": "^2.8.0"
+  },
+  "overrides": {
+    "typescript": "^6.0.2"
   }
 }

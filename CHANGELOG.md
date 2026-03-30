@@ -1,5 +1,10 @@
 # Changelog
 
+## [5.1.37](https://github.com/omrilotan/isbot/compare/v5.1.36...v5.1.37)
+
+- Better checking for non empty strings in the interface functions
+- [Internal] Build with tsup
+
 ## [5.1.36](https://github.com/omrilotan/isbot/compare/v5.1.35...v5.1.36)
 
 - [Pattern] Pattern updates
