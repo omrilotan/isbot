@@ -3,6 +3,7 @@ node_modules
 # Auomatically built files
 /src/pattern.ts
 /index*
+/browser*
 /*.d.ts
 /fixtures/index.json
 /AUTHORS

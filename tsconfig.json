@@ -4,12 +4,13 @@
     "module": "esnext",
     "moduleResolution": "node",
     "target": "esnext",
-    "types": ["@types/jest", "@types/node"],
+    "types": ["node", "jest"],
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "noEmit": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "ignoreDeprecations": "6.0"
   },
-  "include": ["src"],
+  "include": ["src", "fixtures", "scripts", "tests"],
   "exclude": ["node_modules"]
 }

@@ -6,20 +6,12 @@ echo "→ Build Regular Expression"
 scripts/build/pattern.js
 failures=$((failures + $?))
 
-echo "→ Build commonjs"
-esbuild src/index.ts --outfile=index.js --bundle --platform=neutral --format=cjs --log-level=warning --target=es2016
+echo "→ Build files (index.js, index.mjs) and TypeScript declaration file (index.d.ts)"
+tsup src/index.ts --format cjs,esm --dts --out-dir . --target es2019
 failures=$((failures + $?))
 
-echo "→ Build esm"
-esbuild src/index.ts --outfile=index.mjs --bundle --platform=neutral --format=esm --log-level=warning --target=es2016
-failures=$((failures + $?))
-
-echo "→ Build browser file (iife)"
-esbuild src/browser.ts --outfile=index.iife.js --bundle --platform=neutral --format=iife --log-level=warning --target=es2016
-failures=$((failures + $?))
-
-echo "→ Build TypeScript declaration file"
-tsc src/index.ts --declaration --emitDeclarationOnly --resolveJsonModule --esModuleInterop --outDir .
+echo "→ Build browser (global) file"
+tsup src/browser.ts --format iife --out-dir . --target es2015 --minify --sourcemap
 failures=$((failures + $?))
 
 echo -e "→ Number of failures: ${failures}"
