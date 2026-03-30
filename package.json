@@ -72,6 +72,6 @@
     "yaml": "^2.8.0"
   },
   "overrides": {
-    "typescript": "$typescript"
+    "typescript": "^6.0.2"
   }
 }
