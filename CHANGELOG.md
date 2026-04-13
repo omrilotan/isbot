@@ -1,5 +1,9 @@
 # Changelog
 
+## [5.1.38](https://github.com/omrilotan/isbot/compare/v5.1.37...v5.1.38)
+
+- Pattern updates
+
 ## [5.1.37](https://github.com/omrilotan/isbot/compare/v5.1.36...v5.1.37)
 
 - Better checking for non empty strings in the interface functions

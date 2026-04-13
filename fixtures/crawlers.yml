@@ -614,6 +614,8 @@ Pinterest:
   - Mozilla/5.0 (compatible; Pinterestbot/1.0; http://www.pinterest.com/bot.html)
 Placid.app:
   - placid.app/v1
+Playwright:
+  - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Playwright/1.40.0
 PocketParser:
   - PocketParser/2.0 (+https://getpocket.com/pocketparser_ua)
 Postman:
@@ -693,6 +695,8 @@ ScreenerBot:
   - ScreenerBot Crawler Beta 2.0 (+http://www.ScreenerBot.com)
 Seekport:
   - Mozilla/5.0 (compatible; Seekport Crawler; http://seekport.com/)
+Selenium:
+  - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36; Selenium
 Semrush Bot:
   - Mozilla/5.0 (compatible; SemrushBot/0.97; +http://www.semrush.com/bot.html)
   - Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25 (compatible; SiteAuditBot/0.97; +http://www.semrush.com/bot.html)
@@ -991,6 +995,7 @@ ZZZ Miscellaneous bots:
 ZZZ Miscellaneous Glitches and Errornous User Agent Strings:
   - "123"
   - <class 'fake_useragent.fake.FakeUserAgent'>
+  - acunetix-product/wvs
   - Chrome
   - default_user_agent
   - ipad
