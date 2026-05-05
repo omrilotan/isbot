@@ -1,5 +1,9 @@
 # Changelog
 
+## [5.1.40](https://github.com/omrilotan/isbot/compare/v5.1.39...v5.1.40)
+
+- Browser entry. Use Object.defineProperty instead of direct assignment
+
 ## [5.1.39](https://github.com/omrilotan/isbot/compare/v5.1.38...v5.1.39)
 
 - Pattern updates

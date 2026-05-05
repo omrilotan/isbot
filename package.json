@@ -1,6 +1,6 @@
 {
   "name": "isbot",
-  "version": "5.1.39",
+  "version": "5.1.40",
   "description": "🤖/👨‍🦰 Recognise bots/crawlers/spiders using the user agent string.",
   "keywords": [
     "bot",
@@ -70,8 +70,5 @@
     "typescript": "^6.0.2",
     "user-agents": "^2.1.4",
     "yaml": "^2.8.0"
-  },
-  "overrides": {
-    "typescript": "^6.0.2"
   }
 }

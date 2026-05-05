@@ -1241,5 +1241,6 @@
   "meta-webindexer/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/crawler)",
   "DuckAssistBot/1.2; (+http://duckduckgo.com/duckassistbot.html)",
   "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; MistralAI-User/1.0; +https://docs.mistral.ai/robots)",
-  "webzio (+https://webz.io/bot.html)"
+  "webzio (+https://webz.io/bot.html)",
+  "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 newsai/1.0 Safari/537.36"
 ]

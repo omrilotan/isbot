@@ -4,20 +4,34 @@ import { isbot } from ".";
 
 (function () {
 	if (typeof globalThis === "object") {
-		globalThis.isbot = isbot;
+		Object.defineProperty(globalThis, "isbot", {
+			value: isbot,
+			enumerable: false,
+			configurable: true,
+		});
 		return;
 	}
 	if (typeof window === "object") {
-		// @ts-expect-error
-		window.isbot = isbot;
+		Object.defineProperty(window, "isbot", {
+			value: isbot,
+			enumerable: false,
+			configurable: true,
+		});
 		return;
 	}
 	if (typeof global === "object") {
-		global.isbot = isbot;
+		Object.defineProperty(global, "isbot", {
+			value: isbot,
+			enumerable: false,
+			configurable: true,
+		});
 		return;
 	}
 	if (typeof self === "object") {
-		// @ts-expect-error
-		self.isbot = isbot;
+		Object.defineProperty(self, "isbot", {
+			value: isbot,
+			enumerable: false,
+			configurable: true,
+		});
 	}
 })();
