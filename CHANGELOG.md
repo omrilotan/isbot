@@ -1,5 +1,10 @@
 # Changelog
 
+## [5.1.41](https://github.com/omrilotan/isbot/compare/v5.1.40...v5.1.41)
+
+- [FIX] Browser entry: was missing from package output
+- Pattern updates
+
 ## [5.1.40](https://github.com/omrilotan/isbot/compare/v5.1.39...v5.1.40)
 
 - Browser entry. Use Object.defineProperty instead of direct assignment

@@ -326,8 +326,12 @@ Google:
   - Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/84.0.4147.108 Safari/537.36
   - mozilla/5.0, google-adwords-express
   - Nokia5800d-1/5.0 (SymbianOS/9.4; Series60/5.3 Nokia5800d-1/111.050.1511; Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1; googleweblight) AppleWebKit/533.4 (KHTML, like Gecko, googleweblight) NokiaBrowser/8.3.7.4 Mobile Safari/533.4 3gpp-gba
+Google DuplexWeb:
+  - Mozilla/5.0 (Linux; Android 8.0; Pixel 2 Build/OPD3.170816.012; DuplexWeb-Google/1.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Mobile Safari/537.36
 Google Favicon:
   - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36 Google Favicon
+Google ghost-rider:
+  - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36 Google-PageRenderer Google (+https://developers.google.com/+/web/snippet/)
 Google PageSpeed Insights:
   - Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_0_1 like Mac OS X; en-us) AppleWebKit/537.4 (KHTML, like Gecko; Google Page Speed Insights) Version/4.0.5 Mobile/8A306 Safari/6531.22.7
 Google Partner Monitoring:
@@ -336,8 +340,6 @@ Google Search Console:
   - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko; Google Search Console) Chrome/41.0.2272.118 Safari/537.36
 Google Structured Data Testing Tool:
   - Google-Structured-Data-Testing-Tool +https://search.google.com/structured-data/testing-tool)
-Googlebot:
-  - Mozilla/5.0 (Linux; Android 8.0; Pixel 2 Build/OPD3.170816.012; DuplexWeb-Google/1.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Mobile Safari/537.36
 Got:
   - got (https://github.com/sindresorhus/got)
 Grapeshot:
