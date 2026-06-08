@@ -117,6 +117,10 @@ Buck:
 BuiltWith:
   - BW/1.1; bit.ly/3eZNDnO
   - BW/1.1; rb.gy/oupwis
+builtwith.com:
+  - BW/1.1; rb.gy/oupwis
+  - BW/1.3; rb.gy/qyzae5
+  - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko; compatible; BW/1.2; rb.gy/oupwis) Chrome/124.0.0.0 Safari/537.36
 Burp Collaborator Scanner:
   - Godzilla/17.0 (Unknown Operator; Nexus 5X Build/MMB29P) NoWebKit/5.36 (DOM, like Rhino; n7vbji2k0wt3rsbev55blgx17sdk8lwek97zvo.burpcollaborator.net) TOR/540.5.35487 Torrent 2654.76
   - http://5iojs2zo8rkhlrrwmm7oyl75twztnlo9ex9kz8o.burpcollaborator.net/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36
@@ -171,6 +175,7 @@ CloudFlare:
   - Mozilla/5.0 (compatible; Cloudflare-AMP/1.0; +https://amp.cloudflare.com/doc/fetcher.html) AppleWebKit/534.34
   - "Mozilla/5.0 (compatible;Cloudflare-Healthchecks/1.0;+https://www.cloudflare.com/; healthcheck-id: f867e0e43eca7aa4)"
   - Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Mobile Safari/537.36 CloudflareObservatory/1.0
+  - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10; rv:60.0) Gecko/20100101 Firefox/60.0 Collapsify
   - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 CloudflareObservatory/1.0
   - mozilla/5.0 (macintosh; intel mac os x 10_15_7) applewebkit/537.36 (khtml, like gecko) chrome/109.0.0.0 safari/537.36 cloudflareobservatory/1.0
   - nginx-ssl early hints
@@ -273,6 +278,7 @@ Flipboard:
   - Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:28.0) Gecko/20100101 Firefox/28.0 (FlipboardProxy/1.6; +http://flipboard.com/browserproxy)
 Foregenix:
   - Foregenix Web Scan 1.100000 (www.foregenix.com/scan)
+  - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko, Foregenix) Chrome/91.0.4472.77 Safari/537.36
 Fuzz Faster U Fool (https://github.com/ffuf/ffuf):
   - Fuzz Faster U Fool v1.5.0-dev
 Generic Bot:
@@ -468,6 +474,9 @@ Magpie-Crawler:
   - magpie-crawler/1.1 (U; Linux amd64; en-GB; +http://www.brandwatch.net)
 Mail.Ru Bot:
   - Mozilla/5.0 (compatible; Linux x86_64; Mail.RU_Bot/Fast/2.0; +http://go.mail.ru/help/robots)
+MarketGoo:
+  - Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:29.0) Gecko/20100101 Firefox/29.0 MarketGoo/2.1
+  - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/600.1.17 (KHTML, like Gecko) Version/7.1 Safari/537.85.10 MarketGoo/2.1
 masscan:
   - masscan/1.0 (https://github.com/robertdavidgraham/masscan)
 Mastodon Bot:
