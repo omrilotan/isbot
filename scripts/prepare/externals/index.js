@@ -10,15 +10,19 @@ const sources = new Map([
 		"https://raw.githubusercontent.com/Kikobeats/top-crawler-agents/master/index.json",
 	],
 	[
-		"monperrus.json",
-		"https://raw.githubusercontent.com/monperrus/crawler-user-agents/master/crawler-user-agents.json",
-	],
-	[
 		"matomo-org.json",
 		"https://raw.githubusercontent.com/matomo-org/device-detector/master/Tests/fixtures/bots.yml",
 	],
-	["user-agents.net.json", "https://user-agents.net/download"],
+	[
+		"monperrus.json",
+		"https://raw.githubusercontent.com/monperrus/crawler-user-agents/master/crawler-user-agents.json",
+	],
 	["myip.ms.json", "http://myip.ms/files/bots/live_webcrawlers.txt"], // Keep getting 495 SSL Certificate Error for HTTPS version
+	[
+		"stephenafamo.json",
+		"https://raw.githubusercontent.com/stephenafamo/isbot/refs/heads/main/crawler-user-agents.json",
+	],
+	["user-agents.net.json", "https://user-agents.net/download"],
 ]);
 
 const { log, warn } = console;
@@ -194,6 +198,27 @@ getters.push(async function myipMs({
 		.split("\n")
 		.map((line) => line.split("records - ")[1])
 		.filter(Boolean);
+	log(`Write ${destination}`);
+	await writeFile(destination, JSON.stringify(list, null, 2) + "\n");
+	return 1;
+});
+
+getters.push(async function stephenAfamo({
+	dir = join(__dirname, ".."),
+	force = false,
+} = {}) {
+	const collection = "stephenafamo.json";
+	const destination = join(dir, collection);
+	if (!force && (await exists(destination))) {
+		log(`Skip ${destination} - Already exists.`);
+		return 0;
+	}
+	log(`Download content for ${destination}`);
+	const response = await fetchWithTimeout(sources.get(collection));
+	if ((await abort(response, collection, destination)) === true) {
+		return 0;
+	}
+	const list = (await response.json()).map(({ instances }) => instances).flat();
 	log(`Write ${destination}`);
 	await writeFile(destination, JSON.stringify(list, null, 2) + "\n");
 	return 1;

@@ -150,11 +150,12 @@ We use external data sources on top of our own lists to keep up to date
 
 ### Crawlers user agents
 
-- [user-agents.net](https://user-agents.net/bots)
-- [monperrus/crawler-user-agents](https://github.com/monperrus/crawler-user-agents/blob/master/crawler-user-agents.json)
 - [Kikobeats/top-crawler-agents](https://github.com/Kikobeats/top-crawler-agents/blob/master/index.json)
-- [myip.ms](https://www.myip.ms/files/bots/live_webcrawlers.txt)
 - [matomo.org](https://github.com/matomo-org/device-detector/blob/master/Tests/fixtures/bots.yml)
+- [monperrus/crawler-user-agents](https://github.com/monperrus/crawler-user-agents/blob/master/crawler-user-agents.json)
+- [myip.ms](https://www.myip.ms/files/bots/live_webcrawlers.txt)
+- [stephenafamo/isbot](https://github.com/stephenafamo/isbot/blob/main/crawler-user-agents.json)
+- [user-agents.net](https://user-agents.net/bots)
 - A Manual list
 
 ### Non bot user agents
