@@ -1,5 +1,7 @@
 // Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
+exports[`isbot features isbotPattern: find first pattern in bot user agent string 1`] = `"(?<! (?:channel/|google/))google(?!(wv|app|/google| pixel))"`;
+
 exports[`isbot module interface interface is as expected 1`] = `
 [
   [
