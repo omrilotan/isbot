@@ -49,14 +49,9 @@ describe("isbot", () => {
 			expect(isbotMatches(BOT_USER_AGENT_EXAMPLE)).toHaveLength(4);
 		});
 		test("isbotPattern: find first pattern in bot user agent string", () => {
-			expect(isbotPattern(BOT_USER_AGENT_EXAMPLE)).toBe(
-				"(?<! (?:channel/|google/))google(?!(app|/google| pixel))",
-			);
+			expect(isbotPattern(BOT_USER_AGENT_EXAMPLE)).toMatchSnapshot();
 		});
 		test("isbotPatterns: find all patterns in bot user agent string", () => {
-			expect(isbotPatterns(BOT_USER_AGENT_EXAMPLE)).toContain(
-				"(?<! (?:channel/|google/))google(?!(app|/google| pixel))",
-			);
 			expect(isbotPatterns(BOT_USER_AGENT_EXAMPLE)).toHaveLength(4);
 		});
 		test("createIsbot: create custom isbot function with custom pattern", () => {

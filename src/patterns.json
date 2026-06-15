@@ -2,7 +2,7 @@
   " daum[ /]",
   " deusu/",
   "(?:^|[^g])news(?!sapphire)",
-  "(?<! (?:channel/|google/))google(?!(app|/google| pixel))",
+  "(?<! (?:channel/|google/))google(?!(wv|app|/google| pixel))",
   "(?<! cu)bots?(?:\\b|_)",
   "(?<!(?:lib))http",
   "(?<!cam)scan",
