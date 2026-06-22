@@ -23,9 +23,6 @@ Akregator:
   - Akregator/1.2.9; librss/remnants
 AlertSite Monitoring:
   - Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0 DejaClick/2.9.7.2
-Alexa:
-  - ia_archiver (+http://www.alexa.com/site/help/webmasters; crawler@alexa.com)
-  - Mozilla/5.0 (compatible; alexa site audit/1.0; http://www.alexa.com/help/webmasters; )
 Amaya:
   - amaya/10 libwww/5.4.0
 Amazon:
@@ -56,8 +53,6 @@ ArchiveBox:
   - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.61 Safari/537.36 ArchiveBox/0.6.2
   - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.61 Safari/537.36 ArchiveBox/{VERSION} (+https://github.com/ArchiveBox/ArchiveBox/)
   - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/605.1.15 ArchiveBox/{VERSION} (+https://github.com/ArchiveBox/ArchiveBox/)
-Ask Jeeves:
-  - Mozilla/2.0 (compatible; Ask Jeeves/Teoma)
 AspiegelBot:
   - Mozilla/5.0 (Linux; Android 7.0;) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Safari/537.36 (compatible; AspiegelBot)
 Awario:
@@ -83,8 +78,6 @@ BitlyBot:
   - bitlybot/3.0
 Bitrix:
   - Bitrix link preview
-Blekkobot:
-  - Mozilla/5.0 (compatible; Blekkobot; ScoutJet; +http://blekko.com/about/blekkobot)
 BLEXBot Crawler:
   - Mozilla/5.0 (compatible; BLEXBot/1.0; +http://webmeup-crawler.com/)
 Bloglovin:
@@ -256,9 +249,6 @@ Embedly:
   - Mozilla/5.0 (compatible; Embedly/0.2; +http://support.embed.ly/)
 evc-batch:
   - Mozilla/5.0 (compatible; evc-batch/2.0)
-Exabot:
-  - Mozilla/5.0 (compatible; Exabot/3.0; +http://www.exabot.com/go/robot)
-  - Mozilla/5.0 (compatible; Konqueror/3.5; Linux) KHTML/3.5.5 (like Gecko) (Exabot-Thumbnails)
 ExactSeek Crawler:
   - ExactSeek Crawler (nutch 1.4)/Nutch-1.4 (ExactSeek Crawler; http://www.exactseek.com)
 Expanse:
@@ -306,6 +296,7 @@ Google:
   - Dalvik/2.1.0 (Linux; U; Android 5.1.1_r1; Samsung Galaxy S4 Build/SGH-I337M)(googleweblight)
   - FeedFetcher-Google; (+http://www.google.com/feedfetcher.html)
   - Google-Cloud-Tasks
+  - Google-Cloud-Scheduler
   - Google-Display-Ads-Bot
   - GoogleAssociationService
   - Googlebot-Image/1.0
@@ -448,8 +439,6 @@ Kuberneters:
   - kube-probe/1.15
 l9tcpid (github.com/LeakIX/l9tcpid):
   - l9tcpid/v1.1.0
-Larbin web crawler:
-  - larbin_2.6.3 larbin2.6.3@unspecified.mail
 LCC:
   - LCC (+http://corpora.informatik.uni-leipzig.de/crawler_faq.html)
 Let's Encrypt Validation:

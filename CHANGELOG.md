@@ -1,5 +1,10 @@
 # Changelog
 
+## [5.1.44](https://github.com/omrilotan/isbot/compare/v5.1.43...v5.1.44)
+
+- Pattern updates
+- Maintenance: remove defunct services from crawlers list
+
 ## [5.1.43](https://github.com/omrilotan/isbot/compare/v5.1.42...v5.1.43)
 
 - Pattern updates
