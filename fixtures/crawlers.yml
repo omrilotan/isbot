@@ -295,8 +295,8 @@ Google:
   - "AppEngine-Google; (+http://code.google.com/appengine; appid: s~snapchat-proxy)"
   - Dalvik/2.1.0 (Linux; U; Android 5.1.1_r1; Samsung Galaxy S4 Build/SGH-I337M)(googleweblight)
   - FeedFetcher-Google; (+http://www.google.com/feedfetcher.html)
-  - Google-Cloud-Tasks
   - Google-Cloud-Scheduler
+  - Google-Cloud-Tasks
   - Google-Display-Ads-Bot
   - GoogleAssociationService
   - Googlebot-Image/1.0
