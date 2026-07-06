@@ -1,4 +1,4 @@
-import { isBot, getBotMatch, getBotPatterns, getPattern } from "../index.js";
+import { isBot, findBotMatch, findBotPatterns, getPattern } from "../index.js";
 
 {
 	const textarea = document.querySelector("textarea") as HTMLTextAreaElement;
@@ -44,8 +44,8 @@ import { isBot, getBotMatch, getBotPatterns, getPattern } from "../index.js";
 		const is = isBot(ua);
 
 		if (is) {
-			const found = getBotMatch(ua) as string;
-			const patterns = getBotPatterns(ua);
+			const found = findBotMatch(ua) as string;
+			const patterns = findBotPatterns(ua);
 			const pattern = patterns.find((pattern: string): boolean =>
 				new RegExp(pattern, "i").test(found),
 			) as string;

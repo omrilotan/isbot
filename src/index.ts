@@ -59,14 +59,14 @@ export const createIsBotFromList = (list: string[]): typeof isBot => {
 /**
  * Find the first part of the user agent that matches a bot pattern.
  */
-export const getBotMatch = (
+export const findBotMatch = (
 	userAgent: Parameters<typeof isBot>[0],
 ): string | null => userAgent?.match(getPattern())?.[0] ?? null;
 
 /**
  * Find all parts of the user agent that match a bot pattern.
  */
-export const getBotMatches = (
+export const findBotMatches = (
 	userAgent: Parameters<typeof isBot>[0],
 ): string[] =>
 	list
@@ -76,7 +76,7 @@ export const getBotMatches = (
 /**
  * Find the first bot pattern that match the given user agent.
  */
-export const getBotPattern = (
+export const findBotPattern = (
 	userAgent: Parameters<typeof isBot>[0],
 ): string | null =>
 	userAgent
@@ -86,7 +86,7 @@ export const getBotPattern = (
 /**
  * Find all bot patterns that match the given user agent.
  */
-export const getBotPatterns = (
+export const findBotPatterns = (
 	userAgent: Parameters<typeof isBot>[0],
 ): string[] =>
 	userAgent
@@ -116,16 +116,16 @@ export const createIsbotFromList = createIsBotFromList;
 /**
  * Find the first part of the user agent that matches a bot pattern.
  */
-export const isbotMatch = getBotMatch;
+export const isbotMatch = findBotMatch;
 /**
  * Find all parts of the user agent that match a bot pattern.
  */
-export const isbotMatches = getBotMatches;
+export const isbotMatches = findBotMatches;
 /**
  * Find the first bot pattern that match the given user agent.
  */
-export const isbotPattern = getBotPattern;
+export const isbotPattern = findBotPattern;
 /**
  * Find all bot patterns that match the given user agent.
  */
-export const isbotPatterns = getBotPatterns;
+export const isbotPatterns = findBotPatterns;

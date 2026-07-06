@@ -13,10 +13,10 @@
 | isbotNaive          | isBotNaive          |
 | createIsbot         | createIsBot         |
 | createIsbotFromList | createIsBotFromList |
-| isbotMatch          | getBotMatch         |
-| isbotMatches        | getBotMatches       |
-| isbotPattern        | getBotPattern       |
-| isbotPatterns       | getBotPatterns      |
+| isbotMatch          | findBotMatch        |
+| isbotMatches        | findBotMatches      |
+| isbotPattern        | findBotPattern      |
+| isbotPatterns       | findBotPatterns     |
 
 > † _All old names are still available for backwards compatibility, but can be deprecated in future major versions._
 

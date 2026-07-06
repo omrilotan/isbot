@@ -72,10 +72,10 @@ UMD
 | isBotNaive          | _(string?): boolean_             | Check if the user agent is a bot using a naive pattern (less accurate)       |
 | getPattern          | (): _RegExp_                     | The regular expression used to identify bots                                 |
 | list                | _string[]_                       | List of all individual pattern parts                                         |
-| getBotMatch         | _(string?): string \| null_      | The substring matched by the regular expression                              |
-| getBotMatches       | _(string?): string[]_            | All substrings matched by the regular expression                             |
-| getBotPattern       | _(string?): string \| null_      | The regular expression used to identify bot substring in the user agent      |
-| getBotPatterns      | _(string?): string[]_            | All regular expressions used to identify bot substrings in the user agent    |
+| findBotMatch        | _(string?): string \| null_      | The substring matched by the regular expression                              |
+| findBotMatches      | _(string?): string[]_            | All substrings matched by the regular expression                             |
+| findBotPattern      | _(string?): string \| null_      | The regular expression used to identify bot substring in the user agent      |
+| findBotPatterns     | _(string?): string[]_            | All regular expressions used to identify bot substrings in the user agent    |
 | createIsBot         | _(RegExp): (string?): boolean_   | Create a custom isBot function                                               |
 | createIsBotFromList | _(string[]): (string?): boolean_ | Create a custom isBot function from a list of string representation patterns |
 
@@ -84,14 +84,14 @@ UMD
 Create a custom `isBot` that does not consider Chrome Lighthouse user agent as bots.
 
 ```ts
-import { createIsBotFromList, getBotPatterns, list } from "isbot";
+import { createIsBotFromList, findBotPatterns, list } from "isbot";
 
 const ChromeLighthouseUserAgentStrings: string[] = [
   "mozilla/5.0 (macintosh; intel mac os x 10_15_7) applewebkit/537.36 (khtml, like gecko) chrome/94.0.4590.2 safari/537.36 chrome-lighthouse",
   "mozilla/5.0 (linux; android 7.0; moto g (4)) applewebkit/537.36 (khtml, like gecko) chrome/94.0.4590.2 mobile safari/537.36 chrome-lighthouse",
 ];
 const patternsToRemove = new Set<string>(
-  ChromeLighthouseUserAgentStrings.map(getBotPatterns).flat(),
+  ChromeLighthouseUserAgentStrings.map(findBotPatterns).flat(),
 );
 const isbot: (ua: string) => boolean = createIsBotFromList(
   list.filter(
@@ -177,10 +177,10 @@ Drop support to legacy names. Use the following table to update your code:
 | isbotNaive          | isBotNaive          |
 | createIsbot         | createIsBot         |
 | createIsbotFromList | createIsBotFromList |
-| isbotMatch          | getBotMatch         |
-| isbotMatches        | getBotMatches       |
-| isbotPattern        | getBotPattern       |
-| isbotPatterns       | getBotPatterns      |
+| isbotMatch          | findBotMatch        |
+| isbotMatches        | findBotMatches      |
+| isbotPattern        | findBotPattern      |
+| isbotPatterns       | findBotPatterns     |
 
 ### [**Version 5**](https://github.com/omrilotan/isbot/releases/tag/v5.0.0)
 
