@@ -31,27 +31,27 @@ export const list: string[] = patternsList;
 /**
  * Check if the given user agent includes a bot pattern.
  */
-export function isbot(userAgent?: string | null): boolean {
+export function isBot(userAgent?: string | null): boolean {
 	return isNonEmptyString(userAgent) && getPattern().test(userAgent);
 }
 
 /**
  * Check if the given user agent includes a bot pattern. Naive implementation (less accurate).
  */
-export const isbotNaive: typeof isbot = (userAgent) =>
+export const isBotNaive: typeof isBot = (userAgent) =>
 	isNonEmptyString(userAgent) && naivePattern.test(userAgent);
 
 /**
- * Create a custom isbot function with a custom pattern.
+ * Create a custom isBot function with a custom pattern.
  */
-export const createIsbot: (customPattern: RegExp) => typeof isbot =
+export const createIsBot: (customPattern: RegExp) => typeof isBot =
 	(customPattern) => (userAgent) =>
 		isNonEmptyString(userAgent) && customPattern.test(userAgent);
 
 /**
- * Create a custom isbot function with a custom pattern.
+ * Create a custom isBot function with a custom pattern.
  */
-export const createIsbotFromList = (list: string[]): typeof isbot => {
+export const createIsBotFromList = (list: string[]): typeof isBot => {
 	const pattern = new RegExp(list.join("|"), "i");
 	return (userAgent) => isNonEmptyString(userAgent) && pattern.test(userAgent);
 };
@@ -59,15 +59,15 @@ export const createIsbotFromList = (list: string[]): typeof isbot => {
 /**
  * Find the first part of the user agent that matches a bot pattern.
  */
-export const isbotMatch = (
-	userAgent: Parameters<typeof isbot>[0],
+export const getBotMatch = (
+	userAgent: Parameters<typeof isBot>[0],
 ): string | null => userAgent?.match(getPattern())?.[0] ?? null;
 
 /**
  * Find all parts of the user agent that match a bot pattern.
  */
-export const isbotMatches = (
-	userAgent: Parameters<typeof isbot>[0],
+export const getBotMatches = (
+	userAgent: Parameters<typeof isBot>[0],
 ): string[] =>
 	list
 		.map((part) => userAgent?.match(new RegExp(part, "i"))?.[0])
@@ -76,8 +76,8 @@ export const isbotMatches = (
 /**
  * Find the first bot pattern that match the given user agent.
  */
-export const isbotPattern = (
-	userAgent: Parameters<typeof isbot>[0],
+export const getBotPattern = (
+	userAgent: Parameters<typeof isBot>[0],
 ): string | null =>
 	userAgent
 		? (list.find((pattern) => new RegExp(pattern, "i").test(userAgent)) ?? null)
@@ -86,9 +86,46 @@ export const isbotPattern = (
 /**
  * Find all bot patterns that match the given user agent.
  */
-export const isbotPatterns = (
-	userAgent: Parameters<typeof isbot>[0],
+export const getBotPatterns = (
+	userAgent: Parameters<typeof isBot>[0],
 ): string[] =>
 	userAgent
 		? list.filter((pattern) => new RegExp(pattern, "i").test(userAgent))
 		: [];
+
+/////////////////////////////////////
+// Aliases: Backward Compatibility //
+/////////////////////////////////////
+
+/**
+ * Check if the given user agent includes a bot pattern.
+ */
+export const isbot = isBot;
+/**
+ * Check if the given user agent includes a bot pattern. Naive implementation (less accurate).
+ */
+export const isbotNaive = isBotNaive;
+/**
+ * Create a custom isBot function with a custom pattern.
+ */
+export const createIsbot = createIsBot;
+/**
+ * Create a custom isBot function with a custom pattern.
+ */
+export const createIsbotFromList = createIsBotFromList;
+/**
+ * Find the first part of the user agent that matches a bot pattern.
+ */
+export const isbotMatch = getBotMatch;
+/**
+ * Find all parts of the user agent that match a bot pattern.
+ */
+export const isbotMatches = getBotMatches;
+/**
+ * Find the first bot pattern that match the given user agent.
+ */
+export const isbotPattern = getBotPattern;
+/**
+ * Find all bot patterns that match the given user agent.
+ */
+export const isbotPatterns = getBotPatterns;

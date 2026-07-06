@@ -24,8 +24,8 @@ describe("efficiency", () => {
 					const temp = clone();
 					const [rule] = temp.splice(length, 1);
 					const pattern = new RegExp(temp.join("|"), "i");
-					const isbot = (ua: string): boolean => pattern.test(ua);
-					const unmatched = crawlers.filter(isbot);
+					const isBot = (ua: string): boolean => pattern.test(ua);
+					const unmatched = crawlers.filter(isBot);
 
 					if (crawlers.length - unmatched.length === 0) {
 						redundantRules.push(rule);
@@ -64,8 +64,8 @@ describe("efficiency", () => {
 					}
 					temp.push(`^${rule}`);
 					const pattern = new RegExp(temp.join("|"), "i");
-					const isbot = (ua: string): boolean => pattern.test(ua);
-					const unmatched = crawlers.filter(isbot);
+					const isBot = (ua: string): boolean => pattern.test(ua);
+					const unmatched = crawlers.filter(isBot);
 
 					if (unmatched.length === crawlers.length) {
 						rulesWithNoHat.push(rule);
