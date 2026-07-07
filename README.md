@@ -17,26 +17,26 @@ npm i isbot
 Straightforward usage
 
 ```ts
-import { isbot } from "isbot";
+import { isBot } from "isbot";
 
 // Request
-isbot(request.headers.get("User-Agent"));
+isBot(request.headers.get("User-Agent"));
 
 // Nodejs HTTP
-isbot(request.getHeader("User-Agent"));
+isBot(request.getHeader("User-Agent"));
 
 // ExpressJS
-isbot(req.get("user-agent"));
+isBot(req.get("user-agent"));
 
 // Browser
-isbot(navigator.userAgent);
+isBot(navigator.userAgent);
 
 // User Agent string
-isbot(
+isBot(
   "Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
 ); // true
 
-isbot(
+isBot(
   "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36",
 ); // false
 ```
@@ -49,8 +49,8 @@ ESM
 
 ```html
 <script type="module">
-  import { isbot } from "https://cdn.jsdelivr.net/npm/isbot@5/+esm";
-  isbot(navigator.userAgent);
+  import { isBot } from "https://cdn.jsdelivr.net/npm/isbot@5/+esm";
+  isBot(navigator.userAgent);
 </script>
 ```
 
@@ -59,8 +59,8 @@ UMD
 ```html
 <script src="https://cdn.jsdelivr.net/npm/isbot@5"></script>
 <script>
-  // isbot is now global
-  isbot(navigator.userAgent);
+  // isBot is now global
+  isBot(navigator.userAgent);
 </script>
 ```
 
@@ -68,44 +68,44 @@ UMD
 
 | import              | Type                             | Description                                                                  |
 | ------------------- | -------------------------------- | ---------------------------------------------------------------------------- |
-| isbot               | _(string?): boolean_             | Check if the user agent is a bot                                             |
-| isbotNaive          | _(string?): boolean_             | Check if the user agent is a bot using a naive pattern (less accurate)       |
+| isBot               | _(string?): boolean_             | Check if the user agent is a bot                                             |
+| isBotNaive          | _(string?): boolean_             | Check if the user agent is a bot using a naive pattern (less accurate)       |
 | getPattern          | (): _RegExp_                     | The regular expression used to identify bots                                 |
 | list                | _string[]_                       | List of all individual pattern parts                                         |
-| isbotMatch          | _(string?): string \| null_      | The substring matched by the regular expression                              |
-| isbotMatches        | _(string?): string[]_            | All substrings matched by the regular expression                             |
-| isbotPattern        | _(string?): string \| null_      | The regular expression used to identify bot substring in the user agent      |
-| isbotPatterns       | _(string?): string[]_            | All regular expressions used to identify bot substrings in the user agent    |
-| createIsbot         | _(RegExp): (string?): boolean_   | Create a custom isbot function                                               |
-| createIsbotFromList | _(string[]): (string?): boolean_ | Create a custom isbot function from a list of string representation patterns |
+| findBotMatch        | _(string?): string \| null_      | The substring matched by the regular expression                              |
+| findBotMatches      | _(string?): string[]_            | All substrings matched by the regular expression                             |
+| findBotPattern      | _(string?): string \| null_      | The regular expression used to identify bot substring in the user agent      |
+| findBotPatterns     | _(string?): string[]_            | All regular expressions used to identify bot substrings in the user agent    |
+| createIsBot         | _(RegExp): (string?): boolean_   | Create a custom isBot function                                               |
+| createIsBotFromList | _(string[]): (string?): boolean_ | Create a custom isBot function from a list of string representation patterns |
 
 ## Example usages of helper functions
 
-Create a custom `isbot` that does not consider Chrome Lighthouse user agent as bots.
+Create a custom `isBot` that does not consider Chrome Lighthouse user agent as bots.
 
 ```ts
-import { createIsbotFromList, isbotPatterns, list } from "isbot";
+import { createIsBotFromList, findBotPatterns, list } from "isbot";
 
 const ChromeLighthouseUserAgentStrings: string[] = [
   "mozilla/5.0 (macintosh; intel mac os x 10_15_7) applewebkit/537.36 (khtml, like gecko) chrome/94.0.4590.2 safari/537.36 chrome-lighthouse",
   "mozilla/5.0 (linux; android 7.0; moto g (4)) applewebkit/537.36 (khtml, like gecko) chrome/94.0.4590.2 mobile safari/537.36 chrome-lighthouse",
 ];
 const patternsToRemove = new Set<string>(
-  ChromeLighthouseUserAgentStrings.map(isbotPatterns).flat(),
+  ChromeLighthouseUserAgentStrings.map(findBotPatterns).flat(),
 );
-const isbot: (ua: string) => boolean = createIsbotFromList(
+const isbot: (ua: string) => boolean = createIsBotFromList(
   list.filter(
     (record: string): boolean => patternsToRemove.has(record) === false,
   ),
 );
 ```
 
-Create a custom isbot that considers another pattern as a bot, which is not included in the package originally.
+Create a custom isBot that considers another pattern as a bot, which is not included in the package originally.
 
 ```ts
-import { createIsbotFromList, list } from "isbot";
+import { createIsBotFromList, list } from "isbot";
 
-const isbot = createIsbotFromList(list.concat("shmulik"));
+const isBot = createIsBotFromList(list.concat("shmulik"));
 ```
 
 ## Definitions
@@ -116,11 +116,11 @@ const isbot = createIsbotFromList(list.concat("shmulik"));
 
 ## Clarifications
 
-### What does "isbot" do?
+### What does "isBot" do?
 
 This package aims to identify "Good bots". Those who voluntarily identify themselves by setting a unique, preferably descriptive, user agent, usually by setting a dedicated request header.
 
-### What doesn't "isbot" do?
+### What doesn't "isBot" do?
 
 It does not try to recognise malicious bots or programs disguising themselves as real users.
 
@@ -134,9 +134,9 @@ Recognising good bots such as web crawlers is useful for multiple purposes. Alth
 
 > It is not recommended to **whitelist** requests for any reason based on user agent header only. Instead, other methods of identification can be added such as [reverse dns lookup](https://www.npmjs.com/package/reverse-dns-lookup).
 
-## How `isbot` maintains accuracy
+## How `isBot` maintains accuracy
 
-`isbot` is an asset when it can most accurately identify bots by the user agent string. It uses expansive and regularly updated lists of user agent strings to create a regular expression that matches bots and only bots.
+`isBot` is an asset when it can most accurately identify bots by the user agent string. It uses expansive and regularly updated lists of user agent strings to create a regular expression that matches bots and only bots.
 
 And above everything else, it is maintained by a community of contributers who help keep the list up to date.
 
@@ -166,6 +166,21 @@ We use external data sources on top of our own lists to keep up to date
 Missing something? Please [open an issue](https://github.com/omrilotan/isbot/issues/new/choose)
 
 ## Major releases breaking changes ([full changelog](./CHANGELOG.md))
+
+### Not yet scheduled: **Next Version (6)**
+
+Drop support to legacy names. Use the following table to update your code:
+
+| Old Name            | New Name            |
+| ------------------- | ------------------- |
+| isbot               | isBot               |
+| isbotNaive          | isBotNaive          |
+| createIsbot         | createIsBot         |
+| createIsbotFromList | createIsBotFromList |
+| isbotMatch          | findBotMatch        |
+| isbotMatches        | findBotMatches      |
+| isbotPattern        | findBotPattern      |
+| isbotPatterns       | findBotPatterns     |
 
 ### [**Version 5**](https://github.com/omrilotan/isbot/releases/tag/v5.0.0)
 

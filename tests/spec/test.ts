@@ -1,18 +1,27 @@
 import {
+	createIsbot,
+	createIsBot,
+	createIsbotFromList,
+	createIsBotFromList,
+	findBotMatch,
+	findBotMatches,
+	findBotPattern,
+	findBotPatterns,
 	getPattern,
-	list,
 	isbot,
-	isbotNaive,
+	isBot,
 	isbotMatch,
 	isbotMatches,
+	isbotNaive,
+	isBotNaive,
 	isbotPattern,
 	isbotPatterns,
-	createIsbot,
-	createIsbotFromList,
+	list,
 } from "../../src";
+import { readFile } from "node:fs/promises";
 import { fullPattern } from "../../src/pattern";
 import { crawlers, browsers } from "../../fixtures";
-let isbotInstance: any;
+let isBotInstance: any;
 
 const BOT_USER_AGENT_EXAMPLE =
 	"Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)";
@@ -29,7 +38,7 @@ const USER_AGENT_GOTCHAS = [
 	"PS4Application libhttp/1.000 (PS4) CoreMedia libhttp/6.72 (PlayStation 4)",
 ];
 
-describe("isbot", () => {
+describe("isBot", () => {
 	describe("features", () => {
 		test("pattern: pattern is a regex", () => {
 			expect(getPattern()).toBeInstanceOf(RegExp);
@@ -38,61 +47,61 @@ describe("isbot", () => {
 			expect(list).toBeInstanceOf(Array);
 			expect(list.every((item) => typeof item === "string")).toBe(true);
 		});
-		test("isbot: bot user agect string is recognised as bot", () => {
-			expect(isbot(BOT_USER_AGENT_EXAMPLE)).toBe(true);
+		test("isBot: bot user agent string is recognised as bot", () => {
+			expect(isBot(BOT_USER_AGENT_EXAMPLE)).toBe(true);
 		});
-		test("isbotMatch: find pattern in bot user agent string", () => {
-			expect(isbotMatch(BOT_USER_AGENT_EXAMPLE)).toBe("Google");
+		test("findBotMatch: find pattern in bot user agent string", () => {
+			expect(findBotMatch(BOT_USER_AGENT_EXAMPLE)).toBe("Google");
 		});
-		test("isbotMatches: find all patterns in bot user agent string", () => {
-			expect(isbotMatches(BOT_USER_AGENT_EXAMPLE)).toContain("Google");
-			expect(isbotMatches(BOT_USER_AGENT_EXAMPLE)).toHaveLength(4);
+		test("findBotMatches: find all patterns in bot user agent string", () => {
+			expect(findBotMatches(BOT_USER_AGENT_EXAMPLE)).toContain("Google");
+			expect(findBotMatches(BOT_USER_AGENT_EXAMPLE)).toHaveLength(4);
 		});
-		test("isbotPattern: find first pattern in bot user agent string", () => {
-			expect(isbotPattern(BOT_USER_AGENT_EXAMPLE)).toMatchSnapshot();
+		test("findBotPattern: find first pattern in bot user agent string", () => {
+			expect(findBotPattern(BOT_USER_AGENT_EXAMPLE)).toMatchSnapshot();
 		});
-		test("isbotPatterns: find all patterns in bot user agent string", () => {
-			expect(isbotPatterns(BOT_USER_AGENT_EXAMPLE)).toHaveLength(4);
+		test("findBotPatterns: find all patterns in bot user agent string", () => {
+			expect(findBotPatterns(BOT_USER_AGENT_EXAMPLE)).toHaveLength(4);
 		});
-		test("createIsbot: create custom isbot function with custom pattern", () => {
-			const customIsbot = createIsbot(/bot/i);
-			expect(customIsbot(BOT_USER_AGENT_EXAMPLE)).toBe(true);
+		test("createIsBot: create custom isBot function with custom pattern", () => {
+			const customIsBot = createIsBot(/bot/i);
+			expect(customIsBot(BOT_USER_AGENT_EXAMPLE)).toBe(true);
 		});
-		test("createIsbotFromList: create custom isbot function with custom pattern", () => {
+		test("createIsBotFromList: create custom isBot function with custom pattern", () => {
 			const ChromeLighthouseUserAgentStrings: string[] = [
 				"mozilla/5.0 (macintosh; intel mac os x 10_15_7) applewebkit/537.36 (khtml, like gecko) chrome/94.0.4590.2 safari/537.36 chrome-lighthouse",
 				"mozilla/5.0 (linux; android 7.0; moto g (4)) applewebkit/537.36 (khtml, like gecko) chrome/94.0.4590.2 mobile safari/537.36 chrome-lighthouse",
 			];
 			const patternsToRemove: Set<string> = new Set(
-				ChromeLighthouseUserAgentStrings.map(isbotPatterns).flat(),
+				ChromeLighthouseUserAgentStrings.map(findBotPatterns).flat(),
 			);
-			const isbot2 = createIsbotFromList(
+			const isBot2 = createIsBotFromList(
 				list.filter(
 					(record: string): boolean => patternsToRemove.has(record) === false,
 				),
 			);
 			const [ua] = ChromeLighthouseUserAgentStrings;
-			expect(isbot(ua)).toBe(true);
-			expect(isbot2(ua)).toBe(false);
+			expect(isBot(ua)).toBe(true);
+			expect(isBot2(ua)).toBe(false);
 		});
 		test.each([null, undefined, ""])(
 			"all functions can accept %p",
 			(value: string | null | undefined) => {
-				expect(isbot(value)).toBe(false);
-				expect(isbotMatch(value)).toBe(null);
-				expect(isbotMatches(value)).toEqual([]);
-				expect(isbotPattern(value)).toBe(null);
-				expect(isbotPatterns(value)).toEqual([]);
+				expect(isBot(value)).toBe(false);
+				expect(findBotMatch(value)).toBe(null);
+				expect(findBotMatches(value)).toEqual([]);
+				expect(findBotPattern(value)).toBe(null);
+				expect(findBotPatterns(value)).toEqual([]);
 			},
 		);
 	});
 
-	describe("isbotNaive", () => {
+	describe("isBotNaive", () => {
 		test.each([75])(
 			"a large number of user agent strings can be detected (>%s%)",
 			(percent) => {
 				const ratio =
-					crawlers.filter((ua) => isbotNaive(ua)).length / crawlers.length;
+					crawlers.filter((ua) => isBotNaive(ua)).length / crawlers.length;
 				expect(ratio).toBeLessThan(1);
 				expect(ratio).toBeGreaterThan(percent / 100);
 			},
@@ -101,7 +110,7 @@ describe("isbot", () => {
 			"a small number of browsers is falsly detected as bots (<%s%)",
 			(percent) => {
 				const ratio =
-					browsers.filter((ua) => isbotNaive(ua)).length / browsers.length;
+					browsers.filter((ua) => isBotNaive(ua)).length / browsers.length;
 				expect(ratio).toBeGreaterThan(0);
 				expect(ratio).toBeLessThan(percent / 100);
 			},
@@ -122,27 +131,27 @@ describe("isbot", () => {
 			if (!mdl) {
 				throw new Error("Module not found");
 			}
-			isbotInstance = mdl.isbot as ReturnType<typeof createIsbot>;
+			isBotInstance = mdl.isBot as ReturnType<typeof createIsBot>;
 		});
 		afterAll(() => {
 			jest.restoreAllMocks();
 		});
 		test("fallback regex detects commong crawlers", () => {
 			USER_AGENT_COMMON.forEach((ua) => {
-				if (!isbotInstance(ua)) {
+				if (!isBotInstance(ua)) {
 					throw new Error(`Failed to detect ${ua} as bot`);
 				}
 			});
 		});
 		test("fallback detects gotchas as bots", () => {
 			USER_AGENT_GOTCHAS.forEach((ua) => {
-				if (!isbotInstance(ua)) {
+				if (!isBotInstance(ua)) {
 					throw new Error(`Failed to detect ${ua} as bot (gotcha)`);
 				}
 			});
 		});
 		test("fallback does not detect browser as bot", () => {
-			expect(isbotInstance(BROWSER_USER_AGENT_EXAMPLE)).toBe(false);
+			expect(isBotInstance(BROWSER_USER_AGENT_EXAMPLE)).toBe(false);
 		});
 	});
 
@@ -151,7 +160,7 @@ describe("isbot", () => {
 			let successCount = 0;
 			let misidentifiedStrings: string[] = [];
 			crawlers.forEach((crawler) => {
-				if (isbot(crawler)) {
+				if (isBot(crawler)) {
 					successCount++;
 				} else {
 					misidentifiedStrings.push(crawler);
@@ -164,7 +173,7 @@ describe("isbot", () => {
 			let successCount = 0;
 			let misidentifiedStrings: string[] = [];
 			browsers.forEach((browser) => {
-				if (isbot(browser)) {
+				if (isBot(browser)) {
 					misidentifiedStrings.push(browser);
 				} else {
 					successCount++;
@@ -173,6 +182,59 @@ describe("isbot", () => {
 			expect(misidentifiedStrings).toEqual([]);
 			expect(successCount).toBe(browsers.length);
 		});
+	});
+
+	describe("aliases", () => {
+		test.each([
+			[isbot, isBot],
+			[isbotNaive, isBotNaive],
+			[createIsbot, createIsBot],
+			[createIsbotFromList, createIsBotFromList],
+			[isbotMatch, findBotMatch],
+			[isbotMatches, findBotMatches],
+			[isbotPattern, findBotPattern],
+			[isbotPatterns, findBotPatterns],
+		])("alias %p is the same as %p", (alias, original) => {
+			expect(alias).toBe(original);
+		});
+
+		test.each(["index.d.ts", "index.d.mts"])(
+			"TypeScript descriptions match for aliases in %s",
+			async (fileName) => {
+				const declarations = await readFile(fileName, "utf8");
+				const descriptions = new Map(
+					Array.from(
+						declarations.matchAll(
+							/\/\*\*\s*\n((?:\s*\*.*\n)+)\s*\*\/\s+declare (?:function|const) (\w+)\b/g,
+						),
+					).map(([, description, name]) => [
+						name,
+						description
+							.split("\n")
+							.map((line) => line.replace(/^\s*\*\s?/, "").trimEnd())
+							.join(" ")
+							.trim(),
+					]),
+				);
+				const getDescription = (name: string): string => {
+					return descriptions.get(name) ?? "";
+				};
+				[
+					["isbot", "isBot"],
+					["isbotNaive", "isBotNaive"],
+					["createIsbot", "createIsBot"],
+					["createIsbotFromList", "createIsBotFromList"],
+					["isbotMatch", "findBotMatch"],
+					["isbotMatches", "findBotMatches"],
+					["isbotPattern", "findBotPattern"],
+					["isbotPatterns", "findBotPatterns"],
+				].forEach(([alias, original]) => {
+					const originalDescription = getDescription(original);
+					expect(originalDescription).not.toBe("");
+					expect(getDescription(alias)).toBe(originalDescription);
+				});
+			},
+		);
 	});
 
 	describe("module interface", () => {

@@ -1,5 +1,25 @@
 # Changelog
 
+## [5.2.0](https://github.com/omrilotan/isbot/compare/v5.1.44...v5.2.0)
+
+- Rename all imports but keep backwards compatibility with the old names. The new names are more consistent with common Javascript naming conventions. **No breaking changes**.
+- Pattern updates
+
+### New Names Map
+
+| Old Name            | New Name            |
+| ------------------- | ------------------- |
+| isbot               | isBot               |
+| isbotNaive          | isBotNaive          |
+| createIsbot         | createIsBot         |
+| createIsbotFromList | createIsBotFromList |
+| isbotMatch          | findBotMatch        |
+| isbotMatches        | findBotMatches      |
+| isbotPattern        | findBotPattern      |
+| isbotPatterns       | findBotPatterns     |
+
+> † _All old names are still available for backwards compatibility, but can be deprecated in future major versions._
+
 ## [5.1.44](https://github.com/omrilotan/isbot/compare/v5.1.43...v5.1.44)
 
 - Pattern updates

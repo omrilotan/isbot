@@ -8,13 +8,13 @@
           3% { transform: scaleY(1) }
           100% { transform: scaleY(1) }
         }
-        #isbot {
+        #isBot {
           height: 200px;
           width: 200px;
           position: relative;
           float: left;
         }
-        #isbot .bg {
+        #isBot .bg {
           height: 150px;
           width: 150px;
           background: rgb(127, 140, 141);
@@ -25,13 +25,13 @@
           left: 0;
           overflow: hidden;
         }
-        #isbot > div, #isbot .bg > div { position: absolute; }
-        #isbot div {
+        #isBot > div, #isBot .bg > div { position: absolute; }
+        #isBot div {
           background: rgb(236, 240, 241);
           border: 2px solid rgb(44, 62, 80);
           left: 50%;
         }
-        #isbot .neck {
+        #isBot .neck {
           width: 80px;
           height: 40px;
           bottom: -2px;
@@ -39,14 +39,14 @@
           border-radius: 20px 20px 0 0;
           box-shadow: inset 0 -10px 10px rgba(0, 0, 0, .2);
         }
-        #isbot .ears {
+        #isBot .ears {
           width: 170px;
           height: 40px;
           bottom: 80px;
           margin-left: -86px;
           border-radius: 20px;
         }
-        #isbot .antenna {
+        #isBot .antenna {
           width: 4px;
           height: 10px;
           border: none;
@@ -54,7 +54,7 @@
           bottom: 152px;
           margin-left: -3px;
         }
-        #isbot .ball {
+        #isBot .ball {
           width: 10px;
           height: 10px;
           bottom: 162px;
@@ -63,7 +63,7 @@
           box-shadow: inset 0 2px 0 rgb(255, 255, 255),
                       inset 0 -2px 0 rgba(0, 0, 0, .1);
         }
-        #isbot .head {
+        #isBot .head {
           width: 140px;
           height: 100px;
           bottom: 50px;
@@ -72,7 +72,7 @@
           box-shadow: inset 0 2px 0 rgb(255, 255, 255),
                       inset 0 -2px 0 rgba(0, 0, 0, .1);
         }
-        #isbot .face {
+        #isBot .face {
           width: 110px;
           height: 60px;
           bottom: 62px;
@@ -82,7 +82,7 @@
           box-shadow: inset 0 -2px 0 rgb(255, 255, 255),
                       inset 0 2px 0 rgba(0, 0, 0, .1);
         }
-        #isbot .eye {
+        #isBot .eye {
           width: 10px;
           height: 10px;
           bottom: 92px;
@@ -91,10 +91,10 @@
           background: rgb(52, 73, 94);
           animation: 8s ease-in 1s infinite blink;
         }
-        #isbot .eye.right {
+        #isBot .eye.right {
           margin-left: 16px;
         }
-        #isbot .smile {
+        #isBot .smile {
           width: 40px;
           height: 20px;
           bottom: 72px;
@@ -130,7 +130,7 @@
         }
         #text a:hover { text-decoration: underline; }
       </style>
-      <div id="isbot">
+      <div id="isBot">
         <div class="bg">
           <div class="neck"></div>
         </div>
@@ -144,9 +144,9 @@
         <div class="smile"></div>
       </div>
       <div id="text">
-        <h1>isbot</h1>
+        <h1>isBot</h1>
         <p>Detect bots, crawlers, and spiders using the user agent string.</p>
-        <p>Visit our <a href="https://isbot.js.org/">online checker</a> to check user agents easily.</p>
+        <p>Visit our <a href="https://isBot.js.org/">online checker</a> to check user agents easily.</p>
       </div>
     </div>
   </foreignObject>
