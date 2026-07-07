@@ -156,6 +156,7 @@ We use external data sources on top of our own lists to keep up to date
 - [myip.ms](https://www.myip.ms/files/bots/live_webcrawlers.txt)
 - [stephenafamo/isbot](https://github.com/stephenafamo/isbot/blob/main/crawler-user-agents.json)
 - [user-agents.net](https://user-agents.net/bots)
+- [ua-parser-js](https://github.com/faisalman/ua-parser-js/blob/master/test/data/ua/extension/crawler.json)
 - A Manual list
 
 ### Non bot user agents

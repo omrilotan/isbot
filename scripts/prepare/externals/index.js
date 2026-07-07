@@ -23,6 +23,7 @@ const sources = new Map([
 		"https://raw.githubusercontent.com/stephenafamo/isbot/refs/heads/main/crawler-user-agents.json",
 	],
 	["user-agents.net.json", "https://user-agents.net/download"],
+	["ua-parser-js.json", "https://raw.githubusercontent.com/faisalman/ua-parser-js/refs/heads/master/test/data/ua/extension/crawler.json"],
 ]);
 
 const { log, warn } = console;
@@ -219,6 +220,27 @@ getters.push(async function stephenAfamo({
 		return 0;
 	}
 	const list = (await response.json()).map(({ instances }) => instances).flat();
+	log(`Write ${destination}`);
+	await writeFile(destination, JSON.stringify(list, null, 2) + "\n");
+	return 1;
+});
+
+getters.push(async function uaParserJs({
+	dir = join(__dirname, ".."),
+	force = false,
+} = {}) {
+	const collection = "ua-parser-js.json";
+	const destination = join(dir, collection);
+	if (!force && (await exists(destination))) {
+		log(`Skip ${destination} - Already exists.`);
+		return 0;
+	}
+	log(`Download content for ${destination}`);
+	const response = await fetchWithTimeout(sources.get(collection));
+	if ((await abort(response, collection, destination)) === true) {
+		return 0;
+	}
+	const list = (await response.json()).map(({ ua }) => ua);
 	log(`Write ${destination}`);
 	await writeFile(destination, JSON.stringify(list, null, 2) + "\n");
 	return 1;
