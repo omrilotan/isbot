@@ -23,7 +23,10 @@ const sources = new Map([
 		"https://raw.githubusercontent.com/stephenafamo/isbot/refs/heads/main/crawler-user-agents.json",
 	],
 	["user-agents.net.json", "https://user-agents.net/download"],
-	["ua-parser-js.json", "https://raw.githubusercontent.com/faisalman/ua-parser-js/refs/heads/master/test/data/ua/extension/crawler.json"],
+	[
+		"ua-parser-js.json",
+		"https://raw.githubusercontent.com/faisalman/ua-parser-js/refs/heads/master/test/data/ua/extension/crawler.json",
+	],
 ]);
 
 const { log, warn } = console;
