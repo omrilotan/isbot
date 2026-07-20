@@ -28693,5 +28693,16 @@
   "U2FsdGVkX1+BQ07D8GR8xbTZmkoxItWFX8cSdEi0hFJAN95jkZhQ2O6djKCmx7fG7328WksEAzpF8LUKwMF1zU3Lm0l1fCQe+dtGlIrSBuASaVuuJxkMWvoUkMXGDnYkR8c28YLzNAPtiCWpCgRuB5ttJQVLiV9Kr8wzEFdxd51FQxXp0vhoVd1+kYGILUfSaFZAUMXp263nmgksa4Ot8sbvA+6ZcIx259bQWjKtJR1uP6pzwhyX57hXwhbgSDEu1uy9Cd+q39vv7mZWDcFt2kcihPbhqpWiAm08dnxYhGQ=",
   "DuckDuckGo/11 CFNetwork/3860.600.12 Darwin/25.5.0",
   "Mozilla/5.0 (Linux; Android 4.0.4; Galaxy Nexus Build/IMM76B) AppleWebKit/537.36 (KHTML%2C like Gecko; Mediapartners-Google) Chrome/149.0.7827.200 Mobile Safari/537.36",
-  "Java/25.0.3"
+  "Java/25.0.3",
+  "Mozilla/5.0 (Linux; Android 4.0.4; Galaxy Nexus Build/IMM76B) AppleWebKit/537.36 (KHTML, like Gecko; Mediapartners-Google) Chrome/150.0.7871.46 Mobile Safari/537.36",
+  "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/150.0.7871.46 Safari/537.36",
+  "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.100 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
+  "Apache-HttpClient/4.5.14 (Java/25.0.3)",
+  "DuckDuckGo/9 CFNetwork/3860.600.12 Darwin/25.5.0",
+  "Mozilla/5.0 (Linux; Android 4.0.4; Galaxy Nexus Build/IMM76B) AppleWebKit/537.36 (KHTML%2C like Gecko; Mediapartners-Google) Chrome/150.0.7871.46 Mobile Safari/537.36",
+  "Python/3.12 websockets/16.0",
+  "DuckDuckGo/9 CFNetwork/3826.600.41 Darwin/24.6.0",
+  "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.128 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
+  "ethicrawl/0.1 (Ethical crawler respecting robots and AI directives; http://ethicrawl.ai/crawler; contact@ethicrawl.ai)",
+  "DuckDuckGo/8 CFNetwork/3860.600.12 Darwin/25.5.0"
 ]
