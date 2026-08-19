@@ -5,13 +5,13 @@ failures=0
 set -e
 
 ## Setup
-declare -A flags
+no_build=0
 args=()
 
 for arg in "$@"; do
 	case "$arg" in
 		--no-build)
-			flags["no-build"]=1
+			no_build=1
 			;;
 		*)
 			args+=("$arg")
@@ -20,7 +20,7 @@ for arg in "$@"; do
 done
 
 ## Build if needed
-if [[ ! -v flags["no-build"] ]]; then
+if [[ $no_build -eq 0 ]]; then
 	npm run build
 	if [ $? -ne 0 ]; then
 		exit $?
@@ -31,11 +31,11 @@ if [[ ! -v flags["no-build"] ]]; then
 	fi
 fi
 
-node --expose-gc node_modules/.bin/jest --verbose $@
+node --expose-gc node_modules/.bin/jest --verbose "${args[@]}"
 failures=$((failures + $?))
 
 ## Check builds if needed
-if [[ ! -v flags["no-build"] ]]; then
+if [[ $no_build -eq 0 ]]; then
 	echo $(which es-check)
 	if [[ -z $(which es-check) ]]; then
 		echo "es-check not found. install locally."
