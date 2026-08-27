@@ -1340,5 +1340,11 @@
   "FindiseBot/1.0 (+https://findise.net/bot)",
   "gwf-carbon-txt-crawler/1.0 (Web Crawler for the Green Web Foundation to measure the adoption of the carbon.txt initiative; https://www.thegreenwebfoundation.org/green-web-checker-faq/; support@greenweb.org)",
   "GreenWebChecker/1.0.0",
-  "Mozilla/5.0 (compatible; WebatlaBot/1.0; +https://bot.webatla.com; abuse@webatla.com)"
+  "Mozilla/5.0 (compatible; WebatlaBot/1.0; +https://bot.webatla.com; abuse@webatla.com)",
+  "MyCellar/1.0 (https://www.mycellar.world)",
+  "Mozilla/5.0 (compatible; wp2shell-check/1.0)",
+  "Mozilla/5.0 (compatible; Kaupr/1.0)",
+  "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; WRTNBot; +https://wrtn.ai/wrtnbot)",
+  "Mozilla/5.0 (compatible; ProspectorBR/1.0; +prospeccao-adtech; contato via site) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+  "DomainDrift/0.3 (Internet Telemetry; +https://domaindrift.io)"
 ]

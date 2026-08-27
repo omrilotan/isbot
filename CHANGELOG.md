@@ -1,5 +1,9 @@
 # Changelog
 
+## [5.2.2](https://github.com/omrilotan/isbot/compare/v5.2.1...v5.2.2)
+
+- Pattern update: reduce size
+
 ## [5.2.1](https://github.com/omrilotan/isbot/compare/v5.2.0...v5.2.1)
 
 - Pattern updates
