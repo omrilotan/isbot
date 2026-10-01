@@ -2116,5 +2116,7 @@
   "Mozilla/5.0 (compatible; PRTG Network Monitor (www.paessler.com ); Windows)",
   "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko; GeedoShopProductFinder) Chrome/142.0.0.0 Safari/537.36",
   "Mozilla/5.0 (compatible; WatchForBot/1.0; +https://watchfor.io/bot)",
-  "ListGemBot/1.0 (+https://listgem.com/bot)"
+  "ListGemBot/1.0 (+https://listgem.com/bot)",
+  "IsonSearchBot/1.0 (+https://search.isonai.com/bot)",
+  "IsonSearchBot/2.0 (+https://search.isonai.com/bot)"
 ]
