@@ -2118,5 +2118,9 @@
   "Mozilla/5.0 (compatible; WatchForBot/1.0; +https://watchfor.io/bot)",
   "ListGemBot/1.0 (+https://listgem.com/bot)",
   "IsonSearchBot/1.0 (+https://search.isonai.com/bot)",
-  "IsonSearchBot/2.0 (+https://search.isonai.com/bot)"
+  "IsonSearchBot/2.0 (+https://search.isonai.com/bot)",
+  "9bot/1.0 (+https://9bot.com.br/en/9bot-docs)",
+  "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; IsonAI-User/1.0; +https://www.isonai.com/bot",
+  "InfoSifter/1.0 (+https://logicus.se/about_InfoSifter.html)",
+  "AIWebIndex/2.0 (+https://lyrenth.com/bot; AI-readable web index)"
 ]
