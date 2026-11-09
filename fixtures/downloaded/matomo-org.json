@@ -5,6 +5,7 @@
   "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; MDDR; .NET4.0C; .NET4.0E; .NET CLR 1.1.4322; Tablet PC 2.0); 360Spider",
   "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0); 360Spider",
   "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.89 Safari/537.1; 360Spider",
+  "9bot/1.0 (+https://9bot.com.br/en/9bot-docs)",
   "ADmantX Platform Semantic Analyzer - ADmantX Inc. - www.admantx.com - support@admantx.com",
   "ias-va/3.1 (+https://www.admantx.com/service-fetcher.html)",
   "Aboundex/0.3 (http://www.aboundex.com/crawler/)",
@@ -1347,5 +1348,9 @@
   "Mozilla/5.0 (compatible; Kaupr/1.0)",
   "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; WRTNBot; +https://wrtn.ai/wrtnbot)",
   "Mozilla/5.0 (compatible; ProspectorBR/1.0; +prospeccao-adtech; contato via site) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
-  "DomainDrift/0.3 (Internet Telemetry; +https://domaindrift.io)"
+  "DomainDrift/0.3 (Internet Telemetry; +https://domaindrift.io)",
+  "IsonSearchBot/1.0 (+https://search.isonai.com/bot)",
+  "IsonSearchBot/2.0 (+https://search.isonai.com/bot)",
+  "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; IsonAI-User/1.0; +https://www.isonai.com/bot",
+  "TuneIn-DirMon/1.0"
 ]
