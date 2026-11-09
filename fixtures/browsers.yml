@@ -427,8 +427,8 @@ Nook:
 Odyssey Web Browser:
   - Mozilla/5.0 (Macintosh; PowerPC MorphOS 3.7; Odyssey Web Browser; rv:1.23) AppleWebKit/538.1 (KHTML, like Gecko) OWB/1.23 Safari/538.1
 Office:
-  - Microsoft Office/16.0 (Windows NT 10.0; MAPI 16.0.8431; Pro)
   - Microsoft Office/12.0 (Windows NT 5.1; Picture Manager 12.0.4518; Pro)
+  - Microsoft Office/16.0 (Windows NT 10.0; MAPI 16.0.8431; Pro)
   - Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; MSOffice 12)
 OmniWeb:
   - Mozilla/5.0 (Macintosh; Intel  Mac OS X 10_9_1; en-US) AppleWebKit/9537.73.11 (KHTML, like Gecko) Version/7.0 Safari/537.71 OmniWeb/v624.0
@@ -665,6 +665,8 @@ Webkit:
   - Mozilla/5.0 (iPhone; CPU iPhone OS 12_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [LinkedInApp]
   - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/605.1.15 (KHTML, like Gecko)
   - Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/533+ (KHTML, like Gecko)
+WebOS:
+  - Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36 WebAppManager
 WebPositive:
   - Mozilla/5.0 (compatible; U; Webpositive/533.4; Haiku) AppleWebkit/533.4 (KHTML, like gecko) Chrome/5.0.375.55 Safari/533.4
 WebView:
@@ -676,8 +678,6 @@ WebView:
   - Mozilla/5.0 (Windows Phone 8.1; ARM; Trident/7.0; Touch; WebView/2.0; rv:11.0; IEMobile/11.0; NOKIA; Lumia 525) like Gecko
   - Mozilla/5.0 (Windows Phone 8.1; ARM; Trident/7.0; Touch; WebView/2.0; rv:11.0; IEMobile/11.0; NOKIA; Lumia 635) like Gecko
   - YelpWebView/1.5 Android/6.0.1 YelpApp/9.9.0 (x-screen-scale 1.0;)
-WebOS:
-  - Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36 WebAppManager
 WeChat:
   - Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) Mobile/14G60 wxwork/2.1.5 MicroMessenger/6.3.22
   - Mozilla/5.0 (Linux; Android 7.0; FRD-AL00 Build/HUAWEIFRD-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.49 Mobile MQQBrowser/6.2 TBS/043602 Safari/537.36 MicroMessenger/6.5.16.1120 NetType/WIFI Language/zh_CN
