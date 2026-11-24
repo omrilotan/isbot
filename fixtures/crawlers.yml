@@ -14,11 +14,18 @@ AddThis.com:
   - AddThis.com robot tech.support@clearspring.com
 ADMantX:
   - ADmantX Platform Semantic Analyzer - ADmantX Inc. - www.admantx.com - support@admantx.com
+Agentic Browsers:
+  - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36; Manus-User/1.0
+  - Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot
+  - Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; Shap-User/0.1.0
+  - Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Amzn-User/0.1) Chrome/119.0.6045.214 Safari/537.36
 Agentslug:
   - agentslug.com - website monitoring tool
 aHrefs Bot:
   - "Mozilla/5.0 (compatible; AhrefsBot/5.0; +http://ahrefs.com/robot/) AppEngine-Google; (+http://code.google.com/appengine; appid: s~proxyfile1-hrd)"
   - Mozilla/5.0 (compatible; AhrefsBot/7.0; +http://ahrefs.com/robot/)
+AIReadableBot:
+  - AIReadableBot/1.0 (+https://aireadable.app/how-we-scan)
 Akregator:
   - Akregator/1.2.9; librss/remnants
 AlertSite Monitoring:
@@ -193,6 +200,7 @@ Dareboost test tool:
   - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36 DareBoost
 Datadog Agent:
   - Datadog Agent/5.10.1
+  - Datadog/Synthetics
   - mozilla/5.0 (x11; linux x86_64) applewebkit/537.36 (khtml, like gecko) chrome/138.0.7204.168 safari/537.36 datadogsynthetics
 Datanyze:
   - Mozilla/5.0 (X11; Datanyze; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
@@ -247,6 +255,9 @@ EmailWolf:
   - EmailWolf 1.00 [ip:5.75.174.146]
 Embedly:
   - Mozilla/5.0 (compatible; Embedly/0.2; +http://support.embed.ly/)
+Enfilade Bot:
+  - EnfiladeBot/1.0 (+https://enfilade.guide/en/about-our-crawler)
+  - EnfiladeBot/1.0 (+https://enfilade.guide/fr/a-propos-du-robot)
 evc-batch:
   - Mozilla/5.0 (compatible; evc-batch/2.0)
 ExactSeek Crawler:
@@ -691,6 +702,8 @@ RuxitSynthetic:
   - Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/56.0.2924.75 Mobile/14E5239e Safari/602.1 RuxitSynthetic/1.0
 SafeDNSBot:
   - SafeDNSBot (https://www.safedns.com/searchbot)
+ScooterZA:
+  - Mozilla/5.0 (compatible; ScooterZA/1.0; +https://techwarrior.co.za/scooterza/)
 Scope3:
   - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Scope3/2.0 (scope3.com)
 Scrapy:
@@ -705,6 +718,8 @@ Seekport:
   - Mozilla/5.0 (compatible; Seekport Crawler; http://seekport.com/)
 Selenium:
   - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36; Selenium
+Seltz Sitemap Fetcher:
+  - SeltzSitemapFetcher/1.0
 Semrush Bot:
   - Mozilla/5.0 (compatible; SemrushBot/0.97; +http://www.semrush.com/bot.html)
   - Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25 (compatible; SiteAuditBot/0.97; +http://www.semrush.com/bot.html)
@@ -986,7 +1001,6 @@ ZZZ Miscellaneous bots:
   - emclient/10.3.2619.0
   - Mozilla/5.0 (compatible; bigsur.ai/1.0)
   - Mozilla/5.0 (compatible; ORT/v1.0.0; visit ORTc.me )
-  - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36; Manus-User/1.0
   - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 SecurityHeaders
   - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36; Devin/1.0; +devin.ai
   - peer39_crawler/1.0
