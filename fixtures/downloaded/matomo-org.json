@@ -1352,5 +1352,8 @@
   "IsonSearchBot/1.0 (+https://search.isonai.com/bot)",
   "IsonSearchBot/2.0 (+https://search.isonai.com/bot)",
   "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; IsonAI-User/1.0; +https://www.isonai.com/bot",
-  "TuneIn-DirMon/1.0"
+  "TuneIn-DirMon/1.0",
+  "Mozilla/5.0 (compatible; ScooterZA/1.0; +https://techwarrior.co.za/scooterza/)",
+  "EnfiladeBot/1.0 (+https://enfilade.guide/en/about-our-crawler)",
+  "EnfiladeBot/1.0 (+https://enfilade.guide/fr/a-propos-du-robot)"
 ]

@@ -1,5 +1,9 @@
 # Changelog
 
+## [5.2.4](https://github.com/omrilotan/isbot/compare/v5.2.3...v5.2.4)
+
+- Pattern update: Common agentic user browsers pattern
+
 ## [5.2.3](https://github.com/omrilotan/isbot/compare/v5.2.2...v5.2.3)
 
 - Pattern update
